@@ -115,13 +115,13 @@ function switchTourMode(tourType) {
 
 function renderCompareStats() {
   const elDist = document.getElementById('stat-total-dist');
-  if (elDist) elDist.innerText = `389 mi (626 km) corridor`;
+  if (elDist) elDist.innerText = `~425–445 mi (684–716 km) corridor`;
   
   const elSched = document.getElementById('stat-schedule');
   if (elSched) elSched.innerText = "6-Day vs 5-Day Fast";
   
   const elAvg = document.getElementById('stat-avg-miles');
-  if (elAvg) elAvg.innerText = "(~65 vs ~78 mi/day)";
+  if (elAvg) elAvg.innerText = "(~74 vs ~85 mi/day)";
 
   const elPace = document.getElementById('stat-pace');
   if (elPace) elPace.innerText = "Leisurely Touring vs High-Tempo Endurance";
@@ -862,16 +862,16 @@ function zoomToStage(val) {
       const sixTracks = TOUR_DATA_6DAY.days.flatMap(d => d.track);
       if (leafletMap) leafletMap.flyToBounds(sixTracks, { padding: [30, 30], duration: 1.0 });
       if (pillStage) pillStage.innerText = "🗓️ 6-Day Tour Highlighted (Solid Blue)";
-      if (pillDist) pillDist.innerText = "🚴 389 mi • ~64.8 mi/day avg";
-      if (pillElev) pillElev.innerText = "⛰️ +11,950 ft Total";
+      if (pillDist) pillDist.innerText = "🚴 ~445 mi • ~74.2 mi/day avg";
+      if (pillElev) pillElev.innerText = "⛰️ +14,500 ft Total";
     } else if (val === 'compare-5day') {
       if (compareLayers.sixDay) compareLayers.sixDay.eachLayer(l => l.setStyle({ weight: 2, opacity: 0.2 }));
       if (compareLayers.fiveDay) compareLayers.fiveDay.eachLayer(l => l.setStyle({ weight: 7, opacity: 1.0 }));
       const fiveTracks = TOUR_DATA_5DAY.days.flatMap(d => d.track);
       if (leafletMap) leafletMap.flyToBounds(fiveTracks, { padding: [30, 30], duration: 1.0 });
       if (pillStage) pillStage.innerText = "⚡ 5-Day Fast Tour Highlighted (Dashed Amber)";
-      if (pillDist) pillDist.innerText = "🚴 389 mi • ~77.8 mi/day avg";
-      if (pillElev) pillElev.innerText = "⛰️ +11,950 ft Total";
+      if (pillDist) pillDist.innerText = "🚴 ~425 mi • ~85.0 mi/day avg";
+      if (pillElev) pillElev.innerText = "⛰️ +13,000 ft Total";
     } else if (val === 'compare-accel') {
       const accelCoords = TOUR_DATA_5DAY.days.filter(d => d.accelerateOption).map(d => d.endCoords);
       if (leafletMap && accelCoords.length > 0) {
@@ -994,7 +994,7 @@ const OCTOBER_CLIMATE_FALLBACK = {
   1: { tempMax: 68, tempMin: 56, rainProb: 25, windSpeed: 8, windDir: 195, weatherCode: 2 }, // Brewster
   2: { tempMax: 72, tempMin: 56, rainProb: 25, windSpeed: 11, windDir: 185, weatherCode: 2 }, // Hudson
   3: { tempMax: 62, tempMin: 42, rainProb: 20, windSpeed: 10, windDir: 320, weatherCode: 1 }, // Saratoga
-  4: { tempMax: 58, tempMin: 36, rainProb: 20, windSpeed: 6, windDir: 190, weatherCode: 1 },  // Whitehall
+  4: { tempMax: 58, tempMin: 36, rainProb: 20, windSpeed: 6, windDir: 190, weatherCode: 1 },  // Ticonderoga
   5: { tempMax: 56, tempMin: 44, rainProb: 35, windSpeed: 9, windDir: 355, weatherCode: 61 }, // Plattsburgh
   6: { tempMax: 59, tempMin: 42, rainProb: 15, windSpeed: 7, windDir: 195, weatherCode: 1 }   // Montreal
 };

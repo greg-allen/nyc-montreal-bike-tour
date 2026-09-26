@@ -1,182 +1,179 @@
-# NYC to Montréal 5-Day Fast Bicycle Tour Guide (+ Acceleration Options)
-**A High-Tempo, Hotel-to-Hotel Itinerary with Mid-Ride Push Options to Accelerate Ahead**
+# NYC to Montréal 5-Day Fast Bicycle Tour Guide (Honest Edition)
+**A High-Tempo, Hotel-to-Hotel Itinerary with Honest Mileage, Reality Checks & Pre-Scouted Checkpoints**
 
-*Designed for experienced touring cyclists. Ready for Google Docs copy-pasting, mobile navigation, and cue sheet printing.*
-
----
-
-## Executive Summary & Fast Tour Overview
-
-- **Schedule:** **5-Day Fast Tour** (e.g., Sunday Departure &rarr; Thursday Arrival in Montréal, or Monday &rarr; Friday)
-- **Baseline Distance:** ~389 miles (626 km)
-- **Baseline Daily Average:** ~77.8 miles (125 km) per day
-- **Accelerated Pace:** 14–17 mph rolling speed (approx. 5.0–6.0 hours rolling time per day)
-- **⚡ Acceleration Feature:** Every stage includes a **Mid-Ride Decision Checkpoint**. If your legs feel great, the weather is clear, and you have daylight, you can trigger the **"Accelerate Option"** (+15 to +24 miles) to leapfrog into the next major hub. 
-  - *Accelerating allows you to either turn Day 5 into a relaxed 28-mile victory glide into Montréal before noon, or finish the entire 389-mile expedition in an ultra-fast 4 days!*
-- **Luggage Recommendation:** Ultralight bikepacking setup (seat pack, half-frame bag, handlebar pouch). Keep base gear weight under 8 kg (18 lbs).
+*Designed for athletic, experienced touring cyclists. Ready for Google Docs copy-pasting, mobile navigation, and cue sheet printing.*
 
 ---
 
-## 5-Day Itinerary Matrix: Baseline vs. Accelerate Options
+## Executive Summary & Honest Tour Assessment
 
-| Day | Baseline Stage (Distance / Climb) | Baseline Overnight | ⚡ Accelerate Checkpoint & Option | Accelerated Overnight | Google Maps Route |
+- **Schedule:** **5-Day High-Tempo Tour** (e.g., Sunday Departure &rarr; Thursday Arrival in Montréal, or Monday &rarr; Friday)
+- **Total Distance:** **~425 miles (684 km)**
+- **Daily Average:** **~85.0 miles (137 km) per day**
+- **Total Climbing:** **~13,000 ft (3,960 m)**
+- **Pace:** High-Tempo Endurance (14–17 mph rolling speed, approx. 5.5–6.5 hours rolling time per day)
+- **Verdict & Reality Check:**
+  > [!WARNING]
+  > **This itinerary is realistic only for strong, disciplined cyclists on lightweight bikepacking setups.**
+  > With only about **11 hours of daylight in October** (sunrise ~6:55 AM, sunset ~6:25 PM) and cold morning starts (35–45°F), 85+ mile days leave **zero margin for mechanicals, navigation errors, or headwinds**. A flat tire or a 15 mph north headwind risks finishing after chilly autumn dark. Wheels MUST be rolling by 8:30 AM sharp every morning.
+- **Push Option Distance Corrections:**
+  > [!NOTE]
+  > Previous guide drafts understated push distances. Real-world geography:
+  > - **Walkway to Kingston is ~30 miles north** (not 16 mi). Pushing from NYC to Kingston is a massive **125-mile** day.
+  > - **Plattsburgh to Saint-Jean-sur-Richelieu is ~50 miles north** across the border (not 24 mi). A border push from Ticonderoga to Saint-Jean is an extreme **120-mile / +4,500 ft** stage.
+  > Only trigger these push options if well ahead of schedule with daylight to spare!
+
+---
+
+## 5-Day Itinerary Matrix: Honest Baseline vs. Push Options
+
+| Day | Baseline Stage (Dist / Climb) | Baseline Overnight | ⚡ Push Checkpoint & Reality Check | Pushed Overnight | Google Maps Route |
 |:---|:---|:---|:---|:---|:---|
-| **Day 1** | **NYC to Poughkeepsie / Highland** <br> (74.8 mi • +2,650 ft) | Poughkeepsie / Highland | **Mile 72 (Walkway Over Hudson):** <br> Push +16 mi past Highland to Kingston Stockade | **Kingston, NY** <br> *(90.8 mi total)* | [Day 1 Baseline](https://www.google.com/maps/dir/?api=1&origin=Battery+Park+New+York+NY&destination=Poughkeepsie+NY&waypoints=Trailside+Cafe+Yorktown+Heights+NY%7CHopewell+Junction+NY&travelmode=bicycling) • [Day 1 Accelerated](https://www.google.com/maps/dir/?api=1&origin=Battery+Park+New+York+NY&destination=Kingston+NY&waypoints=Trailside+Cafe+Yorktown+Heights+NY%7CWalkway+Over+the+Hudson+Highland+NY&travelmode=bicycling) |
-| **Day 2** | **Poughkeepsie to Albany / Troy** <br> (76.5 mi • +2,300 ft) | Albany / Troy | **Mile 70 (Waterford Lock 2):** <br> Push +16 mi on Zim Smith Trail to Saratoga Springs | **Saratoga Springs, NY** <br> *(92.5 mi total)* | [Day 2 Baseline](https://www.google.com/maps/dir/?api=1&origin=Poughkeepsie+NY&destination=Troy+NY&waypoints=Rhinebeck+NY%7CWarren+St+Hudson+NY%7CKinderhook+NY&travelmode=bicycling) • [Day 2 Accelerated](https://www.google.com/maps/dir/?api=1&origin=Poughkeepsie+NY&destination=Saratoga+Springs+NY&waypoints=Warren+St+Hudson+NY%7CWaterford+NY&travelmode=bicycling) |
-| **Day 3** | **Albany / Troy to Ticonderoga** <br> (78.2 mi • +2,600 ft) | Ticonderoga / Port Henry | **Mile 76 (Ticonderoga):** <br> Push +18 mi along Lake Champlain to Historic Essex | **Essex / Westport, NY** <br> *(96.2 mi total)* | [Day 3 Baseline](https://www.google.com/maps/dir/?api=1&origin=Troy+NY&destination=Ticonderoga+NY&waypoints=Schuylerville+NY%7CWhitehall+NY&travelmode=bicycling) • [Day 3 Accelerated](https://www.google.com/maps/dir/?api=1&origin=Troy+NY&destination=Essex+NY&waypoints=Whitehall+NY%7CTiconderoga+NY&travelmode=bicycling) |
-| **Day 4** | **Ticonderoga to Plattsburgh** <br> (72.4 mi • +2,350 ft) | Plattsburgh / Chazy | **Mile 55 (Plattsburgh):** <br> **THE BORDER PUSH!** Ride 24 mi to Rouses Point, cross border into Saint-Jean | **Saint-Jean-sur-Richelieu, QC** <br> *(96.4 mi total)* | [Day 4 Baseline](https://www.google.com/maps/dir/?api=1&origin=Ticonderoga+NY&destination=Plattsburgh+NY&waypoints=Essex+NY%7CAusable+Chasm+NY&travelmode=bicycling) • [Day 4 Accelerated (Border Push)](https://www.google.com/maps/dir/?api=1&origin=Ticonderoga+NY&destination=Saint-Jean-sur-Richelieu+QC&waypoints=Essex+NY%7CPlattsburgh+NY%7CRouses+Point+NY&travelmode=bicycling) |
-| **Day 5** | **Plattsburgh (or St-Jean) to Montréal** <br> (62.4 mi Baseline / **28.5 mi if Accelerated**) | **Downtown Montréal** | **The Grand Finish:** Arrive via Chambly Canal Path and Samuel De Champlain Bridge into Old Montréal! | **Montréal, QC (Finish!)** | [Day 5 Baseline (62 mi)](https://www.google.com/maps/dir/?api=1&origin=Plattsburgh+NY&destination=Vieux-Montr%C3%A9al+QC&waypoints=Rouses+Point+NY%7CChambly+Canal+QC&travelmode=bicycling) • [Day 5 Victory Cruise (28 mi)](https://www.google.com/maps/dir/?api=1&origin=Saint-Jean-sur-Richelieu+QC&destination=Vieux-Montr%C3%A9al+QC&waypoints=Chambly+Canal+National+Historic+Site+QC&travelmode=bicycling) |
+| **Day 1** | **NYC to Poughkeepsie / Highland** <br> (~95 mi • +3,000 ft) | Poughkeepsie / Highland | **Mile 90 (Walkway Over Hudson):** <br> Push +30 mi past Highland to Kingston Stockade | **Kingston, NY** <br> *(~125 mi total)* | [Day 1 Baseline](https://www.google.com/maps/dir/?api=1&origin=Battery+Park+New+York+NY&destination=Poughkeepsie+NY&waypoints=Trailside+Cafe+Yorktown+Heights+NY%7CHopewell+Junction+NY&travelmode=bicycling) |
+| **Day 2** | **Poughkeepsie to Troy (via AHET)** <br> (~85 mi • +2,500 ft) | Downtown Troy / Albany | **Mile 78 (Waterford Lock 2):** <br> Push +20 mi on Zim Smith Trail to Saratoga Springs | **Saratoga Springs, NY** <br> *(~105 mi total)* | [Day 2 Baseline](https://www.google.com/maps/dir/?api=1&origin=Poughkeepsie+NY&destination=Troy+NY&waypoints=Rhinebeck+NY%7CWarren+St+Hudson+NY%7CKinderhook+NY&travelmode=bicycling) |
+| **Day 3** | **Troy to Ticonderoga** <br> (~87 mi • +2,500 ft) | Ticonderoga (Fort Ti) | **Mile 85 (Ticonderoga):** <br> Push +18 mi along Lake Champlain to Historic Essex | **Essex / Westport, NY** <br> *(~105 mi total)* | [Day 3 Baseline](https://www.google.com/maps/dir/?api=1&origin=Troy+NY&destination=Ticonderoga+NY&waypoints=Schuylerville+NY%7CWhitehall+NY&travelmode=bicycling) |
+| **Day 4** | **Ticonderoga to Plattsburgh** <br> (~70 mi • +4,000 ft) | Plattsburgh, NY | **Mile 68 (Plattsburgh):** <br> **EXTREME BORDER PUSH:** Ride 50 mi to Saint-Jean, QC | **Saint-Jean-sur-Richelieu, QC** <br> *(~120 mi total)* | [Day 4 Baseline](https://www.google.com/maps/dir/?api=1&origin=Ticonderoga+NY&destination=Plattsburgh+NY&waypoints=Essex+NY%7CAusable+Chasm+NY&travelmode=bicycling) |
+| **Day 5** | **Plattsburgh (or St-Jean) to Montréal** <br> (~88 mi Baseline / **~37 mi if Pushed**) | **Old Montréal (Finish!)** | **Victory Finish:** Arrive via Chambly Canal Path and bridge path into Place Jacques-Cartier! | **Montréal, QC** | [Day 5 Baseline](https://www.google.com/maps/dir/?api=1&origin=Plattsburgh+NY&destination=Vieux-Montr%C3%A9al+QC&waypoints=Rouses+Point+NY%7CChambly+Canal+QC&travelmode=bicycling) |
 
 ---
 
 ## GPS Navigation & Map Downloads
 
-- **Garmin / Wahoo / GPS Bike Computer:** Download **[nyc_to_montreal_5day_tour.gpx](nyc_to_montreal_5day_tour.gpx)** (GPX 1.1 format with all 5 stages, baseline tracks, and 4 ⚡ accelerate checkpoints).
-- **Google My Maps / Smartphone:** Download **[nyc_to_montreal_5day_tour.kml](nyc_to_montreal_5day_tour.kml)** (Import into [Google My Maps](https://mymaps.google.com) to view on your phone).
+- **Garmin / Wahoo / GPS Bike Computer:** Download **[nyc_to_montreal_5day_tour.gpx](nyc_to_montreal_5day_tour.gpx)** (GPX 1.1 format with all 5 stages, baseline tracks, and push checkpoints).
+- **Google My Maps / Smartphone:** Download **[nyc_to_montreal_5day_tour.kml](nyc_to_montreal_5day_tour.kml)** (Import into [Google My Maps](https://mymaps.google.com) to view on your mobile device).
 
 ---
 
 ## ⚠️ Critical High-Tempo Advisories (Read Before Riding)
 
-1. **Amtrak Return Bike Slot Limit (Strict 4–6 Bike Cap):** Amtrak’s *Adirondack* (Train #68) from Montreal has only 4–6 bike slots in the baggage car. Book this reservation immediately! If sold out, reserve a one-way rental car (Enterprise/Avis from Montreal to NYC) or box bikes for the Trailways bus with boxes from *Bicycles Quilicot*.
-2. **October Sunset at 6:25 PM & Strict 8:30 AM Rollout:** In October, dusk drops temperatures 15°F instantly. You must roll by 8:30 AM to finish these 70–96 mile stages in daylight. Carry an 800+ lumen headlight and daylight-visible rear strobe.
-3. **"October Grease" on Rail Trails:** Wet decaying leaves on paved rail trails are as slick as ice. Run 35–40mm tires at 45–50 PSI and do not lean hard into leaf-covered corners.
-4. **Canadian Border (Lacolle) Zero-Cannabis Law:** Crossing with any cannabis/THC is a federal felony. Inspect bags before departing NYC. Carry a digital photo of your bike's serial number and purchase receipt for US CBP re-entry.
-5. **Sunday/Monday Bike Shop Closures:** Rural shops are closed Sun/Mon. Carry 2x tubes, tubeless plug kit, chain quick-link, mini pump, and derailleur hanger.
-6. **Peak Foliage Lodging:** Saratoga and Champlain hotels sell out weeks early in October; lock in reservations before starting.
+1. **Amtrak Return Bike Service Ends at Rouses Point, NY:**
+   - Carry-on bicycle service on the Amtrak *Adirondack* **ends at Rouses Point, NY**. You **cannot roll an unboxed bike onto the train in Montréal**.
+   - The train uses a coach carry-on rack (strictly 4–6 reserved spots per train), NOT a baggage car.
+   - Return options from Montréal:
+     - Ride ~48 miles south back to Rouses Point, NY and board there with your reserved ticket.
+     - Box your bike in Montréal (buy a box from *Bicycles Quilicot* or MEC) for air or bus cargo.
+     - One-way car rental (Enterprise or Avis) from Montréal to NYC.
+2. **October Sunset at 6:25 PM & Strict 8:30 AM Rollout:**
+   - In October, dusk plunges temperatures 15°F instantly. You must roll by 8:30 AM sharp to finish these 70–95 mile stages in daylight.
+   - Minimum **800+ lumen headlight** and daylight-visible rear strobe are mandatory.
+3. **"October Grease" on Rail Trails:**
+   - Wet decomposing leaves on rail trails have the slickness of wet ice. Run **35–40mm tires at 45–50 PSI** and scrub speed before cornering.
+4. **Canadian Border Protocols (Rouses Point ➔ QC-223):**
+   - Cross at **Rouses Point to QC-223** along the Richelieu River (or Champlain to QC-221 Lacolle). Both accept bicycles directly at vehicle booths.
+   - Valid Passport, Enhanced Driver's License (EDL), or NEXUS card works (no 6-month validity requirement for Canada).
+   - Bear spray (animal deterrent) is permitted into Canada; human pepper spray is strictly prohibited under the Criminal Code.
+   - **Zero Cannabis:** Taking ANY cannabis across the border in either direction is illegal under federal law.
+   - Photograph your bike's serial number and receipt as proof of US origin for CBP re-entry.
+5. **Sunday/Monday Bike Shop Closures:**
+   - Rural shops are closed Sun/Mon. Carry 2x spare tubes, tubeless plug kit, chain quick-link, mini pump, and hex tools.
+6. **Peak Foliage Lodging:**
+   - October 4–9 is peak foliage. Hotels sell out weeks early in Hudson, Saratoga, and Lake Champlain; lock in reservations immediately.
 
 ---
 
 ## Detailed 5-Day Stages with Acceleration Plans
 
 ### Stage 1: New York City to Poughkeepsie / Highland (Optional Push to Kingston)
-*Manhattan Greenways, Westchester Rail Trails & The Mighty Walkway Over the Hudson*
+*Manhattan Greenways, Westchester Trailways, Maybrook & Walkway Over the Hudson*
 
-- **Baseline Distance:** 74.8 miles (120.4 km) &bull; Climbing: +2,650 ft
-- **Accelerated Distance (Push to Kingston):** 90.8 miles (146.1 km) &bull; Climbing: +3,100 ft
+- **Baseline Distance:** ~95.0 miles (152.9 km) &bull; **Climbing:** +3,000 ft
+- **Accelerated Distance (Push to Kingston):** ~125.0 miles (201.2 km) &bull; **Climbing:** +3,600 ft
 - **Route Segments:**
-  - Depart Battery Park or Central Park north via Hudson River Greenway past the George Washington Bridge.
+  - Depart Battery Park north via Hudson River Greenway past the George Washington Bridge.
   - Connect through Van Cortlandt Park onto South County & North County Trailways.
   - Join Putnam County Trailway through Mahopac to Brewster, then Maybrook Trailway to Hopewell Junction.
   - Ride the Dutchess Rail Trail into Poughkeepsie and soar 212 feet above the river across the **Walkway Over the Hudson**!
-- **Curated Lunch Stop (Mile 37):** **Trailside Cafe** in Yorktown Heights (1807 Commerce St). Directly on the trail! Wraps, protein smoothies, paninis, quick turnaround.
-- **⚡ Accelerate Checkpoint (Mile 72 - Walkway Over the Hudson):**
-  - **Decision Time (Target 3:00 PM):**
+- **Curated Lunch Stop (Mile 38):** **Trailside Cafe** in Yorktown Heights (1807 Commerce St). Directly on the trail! High-protein paninis, smoothies, quick turnaround.
+- **⚡ Push Checkpoint (Mile 90 - Walkway Over the Hudson):**
+  - **Decision Time (Target 2:00 PM):**
     - *Plan A (Baseline):* Stop in Poughkeepsie/Highland.
-    - *Plan B (Accelerate):* Feeling strong? Continue 16 miles north via Hudson Valley Rail Trail to New Paltz and north along scenic River Road into the **Kingston Stockade District**.
-- **Overnight Lodging Options:**
-  - **Baseline (Poughkeepsie/Highland):** *Hyatt Place Poughkeepsie* (Phone: 845-380-0000) or *Atlas Hotel Poughkeepsie*.
-  - **Accelerated (Kingston):** *Hotel Kinsley* (Phone: 845-768-3620 - chic boutique in historic Stockade) or *Best Western Plus Kingston* (Phone: 845-338-0400).
-- **Bike Shops & Mechanics:**
-  - *Yorktown Cycles:* 1899 Commerce St, Yorktown Heights, NY (Phone: 914-245-5504) - On-trail at Mile 37.
-  - *Bikeway:* 812 Route 82, Hopewell Junction, NY (Phone: 845-223-8100) - On-trail at Mile 58.
-  - *Revolution Bicycle:* 3 Twin Ponds Dr, Kingston, NY (Phone: 845-331-5070) - Accelerated finish hub.
-- **Bailout:** Metro-North Hudson Line at Poughkeepsie Station (Mile 72).
+    - *Plan B (Push):* Walkway to Kingston is ~30 miles north via Wallkill Valley trail or Route 9W/River Rd. Only attempt if rolling into Poughkeepsie before 2:00 PM with fresh legs!
+- **Overnight Lodging:**
+  - **Baseline (Poughkeepsie):** *Hyatt Place Poughkeepsie* (Phone: 845-380-0000).
+  - **Pushed (Kingston):** *Hotel Kinsley* (Phone: 845-768-3620) or *Best Western Plus Kingston* (Phone: 845-338-0400).
+- **Bike Shops:** *Yorktown Cycles* (Mile 38) &bull; *Bikeway* (Hopewell Jct, Mile 72).
+- **Bailout:** Metro-North Hudson Line at Poughkeepsie Station (Mile 95).
 
 ---
 
-### Stage 2: Poughkeepsie / Highland to Albany / Troy (Optional Push to Saratoga Springs)
-*The Hudson River Escarpment, City of Hudson & Albany-Hudson Electric Trail*
+### Stage 2: Poughkeepsie to Troy (via Hudson + AHET) (Optional Push to Saratoga)
+*Hudson Escarpment, Historic Hudson & Albany-Hudson Electric Trail*
 
-- **Baseline Distance:** 76.5 miles (123.1 km) &bull; Climbing: +2,300 ft
-- **Accelerated Distance (Push to Saratoga):** 92.5 miles (148.8 km) &bull; Climbing: +2,850 ft
+- **Baseline Distance:** ~85.0 miles (136.8 km) &bull; **Climbing:** +2,500 ft
+- **Accelerated Distance (Push to Saratoga):** ~105.0 miles (169.0 km) &bull; **Climbing:** +3,100 ft
 - **Route Segments:**
-  - North through Dutchess and Columbia County farm country via Rhinebeck and Red Hook.
-  - Climb into historic Hudson (Warren Street).
-  - Join the **Albany-Hudson Electric Trail (AHET)**: 36 miles of continuous, traffic-free off-road trail through Kinderhook, Valatie, and Nassau into Rensselaer.
-  - Cross the Hudson River bridge into Downtown Albany or historic Victorian Troy.
-- **Curated Lunch Stop (Mile 38):** **Warren Street, Hudson, NY** – **Le Gamin Cafe** (609 Warren St) for express savory galettes & espresso, or **Tanzy's**.
-- **⚡ Accelerate Checkpoint (Mile 70 - Waterford Canal Lock 2):**
+  - Scenic east-bank roads (Route 9G & River Rd) past Hyde Park, Rhinebeck, and Red Hook.
+  - Roll through the historic city of Hudson (Warren Street).
+  - Join the **Albany-Hudson Electric Trail (AHET)**: 36 miles of continuous, traffic-free paved trail through Kinderhook, Valatie, and Nassau into Rensselaer.
+  - Cross into Troy along the Hudson River waterfront.
+- **Curated Lunch Stop (Mile 42):** **Warren Street, Hudson, NY** – **Le Gamin Cafe** (609 Warren St) for express savory galettes & espresso, or **Tanzy's**.
+- **⚡ Push Checkpoint (Mile 78 - Waterford Canal Lock 2):**
+  - **Decision Time (Target 3:00 PM):**
+    - *Plan A (Baseline):* Check in at Troy riverfront.
+    - *Plan B (Push):* At Waterford Lock 2, take the Zim Smith Trail to Ballston Spa and roads into Saratoga Springs (+20 mi / 105 mi total).
+- **Overnight Lodging:**
+  - **Baseline (Troy / Albany):** *Best Western Plus Franklin Square Inn Troy* (Phone: 518-274-8800) or *Renaissance Albany*.
+  - **Pushed (Saratoga Springs):** *The Saratoga Hilton* (Phone: 518-584-4000) or *Holiday Inn Saratoga Springs*.
+- **Bike Shops:** *Steiner's Sports* (Hudson, Mile 42) &bull; *Down Tube Bicycle Works* (Albany, Mile 78).
+- **Bailout:** Amtrak at Hudson (Mile 42) and Albany-Rensselaer (Mile 78).
+
+---
+
+### Stage 3: Troy to Ticonderoga (Optional Push to Historic Essex)
+*Champlain Canalway, Schuylerville, Lock 12 & Fort Ticonderoga*
+
+- **Baseline Distance:** ~87.0 miles (140.0 km) &bull; **Climbing:** +2,500 ft
+- **Accelerated Distance (Push to Essex):** ~105.0 miles (169.0 km) &bull; **Climbing:** +3,500 ft
+- **Route Segments:**
+  - Champlain Canalway corridor north through Schuylerville, Fort Edward, and Fort Ann.
+  - Whitehall, NY (Champlain Canal Lock 12).
+  - Rolling hills of NY-22 flanking South Bay and Lake Champlain into Ticonderoga.
+- **Curated Lunch Stop (Mile 56):** **Whitehall Lock 12** – **Historic Grounds Restaurant & Coffee Bar** (142 Main St) for wholesome paninis, soup, and espresso.
+- **⚡ Push Checkpoint (Mile 85 - Ticonderoga):**
   - **Decision Time (Target 3:30 PM):**
-    - *Plan A (Baseline):* Cross river into Downtown Albany or Troy.
-    - *Plan B (Accelerate):* Feeling fast? Bypass Albany/Troy! Pick up the Champlain Canalway to Mechanicville, hop on the paved **Zim Smith Trail** through Round Lake, and ride directly into **Saratoga Springs**!
-- **Overnight Lodging Options:**
-  - **Baseline (Albany / Troy):** *Renaissance Albany Hotel* (144 State St - Phone: 518-992-2500) or *Best Western Plus Franklin Square Inn Troy* (Phone: 518-274-8800).
-  - **Accelerated (Saratoga Springs):** *The Saratoga Hilton* (534 Broadway - Phone: 518-584-4000) or *Holiday Inn Saratoga Springs* (Phone: 518-584-4550).
-- **Bike Shops & Mechanics:**
-  - *Steiner's Sports:* 301 Warren St, Hudson, NY (Phone: 518-828-5063).
-  - *Down Tube Bicycle Works:* 466 Madison Ave, Albany, NY (Phone: 518-434-1711).
-  - *Saratoga Bicycle Specialties:* 110 Excelsior Ave, Saratoga Springs, NY (Phone: 518-587-0071).
-- **Bailout:** Amtrak Stations at Hudson (Mile 38), Albany-Rensselaer (Mile 70), and Saratoga Springs (Mile 92).
-
----
-
-### Stage 3: Albany / Troy to Ticonderoga (Optional Push to Historic Essex / Westport)
-*Champlain Canal, Birthplace of the US Navy & Adirondack Lake Shore*
-
-- **Baseline Distance:** 78.2 miles (125.8 km) &bull; Climbing: +2,600 ft
-- **Accelerated Distance (Push to Essex):** 96.2 miles (154.8 km) &bull; Climbing: +3,300 ft
-- **Route Segments:**
-  - Follow the Champlain Canalway corridor north through Schuylerville, Fort Edward, and Fort Ann.
-  - Arrive in **Whitehall, NY** (Lock 12 of Champlain Canal).
-  - Head north along scenic Route 22 flanking the South Bay into Ticonderoga.
-  - *Accelerated Route:* Push past Fort Ticonderoga through Crown Point and Port Henry to the dramatic lake bluffs of Westport and Essex.
-- **Curated Lunch Stop (Mile 36):** **Schuylerville** – **Bound by Fate Brewing** or **Amigos Cantina**, or continue to **Whitehall Lock 12** at **Historic Grounds Cafe** (Mile 54).
-- **⚡ Accelerate Checkpoint (Mile 76 - Ticonderoga):**
-  - **Decision Time (Target 3:45 PM):**
-    - *Plan A (Baseline):* Check in at Ticonderoga.
-    - *Plan B (Accelerate):* Plenty of daylight? Continue 18 miles north on NY-22/9N to **Westport** or **Historic Essex** on Lake Champlain.
-- **Overnight Lodging Options:**
+    - *Plan A (Baseline):* Check in at Ticonderoga (Best Western Plus).
+    - *Plan B (Push):* Push 18 miles north along Champlain bluffs into historic Essex. Hilly finish!
+- **Overnight Lodging:**
   - **Baseline (Ticonderoga):** *Best Western Plus Ticonderoga Inn & Suites* (Phone: 518-585-1800).
-  - **Accelerated (Westport / Essex):** *The Inn on the Library Lawn* (Essex, NY) or *The Stone House B&B* (Port Henry).
-- **Bike Shops & Mechanics:**
-  - *Rick's Bike Shop:* 368 Dix Ave, Queensbury / Glens Falls (Phone: 518-793-8986).
-  - *Walker's Hardware & Supply:* Fort Ann, NY (Phone: 518-639-5223).
-- **Bailout:** Amtrak Adirondack stations at Fort Edward (Mile 36), Whitehall (Mile 54), and Ticonderoga (Mile 76).
+  - **Pushed (Essex / Westport):** *The Inn on the Library Lawn* (Essex) or *The Stone House B&B* (Port Henry).
+- **Bike Shops:** *Rick's Bike Shop* (Queensbury detour) &bull; *Walker's Hardware* (Fort Ann).
+- **Bailout:** Amtrak Adirondack at Fort Edward (Mile 36), Whitehall (Mile 56), and Ticonderoga (Mile 85). (Verify Mon–Thu schedule).
 
 ---
 
 ### Stage 4: Ticonderoga to Plattsburgh (Optional BORDER PUSH to Saint-Jean, QC!)
-*Adirondack Coastline, Ausable Chasm & The International Border Crossing*
+*Adirondack Coastline, Crown Point, Essex, Ausable Chasm & Lake Champlain Bluffs (Queen Stage)*
 
-- **Baseline Distance:** 72.4 miles (116.5 km) &bull; Climbing: +2,350 ft
-- **Accelerated Distance (The Grand Border Push):** 96.4 miles (155.1 km) &bull; Climbing: +2,750 ft
+- **Baseline Distance:** ~70.0 miles (112.7 km) &bull; **Climbing:** +4,000 ft *(Hardest Climbing Stage)*
+- **Accelerated Distance (Border Push):** ~120.0 miles (193.1 km) &bull; **Climbing:** +4,500 ft *(Extreme Day)*
 - **Route Segments:**
-  - Scenic coastal road through Westport, historic village of Essex, Willsboro, and Ausable Chasm into Plattsburgh.
-  - *Accelerated Border Push:* Ride north through Chazy to **Rouses Point, NY** (Mile 79), clear customs at the **Lacolle Border Crossing**, and pick up **Route Verte #1 & #2** directly into **Saint-Jean-sur-Richelieu, Québec**!
-- **Curated Lunch Stop (Mile 27):** **Historic Essex, NY** – **The Cup Cafe** on the lakeside ferry porch.
-- **⚡ Accelerate Checkpoint (Mile 55 - Downtown Plattsburgh):**
-  - **Decision Time (Target 2:30 PM):**
-    - *Plan A (Baseline):* Stay in Plattsburgh. Tomorrow you ride 62 miles into Montréal.
-    - *Plan B (The Border Push):* Feeling unstoppable? Ride 24 miles north to Rouses Point, **cross the international border into Canada**, and sleep in Saint-Jean-sur-Richelieu!
-    - *Why this is awesome:* Crossing into Canada on Day 4 leaves you with a **tiny 28-mile flat victory cruise** on Day 5, getting you into Montréal in time for Friday/Thursday brunch!
-- **Overnight Lodging Options:**
-  - **Baseline (Plattsburgh):** *Best Western Plus Plattsburgh* (Phone: 518-561-7000) or *Comfort Inn & Suites Plattsburgh*.
-  - **Accelerated (Saint-Jean-sur-Richelieu, QC):** *Quality Hotel Centre de Congrès* (Phone: 450-515-5755) or *Relais Gouverneur Saint-Jean*.
-- **Bike Shops & Mechanics:**
-  - *Maui North Ski, Bike & Board:* 168 Margaret St, Plattsburgh, NY (Phone: 518-563-7245).
-  - *Performance Bégin:* 470 Rue Saint-Jacques, Saint-Jean-sur-Richelieu, QC (Phone: 450-348-3561).
-- **Bailout:** Amtrak Adirondack at Westport (Mile 15) and Plattsburgh (Mile 55).
+  - NY-9N/22 along Lake Champlain bluffs through Port Henry, Westport, and historic Essex.
+  - Willsboro, Keeseville, and Ausable Chasm into Plattsburgh.
+- **Curated Lunch Stop (Mile 38):** **Historic Essex, NY** – **The Cup Cafe** on the lakeside ferry porch.
+- **⚡ Push Checkpoint (Mile 68 - Downtown Plattsburgh):**
+  - **Decision Time (Target 2:00 PM):**
+    - *Reality Check:* Plattsburgh to Saint-Jean is ~50 miles north (not 24 mi!). A border push creates an extreme 120-mile stage with border clearance before dark. Not recommended in October unless you are a competitive endurance rider.
+- **Overnight Lodging:**
+  - **Baseline (Plattsburgh):** *Best Western Plus Plattsburgh* (Phone: 518-561-7000).
+  - **Pushed (Saint-Jean-sur-Richelieu, QC):** *Quality Hotel Centre de Congrès* (Phone: 450-515-5755).
+- **Bike Shops:** *Maui North Ski, Bike & Board* (Plattsburgh – Phone: 518-563-7245).
+- **Bailout:** Amtrak Adirondack at Westport (Mile 28) and Plattsburgh (Mile 70).
 
 ---
 
 ### Stage 5: Plattsburgh (or Saint-Jean) to Downtown Montréal (The Grand Finish!)
-*Chambly Canal National Historic Site, St. Lawrence Bridge & Old Montréal Arrival*
+*US-9, Rouses Point, QC-223 Richelieu River, Chambly Canal & Old Port Victory*
 
-- **Baseline Distance (from Plattsburgh):** 62.4 miles (100.4 km) &bull; Climbing: +850 ft
-- **Accelerated Distance (from Saint-Jean-sur-Richelieu):** **Only 28.5 miles (45.8 km)! Flat victory lap!**
+- **Baseline Distance (from Plattsburgh):** ~88.0 miles (141.6 km) &bull; **Climbing:** +1,200 ft *(Flat & fast)*
+- **Accelerated Distance (from Saint-Jean):** **~37.0 miles (59.5 km)! Victory Cruise!**
 - **Route Segments:**
-  - If starting in Plattsburgh: North to Rouses Point, cross border at Lacolle, and ride north to Saint-Jean.
-  - From Saint-Jean-sur-Richelieu: Hop on the **Chambly Canal National Historic Site Path** (20 km of car-free crushed stone and paved path alongside canal locks and yachts).
-  - Pass historic Fort Chambly, follow Route Verte through Brossard, and cross the St. Lawrence River via the dedicated multi-use path of the **Samuel De Champlain Bridge** into Île-des-Sœurs.
-  - Connect along the Lachine Canal bike path directly into **Old Montréal (Vieux-Montréal)** and Downtown!
+  - From Plattsburgh: US-9 north through Chazy to Rouses Point, NY (Mile 24).
+  - Cross border onto **QC-223** along the Richelieu River into Saint-Jean.
+  - Join **Chambly Canal Path** (20 km car-free towpath to historic Chambly).
+  - Follow Route Verte through Longueuil / Saint-Lambert.
+  - Cross the St. Lawrence River via dedicated bridge path into Old Montréal (Place Jacques-Cartier)!
 - **Lunch & Celebration:**
-  - If riding baseline: Lunch at **Bistro La Trinquette** (Saint-Jean-sur-Richelieu).
-  - If riding accelerated: Arrive in **Old Montréal by 11:30 AM** for a celebratory French-Canadian lunch terrace on Place Jacques-Cartier or Rue Saint-Paul!
-- **Overnight Lodging in Montréal:**
-  - *Hotel Monville* (1041 Rue de Bleury - Phone: +1 514-379-2000 - certified *Bienvenue Cyclistes*, secure bike lockup).
-  - *Fairmont The Queen Elizabeth* (900 René-Lévesque Blvd W - directly connected to Gare Centrale for Amtrak return).
-  - *Le Petit Hotel* (168 Rue Saint-Paul O - historic boutique in Old Montreal).
-- **Return Travel:**
-  - **Amtrak Adirondack Train #68:** Daily departure from Montréal Central Station (Gare Centrale) directly back to New York Penn Station with roll-on bicycle service ($20 reservation).
-
----
-
-## 4-Day Ultra-Fast Completion Option
-
-If your group executes all four acceleration pushes:
-* **Day 1:** NYC to Kingston (90.8 mi)
-* **Day 2:** Kingston to Saratoga Springs (92.5 mi)
-* **Day 3:** Saratoga Springs to Essex / Plattsburgh (96.2 mi)
-* **Day 4:** Plattsburgh across Canada border into Old Montréal (109.4 mi or 96.4 mi to Saint-Jean + 28 mi morning sprint)!
-* *Result:* Complete the entire NYC-to-Montréal classic in **4 Days flat**!
+  - If baseline: Lunch at **Bistro La Trinquette** (Saint-Jean-sur-Richelieu, Mile 48).
+  - Celebratory finish in Old Montréal on Place Jacques-Cartier!
+- **Overnight Lodging:** *Hotel Monville* (certified *Bienvenue Cyclistes*, secure bike lockup – Phone: +1 514-379-2000) or *Fairmont The Queen Elizabeth*.
+- **Return Travel:** Carry-on roll-on bike service on Amtrak ends at Rouses Point, NY. Either ride 48 mi south to Rouses Point, box bike for bus/cargo, or rent a one-way car to NYC.

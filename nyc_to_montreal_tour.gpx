@@ -4,8 +4,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>6-Day Leisurely Tour (Sunday to Friday)</name>
-    <desc>NYC to Montreal Bicycle Tour Corridor (389 mi • +11950 ft climbing)</desc>
+    <name>6-Day Classic Tour (Sunday to Friday)</name>
+    <desc>NYC to Montreal Bicycle Tour Corridor (6-Day Classic: ~445 mi • +14,500 ft climbing)</desc>
     <time>2026-10-04T12:00:00Z</time>
   </metadata>
   <wpt lat="40.7033" lon="-74.017">
@@ -14,8 +14,8 @@
     <sym>Flag, Green</sym>
   </wpt>
   <wpt lat="45.0064" lon="-73.3670">
-    <name>U.S. / Canada Border (Lacolle)</name>
-    <desc>International Border Crossing (Route 221). Passports required!</desc>
+    <name>U.S. / Canada Border (Rouses Point / QC-223)</name>
+    <desc>International Border Crossing connecting to QC-223 along Richelieu River. Valid Passport, EDL, or NEXUS required! Zero cannabis.</desc>
     <sym>Customs</sym>
   </wpt>
   <wpt lat="45.5017" lon="-73.5673">

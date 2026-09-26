@@ -4,8 +4,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>5-Day Fast Tour (+ Acceleration Push Options)</name>
-    <desc>NYC to Montreal Bicycle Tour Corridor (389 mi • +11950 ft climbing)</desc>
+    <name>5-Day Fast Tour (Honest Edition)</name>
+    <desc>NYC to Montreal Bicycle Tour Corridor (5-Day Fast Tour: ~425 mi • +13,000 ft climbing)</desc>
     <time>2026-10-04T12:00:00Z</time>
   </metadata>
   <wpt lat="40.7033" lon="-74.017">
@@ -14,8 +14,8 @@
     <sym>Flag, Green</sym>
   </wpt>
   <wpt lat="45.0064" lon="-73.3670">
-    <name>U.S. / Canada Border (Lacolle)</name>
-    <desc>International Border Crossing (Route 221). Passports required!</desc>
+    <name>U.S. / Canada Border (Rouses Point / QC-223)</name>
+    <desc>International Border Crossing connecting to QC-223 along Richelieu River. Valid Passport, EDL, or NEXUS required! Zero cannabis.</desc>
     <sym>Customs</sym>
   </wpt>
   <wpt lat="45.5017" lon="-73.5673">
@@ -129,8 +129,8 @@
     <sym>Wrench</sym>
   </wpt>
   <wpt lat="44.6995" lon="-73.4529">
-    <name>⚡ Accelerate: THE BORDER PUSH into Saint-Jean, QC!</name>
-    <desc>At Plattsburgh, if rolling strong by 2:30 PM: ride 24 miles to Rouses Point, CROSS THE CANADIAN BORDER at Lacolle, and sleep in Saint-Jean-sur-Richelieu! This sets up a tiny 28-mile sprint into Montreal on Day 5! - Target: Saint-Jean-sur-Richelieu, QC (Canada) (96.4 mi total)</desc>
+    <name>⚡ Accelerate: Border Push to Saint-Jean, QC</name>
+    <desc>Plattsburgh to Saint-Jean is ~50 miles north across the border via Rouses Point and QC-223 (total ~120 mi day). Only attempt if arriving before 2:00 PM with ample daylight.</desc>
     <sym>Caution</sym>
   </wpt>
   <wpt lat="45.503" lon="-73.555">

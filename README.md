@@ -4,44 +4,52 @@ Comprehensive logistics, cue sheets, and interactive mapping for cycling from Ne
 
 ---
 
-## Two Itinerary Options Included
+## Two Field-Audited Itinerary Options Included
 
-### 1. 6-Day Leisurely Tour (Sunday to Friday)
-* **Average Daily Mileage:** ~64.8 miles (104 km) / day
-* **Pace:** Steady Leisurely (12–14 mph)
+### 1. 6-Day Classic Tour (Sunday to Friday)
+* **Total Distance & Climbing:** ~445 miles (716 km) &bull; +14,500 ft
+* **Average Daily Mileage:** ~74.2 miles (119 km) / day
+* **Pace:** Steady Endurance Touring (12–14 mph)
 * **Schedule:**
-  * Sunday (Day 1): NYC to Brewster / Carmel, NY (54.2 mi)
-  * Monday (Day 2): Brewster to Hudson, NY (64.5 mi)
-  * Tuesday (Day 3): Hudson to Saratoga Springs, NY (65.2 mi)
-  * Wednesday (Day 4): Saratoga Springs to Ticonderoga, NY (61.8 mi)
-  * Thursday (Day 5): Ticonderoga to Plattsburgh, NY (55.2 mi)
-  * Friday (Day 6): Plattsburgh to Montréal, QC (62.4 mi) &bull; *Arrive Friday for the weekend!*
+  * Sunday (Day 1): NYC to Brewster / Carmel, NY (~60 mi • +2,000 ft)
+  * Monday (Day 2): Brewster to Hudson, NY (~78 mi • +3,000 ft)
+  * Tuesday (Day 3): Hudson to Saratoga Springs, NY (~75 mi • +2,000 ft)
+  * Wednesday (Day 4): Saratoga Springs to Ticonderoga, NY (~75 mi • +2,500 ft) &bull; *Skips weak Whitehall lodging directly to full-service Fort Ti!*
+  * Thursday (Day 5): Ticonderoga to Plattsburgh, NY (~70 mi • +4,000 ft) &bull; *Hardest day: rolling Adirondack lake bluffs!*
+  * Friday (Day 6): Plattsburgh to Montréal, QC (~87 mi • +1,200 ft) &bull; *Flat, fast arrival via Chambly Canal into Old Port!*
 
-### 2. 5-Day Fast Tour (+ ⚡ Acceleration Push Options)
-* **Average Daily Mileage:** ~77.8 miles (125 km) / day
-* **Pace:** Fast Endurance (14–17 mph)
-* **Key Feature:** Every stage features a **Mid-Ride Decision Checkpoint** allowing the group to push +16 to +24 miles ahead if feeling good.
-  * Day 1: NYC to Poughkeepsie / Highland (74.8 mi) &bull; *⚡ Push to Kingston (+16 mi &rarr; 90.8 mi)*
-  * Day 2: Poughkeepsie to Albany / Troy (76.5 mi) &bull; *⚡ Push to Saratoga Springs (+16 mi &rarr; 92.5 mi)*
-  * Day 3: Albany / Troy to Ticonderoga (78.2 mi) &bull; *⚡ Push to Essex / Westport (+18 mi &rarr; 96.2 mi)*
-  * Day 4: Ticonderoga to Plattsburgh (72.4 mi) &bull; *⚡ **THE BORDER PUSH!** Cross into Saint-Jean, QC (+24 mi &rarr; 96.4 mi)*
-  * Day 5: Plattsburgh to Montréal (62.4 mi) &bull; *(Or if Day 4 was accelerated: an effortless 28.5 mi victory cruise into Montreal for brunch!)*
-  * *Ultra-Sprint Option:* By triggering all 4 acceleration pushes, fit riders can complete the trip in **4 days flat**!
+### 2. 5-Day Fast Tour (Honest Edition)
+* **Total Distance & Climbing:** ~425 miles (684 km) &bull; +13,000 ft
+* **Average Daily Mileage:** ~85.0 miles (137 km) / day
+* **Pace:** High-Tempo Endurance (14–17 mph) &bull; *For athletic club cyclists on lightweight setups only.*
+* **Schedule:**
+  * Day 1: NYC to Poughkeepsie / Highland (~95 mi • +3,000 ft) &bull; *⚡ Push to Kingston (+30 mi &rarr; 125 mi)*
+  * Day 2: Poughkeepsie to Troy via AHET (~85 mi • +2,500 ft) &bull; *⚡ Push to Saratoga Springs (+20 mi &rarr; 105 mi)*
+  * Day 3: Troy to Ticonderoga (~87 mi • +2,500 ft) &bull; *⚡ Push to Essex / Westport (+18 mi &rarr; 105 mi)*
+  * Day 4: Ticonderoga to Plattsburgh (~70 mi • +4,000 ft) &bull; *⚡ Push to Saint-Jean, QC (+50 mi &rarr; 120 mi extreme push)*
+  * Day 5: Plattsburgh to Montréal (~88 mi • +1,200 ft) &bull; *(Or 37 mi victory cruise if Day 4 pushed to St-Jean)*
+
+### 3. Alternative Variants
+* **7-Day Gentler Option:** Split Day 2 at Rhinebeck (~60 mi) or split Day 6 at Saint-Jean-sur-Richelieu (~50 mi) to fit comfortably within October daylight (~11h).
+* **Vermont Upgrade Variant:** At Essex, NY (Day 5), take the Charlotte–Essex Ferry into Vermont, ride Burlington, and traverse the famous Island Line railway causeway and Champlain Islands before rejoining the main route at Rouses Point, NY.
+
+---
+
+## Critical Rail & Border Notices
+
+* **Amtrak Adirondack Bike Service Ends at Rouses Point, NY:** Carry-on bicycle service is available **only between NYC and Rouses Point, NY**. You **cannot** roll an unboxed bicycle onto the train at Montreal Gare Centrale. Return options: ride 48 mi south to Rouses Point, box the bike for air/bus, or rent a one-way car.
+* **Border ID:** Valid Passport, Enhanced Driver's License (EDL), or NEXUS. (No 6-month passport validity required for Canada).
+* **Zero Cannabis:** Transporting cannabis across the international border in either direction is illegal under federal law.
+* **Bear Spray:** Labeled animal deterrent is allowed; human defense pepper spray is strictly prohibited under the Canadian Criminal Code.
 
 ---
 
 ## Deliverables in This Project
 
-1. **`nyc_to_montreal_bike_tour_guide.md`** &ndash; Master Google Doc guide containing both the 6-day and 5-day itineraries, hotels, phone numbers, bike shops, and contingencies.
-2. **`nyc_to_montreal_5_day_fast_tour.md`** &ndash; Dedicated Google Doc guide focused specifically on the 5-Day Fast Tour and acceleration checkpoints.
-3. **`index.html`** &ndash; Interactive Web Dashboard with an instant toggle between the **6-Day** and **5-Day Fast** schedules, interactive Leaflet/Google Maps, ⚡ Accelerate markers, and turn-by-turn links.
-4. **`nyc_to_montreal_tour.kml`** &ndash; KML file for the 6-Day tour ready to import into [Google My Maps](https://mymaps.google.com).
-5. **`nyc_to_montreal_5day_tour.kml`** &ndash; KML file for the 5-Day fast tour ready to import into Google My Maps.
-6. **`app.js` & `route_data.js`** &ndash; Full client-side application logic and coordinate datasets.
-
----
-
-## How to Distribute
-
-* **Google Docs:** Copy either `.md` file directly into a new [Google Doc](https://docs.new) or click **"📋 Copy for Google Docs"** in `index.html`.
-* **Google Maps on Mobile:** Import either `.kml` file into [Google My Maps](https://mymaps.google.com), click **Share**, and paste the link in your Google Doc so riders can view it natively on their smartphones.
+1. **`index.html`** &ndash; Interactive Web Dashboard with 3-mode switcher (6-Day, 5-Day, Compare Routes), live Open-Meteo weather tracking, risk scores, and turn-by-turn links.
+2. **`nyc_to_montreal_bike_tour_guide.md`** &ndash; Master Google Doc guide with revised 6-day itinerary, turn cues, hotels, bike shops, and contingencies.
+3. **`nyc_to_montreal_5_day_fast_tour.md`** &ndash; Standalone guide for the 5-Day Fast Tour and acceleration checkpoints.
+4. **`nyc_to_montreal_tour.gpx` & `nyc_to_montreal_5day_tour.gpx`** &ndash; Compliant GPX 1.1 tracks + waypoints for Garmin Edge, Wahoo ELEMNT, and Hammerhead.
+5. **`nyc_to_montreal_tour.kml` & `nyc_to_montreal_5day_tour.kml`** &ndash; KML files for Google My Maps.
+6. **`jersey_cue_card.html`** &ndash; Standalone 2-sided printable vintage Brevet cue card sized for rear jersey pockets (printable at `/jersey_cue_card.html`).
+7. **`app.js` & `route_data.js`** &ndash; Full client-side application logic and coordinate datasets.

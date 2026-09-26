@@ -6,7 +6,7 @@
   <Folder>
     <name>Sunday • Day 1: Sunday • Day 1: NYC to Brewster / Carmel</name>
     <Placemark>
-      <name>Sunday Route Track (54.2 mi)</name>
+      <name>Sunday Route Track (60.0 mi)</name>
       <description>98% Paved Traffic-Free Rail Trail (Hudson River Greenway, South/North County, Putnam)</description>
       <LineString>
         <tessellate>1</tessellate>
@@ -56,7 +56,7 @@
   <Folder>
     <name>Monday • Day 2: Monday • Day 2: Brewster to Hudson, NY</name>
     <Placemark>
-      <name>Monday Route Track (64.5 mi)</name>
+      <name>Monday Route Track (78.0 mi)</name>
       <description>70% Paved Rail Trail (Maybrook &amp; Dutchess), 30% Scenic Low-Traffic Roads (Route 9G / River Rd)</description>
       <LineString>
         <tessellate>1</tessellate>
@@ -112,7 +112,7 @@
   <Folder>
     <name>Tuesday • Day 3: Tuesday • Day 3: Hudson to Saratoga Springs, NY</name>
     <Placemark>
-      <name>Tuesday Route Track (65.2 mi)</name>
+      <name>Tuesday Route Track (75.0 mi)</name>
       <description>65% Paved Rail Trails (AHET &amp; Zim Smith), 35% Canal Roads &amp; Bike Lanes</description>
       <LineString>
         <tessellate>1</tessellate>
@@ -171,7 +171,7 @@
   <Folder>
     <name>Wednesday • Day 4: Wednesday • Day 4: Saratoga Springs to Ticonderoga / Port Henry, NY</name>
     <Placemark>
-      <name>Wednesday Route Track (61.8 mi)</name>
+      <name>Wednesday Route Track (75.0 mi)</name>
       <description>75% Scenic Low-Traffic State Highways (Route 4 &amp; NY-22), 25% Canal Path</description>
       <LineString>
         <tessellate>1</tessellate>
@@ -221,7 +221,7 @@
   <Folder>
     <name>Thursday • Day 5: Thursday • Day 5: Ticonderoga / Port Henry to Plattsburgh, NY</name>
     <Placemark>
-      <name>Thursday Route Track (55.2 mi)</name>
+      <name>Thursday Route Track (70.0 mi)</name>
       <description>80% Scenic 2-Lane Highway (NY-9N / NY-22) with Lake Champlain Views, 20% Local Bikeways</description>
       <LineString>
         <tessellate>1</tessellate>
@@ -266,7 +266,7 @@
   <Folder>
     <name>Friday • Day 6: Friday • Day 6: Plattsburgh to Montréal, QC (Canada)</name>
     <Placemark>
-      <name>Friday Route Track (62.4 mi)</name>
+      <name>Friday Route Track (87.0 mi)</name>
       <description>65% Route Verte Traffic-Free Bike Paths (Chambly Canal &amp; Bridges), 35% Flat Country Roads</description>
       <LineString>
         <tessellate>1</tessellate>

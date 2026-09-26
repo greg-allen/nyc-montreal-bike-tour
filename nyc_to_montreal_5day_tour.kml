@@ -142,8 +142,8 @@
       </LineString>
     </Placemark>
     <Placemark>
-      <name>⚡ Accelerate Option: THE BORDER PUSH into Saint-Jean, QC!</name>
-      <description>At Plattsburgh, if rolling strong by 2:30 PM: ride 24 miles to Rouses Point, CROSS THE CANADIAN BORDER at Lacolle, and sleep in Saint-Jean-sur-Richelieu! This sets up a tiny 28-mile sprint into Montreal on Day 5! (Target: Saint-Jean-sur-Richelieu, QC (Canada))</description>
+      <name>⚡ Accelerate Option: Border Push to Saint-Jean, QC</name>
+      <description>Plattsburgh to Saint-Jean is ~50 miles north across the border via Rouses Point and QC-223 (total ~120 mi day). Only attempt if arriving before 2:00 PM with ample daylight. (Target: Saint-Jean-sur-Richelieu, QC)</description>
       <Point><coordinates>-73.4529,44.6995,0</coordinates></Point>
     </Placemark>
     <Placemark>
