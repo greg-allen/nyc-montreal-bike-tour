@@ -22,6 +22,9 @@ let compareLayers = {
   markers: null
 };
 
+let vermontLayerGroup = null;
+let isVermontOverlayActive = false;
+
 let googleDayPolylines = [];
 let googleMarkers = [];
 let googleBicyclingLayer = null;
@@ -256,6 +259,13 @@ function initLeafletMap() {
 
   dayLayers = {};
   Object.values(poiLayers).forEach(layer => layer.clearLayers());
+  vermontLayerGroup = null;
+  isVermontOverlayActive = false;
+  const vtResetBtn = document.getElementById('btn-toggle-vermont');
+  if (vtResetBtn) {
+    vtResetBtn.className = "px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-all flex items-center gap-1.5 shadow-2xs";
+    vtResetBtn.innerHTML = '<span>🌲 Vermont Upgrade</span><span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-extrabold uppercase">Overlay</span>';
+  }
 
   currentTour.days.forEach((day, index) => {
     const color = DAY_COLORS[index % DAY_COLORS.length];
@@ -451,6 +461,14 @@ function renderCompareMap() {
     lunch: L.layerGroup(),
     bikeShops: L.layerGroup()
   };
+
+  vermontLayerGroup = null;
+  isVermontOverlayActive = false;
+  const vtCompBtn = document.getElementById('btn-toggle-vermont');
+  if (vtCompBtn) {
+    vtCompBtn.className = "px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-all flex items-center gap-1.5 shadow-2xs";
+    vtCompBtn.innerHTML = '<span>🌲 Vermont Upgrade</span><span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-extrabold uppercase">Overlay</span>';
+  }
 
   // 1. Add 6-Day Tour Tracks & Overnight Pins (Solid Royal Blue)
   TOUR_DATA_6DAY.days.forEach(day => {
@@ -1004,6 +1022,220 @@ function setupFilterControls() {
       };
     }
   });
+}
+
+/* ============================================================
+   VERMONT CHAMPLAIN ISLANDS UPGRADE OVERLAY
+============================================================ */
+function toggleVermontOverlay() {
+  const btn = document.getElementById('btn-toggle-vermont');
+
+  if (isVermontOverlayActive) {
+    if (leafletMap && vermontLayerGroup) {
+      leafletMap.removeLayer(vermontLayerGroup);
+    }
+    vermontLayerGroup = null;
+    isVermontOverlayActive = false;
+
+    if (btn) {
+      btn.className = "px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-all flex items-center gap-1.5 shadow-2xs";
+      btn.innerHTML = '<span>🌲 Vermont Upgrade</span><span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-extrabold uppercase">Overlay</span>';
+    }
+    updateMapBadge(isCompareMode ? "Comparing Tours" : "Free Map (Esri Streets / Zero Key)");
+    return;
+  }
+
+  if (!leafletMap) {
+    alert("Please switch to the Free Leaflet map to view the Vermont route overlay.");
+    return;
+  }
+
+  if (typeof VERMONT_UPGRADE_DATA === 'undefined') {
+    console.error("VERMONT_UPGRADE_DATA not found in route_data.js");
+    return;
+  }
+
+  vermontLayerGroup = L.layerGroup();
+
+  // 1. Stage VT-1 track (Ticonderoga to Essex, cyan)
+  const vt1 = VERMONT_UPGRADE_DATA.stages[0];
+  const polyVt1 = L.polyline(vt1.track, {
+    color: '#06b6d4', // Cyan
+    weight: 5.5,
+    opacity: 0.95,
+    lineCap: 'round',
+    lineJoin: 'round'
+  }).bindPopup(`
+    <div class="p-2">
+      <span class="inline-block px-2 py-0.5 text-xs font-bold bg-cyan-100 text-cyan-800 rounded mb-1">🌲 Vermont Upgrade • Stage VT-1</span>
+      <h4 class="font-bold text-gray-900">${vt1.dayName}</h4>
+      <span class="text-xs font-semibold text-cyan-700">${vt1.distanceMiles} mi • +${vt1.elevationFt} ft</span>
+      <p class="text-xs text-gray-600 mt-1">${vt1.surface}</p>
+      <p class="text-xs text-slate-500 mt-1">Cross Lake Champlain via the historic 20-minute Essex-Charlotte Ferry directly into Vermont!</p>
+    </div>
+  `);
+  vermontLayerGroup.addLayer(polyVt1);
+
+  // 2. Essex-Charlotte Ferry dotted line across Lake Champlain
+  const ferryLine = L.polyline([
+    [44.3105, -73.3540], // Essex Slip
+    [44.3130, -73.2840]  // Charlotte Slip
+  ], {
+    color: '#0284c7', // Sky Blue
+    weight: 4,
+    dashArray: '6, 8',
+    opacity: 0.9
+  }).bindPopup(`
+    <div class="p-2">
+      <span class="inline-block px-2 py-0.5 text-xs font-bold bg-sky-100 text-sky-800 rounded mb-1">⛴️ Ferry Crossing</span>
+      <h4 class="font-bold text-gray-900">Essex, NY ➔ Charlotte, VT Ferry</h4>
+      <p class="text-xs text-gray-700 mt-1"><strong>Duration:</strong> 20 minutes across Lake Champlain</p>
+      <p class="text-xs text-gray-700"><strong>Schedule:</strong> Daily hourly departures (6:00 AM – 9:00 PM)</p>
+      <p class="text-xs font-bold text-sky-800"><strong>Fare:</strong> ~$6.25 per cyclist (cash/card at toll booth)</p>
+    </div>
+  `);
+  vermontLayerGroup.addLayer(ferryLine);
+
+  // 3. Stage VT-2 track (Burlington -> Island Line Causeway -> Champlain Islands -> Saint-Jean, emerald)
+  const vt2 = VERMONT_UPGRADE_DATA.stages[1];
+  const polyVt2 = L.polyline(vt2.track, {
+    color: '#10b981', // Emerald
+    weight: 5.5,
+    opacity: 0.95,
+    lineCap: 'round',
+    lineJoin: 'round'
+  }).bindPopup(`
+    <div class="p-2">
+      <span class="inline-block px-2 py-0.5 text-xs font-bold bg-emerald-100 text-emerald-800 rounded mb-1">🌲 Vermont Upgrade • Stage VT-2</span>
+      <h4 class="font-bold text-gray-900">${vt2.dayName}</h4>
+      <span class="text-xs font-semibold text-emerald-700">${vt2.distanceMiles} mi • +${vt2.elevationFt} ft</span>
+      <p class="text-xs text-gray-600 mt-1">${vt2.surface}</p>
+      <p class="text-xs text-slate-500 mt-1">Traverses the 3-mile Colchester Causeway, Island Line Bike Ferry, and scenic Champlain Islands into Quebec!</p>
+    </div>
+  `);
+  vermontLayerGroup.addLayer(polyVt2);
+
+  // 4. Curated Vermont POI Pins
+  const vtPins = [
+    {
+      coords: [44.3105, -73.3540],
+      icon: '⛴️',
+      bg: '#0284c7',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-sky-100 text-sky-800 rounded mb-1">⛴️ Lake Champlain Ferry</span>
+          <h4 class="font-bold text-gray-900">Essex, NY Ferry Dock</h4>
+          <p class="text-xs text-gray-600">Board ferry to Charlotte, VT ($6.25/cyclist, runs hourly). Lunch at The Cup Cafe next door.</p>
+        </div>
+      `
+    },
+    {
+      coords: [44.4795, -73.2160],
+      icon: '🏨',
+      bg: '#4f46e5',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-indigo-100 text-indigo-800 rounded mb-1">🏨 Recommended Overnight</span>
+          <h4 class="font-bold text-gray-900">Hotel Vermont</h4>
+          <p class="text-xs text-gray-600">41 Cherry St, Burlington &bull; (802) 651-0080</p>
+          <p class="text-xs text-gray-700 mt-1">Boutique hotel with secure indoor bicycle room, craft cocktail lounge, right off waterfront bike path.</p>
+        </div>
+      `
+    },
+    {
+      coords: [44.4770, -73.2205],
+      icon: '🍻',
+      bg: '#f59e0b',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-amber-100 text-amber-900 rounded mb-1">🍻 Craft Brewery</span>
+          <h4 class="font-bold text-gray-900">Foam Brewers</h4>
+          <p class="text-xs text-gray-600">112 Lake St, Burlington waterfront</p>
+          <p class="text-xs text-gray-700 mt-1">World-class hazy IPAs, charcuterie, and patio sunset over Lake Champlain.</p>
+        </div>
+      `
+    },
+    {
+      coords: [44.5580, -73.2420],
+      icon: '🌊',
+      bg: '#0891b2',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-cyan-100 text-cyan-800 rounded mb-1">🌊 Island Line Trail</span>
+          <h4 class="font-bold text-gray-900">Colchester Causeway</h4>
+          <p class="text-xs text-gray-700">3-mile historic marble railroad embankment extending straight into Lake Champlain. 360° water panoramas.</p>
+        </div>
+      `
+    },
+    {
+      coords: [44.5880, -73.2890],
+      icon: '⛴️',
+      bg: '#059669',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-emerald-100 text-emerald-800 rounded mb-1">⛴️ Bike Ferry ("The Cut")</span>
+          <h4 class="font-bold text-gray-900">Local Motion Bike Ferry</h4>
+          <p class="text-xs text-gray-700">Bridges 200-ft gap between Colchester and South Hero. Fri–Sun through mid-October. <em>(Fall bypass: Route 127 + US-2 Sandbar causeway +14 mi)</em>.</p>
+        </div>
+      `
+    },
+    {
+      coords: [44.8140, -73.2890],
+      icon: '🥪',
+      bg: '#ea580c',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-orange-100 text-orange-800 rounded mb-1">🥪 Lunch Stop</span>
+          <h4 class="font-bold text-gray-900">Hero's Welcome General Store</h4>
+          <p class="text-xs text-gray-600">3537 US-2, North Hero, VT (Mile 32)</p>
+          <p class="text-xs text-gray-700 mt-1">Lakeside deli sandwiches, fresh cider donuts, hot coffee on the dock.</p>
+        </div>
+      `
+    },
+    {
+      coords: [45.0130, -73.3010],
+      icon: '🇨🇦',
+      bg: '#16a34a',
+      html: `
+        <div class="p-2">
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-emerald-100 text-emerald-800 rounded mb-1">🇨🇦 Canada Customs</span>
+          <h4 class="font-bold text-gray-900">Noyan / Clarenceville (QC-225)</h4>
+          <p class="text-xs text-gray-700">Border station directly north of Alburgh, VT. Low vehicle traffic, roll up to booth. Passports required!</p>
+        </div>
+      `
+    }
+  ];
+
+  vtPins.forEach(pin => {
+    const pinIcon = L.divIcon({
+      className: 'custom-pin',
+      html: `<div style="background:${pin.bg}; width:30px; height:30px; border-radius:50%; border:2px solid white; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 6px rgba(0,0,0,0.35); font-size:15px;">${pin.icon}</div>`,
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    });
+    const marker = L.marker(pin.coords, { icon: pinIcon }).bindPopup(pin.html);
+    vermontLayerGroup.addLayer(marker);
+  });
+
+  vermontLayerGroup.addTo(leafletMap);
+  isVermontOverlayActive = true;
+
+  if (btn) {
+    btn.className = "px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-600 text-white border border-emerald-700 transition-all flex items-center gap-1.5 shadow-md ring-2 ring-emerald-400";
+    btn.innerHTML = '<span>🌲 Vermont Overlay Active</span><span class="text-[10px] bg-white text-emerald-800 px-1.5 py-0.5 rounded font-extrabold uppercase">ON</span>';
+  }
+
+  // Fly map to show the Vermont variant corridor
+  const vtPoints = [
+    [43.8478, -73.4257], // Ticonderoga
+    [44.3105, -73.3540], // Essex
+    [44.4780, -73.2180], // Burlington
+    [44.5880, -73.2890], // Causeway
+    [44.8140, -73.2890], // North Hero
+    [45.3056, -73.2533]  // Saint-Jean
+  ];
+  leafletMap.flyToBounds(vtPoints, { padding: [40, 40], duration: 1.2 });
+  updateMapBadge("🌲 Vermont Upgrade Active (Cyan & Emerald Overlay)");
 }
 
 /* ============================================================

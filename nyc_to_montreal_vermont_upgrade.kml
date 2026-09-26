@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Vermont Champlain Islands Upgrade Variant (NYC to Montreal)</name>
+  <description>Charlotte–Essex Ferry, Burlington Greenway, Colchester Causeway &amp; Champlain Islands into Quebec</description>
+  <Folder>
+    <name>VT Stage 1: Ticonderoga, NY ➔ Charlotte Ferry ➔ Burlington, VT</name>
+    <Placemark>
+      <name>VT Stage 1 Track (53.0 mi)</name>
+      <description>NY-22/9N past Westport to Historic Essex, Ferry to Charlotte VT, and Burlington Greenway</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.4257,43.8478,0
+          -73.4607,44.0539,0
+          -73.4357,44.1834,0
+          -73.3540,44.3105,0
+          -73.2840,44.3130,0
+          -73.2280,44.3780,0
+          -73.2180,44.4780,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>⛴️ Charlotte–Essex Ferry (Lake Champlain Crossing)</name>
+      <description>Lake Champlain Transportation Co. | Runs hourly, 20 min crossing, ~$6.25 per cyclist.</description>
+      <Point><coordinates>-73.3540,44.3105,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Hotel Vermont (Burlington)</name>
+      <description>41 Cherry St, Burlington, VT | (802) 651-0080 | Dedicated indoor bike storage, boutique lodging, Church St Marketplace.</description>
+      <Point><coordinates>-73.2160,44.4795,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍺 Foam Brewers (Burlington Waterfront)</name>
+      <description>112 Lake St, Burlington, VT | World-class craft beers and local cheeses on the bike path.</description>
+      <Point><coordinates>-73.2205,44.4785,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>VT Stage 2: Burlington, VT ➔ Island Line Causeway ➔ Champlain Islands ➔ Saint-Jean, QC</name>
+    <Placemark>
+      <name>VT Stage 2 Track (58.0 mi)</name>
+      <description>Colchester Causeway, Local Motion Bike Ferry, South Hero, Grand Isle, North Hero, Noyan Border</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.2180,44.4780,0
+          -73.2420,44.5580,0
+          -73.2890,44.5880,0
+          -73.3030,44.6280,0
+          -73.2950,44.7180,0
+          -73.2890,44.8140,0
+          -73.3000,44.9780,0
+          -73.3010,45.0130,0
+          -73.2533,45.3056,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🚴 Colchester Causeway (Island Line Trail)</name>
+      <description>Spectacular 3-mile historic marble railway causeway extending into the open lake!</description>
+      <Point><coordinates>-73.2420,44.5580,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>⛴️ The Cut: Local Motion Bike Ferry</name>
+      <description>200-ft gap in causeway connecting to South Hero. (Fall bypass via Sandbar causeway if closed).</description>
+      <Point><coordinates>-73.2890,44.5880,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Hero's Welcome General Store &amp; Cafe</name>
+      <description>3537 US-2, North Hero, VT | Iconic island store on lakeside dock, deli sandwiches, apple cider donuts. (Mile 32)</description>
+      <Point><coordinates>-73.2890,44.8140,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛂 Canadian Border Crossing (Alburgh / Noyan ➔ QC-223)</name>
+      <description>International border crossing into Quebec connecting to the Richelieu River route.</description>
+      <Point><coordinates>-73.3010,45.0130,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Quality Hotel Centre de Congrès (Saint-Jean-sur-Richelieu)</name>
+      <description>725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC | +1 (450) 515-5755</description>
+      <Point><coordinates>-73.2640,45.3120,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

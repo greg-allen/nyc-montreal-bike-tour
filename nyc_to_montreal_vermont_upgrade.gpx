@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="NYC to Montreal Bike Tour Guide - https://github.com/greg-allen/mtl_bike"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Vermont Champlain Islands Upgrade Variant (NYC to Montreal)</name>
+    <desc>NYC to Montreal Bicycle Tour with Vermont Upgrade (Essex Ferry, Burlington Greenway, Colchester Causeway &amp; Champlain Islands)</desc>
+    <time>2026-10-04T12:00:00Z</time>
+  </metadata>
+  <wpt lat="40.7033" lon="-74.017">
+    <name>Grand Depart - Battery Park, NYC</name>
+    <desc>Official Tour Starting Point at Battery Park Hudson River Greenway</desc>
+    <sym>Flag, Green</sym>
+  </wpt>
+  <wpt lat="44.3105" lon="-73.3540">
+    <name>Ferry Departure: Essex Ferry Slip, NY</name>
+    <desc>Lake Champlain Transportation Co. Ferry to Charlotte, VT ($6.25 per cyclist, 20 min crossing)</desc>
+    <sym>Ferry</sym>
+  </wpt>
+  <wpt lat="44.3130" lon="-73.2840">
+    <name>Ferry Arrival: Charlotte, VT Ferry Slip</name>
+    <desc>Landing in Vermont! Follow quiet country lanes north into Shelburne and Burlington.</desc>
+    <sym>Ferry</sym>
+  </wpt>
+  <wpt lat="44.4795" lon="-73.2160">
+    <name>Hotel: Hotel Vermont (Burlington)</name>
+    <desc>41 Cherry St, Burlington, VT - Phone: (802) 651-0080 - Premier boutique hotel, secure indoor bike room, craft cocktail bar.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="44.4800" lon="-73.2190">
+    <name>Hotel: Courtyard Burlington Harbor</name>
+    <desc>25 Cherry St, Burlington, VT - Phone: (802) 864-4700 - Overlooking Lake Champlain and Burlington Greenway.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="44.4785" lon="-73.2205">
+    <name>Highlight: Foam Brewers &amp; Burlington Waterfront</name>
+    <desc>112 Lake St, Burlington, VT - Premier craft brewery right on the Burlington Greenway bike path.</desc>
+    <sym>Bar</sym>
+  </wpt>
+  <wpt lat="44.5580" lon="-73.2420">
+    <name>Colchester Causeway (Island Line Trail)</name>
+    <desc>Spectacular 3-mile historic marble railway causeway extending into the open waters of Lake Champlain!</desc>
+    <sym>Trailhead</sym>
+  </wpt>
+  <wpt lat="44.5880" lon="-73.2890">
+    <name>The Cut: Local Motion Bike Ferry</name>
+    <desc>200-ft gap in the causeway bridged by the Local Motion Bike Ferry (operates Fri-Sun through mid-October).</desc>
+    <sym>Ferry</sym>
+  </wpt>
+  <wpt lat="44.8140" lon="-73.2890">
+    <name>Lunch: Hero's Welcome General Store &amp; Cafe (North Hero)</name>
+    <desc>3537 US-2, North Hero, VT - Iconic island general store on lakeside dock, artisan deli sandwiches, apple cider donuts.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="45.0130" lon="-73.3010">
+    <name>U.S. / Canada Border (Alburgh, VT ➔ Noyan, QC)</name>
+    <desc>International Border Crossing connecting to QC-225 and QC-223 along the Richelieu River. Valid Passport/EDL required!</desc>
+    <sym>Customs</sym>
+  </wpt>
+  <wpt lat="45.3120" lon="-73.2640">
+    <name>Hotel: Quality Hotel Centre de Congrès (Saint-Jean-sur-Richelieu)</name>
+    <desc>725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC - Phone: +1 (450) 515-5755</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="45.5017" lon="-73.5673">
+    <name>Grand Finish - Place Jacques-Cartier, Old Montreal</name>
+    <desc>Official Tour Finish via Chambly Canal towpath and St. Lawrence bridge pathway!</desc>
+    <sym>Flag, Red</sym>
+  </wpt>
+  <trk>
+    <name>VT Stage 1: Ticonderoga, NY ➔ Charlotte Ferry ➔ Burlington, VT</name>
+    <desc>53.0 mi (85.3 km) • +2,200 ft • NY-22/9N to Essex, Charlotte Ferry, Shelburne byways to Burlington Waterfront</desc>
+    <trkseg>
+      <trkpt lat="43.8478" lon="-73.4257"></trkpt>
+      <trkpt lat="44.0539" lon="-73.4607"></trkpt>
+      <trkpt lat="44.1834" lon="-73.4357"></trkpt>
+      <trkpt lat="44.3105" lon="-73.3540"></trkpt>
+      <trkpt lat="44.3130" lon="-73.2840"></trkpt>
+      <trkpt lat="44.3780" lon="-73.2280"></trkpt>
+      <trkpt lat="44.4780" lon="-73.2180"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>VT Stage 2: Burlington, VT ➔ Island Line Causeway ➔ Champlain Islands ➔ Saint-Jean, QC</name>
+    <desc>58.0 mi (93.3 km) • +900 ft • Island Line Colchester Causeway, South Hero, Grand Isle, North Hero to Quebec</desc>
+    <trkseg>
+      <trkpt lat="44.4780" lon="-73.2180"></trkpt>
+      <trkpt lat="44.5580" lon="-73.2420"></trkpt>
+      <trkpt lat="44.5880" lon="-73.2890"></trkpt>
+      <trkpt lat="44.6280" lon="-73.3030"></trkpt>
+      <trkpt lat="44.7180" lon="-73.2950"></trkpt>
+      <trkpt lat="44.8140" lon="-73.2890"></trkpt>
+      <trkpt lat="44.9780" lon="-73.3000"></trkpt>
+      <trkpt lat="45.0130" lon="-73.3010"></trkpt>
+      <trkpt lat="45.3056" lon="-73.2533"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>VT Stage 3: Saint-Jean-sur-Richelieu ➔ Downtown Montreal (Victory Finish)</name>
+    <desc>37.0 mi (59.5 km) • +600 ft • Chambly Canal towpath to Fort Chambly, Longueuil greenway, bridge into Old Port</desc>
+    <trkseg>
+      <trkpt lat="45.3056" lon="-73.2533"></trkpt>
+      <trkpt lat="45.3850" lon="-73.2680"></trkpt>
+      <trkpt lat="45.4497" lon="-73.2872"></trkpt>
+      <trkpt lat="45.4593" lon="-73.5134"></trkpt>
+      <trkpt lat="45.4750" lon="-73.5450"></trkpt>
+      <trkpt lat="45.5017" lon="-73.5673"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

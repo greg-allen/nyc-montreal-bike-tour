@@ -738,9 +738,103 @@ const TOUR_VARIANTS = {
   },
   vermontUpgrade: {
     title: "Vermont Champlain Islands Upgrade Variant",
-    description: "At Essex, NY (Day 5), take the Charlotte–Essex Ferry across Lake Champlain into Vermont. Ride north through Burlington, traverse the spectacular Island Line Trail (former railway causeway extending into the open lake), and pedal through the Champlain Islands (Grand Isle, North Hero, Isle La Motte) before crossing back into Rouses Point, NY to rejoin the main route into Quebec. Widely considered the most scenic riding in the entire Northeast.",
-    advisory: "Check the Island Line Bike Ferry schedule (Local Motion) before departure — service typically winds down around Columbus Day / mid-October."
+    description: "At Essex, NY (Day 5), board the Lake Champlain ferry to Charlotte, VT. Ride north through Burlington, cross the spectacular 3-mile Island Line Colchester Causeway into the open lake, and pedal through the Champlain Islands (Grand Isle, North Hero) before crossing back into Rouses Point, NY or directly into Quebec at Noyan. Widely considered the most scenic cycling in the entire Northeast.",
+    advisory: "Check the Island Line Bike Ferry schedule (Local Motion) before departure — service typically runs through Indigenous Peoples' Day / Columbus Day weekend (mid-October). Paved road bypass via Sandbar State Park is available if the bike ferry is closed.",
+    ferry: {
+      route: "Essex, NY ➔ Charlotte, VT",
+      operator: "Lake Champlain Transportation Co.",
+      duration: "20 minutes",
+      schedule: "Runs approximately every hour (daily)",
+      fare: "~$6.25 per cyclist",
+      notes: "Walk-on bicycle boarding at Essex Ferry Dock. Unbelievable Adirondack & Green Mountain views."
+    },
+    bikeFerry: {
+      location: "Colchester Causeway 'The Cut'",
+      operator: "Local Motion",
+      schedule: "Runs Friday–Sunday & holidays through mid-October",
+      bypass: "Paved route via Colchester Route 127 and US-2 across Sandbar causeway (+14 mi)."
+    }
   }
+};
+
+const VERMONT_UPGRADE_DATA = {
+  id: "vermont_upgrade",
+  title: "Vermont Champlain Islands Upgrade Variant",
+  summary: "At Historic Essex, NY, board the Lake Champlain ferry to Charlotte, VT. Ride north through Burlington, cross the spectacular 3-mile Island Line Colchester Causeway into the open lake, and pedal through the Champlain Islands to Quebec.",
+  ferry: {
+    name: "Lake Champlain Transportation Co. (Essex, NY ➔ Charlotte, VT)",
+    crossingTime: "20 minutes",
+    schedule: "Daily, approximately every hour (6:00 AM to 9:00 PM)",
+    fare: "~$6.25 per cyclist (cash/card at toll booth, no advance booking required)",
+    location: "Essex, NY Ferry Slip (Main St)",
+    notes: "Walk bike onto open car deck. Panoramic 360° views of Adirondack High Peaks and Vermont Green Mountains."
+  },
+  bikeFerry: {
+    name: "Local Motion Island Line Bike Ferry (Colchester Causeway)",
+    crossing: "200-ft gap in historic marble causeway connecting Colchester to South Hero",
+    fare: "Free (donations encouraged)",
+    schedule: "Runs Friday–Sunday & holidays through Indigenous Peoples' Day / Columbus Day (mid-October)",
+    fallBypass: "If closed: Paved road bypass via Colchester (Route 127) and US-2 across Sandbar State Park causeway into South Hero (+14 miles)."
+  },
+  stages: [
+    {
+      stageId: "VT-1",
+      dayName: "Alternative Day 5: Ticonderoga ➔ Charlotte Ferry ➔ Burlington, VT",
+      distanceMiles: 53.0,
+      elevationFt: 2200,
+      surface: "75% Scenic 2-lane highway with lake views, 5% ferry crossing, 20% paved multi-use trail into Burlington",
+      startCoords: [43.8478, -73.4257],
+      endCoords: [44.4780, -73.2180],
+      track: [
+        [43.8478, -73.4257], [44.0539, -73.4607], [44.1834, -73.4357], [44.3105, -73.3540],
+        [44.3130, -73.2840], [44.3780, -73.2280], [44.4780, -73.2180]
+      ],
+      lunch: {
+        name: "The Cup Cafe / Essex Ice Cream Cafe (Essex, NY)",
+        location: "Main St, Essex, NY",
+        mile: 38,
+        notes: "Dine on the porch overlooking the ferry slip right before boarding for Vermont!",
+        coords: [44.3105, -73.3540],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=The+Cup+Cafe+Essex+NY"
+      },
+      hotels: [
+        { name: "Hotel Vermont", address: "41 Cherry St, Burlington, VT", phone: "(802) 651-0080", notes: "Premier independent boutique hotel, dedicated indoor bike room, craft cocktail bar.", coords: [44.4795, -73.2160], googleUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Vermont+Burlington+VT" },
+        { name: "Courtyard Burlington Harbor", address: "25 Cherry St, Burlington, VT", phone: "(802) 864-4700", notes: "Overlooking Lake Champlain and Burlington Greenway.", coords: [44.4800, -73.2190], googleUrl: "https://www.google.com/maps/search/?api=1&query=Courtyard+Burlington+Harbor" }
+      ],
+      bikeShops: [
+        { name: "Old Spokes Home", address: "331 N Winooski Ave, Burlington, VT", phone: "(802) 863-4475", notes: "Legendary community bike shop, museum & touring specialist.", coords: [44.4880, -73.2110], googleUrl: "https://www.google.com/maps/search/?api=1&query=Old+Spokes+Home+Burlington+VT" },
+        { name: "North Star Sports", address: "100 Main St, Burlington, VT", phone: "(802) 863-3832", notes: "Downtown cycling shop near waterfront.", coords: [44.4760, -73.2170], googleUrl: "https://www.google.com/maps/search/?api=1&query=North+Star+Sports+Burlington+VT" }
+      ]
+    },
+    {
+      stageId: "VT-2",
+      dayName: "Alternative Day 6: Burlington ➔ Island Line Causeway ➔ Champlain Islands ➔ Saint-Jean, QC",
+      distanceMiles: 58.0,
+      elevationFt: 900,
+      surface: "35% Paved bike path (Island Line), 10% crushed limestone causeway into open lake, 55% flat rural roads (US-2 & QC-223)",
+      startCoords: [44.4780, -73.2180],
+      endCoords: [45.3056, -73.2533],
+      track: [
+        [44.4780, -73.2180], [44.5580, -73.2420], [44.5880, -73.2890],
+        [44.6280, -73.3030], [44.7180, -73.2950], [44.8140, -73.2890],
+        [44.9780, -73.3000], [45.0130, -73.3010], [45.3056, -73.2533]
+      ],
+      lunch: {
+        name: "Hero's Welcome General Store & Cafe (North Hero, VT)",
+        location: "3537 US-2, North Hero, VT",
+        mile: 32,
+        notes: "Iconic island general store with lakeside dock, gourmet deli sandwiches, hot cider, and apple cider donuts.",
+        coords: [44.8140, -73.2890],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Hero's+Welcome+North+Hero+VT"
+      },
+      hotels: [
+        { name: "Quality Hotel Centre de Congrès", address: "725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC", phone: "+1 (450) 515-5755", notes: "Premier hotel with indoor pool, restaurant, and secure bike storage.", coords: [45.3120, -73.2640], googleUrl: "https://www.google.com/maps/search/?api=1&query=Quality+Hotel+Centre+de+Congres+Saint-Jean-sur-Richelieu" }
+      ],
+      bikeShops: [
+        { name: "Performance Bégin", address: "470 Rue Saint-Jacques, Saint-Jean-sur-Richelieu, QC", phone: "(450) 348-3561", notes: "Full-service Quebec workshop, tubes, tires, and accessories.", coords: [45.3080, -73.2580], googleUrl: "https://www.google.com/maps/search/?api=1&query=Performance+Begin+Saint-Jean-sur-Richelieu+QC" }
+      ]
+    }
+  ]
 };
 
 // Global default export for compatibility
