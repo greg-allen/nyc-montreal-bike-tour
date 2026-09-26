@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="NYC to Montreal Bike Tour Guide - https://github.com/greg-allen/mtl_bike"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>5-Day Fast Tour (+ Acceleration Push Options)</name>
+    <desc>NYC to Montreal Bicycle Tour Corridor (389 mi • +11950 ft climbing)</desc>
+    <time>2026-10-04T12:00:00Z</time>
+  </metadata>
+  <wpt lat="40.7033" lon="-74.017">
+    <name>Grand Depart - Battery Park, NYC</name>
+    <desc>Official Tour Starting Point at Battery Park Hudson River Greenway</desc>
+    <sym>Flag, Green</sym>
+  </wpt>
+  <wpt lat="45.0064" lon="-73.3670">
+    <name>U.S. / Canada Border (Lacolle)</name>
+    <desc>International Border Crossing (Route 221). Passports required!</desc>
+    <sym>Customs</sym>
+  </wpt>
+  <wpt lat="45.5017" lon="-73.5673">
+    <name>Grand Finish - Old Montreal (Vieux-Port)</name>
+    <desc>Official Tour Finish at Place Jacques-Cartier / Old Montreal</desc>
+    <sym>Flag, Red</sym>
+  </wpt>
+  <wpt lat="41.272" lon="-73.782">
+    <name>Lunch: Trailside Cafe (Yorktown Heights)</name>
+    <desc>Mile 37: Directly on trail. High-protein paninis, smoothies, quick turnaround.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="41.65" lon="-73.93">
+    <name>Hotel: Hyatt Place Poughkeepsie</name>
+    <desc>2165 South Rd, Poughkeepsie, NY - Phone: (845) 380-0000 - Modern, bike-friendly baseline finish.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="41.9335" lon="-74.019">
+    <name>Hotel: Hotel Kinsley (Kingston - Accelerated Finish)</name>
+    <desc>301 Wall St, Kingston, NY - Phone: (845) 768-3620 - Historic Stockade boutique hotel if taking the +16 mi push.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="41.2725" lon="-73.7815">
+    <name>Bike Shop: Yorktown Cycles</name>
+    <desc>1899 Commerce St, Yorktown Heights, NY - Phone: (914) 245-5504 - Mile 37 on trail.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="41.583" lon="-73.806">
+    <name>Bike Shop: Bikeway - Hopewell Junction</name>
+    <desc>812 Route 82, Hopewell Junction, NY - Phone: (845) 223-8100 - Mile 58 on trail.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="41.7108" lon="-73.9442">
+    <name>⚡ Accelerate: Push to Kingston Stockade</name>
+    <desc>At the Walkway Over the Hudson, if feeling great by 3:00 PM, push 16 miles north via Hudson Valley Rail Trail and River Rd into historic Kingston Stockade! - Target: Kingston, NY (90.8 mi total)</desc>
+    <sym>Caution</sym>
+  </wpt>
+  <wpt lat="42.2515" lon="-73.788">
+    <name>Lunch: Le Gamin Cafe / Tanzy's (Hudson, NY)</name>
+    <desc>Mile 38: Quick, delicious French savory crepes &amp; espresso in vibrant Hudson.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="42.652" lon="-73.758">
+    <name>Hotel: Renaissance Albany Hotel</name>
+    <desc>144 State St, Albany, NY - Phone: (518) 992-2500 - Downtown baseline finish across from Capitol.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="43.0845" lon="-73.784">
+    <name>Hotel: The Saratoga Hilton (Accelerated Finish)</name>
+    <desc>534 Broadway, Saratoga Springs, NY - Phone: (518) 584-4000 - If taking the +16 mi push to Saratoga.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="42.253" lon="-73.7915">
+    <name>Bike Shop: Steiner's Sports</name>
+    <desc>301 Warren St, Hudson, NY - Phone: (518) 828-5063 - Mile 38 on Warren St.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="42.6565" lon="-73.769">
+    <name>Bike Shop: Down Tube Bicycle Works</name>
+    <desc>466 Madison Ave, Albany, NY - Phone: (518) 434-1711 - Mile 70 in Albany.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="42.73" lon="-73.69">
+    <name>⚡ Accelerate: Push to Saratoga Springs Spa</name>
+    <desc>At Waterford Lock 2, if legs are rolling strong by 3:30 PM, bypass Albany/Troy and take the paved Zim Smith Trail into Saratoga Springs for evening spa mineral baths! - Target: Saratoga Springs, NY (92.5 mi total)</desc>
+    <sym>Caution</sym>
+  </wpt>
+  <wpt lat="43.556" lon="-73.4045">
+    <name>Lunch: Historic Grounds Restaurant &amp; Coffee Bar (Whitehall)</name>
+    <desc>Mile 54: Hearty paninis, soups, espresso overlooking Champlain Canal Lock 12.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="43.8465" lon="-73.435">
+    <name>Hotel: Best Western Plus Ticonderoga</name>
+    <desc>260 Burgoyne Rd, Ticonderoga, NY - Phone: (518) 585-1800 - Clean, cyclist-friendly baseline finish.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="44.054" lon="-73.461">
+    <name>Hotel: The Stone House B&amp;B (Port Henry / Moriah)</name>
+    <desc>Port Henry, NY - Phone: (518) 546-3400 - Historic lakeside Victorian B&amp;B if pushing past Ti.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="43.316" lon="-73.619">
+    <name>Bike Shop: Rick's Bike Shop (Queensbury detour)</name>
+    <desc>368 Dix Ave, Queensbury, NY - Phone: (518) 793-8986 - Massive inventory of parts and accessories.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="43.8478" lon="-73.4257">
+    <name>⚡ Accelerate: Push to Historic Essex / Westport</name>
+    <desc>At Ticonderoga, if you arrive before 4:00 PM and have daylight, push 18 miles north along Lake Champlain bluffs to historic Essex / Westport! - Target: Essex, NY (96.2 mi total)</desc>
+    <sym>Caution</sym>
+  </wpt>
+  <wpt lat="44.3105" lon="-73.354">
+    <name>Lunch: The Cup Cafe / Essex Ice Cream Cafe</name>
+    <desc>Mile 27: Lakeside dining on the porch watching the ferry to Vermont.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="44.694" lon="-73.489">
+    <name>Hotel: Best Western Plus Plattsburgh</name>
+    <desc>446 NY-3, Plattsburgh, NY - Phone: (518) 561-7000 - Comfortable baseline finish.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="45.308" lon="-73.258">
+    <name>Hotel: Quality Hotel Centre de Congrès (Saint-Jean, QC - Border Push)</name>
+    <desc>Saint-Jean-sur-Richelieu, QC - Phone: +1 (450) 515-5755 - If executing the grand border push into Canada.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="44.698" lon="-73.453">
+    <name>Bike Shop: Maui North Ski, Bike &amp; Board</name>
+    <desc>168 Margaret St, Plattsburgh, NY - Phone: (518) 563-7245 - Downtown Plattsburgh premier shop.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="44.6995" lon="-73.4529">
+    <name>⚡ Accelerate: THE BORDER PUSH into Saint-Jean, QC!</name>
+    <desc>At Plattsburgh, if rolling strong by 2:30 PM: ride 24 miles to Rouses Point, CROSS THE CANADIAN BORDER at Lacolle, and sleep in Saint-Jean-sur-Richelieu! This sets up a tiny 28-mile sprint into Montreal on Day 5! - Target: Saint-Jean-sur-Richelieu, QC (Canada) (96.4 mi total)</desc>
+    <sym>Caution</sym>
+  </wpt>
+  <wpt lat="45.503" lon="-73.555">
+    <name>Lunch: Celebratory Finish / Bistro La Trinquette (St-Jean) or Old Montréal Terrace</name>
+    <desc>Mile 42: Celebrate with French-Canadian lunch, fresh poutine, and craft beer on a historic cobblestone terrace!</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="45.5035" lon="-73.563">
+    <name>Hotel: Hotel Monville (Certified 'Bienvenue Cyclistes')</name>
+    <desc>1041 Rue de Bleury, Montréal, QC - Phone: +1 (514) 379-2000 - Sleek, modern, dedicated secure bike room, steps from Place d'Armes.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="45.5005" lon="-73.567">
+    <name>Hotel: Fairmont The Queen Elizabeth</name>
+    <desc>900 René-Lévesque Blvd W, Montréal, QC - Phone: +1 (514) 861-3511 - Grand historic hotel directly connected to Gare Centrale for Amtrak return!</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="45.518" lon="-73.568">
+    <name>Bike Shop: Bicycles Quilicot</name>
+    <desc>1775 Rue Saint-Denis, Montréal, QC - Phone: (514) 499-9600 - Montréal's iconic cycling hub.</desc>
+    <sym>Wrench</sym>
+  </wpt>
+  <wpt lat="45.5017" lon="-73.5673">
+    <name>⚡ Accelerate: Morning Victory Cruise (If Accelerated on Day 4)</name>
+    <desc>If you pushed across the Canadian border on Day 4 to Saint-Jean, Day 5 is an effortless 28-mile sprint along the Chambly Canal into Old Montréal in time for brunch at 11:30 AM! - Target: Downtown Montréal, QC (28.5 mi total)</desc>
+    <sym>Caution</sym>
+  </wpt>
+  <trk>
+    <name>Day 1: NYC to Poughkeepsie / Highland (Push to Kingston)</name>
+    <desc>74.8 mi (120.4 km) • +2650 ft • 92% Paved Rail Trails (Hudson River, North County, Maybrook, Dutchess Rail Trail)</desc>
+    <trkseg>
+      <trkpt lat="40.7033" lon="-74.017"></trkpt>
+      <trkpt lat="40.8517" lon="-73.9404"></trkpt>
+      <trkpt lat="40.8978" lon="-73.886"></trkpt>
+      <trkpt lat="41.0534" lon="-73.8187"></trkpt>
+      <trkpt lat="41.272" lon="-73.782"></trkpt>
+      <trkpt lat="41.3973" lon="-73.6171"></trkpt>
+      <trkpt lat="41.5834" lon="-73.8057"></trkpt>
+      <trkpt lat="41.7108" lon="-73.9442"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Day 2: Poughkeepsie to Albany / Troy (Push to Saratoga)</name>
+    <desc>76.5 mi (123.1 km) • +2300 ft • 65% Paved Rail Trail (AHET), 35% Scenic Secondary Roads (Route 9G / River Rd)</desc>
+    <trkseg>
+      <trkpt lat="41.7108" lon="-73.9442"></trkpt>
+      <trkpt lat="41.9268" lon="-73.9126"></trkpt>
+      <trkpt lat="42.0881" lon="-73.8446"></trkpt>
+      <trkpt lat="42.2529" lon="-73.791"></trkpt>
+      <trkpt lat="42.3948" lon="-73.7001"></trkpt>
+      <trkpt lat="42.5162" lon="-73.6104"></trkpt>
+      <trkpt lat="42.6526" lon="-73.7562"></trkpt>
+      <trkpt lat="42.73" lon="-73.69"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Day 3: Albany / Troy to Ticonderoga (Push to Essex / Westport)</name>
+    <desc>78.2 mi (125.8 km) • +2600 ft • 75% Scenic Low-Traffic Highways (US-4 &amp; NY-22), 25% Canal Path</desc>
+    <trkseg>
+      <trkpt lat="42.73" lon="-73.69"></trkpt>
+      <trkpt lat="42.7909" lon="-73.6818"></trkpt>
+      <trkpt lat="43.1009" lon="-73.5784"></trkpt>
+      <trkpt lat="43.2678" lon="-73.5857"></trkpt>
+      <trkpt lat="43.5556" lon="-73.404"></trkpt>
+      <trkpt lat="43.685" lon="-73.415"></trkpt>
+      <trkpt lat="43.8423" lon="-73.4046"></trkpt>
+      <trkpt lat="43.8478" lon="-73.4257"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Day 4: Ticonderoga to Plattsburgh (THE BORDER PUSH to Saint-Jean, QC!)</name>
+    <desc>72.4 mi (116.5 km) • +2350 ft • 80% Scenic 2-Lane Highway (NY-9N / NY-22) with Lake Champlain Views, 20% Local Paths</desc>
+    <trkseg>
+      <trkpt lat="43.8478" lon="-73.4257"></trkpt>
+      <trkpt lat="44.0539" lon="-73.4607"></trkpt>
+      <trkpt lat="44.1834" lon="-73.4357"></trkpt>
+      <trkpt lat="44.3101" lon="-73.3537"></trkpt>
+      <trkpt lat="44.3645" lon="-73.3876"></trkpt>
+      <trkpt lat="44.5242" lon="-73.4862"></trkpt>
+      <trkpt lat="44.6995" lon="-73.4529"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Day 5: Plattsburgh (or Saint-Jean) to Downtown Montréal (The Grand Finish!)</name>
+    <desc>62.4 mi (100.4 km) • +850 ft • 65% Route Verte Dedicated Paths (Chambly Canal &amp; Bridges), 35% Flat Country Roads</desc>
+    <trkseg>
+      <trkpt lat="44.6995" lon="-73.4529"></trkpt>
+      <trkpt lat="44.9939" lon="-73.3646"></trkpt>
+      <trkpt lat="45.0064" lon="-73.367"></trkpt>
+      <trkpt lat="45.3056" lon="-73.2533"></trkpt>
+      <trkpt lat="45.4497" lon="-73.2872"></trkpt>
+      <trkpt lat="45.4593" lon="-73.5134"></trkpt>
+      <trkpt lat="45.5017" lon="-73.5673"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

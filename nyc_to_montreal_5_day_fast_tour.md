@@ -29,6 +29,24 @@
 
 ---
 
+## GPS Navigation & Map Downloads
+
+- **Garmin / Wahoo / GPS Bike Computer:** Download **[nyc_to_montreal_5day_tour.gpx](nyc_to_montreal_5day_tour.gpx)** (GPX 1.1 format with all 5 stages, baseline tracks, and 4 ⚡ accelerate checkpoints).
+- **Google My Maps / Smartphone:** Download **[nyc_to_montreal_5day_tour.kml](nyc_to_montreal_5day_tour.kml)** (Import into [Google My Maps](https://mymaps.google.com) to view on your phone).
+
+---
+
+## ⚠️ Critical High-Tempo Advisories (Read Before Riding)
+
+1. **Amtrak Return Bike Slot Limit (Strict 4–6 Bike Cap):** Amtrak’s *Adirondack* (Train #68) from Montreal has only 4–6 bike slots in the baggage car. Book this reservation immediately! If sold out, reserve a one-way rental car (Enterprise/Avis from Montreal to NYC) or box bikes for the Trailways bus with boxes from *Bicycles Quilicot*.
+2. **October Sunset at 6:25 PM & Strict 8:30 AM Rollout:** In October, dusk drops temperatures 15°F instantly. You must roll by 8:30 AM to finish these 70–96 mile stages in daylight. Carry an 800+ lumen headlight and daylight-visible rear strobe.
+3. **"October Grease" on Rail Trails:** Wet decaying leaves on paved rail trails are as slick as ice. Run 35–40mm tires at 45–50 PSI and do not lean hard into leaf-covered corners.
+4. **Canadian Border (Lacolle) Zero-Cannabis Law:** Crossing with any cannabis/THC is a federal felony. Inspect bags before departing NYC. Carry a digital photo of your bike's serial number and purchase receipt for US CBP re-entry.
+5. **Sunday/Monday Bike Shop Closures:** Rural shops are closed Sun/Mon. Carry 2x tubes, tubeless plug kit, chain quick-link, mini pump, and derailleur hanger.
+6. **Peak Foliage Lodging:** Saratoga and Champlain hotels sell out weeks early in October; lock in reservations before starting.
+
+---
+
 ## Detailed 5-Day Stages with Acceleration Plans
 
 ### Stage 1: New York City to Poughkeepsie / Highland (Optional Push to Kingston)

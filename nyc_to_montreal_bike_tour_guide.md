@@ -49,9 +49,55 @@
 
 ---
 
+## GPS Navigation & Offline Map Files
+
+| File Name | Format | Compatible Devices / Apps | Purpose |
+|:---|:---|:---|:---|
+| **[nyc_to_montreal_tour.gpx](nyc_to_montreal_tour.gpx)** | GPX 1.1 | Garmin Edge, Wahoo ELEMNT, Hammerhead Karoo, RideWithGPS | **6-Day Tour:** Turn-by-turn tracks + all hotel, lunch & shop waypoints |
+| **[nyc_to_montreal_5day_tour.gpx](nyc_to_montreal_5day_tour.gpx)** | GPX 1.1 | Garmin Edge, Wahoo ELEMNT, Hammerhead Karoo, RideWithGPS | **5-Day Fast Tour:** High-tempo tracks + 4 ⚡ accelerate checkpoints |
+| **[nyc_to_montreal_tour.kml](nyc_to_montreal_tour.kml)** | KML | Google My Maps, Google Earth, Maps.me | Instant import into Google My Maps for smartphone app viewing |
+| **[nyc_to_montreal_5day_tour.kml](nyc_to_montreal_5day_tour.kml)** | KML | Google My Maps, Google Earth, Maps.me | 5-Day Fast Tour Google My Maps import |
+
 > [!TIP]
-> **Zero API Key Google Maps Sharing (Google My Maps):**
-> You can import the included `nyc_to_montreal_tour.kml` or `nyc_to_montreal_5day_tour.kml` into [Google My Maps](https://mymaps.google.com) (*Create a New Map &rarr; Import*). Once imported, click **Share**, and paste the link at the top of your Google Doc. Anyone reading the doc can tap the link on their iPhone or Android to open the entire route and all hotel/lunch waypoints inside the Google Maps app!
+> **Smartphone Setup (Google My Maps):**
+> Import either `.kml` file into [Google My Maps](https://mymaps.google.com). Click **Share**, copy the link, and paste it into your Google Doc or phone browser. The entire route with color-coded stages and pins will open directly inside your Google Maps phone app!
+
+---
+
+## ⚠️ Critical Tour Advisories & Operational Realities (Read Before Riding)
+
+> [!CAUTION]
+> ### 1. Amtrak Adirondack Train #68 Bike Slot Cap (Only 4–6 Bikes Per Train!)
+> Amtrak’s *Adirondack* (Montreal Gare Centrale &rarr; New York Penn Station) provides roll-on bicycle service in the baggage car, but **strictly caps reservations at 4 to 6 bicycles per train**. 
+> - **Action Required:** Book your Amtrak bicycle reservation ($20 add-on) **at the same time you plan your departure**. Once those slots sell out, bikes are prohibited on board (even boxed).
+> - **Contingency Return Plans:**
+>   1. **One-Way Rental Car:** Reserve a minivan or SUV through Enterprise or Avis at Montreal Gare Centrale or Montreal-Trudeau Airport (YUL) for one-way drop-off in NYC. (Verify cross-border rental permission).
+>   2. **Trailways / Greyhound Bus:** Requires bikes to be boxed (pedals off, handlebars turned). Cardboard bike boxes can be purchased at *Bicycles Quilicot* (1775 Rue Saint-Denis, Montreal).
+>   3. **Plattsburgh Rollback:** Ride 45 miles south back to Plattsburgh, NY, where US domestic car rental and bus options are plentiful and cheap.
+
+> [!WARNING]
+> ### 2. Foliage Season Lodging Spike & The Whitehall Reality
+> - **Peak Foliage (Early October):** October 4–9 is peak autumn foliage. Rooms in Hudson, Saratoga Springs, and Lake Champlain spike to **$350–$500+/night** and sell out weeks in advance. Book early!
+> - **Whitehall Overnight Reality:** Whitehall, NY (Day 4 on the 6-day tour) has **virtually zero chain hotel rooms**. The official stage finish is at the **Best Western Plus Ticonderoga** (Mile 61.8). If stopping early in Whitehall, stay at local Airbnbs/B&Bs or detour 10 flat miles east to the *Fair Haven Inn* in Fair Haven, VT.
+
+> [!IMPORTANT]
+> ### 3. October Daylight & "October Grease" Rules
+> - **Sunset is at 6:25 PM:** Civil twilight ends by 6:52 PM, and temperatures drop 15°F the moment the sun dips behind the Adirondacks.
+> - **Strict 8:30 AM Wheels-Rolling Rule:** Groups must start riding by 8:30 AM every day to ensure safe arrival by 3:00–4:30 PM before cold dusk sets in.
+> - **"October Grease" on Rail Trails:** Wet, decaying autumn leaves on paved rail trails (Putnam, Maybrook, AHET) have the slickness of wet ice. Run **35mm–40mm tires at 45–50 PSI** and scrub speed before cornering.
+> - **Lighting Mandate:** Minimum **800+ lumen headlight** and daylight-visible rear strobe (cold temperatures drain lithium batteries 30% faster; carry a 10,000+ mAh power bank).
+
+> [!CAUTION]
+> ### 4. Canadian Border Crossing Protocols (Lacolle / Route 221)
+> - **Strict Zero-Cannabis Law:** While cannabis is legal in both New York and Quebec, **transporting any cannabis or THC product across the international border in either direction is a federal crime / felony**. Discard all THC products before departing NYC.
+> - **Bike Serial Number & Proof of Purchase:** US CBP can demand proof of US origin upon return. **Photograph your bike's serial number** (under the bottom bracket) and carry a digital copy of your purchase receipt or home insurance policy on your phone.
+> - **Agricultural Limits:** Fresh apples, citrus, and raw meats are confiscated at the Canadian border. Consume farm stand snacks before reaching Rouses Point.
+> - **Offline Maps:** Cell coverage drops 3 miles before the Canadian border. Download offline Google Maps for the Albany-to-Montreal region in advance.
+
+> [!NOTE]
+> ### 5. Rural Bike Shop Blackout & Champlain Food Deserts
+> - **Sunday/Monday Closures:** Rural bike shops in upstate NY are **closed on Sundays and Mondays**. You must be mechanically self-sufficient (carry 2x spare tubes, tubeless plug kit, chain quick-link, mini pump).
+> - **Lake Champlain Supply Desert:** There is a 25-mile stretch between Port Henry and Keeseville on Day 5 with zero open convenience stores. **Fill both 24oz water bottles** in Port Henry and Essex!
 
 ---
 

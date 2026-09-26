@@ -255,25 +255,136 @@
       </div>
     </section>
 
-    <!-- Google My Maps / Google Doc Integration Tip -->
-    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-      <div class="space-y-1">
-        <h3 class="text-sm font-bold text-emerald-950 flex items-center gap-2">
-          <span>✨ Google My Maps & Google Docs Integration (Zero API Key Needed!)</span>
-        </h3>
-        <p class="text-xs text-emerald-800 leading-relaxed">
-          Import either KML (<code class="bg-emerald-100 px-1 rounded text-emerald-950">nyc_to_montreal_tour.kml</code> or <code class="bg-emerald-100 px-1 rounded text-emerald-950">nyc_to_montreal_5day_tour.kml</code>) into <strong><a href="https://mymaps.google.com" target="_blank" class="underline font-bold text-emerald-900">Google My Maps</a></strong>. Click <strong>Share</strong>, paste the link in your Google Doc, and your riders can open the entire map with pins directly inside their Google Maps phone app!
-        </p>
-      </div>
-      <div class="flex items-center gap-2 shrink-0">
-        <a href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1">
-          📥 6-Day KML
-        </a>
-        <a href="nyc_to_montreal_5day_tour.kml" download="nyc_to_montreal_5day_tour.kml" class="bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1">
-          ⚡ 5-Day KML
-        </a>
+    <!-- GPS Navigation Downloads & Integration -->
+    <div class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-5 shadow-sm space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-black uppercase tracking-wider bg-blue-500/20 text-blue-300 border border-blue-400/30 px-2.5 py-0.5 rounded-full">
+              🧭 GPS Navigation Downloads
+            </span>
+            <span class="text-xs text-slate-400">Garmin, Wahoo, Hammerhead, RideWithGPS &amp; Google My Maps</span>
+          </div>
+          <h3 class="text-base font-bold text-white">Download Turn-by-Turn GPS Tracks &amp; Waypoints</h3>
+          <p class="text-xs text-slate-300 leading-relaxed max-w-3xl">
+            Import <strong>GPX files</strong> directly into your Garmin Edge, Wahoo ELEMNT, or Hammerhead bike computer for offline breadcrumb navigation and turn cues. Use <strong>KML files</strong> for instant import into Google My Maps.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 shrink-0">
+          <a href="nyc_to_montreal_tour.gpx" download="nyc_to_montreal_tour.gpx" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1.5">
+            <span>📥 6-Day GPX</span>
+            <span class="text-[10px] opacity-80">(Garmin/Wahoo)</span>
+          </a>
+          <a href="nyc_to_montreal_5day_tour.gpx" download="nyc_to_montreal_5day_tour.gpx" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1.5">
+            <span>⚡ 5-Day GPX</span>
+            <span class="text-[10px] opacity-80">(Garmin/Wahoo)</span>
+          </a>
+          <a href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
+            <span>🗺️ 6-Day KML</span>
+          </a>
+          <a href="nyc_to_montreal_5day_tour.kml" download="nyc_to_montreal_5day_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
+            <span>⚡ 5-Day KML</span>
+          </a>
+        </div>
       </div>
     </div>
+
+    <!-- Critical Tour Advisories & Real-World Gotchas (Red Team Audit) -->
+    <section class="bg-amber-50/70 border-2 border-amber-300 rounded-2xl p-5 space-y-4 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3">
+        <div>
+          <h3 class="text-base font-black text-amber-950 flex items-center gap-2">
+            <span>⚠️ Critical Tour Advisories &amp; Operational Gotchas</span>
+          </h3>
+          <p class="text-xs text-amber-900 mt-0.5">Essential real-world logistics, October environmental realities, border rules, and transit bailouts.</p>
+        </div>
+        <span class="text-[11px] font-extrabold bg-amber-200 text-amber-950 px-2.5 py-1 rounded-full border border-amber-300 uppercase tracking-wider self-start sm:self-auto">
+          Read Before Riding
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Alert 1: Amtrak Bike Cap -->
+        <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-2xs space-y-2">
+          <div class="text-xs font-black text-red-700 flex items-center gap-1.5 uppercase tracking-wider">
+            <span>🚆 Amtrak Bike Slot Cap (Only 4–6 Per Train!)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            The <em>Amtrak Adirondack #68</em> (Montreal &rarr; NYC) <strong>strictly limits bicycles to 4–6 slots per train</strong> in the baggage car. Once sold out, bikes are prohibited on board.
+          </p>
+          <div class="text-[11px] bg-red-50 p-2 rounded-lg text-red-900 font-medium space-y-1">
+            <div><strong>Backup A:</strong> One-way rental car (Enterprise/Avis from downtown Montreal / YUL airport to NYC).</div>
+            <div><strong>Backup B:</strong> Trailways bus with cardboard bike box sourced from <em>Bicycles Quilicot</em> in Montreal.</div>
+          </div>
+        </div>
+
+        <!-- Alert 2: Foliage Season & Whitehall Lodging -->
+        <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-2xs space-y-2">
+          <div class="text-xs font-black text-amber-800 flex items-center gap-1.5 uppercase tracking-wider">
+            <span>🏨 Peak Foliage &amp; Whitehall Lodging Trap</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            October 4–9 is <strong>peak fall foliage</strong>. Rooms in Hudson, Saratoga, and Lake Champlain spike to $350–$500+/night and sell out weeks in advance.
+          </p>
+          <div class="text-[11px] bg-amber-50 p-2 rounded-lg text-amber-950 font-medium space-y-1">
+            <div><strong>Whitehall Reality:</strong> Whitehall has virtually zero chain hotels. Stay at <em>Best Western Plus Ticonderoga</em> (official Stage 4 finish) or <em>Fair Haven Inn</em> (VT, 10 mi east).</div>
+          </div>
+        </div>
+
+        <!-- Alert 3: October Daylight & "October Grease" -->
+        <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-2xs space-y-2">
+          <div class="text-xs font-black text-slate-800 flex items-center gap-1.5 uppercase tracking-wider">
+            <span>🍂 8:30 AM Rollout &amp; "October Grease"</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong>Sunset is 6:25 PM</strong>, and dusk plunges temperatures 15°F instantly. A strict <strong>wheels-rolling by 8:30 AM rule</strong> ensures arrival before chilly darkness.
+          </p>
+          <div class="text-[11px] bg-slate-100 p-2 rounded-lg text-slate-800 font-medium space-y-1">
+            <div><strong>Wet Leaves Hazard:</strong> Wet decomposing leaves on rail trails have the friction of ice. Run 35–40mm tires at 45–50 PSI and drop speed on turns. Minimum 800+ lumen lights mandatory.</div>
+          </div>
+        </div>
+
+        <!-- Alert 4: Border Protocols -->
+        <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-2xs space-y-2">
+          <div class="text-xs font-black text-emerald-800 flex items-center gap-1.5 uppercase tracking-wider">
+            <span>🛂 Border Protocol &amp; Zero-Cannabis Law</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            Crossing at <strong>Lacolle (Route 221)</strong>: Bicycles pull up to the regular vehicle booth. Keep valid passport accessible in handlebar bag.
+          </p>
+          <div class="text-[11px] bg-emerald-50 p-2 rounded-lg text-emerald-950 font-medium space-y-1">
+            <div><strong>Federal Crime Warning:</strong> Cannabis is legal in NY and QC, but taking ANY cannabis across the border is a federal felony resulting in bike seizure and passport flagging.</div>
+            <div><strong>Bike Serial #:</strong> Photo your serial number &amp; purchase receipt to prove US origin to CBP.</div>
+          </div>
+        </div>
+
+        <!-- Alert 5: Bike Shop Closures & Food Deserts -->
+        <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-2xs space-y-2">
+          <div class="text-xs font-black text-indigo-800 flex items-center gap-1.5 uppercase tracking-wider">
+            <span>🔧 Sun/Mon Shop Closures &amp; Food Deserts</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            Rural bike shops are <strong>closed Sundays and Mondays</strong>. Self-sufficiency is mandatory (carry 2x tubes, plugs, chain quick-link).
+          </p>
+          <div class="text-[11px] bg-indigo-50 p-2 rounded-lg text-indigo-950 font-medium space-y-1">
+            <div><strong>Adirondack Supply Desert:</strong> 25+ miles with zero open food/water between Port Henry and Keeseville on Day 5. Fill both 24oz bottles in Port Henry &amp; Essex!</div>
+          </div>
+        </div>
+
+        <!-- Alert 6: Cold Weather Tech & Battery Drain -->
+        <div class="bg-white p-4 rounded-xl border border-amber-200 shadow-2xs space-y-2">
+          <div class="text-xs font-black text-blue-800 flex items-center gap-1.5 uppercase tracking-wider">
+            <span>📱 Cold Battery Drain &amp; Offline Maps</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            Sub-45°F temperatures drain smartphone and GPS lithium batteries <strong>30–40% faster</strong>.
+          </p>
+          <div class="text-[11px] bg-blue-50 p-2 rounded-lg text-blue-950 font-medium space-y-1">
+            <div><strong>Action:</strong> Carry a 10,000+ mAh power bank. Download offline Google Maps for the entire corridor before departure as cell coverage drops near the border.</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Compare Routes Section (Visible when Compare Mode is active) -->
     <section id="compare-section" class="hidden space-y-6">
