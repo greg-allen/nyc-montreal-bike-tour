@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderChecklist();
   initLeafletMap();
   setupFilterControls();
+  fetchTourWeather();
 });
 
 function switchTourMode(tourType) {
@@ -69,6 +70,7 @@ function switchTourMode(tourType) {
     renderCompareStats();
     renderCompareMap();
     setupFilterControls();
+    fetchTourWeather();
 
     // Scroll smoothly to comparison section if initiated
     if (compareSection) {
@@ -108,6 +110,7 @@ function switchTourMode(tourType) {
   renderActiveTour();
   initLeafletMap();
   setupFilterControls();
+  fetchTourWeather();
 }
 
 function renderCompareStats() {
@@ -809,6 +812,8 @@ function updateMapPills(val) {
     }
     if (pillDist) pillDist.innerText = `🚴 ${currentTour.totalDistanceMiles} mi / 626 km`;
     if (pillElev) pillElev.innerText = `⛰️ +${currentTour.elevationGainFt.toLocaleString()} ft`;
+    const pillWeather = document.getElementById('map-pill-weather');
+    if (pillWeather) pillWeather.innerText = "🌤️ Oct 4–9 Forecast";
   } else {
     const dayNum = parseInt(val, 10);
     const targetDay = currentTour.days.find(d => d.day === dayNum);
@@ -825,6 +830,11 @@ function updateMapPills(val) {
     }
     if (pillElev) {
       pillElev.innerText = `⛰️ +${targetDay.elevationFt.toLocaleString()} ft`;
+    }
+    const pillWeather = document.getElementById('map-pill-weather');
+    if (pillWeather && tourWeatherData[dayNum]) {
+      const w = tourWeatherData[dayNum];
+      pillWeather.innerText = `${w.icon} ${w.tempMax}°/${w.tempMin}°F • 🛡️ Risk: ${w.riskScore}/10 (${w.riskLevel})`;
     }
   }
 }
@@ -973,6 +983,401 @@ function setupFilterControls() {
   });
 }
 
+/* ============================================================
+   LIVE WEATHER TRACKING & CYCLING RISK MATRIX (Open-Meteo)
+============================================================ */
+let tourStartDate = "2026-10-04";
+let tourWeatherData = {};
+
+// Fallback historical climate data for October in Hudson Valley / Adirondacks / Quebec
+const OCTOBER_CLIMATE_FALLBACK = {
+  1: { tempMax: 68, tempMin: 56, rainProb: 25, windSpeed: 8, windDir: 195, weatherCode: 2 }, // Brewster
+  2: { tempMax: 72, tempMin: 56, rainProb: 25, windSpeed: 11, windDir: 185, weatherCode: 2 }, // Hudson
+  3: { tempMax: 62, tempMin: 42, rainProb: 20, windSpeed: 10, windDir: 320, weatherCode: 1 }, // Saratoga
+  4: { tempMax: 58, tempMin: 36, rainProb: 20, windSpeed: 6, windDir: 190, weatherCode: 1 },  // Whitehall
+  5: { tempMax: 56, tempMin: 44, rainProb: 35, windSpeed: 9, windDir: 355, weatherCode: 61 }, // Plattsburgh
+  6: { tempMax: 59, tempMin: 42, rainProb: 15, windSpeed: 7, windDir: 195, weatherCode: 1 }   // Montreal
+};
+
+function addDaysToDate(baseDateStr, daysToAdd) {
+  const parts = baseDateStr.split('-');
+  const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+  d.setDate(d.getDate() + daysToAdd);
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function formatDateDisplay(dateStr) {
+  const parts = dateStr.split('-');
+  const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+function decodeWmoWeather(code) {
+  switch (code) {
+    case 0: return { text: "Clear Sky", icon: "☀️" };
+    case 1: return { text: "Mainly Clear", icon: "🌤️" };
+    case 2: return { text: "Partly Cloudy", icon: "⛅" };
+    case 3: return { text: "Overcast", icon: "☁️" };
+    case 45:
+    case 48: return { text: "Fog / Mist", icon: "🌫️" };
+    case 51:
+    case 53:
+    case 55: return { text: "Light Drizzle", icon: "🌦️" };
+    case 56:
+    case 57: return { text: "Freezing Drizzle", icon: "🌧️" };
+    case 61: return { text: "Light Rain", icon: "🌦️" };
+    case 63: return { text: "Moderate Rain", icon: "🌧️" };
+    case 65: return { text: "Heavy Rain", icon: "🌧️" };
+    case 66:
+    case 67: return { text: "Freezing Rain", icon: "🌨️" };
+    case 71:
+    case 73:
+    case 75: return { text: "Snow Flurries", icon: "🌨️" };
+    case 80:
+    case 81:
+    case 82: return { text: "Rain Showers", icon: "🌦️" };
+    case 95:
+    case 96:
+    case 99: return { text: "Thunderstorm", icon: "⛈️" };
+    default: return { text: "Partly Cloudy", icon: "⛅" };
+  }
+}
+
+function getWindDescription(speedMph, dirDeg) {
+  const directions = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+  const val = Math.floor((dirDeg / 22.5) + 0.5) % 16;
+  const compass = directions[val];
+
+  let effect = "Crosswind";
+  if (dirDeg >= 135 && dirDeg <= 225) {
+    effect = "Tailwind 🚀";
+  } else if (dirDeg >= 315 || dirDeg <= 45) {
+    effect = "Headwind ⚠️";
+  }
+
+  return `${speedMph} mph ${compass} (${effect})`;
+}
+
+function calculateWeatherRisk(forecast) {
+  let risk = 1;
+  let reasons = [];
+  let kitAdvice = "";
+
+  // 1. Rain Risk
+  if (forecast.rainProb >= 70) {
+    risk += 4;
+    reasons.push(`${forecast.rainProb}% rain`);
+  } else if (forecast.rainProb >= 45) {
+    risk += 3;
+    reasons.push(`${forecast.rainProb}% rain`);
+  } else if (forecast.rainProb >= 25) {
+    risk += 2;
+    reasons.push(`${forecast.rainProb}% chance showers`);
+  } else if (forecast.rainProb >= 15) {
+    risk += 1;
+  }
+
+  if ([63, 65, 82, 95, 96, 99].includes(forecast.weatherCode)) {
+    risk += 1;
+    reasons.push("Heavy precipitation potential");
+  }
+
+  // 2. Wind & Direction Risk (Traveling north bearing 0°)
+  const isHeadwind = (forecast.windDir >= 315 || forecast.windDir <= 45);
+  const isTailwind = (forecast.windDir >= 135 && forecast.windDir <= 225);
+
+  if (forecast.windSpeed >= 20) {
+    risk += 3;
+    reasons.push(`High wind (${forecast.windSpeed} mph)`);
+  } else if (forecast.windSpeed >= 13) {
+    risk += 2;
+    reasons.push(`Breezy (${forecast.windSpeed} mph)`);
+  } else if (forecast.windSpeed >= 9) {
+    risk += 1;
+  }
+
+  if (isHeadwind && forecast.windSpeed >= 10) {
+    risk += 1;
+    reasons.push("North headwind resistance");
+  } else if (isTailwind && forecast.windSpeed >= 8) {
+    risk = Math.max(1, risk - 1); // Tailwind relief!
+  }
+
+  // 3. Morning Low Temperature Risk
+  if (forecast.tempMin < 36) {
+    risk += 3;
+    reasons.push(`Near-freezing start (${forecast.tempMin}°F)`);
+    kitAdvice = "Thermal jacket, full-finger winter gloves, neck gaiter, and shoe covers. Watch for morning frost on wooden bridges.";
+  } else if (forecast.tempMin < 45) {
+    risk += 2;
+    reasons.push(`Chilly morning (${forecast.tempMin}°F)`);
+    kitAdvice = "Long-sleeve thermal base layer, wind vest/jacket, knee warmers, and mid-weight gloves for the first 2 hours.";
+  } else if (forecast.tempMin < 53) {
+    risk += 1;
+    kitAdvice = "Arm warmers and packable wind shell. Comfortable short sleeve riding by late morning.";
+  } else {
+    kitAdvice = "Mild fall conditions. Standard short sleeve jersey with light arm warmers for the start.";
+  }
+
+  if (forecast.rainProb >= 35) {
+    kitAdvice += " Pack waterproof rain shell, rear clip-on fender, and zip-top baggies for phone/electronics.";
+  }
+
+  risk = Math.max(1, Math.min(10, Math.round(risk)));
+
+  let riskLevel = "Low";
+  let badgeColor = "bg-emerald-100 text-emerald-800 border-emerald-300";
+  if (risk >= 7) {
+    riskLevel = "High";
+    badgeColor = "bg-red-100 text-red-800 border-red-300";
+  } else if (risk >= 4) {
+    riskLevel = "Moderate";
+    badgeColor = "bg-amber-100 text-amber-800 border-amber-300";
+  }
+
+  return {
+    score: risk,
+    level: riskLevel,
+    badgeColor,
+    reasons: reasons.length ? reasons.join(" • ") : "Dry & favorable wind",
+    kitAdvice,
+    isHeadwind,
+    isTailwind
+  };
+}
+
+async function fetchTourWeather() {
+  const summaryEl = document.getElementById('weather-summary-text');
+  if (summaryEl) summaryEl.innerText = `Fetching live ECMWF & NOAA forecast relative to ${formatDateDisplay(tourStartDate)}...`;
+
+  const daysToFetch = currentTour.days;
+  const fetchPromises = daysToFetch.map(async (day) => {
+    const stageDate = addDaysToDate(tourStartDate, day.day - 1);
+    const coords = day.endCoords;
+    const fallback = OCTOBER_CLIMATE_FALLBACK[day.day] || { tempMax: 62, tempMin: 44, rainProb: 20, windSpeed: 8, windDir: 180, weatherCode: 2 };
+
+    try {
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${coords[0]}&longitude=${coords[1]}&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&forecast_days=16`;
+
+      const res = await fetch(url);
+      if (!res.ok) throw new Error("Weather API failed");
+      const data = await res.json();
+
+      const timeArr = data.daily?.time || [];
+      const dIdx = timeArr.indexOf(stageDate);
+
+      let tempMax = fallback.tempMax;
+      let tempMin = fallback.tempMin;
+      let rainProb = fallback.rainProb;
+      let windSpeed = fallback.windSpeed;
+      let windDir = fallback.windDir;
+      let weatherCode = fallback.weatherCode;
+      let isLive = false;
+
+      if (dIdx !== -1) {
+        tempMax = Math.round(data.daily.temperature_2m_max[dIdx]);
+        tempMin = Math.round(data.daily.temperature_2m_min[dIdx]);
+        rainProb = Math.round(data.daily.precipitation_probability_max[dIdx] ?? fallback.rainProb);
+        windSpeed = Math.round(data.daily.windspeed_10m_max[dIdx] ?? fallback.windSpeed);
+        windDir = Math.round(data.daily.winddirection_10m_dominant[dIdx] ?? fallback.windDir);
+        weatherCode = data.daily.weathercode[dIdx] ?? fallback.weatherCode;
+        isLive = true;
+      }
+
+      const weatherDecoded = decodeWmoWeather(weatherCode);
+      const windText = getWindDescription(windSpeed, windDir);
+      const risk = calculateWeatherRisk({ tempMax, tempMin, rainProb, windSpeed, windDir, weatherCode });
+
+      tourWeatherData[day.day] = {
+        dateStr: stageDate,
+        dateFormatted: formatDateDisplay(stageDate),
+        tempMax,
+        tempMin,
+        rainProb,
+        windSpeed,
+        windDir,
+        windText,
+        weatherCode,
+        conditionText: weatherDecoded.text,
+        icon: weatherDecoded.icon,
+        riskScore: risk.score,
+        riskLevel: risk.level,
+        riskBadgeColor: risk.badgeColor,
+        kitAdvice: risk.kitAdvice,
+        isHeadwind: risk.isHeadwind,
+        isTailwind: risk.isTailwind,
+        reasons: risk.reasons,
+        isLive
+      };
+    } catch (err) {
+      console.warn(`Weather fetch failed for Stage ${day.day}, using climate model:`, err);
+      const weatherDecoded = decodeWmoWeather(fallback.weatherCode);
+      const windText = getWindDescription(fallback.windSpeed, fallback.windDir);
+      const risk = calculateWeatherRisk(fallback);
+
+      tourWeatherData[day.day] = {
+        dateStr: stageDate,
+        dateFormatted: formatDateDisplay(stageDate),
+        tempMax: fallback.tempMax,
+        tempMin: fallback.tempMin,
+        rainProb: fallback.rainProb,
+        windSpeed: fallback.windSpeed,
+        windDir: fallback.windDir,
+        windText,
+        weatherCode: fallback.weatherCode,
+        conditionText: weatherDecoded.text,
+        icon: weatherDecoded.icon,
+        riskScore: risk.score,
+        riskLevel: risk.level,
+        riskBadgeColor: risk.badgeColor,
+        kitAdvice: risk.kitAdvice,
+        isHeadwind: risk.isHeadwind,
+        isTailwind: risk.isTailwind,
+        reasons: risk.reasons,
+        isLive: false
+      };
+    }
+  });
+
+  await Promise.all(fetchPromises);
+  renderWeatherDashboard();
+  renderDaysAccordion();
+}
+
+function renderWeatherDashboard() {
+  const container = document.getElementById('weather-cards-grid');
+  const summaryEl = document.getElementById('weather-trip-summary');
+  if (!container) return;
+
+  const days = currentTour.days;
+  const weatherList = days.map(d => ({ day: d, w: tourWeatherData[d.day] })).filter(item => item.w);
+
+  if (weatherList.length === 0) return;
+
+  // Render stage cards
+  container.innerHTML = weatherList.map(({ day, w }) => `
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition-all">
+      <div class="space-y-1.5">
+        <div class="flex items-center justify-between">
+          <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Stage ${day.day}</span>
+          <span class="text-[10px] font-bold text-slate-700">${w.dateFormatted}</span>
+        </div>
+        <div class="flex items-center gap-2 pt-0.5">
+          <span class="text-2xl">${w.icon}</span>
+          <div>
+            <div class="text-xs font-black text-slate-900 leading-tight">${w.tempMax}° <span class="text-[11px] font-normal text-slate-500">/ ${w.tempMin}°F</span></div>
+            <div class="text-[10px] text-slate-600 truncate">${w.conditionText}</div>
+          </div>
+        </div>
+        <div class="pt-1 text-[11px] space-y-0.5 text-slate-600">
+          <div class="flex items-center justify-between">
+            <span>Rain:</span>
+            <span class="font-bold ${w.rainProb >= 40 ? 'text-amber-800' : 'text-slate-800'}">${w.rainProb}%</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>Wind:</span>
+            <span class="font-semibold text-slate-800 truncate" title="${w.windText}">${w.windSpeed} mph ${w.isTailwind ? '🚀' : w.isHeadwind ? '⚠️' : ''}</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-2.5 pt-2 border-t border-slate-200">
+        <span class="w-full inline-block text-center py-0.5 rounded text-[10px] font-extrabold border ${w.riskBadgeColor}">
+          🛡️ Risk: ${w.riskScore}/10 (${w.riskLevel})
+        </span>
+      </div>
+    </div>
+  `).join('');
+
+  // Trip Summary calculations
+  const maxTemps = weatherList.map(item => item.w.tempMax);
+  const minTemps = weatherList.map(item => item.w.tempMin);
+  const rainProbs = weatherList.map(item => item.w.rainProb);
+  const tailwindsCount = weatherList.filter(item => item.w.isTailwind).length;
+  const avgRisk = (weatherList.reduce((acc, item) => acc + item.w.riskScore, 0) / weatherList.length).toFixed(1);
+
+  const highestTemp = Math.max(...maxTemps);
+  const lowestTemp = Math.min(...minTemps);
+  const maxRain = Math.max(...rainProbs);
+
+  if (summaryEl) {
+    summaryEl.innerHTML = `
+      <div class="flex flex-wrap items-center gap-4 text-slate-800">
+        <div>
+          <span class="font-bold text-slate-500 uppercase tracking-wider text-[10px] block">Overall Trip Outlook</span>
+          <span class="font-extrabold text-blue-900 text-sm">🛡️ Tour Risk: ${avgRisk}/10 (${avgRisk <= 3 ? 'Optimal Cycling' : 'Favorable with Advisories'})</span>
+        </div>
+        <div class="h-6 w-px bg-blue-200 hidden sm:block"></div>
+        <div>
+          <span class="font-bold text-slate-500 uppercase tracking-wider text-[10px] block">Temps (Low / High)</span>
+          <span class="font-bold text-slate-900">${lowestTemp}°F morning &rarr; ${highestTemp}°F peak</span>
+        </div>
+        <div class="h-6 w-px bg-blue-200 hidden sm:block"></div>
+        <div>
+          <span class="font-bold text-slate-500 uppercase tracking-wider text-[10px] block">Wind Advantage</span>
+          <span class="font-bold text-emerald-800">${tailwindsCount} of ${weatherList.length} Stages have Tailwinds 🚀</span>
+        </div>
+        <div class="h-6 w-px bg-blue-200 hidden sm:block"></div>
+        <div>
+          <span class="font-bold text-slate-500 uppercase tracking-wider text-[10px] block">Peak Rain Risk</span>
+          <span class="font-bold ${maxRain >= 40 ? 'text-amber-800' : 'text-emerald-800'}">${maxRain}% Max Probability</span>
+        </div>
+      </div>
+      <div class="text-[11px] font-semibold text-blue-800 shrink-0">
+        📅 ${formatDateDisplay(tourStartDate)} &rarr; ${weatherList[weatherList.length - 1]?.w?.dateFormatted || ''}
+      </div>
+    `;
+  }
+}
+
+function renderDayWeatherBox(dayNum) {
+  const w = tourWeatherData[dayNum];
+  if (!w) return '';
+
+  return `
+    <div class="bg-gradient-to-r from-sky-50 via-blue-50/40 to-slate-50 border border-sky-200 rounded-xl p-3.5 space-y-2.5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">${w.icon}</span>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-black text-slate-900">${w.dateFormatted}</span>
+              <span class="text-xs font-semibold text-slate-600">&bull; ${w.conditionText}</span>
+            </div>
+            <div class="text-xs text-slate-700 mt-0.5">
+              <span class="font-extrabold text-blue-900">${w.tempMax}°F</span> High / <span class="font-medium text-slate-600">${w.tempMin}°F Low</span> &bull; 
+              <span class="font-semibold ${w.rainProb >= 40 ? 'text-amber-800' : 'text-slate-700'}">💧 ${w.rainProb}% Rain</span> &bull; 
+              <span class="font-semibold text-slate-700">💨 ${w.windText}</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <span class="badge-tag border font-extrabold ${w.riskBadgeColor} shadow-2xs">
+            🛡️ Risk: ${w.riskScore}/10 (${w.riskLevel})
+          </span>
+        </div>
+      </div>
+      <div class="text-xs bg-white/90 p-2.5 rounded-lg border border-sky-100 text-slate-700 flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">🧥 Layer Advice:</span>
+        <span class="text-slate-600">${w.kitAdvice}</span>
+      </div>
+    </div>
+  `;
+}
+
+function updateTourStartDate(newDateStr) {
+  if (!newDateStr) return;
+  tourStartDate = newDateStr;
+  fetchTourWeather();
+}
+
+function refreshWeatherData() {
+  tourWeatherData = {};
+  fetchTourWeather();
+}
+
 function renderDaysAccordion() {
   const container = document.getElementById('days-container');
   if (!container) return;
@@ -1001,6 +1406,9 @@ function renderDaysAccordion() {
         </div>
       </div>
       <div class="p-5 space-y-4">
+        <!-- Live Weather & Cycling Risk Box -->
+        ${renderDayWeatherBox(day.day)}
+
         <!-- Trail Surface -->
         <div class="text-xs flex items-start gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
           <span class="font-bold text-slate-700 shrink-0">Trail Surface:</span>

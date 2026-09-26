@@ -118,6 +118,60 @@
       </div>
     </div>
 
+    <!-- Live Weather & Cycling Risk Matrix Section -->
+    <section id="weather-section" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-100 pb-3">
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-1.5">
+              <span>🌤️ Live Tour Weather &amp; Cycling Risk Tracker</span>
+            </h2>
+            <span id="weather-live-indicator" class="badge-tag bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold flex items-center gap-1 text-[11px]">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Live ECMWF/NOAA Forecast
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">
+            Real-time stage forecasts for your tour schedule. Evaluates temperature exposure, rain probability, wind resistance (headwind vs tailwind), and kit advice.
+          </p>
+        </div>
+
+        <!-- Departure Date Control -->
+        <div class="flex flex-wrap items-center gap-2 bg-slate-50 p-2 rounded-xl border border-slate-200 shrink-0">
+          <label for="tour-start-date" class="text-xs font-bold text-slate-700 flex items-center gap-1">
+            <span>🗓️ Departure:</span>
+          </label>
+          <input type="date" id="tour-start-date" value="2026-10-04" onchange="updateTourStartDate(this.value)" class="text-xs font-bold bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-slate-900 shadow-xs focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
+          <button onclick="refreshWeatherData()" class="text-xs bg-white hover:bg-slate-100 text-slate-700 font-semibold px-2.5 py-1 rounded-lg border border-slate-200 transition-all flex items-center gap-1 shadow-2xs" title="Refresh Live Weather">
+            <span>🔄</span> Refresh
+          </button>
+        </div>
+      </div>
+
+      <!-- Weather Overview Summary Bar -->
+      <div id="weather-trip-summary" class="bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-100 rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div class="flex items-center gap-2 text-slate-700">
+          <span class="text-lg">⏳</span>
+          <span id="weather-summary-text">Loading live forecast for Sunday, Oct 4 departure...</span>
+        </div>
+      </div>
+
+      <!-- Stage Weather Cards Grid -->
+      <div id="weather-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
+        <!-- Rendered dynamically by app.js for each stage -->
+      </div>
+
+      <!-- Weather Risk Score Legend -->
+      <div class="flex flex-wrap items-center justify-between text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="font-bold text-slate-700">Risk Matrix:</span>
+          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> 1–3 Low Risk (Optimal)</span>
+          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> 4–6 Moderate (Advisory / Layers)</span>
+          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500"></span> 7–10 High (Caution / Rain Shell)</span>
+        </div>
+        <span class="text-slate-400">Powered by Open-Meteo &bull; Zero API Key Needed</span>
+      </div>
+    </section>
+
     <!-- Map & Controls Section -->
     <section id="map-section" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
       <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
@@ -133,6 +187,9 @@
             </span>
             <span id="map-pill-elevation" class="badge-tag bg-amber-50 text-amber-700 border border-amber-200 font-bold shadow-xs transition-all">
               ⛰️ +11,950 ft
+            </span>
+            <span id="map-pill-weather" class="badge-tag bg-sky-50 text-sky-800 border border-sky-200 font-bold shadow-xs transition-all">
+              🌤️ Oct 4–9 Forecast
             </span>
           </div>
           <p class="text-xs text-slate-500 mt-1">View stages, hotels, lunch stops, bike shops, and ⚡ Acceleration Checkpoints. Click any stage or pin for directions.</p>
