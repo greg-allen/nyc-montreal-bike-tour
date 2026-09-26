@@ -4,9 +4,22 @@ Comprehensive logistics, cue sheets, and interactive mapping for cycling from Ne
 
 ---
 
-## Two Field-Audited Itinerary Options Included
+## Three Field-Audited Itinerary Options Included
 
-### 1. 6-Day Classic Tour (Sunday to Friday)
+### 1. 7-Day Gentler Tour (Sunday to Saturday) — Recommended for October Daylight
+* **Total Distance & Climbing:** ~445 miles (716 km) &bull; +14,900 ft
+* **Average Daily Mileage:** ~63.6 miles (102 km) / day
+* **Pace:** Comfortable Leisure Touring (11–13 mph) &bull; *Safest margin for October sunset (~6:25 PM)*
+* **Schedule:**
+  * Sunday (Day 1): NYC to Brewster / Carmel, NY (~60 mi • +2,000 ft)
+  * Monday (Day 2): Brewster to Hudson, NY (~78 mi • +3,000 ft)
+  * Tuesday (Day 3): Hudson to Saratoga Springs, NY (~75 mi • +2,000 ft)
+  * Wednesday (Day 4): Saratoga Springs to Ticonderoga, NY (~75 mi • +2,500 ft)
+  * Thursday (Day 5): Ticonderoga to Plattsburgh, NY (~70 mi • +4,000 ft)
+  * Friday (Day 6): Plattsburgh to Saint-Jean-sur-Richelieu, QC (~50 mi • +800 ft) &bull; *Relaxed border crossing day with time for customs!*
+  * Saturday (Day 7): Saint-Jean to Old Montréal (~37 mi • +600 ft) &bull; *Joyful flat victory lap on Chambly Canal arriving for lunch!*
+
+### 2. 6-Day Classic Tour (Sunday to Friday)
 * **Total Distance & Climbing:** ~445 miles (716 km) &bull; +14,500 ft
 * **Average Daily Mileage:** ~74.2 miles (119 km) / day
 * **Pace:** Steady Endurance Touring (12–14 mph)
@@ -18,7 +31,7 @@ Comprehensive logistics, cue sheets, and interactive mapping for cycling from Ne
   * Thursday (Day 5): Ticonderoga to Plattsburgh, NY (~70 mi • +4,000 ft) &bull; *Hardest day: rolling Adirondack lake bluffs!*
   * Friday (Day 6): Plattsburgh to Montréal, QC (~87 mi • +1,200 ft) &bull; *Flat, fast arrival via Chambly Canal into Old Port!*
 
-### 2. 5-Day Fast Tour (Honest Edition)
+### 3. 5-Day Fast Tour (Honest Edition)
 * **Total Distance & Climbing:** ~425 miles (684 km) &bull; +13,000 ft
 * **Average Daily Mileage:** ~85.0 miles (137 km) / day
 * **Pace:** High-Tempo Endurance (14–17 mph) &bull; *For athletic club cyclists on lightweight setups only.*
@@ -29,8 +42,7 @@ Comprehensive logistics, cue sheets, and interactive mapping for cycling from Ne
   * Day 4: Ticonderoga to Plattsburgh (~70 mi • +4,000 ft) &bull; *⚡ Push to Saint-Jean, QC (+50 mi &rarr; 120 mi extreme push)*
   * Day 5: Plattsburgh to Montréal (~88 mi • +1,200 ft) &bull; *(Or 37 mi victory cruise if Day 4 pushed to St-Jean)*
 
-### 3. Alternative Variants
-* **7-Day Gentler Option:** Split Day 2 at Rhinebeck (~60 mi) or split Day 6 at Saint-Jean-sur-Richelieu (~50 mi) to fit comfortably within October daylight (~11h).
+### 4. Alternative Route Variant
 * **Vermont Upgrade Variant:** At Essex, NY (Day 5), take the Charlotte–Essex Ferry into Vermont, ride Burlington, and traverse the famous Island Line railway causeway and Champlain Islands before rejoining the main route at Rouses Point, NY.
 
 ---
@@ -46,10 +58,12 @@ Comprehensive logistics, cue sheets, and interactive mapping for cycling from Ne
 
 ## Deliverables in This Project
 
-1. **`index.html`** &ndash; Interactive Web Dashboard with 3-mode switcher (6-Day, 5-Day, Compare Routes), live Open-Meteo weather tracking, risk scores, and turn-by-turn links.
-2. **`nyc_to_montreal_bike_tour_guide.md`** &ndash; Master Google Doc guide with revised 6-day itinerary, turn cues, hotels, bike shops, and contingencies.
-3. **`nyc_to_montreal_5_day_fast_tour.md`** &ndash; Standalone guide for the 5-Day Fast Tour and acceleration checkpoints.
-4. **`nyc_to_montreal_tour.gpx` & `nyc_to_montreal_5day_tour.gpx`** &ndash; Compliant GPX 1.1 tracks + waypoints for Garmin Edge, Wahoo ELEMNT, and Hammerhead.
-5. **`nyc_to_montreal_tour.kml` & `nyc_to_montreal_5day_tour.kml`** &ndash; KML files for Google My Maps.
-6. **`jersey_cue_card.html`** &ndash; Standalone 2-sided printable vintage Brevet cue card sized for rear jersey pockets (printable at `/jersey_cue_card.html`).
-7. **`app.js` & `route_data.js`** &ndash; Full client-side application logic and coordinate datasets.
+1. **`index.html`** &ndash; Interactive Web Dashboard with 4-mode schedule switcher (7-Day Gentler, 6-Day Classic, 5-Day Fast, Compare All), live Open-Meteo weather tracking, risk scores, and turn-by-turn links.
+2. **`nyc_to_montreal_7_day_tour.md`** &ndash; Complete standalone master guide for the 7-Day Gentler Tour with October daylight advice.
+3. **`nyc_to_montreal_bike_tour_guide.md`** &ndash; Master guide with revised 6-day itinerary, turn cues, hotels, bike shops, and contingencies.
+4. **`nyc_to_montreal_5_day_fast_tour.md`** &ndash; Standalone guide for the 5-Day Fast Tour and acceleration checkpoints.
+5. **`nyc_to_montreal_7day_tour.gpx` & `nyc_to_montreal_7day_tour.kml`** &ndash; Turn-by-turn GPS files for the 7-Day Tour.
+6. **`nyc_to_montreal_tour.gpx` & `nyc_to_montreal_5day_tour.gpx`** &ndash; Compliant GPX 1.1 tracks + waypoints for Garmin Edge, Wahoo ELEMNT, and Hammerhead.
+7. **`nyc_to_montreal_tour.kml` & `nyc_to_montreal_5day_tour.kml`** &ndash; KML files for Google My Maps.
+8. **`jersey_cue_card.html`** &ndash; Standalone 2-sided printable vintage Brevet cue card sized for rear jersey pockets (printable at `/jersey_cue_card.html` with 7-Day, 6-Day, and 5-Day switcher).
+9. **`app.js` & `route_data.js`** &ndash; Full client-side application logic and coordinate datasets.

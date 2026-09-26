@@ -32,7 +32,8 @@ const DAY_COLORS = [
   '#16a34a', // Day 3: Green
   '#d97706', // Day 4: Amber
   '#9333ea', // Day 5: Purple
-  '#059669'  // Day 6: Emerald
+  '#059669', // Day 6: Emerald
+  '#e11d48'  // Day 7: Rose / Ruby
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,8 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function switchTourMode(tourType) {
-  const tab5 = document.getElementById('tab-5day');
+  const tab7 = document.getElementById('tab-7day');
   const tab6 = document.getElementById('tab-6day');
+  const tab5 = document.getElementById('tab-5day');
   const tabComp = document.getElementById('tab-compare');
   const kmlLink = document.getElementById('kml-download-link');
   const compareSection = document.getElementById('compare-section');
@@ -60,8 +62,9 @@ function switchTourMode(tourType) {
   if (tourType === 'compare') {
     isCompareMode = true;
     if (tabComp) tabComp.className = btnActive;
-    if (tab5) tab5.className = btnInactive;
+    if (tab7) tab7.className = btnInactive;
     if (tab6) tab6.className = btnInactive;
+    if (tab5) tab5.className = btnInactive;
 
     if (compareSection) compareSection.classList.remove('hidden');
     if (legendNormal) legendNormal.classList.add('hidden');
@@ -81,15 +84,26 @@ function switchTourMode(tourType) {
     return;
   }
 
-  // Otherwise, 6day or 5day mode
+  // Otherwise, 7day, 6day, or 5day mode
   isCompareMode = false;
   if (compareSection) compareSection.classList.add('hidden');
   if (legendCompare) legendCompare.classList.add('hidden');
   if (legendNormal) legendNormal.classList.remove('hidden');
 
-  if (tourType === '5day') {
+  if (tourType === '7day') {
+    currentTour = TOUR_DATA_7DAY;
+    if (tab7) tab7.className = btnActive;
+    if (tab6) tab6.className = btnInactive;
+    if (tab5) tab5.className = btnInactive;
+    if (tabComp) tabComp.className = btnInactive;
+    if (kmlLink) {
+      kmlLink.href = "nyc_to_montreal_7day_tour.kml";
+      kmlLink.download = "nyc_to_montreal_7day_tour.kml";
+    }
+  } else if (tourType === '5day') {
     currentTour = TOUR_DATA_5DAY;
     if (tab5) tab5.className = btnActive;
+    if (tab7) tab7.className = btnInactive;
     if (tab6) tab6.className = btnInactive;
     if (tabComp) tabComp.className = btnInactive;
     if (kmlLink) {
@@ -99,6 +113,7 @@ function switchTourMode(tourType) {
   } else {
     currentTour = TOUR_DATA_6DAY;
     if (tab6) tab6.className = btnActive;
+    if (tab7) tab7.className = btnInactive;
     if (tab5) tab5.className = btnInactive;
     if (tabComp) tabComp.className = btnInactive;
     if (kmlLink) {
@@ -118,19 +133,19 @@ function renderCompareStats() {
   if (elDist) elDist.innerText = `~425–445 mi (684–716 km) corridor`;
   
   const elSched = document.getElementById('stat-schedule');
-  if (elSched) elSched.innerText = "6-Day vs 5-Day Fast";
+  if (elSched) elSched.innerText = "7-Day vs 6-Day vs 5-Day";
   
   const elAvg = document.getElementById('stat-avg-miles');
-  if (elAvg) elAvg.innerText = "(~74 vs ~85 mi/day)";
+  if (elAvg) elAvg.innerText = "(~64 vs ~74 vs ~85 mi/day)";
 
   const elPace = document.getElementById('stat-pace');
-  if (elPace) elPace.innerText = "Leisurely Touring vs High-Tempo Endurance";
+  if (elPace) elPace.innerText = "Gentler Touring vs Classic Endurance vs Fast";
 
   // Update Day Selector Dropdown for Compare Mode
   const daySelect = document.getElementById('day-filter-select');
   if (daySelect) {
     daySelect.innerHTML = `
-      <option value="all">All Stages (Comparing Both)</option>
+      <option value="all">All Stages (Comparing Itineraries)</option>
       <option value="compare-6day">Highlight 6-Day Tour Only (Solid Blue)</option>
       <option value="compare-5day">Highlight 5-Day Fast Tour Only (Dashed Amber)</option>
       <option value="compare-accel">Highlight ⚡ Accelerate Checkpoints</option>
@@ -142,19 +157,27 @@ function renderCompareStats() {
   const pillElev = document.getElementById('map-pill-elevation');
 
   if (pillStage) {
-    pillStage.innerText = "⚖️ Comparing 6-Day vs 5-Day";
+    pillStage.innerText = "⚖️ Comparing Tour Itineraries";
     pillStage.className = "badge-tag bg-purple-50 text-purple-800 border border-purple-200 font-bold shadow-xs transition-all";
   }
-  if (pillDist) pillDist.innerText = "🚴 64.8 vs 77.8 mi/day avg";
-  if (pillElev) pillElev.innerText = "⛰️ ~2,000 vs ~2,400 ft/day";
+  if (pillDist) pillDist.innerText = "🚴 ~64 vs ~74 vs ~85 mi/day";
+  if (pillElev) pillElev.innerText = "⛰️ ~2,000–2,600 ft/day avg";
 }
 
 function renderActiveTour() {
   const elDist = document.getElementById('stat-total-dist');
-  if (elDist) elDist.innerText = `${currentTour.totalDistanceMiles} mi (626 km)`;
+  if (elDist) elDist.innerText = `${currentTour.totalDistanceMiles} mi (${Math.round(currentTour.totalDistanceMiles * 1.60934)} km)`;
   
   const elSched = document.getElementById('stat-schedule');
-  if (elSched) elSched.innerText = currentTour.durationDays === 5 ? "5 Days" : "Sun → Fri (6 Days)";
+  if (elSched) {
+    if (currentTour.durationDays === 7) {
+      elSched.innerText = "Sun → Sat (7 Days)";
+    } else if (currentTour.durationDays === 5) {
+      elSched.innerText = "5 Days";
+    } else {
+      elSched.innerText = "Sun → Fri (6 Days)";
+    }
+  }
   
   const elAvg = document.getElementById('stat-avg-miles');
   if (elAvg) elAvg.innerText = `(~${currentTour.averageDailyMiles} mi/day)`;
@@ -996,7 +1019,8 @@ const OCTOBER_CLIMATE_FALLBACK = {
   3: { tempMax: 62, tempMin: 42, rainProb: 20, windSpeed: 10, windDir: 320, weatherCode: 1 }, // Saratoga
   4: { tempMax: 58, tempMin: 36, rainProb: 20, windSpeed: 6, windDir: 190, weatherCode: 1 },  // Ticonderoga
   5: { tempMax: 56, tempMin: 44, rainProb: 35, windSpeed: 9, windDir: 355, weatherCode: 61 }, // Plattsburgh
-  6: { tempMax: 59, tempMin: 42, rainProb: 15, windSpeed: 7, windDir: 195, weatherCode: 1 }   // Montreal
+  6: { tempMax: 58, tempMin: 41, rainProb: 20, windSpeed: 8, windDir: 200, weatherCode: 2 },  // Saint-Jean / Montreal
+  7: { tempMax: 59, tempMin: 42, rainProb: 15, windSpeed: 7, windDir: 195, weatherCode: 1 }   // Montreal (7-day victory lap)
 };
 
 function addDaysToDate(baseDateStr, daysToAdd) {

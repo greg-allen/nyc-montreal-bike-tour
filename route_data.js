@@ -227,6 +227,264 @@ const TOUR_DATA_6DAY = {
   ]
 };
 
+const TOUR_DATA_7DAY = {
+  id: "7day",
+  title: "7-Day Gentler Tour (Sunday to Saturday)",
+  totalDistanceMiles: 445,
+  durationDays: 7,
+  averageDailyMiles: 63.6,
+  elevationGainFt: 14500,
+  schedule: "Sunday Departure -> Saturday Arrival in Montréal (~64 mi/day)",
+  pace: "Comfortable Leisure Touring (11-13 mph / 18-21 km/h) • Recommended for October Daylight",
+  days: [
+    {
+      day: 1,
+      dayOfWeek: "Sunday",
+      name: "Sunday • Day 1: NYC to Brewster / Carmel",
+      subtitle: "The Weekend Escape: Manhattan to Westchester & Putnam Greenways",
+      distanceMiles: 60.0,
+      distanceKm: 96.6,
+      elevationFt: 2000,
+      surface: "Paved Rail Trails (Hudson River Greenway, South/North County, Putnam) with connecting city street sections in the Bronx and Yonkers",
+      color: "#2563eb",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Battery+Park+New+York+NY&destination=Brewster+NY&waypoints=Trailside+Cafe+Yorktown+Heights+NY&travelmode=bicycling",
+      startCoords: [40.7033, -74.0170],
+      endCoords: [41.3973, -73.6171],
+      track: [
+        [40.7033, -74.0170], [40.7580, -74.0048], [40.8517, -73.9404], [40.8785, -73.9215],
+        [40.8978, -73.8860], [40.9312, -73.8765], [40.9985, -73.8582], [41.0534, -73.8187],
+        [41.1398, -73.7994], [41.2052, -73.7850], [41.2720, -73.7820], [41.3485, -73.7420],
+        [41.3973, -73.6171]
+      ],
+      lunch: {
+        name: "Trailside Cafe (Yorktown Heights)",
+        location: "1807 Commerce St, Yorktown Heights, NY",
+        mile: 38,
+        notes: "Directly alongside the rail trail! Fresh fruit smoothies, paninis, wraps, outdoor tables.",
+        coords: [41.2720, -73.7820],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Trailside+Cafe+1807+Commerce+St+Yorktown+Heights+NY"
+      },
+      hotels: [
+        { name: "Heidi's Inn", address: "1270 Route 22, Brewster, NY", phone: "(845) 279-8011", notes: "Cyclist-friendly motel, convenient ground-floor rooms with bike roll-in.", coords: [41.4110, -73.5950], googleUrl: "https://www.google.com/maps/search/?api=1&query=Heidi's+Inn+Brewster+NY" },
+        { name: "Comfort Inn Brewster", address: "7-11 Peach Lake Rd, Brewster, NY", phone: "(845) 483-7848", notes: "Spacious rooms, indoor pool, complimentary hot breakfast.", coords: [41.3850, -73.5820], googleUrl: "https://www.google.com/maps/search/?api=1&query=Comfort+Inn+Brewster+NY" }
+      ],
+      bikeShops: [
+        { name: "Yorktown Cycles", address: "1899 Commerce St, Yorktown Heights, NY", phone: "(914) 245-5504", notes: "Right by the trail & lunch stop. Open Sundays for tubes, CO2.", coords: [41.2725, -73.7815], googleUrl: "https://www.google.com/maps/search/?api=1&query=Yorktown+Cycles+Yorktown+Heights+NY" },
+        { name: "Brewster Bicycle", address: "870 Route 22, Brewster, NY", phone: "(845) 278-8422", notes: "Near Brewster overnight. Touring gear, tubes, quick adjustments.", coords: [41.4010, -73.6050], googleUrl: "https://www.google.com/maps/search/?api=1&query=Brewster+Bicycle+Brewster+NY" }
+      ],
+      bailout: "Metro-North Harlem Line: Frequent bike-friendly commuter train service all along corridor (Pleasantville, Chappaqua, Mt Kisco, Katonah, Goldens Bridge, Brewster). No reservation required; avoid peak hours."
+    },
+    {
+      day: 2,
+      dayOfWeek: "Monday",
+      name: "Monday • Day 2: Brewster to Hudson, NY",
+      subtitle: "Maybrook Trailway, Dutchess Rail Trail & East-Bank Scenic Byways",
+      distanceMiles: 78.0,
+      distanceKm: 125.5,
+      elevationFt: 3000,
+      surface: "55% Paved Rail Trail (Maybrook & Dutchess Rail Trail), 45% Rolling East-Bank Roads (Route 9/9G & River Rd via Hyde Park & Rhinebeck)",
+      color: "#0891b2",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Brewster+NY&destination=Warren+St+Hudson+NY&waypoints=Rhinebeck+NY&travelmode=bicycling",
+      startCoords: [41.3973, -73.6171],
+      endCoords: [42.2529, -73.7910],
+      track: [
+        [41.3973, -73.6171], [41.4650, -73.6980], [41.5834, -73.8057], [41.7108, -73.9442],
+        [41.7209, -73.9632], [41.9268, -73.9126], [41.9945, -73.8754], [42.0881, -73.8446],
+        [42.2529, -73.7910]
+      ],
+      lunch: {
+        name: "Rhinebeck Bagel / Market St Cafes (Rhinebeck, NY)",
+        location: "Market St & Route 9G, Rhinebeck, NY",
+        mile: 52,
+        notes: "Lively historic village dining on the east bank. Gourmet sandwiches, fresh salads, local bakeries. (Note: Walkway Over the Hudson is an optional +2 mi out-and-back scenic detour at Poughkeepsie before continuing north on the east bank).",
+        coords: [41.9268, -73.9126],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Rhinebeck+Bagel+Market+St+Rhinebeck+NY"
+      },
+      hotels: [
+        { name: "The Barlow Hotel", address: "542 Warren St, Hudson, NY", phone: "(518) 828-2100", notes: "Boutique hospitality directly on historic Warren St with secure bike storage.", coords: [42.2510, -73.7870], googleUrl: "https://www.google.com/maps/search/?api=1&query=The+Barlow+Hotel+Hudson+NY" },
+        { name: "The Wick, Hudson", address: "41 Cross St, Hudson, NY", phone: "(518) 249-6825", notes: "Modern luxury hotel 1 block from Hudson Amtrak station; cyclist friendly.", coords: [42.2525, -73.7980], googleUrl: "https://www.google.com/maps/search/?api=1&query=The+Wick+Hudson+NY" }
+      ],
+      bikeShops: [
+        { name: "Bikeway - Hopewell Junction", address: "812 Route 82, Hopewell Junction, NY", phone: "(845) 223-8100", notes: "Direct rail-trail access at Mile 21.", coords: [41.5830, -73.8060], googleUrl: "https://www.google.com/maps/search/?api=1&query=Bikeway+Hopewell+Junction+NY" },
+        { name: "Steiner's Sports - Hudson", address: "301 Warren St, Hudson, NY", phone: "(518) 828-5063", notes: "Right on Warren Street in Hudson. Mechanic on duty.", coords: [42.2530, -73.7915], googleUrl: "https://www.google.com/maps/search/?api=1&query=Steiner's+Sports+Hudson+NY" }
+      ],
+      bailout: "Metro-North Hudson Line at Poughkeepsie (Mile 42 - frequent service to NYC); Amtrak Empire Service at Rhinecliff (Mile 54) and Hudson (Mile 78)."
+    },
+    {
+      day: 3,
+      dayOfWeek: "Tuesday",
+      name: "Tuesday • Day 3: Hudson to Saratoga Springs, NY",
+      subtitle: "Albany-Hudson Electric Trail, Mohawk-Hudson Path & Saratoga Gateway",
+      distanceMiles: 75.0,
+      distanceKm: 120.7,
+      elevationFt: 2000,
+      surface: "65% Paved Rail Trails (36-mile AHET & Zim Smith to Ballston Spa), 35% Canal Roads & Connecting Lanes into Saratoga",
+      color: "#16a34a",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Hudson+NY&destination=Saratoga+Springs+NY&waypoints=Kinderhook+NY%7CWaterford+Harbor+Visitor+Center+Waterford+NY%7CRound+Lake+NY&travelmode=bicycling",
+      startCoords: [42.2529, -73.7910],
+      endCoords: [43.0831, -73.7846],
+      track: [
+        [42.2529, -73.7910], [42.3450, -73.7350], [42.3948, -73.7001], [42.4200, -73.6800],
+        [42.5162, -73.6104], [42.5850, -73.6900], [42.6526, -73.7562], [42.7300, -73.6900],
+        [42.7909, -73.6818], [42.9034, -73.6882], [43.0010, -73.7900], [43.0831, -73.7846]
+      ],
+      lunch: {
+        name: "Troy Waterfront / Waterford Lock 2 Park Cafes",
+        location: "River St, Troy, NY & Waterford Harbor",
+        mile: 44,
+        notes: "Artisan baked goods, gourmet sandwiches, savory quiches, and outdoor river seating by the historic locks.",
+        coords: [42.7315, -73.6890],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Troy+Waterfront+Farmers+Market+Troy+NY"
+      },
+      hotels: [
+        { name: "The Saratoga Hilton", address: "534 Broadway, Saratoga Springs, NY", phone: "(518) 584-4000", notes: "Center of historic Broadway, bike storage available, walking distance to natural mineral springs.", coords: [43.0845, -73.7840], googleUrl: "https://www.google.com/maps/search/?api=1&query=The+Saratoga+Hilton+Saratoga+Springs+NY" },
+        { name: "Holiday Inn Saratoga Springs", address: "232 Broadway, Saratoga Springs, NY", phone: "(518) 584-4550", notes: "Comfortable, cyclist-friendly, indoor heated pool.", coords: [43.0780, -73.7870], googleUrl: "https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Saratoga+Springs+NY" }
+      ],
+      bikeShops: [
+        { name: "Down Tube Bicycle Works", address: "466 Madison Ave, Albany, NY", phone: "(518) 434-1711", notes: "Albany touring & commuter specialists.", coords: [42.6565, -73.7690], googleUrl: "https://www.google.com/maps/search/?api=1&query=Down+Tube+Bicycle+Works+Albany+NY" },
+        { name: "Saratoga Bicycle Specialties", address: "110 Excelsior Ave, Saratoga Springs, NY", phone: "(518) 587-0071", notes: "Full-service Saratoga shop, road & gravel specialists.", coords: [43.0885, -73.7750], googleUrl: "https://www.google.com/maps/search/?api=1&query=Saratoga+Bicycle+Specialties+Saratoga+Springs+NY" }
+      ],
+      bailout: "Amtrak Empire Service at Albany-Rensselaer (Mile 36); Amtrak Adirondack at Saratoga Springs (Mile 75 - verify schedule)."
+    },
+    {
+      day: 4,
+      dayOfWeek: "Wednesday",
+      name: "Wednesday • Day 4: Saratoga Springs to Ticonderoga, NY",
+      subtitle: "Champlain Canalway, Schuylerville, Lock 12 & Fort Ticonderoga",
+      distanceMiles: 75.0,
+      distanceKm: 120.7,
+      elevationFt: 2500,
+      surface: "75% Scenic Low-Traffic State Highways (US-4 & NY-22) with Paved Shoulders, 25% Canal Path. Finishes directly in Ticonderoga to ensure dependable lodging.",
+      color: "#d97706",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Saratoga+Springs+NY&destination=Ticonderoga+NY&waypoints=Schuylerville+NY%7CWhitehall+NY&travelmode=bicycling",
+      startCoords: [43.0831, -73.7846],
+      endCoords: [43.8478, -73.4257],
+      track: [
+        [43.0831, -73.7846], [43.1009, -73.5784], [43.2678, -73.5857], [43.4145, -73.4907],
+        [43.5556, -73.4040], [43.6850, -73.4150], [43.8423, -73.4046], [43.8478, -73.4257]
+      ],
+      lunch: {
+        name: "Historic Grounds Restaurant & Coffee Bar (Whitehall, NY)",
+        location: "142 Main St, Whitehall, NY",
+        mile: 44,
+        notes: "Wholesome sandwiches, soups, and espresso right next to Champlain Canal Lock 12 Park. Prime resupply before pushing north on NY-22.",
+        coords: [43.5560, -73.4045],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Historic+Grounds+Whitehall+NY"
+      },
+      hotels: [
+        { name: "Best Western Plus Ticonderoga", address: "260 Burgoyne Rd, Ticonderoga, NY", phone: "(518) 585-1800", notes: "Extremely popular with cyclists and touring groups, large clean rooms, hot breakfast.", coords: [43.8465, -73.4350], googleUrl: "https://www.google.com/maps/search/?api=1&query=Best+Western+Plus+Ticonderoga+NY" }
+      ],
+      bikeShops: [
+        { name: "Rick's Bike Shop (Queensbury detour)", address: "368 Dix Ave, Queensbury, NY", phone: "(518) 793-8986", notes: "Massive inventory of parts and touring equipment.", coords: [43.3160, -73.6190], googleUrl: "https://www.google.com/maps/search/?api=1&query=Rick's+Bike+Shop+Queensbury+NY" },
+        { name: "Walker's Hardware & Supply", address: "5565 NY-4, Fort Ann, NY", phone: "(518) 639-5223", notes: "Emergency tubes, pumps, metric tools.", coords: [43.4150, -73.4910], googleUrl: "https://www.google.com/maps/search/?api=1&query=Walker's+Farm+Home+Fort+Ann+NY" }
+      ],
+      bailout: "Amtrak Adirondack: Fort Edward (Mile 24), Whitehall (Mile 44), and Ticonderoga Station (Mile 73). (Service operates Mon-Thu north to Montreal; advance bike reservation required; carry-on rack in coach)."
+    },
+    {
+      day: 5,
+      dayOfWeek: "Thursday",
+      name: "Thursday • Day 5: Ticonderoga to Plattsburgh, NY",
+      subtitle: "Adirondack Coastline: Crown Point, Historic Essex & Ausable Chasm",
+      distanceMiles: 70.0,
+      distanceKm: 112.7,
+      elevationFt: 4000,
+      surface: "85% Scenic 2-Lane Highway (NY-9N / NY-22) with Lake Champlain Views, 15% Local Bikeways. Hardest stage: rolling Adirondack climbs and highway shoulders.",
+      color: "#9333ea",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Ticonderoga+NY&destination=Plattsburgh+NY&waypoints=Essex+NY%7CAusable+Chasm+NY&travelmode=bicycling",
+      startCoords: [43.8478, -73.4257],
+      endCoords: [44.6995, -73.4529],
+      track: [
+        [43.8478, -73.4257], [44.0539, -73.4607], [44.1834, -73.4357], [44.3101, -73.3537],
+        [44.3645, -73.3876], [44.5242, -73.4862], [44.5778, -73.5282], [44.6995, -73.4529]
+      ],
+      lunch: {
+        name: "The Cup Cafe / Essex Ice Cream Cafe (Historic Essex, NY)",
+        location: "Main St, Essex, NY",
+        mile: 38,
+        notes: "Dine on the porch overlooking the Lake Champlain ferry to Vermont. Outstanding clam chowder, sandwiches, fresh pastries. Crucial food/water resupply point!",
+        coords: [44.3105, -73.3540],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=The+Cup+Cafe+Main+St+Essex+NY"
+      },
+      hotels: [
+        { name: "Best Western Plus Plattsburgh", address: "446 NY-3, Plattsburgh, NY", phone: "(518) 561-7000", notes: "Comfortable rooms, bike storage friendly, hearty complimentary breakfast.", coords: [44.6940, -73.4890], googleUrl: "https://www.google.com/maps/search/?api=1&query=Best+Western+Plus+Plattsburgh+NY" }
+      ],
+      bikeShops: [
+        { name: "Maui North Ski, Bike & Board", address: "168 Margaret St, Plattsburgh, NY", phone: "(518) 563-7245", notes: "Full-service premier shop in downtown Plattsburgh.", coords: [44.6980, -73.4530], googleUrl: "https://www.google.com/maps/search/?api=1&query=Maui+North+Plattsburgh+NY" }
+      ],
+      bailout: "Amtrak Adirondack at Westport Station (Mile 28) and Plattsburgh Station (Mile 70). (Verify Mon-Thu schedule)."
+    },
+    {
+      day: 6,
+      dayOfWeek: "Friday",
+      name: "Friday • Day 6: Plattsburgh to Saint-Jean-sur-Richelieu, QC (Canada)",
+      subtitle: "US-9 to Rouses Point, Canadian Border Crossing & QC-223 Along Richelieu River",
+      distanceMiles: 50.0,
+      distanceKm: 80.5,
+      elevationFt: 800,
+      surface: "70% Flat Paved Rural Roads (US-9 & QC-223), 30% Local Cycle Lanes. Relaxed border crossing day with ample daylight to clear customs.",
+      color: "#059669",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Plattsburgh+NY&destination=Saint-Jean-sur-Richelieu+QC&waypoints=Rouses+Point+NY%7CLacolle+QC&travelmode=bicycling",
+      startCoords: [44.6995, -73.4529],
+      endCoords: [45.3056, -73.2533],
+      track: [
+        [44.6995, -73.4529], [44.8911, -73.4326], [44.9939, -73.3646], [45.0064, -73.3670],
+        [45.1311, -73.2625], [45.3056, -73.2533]
+      ],
+      lunch: {
+        name: "Lakeside Coffee & Bakery / Chazy Orchards",
+        location: "Lake Champlain shoreline, Rouses Point, NY",
+        mile: 24,
+        notes: "Final U.S. stop right before border customs at Rouses Point / Lacolle. Fresh pastries, espresso, hearty sandwiches.",
+        coords: [44.9939, -73.3646],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Rouses+Point+NY+bakery"
+      },
+      hotels: [
+        { name: "Quality Hotel Centre de Congrès", address: "725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC", phone: "+1 (450) 515-5755", notes: "Premier regional hotel with indoor pool, on-site dining, and secure bike storage.", coords: [45.3120, -73.2640], googleUrl: "https://www.google.com/maps/search/?api=1&query=Quality+Hotel+Centre+de+Congres+Saint-Jean-sur-Richelieu" },
+        { name: "Auberge Harris", address: "576 Rue Champlain, Saint-Jean-sur-Richelieu, QC", phone: "+1 (450) 348-4408", notes: "Certified 'Bienvenue Cyclistes' waterfront inn, direct river views.", coords: [45.2980, -73.2490], googleUrl: "https://www.google.com/maps/search/?api=1&query=Auberge+Harris+Saint-Jean-sur-Richelieu" }
+      ],
+      bikeShops: [
+        { name: "Performance Bégin", address: "470 Rue Saint-Jacques, Saint-Jean-sur-Richelieu, QC", phone: "(450) 348-3561", notes: "Full-service Quebec workshop, tubes, tires, and accessories.", coords: [45.3080, -73.2580], googleUrl: "https://www.google.com/maps/search/?api=1&query=Performance+Begin+Saint-Jean-sur-Richelieu+QC" }
+      ],
+      bailout: "Amtrak Adirondack at Rouses Point, NY (Mile 24 - last roll-on station); Exo public bus network in Saint-Jean-sur-Richelieu connecting to Montreal."
+    },
+    {
+      day: 7,
+      dayOfWeek: "Saturday",
+      name: "Saturday • Day 7: Saint-Jean to Downtown Montréal (Victory Lap!)",
+      subtitle: "Chambly Canal National Historic Site, Longueuil Greenway & Jacques-Cartier Bridge",
+      distanceMiles: 37.0,
+      distanceKm: 59.5,
+      elevationFt: 600,
+      surface: "85% Car-Free Dedicated Paths (Chambly Canal gravel/paved towpath, Longueuil greenway, St. Lawrence bridge path), 15% Urban Bike Lanes. A joyful, flat morning cruise into Old Port!",
+      color: "#e11d48",
+      googleMapsDirUrl: "https://www.google.com/maps/dir/?api=1&origin=Saint-Jean-sur-Richelieu+QC&destination=Place+Jacques-Cartier+Montreal+QC&waypoints=Chambly+Canal+National+Historic+Site+QC%7CLongueuil+QC&travelmode=bicycling",
+      startCoords: [45.3056, -73.2533],
+      endCoords: [45.5017, -73.5673],
+      track: [
+        [45.3056, -73.2533], [45.3850, -73.2680], [45.4497, -73.2872], [45.4593, -73.5134],
+        [45.4750, -73.5450], [45.5017, -73.5673]
+      ],
+      lunch: {
+        name: "Fourquet Fourchette / Bistro du Canal (Chambly) or Old Port Montreal",
+        location: "Chambly Basin National Historic Site, QC",
+        mile: 12,
+        notes: "Scenic terrace overlooking Fort Chambly rapids! Savory crepes and Quebec craft cider, or push directly into Old Port for celebratory victory poutine.",
+        coords: [45.4497, -73.2872],
+        googleUrl: "https://www.google.com/maps/search/?api=1&query=Fourquet+Fourchette+Chambly+QC"
+      },
+      hotels: [
+        { name: "Hotel Monville (Certified 'Bienvenue Cyclistes')", address: "1041 Rue de Bleury, Montréal, QC", phone: "+1 (514) 379-2000", notes: "Sleek, modern, dedicated secure bike room, steps from Place d'Armes in Downtown Montreal.", coords: [45.5035, -73.5630], googleUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Monville+Montreal+QC" },
+        { name: "Fairmont The Queen Elizabeth", address: "900 René-Lévesque Blvd W, Montréal, QC", phone: "+1 (514) 861-3511", notes: "Grand historic hotel directly connected to Gare Centrale.", coords: [45.5005, -73.5670], googleUrl: "https://www.google.com/maps/search/?api=1&query=Fairmont+The+Queen+Elizabeth+Montreal+QC" }
+      ],
+      bikeShops: [
+        { name: "Bicycles Quilicot", address: "1775 Rue Saint-Denis, Montréal, QC", phone: "(514) 499-9600", notes: "Premier Montreal bike shop with mechanics & cardboard transit boxes.", coords: [45.5180, -73.5680], googleUrl: "https://www.google.com/maps/search/?api=1&query=Bicycles+Quilicot+Montreal+QC" },
+        { name: "MEC Montréal", address: "4394 Rue Saint-Denis, Montréal, QC", phone: "(514) 788-5878", notes: "Touring gear, bike bags, tools, and accessories.", coords: [45.5230, -73.5820], googleUrl: "https://www.google.com/maps/search/?api=1&query=MEC+Montreal" }
+      ],
+      bailout: "Longueuil Metro Station (Yellow Line - rolls directly under St. Lawrence River to Berri-UQAM); REM light rail; Montreal taxi vans."
+    }
+  ]
+};
+
 const TOUR_DATA_5DAY = {
   id: "5day",
   title: "5-Day High-Tempo Tour (Honest Edition)",

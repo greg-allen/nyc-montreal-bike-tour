@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="NYC to Montreal Bike Tour Guide - https://github.com/greg-allen/mtl_bike"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>7-Day Gentler Tour (Sunday to Saturday)</name>
+    <desc>NYC to Montreal Bicycle Tour (7-Day Gentler Tour: ~445 mi • +14,500 ft climbing • Recommended for October Daylight)</desc>
+    <time>2026-10-04T12:00:00Z</time>
+  </metadata>
+  <wpt lat="40.7033" lon="-74.017">
+    <name>Grand Depart - Battery Park, NYC</name>
+    <desc>Official Tour Starting Point at Battery Park Hudson River Greenway</desc>
+    <sym>Flag, Green</sym>
+  </wpt>
+  <wpt lat="45.0064" lon="-73.3670">
+    <name>U.S. / Canada Border (Rouses Point / QC-223 Lacolle)</name>
+    <desc>International Border Crossing connecting to QC-223 along Richelieu River. Valid Passport, EDL, or NEXUS required! Zero cannabis.</desc>
+    <sym>Customs</sym>
+  </wpt>
+  <wpt lat="45.5017" lon="-73.5673">
+    <name>Grand Finish - Old Montreal (Place Jacques-Cartier)</name>
+    <desc>Official Tour Finish at Place Jacques-Cartier / Old Montreal</desc>
+    <sym>Flag, Red</sym>
+  </wpt>
+  <wpt lat="41.272" lon="-73.782">
+    <name>Lunch: Trailside Cafe (Yorktown Heights)</name>
+    <desc>Day 1 (Mile 38): Directly alongside the rail trail! Fresh fruit smoothies, paninis, wraps, outdoor tables.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="41.411" lon="-73.595">
+    <name>Hotel: Heidi's Inn (Brewster)</name>
+    <desc>Day 1 Overnight: 1270 Route 22, Brewster, NY - Phone: (845) 279-8011 - Cyclist-friendly motel, convenient ground-floor rooms with bike roll-in.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="41.385" lon="-73.582">
+    <name>Hotel: Comfort Inn Brewster</name>
+    <desc>Day 1 Overnight: 7-11 Peach Lake Rd, Brewster, NY - Phone: (845) 483-7848 - Spacious rooms, indoor pool, hot breakfast.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="41.9268" lon="-73.9126">
+    <name>Lunch: Rhinebeck Bagel / Market St Cafes</name>
+    <desc>Day 2 (Mile 52): Historic Rhinebeck dining on east bank. (Note: Walkway Over Hudson is an optional +2 mi out-and-back detour from Poughkeepsie).</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="42.251" lon="-73.787">
+    <name>Hotel: The Barlow Hotel (Hudson)</name>
+    <desc>Day 2 Overnight: 542 Warren St, Hudson, NY - Phone: (518) 828-2100 - Boutique hospitality on historic Warren St with secure bike storage.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="42.7315" lon="-73.689">
+    <name>Lunch: Waterford Lock 2 / Troy Waterfront</name>
+    <desc>Day 3 (Mile 44): Historic canal locks, artisan sandwiches, bakery treats, outdoor seating.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="43.0845" lon="-73.784">
+    <name>Hotel: The Saratoga Hilton</name>
+    <desc>Day 3 Overnight: 534 Broadway, Saratoga Springs, NY - Phone: (518) 584-4000 - Center of historic Broadway, bike storage available.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="43.556" lon="-73.4045">
+    <name>Lunch: Historic Grounds Restaurant &amp; Coffee Bar (Whitehall)</name>
+    <desc>Day 4 (Mile 44): Hearty sandwiches, soups, espresso overlooking Champlain Canal Lock 12.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="43.8465" lon="-73.435">
+    <name>Hotel: Best Western Plus Ticonderoga</name>
+    <desc>Day 4 Overnight: 260 Burgoyne Rd, Ticonderoga, NY - Phone: (518) 585-1800 - Clean, cyclist-friendly baseline finish.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="44.3105" lon="-73.354">
+    <name>Lunch: The Cup Cafe / Essex Ice Cream Cafe (Historic Essex)</name>
+    <desc>Day 5 (Mile 38): Lakeside dining on the porch watching the ferry to Charlotte, Vermont. Chowder, pastries, resupply.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="44.694" lon="-73.489">
+    <name>Hotel: Best Western Plus Plattsburgh</name>
+    <desc>Day 5 Overnight: 446 NY-3, Plattsburgh, NY - Phone: (518) 561-7000 - Comfortable rooms, cyclist friendly.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="44.9939" lon="-73.3646">
+    <name>Lunch: Lakeside Bakery &amp; Cafe (Rouses Point)</name>
+    <desc>Day 6 (Mile 24): Last US stop right before border customs at Rouses Point / Lacolle. Fresh pastries, espresso, sandwiches.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="45.312" lon="-73.264">
+    <name>Hotel: Quality Hotel Centre de Congres (Saint-Jean-sur-Richelieu)</name>
+    <desc>Day 6 Overnight: 725 Boul. du Seminaire N, Saint-Jean-sur-Richelieu, QC - Phone: +1 (450) 515-5755 - Indoor pool, dining, bike storage.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="45.298" lon="-73.249">
+    <name>Hotel: Auberge Harris (Saint-Jean-sur-Richelieu)</name>
+    <desc>Day 6 Overnight: 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC - Phone: +1 (450) 348-4408 - Certified Bienvenue Cyclistes waterfront inn.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <wpt lat="45.4497" lon="-73.2872">
+    <name>Midday Stop: Fort Chambly / Fourquet Fourchette</name>
+    <desc>Day 7 (Mile 12): Scenic stop on Chambly Canal overlooking historic rapids! Craft ales, crepes, cider.</desc>
+    <sym>Restaurant</sym>
+  </wpt>
+  <wpt lat="45.5035" lon="-73.563">
+    <name>Hotel: Hotel Monville (Montreal)</name>
+    <desc>Day 7 Finish: 1041 Rue de Bleury, Montreal, QC - Phone: +1 (514) 379-2000 - Certified Bienvenue Cyclistes, dedicated secure bike room.</desc>
+    <sym>Lodging</sym>
+  </wpt>
+  <trk>
+    <name>Sunday • Day 1: NYC to Brewster / Carmel</name>
+    <desc>60.0 mi (96.6 km) • +2000 ft • Hudson Greenway, South/North County &amp; Putnam Trailways</desc>
+    <trkseg>
+      <trkpt lat="40.7033" lon="-74.017"></trkpt>
+      <trkpt lat="40.758" lon="-74.0048"></trkpt>
+      <trkpt lat="40.8517" lon="-73.9404"></trkpt>
+      <trkpt lat="40.8785" lon="-73.9215"></trkpt>
+      <trkpt lat="40.8978" lon="-73.886"></trkpt>
+      <trkpt lat="40.9312" lon="-73.8765"></trkpt>
+      <trkpt lat="40.9985" lon="-73.8582"></trkpt>
+      <trkpt lat="41.0534" lon="-73.8187"></trkpt>
+      <trkpt lat="41.1398" lon="-73.7994"></trkpt>
+      <trkpt lat="41.2052" lon="-73.785"></trkpt>
+      <trkpt lat="41.272" lon="-73.782"></trkpt>
+      <trkpt lat="41.3485" lon="-73.742"></trkpt>
+      <trkpt lat="41.3973" lon="-73.6171"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Monday • Day 2: Brewster to Hudson, NY</name>
+    <desc>78.0 mi (125.5 km) • +3000 ft • Maybrook &amp; Dutchess Rail Trails, Route 9G / River Rd via Rhinebeck</desc>
+    <trkseg>
+      <trkpt lat="41.3973" lon="-73.6171"></trkpt>
+      <trkpt lat="41.465" lon="-73.698"></trkpt>
+      <trkpt lat="41.5834" lon="-73.8057"></trkpt>
+      <trkpt lat="41.7108" lon="-73.9442"></trkpt>
+      <trkpt lat="41.7209" lon="-73.9632"></trkpt>
+      <trkpt lat="41.9268" lon="-73.9126"></trkpt>
+      <trkpt lat="41.9945" lon="-73.8754"></trkpt>
+      <trkpt lat="42.0881" lon="-73.8446"></trkpt>
+      <trkpt lat="42.2529" lon="-73.791"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Tuesday • Day 3: Hudson to Saratoga Springs, NY</name>
+    <desc>75.0 mi (120.7 km) • +2000 ft • AHET Trail, Mohawk-Hudson Path, Zim Smith to Ballston Spa</desc>
+    <trkseg>
+      <trkpt lat="42.2529" lon="-73.791"></trkpt>
+      <trkpt lat="42.345" lon="-73.735"></trkpt>
+      <trkpt lat="42.3948" lon="-73.7001"></trkpt>
+      <trkpt lat="42.42" lon="-73.68"></trkpt>
+      <trkpt lat="42.5162" lon="-73.6104"></trkpt>
+      <trkpt lat="42.585" lon="-73.69"></trkpt>
+      <trkpt lat="42.6526" lon="-73.7562"></trkpt>
+      <trkpt lat="42.73" lon="-73.69"></trkpt>
+      <trkpt lat="42.7909" lon="-73.6818"></trkpt>
+      <trkpt lat="42.9034" lon="-73.6882"></trkpt>
+      <trkpt lat="43.001" lon="-73.79"></trkpt>
+      <trkpt lat="43.0831" lon="-73.7846"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Wednesday • Day 4: Saratoga Springs to Ticonderoga, NY</name>
+    <desc>75.0 mi (120.7 km) • +2500 ft • Champlain Canalway to Whitehall Lock 12, rolling NY-22</desc>
+    <trkseg>
+      <trkpt lat="43.0831" lon="-73.7846"></trkpt>
+      <trkpt lat="43.1009" lon="-73.5784"></trkpt>
+      <trkpt lat="43.2678" lon="-73.5857"></trkpt>
+      <trkpt lat="43.4145" lon="-73.4907"></trkpt>
+      <trkpt lat="43.5556" lon="-73.404"></trkpt>
+      <trkpt lat="43.685" lon="-73.415"></trkpt>
+      <trkpt lat="43.8423" lon="-73.4046"></trkpt>
+      <trkpt lat="43.8478" lon="-73.4257"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Thursday • Day 5: Ticonderoga to Plattsburgh, NY</name>
+    <desc>70.0 mi (112.7 km) • +4000 ft • Adirondack Coastline: Crown Point, Essex &amp; Ausable Chasm</desc>
+    <trkseg>
+      <trkpt lat="43.8478" lon="-73.4257"></trkpt>
+      <trkpt lat="44.0539" lon="-73.4607"></trkpt>
+      <trkpt lat="44.1834" lon="-73.4357"></trkpt>
+      <trkpt lat="44.3101" lon="-73.3537"></trkpt>
+      <trkpt lat="44.3645" lon="-73.3876"></trkpt>
+      <trkpt lat="44.5242" lon="-73.4862"></trkpt>
+      <trkpt lat="44.5778" lon="-73.5282"></trkpt>
+      <trkpt lat="44.6995" lon="-73.4529"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Friday • Day 6: Plattsburgh to Saint-Jean-sur-Richelieu, QC</name>
+    <desc>50.0 mi (80.5 km) • +800 ft • US-9, Rouses Point Border Crossing &amp; QC-223 Richelieu River Route</desc>
+    <trkseg>
+      <trkpt lat="44.6995" lon="-73.4529"></trkpt>
+      <trkpt lat="44.8911" lon="-73.4326"></trkpt>
+      <trkpt lat="44.9939" lon="-73.3646"></trkpt>
+      <trkpt lat="45.0064" lon="-73.367"></trkpt>
+      <trkpt lat="45.1311" lon="-73.2625"></trkpt>
+      <trkpt lat="45.3056" lon="-73.2533"></trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>Saturday • Day 7: Saint-Jean to Downtown Montréal (Victory Lap!)</name>
+    <desc>37.0 mi (59.5 km) • +600 ft • Chambly Canal Towpath, Longueuil Route Verte, Jacques-Cartier Bridge into Old Port</desc>
+    <trkseg>
+      <trkpt lat="45.3056" lon="-73.2533"></trkpt>
+      <trkpt lat="45.385" lon="-73.268"></trkpt>
+      <trkpt lat="45.4497" lon="-73.2872"></trkpt>
+      <trkpt lat="45.4593" lon="-73.5134"></trkpt>
+      <trkpt lat="45.475" lon="-73.545"></trkpt>
+      <trkpt lat="45.5017" lon="-73.5673"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

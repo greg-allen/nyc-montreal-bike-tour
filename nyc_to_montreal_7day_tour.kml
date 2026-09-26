@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>NYC to Montreal 7-Day Gentler Bicycle Tour (Sunday to Saturday)</name>
+  <description>Empire State Trail, Lake Champlain Coast, Richelieu River &amp; Chambly Canal (Recommended for October Daylight)</description>
+  <Folder>
+    <name>Sunday • Day 1: NYC to Brewster / Carmel</name>
+    <Placemark>
+      <name>Sunday Route Track (60.0 mi)</name>
+      <description>95% Paved Traffic-Free Rail Trail (Hudson River Greenway, South/North County, Putnam)</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -74.017,40.7033,0
+          -74.0048,40.758,0
+          -73.9404,40.8517,0
+          -73.9215,40.8785,0
+          -73.886,40.8978,0
+          -73.8765,40.9312,0
+          -73.8582,40.9985,0
+          -73.8187,41.0534,0
+          -73.7994,41.1398,0
+          -73.785,41.2052,0
+          -73.782,41.272,0
+          -73.742,41.3485,0
+          -73.6171,41.3973,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Trailside Cafe (Yorktown Heights)</name>
+      <description>Directly alongside the rail trail! Fresh fruit smoothies, paninis, wraps, outdoor tables. (Mile 38)</description>
+      <Point><coordinates>-73.782,41.272,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Heidi's Inn</name>
+      <description>1270 Route 22, Brewster, NY | (845) 279-8011 | Cyclist-friendly motel, convenient ground-floor rooms with bike roll-in.</description>
+      <Point><coordinates>-73.595,41.411,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Comfort Inn Brewster</name>
+      <description>7-11 Peach Lake Rd, Brewster, NY | (845) 483-7848 | Spacious rooms, indoor pool, complimentary hot breakfast.</description>
+      <Point><coordinates>-73.582,41.385,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Monday • Day 2: Brewster to Hudson, NY</name>
+    <Placemark>
+      <name>Monday Route Track (78.0 mi)</name>
+      <description>55% Paved Rail Trail (Maybrook &amp; Dutchess), 45% Scenic Low-Traffic Roads (Route 9G / River Rd)</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.6171,41.3973,0
+          -73.698,41.465,0
+          -73.8057,41.5834,0
+          -73.9442,41.7108,0
+          -73.9632,41.7209,0
+          -73.9126,41.9268,0
+          -73.8754,41.9945,0
+          -73.8446,42.0881,0
+          -73.791,42.2529,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Rhinebeck Bagel / Market St Cafes</name>
+      <description>Historic village dining on the east bank. (Mile 52)</description>
+      <Point><coordinates>-73.9126,41.9268,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 The Barlow Hotel</name>
+      <description>542 Warren St, Hudson, NY | (518) 828-2100 | Boutique hotel on historic Warren St with bike storage.</description>
+      <Point><coordinates>-73.787,42.251,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Tuesday • Day 3: Hudson to Saratoga Springs, NY</name>
+    <Placemark>
+      <name>Tuesday Route Track (75.0 mi)</name>
+      <description>65% Paved Rail Trails (AHET &amp; Zim Smith), 35% Canal Roads &amp; Bike Lanes</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.791,42.2529,0
+          -73.735,42.345,0
+          -73.7001,42.3948,0
+          -73.68,42.42,0
+          -73.6104,42.5162,0
+          -73.69,42.585,0
+          -73.7562,42.6526,0
+          -73.69,42.73,0
+          -73.6818,42.7909,0
+          -73.6882,42.9034,0
+          -73.79,43.001,0
+          -73.7846,43.0831,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Waterford Lock 2 Park / Troy Waterfront</name>
+      <description>Artisan sandwiches, quiche, canal harbor seating. (Mile 44)</description>
+      <Point><coordinates>-73.689,42.7315,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 The Saratoga Hilton</name>
+      <description>534 Broadway, Saratoga Springs, NY | (518) 584-4000 | Historic Broadway, bike storage available.</description>
+      <Point><coordinates>-73.784,43.0845,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Wednesday • Day 4: Saratoga Springs to Ticonderoga, NY</name>
+    <Placemark>
+      <name>Wednesday Route Track (75.0 mi)</name>
+      <description>75% Scenic Low-Traffic State Highways (Route 4 &amp; NY-22), 25% Canal Path</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.7846,43.0831,0
+          -73.5784,43.1009,0
+          -73.5857,43.2678,0
+          -73.4907,43.4145,0
+          -73.404,43.5556,0
+          -73.415,43.685,0
+          -73.4046,43.8423,0
+          -73.4257,43.8478,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Historic Grounds Restaurant &amp; Coffee Bar (Whitehall)</name>
+      <description>Wholesome sandwiches and espresso right next to Champlain Canal Lock 12 Park. (Mile 44)</description>
+      <Point><coordinates>-73.4045,43.556,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Best Western Plus Ticonderoga</name>
+      <description>260 Burgoyne Rd, Ticonderoga, NY | (518) 585-1800 | Clean, cyclist-friendly baseline finish.</description>
+      <Point><coordinates>-73.435,43.8465,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Thursday • Day 5: Ticonderoga to Plattsburgh, NY</name>
+    <Placemark>
+      <name>Thursday Route Track (70.0 mi)</name>
+      <description>80% Scenic 2-Lane Highway (NY-9N / NY-22) with Lake Champlain Views, 20% Local Bikeways</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.4257,43.8478,0
+          -73.4607,44.0539,0
+          -73.4357,44.1834,0
+          -73.3537,44.3101,0
+          -73.3876,44.3645,0
+          -73.4862,44.5242,0
+          -73.5282,44.5778,0
+          -73.4529,44.6995,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🥪 The Cup Cafe / Essex Ice Cream Cafe (Historic Essex)</name>
+      <description>Dine on the porch overlooking the Lake Champlain ferry to Vermont. (Mile 38)</description>
+      <Point><coordinates>-73.354,44.3105,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Best Western Plus Plattsburgh</name>
+      <description>446 NY-3, Plattsburgh, NY | (518) 561-7000 | Comfortable rooms, hearty breakfast.</description>
+      <Point><coordinates>-73.489,44.694,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Friday • Day 6: Plattsburgh to Saint-Jean-sur-Richelieu, QC (Canada)</name>
+    <Placemark>
+      <name>Friday Route Track (50.0 mi)</name>
+      <description>70% Flat Paved Rural Roads (US-9 &amp; QC-223), 30% Local Cycle Lanes</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.4529,44.6995,0
+          -73.4326,44.8911,0
+          -73.3646,44.9939,0
+          -73.367,45.0064,0
+          -73.2625,45.1311,0
+          -73.2533,45.3056,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🛂 Canadian Border Crossing (Lacolle / QC-223)</name>
+      <description>International Border Crossing. Valid Passport, EDL, or NEXUS required! Zero cannabis.</description>
+      <Point><coordinates>-73.367,45.0064,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Lakeside Bakery &amp; Cafe (Rouses Point)</name>
+      <description>Last American stop before customs! Fresh pastries, espresso, sandwiches. (Mile 24)</description>
+      <Point><coordinates>-73.3646,44.9939,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Quality Hotel Centre de Congrès</name>
+      <description>725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC | +1 (450) 515-5755 | Full hotel, pool, dining, bike storage.</description>
+      <Point><coordinates>-73.264,45.312,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Saturday • Day 7: Saint-Jean to Downtown Montréal (Victory Lap!)</name>
+    <Placemark>
+      <name>Saturday Route Track (37.0 mi)</name>
+      <description>85% Car-Free Dedicated Paths (Chambly Canal &amp; Bridges), 15% Urban Bike Lanes</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.2533,45.3056,0
+          -73.268,45.385,0
+          -73.2872,45.4497,0
+          -73.5134,45.4593,0
+          -73.545,45.475,0
+          -73.5673,45.5017,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Fort Chambly / Fourquet Fourchette</name>
+      <description>Scenic terrace overlooking historic rapids! (Mile 12)</description>
+      <Point><coordinates>-73.2872,45.4497,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Hotel Monville (Certified 'Bienvenue Cyclistes')</name>
+      <description>1041 Rue de Bleury, Montréal, QC | +1 (514) 379-2000 | Dedicated secure bike room, steps from Place d'Armes.</description>
+      <Point><coordinates>-73.563,45.5035,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏁 Place Jacques-Cartier (Grand Tour Finish)</name>
+      <description>Official Tour Finish in the heart of Old Montreal!</description>
+      <Point><coordinates>-73.5673,45.5017,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
