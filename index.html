@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC to Montreal Bicycle Tour Guide | 6-Day & 5-Day Fast Options</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Leaflet CSS & JS (Zero-Key Cloudflare CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/20">
+          🚴
+        </div>
+        <div>
+          <h1 class="text-xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+            NYC to Montréal Bike Tour
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">Empire State Trail &bull; Route Verte</span>
+          </h1>
+          <p class="text-xs text-slate-500 font-medium">Hotel-to-Hotel Touring &bull; Turn-by-Turn Google Maps &bull; Rail Bailout Safety Net</p>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        <a id="kml-download-link" href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="text-xs font-semibold px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 transition-all flex items-center gap-1.5 shadow-sm">
+          <span>🗺️ Google My Maps KML</span>
+        </a>
+        <button id="copy-doc-btn" onclick="copyGuideForGoogleDoc()" class="text-xs font-semibold px-3.5 py-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 transition-all flex items-center gap-1.5 shadow-sm">
+          <span>📋 Copy for Google Docs</span>
+        </button>
+        <button onclick="window.print()" class="text-xs font-semibold px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-all flex items-center gap-1.5">
+          <span>🖨️ Print / PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
+
+    <!-- Itinerary Mode Switcher Bar -->
+    <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Select Tour Schedule:</span>
+      </div>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button id="tab-6day" onclick="switchTourMode('6day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5">
+          <span>🗓️ 6-Day Tour (Sunday &rarr; Friday)</span>
+          <span class="text-[11px] opacity-80">(~65 mi/day)</span>
+        </button>
+        <button id="tab-5day" onclick="switchTourMode('5day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+          <span>⚡ 5-Day Fast Tour (+ Accelerate Options)</span>
+          <span class="text-[11px] opacity-80">(~78 mi/day)</span>
+        </button>
+        <button id="tab-compare" onclick="switchTourMode('compare')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+          <span>⚖️ Compare Routes</span>
+          <span class="text-[11px] opacity-80">(Side-by-Side)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Overview Stats Bar -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold">
+          📍
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Distance</div>
+          <div id="stat-total-dist" class="text-lg font-extrabold text-slate-900">389 mi <span class="text-xs font-normal text-slate-500">(626 km)</span></div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold">
+          ⏱️
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Schedule / Pace</div>
+          <div class="text-lg font-extrabold text-slate-900">
+            <span id="stat-schedule">Sun &rarr; Fri (6 Days)</span> 
+            <span id="stat-avg-miles" class="text-xs font-normal text-emerald-600">(~64.8 mi/day)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-xl font-bold">
+          ⛰️
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Climbing</div>
+          <div class="text-lg font-extrabold text-slate-900">+11,950 ft <span class="text-xs font-normal text-slate-500">Gradual Rail Trail</span></div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-xl font-bold">
+          🚆
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Rail Safety Net</div>
+          <div class="text-lg font-extrabold text-slate-900">Amtrak Adirondack <span class="text-xs font-normal text-purple-600">Shadows Daily</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map & Controls Section -->
+    <section id="map-section" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <h2 class="text-lg font-bold text-slate-900">🗺️ Route Map & Waypoints</h2>
+            <!-- Dynamic Stage Mileage and Elevation Pills -->
+            <span id="map-pill-stage" class="badge-tag bg-slate-100 text-slate-800 border border-slate-200 font-bold shadow-xs transition-all">
+              All Stages
+            </span>
+            <span id="map-pill-distance" class="badge-tag bg-blue-50 text-blue-700 border border-blue-200 font-bold shadow-xs transition-all">
+              🚴 389 mi / 626 km
+            </span>
+            <span id="map-pill-elevation" class="badge-tag bg-amber-50 text-amber-700 border border-amber-200 font-bold shadow-xs transition-all">
+              ⛰️ +11,950 ft
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">View stages, hotels, lunch stops, bike shops, and ⚡ Acceleration Checkpoints. Click any stage or pin for directions.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap items-center gap-3 no-print">
+          <div class="flex items-center gap-2">
+            <label for="day-filter-select" class="text-xs font-bold text-slate-600">Stage:</label>
+            <select id="day-filter-select" class="text-xs font-semibold bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <!-- Populated by app.js -->
+            </select>
+          </div>
+
+          <div class="h-4 w-px bg-slate-200 hidden sm:block"></div>
+
+          <!-- POI Toggles -->
+          <div class="flex items-center gap-3 text-xs font-medium text-slate-600">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" id="toggle-hotels" checked class="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
+              <span>🏨 Hotels</span>
+            </label>
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" id="toggle-lunch" checked class="rounded border-slate-300 text-orange-600 focus:ring-orange-500">
+              <span>🥪 Lunch</span>
+            </label>
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" id="toggle-bikeshops" checked class="rounded border-slate-300 text-red-600 focus:ring-red-500">
+              <span>🔧 Bike Shops</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Map Container with Explicit Height -->
+      <div id="map" style="height: 520px; min-height: 520px; width: 100%; border-radius: 1rem;" class="shadow-inner border border-slate-200"></div>
+
+      <!-- Map Legend -->
+      <div id="map-legend-normal" class="flex flex-wrap items-center justify-between text-xs text-slate-500 pt-1">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-blue-600"></span> Day 1</span>
+          <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-cyan-600"></span> Day 2</span>
+          <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-green-600"></span> Day 3</span>
+          <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-amber-600"></span> Day 4</span>
+          <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-purple-600"></span> Day 5</span>
+          <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-emerald-600"></span> Day 6</span>
+          <span class="flex items-center gap-1 font-bold text-amber-600"><span>⚡</span> Accelerate Push</span>
+        </div>
+        <span class="text-[11px] text-slate-400">Click any route or pin for Google Maps turn-by-turn navigation</span>
+      </div>
+
+      <!-- Compare Mode Legend -->
+      <div id="map-legend-compare" class="hidden flex flex-wrap items-center justify-between text-xs text-slate-600 pt-1">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="flex items-center gap-1.5 font-bold text-blue-700"><span class="w-6 h-1.5 rounded-full bg-blue-600 inline-block"></span> 🗓️ 6-Day Tour (Solid Blue)</span>
+          <span class="flex items-center gap-1.5 font-bold text-amber-700"><span class="w-6 h-1.5 rounded-full bg-amber-500 inline-block" style="border-top: 2px dashed #b45309;"></span> ⚡ 5-Day Fast Tour (Dashed Amber)</span>
+          <span class="flex items-center gap-1 font-semibold text-slate-700">🏨 Blue Pins: 6-Day Stops</span>
+          <span class="flex items-center gap-1 font-semibold text-slate-700">🏨 Amber Pins: 5-Day Stops</span>
+          <span class="flex items-center gap-1 font-bold text-amber-600"><span>⚡</span> Accelerate Checkpoints</span>
+        </div>
+        <span class="text-[11px] text-slate-400">Click any route track or pin to inspect stage details</span>
+      </div>
+    </section>
+
+    <!-- Google My Maps / Google Doc Integration Tip -->
+    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div class="space-y-1">
+        <h3 class="text-sm font-bold text-emerald-950 flex items-center gap-2">
+          <span>✨ Google My Maps & Google Docs Integration (Zero API Key Needed!)</span>
+        </h3>
+        <p class="text-xs text-emerald-800 leading-relaxed">
+          Import either KML (<code class="bg-emerald-100 px-1 rounded text-emerald-950">nyc_to_montreal_tour.kml</code> or <code class="bg-emerald-100 px-1 rounded text-emerald-950">nyc_to_montreal_5day_tour.kml</code>) into <strong><a href="https://mymaps.google.com" target="_blank" class="underline font-bold text-emerald-900">Google My Maps</a></strong>. Click <strong>Share</strong>, paste the link in your Google Doc, and your riders can open the entire map with pins directly inside their Google Maps phone app!
+        </p>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1">
+          📥 6-Day KML
+        </a>
+        <a href="nyc_to_montreal_5day_tour.kml" download="nyc_to_montreal_5day_tour.kml" class="bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1">
+          ⚡ 5-Day KML
+        </a>
+      </div>
+    </div>
+
+    <!-- Compare Routes Section (Visible when Compare Mode is active) -->
+    <section id="compare-section" class="hidden space-y-6">
+      <!-- Section Header -->
+      <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-6 text-white shadow-lg space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase tracking-wider mb-2">
+              ⚖️ Side-by-Side Tour Comparison
+            </span>
+            <h2 class="text-2xl font-black tracking-tight">6-Day Leisurely vs 5-Day Fast Tour</h2>
+            <p class="text-sm text-slate-300 mt-1 max-w-2xl">
+              Both itineraries traverse the same iconic 389-mile Empire State & Champlain corridor from Battery Park to Old Montréal. Compare daily mileage, pace, overnight stops, and ⚡ acceleration options below.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="switchTourMode('6day')" class="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+              <span>🗓️ Choose 6-Day</span>
+            </button>
+            <button onclick="switchTourMode('5day')" class="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+              <span>⚡ Choose 5-Day</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- High-Level Side-by-Side Comparison Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 6-Day Tour Card -->
+        <div class="bg-white rounded-2xl border-2 border-blue-200 shadow-sm p-6 space-y-5 hover:border-blue-400 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider bg-blue-100 text-blue-800">
+                🗓️ The Classic Tour
+              </span>
+              <span class="text-xs font-bold text-slate-500">Sunday Departure &rarr; Friday Finish</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-slate-900">6-Day Leisurely Expedition</h3>
+              <p class="text-xs text-slate-600 mt-1">Balanced daily miles, relaxed recovery, vibrant cultural evenings in Hudson & Saratoga.</p>
+            </div>
+
+            <!-- Stats Matrix -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center pt-2">
+              <div class="bg-blue-50/70 p-2.5 rounded-xl border border-blue-100">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Daily Average</div>
+                <div class="text-base font-extrabold text-blue-700">64.8 mi <span class="text-[11px] font-normal text-slate-500">(104 km)</span></div>
+              </div>
+              <div class="bg-blue-50/70 p-2.5 rounded-xl border border-blue-100">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Rolling Time</div>
+                <div class="text-base font-extrabold text-blue-700">4.5 - 5.5 hrs <span class="text-[11px] font-normal text-slate-500">@ 12-14 mph</span></div>
+              </div>
+              <div class="bg-blue-50/70 p-2.5 rounded-xl border border-blue-100 col-span-2 sm:col-span-1">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Overnight Towns</div>
+                <div class="text-base font-extrabold text-blue-700">5 Hotels <span class="text-[11px] font-normal text-slate-500">(All on rail)</span></div>
+              </div>
+            </div>
+
+            <!-- Overnights List -->
+            <div class="space-y-2 pt-1">
+              <div class="text-xs font-bold text-slate-700 uppercase tracking-wider">Overnight Towns:</div>
+              <div class="flex flex-wrap gap-1.5 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">1. Brewster / Carmel</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">2. Hudson (Warren St)</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">3. Saratoga Springs</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">4. Whitehall (Canal)</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">5. Plattsburgh</span>
+                <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 font-bold border border-emerald-200">🏁 Montréal</span>
+              </div>
+            </div>
+
+            <!-- Best For List -->
+            <div class="space-y-1.5 pt-1 text-xs text-slate-600">
+              <div class="text-xs font-bold text-slate-700 uppercase tracking-wider">Why Pick This Route:</div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span>Gentle daily mileage leaves 3+ hours every afternoon for sightseeing, craft beer, and spa baths.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span>Arrive in Old Montréal by Friday 3:00 PM with the entire weekend ahead to celebrate.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span>Shortest day is just 52.4 miles (Stage 4 to Whitehall), providing built-in mid-tour recovery.</span>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="switchTourMode('6day')" class="w-full mt-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow transition-all flex items-center justify-center gap-2">
+            <span>Select 6-Day Tour Itinerary</span> &rarr;
+          </button>
+        </div>
+
+        <!-- 5-Day Fast Tour Card -->
+        <div class="bg-white rounded-2xl border-2 border-amber-300 shadow-sm p-6 space-y-5 hover:border-amber-400 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider bg-amber-100 text-amber-900">
+                ⚡ The High-Tempo Tour
+              </span>
+              <span class="text-xs font-bold text-amber-700">4 Overnights &bull; 4 Accelerate Options</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-slate-900">5-Day Fast Tour (+ Accelerate Push)</h3>
+              <p class="text-xs text-slate-600 mt-1">High-tempo endurance cycling with pre-scouted checkpoints to jump ahead and sprint into Montréal.</p>
+            </div>
+
+            <!-- Stats Matrix -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-center pt-2">
+              <div class="bg-amber-50/70 p-2.5 rounded-xl border border-amber-100">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Daily Average</div>
+                <div class="text-base font-extrabold text-amber-700">77.8 mi <span class="text-[11px] font-normal text-slate-500">(125 km)</span></div>
+              </div>
+              <div class="bg-amber-50/70 p-2.5 rounded-xl border border-amber-100">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Rolling Time</div>
+                <div class="text-base font-extrabold text-amber-700">5.0 - 6.0 hrs <span class="text-[11px] font-normal text-slate-500">@ 14-17 mph</span></div>
+              </div>
+              <div class="bg-amber-50/70 p-2.5 rounded-xl border border-amber-100 col-span-2 sm:col-span-1">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Accelerations</div>
+                <div class="text-base font-extrabold text-amber-700">4 Checkpoints <span class="text-[11px] font-normal text-slate-500">(+16 to +24 mi)</span></div>
+              </div>
+            </div>
+
+            <!-- Overnights List -->
+            <div class="space-y-2 pt-1">
+              <div class="text-xs font-bold text-slate-700 uppercase tracking-wider">Base Overnights &amp; Push Targets:</div>
+              <div class="flex flex-wrap gap-1.5 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">1. Poughkeepsie <span class="text-amber-700 font-bold">(⚡ Kingston)</span></span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">2. Albany/Troy <span class="text-amber-700 font-bold">(⚡ Saratoga)</span></span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">3. Ticonderoga <span class="text-amber-700 font-bold">(⚡ Essex)</span></span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 font-semibold border border-slate-200">4. Plattsburgh <span class="text-amber-700 font-bold">(⚡ Saint-Jean QC)</span></span>
+                <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 font-bold border border-emerald-200">🏁 Montréal</span>
+              </div>
+            </div>
+
+            <!-- Best For List -->
+            <div class="space-y-1.5 pt-1 text-xs text-slate-600">
+              <div class="text-xs font-bold text-slate-700 uppercase tracking-wider">Why Pick This Route:</div>
+              <div class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">⚡</span>
+                <span>Optimized for strong club cyclists and endurance riders wanting longer, faster days.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">⚡</span>
+                <span>The Day 4 "Border Push" allows you to sleep in Canada and finish with an easy 28-mile sprint to Montreal.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-amber-600 font-bold">⚡</span>
+                <span>Saves a full vacation day or allows a 4-day ultra-tour for riders with limited time off work.</span>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="switchTourMode('5day')" class="w-full mt-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs shadow transition-all flex items-center justify-center gap-2">
+            <span>Select 5-Day Fast Tour Itinerary</span> &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Detailed Day-by-Day Side-by-Side Comparison Table -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-5 border-b border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <span>📊 Daily Stage-by-Stage Comparison Matrix</span>
+            </h3>
+            <p class="text-xs text-slate-500">Direct comparison of mileage, climbing, terrain, and acceleration options for each day of the journey.</p>
+          </div>
+          <span class="text-xs font-semibold text-slate-600 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-2xs">
+            Same 389-Mile Corridor
+          </span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-100/75 border-b border-slate-200 text-slate-700 font-bold uppercase tracking-wider">
+                <th class="py-3 px-4 w-28">Stage / Day</th>
+                <th class="py-3 px-4 w-1/3">🗓️ 6-Day Leisurely Tour</th>
+                <th class="py-3 px-4 w-1/3">⚡ 5-Day Fast Tour (Base)</th>
+                <th class="py-3 px-4">⚡ Accelerate Push Option</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <!-- Day 1 -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-slate-900 align-top">
+                  <div class="text-sm">Day 1</div>
+                  <div class="text-[11px] text-slate-400 font-normal">Sunday</div>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-blue-700 flex items-center gap-1.5">
+                    <span>NYC &rarr; Brewster / Carmel</span>
+                    <span class="badge-tag bg-blue-100 text-blue-800 text-[10px]">54.2 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+1,850 ft &bull; 98% Paved Rail Trails</div>
+                  <p class="text-xs text-slate-600">Hudson River Greenway to North County &amp; Putnam Trailways. Lunch at Trailside Cafe (Mile 37). Sleep at Heidi's Inn / Comfort Inn.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-amber-800 flex items-center gap-1.5">
+                    <span>NYC &rarr; Poughkeepsie / Highland</span>
+                    <span class="badge-tag bg-amber-100 text-amber-900 text-[10px]">74.8 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+2,650 ft &bull; Trailways &amp; Walkway Over Hudson</div>
+                  <p class="text-xs text-slate-600">Rides through Brewster onto Maybrook Trailway and crosses the spectacular Walkway Over the Hudson into Poughkeepsie.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top bg-amber-50/30 space-y-1">
+                  <div class="font-bold text-amber-700 flex items-center gap-1">
+                    <span>⚡ Push to Kingston</span>
+                    <span class="text-[11px] font-normal text-slate-500">(+16.0 mi)</span>
+                  </div>
+                  <div class="text-[11px] font-semibold text-slate-700">90.8 mi Total &bull; +3,100 ft</div>
+                  <p class="text-xs text-slate-600">If at Walkway by 3:00 PM, ride Hudson Valley Rail Trail north into historic Kingston Stockade (Hotel Kinsley).</p>
+                </td>
+              </tr>
+
+              <!-- Day 2 -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-slate-900 align-top">
+                  <div class="text-sm">Day 2</div>
+                  <div class="text-[11px] text-slate-400 font-normal">Monday</div>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-blue-700 flex items-center gap-1.5">
+                    <span>Brewster &rarr; Hudson, NY</span>
+                    <span class="badge-tag bg-blue-100 text-blue-800 text-[10px]">64.5 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+2,350 ft &bull; Walkway &amp; Historic Route 9G</div>
+                  <p class="text-xs text-slate-600">Cross Walkway Over the Hudson, lunch in Rhinebeck, roll into Warren Street arts &amp; dining district in Hudson. Sleep at The Wick / Wm Farmer.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-amber-800 flex items-center gap-1.5">
+                    <span>Poughkeepsie &rarr; Albany / Troy</span>
+                    <span class="badge-tag bg-amber-100 text-amber-900 text-[10px]">76.5 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+2,300 ft &bull; 65% AHET Rail Trail</div>
+                  <p class="text-xs text-slate-600">Scenic Route 9G past Rhinebeck, lunch in Hudson (Mile 38), then 35 miles of continuous paved AHET rail trail right into downtown Albany/Troy.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top bg-amber-50/30 space-y-1">
+                  <div class="font-bold text-amber-700 flex items-center gap-1">
+                    <span>⚡ Push to Saratoga Springs</span>
+                    <span class="text-[11px] font-normal text-slate-500">(+16.0 mi)</span>
+                  </div>
+                  <div class="text-[11px] font-semibold text-slate-700">92.5 mi Total &bull; +2,750 ft</div>
+                  <p class="text-xs text-slate-600">At Waterford Lock 2, if legs are fresh, take the paved Zim Smith Trail into Saratoga for evening mineral baths and dining!</p>
+                </td>
+              </tr>
+
+              <!-- Day 3 -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-slate-900 align-top">
+                  <div class="text-sm">Day 3</div>
+                  <div class="text-[11px] text-slate-400 font-normal">Tuesday</div>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-blue-700 flex items-center gap-1.5">
+                    <span>Hudson &rarr; Saratoga Springs</span>
+                    <span class="badge-tag bg-blue-100 text-blue-800 text-[10px]">63.8 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+1,950 ft &bull; AHET &amp; Zim Smith Trailway</div>
+                  <p class="text-xs text-slate-600">Ride AHET to Albany, lunch on Hudson Riverfront, connect via Zim Smith Trail into Saratoga Springs. Spa baths and Victorian downtown.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-amber-800 flex items-center gap-1.5">
+                    <span>Albany / Troy &rarr; Ticonderoga</span>
+                    <span class="badge-tag bg-amber-100 text-amber-900 text-[10px]">78.2 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+2,600 ft &bull; Champlain Canal &amp; US-4</div>
+                  <p class="text-xs text-slate-600">Follow the Champlain Canalway through Schuylerville and Whitehall (Lock 12), rolling along Lake Champlain into historic Fort Ticonderoga.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top bg-amber-50/30 space-y-1">
+                  <div class="font-bold text-amber-700 flex items-center gap-1">
+                    <span>⚡ Push to Essex / Westport</span>
+                    <span class="text-[11px] font-normal text-slate-500">(+18.0 mi)</span>
+                  </div>
+                  <div class="text-[11px] font-semibold text-slate-700">96.2 mi Total &bull; +3,200 ft</div>
+                  <p class="text-xs text-slate-600">Past Ticonderoga, push north along Lake Champlain bluffs to historic Essex lakeside hamlet (Inn on the Library Lawn).</p>
+                </td>
+              </tr>
+
+              <!-- Day 4 -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-slate-900 align-top">
+                  <div class="text-sm">Day 4</div>
+                  <div class="text-[11px] text-slate-400 font-normal">Wednesday</div>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-blue-700 flex items-center gap-1.5">
+                    <span>Saratoga &rarr; Whitehall, NY</span>
+                    <span class="badge-tag bg-blue-100 text-blue-800 text-[10px]">52.4 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+1,400 ft &bull; Feeder Canal &amp; Canalway Trail</div>
+                  <p class="text-xs text-slate-600">Shortest, gentlest recovery stage. Flat canal path through Fort Edward into Whitehall (Birthplace of the U.S. Navy). Canal Lock 12.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-amber-800 flex items-center gap-1.5">
+                    <span>Ticonderoga &rarr; Plattsburgh</span>
+                    <span class="badge-tag bg-amber-100 text-amber-900 text-[10px]">72.4 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+2,350 ft &bull; Adirondack Coast &amp; Ausable</span>
+                  <p class="text-xs text-slate-600">Ride along Lake Champlain bluffs, lunch at Essex Ferry cafe, pass Ausable Chasm canyon into the vibrant college town of Plattsburgh.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top bg-amber-50/30 space-y-1">
+                  <div class="font-bold text-amber-700 flex items-center gap-1">
+                    <span>⚡ BORDER PUSH to Saint-Jean, QC!</span>
+                    <span class="text-[11px] font-normal text-slate-500">(+24.0 mi)</span>
+                  </div>
+                  <div class="text-[11px] font-semibold text-slate-700">96.4 mi Total &bull; Cross Border Today!</div>
+                  <p class="text-xs text-slate-600">Reach Plattsburgh early? Sprint 24 mi to Lacolle, cross into Canada, and sleep in Saint-Jean-sur-Richelieu for an effortless Day 5!</p>
+                </td>
+              </tr>
+
+              <!-- Day 5 -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-slate-900 align-top">
+                  <div class="text-sm">Day 5</div>
+                  <div class="text-[11px] text-slate-400 font-normal">Thursday</div>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-blue-700 flex items-center gap-1.5">
+                    <span>Whitehall &rarr; Plattsburgh, NY</span>
+                    <span class="badge-tag bg-blue-100 text-blue-800 text-[10px]">83.8 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+2,700 ft &bull; Lake Champlain &amp; Ausable Chasm</div>
+                  <p class="text-xs text-slate-600">Queen stage of the 6-Day tour. Magnificent lake views, Essex ferry crossing vistas, and Ausable Chasm suspension bridge.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-emerald-700 flex items-center gap-1.5">
+                    <span>Plattsburgh &rarr; Montréal (FINISH!)</span>
+                    <span class="badge-tag bg-emerald-100 text-emerald-800 text-[10px]">62.4 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+850 ft &bull; Lacolle Border &amp; Route Verte</div>
+                  <p class="text-xs text-slate-600">Cross the international border at Lacolle, cruise the traffic-free Chambly Canal National Historic Site, cross St. Lawrence into Old Montréal!</p>
+                </td>
+                <td class="py-3.5 px-4 align-top bg-emerald-50/30 space-y-1">
+                  <div class="font-bold text-emerald-700 flex items-center gap-1">
+                    <span>🎉 28-Mile Sprint to Brunch!</span>
+                  </div>
+                  <div class="text-[11px] font-semibold text-slate-700">28.5 mi (If pushed on Day 4)</div>
+                  <p class="text-xs text-slate-600">If you slept in Saint-Jean, enjoy a 1.5-hour casual canal spin straight into Place Jacques-Cartier for champagne brunch at 11:30 AM!</p>
+                </td>
+              </tr>
+
+              <!-- Day 6 -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-bold text-slate-900 align-top">
+                  <div class="text-sm">Day 6</div>
+                  <div class="text-[11px] text-slate-400 font-normal">Friday</div>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1">
+                  <div class="font-bold text-emerald-700 flex items-center gap-1.5">
+                    <span>Plattsburgh &rarr; Montréal (FINISH!)</span>
+                    <span class="badge-tag bg-emerald-100 text-emerald-800 text-[10px]">70.6 mi</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">+1,700 ft &bull; International Border &amp; Chambly Canal</div>
+                  <p class="text-xs text-slate-600">Friday international border crossing at Lacolle. Chambly Canal path into downtown Montréal. Grand Friday night victory celebration in Old Port!</p>
+                </td>
+                <td class="py-3.5 px-4 align-top space-y-1 bg-slate-50/50">
+                  <div class="font-bold text-slate-700 flex items-center gap-1.5">
+                    <span>🎉 Day Off / Exploration in Montréal!</span>
+                  </div>
+                  <div class="text-[11px] text-slate-500">0 mi &bull; Full Bonus Day in Quebec</div>
+                  <p class="text-xs text-slate-600">Riders on the 5-day schedule have already arrived! Spend Friday hiking Mount Royal, sampling St-Viateur bagels, or exploring bike paths.</p>
+                </td>
+                <td class="py-3.5 px-4 align-top bg-slate-50/50 space-y-1">
+                  <div class="font-bold text-slate-500">Weekend in Montréal</div>
+                  <p class="text-xs text-slate-500">Take the Saturday Amtrak Adirondack Train #68 back to NY Penn Station or spend the full weekend in Montreal.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Quick Comparison Decision Guide -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <div class="text-sm font-bold text-slate-900 flex items-center gap-2">
+            <span>🚆 Rail Bailouts &amp; Safety</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>100% Identical on both routes:</strong> The Amtrak Adirondack line parallels both itineraries from Poughkeepsie to Montreal, offering roll-on bike service at Saratoga, Fort Edward, Whitehall, Ticonderoga, Port Henry, Westport, and Plattsburgh.
+          </p>
+        </div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <div class="text-sm font-bold text-slate-900 flex items-center gap-2">
+            <span>🛂 Canadian Border Protocol</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Both tours cross at the <strong>Lacolle / Route 221 Border Crossing</strong>. Bicycles pull up to the regular vehicle booth. Keep your valid passport and hotel address accessible in your handlebar bag!
+          </p>
+        </div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <div class="text-sm font-bold text-slate-900 flex items-center gap-2">
+            <span>⚡ How Acceleration Works</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            The 5-Day route gives you the freedom to choose at 2:30–3:30 PM each day: call it a day at the baseline hotel, or push 16–24 miles ahead to the next town. Turn-by-turn links for both options are built right into the app.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Day-by-Day Itineraries -->
+    <section id="daily-itineraries-section" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">📅 Daily Stages & Cue Sheets</h2>
+          <p class="text-xs text-slate-500">Each stage includes curated lunch spots, overnight hotels with phone numbers, bike shops, and ⚡ Accelerate Checkpoints.</p>
+        </div>
+      </div>
+
+      <!-- Accordion container rendered by app.js -->
+      <div id="days-container" class="space-y-4"></div>
+    </section>
+
+    <!-- Master Bike Shop Directory -->
+    <section class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div>
+        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+          <span>🔧 Bike Shops & Equipment Master Directory</span>
+        </h3>
+        <p class="text-xs text-slate-500">Reliable repair shops and bike mechanics directly along the corridor.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold uppercase tracking-wider">
+              <th class="py-2.5 px-4">Stage / Day</th>
+              <th class="py-2.5 px-4">Address / Location</th>
+              <th class="py-2.5 px-4">Phone Number</th>
+              <th class="py-2.5 px-4">Specialty & Notes</th>
+            </tr>
+          </thead>
+          <tbody id="bike-shops-table-body" class="divide-y divide-slate-100">
+            <!-- Populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contingency & Rail Bailouts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <div class="flex items-center gap-2 text-sky-800">
+          <span class="text-xl">🚆</span>
+          <h3 class="text-base font-bold text-slate-900">The "Iron Lifeline" Rail Bailout System</h3>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          The NYC-to-Montreal corridor features uninterrupted passenger rail parallel to the entire ride:
+        </p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+            <strong class="text-slate-900">NYC to Poughkeepsie (Metro-North):</strong> Harlem and Hudson lines allow standard unboxed bicycles without reservation outside peak hours.
+          </li>
+          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+            <strong class="text-slate-900">Hudson Valley to Albany (Amtrak Empire Service):</strong> Connects Rhinecliff, Hudson, and Albany-Rensselaer. Roll-on bike racks available.
+          </li>
+          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+            <strong class="text-slate-900">Albany to Montréal (Amtrak Adirondack #68/69):</strong> Daily direct service between Penn Station and Montreal Gare Centrale with roll-on bicycle service!
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <div class="flex items-center gap-2 text-emerald-800">
+          <span class="text-xl">🇨🇦</span>
+          <h3 class="text-base font-bold text-slate-900">Canada Border Crossing Protocol</h3>
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          You will cross at <strong>Rouses Point, NY / Saint-Bernard-de-Lacolle, QC (Route 221 / QC-223)</strong>:
+        </p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="p-2 rounded-lg bg-emerald-50 border border-emerald-100">
+            <strong>Required:</strong> Valid Passport (min 6 months validity) or Enhanced Driver's License.
+          </li>
+          <li class="p-2 rounded-lg bg-emerald-50 border border-emerald-100">
+            <strong>Bicycle Procedure:</strong> Stop behind the white line at the primary vehicle inspection booth; remove helmet and sunglasses when speaking to the CBSA officer.
+          </li>
+          <li class="p-2 rounded-lg bg-rose-50 border border-rose-100 text-rose-800">
+            <strong>Strictly Prohibited:</strong> Bear spray / pepper spray (felony import into Canada), cannabis/THC products (strictly illegal across international borders), and fresh fruits/produce.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Interactive Packing Checklist -->
+    <section class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span>🎒 Interactive Tour Packing Checklist</span>
+          </h3>
+          <p class="text-xs text-slate-500">Check off items as you pack; progress is automatically saved to your browser.</p>
+        </div>
+        <button onclick="localStorage.removeItem('mtl_bike_checklist'); renderChecklist();" class="text-xs text-slate-500 hover:text-red-600 underline no-print self-start sm:self-auto">
+          Reset Checklist
+        </button>
+      </div>
+
+      <div id="checklist-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>NYC to Montreal Bicycle Tour &bull; 6-Day & 5-Day Fast Tour Itineraries</p>
+      <p>Ready for Google Docs &bull; Google Maps Turn-by-Turn &bull; Offline Compatible</p>
+    </div>
+  </footer>
+
+  <!-- Hidden Container with Plain Text Markdown for One-Click Google Doc Copy -->
+  <div id="raw-markdown-content" class="hidden">
+# NYC to Montreal Multi-Day Bicycle Tour Guide
+Empire State Trail • Lake Champlain Coast • Route Verte #1 & #2
+
+## Schedule Options:
+1. 6-Day Leisurely Tour: Sunday Departure -> Friday Arrival in Montréal (~64.8 mi/day)
+2. 5-Day Fast Tour: Sunday Departure -> Thursday Arrival in Montréal (~77.8 mi/day) with ⚡ Accelerate Push Options (+16-24 mi checkpoints to reach Montreal early or finish in 4 days!)
+
+See nyc_to_montreal_bike_tour_guide.md and nyc_to_montreal_5_day_fast_tour.md for complete details.
+  </div>
+
+  <!-- Scripts -->
+  <script src="route_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Custom styles for NYC to Montreal Bike Tour Webpage */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --secondary: #0f172a;
+  --accent: #10b981;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+#map {
+  height: 520px;
+  width: 100%;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 380px;
+  }
+}
+
+/* Custom Marker Styling */
+.custom-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+}
+
+.pin-hotel {
+  background-color: #4f46e5; /* Indigo */
+}
+
+.pin-lunch {
+  background-color: #ea580c; /* Orange */
+}
+
+.pin-bike {
+  background-color: #dc2626; /* Red */
+}
+
+.pin-bailout {
+  background-color: #0284c7; /* Sky */
+}
+
+.pin-border {
+  background-color: #059669; /* Emerald */
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Print Stylesheet */
+@media print {
+  header, nav, #map-controls, .no-print, .interactive-toggle, button {
+    display: none !important;
+  }
+  
+  #map {
+    height: 350px !important;
+    page-break-after: avoid;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .card, .day-card {
+    page-break-inside: avoid;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    margin-bottom: 1.5rem !important;
+  }
+}

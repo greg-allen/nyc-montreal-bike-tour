@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>NYC to Montreal 5-Day Fast Tour (+ Accelerate Options)</name>
+  <description>High-tempo itinerary with push checkpoints along Empire State Trail &amp; Route Verte</description>
+  <Folder>
+    <name>Day 1: NYC to Poughkeepsie / Highland (Push to Kingston)</name>
+    <Placemark>
+      <name>Day 1: NYC to Poughkeepsie / Highland (Push to Kingston) (74.8 mi)</name>
+      <description>92% Paved Rail Trails (Hudson River, North County, Maybrook, Dutchess Rail Trail)</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -74.017,40.7033,0
+          -73.9404,40.8517,0
+          -73.886,40.8978,0
+          -73.8187,41.0534,0
+          -73.782,41.272,0
+          -73.6171,41.3973,0
+          -73.8057,41.5834,0
+          -73.9442,41.7108,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>⚡ Accelerate Option: Push to Kingston Stockade</name>
+      <description>At the Walkway Over the Hudson, if feeling great by 3:00 PM, push 16 miles north via Hudson Valley Rail Trail and River Rd into historic Kingston Stockade! (Target: Kingston, NY)</description>
+      <Point><coordinates>-73.9442,41.7108,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Trailside Cafe (Yorktown Heights)</name>
+      <description>Directly on trail. High-protein paninis, smoothies, quick turnaround. (Mile 37)</description>
+      <Point><coordinates>-73.782,41.272,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Hyatt Place Poughkeepsie</name>
+      <description>2165 South Rd, Poughkeepsie, NY | (845) 380-0000 | Modern, bike-friendly baseline finish.</description>
+      <Point><coordinates>-73.93,41.65,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Hotel Kinsley (Kingston - Accelerated Finish)</name>
+      <description>301 Wall St, Kingston, NY | (845) 768-3620 | Historic Stockade boutique hotel if taking the +16 mi push.</description>
+      <Point><coordinates>-74.019,41.9335,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Day 2: Poughkeepsie to Albany / Troy (Push to Saratoga)</name>
+    <Placemark>
+      <name>Day 2: Poughkeepsie to Albany / Troy (Push to Saratoga) (76.5 mi)</name>
+      <description>65% Paved Rail Trail (AHET), 35% Scenic Secondary Roads (Route 9G / River Rd)</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.9442,41.7108,0
+          -73.9126,41.9268,0
+          -73.8446,42.0881,0
+          -73.791,42.2529,0
+          -73.7001,42.3948,0
+          -73.6104,42.5162,0
+          -73.7562,42.6526,0
+          -73.69,42.73,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>⚡ Accelerate Option: Push to Saratoga Springs Spa</name>
+      <description>At Waterford Lock 2, if legs are rolling strong by 3:30 PM, bypass Albany/Troy and take the paved Zim Smith Trail into Saratoga Springs for evening spa mineral baths! (Target: Saratoga Springs, NY)</description>
+      <Point><coordinates>-73.69,42.73,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Le Gamin Cafe / Tanzy's (Hudson, NY)</name>
+      <description>Quick, delicious French savory crepes &amp; espresso in vibrant Hudson. (Mile 38)</description>
+      <Point><coordinates>-73.788,42.2515,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Renaissance Albany Hotel</name>
+      <description>144 State St, Albany, NY | (518) 992-2500 | Downtown baseline finish across from Capitol.</description>
+      <Point><coordinates>-73.758,42.652,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 The Saratoga Hilton (Accelerated Finish)</name>
+      <description>534 Broadway, Saratoga Springs, NY | (518) 584-4000 | If taking the +16 mi push to Saratoga.</description>
+      <Point><coordinates>-73.784,43.0845,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Day 3: Albany / Troy to Ticonderoga (Push to Essex / Westport)</name>
+    <Placemark>
+      <name>Day 3: Albany / Troy to Ticonderoga (Push to Essex / Westport) (78.2 mi)</name>
+      <description>75% Scenic Low-Traffic Highways (US-4 &amp; NY-22), 25% Canal Path</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.69,42.73,0
+          -73.6818,42.7909,0
+          -73.5784,43.1009,0
+          -73.5857,43.2678,0
+          -73.404,43.5556,0
+          -73.415,43.685,0
+          -73.4046,43.8423,0
+          -73.4257,43.8478,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>⚡ Accelerate Option: Push to Historic Essex / Westport</name>
+      <description>At Ticonderoga, if you arrive before 4:00 PM and have daylight, push 18 miles north along Lake Champlain bluffs to historic Essex / Westport! (Target: Essex, NY)</description>
+      <Point><coordinates>-73.4257,43.8478,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Historic Grounds Restaurant &amp; Coffee Bar (Whitehall)</name>
+      <description>Hearty paninis, soups, espresso overlooking Champlain Canal Lock 12. (Mile 54)</description>
+      <Point><coordinates>-73.4045,43.556,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Best Western Plus Ticonderoga</name>
+      <description>260 Burgoyne Rd, Ticonderoga, NY | (518) 585-1800 | Clean, cyclist-friendly baseline finish.</description>
+      <Point><coordinates>-73.435,43.8465,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 The Stone House B&amp;B (Port Henry / Moriah)</name>
+      <description>Port Henry, NY | (518) 546-3400 | Historic lakeside Victorian B&amp;B if pushing past Ti.</description>
+      <Point><coordinates>-73.461,44.054,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Day 4: Ticonderoga to Plattsburgh (THE BORDER PUSH to Saint-Jean, QC!)</name>
+    <Placemark>
+      <name>Day 4: Ticonderoga to Plattsburgh (THE BORDER PUSH to Saint-Jean, QC!) (72.4 mi)</name>
+      <description>80% Scenic 2-Lane Highway (NY-9N / NY-22) with Lake Champlain Views, 20% Local Paths</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.4257,43.8478,0
+          -73.4607,44.0539,0
+          -73.4357,44.1834,0
+          -73.3537,44.3101,0
+          -73.3876,44.3645,0
+          -73.4862,44.5242,0
+          -73.4529,44.6995,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>⚡ Accelerate Option: THE BORDER PUSH into Saint-Jean, QC!</name>
+      <description>At Plattsburgh, if rolling strong by 2:30 PM: ride 24 miles to Rouses Point, CROSS THE CANADIAN BORDER at Lacolle, and sleep in Saint-Jean-sur-Richelieu! This sets up a tiny 28-mile sprint into Montreal on Day 5! (Target: Saint-Jean-sur-Richelieu, QC (Canada))</description>
+      <Point><coordinates>-73.4529,44.6995,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 The Cup Cafe / Essex Ice Cream Cafe</name>
+      <description>Lakeside dining on the porch watching the ferry to Vermont. (Mile 27)</description>
+      <Point><coordinates>-73.354,44.3105,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Best Western Plus Plattsburgh</name>
+      <description>446 NY-3, Plattsburgh, NY | (518) 561-7000 | Comfortable baseline finish.</description>
+      <Point><coordinates>-73.489,44.694,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Quality Hotel Centre de Congrès (Saint-Jean, QC - Border Push)</name>
+      <description>Saint-Jean-sur-Richelieu, QC | +1 (450) 515-5755 | If executing the grand border push into Canada.</description>
+      <Point><coordinates>-73.258,45.308,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Day 5: Plattsburgh (or Saint-Jean) to Downtown Montréal (The Grand Finish!)</name>
+    <Placemark>
+      <name>Day 5: Plattsburgh (or Saint-Jean) to Downtown Montréal (The Grand Finish!) (62.4 mi)</name>
+      <description>65% Route Verte Dedicated Paths (Chambly Canal &amp; Bridges), 35% Flat Country Roads</description>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -73.4529,44.6995,0
+          -73.3646,44.9939,0
+          -73.367,45.0064,0
+          -73.2533,45.3056,0
+          -73.2872,45.4497,0
+          -73.5134,45.4593,0
+          -73.5673,45.5017,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>⚡ Accelerate Option: Morning Victory Cruise (If Accelerated on Day 4)</name>
+      <description>If you pushed across the Canadian border on Day 4 to Saint-Jean, Day 5 is an effortless 28-mile sprint along the Chambly Canal into Old Montréal in time for brunch at 11:30 AM! (Target: Downtown Montréal, QC)</description>
+      <Point><coordinates>-73.5673,45.5017,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🥪 Celebratory Finish / Bistro La Trinquette (St-Jean) or Old Montréal Terrace</name>
+      <description>Celebrate with French-Canadian lunch, fresh poutine, and craft beer on a historic cobblestone terrace! (Mile 42)</description>
+      <Point><coordinates>-73.555,45.503,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Hotel Monville (Certified 'Bienvenue Cyclistes')</name>
+      <description>1041 Rue de Bleury, Montréal, QC | +1 (514) 379-2000 | Sleek, modern, dedicated secure bike room, steps from Place d'Armes.</description>
+      <Point><coordinates>-73.563,45.5035,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🏨 Fairmont The Queen Elizabeth</name>
+      <description>900 René-Lévesque Blvd W, Montréal, QC | +1 (514) 861-3511 | Grand historic hotel directly connected to Gare Centrale for Amtrak return!</description>
+      <Point><coordinates>-73.567,45.5005,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
