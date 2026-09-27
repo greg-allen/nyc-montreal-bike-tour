@@ -98,9 +98,16 @@ body {
   .mta-stage-block {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+    page-break-after: always !important;
+    break-after: page !important;
     border: 2px solid #000000 !important;
     box-shadow: none !important;
     margin-bottom: 2rem !important;
+  }
+
+  .mta-stage-block:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
   }
 }
 
