@@ -35,6 +35,9 @@
 
       <!-- Action Buttons -->
       <div class="flex flex-wrap items-center gap-2.5">
+        <button onclick="showCurrentTourMtaMap()" class="text-xs font-semibold px-3 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white transition-all flex items-center gap-1.5 shadow-sm" title="View printable MTA-style turn-by-turn route maps">
+          <span>🚏 MTA Route Maps</span>
+        </button>
         <a id="kml-download-link" href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="text-xs font-semibold px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 transition-all flex items-center gap-1.5 shadow-sm">
           <span>🗺️ Google My Maps KML</span>
         </a>
@@ -51,30 +54,65 @@
   <!-- Main Content -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
 
-    <!-- Itinerary Mode Switcher Bar -->
-    <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <!-- Master View Tabs: Interactive Guide vs Printable MTA Route Maps -->
+    <div class="bg-slate-900 p-2 sm:p-2.5 rounded-2xl border-2 border-slate-800 shadow-md flex flex-wrap items-center justify-between gap-3 no-print">
       <div class="flex items-center gap-2">
-        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Select Tour Schedule:</span>
+        <span class="text-xs font-black text-slate-300 uppercase tracking-widest pl-2">Select View:</span>
       </div>
       <div class="flex items-center gap-2 flex-wrap">
-        <button id="tab-7day" onclick="switchTourMode('7day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
-          <span>🗓️ 7-Day Gentler Tour</span>
-          <span class="text-[11px] opacity-80">(~64 mi/day)</span>
+        <button id="nav-tab-dashboard" onclick="switchToDashboardView()" class="px-3.5 py-2 text-xs font-black rounded-xl bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-blue-400">
+          <span>📊 Interactive Guide &amp; Map</span>
         </button>
-        <button id="tab-6day" onclick="switchTourMode('6day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5">
-          <span>🗓️ 6-Day Classic Tour</span>
-          <span class="text-[11px] opacity-80">(~74 mi/day)</span>
+        <button id="nav-tab-6day-map" onclick="showMtaRouteMapTab('6day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5" title="Printable MTA-Style 6-Day Route Map with Single Black Line">
+          <span class="w-5 h-5 rounded-full bg-blue-600 text-white font-mono text-[10px] font-black flex items-center justify-center">6D</span>
+          <span>6-Day Route Map</span>
         </button>
-        <button id="tab-5day" onclick="switchTourMode('5day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
-          <span>⚡ 5-Day Fast Tour</span>
-          <span class="text-[11px] opacity-80">(~85 mi/day)</span>
+        <button id="nav-tab-5day-map" onclick="showMtaRouteMapTab('5day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5" title="Printable MTA-Style 5-Day Fast Route Map with Single Black Line">
+          <span class="w-5 h-5 rounded-full bg-amber-500 text-slate-950 font-mono text-[10px] font-black flex items-center justify-center">5D</span>
+          <span>5-Day Fast Map</span>
         </button>
-        <button id="tab-compare" onclick="switchTourMode('compare')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
-          <span>⚖️ Compare Tours</span>
-          <span class="text-[11px] opacity-80">(Side-by-Side)</span>
+        <button id="nav-tab-7day-map" onclick="showMtaRouteMapTab('7day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center gap-1.5" title="Printable MTA-Style 7-Day Gentler Route Map with Single Black Line">
+          <span class="w-5 h-5 rounded-full bg-rose-600 text-white font-mono text-[10px] font-black flex items-center justify-center">7D</span>
+          <span>7-Day Route Map</span>
+        </button>
+        <button id="nav-tab-vermont-map" onclick="showMtaRouteMapTab('vermont')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-700/60 transition-all flex items-center gap-1.5" title="Printable MTA-Style Vermont Upgrade Route Map with Single Black Line">
+          <span class="w-5 h-5 rounded-full bg-emerald-600 text-white font-mono text-[10px] font-black flex items-center justify-center">VT</span>
+          <span>Vermont Route Map</span>
         </button>
       </div>
     </div>
+
+    <!-- Container for Interactive Tour Dashboard View -->
+    <div id="tour-dashboard-view" class="space-y-6">
+
+      <!-- Itinerary Mode Switcher Bar -->
+      <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Select Tour Schedule:</span>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button id="tab-7day" onclick="switchTourMode('7day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <span>🗓️ 7-Day Gentler Tour</span>
+            <span class="text-[11px] opacity-80">(~64 mi/day)</span>
+          </button>
+          <button id="tab-6day" onclick="switchTourMode('6day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5">
+            <span>🗓️ 6-Day Classic Tour</span>
+            <span class="text-[11px] opacity-80">(~74 mi/day)</span>
+          </button>
+          <button id="tab-5day" onclick="switchTourMode('5day')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <span>⚡ 5-Day Fast Tour</span>
+            <span class="text-[11px] opacity-80">(~85 mi/day)</span>
+          </button>
+          <button id="tab-compare" onclick="switchTourMode('compare')" class="px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <span>⚖️ Compare Tours</span>
+            <span class="text-[11px] opacity-80">(Side-by-Side)</span>
+          </button>
+          <button onclick="showCurrentTourMtaMap()" class="px-3.5 py-2 text-xs font-bold rounded-lg bg-slate-900 text-white hover:bg-slate-800 transition-all flex items-center gap-1.5 shadow-2xs ml-auto sm:ml-0" title="Open printable turn-by-turn route map in MTA bus map format">
+            <span>🚏 MTA Route Map</span>
+            <span class="text-[10px] bg-slate-800 text-slate-300 px-1.5 py-0.5 rounded uppercase font-bold">Printable</span>
+          </button>
+        </div>
+      </div>
 
     <!-- Overview Stats Bar -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -1132,6 +1170,45 @@
       </div>
     </section>
 
+    </div> <!-- End tour-dashboard-view -->
+
+    <!-- Printable Turn-by-Turn Route Map View (MTA Bus Map Inspired) -->
+    <div id="mta-route-map-view" class="hidden space-y-6">
+      <!-- Itinerary Tab Selector for MTA Route Maps -->
+      <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 no-print">
+        <div class="flex items-center gap-2">
+          <button onclick="switchToDashboardView()" class="text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center gap-1.5 py-1 px-2.5 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200 shadow-2xs">
+            <span>&larr;</span> <span>Back to Interactive Guide</span>
+          </button>
+          <span class="text-slate-300">|</span>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Select Route Map:</span>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button id="mta-tab-6day" onclick="switchMtaRouteTab('6day')" class="px-3.5 py-2 text-xs font-black rounded-xl bg-slate-950 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-slate-800">
+            <span class="w-4 h-4 rounded-full bg-blue-600 text-white text-[9px] font-mono flex items-center justify-center">6D</span>
+            <span>6-Day Classic</span>
+          </button>
+          <button id="mta-tab-5day" onclick="switchMtaRouteTab('5day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <span class="w-4 h-4 rounded-full bg-amber-500 text-slate-950 text-[9px] font-mono flex items-center justify-center">5D</span>
+            <span>5-Day Fast</span>
+          </button>
+          <button id="mta-tab-7day" onclick="switchMtaRouteTab('7day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <span class="w-4 h-4 rounded-full bg-rose-600 text-white text-[9px] font-mono flex items-center justify-center">7D</span>
+            <span>7-Day Gentler</span>
+          </button>
+          <button id="mta-tab-vermont" onclick="switchMtaRouteTab('vermont')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <span class="w-4 h-4 rounded-full bg-emerald-600 text-white text-[9px] font-mono flex items-center justify-center">VT</span>
+            <span>Vermont Upgrade</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Render Container for MTA Route Map -->
+      <div id="mta-route-map-content" class="space-y-6">
+        <!-- Rendered dynamically by mta_route_maps.js -->
+      </div>
+    </div>
+
   </main>
 
   <!-- Footer -->
@@ -1156,6 +1233,7 @@ See nyc_to_montreal_bike_tour_guide.md and nyc_to_montreal_5_day_fast_tour.md fo
 
   <!-- Scripts -->
   <script src="route_data.js"></script>
+  <script src="mta_route_maps.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -94,4 +94,13 @@ body {
     box-shadow: none !important;
     margin-bottom: 1.5rem !important;
   }
+
+  .mta-stage-block {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border: 2px solid #000000 !important;
+    box-shadow: none !important;
+    margin-bottom: 2rem !important;
+  }
 }
+
