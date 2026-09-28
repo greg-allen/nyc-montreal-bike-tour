@@ -119,7 +119,6 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 - **Lodging:** **Best Western Plus Franklin Square Inn Troy/Albany**, 1 4th St, Troy, NY · (518) 274-8800 · mile 95.9. Downtown Troy.
 - **Bike shops / supplies:** **Rhinebeck Bicycle Shop**, 10 Garden St, Rhinebeck, NY · (845) 876-4025 · mile 19.3. Repairs, parts, rentals. One block from Bread Alone. Call for hours. / **Steiner's Sports**, 301 Warren St, Hudson, NY · (518) 828-5063 · mile 48.6. Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11. / **Steiner's Sports (Valatie)**, 3455 Route 9, Valatie, NY · (518) 784-3663. In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4.
 - **Bailout:** Amtrak at Rhinecliff (2 mi from Rhinebeck), Hudson (mile 48.4) and Albany-Rensselaer (mile 86.6).
-- **Push option:** Push to Saratoga Springs: from Troy, go via Waterford and the Zim Smith Trail (about +34 mi, about 130 mi total). Not realistic in October daylight.
 
 <details><summary>Turn-by-turn cues</summary>
 

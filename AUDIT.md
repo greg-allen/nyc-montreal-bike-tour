@@ -46,8 +46,31 @@ often — call ahead for anything you depend on.**
 
 Surfaces were measured against OpenStreetMap unpaved-way tags along every route (5 m match). Unpaved stretches per day are listed in each day's Surface line and marked in the cue sheets.
 
-Push options (5-day): Ticonderoga → Essex is 38 mi, not 18; Waterford → Saratoga is ~30 mi, not 20;
+Push options (5-day): Ticonderoga → Essex is 38 mi, not 18; the Day 2 push to Saratoga was removed (2026-09-28) along with the Saratoga overnight;
 Walkway → Kingston is ~16–20 mi via 9W (30 mi only via the Wallkill Valley trail). All push days are 125+ mi.
+
+## 6-day distance audit (2026-09-28)
+Three independent checks on the 6-day itinerary (458.8 mi):
+
+1. **Internal consistency:** GPX track length, app data, strip map, cue sheet and guides agree for every day
+   (differences ≤0.3 mi from rounding/track simplification); km conversions correct; the six days sum to
+   458.8 mi; each day starts where the previous one ended.
+2. **Named trails vs. published lengths** (measured inside the tracks): Hudson River Greenway 12.9 mi (~11–13
+   published); South County 14.4 (14.1); North County 20.6 (22.1; the two together are 35.0 vs 36.2, −3%, likely
+   where OpenStreetMap places the name change); Putnam 11.9 (~12); Maybrook 23.9 (23–25); Dutchess Rail Trail 13.2
+   (13.4); AHET 32.4 span / 27.5 on-trail (36 end to end incl. on-street links / 26.6 built); Chambly Canal corridor
+   13.6 (12.4, plus the unmapped middle section on Route 223).
+3. **Independent map-matching** of each day's GPX with a different router (Valhalla, bicycle profile):
+
+| Day | Stated | Valhalla | Diff |
+|:---|---:|---:|---:|
+| 1 NYC → Brewster | 67.5 | 67.7 | +0.3% |
+| 2 Brewster → Hudson | 89.6 | 89.9 | +0.4% |
+| 3 Hudson → Schuylerville | 76.9 | 76.9 | 0.0% |
+| 4 Schuylerville → Ticonderoga | 64.4 | 64.4 | 0.0% |
+| 5 Ticonderoga → Plattsburgh | 72.5 | 72.6 | +0.1% |
+| 6 Plattsburgh → Montréal | 87.9 | 86.6 | −1.5% (Valhalla left short unmatched gaps on bridge paths / the canal) |
+| **Total** | **458.8** | **458.1** | **−0.2%** |
 
 ## Critical corrections
 1. **GPS files were unusable** (6–13 points per day = straight lines). Replaced with road-following tracks

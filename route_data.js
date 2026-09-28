@@ -7015,17 +7015,7 @@ const TOUR_DATA_5DAY = {
     }
    ],
    "bailout": "Amtrak at Rhinecliff (2 mi from Rhinebeck), Hudson (mile 48.4) and Albany-Rensselaer (mile 86.6).",
-   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day02.gpx",
-   "accelerateOption": {
-    "name": "Push option (not recommended in October)",
-    "notes": "Push to Saratoga Springs: from Troy, go via Waterford and the Zim Smith Trail (about +34 mi, about 130 mi total). Not realistic in October daylight.",
-    "targetTown": "Saratoga Springs, NY",
-    "distanceMiles": 130,
-    "extraMiles": null,
-    "checkpointMile": null,
-    "googleMapsUrl": "",
-    "hotel": null
-   }
+   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day02.gpx"
   },
   {
    "day": 3,

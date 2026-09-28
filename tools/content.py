@@ -332,7 +332,6 @@ VERMONT = dict(title="Vermont Champlain Islands Variant", replaces="Days 5 and 6
 
 PUSH_OPTIONS_5DAY = {
     "5D1": "Push to Kingston: from the DoubleTree, cross the Walkway Over the Hudson and ride north on the west bank to Kingston (+22 mi, about 125 mi total). Earlier drafts said the Walkway-to-Kingston leg was 30 mi (via the Wallkill Valley Rail Trail it is); via Route 9W/HVRT it's about 16 to 20 mi.",
-    "5D2": "Push to Saratoga Springs: from Troy, go via Waterford and the Zim Smith Trail (about +34 mi, about 130 mi total). Not realistic in October daylight.",
     "5D3": "Push to Essex: Ticonderoga to Essex is 38 mi (about 131 mi total). Earlier drafts said +18 mi; that was wrong.",
     "D5": "Push to Saint-Jean-sur-Richelieu: Plattsburgh to Saint-Jean is 53 mi, including the border (about 126 mi total). Not recommended.",
 }

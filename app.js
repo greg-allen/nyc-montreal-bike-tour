@@ -1120,7 +1120,7 @@ function zoomToStage(val) {
       }
       if (pillStage) pillStage.innerText = "⚡ Push options (not recommended)";
       if (pillDist) pillDist.innerText = "🚴 Every push option is a 125+ mile day";
-      if (pillElev) pillElev.innerText = "⛰️ Kingston, Saratoga, Essex, Saint-Jean";
+      if (pillElev) pillElev.innerText = "⛰️ Kingston, Essex, Saint-Jean";
     }
     return;
   }
