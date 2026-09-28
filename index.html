@@ -308,52 +308,118 @@
     </section>
 
     <!-- GPS Navigation Downloads & Integration -->
-    <div class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-5 shadow-sm space-y-4">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <section class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-800 overflow-hidden space-y-5">
+      <!-- Section Header -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 border-b border-white/10 pb-4">
         <div class="space-y-1">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-black uppercase tracking-wider bg-blue-500/20 text-blue-300 border border-blue-400/30 px-2.5 py-0.5 rounded-full">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xs font-black uppercase tracking-wider bg-blue-500/20 text-blue-300 border border-blue-400/30 px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
               🧭 GPS Navigation Downloads
             </span>
-            <span class="text-xs text-slate-400">Garmin, Wahoo, Hammerhead, RideWithGPS &amp; Google My Maps</span>
+            <span class="text-xs text-slate-400 font-medium">Garmin &bull; Wahoo &bull; Hammerhead &bull; RideWithGPS &bull; Google My Maps</span>
           </div>
-          <h3 class="text-base font-bold text-white">Download Turn-by-Turn GPS Tracks &amp; Waypoints</h3>
+          <h3 class="text-base sm:text-lg font-bold text-white">Download Turn-by-Turn GPS Tracks &amp; Offline Waypoints</h3>
           <p class="text-xs text-slate-300 leading-relaxed max-w-3xl">
-            Import <strong>GPX files</strong> directly into your Garmin Edge, Wahoo ELEMNT, or Hammerhead bike computer for offline breadcrumb navigation and turn cues. Use <strong>KML files</strong> for instant import into Google My Maps.
+            Import <strong>GPX files</strong> directly into your Garmin Edge, Wahoo ELEMNT, or Hammerhead bike computer for offline breadcrumb navigation and turn cues. Use <strong>KML files</strong> for instant import into Google My Maps and smartphone mapping apps.
           </p>
         </div>
-        <div class="flex flex-wrap items-center gap-2 shrink-0">
-          <a href="nyc_to_montreal_7day_tour.gpx" download="nyc_to_montreal_7day_tour.gpx" class="bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1.5">
-            <span>📥 7-Day GPX</span>
-            <span class="text-[10px] opacity-80">(Garmin/Wahoo)</span>
-          </a>
-          <a href="nyc_to_montreal_tour.gpx" download="nyc_to_montreal_tour.gpx" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1.5">
-            <span>📥 6-Day GPX</span>
-            <span class="text-[10px] opacity-80">(Garmin/Wahoo)</span>
-          </a>
-          <a href="nyc_to_montreal_5day_tour.gpx" download="nyc_to_montreal_5day_tour.gpx" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1.5">
-            <span>⚡ 5-Day GPX</span>
-            <span class="text-[10px] opacity-80">(Garmin/Wahoo)</span>
-          </a>
-          <a href="nyc_to_montreal_vermont_upgrade.gpx" download="nyc_to_montreal_vermont_upgrade.gpx" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3 py-2 rounded-lg shadow transition-colors flex items-center gap-1.5" title="Download Vermont Causeway & Champlain Islands GPX">
-            <span>🌲 Vermont GPX</span>
-            <span class="text-[10px] opacity-80">(Islands/Ferry)</span>
-          </a>
-          <a href="nyc_to_montreal_7day_tour.kml" download="nyc_to_montreal_7day_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
-            <span>🗺️ 7-Day KML</span>
-          </a>
-          <a href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
-            <span>🗺️ 6-Day KML</span>
-          </a>
-          <a href="nyc_to_montreal_5day_tour.kml" download="nyc_to_montreal_5day_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs px-3 py-2 rounded-lg transition-colors flex items-center gap-1">
-            <span>⚡ 5-Day KML</span>
-          </a>
-          <a href="nyc_to_montreal_vermont_upgrade.kml" download="nyc_to_montreal_vermont_upgrade.kml" class="bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-800/80 font-bold text-xs px-3 py-2 rounded-lg transition-colors flex items-center gap-1" title="Download Vermont Causeway & Champlain Islands KML">
-            <span>🌲 Vermont KML</span>
-          </a>
+        <div class="flex items-center gap-2 self-start lg:self-center shrink-0 text-xs text-slate-400 bg-white/5 border border-white/10 rounded-xl px-3 py-2">
+          <span class="text-emerald-400 font-bold">✓</span>
+          <span>Offline Navigation Ready</span>
         </div>
       </div>
-    </div>
+
+      <!-- Organized Download Links Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- GPX Bike Computer Tracks (Garmin / Wahoo / Hammerhead) -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4 space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-base">📥</span>
+              <div>
+                <h4 class="text-xs font-black text-sky-300 uppercase tracking-wider">GPX Track Files</h4>
+                <p class="text-[11px] text-slate-400">For Garmin Edge, Wahoo ELEMNT, Hammerhead Karoo</p>
+              </div>
+            </div>
+            <span class="text-[10px] bg-sky-500/20 text-sky-300 border border-sky-400/30 px-2 py-0.5 rounded-full font-bold">GPX 1.1</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="nyc_to_montreal_tour.gpx" download="nyc_to_montreal_tour.gpx" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs px-3 py-2.5 rounded-lg shadow-sm transition-all flex items-center justify-between group">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-white/20 text-[9px] flex items-center justify-center font-mono font-black shrink-0">6D</span>
+                <span class="truncate">6-Day Classic GPX</span>
+              </span>
+              <span class="text-[10px] text-blue-200 group-hover:text-white shrink-0 ml-1">📥</span>
+            </a>
+            <a href="nyc_to_montreal_5day_tour.gpx" download="nyc_to_montreal_5day_tour.gpx" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs px-3 py-2.5 rounded-lg shadow-sm transition-all flex items-center justify-between group">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-slate-900/20 text-[9px] flex items-center justify-center font-mono font-black shrink-0">5D</span>
+                <span class="truncate">5-Day Fast GPX</span>
+              </span>
+              <span class="text-[10px] text-slate-900 group-hover:text-black shrink-0 ml-1">⚡</span>
+            </a>
+            <a href="nyc_to_montreal_7day_tour.gpx" download="nyc_to_montreal_7day_tour.gpx" class="bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs px-3 py-2.5 rounded-lg shadow-sm transition-all flex items-center justify-between group">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-white/20 text-[9px] flex items-center justify-center font-mono font-black shrink-0">7D</span>
+                <span class="truncate">7-Day Gentler GPX</span>
+              </span>
+              <span class="text-[10px] text-rose-200 group-hover:text-white shrink-0 ml-1">📥</span>
+            </a>
+            <a href="nyc_to_montreal_vermont_upgrade.gpx" download="nyc_to_montreal_vermont_upgrade.gpx" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3 py-2.5 rounded-lg shadow-sm transition-all flex items-center justify-between group" title="Download Vermont Causeway & Champlain Islands GPX">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-white/20 text-[9px] flex items-center justify-center font-mono font-black shrink-0">VT</span>
+                <span class="truncate">Vermont Upgrade GPX</span>
+              </span>
+              <span class="text-[10px] text-emerald-200 group-hover:text-white shrink-0 ml-1">🌲</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- KML Map Overlays (Google My Maps & Smartphones) -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4 space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-base">🗺️</span>
+              <div>
+                <h4 class="text-xs font-black text-emerald-300 uppercase tracking-wider">KML Map Overlays</h4>
+                <p class="text-[11px] text-slate-400">For Google My Maps, Organic Maps, Maps.me</p>
+              </div>
+            </div>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2 py-0.5 rounded-full font-bold">KML</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="nyc_to_montreal_tour.kml" download="nyc_to_montreal_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 font-bold text-xs px-3 py-2.5 rounded-lg transition-all flex items-center justify-between group">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-slate-700 text-[9px] flex items-center justify-center font-mono font-black shrink-0">6D</span>
+                <span class="truncate">6-Day Classic KML</span>
+              </span>
+              <span class="text-[10px] text-slate-400 group-hover:text-white shrink-0 ml-1">🗺️</span>
+            </a>
+            <a href="nyc_to_montreal_5day_tour.kml" download="nyc_to_montreal_5day_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 font-bold text-xs px-3 py-2.5 rounded-lg transition-all flex items-center justify-between group">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-slate-700 text-[9px] flex items-center justify-center font-mono font-black shrink-0">5D</span>
+                <span class="truncate">5-Day Fast KML</span>
+              </span>
+              <span class="text-[10px] text-slate-400 group-hover:text-white shrink-0 ml-1">⚡</span>
+            </a>
+            <a href="nyc_to_montreal_7day_tour.kml" download="nyc_to_montreal_7day_tour.kml" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 font-bold text-xs px-3 py-2.5 rounded-lg transition-all flex items-center justify-between group">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-slate-700 text-[9px] flex items-center justify-center font-mono font-black shrink-0">7D</span>
+                <span class="truncate">7-Day Gentler KML</span>
+              </span>
+              <span class="text-[10px] text-slate-400 group-hover:text-white shrink-0 ml-1">🗺️</span>
+            </a>
+            <a href="nyc_to_montreal_vermont_upgrade.kml" download="nyc_to_montreal_vermont_upgrade.kml" class="bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-800/80 hover:border-emerald-600 font-bold text-xs px-3 py-2.5 rounded-lg transition-all flex items-center justify-between group" title="Download Vermont Causeway & Champlain Islands KML">
+              <span class="flex items-center gap-1.5 truncate">
+                <span class="w-4 h-4 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 text-[9px] flex items-center justify-center font-mono font-black shrink-0">VT</span>
+                <span class="truncate">Vermont Upgrade KML</span>
+              </span>
+              <span class="text-[10px] text-emerald-400 group-hover:text-emerald-200 shrink-0 ml-1">🌲</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Critical Tour Advisories & Real-World Gotchas (Red Team Audit) -->
     <section class="bg-amber-50/70 border-2 border-amber-300 rounded-2xl p-5 space-y-4 shadow-sm">
