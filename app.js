@@ -39,7 +39,59 @@ const DAY_COLORS = [
   '#e11d48'  // Day 7: Rose / Ruby
 ];
 
+function renderStaticDataBits() {
+  [['6day', TOUR_DATA_6DAY], ['5day', TOUR_DATA_5DAY], ['7day', TOUR_DATA_7DAY]].forEach(([id, t]) => {
+    const el = document.getElementById(`tab-avg-${id}`);
+    if (el) el.innerText = `(~${Math.round(t.averageDailyMiles)} mi/d)`;
+  });
+  const ret = document.getElementById('return-miles');
+  if (ret && typeof RETURN_ROUTE !== 'undefined') ret.innerText = RETURN_ROUTE.distanceMiles;
+  renderVermontSection();
+}
+
+function renderVermontSection() {
+  const el = document.getElementById('vermont-generated');
+  if (!el || typeof VERMONT_UPGRADE_DATA === 'undefined') return;
+  const v = VERMONT_UPGRADE_DATA;
+  el.innerHTML = `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+      <div class="bg-white/5 border border-emerald-700/30 rounded-xl p-4 space-y-2">
+        <div class="text-emerald-400 font-bold text-sm">⛴️ ${v.ferry.name}</div>
+        <p class="text-slate-300 leading-relaxed">${v.ferry.crossingTime}. ${v.ferry.fare}. ${v.ferry.schedule}</p>
+      </div>
+      <div class="bg-white/5 border border-emerald-700/30 rounded-xl p-4 space-y-2">
+        <div class="text-emerald-400 font-bold text-sm">🌊 ${v.bikeFerry.name}</div>
+        <p class="text-slate-300 leading-relaxed">${v.bikeFerry.schedule} ${v.bikeFerry.fare}.</p>
+        <p class="text-amber-300 leading-relaxed"><strong>If it isn't running:</strong> ${v.bikeFerry.fallBypass}</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      ${v.stages.map(st => `
+        <div class="bg-emerald-950/40 border border-emerald-600/40 rounded-xl p-4 space-y-2 text-xs">
+          <div class="flex items-center justify-between gap-2">
+            <span class="font-black uppercase tracking-wider text-emerald-400">${st.stageId}</span>
+            <span class="font-bold text-slate-300">${st.distanceMiles} mi &bull; +${st.elevationFt.toLocaleString()} ft (est.)</span>
+          </div>
+          <h4 class="font-bold text-white text-sm">${st.dayName}</h4>
+          <p class="text-slate-300">${st.surface}</p>
+          <p class="text-slate-300"><strong>Lunch (mile ${st.lunch.mile}):</strong> ${st.lunch.name}. ${st.lunch.notes}</p>
+          <p class="text-slate-300"><strong>Overnight:</strong> ${st.hotels.map(h => `${h.name} (${h.phone})`).join(' / ')}</p>
+          <a href="${st.gpx}" download class="inline-block mt-1 px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold">⬇️ ${st.stageId} GPX</a>
+        </div>`).join('')}
+    </div>
+    <p class="text-[11px] text-slate-400">${v.summary}</p>`;
+}
+
+// Offline support: cache the app, data and GPX files (needs http/https; file:// works without it
+// because every library is bundled locally).
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(err => console.warn('Service worker registration failed:', err));
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  renderStaticDataBits();
   // Purge any previously cached key to ensure zero conflicts
   localStorage.removeItem('gmaps_api_key');
   renderActiveTour();
@@ -96,6 +148,11 @@ function handleItinerarySelect(tourId) {
 
   // If in Guide mode:
   if (tourId === 'vermont') {
+    // The Vermont variant replaces Days 5 and 6 of the 7-day tour, so show that tour underneath it.
+    if (currentTour !== TOUR_DATA_7DAY) {
+      switchTourMode('7day');
+      updateItineraryTabsUI('vermont');
+    }
     if (typeof isVermontOverlayActive !== 'undefined' && !isVermontOverlayActive) {
       toggleVermontOverlay();
     }
@@ -177,6 +234,7 @@ function switchTourMode(tourType) {
   if (tourType === 'compare') {
     isCompareMode = true;
     if (compareSection) compareSection.classList.remove('hidden');
+    renderCompareSection();
     if (legendNormal) legendNormal.classList.add('hidden');
     if (legendCompare) legendCompare.classList.remove('hidden');
 
@@ -224,18 +282,61 @@ function switchTourMode(tourType) {
   fetchTourWeather();
 }
 
+function renderCompareSection() {
+  const el = document.getElementById('compare-generated');
+  if (!el) return;
+  const tours = [
+    { t: TOUR_DATA_7DAY, key: '7day', border: 'border-rose-300', text: 'text-rose-700', note: 'Recommended. The border day and the Montréal finish are split, so the last two days are short and flat.' },
+    { t: TOUR_DATA_6DAY, key: '6day', border: 'border-blue-300', text: 'text-blue-700', note: 'Same as the 7-day through Plattsburgh, then one long flat day (with the border crossing) to Montréal.' },
+    { t: TOUR_DATA_5DAY, key: '5day', border: 'border-amber-300', text: 'text-amber-700', note: 'Three days over 90 miles in October daylight. Strong riders on light bikes only.' }
+  ];
+  const cards = tours.map(({ t, key, border, text, note }) => `
+    <div class="bg-white rounded-2xl border-2 ${border} shadow-sm p-5 space-y-3 flex flex-col justify-between">
+      <div class="space-y-3">
+        <h3 class="text-lg font-black text-slate-900">${t.title}</h3>
+        <p class="text-xs text-slate-600">${note}</p>
+        <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="bg-slate-50 rounded-lg p-2"><div class="text-[10px] uppercase text-slate-500 font-bold">Total</div><div class="text-sm font-extrabold ${text}">${t.totalDistanceMiles} mi</div></div>
+          <div class="bg-slate-50 rounded-lg p-2"><div class="text-[10px] uppercase text-slate-500 font-bold">Per day</div><div class="text-sm font-extrabold ${text}">${t.averageDailyMiles} mi</div></div>
+          <div class="bg-slate-50 rounded-lg p-2"><div class="text-[10px] uppercase text-slate-500 font-bold">Climb (est.)</div><div class="text-sm font-extrabold ${text}">+${t.elevationGainFt.toLocaleString()} ft</div></div>
+        </div>
+        <div class="text-[11px] text-slate-700"><strong>Longest day:</strong> ${Math.max(...t.days.map(d => d.distanceMiles))} mi</div>
+      </div>
+      <button onclick="switchTourMode('${key}')" class="w-full mt-2 py-2 rounded-xl bg-slate-900 hover:bg-slate-700 text-white font-bold text-xs">Select ${t.durationDays}-Day Tour &rarr;</button>
+    </div>`).join('');
+  const maxDays = 7;
+  let rows = '';
+  for (let i = 0; i < maxDays; i++) {
+    rows += `<tr class="border-t border-slate-200 align-top"><td class="py-2.5 px-3 font-bold">Day ${i + 1}</td>` +
+      tours.map(({ t }) => {
+        const d = t.days[i];
+        return d ? `<td class="py-2.5 px-3"><div class="font-bold text-slate-900">${d.dayOfWeek} ${d.dateStr}: ${d.name.split(': ').slice(1).join(': ')}</div><div class="text-slate-600">${d.distanceMiles} mi · +${d.elevationFt.toLocaleString()} ft · overnight ${d.hotels[0].name}</div>${d.accelerateOption ? `<div class="text-amber-700 mt-1">⚡ ${d.accelerateOption.notes}</div>` : ''}</td>` : '<td class="py-2.5 px-3 text-slate-400">—</td>';
+      }).join('') + '</tr>';
+  }
+  el.innerHTML = `
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">${cards}</div>
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto mt-6">
+      <table class="w-full text-left text-xs border-collapse">
+        <thead class="bg-slate-50"><tr><th class="py-3 px-3">Day</th>${tours.map(({ t }) => `<th class="py-3 px-3">${t.title}</th>`).join('')}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
 function renderCompareStats() {
   const elDist = document.getElementById('stat-total-dist');
-  if (elDist) elDist.innerText = `~425–445 mi (684–716 km) corridor`;
+  if (elDist) elDist.innerText = `${TOUR_DATA_5DAY.totalDistanceMiles}–${TOUR_DATA_7DAY.totalDistanceMiles} mi by itinerary`;
   
   const elSched = document.getElementById('stat-schedule');
   if (elSched) elSched.innerText = "7-Day vs 6-Day vs 5-Day";
   
   const elAvg = document.getElementById('stat-avg-miles');
-  if (elAvg) elAvg.innerText = "(~64 vs ~74 vs ~85 mi/day)";
+  if (elAvg) elAvg.innerText = `(${TOUR_DATA_7DAY.averageDailyMiles} vs ${TOUR_DATA_6DAY.averageDailyMiles} vs ${TOUR_DATA_5DAY.averageDailyMiles} mi/day)`;
 
   const elPace = document.getElementById('stat-pace');
   if (elPace) elPace.innerText = "Gentler Touring vs Classic Endurance vs Fast";
+  const elClimb = document.getElementById('stat-total-climb');
+  if (elClimb) elClimb.innerText = `+${TOUR_DATA_5DAY.elevationGainFt.toLocaleString()} to +${TOUR_DATA_7DAY.elevationGainFt.toLocaleString()} ft`;
 
   // Update Day Selector Dropdown for Compare Mode
   const daySelect = document.getElementById('day-filter-select');
@@ -256,8 +357,8 @@ function renderCompareStats() {
     pillStage.innerText = "⚖️ Comparing Tour Itineraries";
     pillStage.className = "badge-tag bg-purple-50 text-purple-800 border border-purple-200 font-bold shadow-xs transition-all";
   }
-  if (pillDist) pillDist.innerText = "🚴 ~64 vs ~74 vs ~85 mi/day";
-  if (pillElev) pillElev.innerText = "⛰️ ~2,000–2,600 ft/day avg";
+  if (pillDist) pillDist.innerText = `🚴 ${TOUR_DATA_7DAY.averageDailyMiles} vs ${TOUR_DATA_6DAY.averageDailyMiles} vs ${TOUR_DATA_5DAY.averageDailyMiles} mi/day`;
+  if (pillElev) pillElev.innerText = `⛰️ +${TOUR_DATA_5DAY.elevationGainFt.toLocaleString()}–${TOUR_DATA_7DAY.elevationGainFt.toLocaleString()} ft total (est.)`;
 }
 
 function renderActiveTour() {
@@ -267,11 +368,11 @@ function renderActiveTour() {
   const elSched = document.getElementById('stat-schedule');
   if (elSched) {
     if (currentTour.durationDays === 7) {
-      elSched.innerText = "Sun → Sat (7 Days)";
+      elSched.innerText = "Sun Oct 4 → Sat Oct 10 (7 Days)";
     } else if (currentTour.durationDays === 5) {
-      elSched.innerText = "5 Days";
+      elSched.innerText = "Sun Oct 4 → Thu Oct 8 (5 Days)";
     } else {
-      elSched.innerText = "Sun → Fri (6 Days)";
+      elSched.innerText = "Sun Oct 4 → Fri Oct 9 (6 Days)";
     }
   }
   
@@ -280,6 +381,9 @@ function renderActiveTour() {
 
   const elPace = document.getElementById('stat-pace');
   if (elPace) elPace.innerText = currentTour.pace;
+
+  const elClimb = document.getElementById('stat-total-climb');
+  if (elClimb) elClimb.innerText = `+${currentTour.elevationGainFt.toLocaleString()} ft`;
 
   // Update Day Selector Dropdown
   const daySelect = document.getElementById('day-filter-select');
@@ -497,6 +601,8 @@ function initLeafletMap() {
 
   const allTracks = currentTour.days.flatMap(d => d.track);
   leafletMap.fitBounds(allTracks, { padding: [30, 30] });
+  // The container may not have its final size yet (fonts/CSS still settling): refit once layout is done.
+  setTimeout(() => { if (leafletMap) { leafletMap.invalidateSize(); leafletMap.fitBounds(allTracks, { padding: [30, 30] }); } }, 250);
 
   setTimeout(() => {
     if (leafletMap && typeof leafletMap.invalidateSize === 'function') {
@@ -724,6 +830,7 @@ function renderCompareMap() {
     ...TOUR_DATA_5DAY.days.flatMap(d => d.track)
   ];
   leafletMap.fitBounds(allTracks, { padding: [30, 30] });
+  setTimeout(() => { if (leafletMap) { leafletMap.invalidateSize(); leafletMap.fitBounds(allTracks, { padding: [30, 30] }); } }, 250);
 
   setTimeout(() => {
     if (leafletMap && typeof leafletMap.invalidateSize === 'function') {
@@ -944,10 +1051,10 @@ function updateMapPills(val) {
       pillStage.innerText = "All Stages";
       pillStage.className = "badge-tag bg-slate-100 text-slate-800 border border-slate-200 font-bold shadow-xs transition-all";
     }
-    if (pillDist) pillDist.innerText = `🚴 ${currentTour.totalDistanceMiles} mi / 626 km`;
+    if (pillDist) pillDist.innerText = `🚴 ${currentTour.totalDistanceMiles} mi / ${Math.round(currentTour.totalDistanceMiles * 1.609344)} km`;
     if (pillElev) pillElev.innerText = `⛰️ +${currentTour.elevationGainFt.toLocaleString()} ft`;
     const pillWeather = document.getElementById('map-pill-weather');
-    if (pillWeather) pillWeather.innerText = "🌤️ Oct 4–9 Forecast";
+    if (pillWeather) pillWeather.innerText = `🌤️ ${currentTour.days[0].dateStr}–${currentTour.days[currentTour.days.length - 1].dateStr} Weather`;
   } else {
     const dayNum = parseInt(val, 10);
     const targetDay = currentTour.days.find(d => d.day === dayNum);
@@ -988,31 +1095,31 @@ function zoomToStage(val) {
       ];
       if (leafletMap) leafletMap.flyToBounds(allTracks, { padding: [30, 30], duration: 1.0 });
       if (pillStage) pillStage.innerText = "⚖️ Comparing 6-Day vs 5-Day";
-      if (pillDist) pillDist.innerText = "🚴 64.8 vs 77.8 mi/day avg";
-      if (pillElev) pillElev.innerText = "⛰️ ~2,000 vs ~2,400 ft/day";
+      if (pillDist) pillDist.innerText = `🚴 ${TOUR_DATA_6DAY.averageDailyMiles} vs ${TOUR_DATA_5DAY.averageDailyMiles} mi/day avg`;
+      if (pillElev) pillElev.innerText = `⛰️ ~${Math.round(TOUR_DATA_6DAY.elevationGainFt / 6 / 100) * 100} vs ~${Math.round(TOUR_DATA_5DAY.elevationGainFt / 5 / 100) * 100} ft/day (est.)`;
     } else if (val === 'compare-6day') {
       if (compareLayers.sixDay) compareLayers.sixDay.eachLayer(l => l.setStyle({ weight: 7, opacity: 1.0 }));
       if (compareLayers.fiveDay) compareLayers.fiveDay.eachLayer(l => l.setStyle({ weight: 2, opacity: 0.2 }));
       const sixTracks = TOUR_DATA_6DAY.days.flatMap(d => d.track);
       if (leafletMap) leafletMap.flyToBounds(sixTracks, { padding: [30, 30], duration: 1.0 });
       if (pillStage) pillStage.innerText = "🗓️ 6-Day Tour Highlighted (Solid Blue)";
-      if (pillDist) pillDist.innerText = "🚴 ~445 mi • ~74.2 mi/day avg";
-      if (pillElev) pillElev.innerText = "⛰️ +14,500 ft Total";
+      if (pillDist) pillDist.innerText = `🚴 ${TOUR_DATA_6DAY.totalDistanceMiles} mi • ${TOUR_DATA_6DAY.averageDailyMiles} mi/day avg`;
+      if (pillElev) pillElev.innerText = `⛰️ +${TOUR_DATA_6DAY.elevationGainFt.toLocaleString()} ft total (est.)`;
     } else if (val === 'compare-5day') {
       if (compareLayers.sixDay) compareLayers.sixDay.eachLayer(l => l.setStyle({ weight: 2, opacity: 0.2 }));
       if (compareLayers.fiveDay) compareLayers.fiveDay.eachLayer(l => l.setStyle({ weight: 7, opacity: 1.0 }));
       const fiveTracks = TOUR_DATA_5DAY.days.flatMap(d => d.track);
       if (leafletMap) leafletMap.flyToBounds(fiveTracks, { padding: [30, 30], duration: 1.0 });
       if (pillStage) pillStage.innerText = "⚡ 5-Day Fast Tour Highlighted (Dashed Amber)";
-      if (pillDist) pillDist.innerText = "🚴 ~425 mi • ~85.0 mi/day avg";
-      if (pillElev) pillElev.innerText = "⛰️ +13,000 ft Total";
+      if (pillDist) pillDist.innerText = `🚴 ${TOUR_DATA_5DAY.totalDistanceMiles} mi • ${TOUR_DATA_5DAY.averageDailyMiles} mi/day avg`;
+      if (pillElev) pillElev.innerText = `⛰️ +${TOUR_DATA_5DAY.elevationGainFt.toLocaleString()} ft total (est.)`;
     } else if (val === 'compare-accel') {
       const accelCoords = TOUR_DATA_5DAY.days.filter(d => d.accelerateOption).map(d => d.endCoords);
       if (leafletMap && accelCoords.length > 0) {
         leafletMap.flyToBounds(accelCoords, { padding: [60, 60], duration: 1.0 });
       }
-      if (pillStage) pillStage.innerText = "⚡ 4 Accelerate Checkpoints";
-      if (pillDist) pillDist.innerText = "🚴 +16 to +24 extra miles per day";
+      if (pillStage) pillStage.innerText = "⚡ Push options (not recommended)";
+      if (pillDist) pillDist.innerText = "🚴 Every push option is a 125+ mile day";
       if (pillElev) pillElev.innerText = "⛰️ Kingston, Saratoga, Essex, Saint-Jean";
     }
     return;
@@ -1164,15 +1271,16 @@ function toggleVermontOverlay() {
       <h4 class="font-bold text-gray-900">${vt1.dayName}</h4>
       <span class="text-xs font-semibold text-cyan-700">${vt1.distanceMiles} mi • +${vt1.elevationFt} ft</span>
       <p class="text-xs text-gray-600 mt-1">${vt1.surface}</p>
-      <p class="text-xs text-slate-500 mt-1">Cross Lake Champlain via the historic 20-minute Essex-Charlotte Ferry directly into Vermont!</p>
+      <p class="text-xs text-slate-500 mt-1">Crosses Lake Champlain on the Essex–Charlotte ferry (${VERMONT_UPGRADE_DATA.ferry.fare}).</p>
     </div>
   `);
   vermontLayerGroup.addLayer(polyVt1);
 
-  // 2. Essex-Charlotte Ferry dotted line across Lake Champlain
+  // 2. Essex-Charlotte ferry (the VT-1 track already follows the ferry; this highlights it)
+  const ferryInfo = VERMONT_UPGRADE_DATA.ferry;
   const ferryLine = L.polyline([
-    [44.3105, -73.3540], // Essex Slip
-    [44.3130, -73.2840]  // Charlotte Slip
+    [44.3107, -73.3509], // Essex dock
+    [44.3014, -73.2972]  // Charlotte dock
   ], {
     color: '#0284c7', // Sky Blue
     weight: 4,
@@ -1181,10 +1289,10 @@ function toggleVermontOverlay() {
   }).bindPopup(`
     <div class="p-2">
       <span class="inline-block px-2 py-0.5 text-xs font-bold bg-sky-100 text-sky-800 rounded mb-1">⛴️ Ferry Crossing</span>
-      <h4 class="font-bold text-gray-900">Essex, NY ➔ Charlotte, VT Ferry</h4>
-      <p class="text-xs text-gray-700 mt-1"><strong>Duration:</strong> 20 minutes across Lake Champlain</p>
-      <p class="text-xs text-gray-700"><strong>Schedule:</strong> Daily hourly departures (6:00 AM – 9:00 PM)</p>
-      <p class="text-xs font-bold text-sky-800"><strong>Fare:</strong> ~$6.25 per cyclist (cash/card at toll booth)</p>
+      <h4 class="font-bold text-gray-900">${ferryInfo.name}</h4>
+      <p class="text-xs text-gray-700 mt-1"><strong>Duration:</strong> ${ferryInfo.crossingTime}</p>
+      <p class="text-xs text-gray-700"><strong>Schedule:</strong> ${ferryInfo.schedule}</p>
+      <p class="text-xs font-bold text-sky-800"><strong>Fare:</strong> ${ferryInfo.fare}</p>
     </div>
   `);
   vermontLayerGroup.addLayer(ferryLine);
@@ -1203,97 +1311,89 @@ function toggleVermontOverlay() {
       <h4 class="font-bold text-gray-900">${vt2.dayName}</h4>
       <span class="text-xs font-semibold text-emerald-700">${vt2.distanceMiles} mi • +${vt2.elevationFt} ft</span>
       <p class="text-xs text-gray-600 mt-1">${vt2.surface}</p>
-      <p class="text-xs text-slate-500 mt-1">Traverses the 3-mile Colchester Causeway, Island Line Bike Ferry, and scenic Champlain Islands into Quebec!</p>
+      <p class="text-xs text-slate-500 mt-1">Colchester Causeway, Local Motion bike ferry (Fri–Sun only in fall), Champlain Islands, then Rouses Point and Route 223.</p>
     </div>
   `);
   vermontLayerGroup.addLayer(polyVt2);
 
-  // 4. Curated Vermont POI Pins
+  // 4. Vermont POI pins (text comes from route_data.js so it stays in sync with the guides)
+  const bikeFerry = VERMONT_UPGRADE_DATA.bikeFerry;
+  const vtLunch = vt2.lunch;
+  const vtHotel = vt1.hotels[0];
   const vtPins = [
     {
-      coords: [44.3105, -73.3540],
+      coords: [44.3107, -73.3509],
       icon: '⛴️',
       bg: '#0284c7',
       html: `
         <div class="p-2">
           <span class="inline-block px-2 py-0.5 text-xs font-bold bg-sky-100 text-sky-800 rounded mb-1">⛴️ Lake Champlain Ferry</span>
-          <h4 class="font-bold text-gray-900">Essex, NY Ferry Dock</h4>
-          <p class="text-xs text-gray-600">Board ferry to Charlotte, VT ($6.25/cyclist, runs hourly). Lunch at The Cup Cafe next door.</p>
+          <h4 class="font-bold text-gray-900">Essex, NY Ferry Dock (mile ${vt1.lunch.mile})</h4>
+          <p class="text-xs text-gray-600">${ferryInfo.fare}. ${ferryInfo.schedule}</p>
+          <p class="text-xs text-gray-700 mt-1">Food: ${vt1.lunch.name}. ${vt1.lunch.notes}</p>
         </div>
       `
     },
     {
-      coords: [44.4795, -73.2160],
+      coords: vtHotel.coords,
       icon: '🏨',
       bg: '#4f46e5',
       html: `
         <div class="p-2">
-          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-indigo-100 text-indigo-800 rounded mb-1">🏨 Recommended Overnight</span>
-          <h4 class="font-bold text-gray-900">Hotel Vermont</h4>
-          <p class="text-xs text-gray-600">41 Cherry St, Burlington &bull; (802) 651-0080</p>
-          <p class="text-xs text-gray-700 mt-1">Boutique hotel with secure indoor bicycle room, craft cocktail lounge, right off waterfront bike path.</p>
+          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-indigo-100 text-indigo-800 rounded mb-1">🏨 Overnight</span>
+          <h4 class="font-bold text-gray-900">${vtHotel.name}</h4>
+          <p class="text-xs text-gray-600">${vtHotel.address} &bull; ${vtHotel.phone}</p>
+          <p class="text-xs text-gray-700 mt-1">${vtHotel.notes}</p>
         </div>
       `
     },
     {
-      coords: [44.4770, -73.2205],
-      icon: '🍻',
-      bg: '#f59e0b',
-      html: `
-        <div class="p-2">
-          <span class="inline-block px-2 py-0.5 text-xs font-bold bg-amber-100 text-amber-900 rounded mb-1">🍻 Craft Brewery</span>
-          <h4 class="font-bold text-gray-900">Foam Brewers</h4>
-          <p class="text-xs text-gray-600">112 Lake St, Burlington waterfront</p>
-          <p class="text-xs text-gray-700 mt-1">World-class hazy IPAs, charcuterie, and patio sunset over Lake Champlain.</p>
-        </div>
-      `
-    },
-    {
-      coords: [44.5580, -73.2420],
+      coords: [44.5663, -73.3119],
       icon: '🌊',
       bg: '#0891b2',
       html: `
         <div class="p-2">
           <span class="inline-block px-2 py-0.5 text-xs font-bold bg-cyan-100 text-cyan-800 rounded mb-1">🌊 Island Line Trail</span>
           <h4 class="font-bold text-gray-900">Colchester Causeway</h4>
-          <p class="text-xs text-gray-700">3-mile historic marble railroad embankment extending straight into Lake Champlain. 360° water panoramas.</p>
+          <p class="text-xs text-gray-700">About 3 mi of crushed-stone path on the old marble rail causeway, out into Lake Champlain.</p>
         </div>
       `
     },
     {
-      coords: [44.5880, -73.2890],
+      coords: [44.5904, -73.3127],
       icon: '⛴️',
       bg: '#059669',
       html: `
         <div class="p-2">
           <span class="inline-block px-2 py-0.5 text-xs font-bold bg-emerald-100 text-emerald-800 rounded mb-1">⛴️ Bike Ferry ("The Cut")</span>
-          <h4 class="font-bold text-gray-900">Local Motion Bike Ferry</h4>
-          <p class="text-xs text-gray-700">Bridges 200-ft gap between Colchester and South Hero. Fri–Sun through mid-October. <em>(Fall bypass: Route 127 + US-2 Sandbar causeway +14 mi)</em>.</p>
+          <h4 class="font-bold text-gray-900">${bikeFerry.name}</h4>
+          <p class="text-xs text-gray-700">${bikeFerry.schedule} ${bikeFerry.fare}.</p>
+          <p class="text-xs text-gray-700 mt-1"><em>If closed:</em> ${bikeFerry.fallBypass}</p>
         </div>
       `
     },
     {
-      coords: [44.8140, -73.2890],
+      coords: vtLunch.coords,
       icon: '🥪',
       bg: '#ea580c',
       html: `
         <div class="p-2">
           <span class="inline-block px-2 py-0.5 text-xs font-bold bg-orange-100 text-orange-800 rounded mb-1">🥪 Lunch Stop</span>
-          <h4 class="font-bold text-gray-900">Hero's Welcome General Store</h4>
-          <p class="text-xs text-gray-600">3537 US-2, North Hero, VT (Mile 32)</p>
-          <p class="text-xs text-gray-700 mt-1">Lakeside deli sandwiches, fresh cider donuts, hot coffee on the dock.</p>
+          <h4 class="font-bold text-gray-900">${vtLunch.name}</h4>
+          <p class="text-xs text-gray-600">${vtLunch.address} (mile ${vtLunch.mile})${vtLunch.phone ? ' &bull; ' + vtLunch.phone : ''}</p>
+          <p class="text-xs text-gray-700 mt-1">${vtLunch.notes}</p>
         </div>
       `
     },
     {
-      coords: [45.0130, -73.3010],
+      coords: [45.0103, -73.3709],
       icon: '🇨🇦',
       bg: '#16a34a',
       html: `
         <div class="p-2">
           <span class="inline-block px-2 py-0.5 text-xs font-bold bg-emerald-100 text-emerald-800 rounded mb-1">🇨🇦 Canada Customs</span>
-          <h4 class="font-bold text-gray-900">Noyan / Clarenceville (QC-225)</h4>
-          <p class="text-xs text-gray-700">Border station directly north of Alburgh, VT. Low vehicle traffic, roll up to booth. Passports required!</p>
+          <h4 class="font-bold text-gray-900">Rouses Point–Lacolle 223 (US-11 / Route 223)</h4>
+          <p class="text-xs text-gray-700">Open 8 AM to 8 PM daily (both sides). The route returns to NY over the US-2 bridge and crosses here, the same crossing as the main route. Passport, EDL or NEXUS.</p>
         </div>
       `
     }
@@ -1319,14 +1419,7 @@ function toggleVermontOverlay() {
   }
 
   // Fly map to show the Vermont variant corridor
-  const vtPoints = [
-    [43.8478, -73.4257], // Ticonderoga
-    [44.3105, -73.3540], // Essex
-    [44.4780, -73.2180], // Burlington
-    [44.5880, -73.2890], // Causeway
-    [44.8140, -73.2890], // North Hero
-    [45.3056, -73.2533]  // Saint-Jean
-  ];
+  const vtPoints = [...vt1.track, ...vt2.track];
   leafletMap.flyToBounds(vtPoints, { padding: [40, 40], duration: 1.2 });
   updateMapBadge("🌲 Vermont Upgrade Active (Cyan & Emerald Overlay)");
 }
@@ -1337,15 +1430,17 @@ function toggleVermontOverlay() {
 let tourStartDate = "2026-10-04";
 let tourWeatherData = {};
 
-// Fallback historical climate data for October in Hudson Valley / Adirondacks / Quebec
+// Fallback when no live forecast is available (offline, or the date is more than 16 days out).
+// These are rough early-October climate normals for each stage's end point, NOT a forecast;
+// the UI labels them as "Typical" so nobody mistakes them for a prediction.
 const OCTOBER_CLIMATE_FALLBACK = {
-  1: { tempMax: 68, tempMin: 56, rainProb: 25, windSpeed: 8, windDir: 195, weatherCode: 2 }, // Brewster
-  2: { tempMax: 72, tempMin: 56, rainProb: 25, windSpeed: 11, windDir: 185, weatherCode: 2 }, // Hudson
-  3: { tempMax: 62, tempMin: 42, rainProb: 20, windSpeed: 10, windDir: 320, weatherCode: 1 }, // Saratoga
-  4: { tempMax: 58, tempMin: 36, rainProb: 20, windSpeed: 6, windDir: 190, weatherCode: 1 },  // Ticonderoga
-  5: { tempMax: 56, tempMin: 44, rainProb: 35, windSpeed: 9, windDir: 355, weatherCode: 61 }, // Plattsburgh
-  6: { tempMax: 58, tempMin: 41, rainProb: 20, windSpeed: 8, windDir: 200, weatherCode: 2 },  // Saint-Jean / Montreal
-  7: { tempMax: 59, tempMin: 42, rainProb: 15, windSpeed: 7, windDir: 195, weatherCode: 1 }   // Montreal (7-day victory lap)
+  1: { tempMax: 67, tempMin: 47, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Brewster / Poughkeepsie
+  2: { tempMax: 65, tempMin: 44, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Hudson / Troy
+  3: { tempMax: 64, tempMin: 42, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Saratoga / Ticonderoga
+  4: { tempMax: 62, tempMin: 40, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Ticonderoga / Plattsburgh
+  5: { tempMax: 60, tempMin: 41, rainProb: 30, windSpeed: 9, windDir: 225, weatherCode: 2 }, // Plattsburgh / Montreal
+  6: { tempMax: 60, tempMin: 41, rainProb: 30, windSpeed: 9, windDir: 225, weatherCode: 2 }, // Saint-Jean / Montreal
+  7: { tempMax: 59, tempMin: 42, rainProb: 30, windSpeed: 9, windDir: 225, weatherCode: 2 }  // Montreal
 };
 
 function addDaysToDate(baseDateStr, daysToAdd) {
@@ -1614,6 +1709,9 @@ function renderWeatherDashboard() {
           <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Stage ${day.day}</span>
           <span class="text-[10px] font-bold text-slate-700">${w.dateFormatted}</span>
         </div>
+        <div>
+          <span class="text-[9px] font-bold px-1.5 py-0.5 rounded ${w.isLive ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-200 text-slate-600'}">${w.isLive ? 'Live forecast' : 'Typical Oct weather, not a forecast'}</span>
+        </div>
         <div class="flex items-center gap-2 pt-0.5">
           <span class="text-2xl">${w.icon}</span>
           <div>
@@ -1651,12 +1749,22 @@ function renderWeatherDashboard() {
   const lowestTemp = Math.min(...minTemps);
   const maxRain = Math.max(...rainProbs);
 
+  const liveCount = weatherList.filter(item => item.w.isLive).length;
+  const statusEl = document.getElementById('weather-summary-text');
+  if (statusEl) {
+    statusEl.innerText = liveCount === weatherList.length
+      ? `Live forecast (Open-Meteo) for all ${liveCount} stages.`
+      : liveCount === 0
+        ? `No live forecast available (offline, or more than 16 days out). Showing typical early-October values only.`
+        : `Live forecast for ${liveCount} of ${weatherList.length} stages; the rest show typical early-October values.`;
+  }
+
   if (summaryEl) {
     summaryEl.innerHTML = `
       <div class="flex flex-wrap items-center gap-4 text-slate-800">
         <div>
           <span class="font-bold text-slate-500 uppercase tracking-wider text-[10px] block">Overall Trip Outlook</span>
-          <span class="font-extrabold text-blue-900 text-sm">🛡️ Tour Risk: ${avgRisk}/10 (${avgRisk <= 3 ? 'Optimal Cycling' : 'Favorable with Advisories'})</span>
+          <span class="font-extrabold text-blue-900 text-sm">🛡️ Tour Risk: ${avgRisk}/10${liveCount === 0 ? ' (typical values, not a forecast)' : ''}</span>
         </div>
         <div class="h-6 w-px bg-blue-200 hidden sm:block"></div>
         <div>
@@ -1747,14 +1855,16 @@ function renderDaysAccordion() {
           <span class="badge-tag bg-blue-50 text-blue-700 border border-blue-200">🚴 ${day.distanceMiles} mi / ${day.distanceKm} km</span>
           <span class="badge-tag bg-amber-50 text-amber-700 border border-amber-200">⛰️ +${day.elevationFt} ft</span>
           <a href="${day.googleMapsDirUrl}" target="_blank" class="text-xs bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-3 py-1.5 rounded-lg border border-emerald-200 transition-colors flex items-center gap-1 shadow-sm">
-            🗺️ Baseline in Maps &rarr;
+            🗺️ Google Maps (approx.) &rarr;
           </a>
+          ${day.gpx ? `<a href="${day.gpx}" download class="text-xs bg-blue-600 hover:bg-blue-700 text-white font-bold px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1 shadow-sm">⬇️ Day GPX</a>` : ''}
           <button onclick="focusDayOnMap(${day.day})" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg transition-colors flex items-center gap-1">
             📍 Center
           </button>
         </div>
       </div>
       <div class="p-5 space-y-4">
+        ${day.altNote ? `<div class="text-xs bg-amber-50 border border-amber-200 text-amber-900 rounded-lg p-3"><strong>Option:</strong> ${day.altNote}</div>` : ''}
         <!-- Live Weather & Cycling Risk Box -->
         ${renderDayWeatherBox(day.day)}
 
@@ -1927,8 +2037,36 @@ function toggleChecklistItem(key, checked) {
   renderChecklist();
 }
 
+function buildGuideText() {
+  const t = currentTour;
+  const strip = (typeof STRIP_MAP_ITINERARIES !== 'undefined') ? STRIP_MAP_ITINERARIES[t.id] : null;
+  const lines = [
+    `NYC to Montréal: ${t.title}`,
+    `${t.totalDistanceMiles} mi total, about +${t.elevationGainFt.toLocaleString()} ft (estimated), ${t.averageDailyMiles} mi/day. ${t.pace}.`,
+    '',
+    'Return: Amtrak Adirondack carries bikes only between NYC and Rouses Point, NY. Southbound leaves Rouses Point 2:15 PM (Sun, Tue-Sat); no Monday train from Rouses Point.',
+    'Border: Rouses Point-Lacolle 223 (US-11 / Route 223), open 8 AM to 8 PM daily on both sides. Passport, passport card, EDL or NEXUS. No cannabis, no pepper spray.',
+    ''
+  ];
+  t.days.forEach((d, i) => {
+    lines.push(`${d.name} (${d.dateStr})`);
+    lines.push(`  ${d.distanceMiles} mi / ${d.distanceKm} km, about +${d.elevationFt.toLocaleString()} ft. GPX: ${d.gpx}`);
+    lines.push(`  Lunch (mile ${d.lunch.mile}): ${d.lunch.name}, ${d.lunch.address}${d.lunch.phone ? ', ' + d.lunch.phone : ''}. ${d.lunch.notes}`);
+    d.hotels.forEach(h => lines.push(`  Hotel: ${h.name}, ${h.address}, ${h.phone}. ${h.notes}`));
+    lines.push(`  Bailout: ${d.bailout}`);
+    if (d.altNote) lines.push(`  Option: ${d.altNote}`);
+    const st = strip && strip.stages[i];
+    if (st) {
+      lines.push('  Cues:');
+      st.cues.forEach(c => lines.push(`    ${c.mile.toFixed(1).padStart(5)}  ${c.action} ${c.road}${c.detail ? ' | ' + c.detail : ''}`));
+    }
+    lines.push('');
+  });
+  return lines.join('\n');
+}
+
 function copyGuideForGoogleDoc() {
-  const guideText = document.getElementById('raw-markdown-content')?.innerText || '';
+  const guideText = buildGuideText();
   navigator.clipboard.writeText(guideText).then(() => {
     const btn = document.getElementById('copy-doc-btn');
     if (btn) {

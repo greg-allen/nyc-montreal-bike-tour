@@ -1,0 +1,552 @@
+{
+"heidis": [
+41.40567,
+-73.580218,
+"Heidi's Inn, 1270, State Highway 22, Sodom, Village of Brewster, Town of Southeast, Putnam"
+],
+"comfort_brewster": [
+41.385357,
+-73.584892,
+"7, Peach Lake Road, Village of Brewster, Town of Southeast, Putnam County, New York, 10509"
+],
+"barlow": [
+42.248715,
+-73.785056,
+"Hudson Whaler, 542, Warren Street, Oakdale, City of Hudson, Columbia County, New York, 125"
+],
+"wick": [
+42.253058,
+-73.796037,
+"The Wick, 41, Cross Street, City of Hudson, Columbia County, New York, 12534, United State"
+],
+"hilton": [
+43.08558,
+-73.782419,
+"The Saratoga Hilton, 534, Broadway, City of Saratoga Springs, Saratoga County, New York, 1"
+],
+"holiday_sar": [
+43.075916,
+-73.786238,
+"Holiday Inn, 232, Broadway, City of Saratoga Springs, Saratoga County, New York, 12866, Un"
+],
+"bw_ti": [
+43.858291,
+-73.42782,
+"Best Western Plus Ticonderoga Inn & Suites, 260, Burgoyne Road, Town of Ticonderoga, Essex"
+],
+"bw_platt": [
+44.697707,
+-73.491931,
+"The 99, 446, State Route 3, City of Plattsburgh, Town of Plattsburgh, Clinton County, New "
+],
+"quality_sj": [
+45.32482,
+-73.266409,
+"725, Boulevard du Séminaire Nord, Saiint-Jean, Saint-Jean-sur-Richelieu, Le Haut-Richelieu"
+],
+"monville": [
+45.504472,
+-73.562344,
+"Hôtel Monville, 1041, Rue De Bleury, Quartier Chinois, Ville-Marie, Montréal, Agglomératio"
+],
+"pjc": [
+45.507936,
+-73.552958,
+"Place Jacques-Cartier, Vieux-Montréal, Ville-Marie, Montréal, Agglomération de Montréal, M"
+],
+"hotel_vt": [
+44.478908,
+-73.217877,
+"Hotel Vermont, 41, Cherry Street, Downtown, Burlington, Chittenden County, Vermont, 05401,"
+],
+"rouses_amtrak": [
+44.995004,
+-73.371166,
+"Rouses Point, Pratt Street, Village of Rouses Point, Town of Champlain, Clinton County, Ne"
+],
+"charlotte_ferry": [
+44.301379,
+-73.297158,
+"Charlotte, VT Dock, Ferry Road, Charlotte, Chittenden County, Vermont, United States"
+],
+"trailside": [
+41.270649,
+-73.780537,
+"Trailside Cafe, 1807, Commerce Street, Underhill Plaza, Yorktown Heights, Town of Yorktown"
+],
+"lakestreet_rp": [
+44.993365,
+-73.364715,
+"92, Lake Street, Village of Rouses Point, Town of Champlain, Clinton County, New York, 129"
+],
+"lakeside_rp": [
+44.993154,
+-73.364238,
+"109, Lake Street, Village of Rouses Point, Town of Champlain, Clinton County, New York, 12"
+],
+"pinkpig": [
+44.310047,
+-73.351543,
+"2750, Essex Road, Town of Essex, Town of Willsboro, Essex County, New York, 12936, United "
+],
+"heros": [
+44.816417,
+-73.290684,
+"Hero's Welcome General Store, 3537, U.S. Route 2, North Hero, Grand Isle County, Vermont, "
+],
+"battery": [
+40.702786,
+-74.015773,
+"Battery Park, Lower Manhattan, Manhattan, New York County, New York, 10004, United States"
+],
+"hyatt_pok": [
+41.63695,
+-73.919827,
+"Hyatt Place Poughkeepsie, 2165, South Road, Knapps Corner, City of Poughkeepsie, Town of P"
+],
+"stewarts_ph": [
+44.047606,
+-73.459249,
+"4308, Main Street, Port Henry, Town of Moriah, Essex County, New York, 12974, United State"
+],
+"stewarts_wh": [
+43.54997,
+-73.398143,
+"Stewart's Shops, 60, Poultney Street, Village of Whitehall, Town of Whitehall, Washington "
+],
+"walkway_e": [
+41.710581,
+-73.9418,
+"Walkway Over the Hudson, City of Poughkeepsie, Dutchess County, New York, 12601, United St"
+],
+"auberge_harris": [
+45.323905,
+-73.264748,
+"Auberge Harris, 576, Rue Champlain, Saiint-Jean, Saint-Jean-sur-Richelieu, Le Haut-Richeli"
+],
+"maui": [
+44.699348,
+-73.478643,
+"316, Cornelia Street, City of Plattsburgh, Clinton County, New York, 12901, United States"
+],
+"placid": [
+42.731472,
+-73.690796,
+"The Placid Baker, 250, Broadway, Downtown, City of Troy, Rensselaer County, New York, 1218"
+],
+"waterford_vc": [
+42.787473,
+-73.679354,
+"Richard M. Hurst Harbor Visitors Center, Waterford Promenade, Village of Waterford, Town o"
+],
+"fairmont": [
+45.500203,
+-73.568476,
+"Fairmont Le Reine Elizabeth, 900, Boulevard René-Lévesque Ouest, Ville-Marie, Montréal, Ag"
+],
+"trinquette": [
+45.309589,
+-73.252292,
+"290, Rue Champlain, Saiint-Jean, Saint-Jean-sur-Richelieu, Le Haut-Richelieu, Montérégie, "
+],
+"quilicot": [
+45.53945,
+-73.617591,
+"7341, Rue Saint-Denis, Villeray, Villeray–Saint-Michel–Parc-Extension, Montréal, Aggloméra"
+],
+"kinsley": [
+41.933903,
+-74.019971,
+"Hotel Kinsley, 301, Wall Street, Stockade District, City of Kingston, Ulster County, New Y"
+],
+"rhinebeck": [
+41.92676,
+-73.912763,
+"Town of Rhinebeck, Dutchess County, New York, United States"
+],
+"bread_alone": [
+41.927461,
+-73.911332,
+"45, East Market Street, Village of Rhinebeck, Town of Rhinebeck, Dutchess County, New York"
+],
+"lockhistoric": [
+43.555102,
+-73.402821,
+"142, Main Street, Main Street Historic District, Village of Whitehall, Town of Whitehall, "
+],
+"stewarts_kees": [
+44.506516,
+-73.483455,
+"Stewart's Shops, 1774, Main Street, Keeseville, Town of AuSable, Clinton County, New York,"
+],
+"ft_chambly": [
+45.448623,
+-73.275911,
+"Fort-Chambly, Chambly, La Vallée-du-Richelieu, Montérégie, Québec, Canada"
+],
+"courtyard_btv": [
+44.478795,
+-73.218599,
+"Courtyard Burlington Harbor, 25, Cherry Street, Downtown, Burlington, Chittenden County, V"
+],
+"heidis2": [
+41.40567,
+-73.580218,
+"Heidi's Inn, 1270, State Highway 22, Sodom, Village of Brewster, Town of Southeast, Putnam"
+],
+"ca_roule": [
+45.505826,
+-73.553144,
+"Ca Roule Montreal on Wheels, 27, Rue de la Commune Est, Vieux-Montréal, Ville-Marie, Montr"
+],
+"cyclelm": [
+45.354079,
+-73.295972,
+"270, Boulevard Saint-Luc, Saint-Luc, Saint-Jean-sur-Richelieu, Le Haut-Richelieu, Montérég"
+],
+"franklin_sq": [
+42.734144,
+-73.688426,
+"Franklin Square, City of Troy, Rensselaer County, New York, 12181, United States"
+],
+"pok_grand": [
+41.705401,
+-73.928642,
+"Poughkeepsie Grand Hotel, 40, Civic Center Plaza, City of Poughkeepsie, Dutchess County, N"
+],
+"st_brewster": [
+41.394709,
+-73.619702,
+"Brewster station, Ellen Avenue, Village of Brewster, Town of Southeast, Putnam County, New"
+],
+"st_pleasantville": [
+41.134253,
+-73.792209,
+"Pleasantville, Wheeler Avenue, Village of Pleasantville, Town of Mount Pleasant, Westchest"
+],
+"st_chappaqua": [
+41.158093,
+-73.77489,
+"Chappaqua, Allen Place, Chappaqua, Town of New Castle, Westchester County, New York, 10514"
+],
+"st_mtkisco": [
+41.208596,
+-73.729653,
+"Mount Kisco, Maple Avenue, Village/Town of Mount Kisco, Westchester County, New York, 1054"
+],
+"st_tarrytown": [
+41.076215,
+-73.864935,
+"Tarrytown, Green Street, Village of Tarrytown, Town of Greenburgh, Westchester County, New"
+],
+"st_croton": [
+41.18984,
+-73.882623,
+"Croton-Harmon, 1, Croton Point Avenue, Village of Croton-on-Hudson, Town of Cortlandt, Wes"
+],
+"st_katonah": [
+41.259802,
+-73.684224,
+"Katonah station, Katonah Avenue, Katonah, Town of Bedford, Westchester County, New York, 1"
+],
+"st_goldens": [
+41.294051,
+-73.67761,
+"Goldens Bridge, I 684, Town of Lewisboro, Westchester County, New York, 10526, United Stat"
+],
+"st_southeast": [
+41.394354,
+-73.619928,
+"Brewster, Railroad Avenue, Village of Brewster, Town of Southeast, Putnam County, New York"
+],
+"st_pok": [
+41.70704,
+-73.938024,
+"Poughkeepsie, 41, Main Street, City of Poughkeepsie, Dutchess County, New York, 12601, Uni"
+],
+"st_rhinecliff": [
+41.921263,
+-73.951342,
+"Rhinecliff, Hutton Street, Rhinecliff, Town of Rhinebeck, Dutchess County, New York, 12574"
+],
+"st_hudson": [
+42.25407,
+-73.79778,
+"Hudson, 69, South Front Street, City of Hudson, Columbia County, New York, 12534, United S"
+],
+"st_albany": [
+42.641253,
+-73.741293,
+"Albany-Rensselaer, Herrick Street, City of Rensselaer, Rensselaer County, New York, 12246,"
+],
+"st_saratoga": [
+43.082854,
+-73.810187,
+"Saratoga Springs, Station Lane, City of Saratoga Springs, Saratoga County, New York, 12866"
+],
+"st_fted": [
+43.26976,
+-73.580403,
+"Fort Edward-Glens Falls, East Street, Village of Fort Edward, Town of Fort Edward, Washing"
+],
+"st_whitehall": [
+43.554772,
+-73.403233,
+"Whitehall, Broadway, Main Street Historic District, Village of Whitehall, Town of Whitehal"
+],
+"st_ti": [
+43.853873,
+-73.389752,
+"Ticonderoga, Fort Ti Road, Town of Ticonderoga, Essex County, New York, 12883, United Stat"
+],
+"st_porthenry": [
+44.042327,
+-73.458825,
+"Port Henry, Park Place, Port Henry, Town of Moriah, Essex County, New York, 12974, United "
+],
+"st_westport": [
+44.187169,
+-73.451887,
+"Westport, Main Street, Town of Westport, Essex County, New York, 12993, United States"
+],
+"st_platt": [
+44.696716,
+-73.44645,
+"Plattsburgh, 121, Bridge Street, City of Plattsburgh, Clinton County, New York, 12901, Uni"
+],
+"st_rouses": [
+44.995004,
+-73.371166,
+"Rouses Point, Pratt Street, Village of Rouses Point, Town of Champlain, Clinton County, Ne"
+],
+"st_stjean_bus": [
+45.326226,
+-73.290888,
+"Terminus Saint-Jean-sur-Richelieu, Rue Boucher, Saiint-Jean, Saint-Jean-sur-Richelieu, Le "
+],
+"st_longueuil": [
+45.524926,
+-73.521925,
+"Longueuil–Université-de-Sherbrooke, 100, Place Charles-Le Moyne, Le Vieux-Longueuil, Longu"
+],
+"yorktown_cycles": [
+41.273469,
+-73.780826,
+"Yorktown Cycles, 1899, Commerce Street, Underhill Plaza, Yorktown Heights, Town of Yorktow"
+],
+"rhinebeck_bike": [
+41.927488,
+-73.913877,
+"10, Garden Street, Village of Rhinebeck, Town of Rhinebeck, Dutchess County, New York, 125"
+],
+"steiners_hudson": [
+42.252777,
+-73.791319,
+"Steiner's Sports, 301, Warren Street, Oakdale, City of Hudson, Columbia County, New York, "
+],
+"trek_saratoga": [
+43.084379,
+-73.78863,
+"71, Church Street, City of Saratoga Springs, Saratoga County, New York, 12866, United Stat"
+],
+"ricks": [
+43.331626,
+-73.63583,
+"Rick's Bike Shop, 368, Ridge Road, Regency Park North, Town of Queensbury, Warren County, "
+],
+"hopewell_depot": [
+41.585482,
+-73.80699,
+"Hopewell Depot Trailhead, Dutchess Rail Trail, Hopewell Junction, Town of East Fishkill, D"
+],
+"crown_point": [
+43.950563,
+-73.43708,
+"Town of Crown Point, Essex County, New York, 12928, United States"
+],
+"port_henry": [
+44.043522,
+-73.464108,
+"Port Henry, Town of Moriah, Essex County, New York, 12974, United States"
+],
+"westport": [
+44.184174,
+-73.435707,
+"Town of Westport, Essex County, New York, 12993, United States"
+],
+"willsboro": [
+44.362096,
+-73.391346,
+"Town of Willsboro, Essex County, New York, 12996, United States"
+],
+"keeseville": [
+44.505098,
+-73.482873,
+"Keeseville, Town of AuSable, Clinton County, New York, 12944, United States"
+],
+"ausable_chasm": [
+44.522548,
+-73.465134,
+"Ausable Chasm, Town of AuSable, Clinton County, New York, 12911, United States"
+],
+"chazy": [
+44.889931,
+-73.43605,
+"Town of Chazy, Clinton County, New York, United States"
+],
+"schuylerville": [
+43.100231,
+-73.581963,
+"Village of Schuylerville, Town of Saratoga, Saratoga County, New York, United States"
+],
+"fort_edward": [
+43.267206,
+-73.584709,
+"Town of Fort Edward, Washington County, New York, United States"
+],
+"fort_ann": [
+43.414307,
+-73.487981,
+"Town of Fort Ann, Washington County, New York, United States"
+],
+"whitehall": [
+43.555754,
+-73.403559,
+"Town of Whitehall, Washington County, New York, 12887, United States"
+],
+"mahopac": [
+41.371299,
+-73.739064,
+"Mahopac, Mahopac Falls, Town of Carmel, Putnam County, New York, United States"
+],
+"lacolle": [
+45.079684,
+-73.373693,
+"Lacolle, Le Haut-Richelieu, Montérégie, Québec, J0J 1J0, Canada"
+],
+"stpaul": [
+45.129581,
+-73.278462,
+"Saint-Paul-de-l'Île-aux-Noix, Le Haut-Richelieu, Montérégie, Québec, J0J 1G0, Canada"
+],
+"kinderhook": [
+42.395362,
+-73.697898,
+"Village of Kinderhook, Town of Kinderhook, Columbia County, New York, 12106, United States"
+],
+"valatie": [
+42.413417,
+-73.673175,
+"Village of Valatie, Town of Kinderhook, Columbia County, New York, United States"
+],
+"ballston": [
+43.000909,
+-73.849011,
+"Village of Ballston Spa, Town of Milton, Saratoga County, New York, 12020, United States"
+],
+"round_lake": [
+42.936904,
+-73.793062,
+"Village of Round Lake, Town of Malta, Saratoga County, New York, 12151, United States"
+],
+"mechanicville": [
+42.902855,
+-73.687341,
+"City of Mechanicville, Saratoga County, New York, United States"
+],
+"hopewell": [
+41.581088,
+-73.810669,
+"Hopewell Junction, Town of East Fishkill, Dutchess County, New York, United States"
+],
+"hydepark": [
+41.784196,
+-73.937391,
+"Hyde Park, Haviland, Town of Hyde Park, Dutchess County, New York, United States"
+],
+"tivoli": [
+42.058528,
+-73.908913,
+"Village of Tivoli, Town of Red Hook, Dutchess County, New York, United States"
+],
+"germantown": [
+42.134534,
+-73.891798,
+"Town of Germantown, Columbia County, New York, 12526, United States"
+],
+"south_hero": [
+44.645697,
+-73.302476,
+"South Hero, Grand Isle County, Vermont, 05486, United States"
+],
+"grand_isle": [
+44.722515,
+-73.293113,
+"Grand Isle, Grand Isle County, Vermont, 05458, United States"
+],
+"north_hero": [
+44.817105,
+-73.290091,
+"North Hero, Grand Isle County, Vermont, 05474, United States"
+],
+"alburgh": [
+44.97499,
+-73.30126,
+"Alburgh, Grand Isle County, Vermont, 05440, United States"
+],
+"shelburne": [
+44.378495,
+-73.228535,
+"Shelburne, Chittenden County, Vermont, 05482, United States"
+],
+"elmsford": [
+41.055097,
+-73.820134,
+"Village of Elmsford, Town of Greenburgh, Westchester County, New York, 10523, United State"
+],
+"millwood": [
+41.194297,
+-73.794718,
+"Millwood, Tompkins Corners, Millwood, Town of New Castle, Westchester County, New York, Un"
+],
+"carmel": [
+41.409371,
+-73.690241,
+"Carmel, Town of Carmel, Putnam County, New York, United States"
+],
+"stormville": [
+41.570392,
+-73.74548,
+"Stormville, Town of East Fishkill, Dutchess County, New York, 12582, United States"
+],
+"marble_hill": [
+40.876298,
+-73.910429,
+"Marble Hill, Manhattan, New York County, New York, 10463, United States"
+],
+"gwb": [
+40.850257,
+-73.946963,
+"Little Red Lighthouse, Southwalk, Hudson Heights, Manhattan Community Board 12, Manhattan,"
+],
+"border223": [
+45.0103,
+-73.37086,
+"US 11 / QC-223 border (Rouses Point–Lacolle 223)"
+],
+"jc_bridge_s": [
+45.5225,
+-73.5245,
+"Jacques-Cartier Bridge south approach (Longueuil)"
+],
+"boulangerie_chambly": [
+45.444231,
+-73.264403,
+"2403, Avenue Bourgogne, Chambly, La Vallée-du-Richelieu, Montérégie, Québec, J3L 2H5, Cana"
+],
+"donpauls": [
+42.79009,
+-73.678768,
+"68, Broad Street, Village of Waterford, Town of Waterford, Saratoga County, New York, 1218"
+]
+}

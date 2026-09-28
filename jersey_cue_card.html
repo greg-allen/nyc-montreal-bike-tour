@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="vendor/tailwind-cuecard.css">
 
   <style>
     /* Print specific settings: Sized perfectly for rear jersey pockets (approx 4.25" x 7.25") */
@@ -126,7 +126,7 @@
       <div class="text-center space-y-1 border-b-2 border-slate-900 pb-2.5">
         <div class="flex items-center justify-between text-[9px] font-bold text-slate-600 uppercase tracking-widest px-1">
           <span>EXPÉDITION D'AUTOMNE</span>
-          <span class="bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded border border-amber-300 font-extrabold">OCT 4–9, 2026</span>
+          <span id="card-dates" class="bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded border border-amber-300 font-extrabold">OCT 2026</span>
           <span>EMPIRE STATE ➔ QC</span>
         </div>
         
@@ -140,9 +140,9 @@
         </div>
         
         <div class="flex items-center justify-center gap-3 text-[10px] font-bold text-slate-700 pt-0.5">
-          <span>445 MILES (716 KM)</span>
+          <span id="card-miles">… MILES</span>
           <span>&bull;</span>
-          <span>+14,500 FT ELEV</span>
+          <span id="card-elev">… FT ELEV</span>
           <span>&bull;</span>
           <span id="card-mode-badge" class="font-extrabold text-blue-900 uppercase">6 STAGES</span>
         </div>
@@ -162,335 +162,17 @@
 
       <!-- 6-Day Stages Table (Default) -->
       <div id="stages-table-6day" class="flex-1 flex flex-col justify-between space-y-1.5 my-1 text-slate-900 text-[10.5px]">
-        
-        <!-- Stage 1 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center text-[9px] font-bold">1</span>
-              <span class="uppercase">Dim / Sun: NYC ➔ Brewster</span>
-              <span class="text-[9px] font-mono text-blue-700 font-bold ml-auto">60.0 mi</span>
-            </div>
-            <div class="text-[9px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Trailside Cafe (Mile 38) &bull; 🏨 Heidi's (845) 279-8011
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 2 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-cyan-700 text-white flex items-center justify-center text-[9px] font-bold">2</span>
-              <span class="uppercase">Lun / Mon: Brewster ➔ Hudson</span>
-              <span class="text-[9px] font-mono text-cyan-800 font-bold ml-auto">78.0 mi</span>
-            </div>
-            <div class="text-[9px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Rhinebeck 9G (Mile 52) &bull; 🏨 The Wick (518) 249-6825
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 3 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-green-700 text-white flex items-center justify-center text-[9px] font-bold">3</span>
-              <span class="uppercase">Mar / Tue: Hudson ➔ Saratoga</span>
-              <span class="text-[9px] font-mono text-green-800 font-bold ml-auto">75.0 mi</span>
-            </div>
-            <div class="text-[9px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Troy Waterfront (Mile 44) &bull; 🏨 Hilton (518) 584-4000
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 4 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-amber-600 text-white flex items-center justify-center text-[9px] font-bold">4</span>
-              <span class="uppercase">Mer / Wed: Saratoga ➔ Ticonderoga</span>
-              <span class="text-[9px] font-mono text-amber-800 font-bold ml-auto">75.0 mi</span>
-            </div>
-            <div class="text-[9px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Whitehall Lock 12 (Mile 44) &bull; 🏨 Best Western (518) 585-1800
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 5 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-purple-700 text-white flex items-center justify-center text-[9px] font-bold">5</span>
-              <span class="uppercase">Jeu / Thu: Ticonderoga ➔ Plattsburgh</span>
-              <span class="text-[9px] font-mono text-purple-800 font-bold ml-auto">70.0 mi</span>
-            </div>
-            <div class="text-[9px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Essex Ferry Cafe (Mile 38) &bull; 🏨 Best Western (518) 561-7000
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 6 (Finish!) -->
-        <div class="bg-emerald-50/90 p-1.5 rounded border border-emerald-400 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-black text-emerald-950">
-              <span class="w-4 h-4 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-bold">6</span>
-              <span class="uppercase">Ven / Fri: Plattsburgh ➔ Montréal 🇨🇦</span>
-              <span class="text-[9px] font-mono text-emerald-800 font-bold ml-auto">87.0 mi</span>
-            </div>
-            <div class="text-[9px] text-emerald-900 leading-tight">
-              🛂 <strong>QC-223 Border</strong> (Mile 24) &bull; 🥪 St-Jean &bull; 🏁 Place Jacques-Cartier!
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 border-emerald-500 bg-emerald-100/60 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-emerald-900">VICTOIRE</span>
-            <span class="text-[9px]">🍁</span>
-          </div>
-        </div>
-
+        <!-- rows generated from route_data.js -->
       </div>
 
       <!-- 7-Day Gentler Tour Table (Hidden by default, toggled via JS) -->
       <div id="stages-table-7day" class="hidden flex-1 flex flex-col justify-between space-y-1 my-1 text-slate-900 text-[10px]">
-        <!-- Stage 1 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center text-[9px] font-bold">1</span>
-              <span class="uppercase">Dim / Sun: NYC ➔ Brewster</span>
-              <span class="text-[9px] font-mono text-blue-700 font-bold ml-auto">60.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Trailside Cafe (Mile 38) &bull; 🏨 Heidi's (845) 279-8011
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 2 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-cyan-700 text-white flex items-center justify-center text-[9px] font-bold">2</span>
-              <span class="uppercase">Lun / Mon: Brewster ➔ Hudson</span>
-              <span class="text-[9px] font-mono text-cyan-800 font-bold ml-auto">78.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Rhinebeck (Mile 52) &bull; 🏨 Barlow (518) 828-2100
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 3 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-green-700 text-white flex items-center justify-center text-[9px] font-bold">3</span>
-              <span class="uppercase">Mar / Tue: Hudson ➔ Saratoga</span>
-              <span class="text-[9px] font-mono text-green-800 font-bold ml-auto">75.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Waterford Lock 2 (Mile 44) &bull; 🏨 Hilton (518) 584-4000
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 4 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-amber-600 text-white flex items-center justify-center text-[9px] font-bold">4</span>
-              <span class="uppercase">Mer / Wed: Saratoga ➔ Ticonderoga</span>
-              <span class="text-[9px] font-mono text-amber-800 font-bold ml-auto">75.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Whitehall Lock 12 (Mile 44) &bull; 🏨 Best Western (518) 585-1800
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 5 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-purple-700 text-white flex items-center justify-center text-[9px] font-bold">5</span>
-              <span class="uppercase">Jeu / Thu: Ticonderoga ➔ Plattsburgh</span>
-              <span class="text-[9px] font-mono text-purple-800 font-bold ml-auto">70.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-slate-600 leading-tight">
-              🥪 <strong>Lunch:</strong> Essex Ferry Cafe (Mile 38) &bull; 🏨 Best Western (518) 561-7000
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 6 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-bold">6</span>
-              <span class="uppercase">Ven / Fri: Plattsburgh ➔ Saint-Jean (QC)</span>
-              <span class="text-[9px] font-mono text-emerald-800 font-bold ml-auto">50.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-slate-600 leading-tight">
-              🛂 <strong>QC-223 Border</strong> (Mile 24) &bull; 🏨 Quality Hotel (450) 515-5755
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Stage 7 (Finish!) -->
-        <div class="bg-emerald-50/90 p-1.5 rounded border border-emerald-400 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-black text-emerald-950">
-              <span class="w-4 h-4 rounded-full bg-rose-600 text-white flex items-center justify-center text-[9px] font-bold">7</span>
-              <span class="uppercase">Sam / Sat: Saint-Jean ➔ Montréal 🇨🇦</span>
-              <span class="text-[9px] font-mono text-emerald-800 font-bold ml-auto">37.0 mi</span>
-            </div>
-            <div class="text-[8.5px] text-emerald-900 leading-tight">
-              🥪 <strong>Chambly Canal</strong> &bull; 🏁 Place Jacques-Cartier Victory!
-            </div>
-          </div>
-          <div class="stamp-box w-10 h-8 border-emerald-500 bg-emerald-100/60 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[6.5px] uppercase font-bold text-emerald-900">VICTOIRE</span>
-            <span class="text-[9px]">🍁</span>
-          </div>
-        </div>
+        <!-- rows generated from route_data.js -->
       </div>
 
       <!-- 5-Day Fast Tour Table (Hidden by default, toggled via JS) -->
       <div id="stages-table-5day" class="hidden flex-1 flex flex-col justify-between space-y-2 my-1 text-slate-900 text-[10.5px]">
-        
-        <!-- Day 1 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center text-[9px] font-bold">1</span>
-              <span class="uppercase">Day 1: NYC ➔ Poughkeepsie</span>
-              <span class="text-[9px] font-mono text-blue-700 font-bold ml-auto">95.0 mi</span>
-            </div>
-            <div class="text-[9px] text-amber-900 font-medium">⚡ <strong>Push:</strong> Kingston Stockade (+30 mi / 125 total)</div>
-            <div class="text-[9px] text-slate-600">Walkway Over Hudson &bull; Hyatt (845) 380-0000</div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Day 2 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-cyan-700 text-white flex items-center justify-center text-[9px] font-bold">2</span>
-              <span class="uppercase">Day 2: Poughkeepsie ➔ Troy</span>
-              <span class="text-[9px] font-mono text-cyan-800 font-bold ml-auto">85.0 mi</span>
-            </div>
-            <div class="text-[9px] text-amber-900 font-medium">⚡ <strong>Push:</strong> Saratoga Spa (+20 mi / 105 total)</div>
-            <div class="text-[9px] text-slate-600">AHET Rail Trail &bull; Franklin Sq Inn (518) 274-8800</div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Day 3 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-green-700 text-white flex items-center justify-center text-[9px] font-bold">3</span>
-              <span class="uppercase">Day 3: Troy ➔ Ticonderoga</span>
-              <span class="text-[9px] font-mono text-green-800 font-bold ml-auto">87.0 mi</span>
-            </div>
-            <div class="text-[9px] text-amber-900 font-medium">⚡ <strong>Push:</strong> Historic Essex (+18 mi / 105 total)</div>
-            <div class="text-[9px] text-slate-600">Champlain Canal &bull; Best Western (518) 585-1800</div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Day 4 -->
-        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-bold">
-              <span class="w-4 h-4 rounded-full bg-amber-600 text-white flex items-center justify-center text-[9px] font-bold">4</span>
-              <span class="uppercase">Day 4: Ticonderoga ➔ Plattsburgh</span>
-              <span class="text-[9px] font-mono text-amber-800 font-bold ml-auto">70.0 mi</span>
-            </div>
-            <div class="text-[9px] text-red-900 font-bold">⚡ <strong>BORDER PUSH:</strong> Saint-Jean QC (+50 mi / 120 total)</div>
-            <div class="text-[9px] text-slate-600">Adirondack Coast &bull; Best Western (518) 561-7000</div>
-          </div>
-          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-slate-400">ARRIVÉE</span>
-            <span class="text-[8px] font-mono font-bold text-slate-800">__:__</span>
-          </div>
-        </div>
-
-        <!-- Day 5 (Finish!) -->
-        <div class="bg-emerald-50/90 p-1.5 rounded border border-emerald-400 flex items-center justify-between gap-1.5">
-          <div class="flex-1">
-            <div class="flex items-center gap-1 font-black text-emerald-950">
-              <span class="w-4 h-4 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-bold">5</span>
-              <span class="uppercase">Day 5: Plattsburgh ➔ Montréal 🇨🇦</span>
-              <span class="text-[9px] font-mono text-emerald-800 font-bold ml-auto">88.0 mi</span>
-            </div>
-            <div class="text-[9px] text-emerald-900 leading-tight">
-              🍁 <em>(Or 37 mi victory cruise if Day 4 pushed to St-Jean!)</em> &bull; Finish @ Old Port!
-            </div>
-          </div>
-          <div class="stamp-box w-12 h-10 border-emerald-500 bg-emerald-100/60 flex flex-col items-center justify-center shrink-0 text-center">
-            <span class="text-[7px] uppercase font-bold text-emerald-900">VICTOIRE</span>
-            <span class="text-[9px]">🍁</span>
-          </div>
-        </div>
-
+        <!-- rows generated from route_data.js -->
       </div>
 
       <!-- Card Footer Bar -->
@@ -517,19 +199,19 @@
       <!-- Crucial Turn Cues -->
       <div class="space-y-1.5 my-1 text-[9.5px] leading-tight">
         <div class="font-bold text-slate-900 uppercase text-[10px] border-b border-slate-300 pb-0.5 flex items-center justify-between">
-          <span>📍 8 Crucial Navigation Checkpoints:</span>
+          <span>📍 8 Tricky Spots:</span>
           <span class="text-[8px] font-normal text-slate-500">Do Not Miss!</span>
         </div>
         
         <div class="bg-white/80 p-1.5 rounded border border-slate-300 space-y-1">
-          <div><strong class="text-blue-900">1. Manhattan Exit:</strong> Dyckman St &rarr; Broadway Bridge &rarr; Van Cortlandt Park connection to South County Trailway.</div>
-          <div><strong class="text-blue-900">2. Brewster Transition:</strong> Exit Putnam Trailway &rarr; cross Route 6 directly onto Maybrook Trailway.</div>
-          <div><strong class="text-blue-900">3. Poughkeepsie &amp; Walkway:</strong> Optional +2 mi out-and-back on Walkway; continue north on east bank via Hyde Park/Rhinebeck on 9/9G.</div>
-          <div><strong class="text-blue-900">4. Albany AHET Entry:</strong> Route 9G into Hudson Warren St, pick up 36 mi of paved AHET north to Rensselaer.</div>
-          <div><strong class="text-blue-900">5. Zim Smith to Saratoga:</strong> Waterford Lock 2 &rarr; Zim Smith Trail to Ballston Spa &rarr; quiet roads into Saratoga.</div>
-          <div><strong class="text-blue-900">6. Adirondack Bluffs:</strong> Route 22/9N rolling hills through Port Henry &amp; Essex (Adirondack climbing; descend safely).</div>
-          <div><strong class="text-emerald-900 font-extrabold">7. Rouses Pt / QC-223 Border:</strong> Cyclists pull up to vehicle booth. Physical passport/EDL. ZERO produce or THC!</div>
-          <div><strong class="text-emerald-900 font-extrabold">8. Montréal Grand Entry:</strong> Chambly Canal path to Chambly &rarr; Longueuil Route Verte &rarr; bridge path &rarr; Old Port!</div>
+          <div><strong class="text-blue-900">1. Inwood/Bronx:</strong> Greenway ends at Dyckman St &rarr; Seaman Ave &rarr; W 218th &rarr; Broadway over the Broadway Bridge &rarr; Tibbett/Irwin Ave &rarr; Van Cortlandt Park (Putnam Trail).</div>
+          <div><strong class="text-blue-900">2. Brewster:</strong> Putnam Trailway ends &rarr; Putnam Ave / Oak St. Day 2: back via Oak St &rarr; Putnam Ave &rarr; N Main St &rarr; Maybrook Trailway.</div>
+          <div><strong class="text-blue-900">3. Poughkeepsie:</strong> End of Dutchess Rail Trail &rarr; Parker Ave / Washington St &rarr; short jog &rarr; Violet Ave = NY-9G north (55 mph shoulder).</div>
+          <div><strong class="text-blue-900">4. Rensselaer&ndash;Albany:</strong> AHET ends &rarr; Third Ave &rarr; Dunn Bridge path &rarr; Mohawk-Hudson trail north; follow EST signs through Watervliet &amp; Cohoes.</div>
+          <div><strong class="text-blue-900">5. Mechanicville:</strong> Old Champlain Canal Trail &rarr; US-4 &rarr; S 2nd Ave &rarr; Elizabeth St &rarr; Zim Smith Trail to Ballston Spa, then NY-50.</div>
+          <div><strong class="text-blue-900">6. Whitehall:</strong> Food = Stewart's, 60 Poultney St (Historic Grounds CLOSED). Then 23.5 mi on NY-22 with nothing.</div>
+          <div><strong class="text-emerald-900 font-extrabold">7. Chazy &rarr; border:</strong> Turn RIGHT on NY-9B (Lake St), not US-9. US-11 north to Rouses Point&ndash;Lacolle 223: OPEN 8 AM&ndash;8 PM ONLY.</div>
+          <div><strong class="text-emerald-900 font-extrabold">8. Montréal:</strong> Chambly Canal &rarr; Chambly &rarr; Route Verte to Longueuil &rarr; Jacques-Cartier Bridge &rarr; Île Ste-Hélène &rarr; Pont de la Concorde &rarr; Old Port.</div>
         </div>
       </div>
 
@@ -539,11 +221,11 @@
           <span>⚠️</span> <span>LES 5 RÈGLES D'OR / 5 GOLDEN RULES:</span>
         </div>
         <div class="grid grid-cols-1 gap-0.5 leading-snug">
-          <div>&bull; <strong>8:30 AM DEPARTURE:</strong> Sunset 6:25 PM. Dusk drops 15°F instantly. Never get caught after dark.</div>
+          <div>&bull; <strong>8:30 AM DEPARTURE:</strong> Sunset 6:33 PM (NYC) to 6:18 PM (Montréal). Carry lights.</div>
           <div>&bull; <strong>OCTOBER GREASE:</strong> Wet decaying leaves on rail trails = wet ice. Corner smoothly; run 45 PSI.</div>
           <div>&bull; <strong>ZERO CANNABIS:</strong> Transporting across the border in either direction is illegal under federal law.</div>
           <div>&bull; <strong>BIKE PROOF &amp; ID:</strong> Valid passport/EDL/NEXUS. Photo serial # + receipt on phone for US CBP.</div>
-          <div>&bull; <strong>AMTRAK RETURN RULE:</strong> Adirondack roll-on ENDS at Rouses Point! Ride south 48m, box bike, or rent car.</div>
+          <div>&bull; <strong>AMTRAK RETURN:</strong> Bikes only NYC&ndash;Rouses Point. Southbound 2:15 PM from Rouses Point; NO Monday train. Old Montréal &rarr; Rouses Point is 60 mi.</div>
         </div>
       </div>
 
@@ -555,10 +237,10 @@
         <div class="bg-white/80 p-1.5 rounded border border-slate-300 grid grid-cols-2 gap-x-2 gap-y-1 font-mono text-[8.5px]">
           <div><span class="font-bold text-slate-700">Emergencies:</span> 911 (US &amp; CAN)</div>
           <div><span class="font-bold text-slate-700">Amtrak Support:</span> 1-800-USA-RAIL</div>
-          <div><span class="font-bold text-slate-700">Lacolle CBSA:</span> (450) 246-3865</div>
-          <div><span class="font-bold text-slate-700">US CBP (Champlain):</span> (518) 298-8346</div>
-          <div><span class="font-bold text-slate-700">Bicycles Quilicot:</span> (514) 499-9600</div>
-          <div><span class="font-bold text-slate-700">Down Tube Albany:</span> (518) 434-1711</div>
+          <div><span class="font-bold text-slate-700">CBSA Border Info:</span> 1-800-959-2036</div>
+          <div><span class="font-bold text-slate-700">US CBP Rouses Pt:</span> (518) 297-2441</div>
+          <div><span class="font-bold text-slate-700">Ça Roule (Old Mtl):</span> (514) 866-0633</div>
+          <div><span class="font-bold text-slate-700">Maui North (Platt.):</span> (518) 563-7245</div>
         </div>
       </div>
 
@@ -581,28 +263,52 @@
 
   </div>
 
+  <script src="route_data.js"></script>
   <script>
-    function toggleTour(val) {
-      const table7 = document.getElementById('stages-table-7day');
-      const table6 = document.getElementById('stages-table-6day');
-      const table5 = document.getElementById('stages-table-5day');
-      const badge = document.getElementById('card-mode-badge');
-
-      if (table7) table7.classList.add('hidden');
-      if (table6) table6.classList.add('hidden');
-      if (table5) table5.classList.add('hidden');
-
-      if (val === '7day') {
-        if (table7) table7.classList.remove('hidden');
-        if (badge) badge.innerText = "7 GENTLER STAGES";
-      } else if (val === '5day') {
-        if (table5) table5.classList.remove('hidden');
-        if (badge) badge.innerText = "5 FAST STAGES (+ ACCEL)";
-      } else {
-        if (table6) table6.classList.remove('hidden');
-        if (badge) badge.innerText = "6 STAGES";
-      }
+    const DOW_FR = { Sunday: 'Dim / Sun', Monday: 'Lun / Mon', Tuesday: 'Mar / Tue', Wednesday: 'Mer / Wed', Thursday: 'Jeu / Thu', Friday: 'Ven / Fri', Saturday: 'Sam / Sat' };
+    const TOURS = { '6day': TOUR_DATA_6DAY, '7day': TOUR_DATA_7DAY, '5day': TOUR_DATA_5DAY };
+    const shortPhone = p => (p || '').replace('+1 ', '');
+    function shortName(n) { return n.replace(/ \(.*\)$/, '').replace('Best Western Plus', 'BW+').replace(' Inn & Suites', ''); }
+    function rowsFor(t) {
+      return t.days.map((d, i) => {
+        const last = i === t.days.length - 1;
+        const route = d.name.split(': ').slice(1).join(': ').replace(', NY', '').replace(', QC', '').replace(' (via Essex ferry)', '');
+        const h = d.hotels[0];
+        return `
+        <div class="bg-white/90 p-1.5 rounded border border-slate-300 flex items-center justify-between gap-1.5">
+          <div class="flex-1">
+            <div class="flex items-center gap-1 font-bold">
+              <span class="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center text-[9px] font-bold">${d.day}</span>
+              <span class="uppercase">${DOW_FR[d.dayOfWeek] || d.dayOfWeek}: ${route}</span>
+              <span class="text-[9px] font-mono text-blue-700 font-bold ml-auto">${d.distanceMiles.toFixed(1)} mi</span>
+            </div>
+            <div class="text-[9px] text-slate-600 leading-tight">
+              🥪 <strong>mi ${d.lunch.mile.toFixed(0)}:</strong> ${shortName(d.lunch.name)} &bull; ${last ? '🏁 Place Jacques-Cartier' : `🏨 ${shortName(h.name)} ${shortPhone(h.phone)}`}
+            </div>
+          </div>
+          <div class="stamp-box w-12 h-10 flex flex-col items-center justify-center shrink-0 text-center">
+            <span class="text-[7px] uppercase font-bold text-slate-400">${last ? 'VICTOIRE' : 'ARRIVÉE'}</span>
+            <span class="text-[8px] font-mono font-bold text-slate-800">${last ? '🍁' : '__:__'}</span>
+          </div>
+        </div>`;
+      }).join('');
     }
+    function toggleTour(val) {
+      Object.keys(TOURS).forEach(k => {
+        const el = document.getElementById('stages-table-' + k);
+        if (el) el.classList.toggle('hidden', k !== val);
+      });
+      const t = TOURS[val] || TOUR_DATA_6DAY;
+      document.getElementById('card-mode-badge').innerText = `${t.durationDays} STAGES`;
+      document.getElementById('card-miles').innerText = `${t.totalDistanceMiles} MILES (${Math.round(t.totalDistanceMiles * 1.609344)} KM)`;
+      document.getElementById('card-elev').innerText = `~+${t.elevationGainFt.toLocaleString()} FT ELEV`;
+      document.getElementById('card-dates').innerText = `OCT ${t.days[0].dateStr.replace('Oct ', '')}–${t.days[t.days.length - 1].dateStr.replace('Oct ', '')}, 2026`;
+    }
+    Object.entries(TOURS).forEach(([k, t]) => {
+      const el = document.getElementById('stages-table-' + k);
+      if (el) el.innerHTML = rowsFor(t);
+    });
+    toggleTour(document.getElementById('tour-select')?.value || '6day');
   </script>
 </body>
 </html>

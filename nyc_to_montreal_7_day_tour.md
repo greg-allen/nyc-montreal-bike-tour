@@ -1,225 +1,460 @@
-# NYC to Montréal 7-Day Gentler Bicycle Tour Guide
-**The Recommended October Daylight Tour: Relaxed Mileage, Low-Stress Border Crossing & Old Montréal Victory Lap**
+# NYC to Montréal: 7-Day Tour (Sunday to Saturday)
 
-*Hotel-to-hotel expedition via the Empire State Trail, Lake Champlain Coast, Richelieu River & Chambly Canal. Optimized for early October foliage and autumn daylight.*
+**478.1 mi (769 km) · about +12,100 ft · average 68.3 mi/day · Comfortable touring (11 to 13 mph rolling)**
 
----
+Recommended. The border day and the Montréal arrival are split, so the last two days are short and flat.
 
-## Executive Summary: Why 7 Days is the Recommended October Tour
+> Distances, climbing, mile markers and GPS tracks were regenerated on 2026-09-27 from routes that follow the real trails and roads. Earlier versions of this guide underestimated distances by 30 to 40 mi overall and contained wrong phone numbers, closed businesses and Amtrak errors. See `AUDIT.md`.
 
-- **Schedule:** **Sunday Departure &rarr; Saturday Arrival in Old Montréal**
-- **Total Distance:** **~445 miles (716 km)**
-- **Daily Average:** **~63.6 miles (102 km) per day**
-- **Total Climbing:** **~14,500 ft (4,420 m)**
-- **Pace:** Comfortable Leisurely Touring (11–13 mph / 18–21 km/h rolling speed, approx. 4.5–5.5 hours rolling time per day)
-- **Why This Schedule is the Gold Standard for October:**
-  > [!TIP]
-  > **Solves the Autumn Daylight Problem:** In early October, sunrise is ~6:55 AM and sunset is ~6:25 PM. Morning starts are chilly (35–45°F), meaning cyclists rarely roll comfortably before 8:30 AM. That leaves only about **8 to 9 hours of comfortable riding window**. At ~64 miles per day, riders arrive at their evening hotels by 3:00–4:00 PM, safely avoiding the rapid 15°F dusk temperature drop and night riding.
-  >
-  > **Eliminates the Day 6 Border Crunch:** In the 6-day plan, Day 6 is a grueling 87-mile push from Plattsburgh through international border customs to Montréal. In the 7-day plan, Day 6 is a relaxed **50-mile stage to Saint-Jean-sur-Richelieu**, leaving ample time for border clearance at Lacolle and a leisurely French-Canadian dinner.
-  >
-  > **The Saturday Victory Cruise:** Day 7 is a joyful **37-mile morning victory lap** entirely on car-free bike paths (Chambly Canal National Historic Site towpath and the St. Lawrence River bridge path) rolling into Place Jacques-Cartier in Old Montréal for celebration lunch!
+## Itinerary at a glance
+| Day | Date | Stage | Miles | Climb (est.) | Lunch | Overnight |
+|:---|:---|:---|:---|:---|:---|:---|
+| 1 | Sun Oct 4 | NYC → Brewster | 67.5 | +2,100 | Trailside Cafe (mi 47) | Heidi's Inn |
+| 2 | Mon Oct 5 | Brewster → Hudson | 89.6 | +1,900 | Bread Alone Bakery & Cafe (mi 60) | Hudson Whaler Hotel (formerly The Barlow) |
+| 3 | Tue Oct 6 | Hudson → Saratoga | 82.1 | +1,600 | Don & Paul's Coffee Shoppe (mi 52) | The Saratoga Hilton |
+| 4 | Wed Oct 7 | Saratoga → Ticonderoga | 75.9 | +2,600 | Stewart's Shops #211 (mi 50) | Best Western Plus Ticonderoga Inn & Suites |
+| 5 | Thu Oct 8 | Ticonderoga → Plattsburgh | 72.5 | +3,300 | Pink Pig Cafe (mi 38) | Best Western Plus Plattsburgh |
+| 6 | Fri Oct 9 | Plattsburgh → Saint-Jean | 54.7 | +300 | Lakeside Coffee Roasters (mi 28) | Quality Hotel Centre de Congrès |
+| 7 | Sat Oct 10 | Saint-Jean → Montréal | 35.8 | +300 | Boulangerie du Vieux-Chambly (mi 14) | Hôtel Monville |
 
----
+**Why 7 days:** the 6-day plan's last day is 87.9 mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a 35.8-mi Saturday finish along the Chambly Canal. Days 2 to 4 are still long (76 to 90 mi): start early.
 
-## 7-Day Stage-by-Stage Itinerary Matrix
+## Critical logistics (read before booking)
 
-| Day | Date (2026) | Route Stage | Est. Miles | Est. Climb | Key Highlights & Surface | Curated Lunch Stop | Overnight Lodging |
-|:---|:---|:---|:---:|:---:|:---|:---|:---|
-| **Day 1** | Sun Oct 4 | **Battery Park &rarr; Brewster / Carmel** | ~60.0 mi | +2,000 ft | Hudson Greenway, South/North County & Putnam Rail Trails | **Yorktown Heights:** Trailside Cafe (Mile 38) | *Heidi's Inn* (Brewster) <br> *(845) 279-8011* |
-| **Day 2** | Mon Oct 5 | **Brewster &rarr; Hudson, NY** | ~78.0 mi | +3,000 ft | Maybrook & Dutchess Rail Trails, rolling Route 9G past Rhinebeck | **Rhinebeck, NY:** Village Cafes / Bagels (Mile 52) | *The Barlow Hotel* (Warren St) <br> *(518) 828-2100* |
-| **Day 3** | Tue Oct 6 | **Hudson &rarr; Saratoga Springs** | ~75.0 mi | +2,000 ft | 36-mi paved AHET, Waterford Locks, Zim Smith Trail to Ballston Spa | **Waterford Lock 2:** Canal Harbor Cafe (Mile 44) | *The Saratoga Hilton* <br> *(518) 584-4000* |
-| **Day 4** | Wed Oct 7 | **Saratoga Springs &rarr; Ticonderoga** | ~75.0 mi | +2,500 ft | Champlain Canalway to Whitehall Lock 12, rolling NY-22 bluffs | **Whitehall, NY:** Historic Grounds Cafe (Mile 44) | *Best Western Plus Ticonderoga* <br> *(518) 585-1800* |
-| **Day 5** | Thu Oct 8 | **Ticonderoga &rarr; Plattsburgh** | ~70.0 mi | +4,000 ft | Adirondack Coast (Queen Stage): Crown Point, Essex, Ausable Chasm | **Historic Essex, NY:** The Cup Cafe (Mile 38) | *Best Western Plus Plattsburgh* <br> *(518) 561-7000* |
-| **Day 6** | Fri Oct 9 | **Plattsburgh &rarr; Saint-Jean-sur-Richelieu (QC)** | ~50.0 mi | +800 ft | US-9 to Rouses Point, U.S./Canada Border Crossing, QC-223 River Route | **Rouses Point, NY:** Lakeside Cafe (Mile 24) | *Quality Hotel Centre de Congrès* <br> *+1 (450) 515-5755* |
-| **Day 7** | Sat Oct 10 | **Saint-Jean &rarr; Old Montréal (FINISH!)** | ~37.0 mi | +600 ft | Chambly Canal Towpath, Longueuil Route Verte, Jacques-Cartier Bridge | **Chambly Basin / Old Port Victory Lunch** | *Hotel Monville* (Bienvenue Cyclistes) <br> *+1 (514) 379-2000* |
+### 1. Getting home: Amtrak won't take an unboxed bike from Montréal
+- The **Amtrak Adirondack** carries bikes on a coach rack **only between New York and Rouses Point, NY**. You cannot roll a bike onto the train in Montréal. Bike spots are limited and need a reservation.
+- **Southbound train 68 leaves Montréal 11:10 AM and Rouses Point 2:15 PM, arriving New York 10:15 PM.** It runs **Sun and Tue to Sat. On Mondays it starts at Saratoga Springs**, so there's **no Monday train from Rouses Point** (Mon Oct 12 is Indigenous Peoples' / Columbus Day). *(Amtrak timetable dated Sep 27, 2026; recheck when booking.)*
+- Northbound train 69 runs **daily** all the way to Montréal. Earlier drafts said Mon to Thu only; that was wrong.
+- **Return options:**
+  1. **Ride back to Rouses Point** (59.8 mi from Place Jacques-Cartier, file `gpx/return_montreal_to_rouses_point.gpx`). To make the 2:15 PM train, you'd need to leave Montréal by about 7:30 AM. A gentler version: take a half day to Saint-Jean-sur-Richelieu (35 mi), sleep there, then ride 25 flat miles to Rouses Point the next morning. You clear US customs on your bike at the Rouses Point–Lacolle 223 crossing.
+  2. **Box the bikes** in Montréal and take a bus or flight. Call shops ahead to reserve boxes (Ça Roule in Old Montréal, Bicycles Quilicot, MEC).
+  3. **One-way rental van or SUV** from Montréal to NYC.
 
-**Total Tour Stats:** **~445.0 miles (716 km)** &bull; **+14,900 ft (4,540 m) elevation gain**
+### 2. The border (Rouses Point, NY ➔ Lacolle, QC on US-11 / Route 223)
+- **Hours: 8 AM to 8 PM daily, on both the US and Canadian sides** (cut from 24 hours in January 2025). Cyclists use the regular car booths. The only nearby 24-hour crossing is the I-87 / A-15 freeway, where bikes aren't allowed, so **plan to reach the border well before 8 PM**, including on the ride back to Rouses Point.
+- Phones: CBSA Border Information Service 1-800-959-2036; US CBP Rouses Point (518) 297-2441.
+- Bring a **passport, passport card, Enhanced Driver's License or NEXUS card** (Canada has no 6-month validity rule).
+- **No cannabis** in either direction: that's a federal offense in both countries. **Pepper spray made for use on people is a prohibited weapon in Canada.** Animal-deterrent sprays are handled differently, but simplest is to leave all sprays at home.
+- Coming back into the US with a valuable bike: carry a photo of the serial number and receipt. Optionally, register it on CBP Form 4457 before you leave.
 
----
+### 3. October daylight
+- Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 82.1 and 75.9 mi) and carry real lights.
+- Wet leaves on rail trails are slippery: brake before turns and corners.
 
-## GPS Navigation Downloads
+### 4. Food and water gaps
+- **Day 4:** Whitehall's Historic Grounds cafe is **closed** after a fire. Use **Stewart's, 60 Poultney St**. After Whitehall, NY-22 has 23.5 mi of rolling road with almost nothing.
+- **Day 5:** Essex options are thin in October (Pink Pig Cafe has limited fall hours, and the ice-cream cafe is summer-only). **Stewart's in Port Henry** (mile 15) and **Keeseville** (mile 56) are the reliable stops.
+- **Sundays and Mondays:** many small bike shops are closed (for example, Yorktown Cycles is closed Sun and Mon). Carry tubes, a plug kit, a quick-link, a pump and a multitool.
 
-Download these pre-scouted files directly into your cycling devices:
-- **GPX Track & Turn Cues:** `nyc_to_montreal_7day_tour.gpx` (Import into Garmin Edge, Wahoo ELEMNT, Hammerhead Karoo, RideWithGPS)
-- **KML Interactive Map:** `nyc_to_montreal_7day_tour.kml` (Import into Google My Maps for mobile GPS overlay)
+### 5. Lodging
+- Early October is peak foliage in the Adirondacks and on Lake Champlain. Book early and ask each hotel about indoor bike storage. **The Barlow Hotel in Hudson is now the Hudson Whaler (518-217-4334).**
 
----
+## GPS files: which one to use
+- **Bike computers (Garmin, Wahoo, Hammerhead, RideWithGPS app):** load the **one-file-per-day GPX** from `gpx/` and navigate it as a course/route. The device's own map generates turn prompts from the track. Each track follows real roads and trails, with 850 to 1,600 points per day. Earlier versions of these files had only 6 to 13 points per day and could not be used for navigation.
+- **Phones:** import the combined `.kml` into Google My Maps, or the GPX into an offline map app (RideWithGPS, Organic Maps, Gaia). **Download offline maps before you leave:** the web app's background map needs a connection.
+- **Paper backup:** print the strip maps (the Strip Maps view in the app, then Print). Cue miles reset each day and match the day GPX.
+- **How these were made:** routed with the OpenStreetMap bike router (routing.openstreetmap.de), forced along the official Empire State Trail, Champlain Valley Trail, AHET, Zim Smith, Island Line and Chambly Canal geometry. Distances are measured along the tracks. Climbing is estimated from 30 m SRTM elevation data (smoothed); treat it as ±20%. Surfaces come from OpenStreetMap tags. **Ride-test anything that looks odd on your device's map before trusting it.**
 
-## Day-by-Day Comprehensive Cue Sheets & Field Notes
+## Daily stages
 
-### Sunday • Day 1: New York City to Brewster / Carmel, NY
-*Manhattan Waterfront, Westchester & Putnam County Greenways*
+### Sunday • Day 1: NYC (Battery Park) to Brewster, NY
+*Hudson River Greenway, Bronx link, South & North County Trailways, Putnam Trailway*
 
-- **Distance:** ~60.0 miles (96.6 km) &bull; **Climbing:** +2,000 ft
-- **Route Summary:**
-  - Depart Battery Park heading north on the car-free **Hudson River Greenway**.
-  - Pass the George Washington Bridge, roll through Inwood, and cross the Broadway Bridge into the Bronx.
-  - Navigate city street bike lanes through Van Cortlandt Park to access the **South County Trailway**.
-  - Transition seamlessly onto the **North County Trailway** through Millwood and Yorktown Heights.
-  - Continue onto the paved **Putnam County Trailway** terminating in Carmel / Brewster.
-- **Surface:** 95% paved car-free rail-trail; 5% city street connecting links in the Bronx and Yonkers.
-- **Lunch Stop (Mile 38):** **Yorktown Heights, NY** – **Trailside Cafe** (1807 Commerce St). Directly beside the bike path. Paninis, fruit smoothies, fresh wraps, outdoor patio.
-- **Overnight Lodging:**
-  - *Heidi's Inn* (1270 Route 22, Brewster, NY – Phone: 845-279-8011) – Classic ground-floor cyclist motel with roll-in bike access.
-  - *Comfort Inn Brewster* (7-11 Peach Lake Rd, Brewster, NY – Phone: 845-483-7848) – Indoor heated pool, complimentary hot breakfast.
-- **Bike Shops:** *Yorktown Cycles* (Mile 38) &bull; *Brewster Bicycle* (Brewster).
-- **Rail Bailout:** Metro-North Harlem Line runs parallel (Pleasantville, Chappaqua, Mount Kisco, Brewster). Unboxed bikes allowed outside rush hours.
+- **Distance:** 67.5 mi (108.6 km) · **Climbing:** about +2,100 ft
+- **Surface:** Almost entirely car-free paved path. About 4 mi of city streets through Inwood and the Bronx (Seaman Ave, Broadway, Broadway Bridge) and about 2.8 mi of streets and NY-22 through Brewster to the motel.
+- **GPX:** [`gpx/d1.gpx`](gpx/d1.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=40.70262,-74.01605&destination=41.40576,-73.58058&waypoints=40.78710,-73.98356|40.85498,-73.94012|40.93379,-73.87295|41.05507,-73.82018|41.15535,-73.82451|41.26352,-73.78136|41.37247,-73.73268|41.41923,-73.67190)
+- **Lunch:** **Trailside Cafe**, 1807 Commerce St, Yorktown Heights, NY · (914) 302-7331 · mile 47.1. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.
+- **Lodging:** **Heidi's Inn**, 1270 Route 22, Brewster, NY · (845) 279-8011 · mile 67.5. Motel on NY-22, about 3 mi past the end of the Putnam Trailway (through Brewster village). Confirm bike storage when booking. / **Comfort Inn Brewster**, 7-11 Peach Lake Rd, Brewster, NY · (845) 363-0974 · mile 67.0 (1.1 mi off route). About 2 mi east of Brewster village near I-84. Free hot breakfast.
+- **Bike shops / supplies:** **Yorktown Cycles**, 1899 Commerce St, Yorktown Heights, NY · (914) 245-5504 · mile 47.3. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1. / **Route 22 Cycles**, 2237 Route 22, Brewster, NY · (845) 784-6166. Hours not verified: call before relying on it. / **Ski Haus (bikes)**, 1611 Route 22, Brewster, NY · (845) 279-3100. Listed Wed to Fri 11 to 6, Sat 11 to 5; closed Sun to Tue.
+- **Bailout:** Metro-North: Brewster station (Harlem Line) is right on the route at mile 65.2. Mid-route, the nearest Harlem Line stations are Pleasantville (about 1.2 mi east of the trail near mile 35.6) and Chappaqua (about 2.2 mi east near mile 38.7); Tarrytown (Hudson Line) is about 1.6 mi west near mile 31.6. Bikes ride free with no permit, but NOT on weekday rush-hour trains or holidays (limit 4 per train on weekdays, 8 on weekends).
 
----
+<details><summary>Turn-by-turn cues</summary>
+
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.0 | DEPART ON | bike path | 0.2 | Bike path |  |
+| 0.2 | BEAR RIGHT | Hudson River Greenway | 5.0 | Bike path |  |
+| 5.2 | CONTINUE ONTO | Riverside Park South Bike Path | 0.7 | Bike path |  |
+| 5.9 | BEAR LEFT | Hudson River Greenway | 0.6 | Bike path |  |
+| 6.5 | BEAR RIGHT | Riverside Walk | 0.8 | Bike path |  |
+| 7.3 | CONTINUE ONTO | Cherry Walk | 1.5 | Bike path |  |
+| 8.8 | CONTINUE ONTO | West Harlem Piers Park Bike Path | 0.2 | Bike path |  |
+| 9.0 | CONTINUE ONTO | Riverside Walk | 1.3 | Bike path |  |
+| 10.3 | CONTINUE ONTO | Fort Washington Park Greenway | 1.0 | Bike path |  |
+| 11.3 | PASS | George Washington Bridge / Little Red Lighthouse | 1.8 | — | Greenway climbs away from the river north of the bridge; follow the bike signs. |
+| 13.1 | TURN LEFT | Seaman Avenue | 0.8 | Street | Greenway ends at Dyckman St; continue up to Seaman Ave and ride north through Inwood. |
+| 13.9 | TURN RIGHT | West 218th Street | 0.2 | Street |  |
+| 14.1 | TURN LEFT | Broadway (US-9) | 0.4 | Road shoulder | Busy street. Cross the Broadway Bridge over the Harlem River into Marble Hill. Ride single file. |
+| 14.5 | TURN LEFT | West 228th Street | 0.2 | Street |  |
+| 14.7 | TURN LEFT | West 230th Street | 0.1 | Street |  |
+| 14.8 | TURN RIGHT | Tibbett Avenue | 0.3 | Street |  |
+| 15.1 | TURN RIGHT | Irwin Avenue | 0.6 | Street |  |
+| 15.7 | TURN RIGHT | Manhattan College Parkway | 0.3 | Street |  |
+| 16.0 | BEAR LEFT | Van Cortlandt Park Greenway | 0.3 | Bike path |  |
+| 16.3 | TURN RIGHT | Putnam Greenway | 1.4 | Bike path | Van Cortlandt Park: the paved Putnam Trail runs north to the Yonkers line. |
+| 17.7 | CONTINUE ONTO | South County Trailway | 11.8 | Bike path | Car-free paved rail trail through Westchester. |
+| 29.5 | TURN LEFT | South Central Avenue (NY-9A) | 0.2 | Road shoulder |  |
+| 29.7 | TURN LEFT | South County Trailway | 2.4 | Bike path |  |
+| 32.1 | CONTINUE ONTO | North County Trailway | 15.0 | Bike path | At Eastview the trail becomes the North County Trailway. |
+| 47.1 | TURN RIGHT | Commerce Street |  | Street |  |
+| 47.1 | LUNCH | Trailside Cafe, 1807 Commerce St | 0.3 | — | Right beside the trail at Yorktown Heights. Yorktown Cycles next door is CLOSED Sun and Mon. |
+| 47.4 | TURN LEFT | North County Trailway | 5.3 | Bike path |  |
+| 52.7 | CONTINUE ONTO | Putnam Trailway | 11.9 | Bike path | At Baldwin Place the trail becomes the Putnam County Trailway. |
+| 64.6 | TURN RIGHT | Putnam Avenue | 0.4 | Street | Leave the trail in Brewster. Brewster Metro-North station is on your right. |
+| 65.0 | TURN LEFT | Oak Street | 0.5 | Street |  |
+| 65.5 | BEAR LEFT | Main Street (US-6) | 0.3 | Road shoulder |  |
+| 65.8 | TURN LEFT | East Branch Avenue (US-6; US-202; NY-22) | 0.4 | Road shoulder |  |
+| 66.2 | BEAR LEFT | Sodom Road (CR-50) | 0.9 | Road shoulder |  |
+| 67.1 | TURN LEFT | State Highway 22 (NY-22) | 0.4 | Road shoulder | NY-22 north for 0.4 mi to Heidi's Inn on the right. |
+| 67.5 | ARRIVE | Heidi's Inn |  | — | 1270 Route 22, Brewster, NY |
+
+</details>
 
 ### Monday • Day 2: Brewster to Hudson, NY
-*Maybrook Trailway, Dutchess Rail Trail & Historic East-Bank Byways*
+*Maybrook Trailway, Dutchess Rail Trail, NY-9G and the Empire State Trail's east-bank road route*
 
-- **Distance:** ~78.0 miles (125.5 km) &bull; **Climbing:** +3,000 ft
-- **Route Summary:**
-  - Ride west on the serene paved **Maybrook Trailway** through Whaley Lake to Hopewell Junction.
-  - Connect directly to the paved **Dutchess Rail Trail** into Poughkeepsie.
-  - *(Optional Detour):* Take the +2 mi out-and-back across the breathtaking **Walkway Over the Hudson** for Hudson River views, then return to the east bank.
-  - Follow quiet east-bank rural roads and Route 9G north through historic Hyde Park (Vanderbilt Mansion) into **Rhinebeck**.
-  - Continue north along Route 9G and scenic River Road through Germantown into historic Warren Street in Hudson.
-- **Surface:** 55% paved rail-trail (Maybrook & Dutchess); 45% rolling paved state/county roads with paved shoulders.
-- **Lunch Stop (Mile 52):** **Rhinebeck, NY** – **Rhinebeck Bagel / Market Street Cafes**. Artisan delis, local bakeries, espresso.
-- **Overnight Lodging:**
-  - *The Barlow Hotel* (542 Warren St, Hudson, NY – Phone: 518-828-2100) – Chic boutique hotel on historic Warren St, secure indoor bike storage.
-  - *The Wick, Hudson* (41 Cross St, Hudson, NY – Phone: 518-249-6825) – 1 block from Amtrak station.
-- **Bike Shops:** *Bikeway Hopewell Junction* (Mile 21) &bull; *Steiner's Sports* (301 Warren St, Hudson).
-- **Rail Bailout:** Metro-North Hudson Line at Poughkeepsie (Mile 42); Amtrak Empire Service at Rhinecliff (Mile 54) and Hudson (Mile 78).
+- **Distance:** 89.6 mi (144.2 km) · **Climbing:** about +1,900 ft
+- **Surface:** About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads: NY-9G (a 55-mph highway with a wide shoulder) for about 15 mi, followed by the signed Empire State Trail on-road route (quiet county roads) from Rhinebeck to Hudson.
+- **GPX:** [`gpx/d2.gpx`](gpx/d2.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=41.40576,-73.58058&destination=42.24874,-73.78510&waypoints=41.48100,-73.61277|41.57448,-73.70458|41.66261,-73.85409|41.76097,-73.90648|41.93089,-73.88682|42.00133,-73.91368|42.07250,-73.91558|42.15174,-73.84986)
+- **Lunch:** **Bread Alone Bakery & Cafe**, 45 E Market St, Rhinebeck, NY · mile 59.7. Breakfast and lunch daily; listed open Mondays 7 AM to 5 PM.
+- **Lodging:** **Hudson Whaler Hotel (formerly The Barlow)**, 542 Warren St, Hudson, NY · (518) 217-4334 · mile 89.6. The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number. / **The Wick, Hudson (Tribute Portfolio)**, 41 Cross St, Hudson, NY · (518) 249-6825 · mile 88.9 (0.2 mi off route). Near the Hudson Amtrak station.
+- **Bike shops / supplies:** **Bikeway at Hopewell Depot**, Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY · (845) 463-4000 · mile 27.8. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours. / **Rhinebeck Bicycle Shop**, 10 Garden St, Rhinebeck, NY · (845) 876-4025 · mile 59.9. Repairs, parts, rentals. One block from Bread Alone. Call for hours. / **Steiner's Sports**, 301 Warren St, Hudson, NY · (518) 828-5063 · mile 89.2. Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.
+- **Bailout:** Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 41.0). Amtrak at Rhinecliff (about 2 mi west of Rhinebeck, near mile 59.9) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.
+- **Option:** SHORTCUT: stay on NY-9G all the way from Poughkeepsie to Hudson (skip Rhinebeck village and the county-road section). That route is 83.3 mi instead of 89.6, but it's all 55-mph highway shoulder.
 
----
+<details><summary>Turn-by-turn cues</summary>
+
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.0 | DEPART ON | State Highway 22 (NY-22) | 0.4 | Road shoulder |  |
+| 0.4 | TURN RIGHT | Sodom Road | 1.3 | Street |  |
+| 1.7 | TURN RIGHT | Main Street (US-6) | 0.2 | Road shoulder |  |
+| 1.9 | BEAR RIGHT | Oak Street | 0.7 | Street |  |
+| 2.6 | TURN RIGHT | Putnam Avenue | 0.7 | Street |  |
+| 3.3 | TURN LEFT | North Main Street | 0.4 | Street |  |
+| 3.7 | TURN LEFT | Maybrook Trailway | 23.9 | Bike path | Paved rail trail west for 24 mi to Hopewell Junction. |
+| 27.6 | TURN LEFT | Dutchess Rail Trail | 13.2 | Bike path | Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie. |
+| 40.8 | TURN RIGHT | Parker Avenue (NY-9G) | 0.2 | Road shoulder | Trail ends in Poughkeepsie. OPTIONAL: the Walkway Over the Hudson entrance is about 0.5 mi west; riding across and back adds about 3 to 4 mi. |
+| 41.0 | TURN RIGHT | Washington Street (NY-9G) | 0.5 | Road shoulder |  |
+| 41.5 | TURN RIGHT | Baker Avenue | 0.4 | Street |  |
+| 41.9 | TURN RIGHT | West Cedar Street | 0.4 | Street |  |
+| 42.3 | TURN LEFT | Buckingham Avenue | 0.3 | Street |  |
+| 42.6 | TURN RIGHT | Fulton Street | 0.3 | Street |  |
+| 42.9 | TURN LEFT | Violet Avenue (NY-9G) | 4.8 | Road shoulder | NY-9G north: wide shoulder, 55-mph traffic. Single file. |
+| 47.7 | CONTINUE ONTO | NY 9G | 9.9 | Road shoulder |  |
+| 57.6 | TURN LEFT | Violet Hill Road (CR-101) | 0.8 | Road shoulder |  |
+| 58.4 | TURN LEFT | East Market Street (NY-308) | 1.3 | Road shoulder | NY-308 west into Rhinebeck village. |
+| 59.7 | TURN RIGHT | bike path |  | Bike path |  |
+| 59.7 | LUNCH | Bread Alone, 45 E Market St, Rhinebeck | 0.2 | — | Open daily; Rhinebeck Bicycle Shop is one block away at 10 Garden St. |
+| 59.9 | TURN RIGHT | Montgomery Street (US-9) | 0.4 | Road shoulder |  |
+| 60.3 | TURN LEFT | Montgomery Street | 0.6 | Street |  |
+| 60.9 | CONTINUE ONTO | Mount Rutsen Road | 2.5 | Street | From here to Hudson the route follows the signed Empire State Trail on-road route on quiet county roads. |
+| 63.4 | CONTINUE ONTO | River Road (CR-103) | 2.8 | Road shoulder |  |
+| 66.2 | CONTINUE ONTO | Annandale Road (CR-103) | 1.1 | Road shoulder |  |
+| 67.3 | TURN LEFT | Robbins Road | 1.0 | Street |  |
+| 68.3 | TURN RIGHT | Access Road | 0.7 | Street |  |
+| 69.0 | TURN LEFT | Kidd Lane | 1.2 | Street |  |
+| 70.2 | TURN LEFT | Broadway (CR-78) | 0.3 | Road shoulder |  |
+| 70.5 | TURN RIGHT | Woods Road | 2.0 | Street |  |
+| 72.5 | TURN LEFT | Woods Road (CR-35) | 3.7 | Road shoulder |  |
+| 76.2 | TURN RIGHT | Main Street (CR-8) | 0.9 | Road shoulder |  |
+| 77.1 | TURN LEFT | Hover Avenue | 1.0 | Street |  |
+| 78.1 | TURN RIGHT | Dales Bridge Road | 1.7 | Street |  |
+| 79.8 | TURN LEFT | Wire Road | 1.2 | Street |  |
+| 81.0 | TURN LEFT | County Road 10 (CR-10) | 0.3 | Road shoulder |  |
+| 81.3 | BEAR RIGHT | White Birch Road | 2.3 | Street |  |
+| 83.6 | TURN RIGHT | County Route 14 (CR-14) | 0.7 | Road shoulder |  |
+| 84.3 | TURN LEFT | Middle Road | 1.4 | Street |  |
+| 85.7 | TURN LEFT | Claverack Road (NY-23) | 0.7 | Road shoulder |  |
+| 86.4 | TURN RIGHT | Rhinebeck-Hudson Road (NY-9G; NY-23B) | 2.8 | Road shoulder | NY-9G/23B north into Hudson. |
+| 89.2 | TURN RIGHT | Warren Street | 0.4 | Street | Right on Warren St to the hotel (542 Warren St). |
+| 89.6 | ARRIVE | Hudson Whaler Hotel (formerly The Barlow) |  | — | 542 Warren St, Hudson, NY |
+
+</details>
 
 ### Tuesday • Day 3: Hudson to Saratoga Springs, NY
-*Albany-Hudson Electric Trail, Mohawk-Hudson Bikeway & Zim Smith Trail*
+*Albany-Hudson Electric Trail, Dunn Bridge, Mohawk-Hudson Bike-Hike Trail, Old Champlain Canal Trail, Zim Smith Trail*
 
-- **Distance:** ~75.0 miles (120.7 km) &bull; **Climbing:** +2,000 ft
-- **Route Summary:**
-  - Pick up the southern trailhead of the paved **Albany-Hudson Electric Trail (AHET)**.
-  - Enjoy 36 continuous miles of car-free riding through Kinderhook, Valatie, and Nassau into Rensselaer.
-  - Cross the Hudson River on the Dunn Memorial Bridge bike path into downtown Albany.
-  - Follow the **Mohawk-Hudson Bike-Hike Trail** north past Troy to the historic **Waterford Harbor & Champlain Canal Lock 2**.
-  - Connect via local roads to the **Zim Smith Trail**, riding traffic-free through Round Lake to **Ballston Spa**.
-  - Follow quiet local secondary roads for the final 7 miles into downtown Saratoga Springs.
-- **Surface:** 65% paved rail-trail; 35% low-traffic canal roads and connecting cycle paths.
-- **Lunch Stop (Mile 44):** **Waterford Harbor / Troy Waterfront** – Cafes near Lock 2 Park or gourmet bakeries in Troy.
-- **Overnight Lodging:**
-  - *The Saratoga Hilton* (534 Broadway, Saratoga Springs, NY – Phone: 518-584-4000) – In the heart of historic Broadway; indoor bike storage.
-  - *Holiday Inn Saratoga Springs* (232 Broadway, Saratoga Springs, NY – Phone: 518-584-4550).
-- **Bike Shops:** *Down Tube Bicycle Works* (Albany) &bull; *Saratoga Bicycle Specialties* (Saratoga Springs).
-- **Rail Bailout:** Amtrak Albany-Rensselaer (Mile 36); Amtrak Saratoga Springs (Mile 75).
+- **Distance:** 82.1 mi (132.1 km) · **Climbing:** about +1,600 ft
+- **Surface:** Mostly paved trail: AHET, Mohawk-Hudson and Zim Smith. The AHET has several short on-road links. There are city streets through Rensselaer, Watervliet and Cohoes, plus the Old Champlain Canal Trail (check the surface list for unpaved sections). The final 5 mi into Saratoga is on NY-50, a busy road with a shoulder.
+- **GPX:** [`gpx/d3.gpx`](gpx/d3.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.24874,-73.78510&destination=43.08567,-73.78240&waypoints=42.34524,-73.74340|42.42894,-73.66190|42.55498,-73.62440|42.60917,-73.71966|42.67976,-73.72129|42.76981,-73.70308|42.86072,-73.68214|42.94817,-73.80026)
+- **Lunch:** **Don & Paul's Coffee Shoppe**, 68 Broad St, Waterford, NY · mile 52.0. Diner on the route by the Waterford canal harbor. Listed Mon to Sat 7 AM to 7:30 PM, Sun 7 AM to 2 PM.
+- **Lodging:** **The Saratoga Hilton**, 534 Broadway, Saratoga Springs, NY · (518) 584-4000 · mile 82.1. Downtown on Broadway. / **Holiday Inn Saratoga Springs**, 232 Broadway, Saratoga Springs, NY · (518) 584-4550 · mile 81.2. South end of Broadway, on the way in.
+- **Bike shops / supplies:** **Steiner's Sports (Valatie)**, 3455 Route 9, Valatie, NY · (518) 784-3663. In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4. / **Trek Bicycle Saratoga Springs**, 71 Church St, Saratoga Springs, NY · (518) 583-0600 · mile 81.9 (0.3 mi off route). Replaces 'Saratoga Bicycle Specialties' from earlier drafts, which could not be found (110 Excelsior Ave is a hardware store).
+- **Bailout:** Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile 37.5; it's the best bailout, with Empire Service and Adirondack trains and a $20 bike reservation. Saratoga Springs Amtrak is about 1.2 mi from the stage end.
 
----
+<details><summary>Turn-by-turn cues</summary>
+
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.1 | DEPART ON | North 6th Street | 0.9 | Street |  |
+| 1.0 | TURN LEFT | Fairview Avenue (US-9) | 1.3 | Road shoulder |  |
+| 2.3 | TURN LEFT | Albany-Hudson Electric Trail | 3.6 | Bike path | Paved AHET. Several short on-road links follow; watch for trail signs. |
+| 5.9 | BEAR RIGHT | Hudson Avenue (CR-25; CR-22) | 0.3 | Road shoulder |  |
+| 6.2 | CONTINUE ONTO | Hudson Avenue (CR-25) | 1.3 | Road shoulder |  |
+| 7.5 | TURN RIGHT | Albany-Hudson Electric Trail | 3.3 | Bike path |  |
+| 10.8 | TURN RIGHT | Sunnyside Road | 0.6 | Street |  |
+| 11.4 | BEAR RIGHT | Albany-Hudson Electric Trail | 2.7 | Bike path |  |
+| 14.1 | TURN LEFT | Chatham Street (US-9) | 0.4 | Road shoulder |  |
+| 14.5 | TURN RIGHT | Albany-Hudson Electric Trail | 6.2 | Bike path |  |
+| 20.7 | TURN LEFT | NY 203 | 0.6 | Road shoulder |  |
+| 21.3 | TURN LEFT | Albany-Hudson Electric Trail | 6.2 | Bike path |  |
+| 27.5 | TURN LEFT | East Hill Road | 0.1 | Street |  |
+| 27.6 | TURN LEFT | Albany-Hudson Electric Trail | 3.6 | Bike path |  |
+| 31.2 | TURN RIGHT | Old Miller Road | 0.2 | Street |  |
+| 31.4 | TURN RIGHT | Albany-Hudson Electric Trail | 0.9 | Bike path |  |
+| 32.3 | TURN LEFT | Tamarack Lane | 0.3 | Street |  |
+| 32.6 | TURN LEFT | Point View Drive | 0.3 | Street |  |
+| 32.9 | TURN RIGHT | Albany-Hudson Electric Trail | 1.2 | Bike path |  |
+| 34.1 | TURN RIGHT | Corellis Drive | 0.2 | Street |  |
+| 34.3 | TURN RIGHT | Albany-Hudson Electric Trail | 0.4 | Bike path |  |
+| 34.7 | TURN RIGHT | Southern Avenue | 0.1 | Street |  |
+| 34.8 | TURN LEFT | Western Avenue | 0.5 | Street |  |
+| 35.3 | TURN RIGHT | Sherwood Avenue (CR-59) | 0.6 | Road shoulder |  |
+| 35.9 | TURN LEFT | Red Mill Road (NY-151) | 0.2 | Road shoulder |  |
+| 36.1 | TURN LEFT | Red Mill Road (CR-63) | 0.7 | Road shoulder |  |
+| 36.8 | TURN LEFT | Third Avenue (NY-151) | 0.6 | Road shoulder |  |
+| 37.4 | TURN LEFT | Dunn Memorial Bridge Path | 0.8 | Bike path | Cross the Hudson into Albany on the bridge's shared path. |
+| 38.2 | TURN RIGHT | Mohawk-Hudson Bike-Hike Trail | 3.2 | Bike path | Riverside path north from the Corning Preserve. |
+| 41.4 | CONTINUE ONTO | Menands Bike and Pedestrian Connector Broadway to Mohawk Hudson Bike Trail | 0.9 | Bike path | On-road through Watervliet and Cohoes: follow the Empire State Trail signs. |
+| 42.3 | TURN LEFT | Mohawk-Hudson Bike-Hike Trail | 2.0 | Bike path |  |
+| 44.3 | TURN RIGHT | Broadway | 2.1 | Street |  |
+| 46.4 | TURN LEFT | George Street | 0.8 | Street |  |
+| 47.2 | TURN LEFT | Tibbits Avenue | 0.3 | Street |  |
+| 47.5 | TURN RIGHT | Cohoes Avenue | 0.9 | Street |  |
+| 48.4 | BEAR RIGHT | Cohoes Boulevard | 0.7 | Street |  |
+| 49.1 | BEAR LEFT | Columbia Street | 0.4 | Street |  |
+| 49.5 | TURN LEFT | Mohawk-Hudson Bike-Hike Trail | 0.5 | Bike path |  |
+| 50.0 | TURN LEFT | Ontario Street (NY-470) | 0.4 | Road shoulder |  |
+| 50.4 | TURN LEFT | Saratoga Street (NY-32) | 1.6 | Road shoulder | NY-32 north into Waterford. |
+| 52.0 | LUNCH | Don & Paul's, 68 Broad St, Waterford | 0.1 | — | Diner on the route by the Waterford canal harbor (Erie Canal Lock E2). |
+| 52.1 | BEAR LEFT | Old Champlain Canal Trail | 2.3 | Bike path | Canal towpath north toward Mechanicville. |
+| 54.4 | TURN LEFT | Bells Lane North | 0.4 | Street |  |
+| 54.8 | TURN RIGHT | Old Champlain Canal Trail | 3.0 | Bike path |  |
+| 57.8 | TURN RIGHT | Upper Newtown Road (CR-86) | 0.3 | Road shoulder |  |
+| 58.1 | TURN LEFT | Hudson River Road (US-4; NY-32) | 2.8 | Road shoulder |  |
+| 60.9 | TURN RIGHT | South 2nd Avenue | 0.5 | Street |  |
+| 61.4 | TURN LEFT | Elizabeth Street | 0.6 | Street |  |
+| 62.0 | CONTINUE ONTO | Zim Smith Mid-County Trail | 9.8 | Bike path | Zim Smith Trail, about 11 mi to Ballston Spa. |
+| 71.8 | CONTINUE ONTO | Zim Smith Trail | 1.9 | Bike path |  |
+| 73.7 | TURN LEFT | East High Street | 0.4 | Street |  |
+| 74.1 | TURN LEFT | Chester Street | 0.2 | Street |  |
+| 74.3 | TURN LEFT | Chester Wood Court | 0.2 | Street |  |
+| 74.5 | TURN RIGHT | Chester Street | 0.1 | Street |  |
+| 74.6 | TURN LEFT | McLean Street | 1.0 | Street |  |
+| 75.6 | CONTINUE ONTO | Doubleday Avenue (NY-50) | 1.1 | Road shoulder |  |
+| 76.7 | CONTINUE ONTO | Ballston Avenue (NY-50) | 3.3 | Road shoulder |  |
+| 80.0 | TURN LEFT | Railroad Run | 0.5 | Street |  |
+| 80.5 | TURN RIGHT | New Street | 0.2 | Street |  |
+| 80.7 | TURN LEFT | Ballston Avenue (NY-50) | 0.6 | Road shoulder |  |
+| 81.3 | TURN LEFT | Broadway (US-9; NY-50) | 0.4 | Road shoulder |  |
+| 81.7 | TURN LEFT | Putnam Street | 0.3 | Street |  |
+| 82.0 | TURN LEFT | bike path | 0.1 | Bike path |  |
+| 82.1 | ARRIVE | The Saratoga Hilton |  | — | 534 Broadway, Saratoga Springs, NY |
+
+</details>
 
 ### Wednesday • Day 4: Saratoga Springs to Ticonderoga, NY
-*Champlain Canalway, Schuylerville, Lock 12 & Fort Ticonderoga (Skips Whitehall Trap)*
+*NY-29 to Schuylerville, Champlain Canalway (US-4 & towpaths), Whitehall, NY-22*
 
-- **Distance:** ~75.0 miles (120.7 km) &bull; **Climbing:** +2,500 ft
-- **Route Summary:**
-  - Ride east from Saratoga through the historic Revolutionary War battlefields to **Schuylerville**.
-  - Follow the **Champlain Canalway Trail** and rural Route 4 north through Fort Edward and Fort Ann.
-  - Arrive in **Whitehall, NY** (birthplace of the US Navy, Lock 12 Park) for crucial midday lunch.
-  - Push north on **NY-22** through rolling bluffs flanking South Bay and Lake Champlain directly to historic **Ticonderoga**.
-- **Surface:** 75% rural state highway with paved shoulders (US-4 & NY-22); 25% canal towpath.
-- **Why Ticonderoga Over Whitehall:** Whitehall has almost zero chain lodging. Finishing in Ticonderoga ensures high-quality lodging, hot showers, and full restaurant service.
-- **Lunch Stop (Mile 44):** **Whitehall, NY** – **Historic Grounds Restaurant & Coffee Bar** (142 Main St) overlooking Champlain Canal Lock 12.
-- **Overnight Lodging:**
-  - *Best Western Plus Ticonderoga Inn & Suites* (260 Burgoyne Rd, Ticonderoga, NY – Phone: 518-585-1800) – Tour favorite, spacious clean rooms, hot breakfast, cyclist friendly.
-- **Bike Shops:** *Rick's Bike Shop* (Queensbury detour) &bull; *Walker's Hardware* (Fort Ann).
-- **Rail Bailout:** Amtrak Adirondack at Fort Edward (Mile 24), Whitehall (Mile 44), and Ticonderoga Station (Mile 73). (Verify Mon–Thu schedule).
+- **Distance:** 75.9 mi (122.1 km) · **Climbing:** about +2,600 ft
+- **Surface:** Mostly US-4 and NY-22 road shoulders, plus about 9 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann (fine on 32 mm+ tires, slow when wet). The NY-22 section north of Whitehall is 23.5 mi of rolling road with few services. Unpaved per OpenStreetMap: about 7.5 mi (mi 11.7 to 12.5 compacted, mi 26.1 to 28.0 compacted, mi 28.1 to 30.4 compacted, mi 30.8 to 32.2 unpaved, mi 41.0 to 42.1 unpaved).
+- **GPX:** [`gpx/d4.gpx`](gpx/d4.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=43.08567,-73.78240&destination=43.85842,-73.42803&waypoints=43.09779,-73.58219|43.19697,-73.58082|43.28719,-73.56463|43.35220,-73.49625|43.41920,-73.46185|43.48789,-73.42982|43.61395,-73.43382|43.71920,-73.42528)
+- **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 49.9 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
+- **Lodging:** **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 75.9. On the south side of town, right on the route.
+- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 26.9 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
+- **Bailout:** Amtrak Adirondack stops at Fort Edward (mile 24.7), Whitehall (mile 50.2) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once a day and carry-on bikes need a reservation. Carry-on bike service is available only between New York and Rouses Point.
 
----
+<details><summary>Turn-by-turn cues</summary>
+
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.0 | DEPART ON | bike path | 0.2 | Bike path |  |
+| 0.2 | TURN LEFT | Lake Avenue (NY-29) | 2.2 | Road shoulder | NY-29 east toward Schuylerville. |
+| 2.4 | CONTINUE ONTO | Route 29 (NY-29) | 4.0 | Road shoulder |  |
+| 6.4 | TURN RIGHT | Bryant Bridge Road | 0.3 | Street |  |
+| 6.7 | TURN LEFT | Burgoyne Road | 4.3 | Street | Burgoyne Rd into Schuylerville. |
+| 11.0 | TURN RIGHT | Broad Street (US-4; NY-32) | 0.5 | Road shoulder |  |
+| 11.5 | TURN LEFT | Old Champlain Canal Towpath Trail | 0.9 | Bike path | Towpath: compacted surface. |
+| 12.4 | TURN RIGHT | County Road 42 (CR-42) | 0.4 | Road shoulder |  |
+| 12.8 | CONTINUE ONTO | Dix Bridge Road | 0.2 | Street |  |
+| 13.0 | TURN LEFT | bike path | 0.3 | Bike path |  |
+| 13.3 | TURN LEFT | CR 113 | 0.8 | Street |  |
+| 14.1 | TURN RIGHT | US 4 | 1.5 | Road shoulder |  |
+| 15.6 | TURN LEFT | Fort Miller Road | 1.0 | Street |  |
+| 16.6 | TURN LEFT | US 4 | 7.5 | Road shoulder |  |
+| 24.1 | TURN LEFT | Old Champlain Canal Path | 0.1 | Bike path |  |
+| 24.2 | CONTINUE ONTO | Canal Street | 0.8 | Street |  |
+| 25.0 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
+| 25.1 | TURN RIGHT | Old Champlain Canal Towpath | 0.2 | Street |  |
+| 25.3 | BEAR RIGHT | Towpath Road | 0.8 | Street |  |
+| 26.1 | CONTINUE ONTO | Old Champlain Canal Trail | 1.9 | Unpaved: compacted |  |
+| 28.0 | TURN RIGHT | Towpath Road | 2.4 | Unpaved: compacted |  |
+| 30.4 | TURN RIGHT | New Swamp Road | 0.2 | Street |  |
+| 30.6 | TURN LEFT | Champlain Canalway Trail | 4.4 | Bike path | Canalway trail: stone dust or gravel. |
+| 35.0 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
+| 35.2 | TURN RIGHT | Champlain Canalway Trail | 1.4 | Bike path |  |
+| 36.6 | CONTINUE ONTO | South Canal Street | 0.4 | Street |  |
+| 37.0 | CONTINUE ONTO | Clay Hill Road | 2.7 | Street |  |
+| 39.7 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
+| 39.9 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
+| 40.3 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
+| 42.0 | TURN LEFT | State Highway 22 (NY-22) | 1.0 | Road shoulder | NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall. |
+| 43.0 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
+| 49.1 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.8 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. |
+| 49.9 | LUNCH / RESUPPLY | Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route) | 0.7 | — | Historic Grounds (listed in earlier drafts) is CLOSED after a fire. |
+| 50.6 | CONTINUE ONTO | Broadway (NY-22) | 1.5 | Road shoulder |  |
+| 52.1 | CONTINUE ONTO | State Highway 22 (NY-22) | 23.5 | Road shoulder |  |
+| 75.6 | TURN LEFT | Mount Hope Avenue | 0.2 | Street | Into Ticonderoga; the hotel is just ahead. |
+| 75.8 | TURN RIGHT | Burgoyne Road | 0.1 | Street |  |
+| 75.9 | ARRIVE | Best Western Plus Ticonderoga Inn & Suites |  | — | 260 Burgoyne Rd, Ticonderoga, NY |
+
+</details>
 
 ### Thursday • Day 5: Ticonderoga to Plattsburgh, NY
-*Adirondack Coastline: Crown Point, Historic Essex & Ausable Chasm (Queen Stage)*
+*NY-9N/22 lakeshore: Crown Point, Port Henry, Westport, Essex, Willsboro, Keeseville, Ausable Chasm, US-9*
 
-- **Distance:** ~70.0 miles (112.7 km) &bull; **Climbing:** +4,000 ft *(Hardest climbing stage of tour)*
-- **Route Summary:**
-  - Ride north on NY-9N/NY-22 along the dramatic shoreline bluffs of Lake Champlain.
-  - Pass the historic ruins of Crown Point and the lakeside village of Port Henry.
-  - Ascend scenic rolling coastal ridges through Westport and arrive in historic **Essex, NY** (ferry crossing to Charlotte, VT).
-  - Continue north through Willsboro, Keeseville, and past the deep sandstone canyon of **Ausable Chasm**.
-  - Follow Route 9 along the lake shore directly into Plattsburgh.
-- **Surface:** 85% two-lane state highway (NY-9N / NY-22) with scenic lake vistas and paved shoulders; 15% local paths. Constant rolling Adirondack climbs.
-- **Lunch Stop (Mile 38):** **Historic Essex, NY** – **The Cup Cafe** or **Essex Ice Cream Cafe**. Porch dining overlooking the Lake Champlain ferry to Vermont. Crucial food and water resupply!
-- **Overnight Lodging:**
-  - *Best Western Plus Plattsburgh* (446 NY-3, Plattsburgh, NY – Phone: 518-561-7000).
-  - *Comfort Inn & Suites Plattsburgh* (411 Route 3, Plattsburgh, NY – Phone: 518-562-2730).
-- **Bike Shops:** *Maui North Ski, Bike & Board* (168 Margaret St, Plattsburgh – Phone: 518-563-7245).
-- **Rail Bailout:** Amtrak Adirondack at Westport (Mile 28) and Plattsburgh (Mile 70).
+- **Distance:** 72.5 mi (116.7 km) · **Climbing:** about +3,300 ft
+- **Surface:** Paved two-lane state highway (NY-9N/22, then US-9) almost the whole way, with the hilliest terrain of the tour between Westport and Keeseville.
+- **GPX:** [`gpx/d5.gpx`](gpx/d5.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=43.85842,-73.42803&destination=44.69752,-73.49191&waypoints=43.94611,-73.43161|44.05108,-73.45848|44.11364,-73.43304|44.22997,-73.46013|44.31011,-73.35177|44.38196,-73.42724|44.45415,-73.48748|44.60151,-73.43871)
+- **Lunch:** **Pink Pig Cafe**, 2750 Essex Rd, Essex, NY · (518) 962-8833 · mile 38.4. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.
+- **Lodging:** **Best Western Plus Plattsburgh**, 446 Route 3, Plattsburgh, NY · (518) 561-7750 · mile 72.5. On Route 3 by I-87 exit 37, about 2 mi west of downtown.
+- **Bike shops / supplies:** **Maui North Ski, Bike & Board**, 316 Cornelia St, Plattsburgh, NY · (518) 563-7245 · mile 71.7 (0.2 mi off route). Full-service shop on the route into town. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun 12 to 4.
+- **Bailout:** Amtrak Adirondack at Port Henry (mile 14.6), Westport (about 0.8 mi off the route near mile 25.6) and Plattsburgh (mile 70.3). Carry-on bikes need a reservation.
 
----
+<details><summary>Turn-by-turn cues</summary>
 
-### Friday • Day 6: Plattsburgh, NY to Saint-Jean-sur-Richelieu, QC (Canada)
-*US-9, Rouses Point, Canadian Border Crossing & QC-223 Along the Richelieu River*
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.0 | DEPART ON | Burgoyne Road | 0.8 | Street |  |
+| 0.8 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 5.5 | Road shoulder | NY-9N/22 north along the lake. |
+| 6.3 | TURN LEFT | Sugar Hill Road | 2.0 | Street |  |
+| 8.3 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 4.2 | Road shoulder |  |
+| 12.5 | CONTINUE ONTO | South Main Street (NY-9N; NY-22) | 2.5 | Road shoulder | Port Henry village. Stewart's #103 (4308 Main St) is the guaranteed food and water stop today. |
+| 15.0 | RESUPPLY | Stewart's #103, Port Henry | 0.8 | — | Reliable food and water. Essex options are limited in October. |
+| 15.8 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 9.6 | Road shoulder |  |
+| 25.4 | TURN RIGHT | Champlain Avenue (NY-22) | 1.0 | Road shoulder | In Westport, follow NY-22 north toward Essex. |
+| 26.4 | CONTINUE ONTO | State Highway 22 (NY-22) | 8.1 | Road shoulder |  |
+| 34.5 | CONTINUE ONTO | State Highway 9N (NY-22) | 1.3 | Road shoulder |  |
+| 35.8 | CONTINUE ONTO | Station Road (NY-22) | 1.1 | Road shoulder |  |
+| 36.9 | CONTINUE ONTO | Station Street (NY-22) | 1.5 | Road shoulder |  |
+| 38.4 | TURN RIGHT | Essex Road (NY-22) |  | Road shoulder | Into Essex. The ferry dock and Pink Pig Cafe are here. |
+| 38.4 | LUNCH (call ahead) | Pink Pig Cafe, Essex (by the ferry dock) | 6.0 | — | Fall hours are limited; the backup is Stewart's in Keeseville at mile 56. |
+| 44.4 | CONTINUE ONTO | State Highway 22 (NY-22) | 7.1 | Road shoulder |  |
+| 51.5 | TURN RIGHT | US 9; NY 22 | 4.4 | Road shoulder | US-9 north past Ausable Chasm toward Plattsburgh. |
+| 55.9 | RESUPPLY | Stewart's, Keeseville (0.2 mi off route) | 0.2 | — | Backup food stop. |
+| 56.1 | TURN RIGHT | Ausable Street (US-9) | 0.8 | Road shoulder |  |
+| 56.9 | CONTINUE ONTO | US 9 | 12.3 | Road shoulder |  |
+| 69.2 | TURN RIGHT | US Oval | 0.3 | Road shoulder |  |
+| 69.5 | TURN RIGHT | bike path | 0.3 | Bike path |  |
+| 69.8 | CONTINUE ONTO | Terry Gordon Bike Path | 0.2 | Bike path | Plattsburgh riverside path. |
+| 70.0 | BEAR LEFT | Hamilton Street | 0.3 | Street |  |
+| 70.3 | TURN LEFT | Broad Street | 1.3 | Street |  |
+| 71.6 | TURN LEFT | Cornelia Street (NY-3) | 0.9 | Road shoulder | NY-3 west about 2 mi to the hotel (446 Route 3). |
+| 72.5 | ARRIVE | Best Western Plus Plattsburgh |  | — | 446 Route 3, Plattsburgh, NY |
 
-- **Distance:** ~50.0 miles (80.5 km) &bull; **Climbing:** +800 ft *(Flat, relaxed, and stress-free)*
-- **Route Summary:**
-  - Ride flat Route 9 north through Chazy apple country into **Rouses Point, NY** (Mile 24).
-  - **U.S. / Canada International Border:** Clear Canadian customs at the Lacolle border station. Bicycles enter directly through the primary vehicle inspection booths.
-  - Enter Quebec and join **QC-223 North (Chemin du Richelieu)**.
-  - Enjoy a flat, scenic ride along the tranquil west bank of the historic Richelieu River past stone farmhouses, apple orchards, and French-Canadian hamlets.
-  - Roll into **Saint-Jean-sur-Richelieu** (Mile 50) with hours of afternoon daylight to spare.
-- **Surface:** 70% flat paved country roads (US-9 & QC-223), 30% designated cycle lanes.
-- **Lunch Stop (Mile 24):** **Rouses Point, NY** – **Lakeside Bakery & Cafe**. Last American stop before crossing into Canada!
-- **Overnight Lodging:**
-  - *Quality Hotel Centre de Congrès* (725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC – Phone: +1 450-515-5755) – Full hotel with indoor pool, on-site restaurant, and secure bike storage.
-  - *Auberge Harris* (576 Rue Champlain, Saint-Jean-sur-Richelieu, QC – Phone: +1 450-348-4408) – Certified "Bienvenue Cyclistes" riverside inn.
-- **Dinner Recommendation:** **Bistro La Trinquette** (155 Rue Richelieu) – Waterfront patio, savory buckwheat galettes, local Quebec craft cider, poutine.
-- **Bike Shops:** *Performance Bégin* (470 Rue Saint-Jacques, Saint-Jean – Phone: 450-348-3561).
-- **Rail / Transit Bailout:** Amtrak Adirondack at Rouses Point, NY (Mile 24 - final roll-on station); Exo public bus network in Saint-Jean connecting to Montreal.
+</details>
 
----
+### Friday • Day 6: Plattsburgh, NY to Saint-Jean-sur-Richelieu, QC
+*US-9, NY-9B to Rouses Point, border at US-11 / Route 223, Richelieu River*
 
-### Saturday • Day 7: Saint-Jean to Downtown Montréal (Victory Lap!)
-*Chambly Canal National Historic Site, Route Verte Greenway & Old Port Celebration*
+- **Distance:** 54.7 mi (88.0 km) · **Climbing:** about +300 ft
+- **Surface:** Flat, paved country roads: US-9, NY-9B and Route 223, with a short path in Plattsburgh.
+- **GPX:** [`gpx/d6.gpx`](gpx/d6.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=44.69752,-73.49191&destination=45.32533,-73.26641&waypoints=44.69658,-73.44970|44.82807,-73.43243|44.93359,-73.42900|44.98320,-73.36294|45.05612,-73.35767|45.10106,-73.30918|45.18570,-73.27173|45.28950,-73.26801)
+- **Lunch:** **Lakeside Coffee Roasters**, 109 Lake St, Rouses Point, NY · (518) 297-5600 · mile 28.1. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe & Bakery listed in earlier drafts closed in Oct 2025.
+- **Lodging:** **Quality Hotel Centre de Congrès**, 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC · +1 (450) 300-5177 · mile 54.7. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815. / **Auberge Harris**, 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC · +1 (450) 348-3821 · mile 54.4. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.
+- **Bike shops / supplies:** **Cycle LM**, 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC · mile 54.7 (2.4 mi off route). Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.
+- **Bailout:** Amtrak Adirondack at Rouses Point (mile 28.3): the last station where carry-on bikes are accepted. Southbound train 68 departs 2:15 PM (Sun and Tue to Sat; there is NO Monday service north of Saratoga). In Quebec, exo buses serve Saint-Jean to Montréal; check bike rules with exo.
 
-- **Distance:** ~37.0 miles (59.5 km) &bull; **Climbing:** +600 ft *(100% flat celebration spin)*
-- **Route Summary:**
-  - Depart downtown Saint-Jean and immediately join the **Chambly Canal National Historic Site Path**.
-  - Enjoy 20 km (12.5 miles) of traffic-free, flat canal towpath flanking historic locks, swing bridges, and waterways all the way to **Fort Chambly**.
-  - Follow the **Route Verte** cycle path network west across the Monteregie through Saint-Hubert and Longueuil.
-  - **St. Lawrence River Crossing:** Cross the grand St. Lawrence River via the dedicated multi-use bridge pathway (Jacques-Cartier Bridge or Champlain Bridge multi-use path) into Île Notre-Dame / Île Sainte-Hélène.
-  - Roll along the historic Lachine Canal trail directly into **Place Jacques-Cartier and Old Port Montréal**!
-  - Arrive by 12:00 PM for celebratory poutine, French pastries, and victory craft beers.
-- **Surface:** 85% car-free paved and crushed gravel towpaths / multi-use paths; 15% dedicated urban cycle tracks.
-- **Midday Stop (Mile 12):** **Chambly Basin** – **Fourquet Fourchette** or cafes overlooking the historic stone rapids of Fort Chambly.
-- **Arrival Lodging:**
-  - *Hotel Monville* (1041 Rue de Bleury, Montréal, QC – Phone: +1 514-379-2000) – Certified "Bienvenue Cyclistes", modern boutique design with secure bike storage, steps from Old Montréal.
-  - *Fairmont The Queen Elizabeth* (900 René-Lévesque Blvd W, Montréal, QC – Phone: +1 514-861-3511) – Directly connected to Gare Centrale.
-- **Bike Shops & Transit Boxes:**
-  - *Bicycles Quilicot* (1775 Rue Saint-Denis – Phone: 514-499-9600) – Sells cardboard airline/bus transit bike boxes and packing supplies.
-  - *MEC Montréal* (4394 Rue Saint-Denis – Phone: 514-788-5878).
-- **Bailout / Early Metro:** Longueuil–Université-de-Sherbrooke Metro Station (Yellow Line - bikes allowed during non-peak hours, rolls under the river in 4 minutes to Berri-UQAM).
+<details><summary>Turn-by-turn cues</summary>
 
----
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.1 | DEPART ON | State Route 3 (NY-3) | 0.8 | Road shoulder |  |
+| 0.9 | TURN RIGHT | Broad Street | 1.3 | Street |  |
+| 2.2 | TURN LEFT | Hamilton Street | 0.3 | Street |  |
+| 2.5 | BEAR RIGHT | Terry Gordon Bike Path | 1.4 | Bike path |  |
+| 3.9 | BEAR LEFT | Hamilton Street | 0.2 | Street |  |
+| 4.1 | TURN RIGHT | Peru Street (US-9) | 0.2 | Road shoulder |  |
+| 4.3 | TURN LEFT | Bridge Street (US-9) | 0.1 | Road shoulder |  |
+| 4.4 | TURN RIGHT | City Hall Place (US-9) | 0.2 | Road shoulder |  |
+| 4.6 | BEAR RIGHT | Miller Street | 1.4 | Street |  |
+| 6.0 | CONTINUE ONTO | North Margaret Street (US-9) | 1.8 | Road shoulder | US-9 north out of Plattsburgh. |
+| 7.8 | CONTINUE ONTO | US 9 | 10.6 | Road shoulder |  |
+| 18.4 | CONTINUE ONTO | US 9; CR 23 | 3.0 | Road shoulder |  |
+| 21.4 | TURN RIGHT | Lake Street (NY-9B) | 6.7 | Road shoulder | At mile 21.4: NY-9B (Lake St) north to Rouses Point. (Earlier drafts wrongly said stay on US-9, which goes to Champlain instead.) |
+| 28.1 | LUNCH | Lakeside Coffee Roasters, 109 Lake St, Rouses Point | 1.3 | — | Last US cafe: closes early afternoon and is closed Mondays. |
+| 29.4 | BORDER | Rouses Point–Lacolle 223 crossing (US-11 / Route 223) | 0.2 | — | Open 8 AM to 8 PM daily on both sides (not 24 hours). Stop at the car booth with your passport, EDL or NEXUS card. No cannabis. Declare any food. |
+| 29.6 | BEAR RIGHT | Route 223 | 4.3 | Road shoulder | CANADA. Route 223 north along the west bank of the Richelieu. |
+| 33.9 | CONTINUE ONTO | Rue Principale (Route 223) | 9.2 | Road shoulder |  |
+| 43.1 | CONTINUE ONTO | Route 223 | 3.6 | Road shoulder |  |
+| 46.7 | CONTINUE ONTO | Rue Jacques-Cartier Sud (Route 223) | 1.8 | Road shoulder |  |
+| 48.5 | CONTINUE ONTO | Boulevard du Séminaire Sud (Route 223) | 3.4 | Road shoulder | Into Saint-Jean-sur-Richelieu. |
+| 51.9 | TURN LEFT | Boulevard du Séminaire Nord (Route 223) | 0.2 | Road shoulder |  |
+| 52.1 | TURN RIGHT | Rue Saint-Georges | 0.2 | Street |  |
+| 52.3 | TURN RIGHT | Rue Saint-Jacques | 0.6 | Street |  |
+| 52.9 | TURN LEFT | Rue Champlain | 1.6 | Street | Riverfront; the canal path starts here. |
+| 54.5 | TURN LEFT | Rue MacDonald | 0.2 | Street |  |
+| 54.7 | ARRIVE | Quality Hotel Centre de Congrès |  | — | 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC |
 
-## Critical Real-World Advisories & Border Logistics
+</details>
 
-### 1. Amtrak Adirondack Return Rule (Cannot Roll On in Montréal!)
-> [!WARNING]
-> **Roll-on bicycle service on the Amtrak Adirondack (Train 68/69) ENDS AT ROUSES POINT, NY.**
-> You **CANNOT roll an unboxed bicycle onto the train at Montreal Gare Centrale**. Amtrak's roll-on service uses coach carry-on racks (strictly 4–6 slots per train, advance booking mandatory) and is not available north of the border.
->
-> **Three Viable Return Options:**
-> 1. **Pedal 48 mi South:** On Sunday or Monday, ride 48 flat miles south from Montréal back to Rouses Point, NY and board the Amtrak Adirondack at 11:30 AM with your pre-booked roll-on bike reservation.
-> 2. **Box Bike in Montréal:** Buy a cardboard bike box from *Bicycles Quilicot* or *MEC Montréal*, pack your disassembled bike, and check it as checked baggage or cargo on VIA Rail, bus (Trailways/Adirondack), or flight from Montreal Pierre Elliott Trudeau Airport (YUL).
-> 3. **One-Way Rental Vehicle:** Rent a minivan or SUV from downtown Montréal or YUL airport (Enterprise, Avis, Hertz) and drive back to NYC.
+### Saturday • Day 7: Saint-Jean-sur-Richelieu to Old Montréal
+*Chambly Canal path, Chambly, Route Verte to Longueuil, Jacques-Cartier Bridge, Île Sainte-Hélène, Pont de la Concorde, Old Port*
 
-### 2. Border Clearance Protocols
-- **Documents:** Valid Passport, Enhanced Driver's License (EDL), or NEXUS card. *(Note: Canada does not enforce a 6-month validity rule, but ID must be valid for your stay).*
-- **Bear Spray vs. Human Pepper Spray:** Animal deterrent spray clearly labeled "Bear Spray" is allowed for wilderness use. **Human defensive pepper spray is an illegal weapon under the Canadian Criminal Code** and will be confiscated (can result in fines or detention).
-- **Cannabis Prohibition:** Cross-border transport of cannabis in any form is illegal under both U.S. and Canadian federal laws. Zero tolerance.
-- **Bike Serial Number Photo:** Take a smartphone photo of your bike serial number (under the bottom bracket) and purchase receipt before leaving NYC to show US CBP upon your return.
+- **Distance:** 35.8 mi (57.6 km) · **Climbing:** about +300 ft
+- **Surface:** The Chambly Canal path is a mix of asphalt and fine gravel. OpenStreetMap has no mapped path for about 4 mi in the middle, so the GPX uses Rue Jean-Talon (Route 223) right beside the canal there; if the towpath is open on the ground, ride it. After that it's bike paths and street bike lanes through Chambly, Saint-Hubert and Longueuil, then the Jacques-Cartier Bridge bike path.
+- **GPX:** [`gpx/d7.gpx`](gpx/d7.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=45.32533,-73.26641&destination=45.50794,-73.55296&waypoints=45.32476,-73.26282|45.35291,-73.26787|45.39654,-73.25770|45.44317,-73.27135|45.45264,-73.31047|45.48247,-73.41991|45.52486,-73.51958|45.50888,-73.53279)
+- **Lunch:** **Boulangerie du Vieux-Chambly**, 2403 Av. Bourgogne, Chambly, QC · +1 (450) 447-9991 · mile 13.8 (0.2 mi off route). Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.
+- **Lodging:** **Hôtel Monville**, 1041 Rue de Bleury, Montréal, QC · +1 (514) 379-2000 · mile 35.5 (0.4 mi off route). Downtown, about 0.5 mi from Place Jacques-Cartier. Ask about bike storage when booking. / **Fairmont The Queen Elizabeth**, 900 Boul. René-Lévesque O, Montréal, QC · +1 (514) 861-3511 · mile 35.3 (0.7 mi off route). Above Gare Centrale. Unboxed bikes still cannot board Amtrak here.
+- **Bike shops / supplies:** **Ça Roule Montréal / Montreal on Wheels**, 27 Rue de la Commune E, Montréal, QC · +1 (514) 866-0633 · mile 35.6. Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily. / **Bicycles Quilicot (Villeray)**, 7341 Rue Saint-Denis, Montréal, QC · +1 (514) 303-4118 · mile 35.8 (3.8 mi off route). Full shop, 4 mi north of downtown. Call ahead to confirm bike boxes are available. / **MEC Montréal (Marché Central)**, 8989 Boul. de l'Acadie, Montréal, QC · +1 (514) 788-5878. Outdoor store with bike service. Earlier drafts gave a Saint-Denis address; that is wrong.
+- **Bailout:** Longueuil–Université-de-Sherbrooke Metro (Yellow Line) is on the route at mile 28.8; bikes are allowed outside weekday rush hours. Otherwise, use a taxi or van.
 
----
+<details><summary>Turn-by-turn cues</summary>
 
-## Alternative 7-Day Split: Option A (Hudson Valley Split)
+| Mile | Action | Road / place | Leg | Surface | Notes |
+|:---|:---|:---|:---|:---|:---|
+| 0.0 | DEPART ON | Rue MacDonald | 0.1 | Street |  |
+| 0.1 | TURN RIGHT | Rue Champlain | 1.4 | Street |  |
+| 1.5 | CONTINUE ONTO | Piste du Canal de Chambly | 0.6 | Bike path | Chambly Canal path along the canal (asphalt or fine gravel). |
+| 2.1 | TURN RIGHT | bike path | 0.2 | Bike path |  |
+| 2.3 | TURN RIGHT | Piste du Canal de Chambly | 2.1 | Bike path |  |
+| 4.4 | TURN RIGHT | Rue Sainte-Thérèse | 0.2 | Street |  |
+| 4.6 | TURN RIGHT | Rue Baillargeon | 0.9 | Street |  |
+| 5.5 | TURN LEFT | Rue Sainte-Thérèse | 0.2 | Street |  |
+| 5.7 | TURN RIGHT | Rue Jean-Talon (Route 223) | 1.6 | Road shoulder | GPX follows Route 223 beside the canal here because the path is unmapped in OpenStreetMap. If the towpath is open, ride it: it runs parallel. |
+| 7.3 | TURN LEFT | Rue Massé | 0.3 | Street |  |
+| 7.6 | TURN LEFT | Rue Jean-Talon (Route 223) | 0.9 | Road shoulder |  |
+| 8.5 | TURN LEFT | Rue Sainte-Thérèse | 0.2 | Street |  |
+| 8.7 | BEAR LEFT | Piste du Canal de Chambly | 1.7 | Bike path |  |
+| 10.4 | TURN RIGHT | Rue Auclair | 0.2 | Street |  |
+| 10.6 | TURN RIGHT | Piste du Canal de Chambly | 3.1 | Bike path |  |
+| 13.7 | TURN LEFT | Rue Saint-Georges | 0.1 | Street |  |
+| 13.8 | LUNCH | Boulangerie du Vieux-Chambly, 2403 Av. Bourgogne (0.2 mi off route) | 0.1 | — | Bakery and cafe right on the route. |
+| 13.9 | TURN LEFT | Avenue Bourgogne | 1.4 | Street | Chambly: Fort Chambly and the Boulangerie du Vieux-Chambly. |
+| 15.3 | TURN RIGHT | Avenue De Salaberry | 0.2 | Street |  |
+| 15.5 | TURN RIGHT | Boulevard De Périgny | 1.0 | Street |  |
+| 16.5 | TURN RIGHT | Montée du Chemin-de-Chambly | 3.7 | Street | Separated bike path beside the road. |
+| 20.2 | CONTINUE ONTO | Boulevard Kimber | 1.3 | Street |  |
+| 21.5 | CONTINUE ONTO | Boulevard Maricourt | 2.0 | Street |  |
+| 23.5 | TURN LEFT | Route verte 1 | 2.5 | Bike path | Route Verte bike path into Longueuil. |
+| 26.0 | TURN LEFT | Rue Cartier | 1.5 | Street |  |
+| 27.5 | TURN LEFT | Rue Marquette | 1.3 | Street |  |
+| 28.8 | TURN RIGHT | Rue Saint-Charles Ouest | 0.3 | Street |  |
+| 29.1 | TURN LEFT | Boulevard La Fayette | 0.3 | Street |  |
+| 29.4 | TURN LEFT | Boulevard Taschereau | 0.3 | Street |  |
+| 29.7 | CONTINUE ONTO | Pont Jacques-Cartier | 0.9 | Bike path | Jacques-Cartier Bridge bike path (open spring to late fall). |
+| 30.6 | BEAR RIGHT | Chemin du Tour-de-l'Isle | 0.1 | Street | Ramp down to Île Sainte-Hélène (Parc Jean-Drapeau). |
+| 30.7 | TURN LEFT | bike path | 0.4 | Bike path |  |
+| 31.1 | TURN RIGHT | Rue des Seagulls | 0.1 | Street |  |
+| 31.2 | TURN RIGHT | Chemin Macdonald | 0.4 | Street |  |
+| 31.6 | TURN RIGHT | bike path | 0.1 | Bike path |  |
+| 31.7 | TURN RIGHT | Pont de la Concorde | 1.3 | Bike path | Concorde Bridge to Cité du Havre. |
+| 33.0 | TURN RIGHT | bike path | 1.4 | Bike path |  |
+| 34.4 | BEAR LEFT | Rue Riverside | 0.1 | Street |  |
+| 34.5 | TURN RIGHT | Rue Mill | 1.1 | Street |  |
+| 35.6 | TURN RIGHT | Rue de la Commune Est | 0.2 | Street | Old Port waterfront. Place Jacques-Cartier is just ahead. |
+| 35.8 | ARRIVE | Place Jacques-Cartier, Old Montréal |  | — | Finish. Hôtel Monville is 0.5 mi west. |
 
-For riders who prefer shorter days in the Hudson Valley earlier in the week:
-- **Day 1:** Battery Park to Brewster / Carmel (~60 mi)
-- **Day 2:** Brewster to Rhinebeck / Kingston (~60 mi via Maybrook & Dutchess Rail Trails)
-- **Day 3:** Rhinebeck to Albany / Troy (~55 mi via Hudson & AHET)
-- **Day 4:** Troy to Saratoga Springs (~45 mi via Champlain Canal & Zim Smith)
-- **Day 5:** Saratoga Springs to Ticonderoga (~75 mi)
-- **Day 6:** Ticonderoga to Plattsburgh (~70 mi)
-- **Day 7:** Plattsburgh to Montréal (~87 mi)
-*Note: Option B (stopping in Saint-Jean-sur-Richelieu on Day 6) remains the primary recommendation because it solves the cold October daylight and customs crunch on the final leg.*
+</details>

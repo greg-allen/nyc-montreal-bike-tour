@@ -1,69 +1,51 @@
-# NYC to Montréal Multi-Day Bicycle Tour Guides
+# NYC to Montréal bike tour (Oct 4, 2026)
 
-Comprehensive logistics, cue sheets, and interactive mapping for cycling from New York City (Battery Park / Central Park) to Montréal, Canada, along the **Empire State Trail**, **Lake Champlain Coast**, and Québec’s **Route Verte (#1 & #2)**.
+Hotel-to-hotel tour from Battery Park to Old Montréal on the Empire State Trail, the Lake Champlain shore, the Richelieu River and the Chambly Canal.
 
----
+| Itinerary | Days | Total | Climb (est.) | Daily miles |
+|:---|:---|:---|:---|:---|
+| 7-Day Tour (Sunday to Saturday) | 7 | 478.1 mi | +12,100 ft | 67.5, 89.6, 82.1, 75.9, 72.5, 54.7, 35.8 |
+| 6-Day Tour (Sunday to Friday) | 6 | 475.5 mi | +12,100 ft | 67.5, 89.6, 82.1, 75.9, 72.5, 87.9 |
+| 5-Day Fast Tour | 5 | 452.3 mi | +11,000 ft | 103.1, 95.9, 92.9, 72.5, 87.9 |
 
-## Three Field-Audited Itinerary Options Included
+Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: 60.7 + 75.4 mi.
 
-### 1. 7-Day Gentler Tour (Sunday to Saturday) — Recommended for October Daylight
-* **Total Distance & Climbing:** ~445 miles (716 km) &bull; +14,900 ft
-* **Average Daily Mileage:** ~63.6 miles (102 km) / day
-* **Pace:** Comfortable Leisure Touring (11–13 mph) &bull; *Safest margin for October sunset (~6:25 PM)*
-* **Schedule:**
-  * Sunday (Day 1): NYC to Brewster / Carmel, NY (~60 mi • +2,000 ft)
-  * Monday (Day 2): Brewster to Hudson, NY (~78 mi • +3,000 ft)
-  * Tuesday (Day 3): Hudson to Saratoga Springs, NY (~75 mi • +2,000 ft)
-  * Wednesday (Day 4): Saratoga Springs to Ticonderoga, NY (~75 mi • +2,500 ft)
-  * Thursday (Day 5): Ticonderoga to Plattsburgh, NY (~70 mi • +4,000 ft)
-  * Friday (Day 6): Plattsburgh to Saint-Jean-sur-Richelieu, QC (~50 mi • +800 ft) &bull; *Relaxed border crossing day with time for customs!*
-  * Saturday (Day 7): Saint-Jean to Old Montréal (~37 mi • +600 ft) &bull; *Joyful flat victory lap on Chambly Canal arriving for lunch!*
+## Files
+- `index.html`: the app. It works offline once loaded (libraries are bundled and a service worker caches the app), **except the background map tiles**, so download offline maps in your GPS or phone app.
+- `gpx/`: **one GPX per day. Use these on bike computers.** Also `gpx/return_montreal_to_rouses_point.gpx` and `gpx/vt_sandbar_bypass.gpx`.
+- `nyc_to_montreal_*.gpx` / `.kml`: combined files per itinerary (KML for Google My Maps).
+- `nyc_to_montreal_7_day_tour.md`, `nyc_to_montreal_bike_tour_guide.md` (6-day), `nyc_to_montreal_5_day_fast_tour.md`, `nyc_to_montreal_vermont_upgrade.md`: printable guides with full cue tables.
+- `jersey_cue_card.html`: pocket cue card.
+- `AUDIT.md`: what was checked and corrected, and what is still unverified.
+- `tools/`: `build.py` regenerates all data files from `tools/content.py` and `data/routes.json`.
 
-### 2. 6-Day Classic Tour (Sunday to Friday)
-* **Total Distance & Climbing:** ~445 miles (716 km) &bull; +14,500 ft
-* **Average Daily Mileage:** ~74.2 miles (119 km) / day
-* **Pace:** Steady Endurance Touring (12–14 mph)
-* **Schedule:**
-  * Sunday (Day 1): NYC to Brewster / Carmel, NY (~60 mi • +2,000 ft)
-  * Monday (Day 2): Brewster to Hudson, NY (~78 mi • +3,000 ft)
-  * Tuesday (Day 3): Hudson to Saratoga Springs, NY (~75 mi • +2,000 ft)
-  * Wednesday (Day 4): Saratoga Springs to Ticonderoga, NY (~75 mi • +2,500 ft) &bull; *Skips weak Whitehall lodging directly to full-service Fort Ti!*
-  * Thursday (Day 5): Ticonderoga to Plattsburgh, NY (~70 mi • +4,000 ft) &bull; *Hardest day: rolling Adirondack lake bluffs!*
-  * Friday (Day 6): Plattsburgh to Montréal, QC (~87 mi • +1,200 ft) &bull; *Flat, fast arrival via Chambly Canal into Old Port!*
+## Critical logistics (read before booking)
 
-### 3. 5-Day Fast Tour (Honest Edition)
-* **Total Distance & Climbing:** ~425 miles (684 km) &bull; +13,000 ft
-* **Average Daily Mileage:** ~85.0 miles (137 km) / day
-* **Pace:** High-Tempo Endurance (14–17 mph) &bull; *For athletic club cyclists on lightweight setups only.*
-* **Schedule:**
-  * Day 1: NYC to Poughkeepsie / Highland (~95 mi • +3,000 ft) &bull; *⚡ Push to Kingston (+30 mi &rarr; 125 mi)*
-  * Day 2: Poughkeepsie to Troy via AHET (~85 mi • +2,500 ft) &bull; *⚡ Push to Saratoga Springs (+20 mi &rarr; 105 mi)*
-  * Day 3: Troy to Ticonderoga (~87 mi • +2,500 ft) &bull; *⚡ Push to Essex / Westport (+18 mi &rarr; 105 mi)*
-  * Day 4: Ticonderoga to Plattsburgh (~70 mi • +4,000 ft) &bull; *⚡ Push to Saint-Jean, QC (+50 mi &rarr; 120 mi extreme push)*
-  * Day 5: Plattsburgh to Montréal (~88 mi • +1,200 ft) &bull; *(Or 37 mi victory cruise if Day 4 pushed to St-Jean)*
+### 1. Getting home: Amtrak won't take an unboxed bike from Montréal
+- The **Amtrak Adirondack** carries bikes on a coach rack **only between New York and Rouses Point, NY**. You cannot roll a bike onto the train in Montréal. Bike spots are limited and need a reservation.
+- **Southbound train 68 leaves Montréal 11:10 AM and Rouses Point 2:15 PM, arriving New York 10:15 PM.** It runs **Sun and Tue to Sat. On Mondays it starts at Saratoga Springs**, so there's **no Monday train from Rouses Point** (Mon Oct 12 is Indigenous Peoples' / Columbus Day). *(Amtrak timetable dated Sep 27, 2026; recheck when booking.)*
+- Northbound train 69 runs **daily** all the way to Montréal. Earlier drafts said Mon to Thu only; that was wrong.
+- **Return options:**
+  1. **Ride back to Rouses Point** (59.8 mi from Place Jacques-Cartier, file `gpx/return_montreal_to_rouses_point.gpx`). To make the 2:15 PM train, you'd need to leave Montréal by about 7:30 AM. A gentler version: take a half day to Saint-Jean-sur-Richelieu (35 mi), sleep there, then ride 25 flat miles to Rouses Point the next morning. You clear US customs on your bike at the Rouses Point–Lacolle 223 crossing.
+  2. **Box the bikes** in Montréal and take a bus or flight. Call shops ahead to reserve boxes (Ça Roule in Old Montréal, Bicycles Quilicot, MEC).
+  3. **One-way rental van or SUV** from Montréal to NYC.
 
-### 4. Alternative Route Variant
-* **Vermont Upgrade Variant:** At Essex, NY (Day 5), take the Charlotte–Essex Ferry into Vermont, ride Burlington, and traverse the famous Island Line railway causeway and Champlain Islands before rejoining the main route at Rouses Point, NY.
+### 2. The border (Rouses Point, NY ➔ Lacolle, QC on US-11 / Route 223)
+- **Hours: 8 AM to 8 PM daily, on both the US and Canadian sides** (cut from 24 hours in January 2025). Cyclists use the regular car booths. The only nearby 24-hour crossing is the I-87 / A-15 freeway, where bikes aren't allowed, so **plan to reach the border well before 8 PM**, including on the ride back to Rouses Point.
+- Phones: CBSA Border Information Service 1-800-959-2036; US CBP Rouses Point (518) 297-2441.
+- Bring a **passport, passport card, Enhanced Driver's License or NEXUS card** (Canada has no 6-month validity rule).
+- **No cannabis** in either direction: that's a federal offense in both countries. **Pepper spray made for use on people is a prohibited weapon in Canada.** Animal-deterrent sprays are handled differently, but simplest is to leave all sprays at home.
+- Coming back into the US with a valuable bike: carry a photo of the serial number and receipt. Optionally, register it on CBP Form 4457 before you leave.
 
----
+### 3. October daylight
+- Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 82.1 and 75.9 mi) and carry real lights.
+- Wet leaves on rail trails are slippery: brake before turns and corners.
 
-## Critical Rail & Border Notices
+### 4. Food and water gaps
+- **Day 4:** Whitehall's Historic Grounds cafe is **closed** after a fire. Use **Stewart's, 60 Poultney St**. After Whitehall, NY-22 has 23.5 mi of rolling road with almost nothing.
+- **Day 5:** Essex options are thin in October (Pink Pig Cafe has limited fall hours, and the ice-cream cafe is summer-only). **Stewart's in Port Henry** (mile 15) and **Keeseville** (mile 56) are the reliable stops.
+- **Sundays and Mondays:** many small bike shops are closed (for example, Yorktown Cycles is closed Sun and Mon). Carry tubes, a plug kit, a quick-link, a pump and a multitool.
 
-* **Amtrak Adirondack Bike Service Ends at Rouses Point, NY:** Carry-on bicycle service is available **only between NYC and Rouses Point, NY**. You **cannot** roll an unboxed bicycle onto the train at Montreal Gare Centrale. Return options: ride 48 mi south to Rouses Point, box the bike for air/bus, or rent a one-way car.
-* **Border ID:** Valid Passport, Enhanced Driver's License (EDL), or NEXUS. (No 6-month passport validity required for Canada).
-* **Zero Cannabis:** Transporting cannabis across the international border in either direction is illegal under federal law.
-* **Bear Spray:** Labeled animal deterrent is allowed; human defense pepper spray is strictly prohibited under the Canadian Criminal Code.
-
----
-
-## Deliverables in This Project
-
-1. **`index.html`** &ndash; Interactive Web Dashboard with 4-mode schedule switcher (7-Day Gentler, 6-Day Classic, 5-Day Fast, Compare All), live Open-Meteo weather tracking, risk scores, and turn-by-turn links.
-2. **`nyc_to_montreal_7_day_tour.md`** &ndash; Complete standalone master guide for the 7-Day Gentler Tour with October daylight advice.
-3. **`nyc_to_montreal_bike_tour_guide.md`** &ndash; Master guide with revised 6-day itinerary, turn cues, hotels, bike shops, and contingencies.
-4. **`nyc_to_montreal_5_day_fast_tour.md`** &ndash; Standalone guide for the 5-Day Fast Tour and acceleration checkpoints.
-5. **`nyc_to_montreal_7day_tour.gpx` & `nyc_to_montreal_7day_tour.kml`** &ndash; Turn-by-turn GPS files for the 7-Day Tour.
-6. **`nyc_to_montreal_tour.gpx` & `nyc_to_montreal_5day_tour.gpx`** &ndash; Compliant GPX 1.1 tracks + waypoints for Garmin Edge, Wahoo ELEMNT, and Hammerhead.
-7. **`nyc_to_montreal_tour.kml` & `nyc_to_montreal_5day_tour.kml`** &ndash; KML files for Google My Maps.
-8. **`jersey_cue_card.html`** &ndash; Standalone 2-sided printable vintage Brevet cue card sized for rear jersey pockets (printable at `/jersey_cue_card.html` with 7-Day, 6-Day, and 5-Day switcher).
-9. **`app.js` & `route_data.js`** &ndash; Full client-side application logic and coordinate datasets.
+### 5. Lodging
+- Early October is peak foliage in the Adirondacks and on Lake Champlain. Book early and ask each hotel about indoor bike storage. **The Barlow Hotel in Hudson is now the Hudson Whaler (518-217-4334).**
