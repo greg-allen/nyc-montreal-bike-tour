@@ -1,6 +1,6 @@
 # NYC to Montréal: 7-Day Tour (Sunday to Saturday)
 
-**460.6 mi (741 km) · about +11,200 ft · average 65.8 mi/day · Comfortable touring (11 to 13 mph rolling)**
+**461.4 mi (743 km) · about +11,400 ft · average 65.9 mi/day · Comfortable touring (11 to 13 mph rolling)**
 
 Recommended. The border day and the Montréal arrival are split, so the last two days are short and flat.
 
@@ -11,13 +11,13 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 |:---|:---|:---|:---|:---|:---|:---|
 | 1 | Sun Oct 4 | NYC → Brewster | 67.5 | +2,100 | Trailside Cafe (mi 47) | Heidi's Inn |
 | 2 | Mon Oct 5 | Brewster → Hudson | 89.6 | +1,900 | Bread Alone Bakery & Cafe (mi 60) | Hudson Whaler Hotel (formerly The Barlow) |
-| 3 | Tue Oct 6 | Hudson → Schuylerville | 75.9 | +1,200 | Don & Paul's Coffee Shoppe (mi 52) | Dovegate Inn |
-| 4 | Wed Oct 7 | Schuylerville → Ticonderoga | 64.6 | +2,100 | Stewart's Shops #211 (mi 39) | Best Western Plus Ticonderoga Inn & Suites |
+| 3 | Tue Oct 6 | Hudson → Schuylerville | 76.9 | +1,300 | Don & Paul's Coffee Shoppe (mi 52) | Dovegate Inn |
+| 4 | Wed Oct 7 | Schuylerville → Ticonderoga | 64.4 | +2,200 | Stewart's Shops #211 (mi 38) | Best Western Plus Ticonderoga Inn & Suites |
 | 5 | Thu Oct 8 | Ticonderoga → Plattsburgh | 72.5 | +3,300 | Pink Pig Cafe (mi 38) | Best Western Plus Plattsburgh |
 | 6 | Fri Oct 9 | Plattsburgh → Saint-Jean | 54.7 | +300 | Lakeside Coffee Roasters (mi 28) | Quality Hotel Centre de Congrès |
 | 7 | Sat Oct 10 | Saint-Jean → Montréal | 35.8 | +300 | Boulangerie du Vieux-Chambly (mi 14) | Hôtel Monville |
 
-**Why 7 days:** the 6-day plan's last day is 87.9 mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a 35.8-mi Saturday finish along the Chambly Canal. Days 2 to 4 are still long (65 to 90 mi): start early.
+**Why 7 days:** the 6-day plan's last day is 87.9 mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a 35.8-mi Saturday finish along the Chambly Canal. Days 2 and 3 are still long (90 and 77 mi): start early.
 
 ## Critical logistics (read before booking)
 
@@ -39,7 +39,7 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 75.9 and 64.6 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are 89.6 and 76.9 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -176,13 +176,13 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 ### Tuesday • Day 3: Hudson to Schuylerville, NY
 *Albany-Hudson Electric Trail, Dunn Bridge, Mohawk-Hudson Trail, Champlain Canalway Trail (Waterford, Mechanicville, Stillwater)*
 
-- **Distance:** 75.9 mi (122.1 km) · **Climbing:** about +1,200 ft
-- **Surface:** Mostly paved trail and canal paths: AHET, Mohawk-Hudson Bike-Hike Trail, and Champlain Canalway Trail via Waterford, Mechanicville, and Stillwater into Schuylerville. Stays 100% on the official Empire State Trail without highway detours.
-- **GPX:** [`gpx/d3.gpx`](gpx/d3.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.24874,-73.78510&destination=43.09993,-73.58131&waypoints=42.33762,-73.74604|42.41624,-73.67953|42.53290,-73.60786|42.58954,-73.69689|42.64958,-73.74662|42.70239,-73.70508|42.81629,-73.67681|42.93723,-73.65939)
+- **Distance:** 76.9 mi (123.8 km) · **Climbing:** about +1,300 ft
+- **Surface:** Paved AHET and Mohawk-Hudson trail with city streets through Rensselaer, Watervliet and Cohoes, then the Old Champlain Canal Trail to Mechanicville. The last ~17 mi follow the Empire State Trail's on-road section on US-4/NY-32 (road shoulder) through Stillwater and past Saratoga National Historical Park into Schuylerville. Unpaved per OpenStreetMap: about 8.5 mi (mi 3.0 to 5.7 compacted, mi 52.6 to 54.4 unpaved/compacted, mi 54.7 to 57.9 gravel, mi 74.9 to 75.7 compacted).
+- **GPX:** [`gpx/d3.gpx`](gpx/d3.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.24874,-73.78510&destination=43.10269,-73.57945&waypoints=42.33822,-73.74601|42.41992,-73.67918|42.53496,-73.60871|42.59394,-73.69963|42.65337,-73.74476|42.70783,-73.70553|42.81458,-73.67632|42.93749,-73.65897)
 - **Lunch:** **Don & Paul's Coffee Shoppe**, 68 Broad St, Waterford, NY · mile 52.0. Diner on the route by the Waterford canal harbor. Listed Mon to Sat 7 AM to 7:30 PM, Sun 7 AM to 2 PM.
-- **Lodging:** **Dovegate Inn**, 184 Broad St, Schuylerville, NY · (518) 695-3699. Historic 1800s B&B right on Broad St in Schuylerville village center. Booking ahead recommended (limited rooms); vacation rentals/Airbnbs also available in town or nearby Greenwich.
+- **Lodging:** **Dovegate Inn**, 184 Broad St, Schuylerville, NY · (518) 695-3699 · mile 76.9. Small inn with a few rooms on Broad St in Schuylerville village, with an on-site restaurant (Kitchen at the Dovegate Inn, 518-695-6095). Book early: limited rooms. Ask about bike storage.
 - **Bike shops / supplies:** **Steiner's Sports (Valatie)**, 3455 Route 9, Valatie, NY · (518) 784-3663. In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4.
-- **Bailout:** Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile 37.5; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. Further north, Stewart's Shops in Mechanicville and Stillwater offer food and rest stops.
+- **Bailout:** Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile 37.5; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. North of Waterford there is no rail; Stewart's Shops in Mechanicville, Stillwater and Schuylerville are the food stops.
 
 <details><summary>Turn-by-turn cues</summary>
 
@@ -229,69 +229,72 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 | 50.0 | TURN LEFT | Ontario Street (NY-470) | 0.4 | Road shoulder |  |
 | 50.4 | TURN LEFT | Saratoga Street (NY-32) | 1.6 | Road shoulder | NY-32 north into Waterford. |
 | 52.0 | LUNCH | Don & Paul's, 68 Broad St, Waterford | 0.1 | — | Diner on the route by the Waterford canal harbor (Erie Canal Lock E2). |
-| 52.1 | CONTINUE ONTO | Old Champlain Canal Trail | 1.7 | Bike path | Canal towpath trail north toward Mechanicville. |
-| 53.8 | TURN LEFT | Bells Lane North | 0.4 | Street |  |
-| 54.2 | TURN RIGHT | Old Champlain Canal Trail | 3.0 | Bike path |  |
-| 57.2 | TURN RIGHT | Upper Newtown Road (CR-86) | 0.2 | Road shoulder |  |
-| 57.4 | TURN LEFT | Hudson River Road (US-4; NY-32) | 1.5 | Road shoulder | US-4 / NY-32 along the Hudson River through Mechanicville and Stillwater. |
-| 58.9 | BEAR RIGHT | South Main Street | 2.0 | Street |  |
-| 60.9 | TURN RIGHT | Hudson Avenue (US-4; NY-32) | 0.2 | Road shoulder |  |
-| 61.1 | CONTINUE ONTO | River Road (US-4; NY-32) | 1.8 | Road shoulder |  |
-| 62.9 | CONTINUE ONTO | Hudson Avenue (US-4; NY-32) | 3.3 | Road shoulder |  |
-| 66.2 | CONTINUE ONTO | US 4 | 7.9 | Road shoulder |  |
-| 74.1 | TURN RIGHT | bike path | 0.1 | Bike path |  |
-| 74.2 | TURN LEFT | Surrender March Trail | 0.8 | Bike path | Historic trail approach through Saratoga National Historical Park into Schuylerville. |
-| 75.0 | TURN RIGHT | US 4 | 0.9 | Road shoulder |  |
-| 75.9 | ARRIVE | Dovegate Inn |  | — | 184 Broad St, Schuylerville, NY |
+| 52.1 | BEAR LEFT | Old Champlain Canal Trail | 2.3 | Bike path | Canal towpath trail north toward Mechanicville. |
+| 54.4 | TURN LEFT | Bells Lane North | 0.4 | Street |  |
+| 54.8 | TURN RIGHT | Old Champlain Canal Trail | 3.0 | Unpaved: gravel |  |
+| 57.8 | TURN RIGHT | Upper Newtown Road (CR-86) | 0.3 | Road shoulder |  |
+| 58.1 | TURN LEFT | Hudson River Road (US-4; NY-32) | 1.4 | Road shoulder | US-4 / NY-32 along the Hudson River through Mechanicville and Stillwater. |
+| 59.5 | BEAR RIGHT | South Main Street | 2.3 | Street |  |
+| 61.8 | CONTINUE ONTO | River Road (US-4; NY-32) | 1.7 | Road shoulder |  |
+| 63.5 | CONTINUE ONTO | Hudson Avenue (US-4; NY-32) | 3.2 | Road shoulder |  |
+| 66.7 | CONTINUE ONTO | US 4; NY 32 | 1.9 | Road shoulder |  |
+| 68.6 | CONTINUE ONTO | US 4 | 6.1 | Road shoulder |  |
+| 74.7 | TURN RIGHT | bike path | 0.2 | Bike path |  |
+| 74.9 | TURN LEFT | Surrender March Trail | 0.7 | Unpaved: compacted | Historic trail approach through Saratoga National Historical Park into Schuylerville. |
+| 75.6 | TURN RIGHT | US 4 | 1.3 | Road shoulder |  |
+| 76.9 | ARRIVE | Dovegate Inn |  | — | 184 Broad St, Schuylerville, NY |
 
 </details>
 
 ### Wednesday • Day 4: Schuylerville to Ticonderoga, NY
 *Champlain Canalway Trail (US-4 & towpaths), Fort Edward, Fort Ann, Whitehall, NY-22*
 
-- **Distance:** 64.6 mi (104.0 km) · **Climbing:** about +2,100 ft
-- **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 7.7 mi (mi 0.2 to 1.0 compacted, mi 14.5 to 18.9 compacted, mi 19.2 to 20.7 unpaved, mi 29.5 to 30.5 unpaved).
-- **GPX:** [`gpx/d4.gpx`](gpx/d4.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=43.09993,-73.58131&destination=43.85842,-73.42803&waypoints=43.17035,-73.57902|43.27363,-73.57853|43.32430,-73.52215|43.39604,-73.48977|43.44615,-73.43588|43.54309,-73.40780|43.63420,-73.44671|43.74014,-73.40364)
-- **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 38.6 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
-- **Lodging:** **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 64.6. On the south side of town, right on the route.
-- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 15.6 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
-- **Bailout:** Amtrak Adirondack stops at Fort Edward (mile 13.4), Whitehall (mile 38.8) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.
+- **Distance:** 64.4 mi (103.6 km) · **Climbing:** about +2,200 ft
+- **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 8.1 mi (mi 0.2 to 0.9 compacted, mi 14.4 to 20.8 compacted/unpaved, mi 29.5 to 30.5 unpaved).
+- **GPX:** [`gpx/d4.gpx`](gpx/d4.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=43.10269,-73.57945&destination=43.85842,-73.42803&waypoints=43.18695,-73.57968|43.27431,-73.57747|43.32763,-73.52036|43.39900,-73.48923|43.44805,-73.43440|43.55010,-73.40462|43.63653,-73.44598|43.74071,-73.40300)
+- **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 38.4 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
+- **Lodging:** **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 64.4. On the south side of town, right on the route.
+- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 15.3 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
+- **Bailout:** Amtrak Adirondack stops at Fort Edward (mile 13.2), Whitehall (mile 38.6) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.
 
 <details><summary>Turn-by-turn cues</summary>
 
 | Mile | Action | Road / place | Leg | Surface | Notes |
 |:---|:---|:---|:---|:---|:---|
-| 0.1 | DEPART ON | Old Champlain Canal Towpath Trail | 0.9 | Unpaved: compacted | Towpath trail departing Schuylerville north along the canal. |
-| 1.0 | TURN RIGHT | County Road 42 (CR-42) | 0.4 | Road shoulder |  |
-| 1.4 | CONTINUE ONTO | Dix Bridge Road | 0.1 | Street |  |
-| 1.5 | TURN LEFT | bike path | 0.4 | Bike path |  |
-| 1.9 | TURN LEFT | CR 113 | 0.8 | Street |  |
-| 2.7 | TURN RIGHT | US 4 | 10.1 | Road shoulder |  |
-| 12.8 | TURN LEFT | Old Champlain Canal Path | 0.1 | Bike path |  |
-| 12.9 | CONTINUE ONTO | Canal Street | 0.8 | Street |  |
-| 13.7 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
-| 13.8 | TURN RIGHT | Old Champlain Canal Towpath | 0.2 | Street |  |
-| 14.0 | BEAR RIGHT | Towpath Road | 0.8 | Street |  |
-| 14.8 | CONTINUE ONTO | Old Champlain Canal Trail | 1.9 | Unpaved: compacted |  |
-| 16.7 | TURN RIGHT | Towpath Road | 2.4 | Unpaved: compacted |  |
-| 19.1 | TURN RIGHT | New Swamp Road | 0.3 | Unpaved: unpaved |  |
-| 19.4 | TURN LEFT | Champlain Canalway Trail | 4.4 | Unpaved: unpaved | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
-| 23.8 | TURN LEFT | Baldwin Corners Road | 0.1 | Street |  |
-| 23.9 | TURN RIGHT | Champlain Canalway Trail | 1.5 | Bike path |  |
-| 25.4 | CONTINUE ONTO | South Canal Street | 0.3 | Street |  |
-| 25.7 | CONTINUE ONTO | Clay Hill Road | 2.7 | Street |  |
-| 28.4 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
-| 28.6 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
-| 29.0 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
-| 30.7 | TURN LEFT | State Highway 22 (NY-22) | 1.0 | Road shoulder | NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall. |
-| 31.7 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
-| 37.8 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.8 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. |
-| 38.6 | LUNCH / RESUPPLY | Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route) | 0.7 | — | Historic Grounds (listed in earlier drafts) is CLOSED after a fire. |
-| 39.3 | CONTINUE ONTO | Broadway (NY-22) | 1.5 | Road shoulder |  |
-| 40.8 | CONTINUE ONTO | State Highway 22 (NY-22) | 23.5 | Road shoulder |  |
-| 64.3 | TURN LEFT | Mount Hope Avenue | 0.2 | Street | Into Ticonderoga; the hotel is just ahead. |
-| 64.5 | TURN RIGHT | Burgoyne Road | 0.1 | Street |  |
-| 64.6 | ARRIVE | Best Western Plus Ticonderoga Inn & Suites |  | — | 260 Burgoyne Rd, Ticonderoga, NY |
+| 0.1 | DEPART ON | Tow Path | 0.3 | Unpaved: compacted |  |
+| 0.4 | CONTINUE ONTO | Old Champlain Canal Towpath Trail | 0.5 | Unpaved: compacted | Towpath trail departing Schuylerville north along the canal. |
+| 0.9 | TURN RIGHT | County Road 42 (CR-42) | 0.4 | Road shoulder |  |
+| 1.3 | CONTINUE ONTO | Dix Bridge Road | 0.1 | Street |  |
+| 1.4 | TURN LEFT | bike path | 0.4 | Bike path |  |
+| 1.8 | TURN LEFT | CR 113 | 0.8 | Street |  |
+| 2.6 | TURN RIGHT | US 4 | 1.5 | Road shoulder |  |
+| 4.1 | TURN LEFT | Fort Miller Road | 1.0 | Street |  |
+| 5.1 | TURN LEFT | US 4 | 7.4 | Road shoulder |  |
+| 12.5 | TURN LEFT | Old Champlain Canal Path | 0.2 | Bike path |  |
+| 12.7 | CONTINUE ONTO | Canal Street | 0.7 | Street |  |
+| 13.4 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
+| 13.5 | TURN RIGHT | Old Champlain Canal Towpath | 0.3 | Street |  |
+| 13.8 | BEAR RIGHT | Towpath Road | 0.7 | Street |  |
+| 14.5 | CONTINUE ONTO | Old Champlain Canal Trail | 1.9 | Unpaved: compacted/unpaved |  |
+| 16.4 | TURN RIGHT | Towpath Road | 2.4 | Unpaved: compacted/unpaved |  |
+| 18.8 | TURN RIGHT | New Swamp Road | 0.3 | Unpaved: compacted/unpaved |  |
+| 19.1 | TURN LEFT | Champlain Canalway Trail | 4.4 | Unpaved: compacted/unpaved | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
+| 23.5 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
+| 23.7 | TURN RIGHT | Champlain Canalway Trail | 1.4 | Bike path |  |
+| 25.1 | CONTINUE ONTO | South Canal Street | 0.4 | Street |  |
+| 25.5 | CONTINUE ONTO | Clay Hill Road | 2.6 | Street |  |
+| 28.1 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
+| 28.3 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
+| 28.7 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
+| 30.4 | TURN LEFT | State Highway 22 (NY-22) | 1.1 | Road shoulder |  |
+| 31.5 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
+| 37.6 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.8 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here. |
+| 38.4 | LUNCH / RESUPPLY | Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route) | 0.7 | — | Historic Grounds (listed in earlier drafts) is CLOSED after a fire. |
+| 39.1 | CONTINUE ONTO | Broadway (NY-22) | 1.5 | Road shoulder |  |
+| 40.6 | CONTINUE ONTO | State Highway 22 (NY-22) | 23.4 | Road shoulder |  |
+| 64.0 | TURN LEFT | Mount Hope Avenue | 0.2 | Street | Into Ticonderoga; the hotel is just ahead. |
+| 64.2 | TURN RIGHT | Burgoyne Road | 0.2 | Street |  |
+| 64.4 | ARRIVE | Best Western Plus Ticonderoga Inn & Suites |  | — | 260 Burgoyne Rd, Ticonderoga, NY |
 
 </details>
 

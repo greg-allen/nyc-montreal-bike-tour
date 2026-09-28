@@ -26,19 +26,23 @@ often — call ahead for anything you depend on.**
 |:---|---:|---:|:---|
 | D1 NYC → Brewster (Heidi's Inn) | 60 | 67.5 | Heidi's is about 3 mi past the trail end |
 | D2 Brewster → Hudson | 78 | 89.6 | official EST east-bank route; NY-9G straight through is 83.3 |
-| D3 Hudson → Saratoga | 75 | 82.1 | |
-| D4 Saratoga → Ticonderoga | 75 | 75.9 | ~8 mi compacted/gravel towpath |
+| D3 Hudson → Schuylerville (Dovegate Inn)* | 75 (to Saratoga) | 76.9 | ~8.5 mi unpaved (canal trails) |
+| D4 Schuylerville → Ticonderoga* | 75 (from Saratoga) | 64.4 | ~8 mi compacted/gravel towpath |
 | D5 Ticonderoga → Plattsburgh | 70 | 72.5 | hotel is 2 mi west of downtown |
 | D6 Plattsburgh → Saint-Jean | 50 | 54.7 | |
 | D7 Saint-Jean → Old Montréal | 37 | 35.8 | |
 | 6-day finale Plattsburgh → Montréal | 87 | 87.9 | |
 | 5-day D1 / D2 / D3 | 95 / 85 / 87 | 103.1 / 95.9 / 92.9 | |
-| Vermont VT-1 / VT-2 | 53 / 58 | 60.7 / 75.4 | |
+| Vermont VT-1 / VT-2 | 53 / 58 | 60.7 / 72.8 | VT-2 now stays on US-2 (router had used 2 unpaved side roads) |
 | Return Old Montréal → Rouses Point | "48" | 59.8 | |
-| **7-day total** | 445 | **478.1** | |
-| **6-day total** | 445 | **475.5** | |
+| **7-day total** | 445 | **461.4** | |
+| **6-day total** | 445 | **458.8** | |
 | **5-day total** | 425 | **452.3** | |
-| Climbing (6-/7-day) | 14,500–14,900 ft | ~12,100 ft | estimate |
+| Climbing (6-/7-day) | 14,500–14,900 ft | ~11,400 ft | estimate |
+
+\* The Day 3 overnight was moved from Saratoga Springs to Schuylerville on 2026-09-28 (edit in `tools/content.py`). Both days were re-routed along the Empire State Trail (Waterford → Mechanicville → Stillwater → Schuylerville on the Old Champlain Canal Trail and US-4) rather than spliced from existing tracks. The Saratoga version was 82.1 + 75.9 mi.
+
+Surfaces were measured against OpenStreetMap unpaved-way tags along every route (5 m match). Unpaved stretches per day are listed in each day's Surface line and marked in the cue sheets.
 
 Push options (5-day): Ticonderoga → Essex is 38 mi, not 18; Waterford → Saratoga is ~30 mi, not 20;
 Walkway → Kingston is ~16–20 mi via 9W (30 mi only via the Wallkill Valley trail). All push days are 125+ mi.

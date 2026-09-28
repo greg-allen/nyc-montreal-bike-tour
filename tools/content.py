@@ -49,7 +49,7 @@ PLACES = {
     "steiners_valatie": dict(name="Steiner's Sports (Valatie)", address="3455 Route 9, Valatie, NY", phone="(518) 784-3663",
                    notes="In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4."),
     "dovegate": dict(name="Dovegate Inn", address="184 Broad St, Schuylerville, NY", phone="(518) 695-3699",
-                   notes="Historic 1800s B&B right on Broad St in Schuylerville village center. Booking ahead recommended (limited rooms); vacation rentals/Airbnbs also available in town or nearby Greenwich."),
+                   notes="Small inn with a few rooms on Broad St in Schuylerville village, with an on-site restaurant (Kitchen at the Dovegate Inn, 518-695-6095). Book early: limited rooms. Ask about bike storage."),
     "hilton": dict(name="The Saratoga Hilton", address="534 Broadway, Saratoga Springs, NY", phone="(518) 584-4000", notes="Downtown on Broadway."),
     "holiday_sar": dict(name="Holiday Inn Saratoga Springs", address="232 Broadway, Saratoga Springs, NY", phone="(518) 584-4550", notes="South end of Broadway, on the way in."),
     "trek_saratoga": dict(name="Trek Bicycle Saratoga Springs", address="71 Church St, Saratoga Springs, NY", phone="(518) 583-0600",
@@ -119,7 +119,6 @@ PLACES = {
 # Extra coordinates for places that weren't geocoded automatically
 # Coordinates below are approximate (not geocoded): they place pins on the map but no mile marker is shown.
 EXTRA_GEO = {
-    "dovegate": [43.1000, -73.5815],
     "route22cycles": [41.4430, -73.5760],   # approximate (Route 22 north of Brewster); not verified
     "skihaus": [41.4262, -73.5800],         # approximate; not verified
     "steiners_valatie": [42.4180, -73.6700], # approximate (Route 9, Valatie); not verified
@@ -173,8 +172,8 @@ STAGES = {
         subtitle="Albany-Hudson Electric Trail, Dunn Bridge, Mohawk-Hudson Trail, Champlain Canalway Trail (Waterford, Mechanicville, Stillwater)",
         waterway="Hudson River & Champlain Canal", rail="Amtrak Empire Service (Albany-Rensselaer)",
         lunch="donpauls", hotels=["dovegate"], shops=["steiners_valatie"],
-        surface_note="Mostly paved trail and canal paths: AHET, Mohawk-Hudson Bike-Hike Trail, and Champlain Canalway Trail via Waterford, Mechanicville, and Stillwater into Schuylerville. Stays 100% on the official Empire State Trail without highway detours.",
-        bailout="Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile {st_albany}; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. Further north, Stewart's Shops in Mechanicville and Stillwater offer food and rest stops.",
+        surface_note="Paved AHET and Mohawk-Hudson trail with city streets through Rensselaer, Watervliet and Cohoes, then the Old Champlain Canal Trail to Mechanicville. The last ~17 mi follow the Empire State Trail's on-road section on US-4/NY-32 (road shoulder) through Stillwater and past Saratoga National Historical Park into Schuylerville.",
+        bailout="Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile {st_albany}; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. North of Waterford there is no rail; Stewart's Shops in Mechanicville, Stillwater and Schuylerville are the food stops.",
         cue_notes={
             "Albany-Hudson Electric Trail": "Paved AHET. Several short on-road links follow; watch for trail signs.",
             "Dunn Memorial Bridge Path": "Cross the Hudson into Albany on the bridge's shared path.",
@@ -190,14 +189,13 @@ STAGES = {
         subtitle="Champlain Canalway Trail (US-4 & towpaths), Fort Edward, Fort Ann, Whitehall, NY-22",
         waterway="Champlain Canal / Lake Champlain", rail="Amtrak Adirondack (Fort Edward, Whitehall)",
         lunch="stewarts_wh", hotels=["bw_ti"], shops=["walkers", "ricks"],
-        surface_note="Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann.",
+        surface_note="Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann.",
         bailout="Amtrak Adirondack stops at Fort Edward (mile {st_fted}), Whitehall (mile {st_whitehall}) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.",
         cue_notes={
             "Old Champlain Canal Towpath": "Towpath trail departing Schuylerville north along the canal.",
             "Champlain Canalway Trail": "Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann.",
             "US Route 4": "US-4/NY-22 north into Whitehall.",
-            "Broadway": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED.",
-            "State Highway 22": "NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall.",
+            "Broadway": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here.",
             "Mount Hope Avenue": "Into Ticonderoga; the hotel is just ahead.",
         },
         extra_cues=[("stewarts_wh", "lunch", "LUNCH / RESUPPLY", "Stewart's Shops, 60 Poultney St, Whitehall", "Historic Grounds (listed in earlier drafts) is CLOSED after a fire.")]),

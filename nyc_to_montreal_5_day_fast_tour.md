@@ -37,7 +37,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 75.9 and 64.6 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are 89.6 and 76.9 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -199,7 +199,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 *Waterford, Old Champlain Canal Trail, US-4 through Stillwater & Schuylerville, canal towpaths, Whitehall, NY-22*
 
 - **Distance:** 92.9 mi (149.5 km) · **Climbing:** about +2,600 ft
-- **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 13.5 mi (mi 4.6 to 6.2 compacted, mi 6.4 to 9.6 gravel, mi 26.7 to 27.4 compacted, mi 28.5 to 29.3 compacted, mi 43.0 to 49.3 compacted/unpaved, mi 58.1 to 59.0 unpaved).
+- **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 13.5 mi (mi 4.6 to 6.2 compacted, mi 6.4 to 9.6 gravel, mi 26.7 to 27.4 compacted, mi 28.5 to 29.3 compacted, mi 43.0 to 49.3 compacted/unpaved, mi 58.1 to 59.0 unpaved).
 - **GPX:** [`gpx/5d3.gpx`](gpx/5d3.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.73415,-73.68842&destination=43.85842,-73.42803&waypoints=42.86194,-73.68057|43.04087,-73.59248|43.14436,-73.58134|43.27853,-73.57407|43.35554,-73.49528|43.43768,-73.44533|43.56798,-73.41309|43.68919,-73.42230)
 - **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 66.9 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
 - **Lodging:** **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 92.9. On the south side of town, right on the route.
@@ -252,9 +252,9 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 56.6 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
 | 56.8 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
 | 57.2 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
-| 58.9 | TURN LEFT | State Highway 22 (NY-22) | 1.1 | Road shoulder | NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall. |
+| 58.9 | TURN LEFT | State Highway 22 (NY-22) | 1.1 | Road shoulder |  |
 | 60.0 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
-| 66.1 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.8 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. |
+| 66.1 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.8 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here. |
 | 66.9 | LUNCH / RESUPPLY | Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route) | 0.7 | — | Historic Grounds (listed in earlier drafts) is CLOSED after a fire. |
 | 67.6 | CONTINUE ONTO | Broadway (NY-22) | 1.5 | Road shoulder |  |
 | 69.1 | CONTINUE ONTO | State Highway 22 (NY-22) | 23.4 | Road shoulder |  |

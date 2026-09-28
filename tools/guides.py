@@ -21,7 +21,7 @@ ADVISORIES = """## Critical logistics (read before booking)
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are {d2}, {d3} and {d4} mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are {d2} and {d3} mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -88,7 +88,7 @@ def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
                             d2=R["D2"]["mi"], d3=R["D3"]["mi"], d4=R["D4"]["mi"])
     files = {"7day": "nyc_to_montreal_7_day_tour.md", "6day": "nyc_to_montreal_bike_tour_guide.md", "5day": "nyc_to_montreal_5_day_fast_tour.md"}
     extras = {
-        "7day": "**Why 7 days:** the 6-day plan's last day is " + f"{R['6D6']['mi']}" + " mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a " + f"{R['D7']['mi']}" + "-mi Saturday finish along the Chambly Canal. Days 2 to 4 are still long (" + f"{R['D4']['mi']:.0f} to {R['D2']['mi']:.0f}" + " mi): start early.\n",
+        "7day": "**Why 7 days:** the 6-day plan's last day is " + f"{R['6D6']['mi']}" + " mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a " + f"{R['D7']['mi']}" + "-mi Saturday finish along the Chambly Canal. Days 2 and 3 are still long (" + f"{R['D2']['mi']:.0f} and {R['D3']['mi']:.0f}" + " mi): start early.\n",
         "6day": "**Note:** Day 6 is " + f"{R['6D6']['mi']}" + " mi with a border crossing, finishing in Montréal before the 6:19 PM sunset. The 7-day version splits it at Saint-Jean-sur-Richelieu.\n",
         "5day": "**Reality check:** this schedule means three days over 90 miles in October daylight. The 'push' options in earlier drafts are all 125+ mile days; they're listed per stage for completeness, but they aren't recommended.\n",
     }

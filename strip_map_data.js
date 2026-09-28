@@ -8,10 +8,10 @@ const STRIP_MAP_ITINERARIES = {
   "title": "6-Day Tour (Sunday to Friday)",
   "subtitle": "Turn-by-turn strip map (miles reset each day, matching the day GPX files)",
   "schedule": "Sun Oct 4 ➔ Fri Oct 9 (6 days)",
-  "totalMiles": "458.0",
-  "totalKm": "737.1",
-  "elevationGain": "+11,200 ft (est.)",
-  "avgDaily": "76.3 mi/day",
+  "totalMiles": "458.8",
+  "totalKm": "738.4",
+  "elevationGain": "+11,400 ft (est.)",
+  "avgDaily": "76.5 mi/day",
   "stages": [
    {
     "stageNum": 1,
@@ -1148,11 +1148,11 @@ const STRIP_MAP_ITINERARIES = {
     "dayOfWeek": "Tuesday",
     "dateStr": "Oct 6",
     "name": "Hudson to Schuylerville, NY",
-    "distanceMiles": 75.9,
-    "elevationFt": 1200,
+    "distanceMiles": 76.9,
+    "elevationFt": 1300,
     "waterway": "Hudson River & Champlain Canal",
     "railLine": "Amtrak Empire Service (Albany-Rensselaer)",
-    "surfaceSummary": "Mostly paved trail and canal paths: AHET, Mohawk-Hudson Bike-Hike Trail, and Champlain Canalway Trail via Waterford, Mechanicville, and Stillwater into Schuylerville. Stays 100% on the official Empire State Trail without highway detours.",
+    "surfaceSummary": "Paved AHET and Mohawk-Hudson trail with city streets through Rensselaer, Watervliet and Cohoes, then the Old Champlain Canal Trail to Mechanicville. The last ~17 mi follow the Empire State Trail's on-road section on US-4/NY-32 (road shoulder) through Stillwater and past Saratoga National Historical Park into Schuylerville. Unpaved per OpenStreetMap: about 8.5 mi (mi 3.0 to 5.7 compacted, mi 52.6 to 54.4 unpaved/compacted, mi 54.7 to 57.9 gravel, mi 74.9 to 75.7 compacted).",
     "overnight": "Dovegate Inn",
     "elevProfile": [
      {
@@ -1161,78 +1161,78 @@ const STRIP_MAP_ITINERARIES = {
       "label": "Start"
      },
      {
-      "mile": 5.1,
-      "elev": 83,
-      "label": ""
-     },
-     {
-      "mile": 10.1,
-      "elev": 188,
-      "label": ""
-     },
-     {
-      "mile": 15.2,
-      "elev": 281,
-      "label": ""
-     },
-     {
-      "mile": 20.2,
-      "elev": 345,
-      "label": ""
-     },
-     {
-      "mile": 25.3,
-      "elev": 413,
-      "label": ""
-     },
-     {
-      "mile": 30.4,
-      "elev": 425,
-      "label": ""
-     },
-     {
-      "mile": 35.4,
-      "elev": 203,
-      "label": ""
-     },
-     {
-      "mile": 40.5,
-      "elev": 24,
-      "label": ""
-     },
-     {
-      "mile": 45.5,
-      "elev": 26,
-      "label": ""
-     },
-     {
-      "mile": 50.6,
-      "elev": 36,
-      "label": "Lunch"
-     },
-     {
-      "mile": 55.7,
-      "elev": 77,
-      "label": ""
-     },
-     {
-      "mile": 60.7,
+      "mile": 5.5,
       "elev": 85,
       "label": ""
      },
      {
-      "mile": 65.8,
-      "elev": 95,
+      "mile": 10.9,
+      "elev": 220,
       "label": ""
      },
      {
-      "mile": 70.8,
-      "elev": 110,
+      "mile": 16.4,
+      "elev": 282,
       "label": ""
      },
      {
-      "mile": 75.9,
-      "elev": 123,
+      "mile": 21.9,
+      "elev": 354,
+      "label": ""
+     },
+     {
+      "mile": 27.3,
+      "elev": 449,
+      "label": ""
+     },
+     {
+      "mile": 32.8,
+      "elev": 285,
+      "label": ""
+     },
+     {
+      "mile": 38.3,
+      "elev": 0,
+      "label": ""
+     },
+     {
+      "mile": 43.7,
+      "elev": 33,
+      "label": ""
+     },
+     {
+      "mile": 49.2,
+      "elev": 102,
+      "label": ""
+     },
+     {
+      "mile": 54.7,
+      "elev": 75,
+      "label": "Lunch"
+     },
+     {
+      "mile": 60.1,
+      "elev": 72,
+      "label": ""
+     },
+     {
+      "mile": 65.6,
+      "elev": 108,
+      "label": ""
+     },
+     {
+      "mile": 71.1,
+      "elev": 105,
+      "label": ""
+     },
+     {
+      "mile": 76.6,
+      "elev": 135,
+      "label": ""
+     },
+     {
+      "mile": 76.9,
+      "elev": 125,
       "label": "Finish"
      }
     ],
@@ -1731,18 +1731,18 @@ const STRIP_MAP_ITINERARIES = {
      },
      {
       "mile": 52.1,
-      "icon": "⬆",
-      "turnDir": "straight",
+      "icon": "↖",
+      "turnDir": "bear-left",
       "road": "Old Champlain Canal Trail",
-      "action": "CONTINUE ONTO",
+      "action": "BEAR LEFT",
       "surface": "Bike path",
       "detail": "Canal towpath trail north toward Mechanicville.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.7
+      "dist": 2.3
      },
      {
-      "mile": 53.8,
+      "mile": 54.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "Bells Lane North",
@@ -1754,19 +1754,19 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 54.2,
+      "mile": 54.8,
       "icon": "↱",
       "turnDir": "right",
       "road": "Old Champlain Canal Trail",
       "action": "TURN RIGHT",
-      "surface": "Bike path",
+      "surface": "Unpaved: gravel",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 3.0
      },
      {
-      "mile": 57.2,
+      "mile": 57.8,
       "icon": "↱",
       "turnDir": "right",
       "road": "Upper Newtown Road (CR-86)",
@@ -1775,10 +1775,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.2
+      "dist": 0.3
      },
      {
-      "mile": 57.4,
+      "mile": 58.1,
       "icon": "↰",
       "turnDir": "left",
       "road": "Hudson River Road (US-4; NY-32)",
@@ -1787,10 +1787,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "US-4 / NY-32 along the Hudson River through Mechanicville and Stillwater.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.5
+      "dist": 1.4
      },
      {
-      "mile": 58.9,
+      "mile": 59.5,
       "icon": "↗",
       "turnDir": "bear-right",
       "road": "South Main Street",
@@ -1799,22 +1799,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 2.0
+      "dist": 2.3
      },
      {
-      "mile": 60.9,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Hudson Avenue (US-4; NY-32)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.2
-     },
-     {
-      "mile": 61.1,
+      "mile": 61.8,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "River Road (US-4; NY-32)",
@@ -1823,10 +1811,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.8
+      "dist": 1.7
      },
      {
-      "mile": 62.9,
+      "mile": 63.5,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Hudson Avenue (US-4; NY-32)",
@@ -1835,10 +1823,22 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 3.3
+      "dist": 3.2
      },
      {
-      "mile": 66.2,
+      "mile": 66.7,
+      "icon": "⬆",
+      "turnDir": "straight",
+      "road": "US 4; NY 32",
+      "action": "CONTINUE ONTO",
+      "surface": "Road shoulder",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 1.9
+     },
+     {
+      "mile": 68.6,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "US 4",
@@ -1847,10 +1847,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 7.9
+      "dist": 6.1
      },
      {
-      "mile": 74.1,
+      "mile": 74.7,
       "icon": "↱",
       "turnDir": "right",
       "road": "bike path",
@@ -1859,22 +1859,22 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 74.2,
+      "mile": 74.9,
       "icon": "↰",
       "turnDir": "left",
       "road": "Surrender March Trail",
       "action": "TURN LEFT",
-      "surface": "Bike path",
+      "surface": "Unpaved: compacted",
       "detail": "Historic trail approach through Saratoga National Historical Park into Schuylerville.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.8
+      "dist": 0.7
      },
      {
-      "mile": 75.0,
+      "mile": 75.6,
       "icon": "↱",
       "turnDir": "right",
       "road": "US 4",
@@ -1883,10 +1883,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.9
+      "dist": 1.3
      },
      {
-      "mile": 75.9,
+      "mile": 76.9,
       "icon": "🚏",
       "turnDir": "terminus",
       "road": "Dovegate Inn",
@@ -1905,91 +1905,91 @@ const STRIP_MAP_ITINERARIES = {
     "dayOfWeek": "Wednesday",
     "dateStr": "Oct 7",
     "name": "Schuylerville to Ticonderoga, NY",
-    "distanceMiles": 64.6,
-    "elevationFt": 2100,
+    "distanceMiles": 64.4,
+    "elevationFt": 2200,
     "waterway": "Champlain Canal / Lake Champlain",
     "railLine": "Amtrak Adirondack (Fort Edward, Whitehall)",
-    "surfaceSummary": "Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 7.7 mi (mi 0.2 to 1.0 compacted, mi 14.5 to 18.9 compacted, mi 19.2 to 20.7 unpaved, mi 29.5 to 30.5 unpaved).",
+    "surfaceSummary": "Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 8.1 mi (mi 0.2 to 0.9 compacted, mi 14.4 to 20.8 compacted/unpaved, mi 29.5 to 30.5 unpaved).",
     "overnight": "Best Western Plus Ticonderoga Inn & Suites",
     "elevProfile": [
      {
       "mile": 0.0,
-      "elev": 123,
+      "elev": 125,
       "label": "Start"
      },
      {
-      "mile": 4.3,
-      "elev": 128,
+      "mile": 4.6,
+      "elev": 125,
       "label": ""
      },
      {
-      "mile": 8.6,
-      "elev": 149,
+      "mile": 9.2,
+      "elev": 144,
       "label": ""
      },
      {
-      "mile": 12.9,
-      "elev": 161,
+      "mile": 13.8,
+      "elev": 157,
       "label": ""
      },
      {
-      "mile": 17.2,
-      "elev": 152,
+      "mile": 18.4,
+      "elev": 148,
       "label": ""
      },
      {
-      "mile": 21.5,
-      "elev": 145,
+      "mile": 23.0,
+      "elev": 148,
       "label": ""
      },
      {
-      "mile": 25.8,
-      "elev": 152,
+      "mile": 27.6,
+      "elev": 220,
       "label": ""
      },
      {
-      "mile": 30.1,
-      "elev": 189,
+      "mile": 32.2,
+      "elev": 164,
       "label": ""
      },
      {
-      "mile": 34.5,
-      "elev": 169,
-      "label": ""
-     },
-     {
-      "mile": 38.8,
-      "elev": 193,
+      "mile": 36.8,
+      "elev": 157,
       "label": "Lunch"
      },
      {
-      "mile": 43.1,
-      "elev": 377,
+      "mile": 41.4,
+      "elev": 213,
       "label": ""
      },
      {
-      "mile": 47.4,
-      "elev": 446,
+      "mile": 46.0,
+      "elev": 453,
       "label": ""
      },
      {
-      "mile": 51.7,
-      "elev": 458,
+      "mile": 50.6,
+      "elev": 515,
       "label": ""
      },
      {
-      "mile": 56.0,
-      "elev": 424,
+      "mile": 55.2,
+      "elev": 417,
       "label": ""
      },
      {
-      "mile": 60.3,
-      "elev": 331,
+      "mile": 59.8,
+      "elev": 374,
       "label": ""
      },
      {
-      "mile": 64.6,
-      "elev": 314,
+      "mile": 64.4,
+      "elev": 322,
+      "label": ""
+     },
+     {
+      "mile": 64.4,
+      "elev": 322,
       "label": "Finish"
      }
     ],
@@ -1998,16 +1998,28 @@ const STRIP_MAP_ITINERARIES = {
       "mile": 0.1,
       "icon": "↰",
       "turnDir": "left",
-      "road": "Old Champlain Canal Towpath Trail",
+      "road": "Tow Path",
       "action": "DEPART ON",
+      "surface": "Unpaved: compacted",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 0.3
+     },
+     {
+      "mile": 0.4,
+      "icon": "↖",
+      "turnDir": "straight",
+      "road": "Old Champlain Canal Towpath Trail",
+      "action": "CONTINUE ONTO",
       "surface": "Unpaved: compacted",
       "detail": "Towpath trail departing Schuylerville north along the canal.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.9
+      "dist": 0.5
      },
      {
-      "mile": 1.0,
+      "mile": 0.9,
       "icon": "↱",
       "turnDir": "right",
       "road": "County Road 42 (CR-42)",
@@ -2019,7 +2031,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 1.4,
+      "mile": 1.3,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Dix Bridge Road",
@@ -2031,7 +2043,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.1
      },
      {
-      "mile": 1.5,
+      "mile": 1.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "bike path",
@@ -2043,7 +2055,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 1.9,
+      "mile": 1.8,
       "icon": "↰",
       "turnDir": "left",
       "road": "CR 113",
@@ -2055,7 +2067,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.8
      },
      {
-      "mile": 2.7,
+      "mile": 2.6,
       "icon": "↱",
       "turnDir": "right",
       "road": "US 4",
@@ -2064,10 +2076,34 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 10.1
+      "dist": 1.5
      },
      {
-      "mile": 12.8,
+      "mile": 4.1,
+      "icon": "↰",
+      "turnDir": "left",
+      "road": "Fort Miller Road",
+      "action": "TURN LEFT",
+      "surface": "Street",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 1.0
+     },
+     {
+      "mile": 5.1,
+      "icon": "↰",
+      "turnDir": "left",
+      "road": "US 4",
+      "action": "TURN LEFT",
+      "surface": "Road shoulder",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 7.4
+     },
+     {
+      "mile": 12.5,
       "icon": "↰",
       "turnDir": "left",
       "road": "Old Champlain Canal Path",
@@ -2076,10 +2112,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 12.9,
+      "mile": 12.7,
       "icon": "↱",
       "turnDir": "straight",
       "road": "Canal Street",
@@ -2088,10 +2124,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.8
+      "dist": 0.7
      },
      {
-      "mile": 13.7,
+      "mile": 13.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "McIntyre Street",
@@ -2103,7 +2139,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.1
      },
      {
-      "mile": 13.8,
+      "mile": 13.5,
       "icon": "↱",
       "turnDir": "right",
       "road": "Old Champlain Canal Towpath",
@@ -2112,10 +2148,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.2
+      "dist": 0.3
      },
      {
-      "mile": 14.0,
+      "mile": 13.8,
       "icon": "↗",
       "turnDir": "bear-right",
       "road": "Towpath Road",
@@ -2124,58 +2160,58 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.8
+      "dist": 0.7
      },
      {
-      "mile": 14.8,
+      "mile": 14.5,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Old Champlain Canal Trail",
       "action": "CONTINUE ONTO",
-      "surface": "Unpaved: compacted",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 1.9
      },
      {
-      "mile": 16.7,
+      "mile": 16.4,
       "icon": "↱",
       "turnDir": "right",
       "road": "Towpath Road",
       "action": "TURN RIGHT",
-      "surface": "Unpaved: compacted",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 2.4
      },
      {
-      "mile": 19.1,
+      "mile": 18.8,
       "icon": "↱",
       "turnDir": "right",
       "road": "New Swamp Road",
       "action": "TURN RIGHT",
-      "surface": "Unpaved: unpaved",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.3
      },
      {
-      "mile": 19.4,
+      "mile": 19.1,
       "icon": "↰",
       "turnDir": "left",
       "road": "Champlain Canalway Trail",
       "action": "TURN LEFT",
-      "surface": "Unpaved: unpaved",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 4.4
      },
      {
-      "mile": 23.8,
+      "mile": 23.5,
       "icon": "↰",
       "turnDir": "left",
       "road": "Baldwin Corners Road",
@@ -2184,10 +2220,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 23.9,
+      "mile": 23.7,
       "icon": "↱",
       "turnDir": "right",
       "road": "Champlain Canalway Trail",
@@ -2196,10 +2232,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.5
+      "dist": 1.4
      },
      {
-      "mile": 25.4,
+      "mile": 25.1,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "South Canal Street",
@@ -2208,10 +2244,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.3
+      "dist": 0.4
      },
      {
-      "mile": 25.7,
+      "mile": 25.5,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Clay Hill Road",
@@ -2220,10 +2256,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 2.7
+      "dist": 2.6
      },
      {
-      "mile": 28.4,
+      "mile": 28.1,
       "icon": "↱",
       "turnDir": "right",
       "road": "Deweys Bridge Road",
@@ -2235,7 +2271,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.2
      },
      {
-      "mile": 28.6,
+      "mile": 28.3,
       "icon": "↰",
       "turnDir": "left",
       "road": "South Quarry Road",
@@ -2247,7 +2283,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 29.0,
+      "mile": 28.7,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Empire State Trail",
@@ -2259,19 +2295,19 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 1.7
      },
      {
-      "mile": 30.7,
+      "mile": 30.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "State Highway 22 (NY-22)",
       "action": "TURN LEFT",
       "surface": "Road shoulder",
-      "detail": "NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall.",
+      "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.0
+      "dist": 1.1
      },
      {
-      "mile": 31.7,
+      "mile": 31.5,
       "icon": "↱",
       "turnDir": "right",
       "road": "US Route 4 (US-4; NY-22)",
@@ -2283,19 +2319,19 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 6.1
      },
      {
-      "mile": 37.8,
+      "mile": 37.6,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Broadway Avenue (US-4; NY-22)",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
-      "detail": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED.",
+      "detail": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.8
      },
      {
-      "mile": 38.6,
+      "mile": 38.4,
       "icon": "🥪",
       "turnDir": "lunch",
       "road": "Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route)",
@@ -2307,7 +2343,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.7
      },
      {
-      "mile": 39.3,
+      "mile": 39.1,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Broadway (NY-22)",
@@ -2319,7 +2355,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 1.5
      },
      {
-      "mile": 40.8,
+      "mile": 40.6,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "State Highway 22 (NY-22)",
@@ -2328,10 +2364,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 23.5
+      "dist": 23.4
      },
      {
-      "mile": 64.3,
+      "mile": 64.0,
       "icon": "↰",
       "turnDir": "left",
       "road": "Mount Hope Avenue",
@@ -2343,7 +2379,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.2
      },
      {
-      "mile": 64.5,
+      "mile": 64.2,
       "icon": "↱",
       "turnDir": "right",
       "road": "Burgoyne Road",
@@ -2352,10 +2388,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 64.6,
+      "mile": 64.4,
       "icon": "🚏",
       "turnDir": "terminus",
       "road": "Best Western Plus Ticonderoga Inn & Suites",
@@ -5072,7 +5108,7 @@ const STRIP_MAP_ITINERARIES = {
     "elevationFt": 2600,
     "waterway": "Champlain Canal / Lake Champlain",
     "railLine": "Amtrak Adirondack (Fort Edward, Whitehall)",
-    "surfaceSummary": "Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 13.5 mi (mi 4.6 to 6.2 compacted, mi 6.4 to 9.6 gravel, mi 26.7 to 27.4 compacted, mi 28.5 to 29.3 compacted, mi 43.0 to 49.3 compacted/unpaved, mi 58.1 to 59.0 unpaved).",
+    "surfaceSummary": "Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 13.5 mi (mi 4.6 to 6.2 compacted, mi 6.4 to 9.6 gravel, mi 26.7 to 27.4 compacted, mi 28.5 to 29.3 compacted, mi 43.0 to 49.3 compacted/unpaved, mi 58.1 to 59.0 unpaved).",
     "overnight": "Best Western Plus Ticonderoga Inn & Suites",
     "elevProfile": [
      {
@@ -5656,7 +5692,7 @@ const STRIP_MAP_ITINERARIES = {
       "road": "State Highway 22 (NY-22)",
       "action": "TURN LEFT",
       "surface": "Road shoulder",
-      "detail": "NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall.",
+      "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 1.1
@@ -5680,7 +5716,7 @@ const STRIP_MAP_ITINERARIES = {
       "road": "Broadway Avenue (US-4; NY-22)",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
-      "detail": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED.",
+      "detail": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.8
@@ -7043,10 +7079,10 @@ const STRIP_MAP_ITINERARIES = {
   "title": "7-Day Tour (Sunday to Saturday)",
   "subtitle": "Turn-by-turn strip map (miles reset each day, matching the day GPX files)",
   "schedule": "Sun Oct 4 ➔ Sat Oct 10 (7 days)",
-  "totalMiles": "460.6",
-  "totalKm": "741.3",
-  "elevationGain": "+11,200 ft (est.)",
-  "avgDaily": "65.8 mi/day",
+  "totalMiles": "461.4",
+  "totalKm": "742.6",
+  "elevationGain": "+11,400 ft (est.)",
+  "avgDaily": "65.9 mi/day",
   "stages": [
    {
     "stageNum": 1,
@@ -8183,11 +8219,11 @@ const STRIP_MAP_ITINERARIES = {
     "dayOfWeek": "Tuesday",
     "dateStr": "Oct 6",
     "name": "Hudson to Schuylerville, NY",
-    "distanceMiles": 75.9,
-    "elevationFt": 1200,
+    "distanceMiles": 76.9,
+    "elevationFt": 1300,
     "waterway": "Hudson River & Champlain Canal",
     "railLine": "Amtrak Empire Service (Albany-Rensselaer)",
-    "surfaceSummary": "Mostly paved trail and canal paths: AHET, Mohawk-Hudson Bike-Hike Trail, and Champlain Canalway Trail via Waterford, Mechanicville, and Stillwater into Schuylerville. Stays 100% on the official Empire State Trail without highway detours.",
+    "surfaceSummary": "Paved AHET and Mohawk-Hudson trail with city streets through Rensselaer, Watervliet and Cohoes, then the Old Champlain Canal Trail to Mechanicville. The last ~17 mi follow the Empire State Trail's on-road section on US-4/NY-32 (road shoulder) through Stillwater and past Saratoga National Historical Park into Schuylerville. Unpaved per OpenStreetMap: about 8.5 mi (mi 3.0 to 5.7 compacted, mi 52.6 to 54.4 unpaved/compacted, mi 54.7 to 57.9 gravel, mi 74.9 to 75.7 compacted).",
     "overnight": "Dovegate Inn",
     "elevProfile": [
      {
@@ -8196,78 +8232,78 @@ const STRIP_MAP_ITINERARIES = {
       "label": "Start"
      },
      {
-      "mile": 5.1,
-      "elev": 83,
-      "label": ""
-     },
-     {
-      "mile": 10.1,
-      "elev": 188,
-      "label": ""
-     },
-     {
-      "mile": 15.2,
-      "elev": 281,
-      "label": ""
-     },
-     {
-      "mile": 20.2,
-      "elev": 345,
-      "label": ""
-     },
-     {
-      "mile": 25.3,
-      "elev": 413,
-      "label": ""
-     },
-     {
-      "mile": 30.4,
-      "elev": 425,
-      "label": ""
-     },
-     {
-      "mile": 35.4,
-      "elev": 203,
-      "label": ""
-     },
-     {
-      "mile": 40.5,
-      "elev": 24,
-      "label": ""
-     },
-     {
-      "mile": 45.5,
-      "elev": 26,
-      "label": ""
-     },
-     {
-      "mile": 50.6,
-      "elev": 36,
-      "label": "Lunch"
-     },
-     {
-      "mile": 55.7,
-      "elev": 77,
-      "label": ""
-     },
-     {
-      "mile": 60.7,
+      "mile": 5.5,
       "elev": 85,
       "label": ""
      },
      {
-      "mile": 65.8,
-      "elev": 95,
+      "mile": 10.9,
+      "elev": 220,
       "label": ""
      },
      {
-      "mile": 70.8,
-      "elev": 110,
+      "mile": 16.4,
+      "elev": 282,
       "label": ""
      },
      {
-      "mile": 75.9,
-      "elev": 123,
+      "mile": 21.9,
+      "elev": 354,
+      "label": ""
+     },
+     {
+      "mile": 27.3,
+      "elev": 449,
+      "label": ""
+     },
+     {
+      "mile": 32.8,
+      "elev": 285,
+      "label": ""
+     },
+     {
+      "mile": 38.3,
+      "elev": 0,
+      "label": ""
+     },
+     {
+      "mile": 43.7,
+      "elev": 33,
+      "label": ""
+     },
+     {
+      "mile": 49.2,
+      "elev": 102,
+      "label": ""
+     },
+     {
+      "mile": 54.7,
+      "elev": 75,
+      "label": "Lunch"
+     },
+     {
+      "mile": 60.1,
+      "elev": 72,
+      "label": ""
+     },
+     {
+      "mile": 65.6,
+      "elev": 108,
+      "label": ""
+     },
+     {
+      "mile": 71.1,
+      "elev": 105,
+      "label": ""
+     },
+     {
+      "mile": 76.6,
+      "elev": 135,
+      "label": ""
+     },
+     {
+      "mile": 76.9,
+      "elev": 125,
       "label": "Finish"
      }
     ],
@@ -8766,18 +8802,18 @@ const STRIP_MAP_ITINERARIES = {
      },
      {
       "mile": 52.1,
-      "icon": "⬆",
-      "turnDir": "straight",
+      "icon": "↖",
+      "turnDir": "bear-left",
       "road": "Old Champlain Canal Trail",
-      "action": "CONTINUE ONTO",
+      "action": "BEAR LEFT",
       "surface": "Bike path",
       "detail": "Canal towpath trail north toward Mechanicville.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.7
+      "dist": 2.3
      },
      {
-      "mile": 53.8,
+      "mile": 54.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "Bells Lane North",
@@ -8789,19 +8825,19 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 54.2,
+      "mile": 54.8,
       "icon": "↱",
       "turnDir": "right",
       "road": "Old Champlain Canal Trail",
       "action": "TURN RIGHT",
-      "surface": "Bike path",
+      "surface": "Unpaved: gravel",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 3.0
      },
      {
-      "mile": 57.2,
+      "mile": 57.8,
       "icon": "↱",
       "turnDir": "right",
       "road": "Upper Newtown Road (CR-86)",
@@ -8810,10 +8846,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.2
+      "dist": 0.3
      },
      {
-      "mile": 57.4,
+      "mile": 58.1,
       "icon": "↰",
       "turnDir": "left",
       "road": "Hudson River Road (US-4; NY-32)",
@@ -8822,10 +8858,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "US-4 / NY-32 along the Hudson River through Mechanicville and Stillwater.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.5
+      "dist": 1.4
      },
      {
-      "mile": 58.9,
+      "mile": 59.5,
       "icon": "↗",
       "turnDir": "bear-right",
       "road": "South Main Street",
@@ -8834,22 +8870,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 2.0
+      "dist": 2.3
      },
      {
-      "mile": 60.9,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Hudson Avenue (US-4; NY-32)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.2
-     },
-     {
-      "mile": 61.1,
+      "mile": 61.8,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "River Road (US-4; NY-32)",
@@ -8858,10 +8882,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.8
+      "dist": 1.7
      },
      {
-      "mile": 62.9,
+      "mile": 63.5,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Hudson Avenue (US-4; NY-32)",
@@ -8870,10 +8894,22 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 3.3
+      "dist": 3.2
      },
      {
-      "mile": 66.2,
+      "mile": 66.7,
+      "icon": "⬆",
+      "turnDir": "straight",
+      "road": "US 4; NY 32",
+      "action": "CONTINUE ONTO",
+      "surface": "Road shoulder",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 1.9
+     },
+     {
+      "mile": 68.6,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "US 4",
@@ -8882,10 +8918,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 7.9
+      "dist": 6.1
      },
      {
-      "mile": 74.1,
+      "mile": 74.7,
       "icon": "↱",
       "turnDir": "right",
       "road": "bike path",
@@ -8894,22 +8930,22 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 74.2,
+      "mile": 74.9,
       "icon": "↰",
       "turnDir": "left",
       "road": "Surrender March Trail",
       "action": "TURN LEFT",
-      "surface": "Bike path",
+      "surface": "Unpaved: compacted",
       "detail": "Historic trail approach through Saratoga National Historical Park into Schuylerville.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.8
+      "dist": 0.7
      },
      {
-      "mile": 75.0,
+      "mile": 75.6,
       "icon": "↱",
       "turnDir": "right",
       "road": "US 4",
@@ -8918,10 +8954,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.9
+      "dist": 1.3
      },
      {
-      "mile": 75.9,
+      "mile": 76.9,
       "icon": "🚏",
       "turnDir": "terminus",
       "road": "Dovegate Inn",
@@ -8940,91 +8976,91 @@ const STRIP_MAP_ITINERARIES = {
     "dayOfWeek": "Wednesday",
     "dateStr": "Oct 7",
     "name": "Schuylerville to Ticonderoga, NY",
-    "distanceMiles": 64.6,
-    "elevationFt": 2100,
+    "distanceMiles": 64.4,
+    "elevationFt": 2200,
     "waterway": "Champlain Canal / Lake Champlain",
     "railLine": "Amtrak Adirondack (Fort Edward, Whitehall)",
-    "surfaceSummary": "Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 7.7 mi (mi 0.2 to 1.0 compacted, mi 14.5 to 18.9 compacted, mi 19.2 to 20.7 unpaved, mi 29.5 to 30.5 unpaved).",
+    "surfaceSummary": "Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 8.1 mi (mi 0.2 to 0.9 compacted, mi 14.4 to 20.8 compacted/unpaved, mi 29.5 to 30.5 unpaved).",
     "overnight": "Best Western Plus Ticonderoga Inn & Suites",
     "elevProfile": [
      {
       "mile": 0.0,
-      "elev": 123,
+      "elev": 125,
       "label": "Start"
      },
      {
-      "mile": 4.3,
-      "elev": 128,
+      "mile": 4.6,
+      "elev": 125,
       "label": ""
      },
      {
-      "mile": 8.6,
-      "elev": 149,
+      "mile": 9.2,
+      "elev": 144,
       "label": ""
      },
      {
-      "mile": 12.9,
-      "elev": 161,
+      "mile": 13.8,
+      "elev": 157,
       "label": ""
      },
      {
-      "mile": 17.2,
-      "elev": 152,
+      "mile": 18.4,
+      "elev": 148,
       "label": ""
      },
      {
-      "mile": 21.5,
-      "elev": 145,
+      "mile": 23.0,
+      "elev": 148,
       "label": ""
      },
      {
-      "mile": 25.8,
-      "elev": 152,
+      "mile": 27.6,
+      "elev": 220,
       "label": ""
      },
      {
-      "mile": 30.1,
-      "elev": 189,
+      "mile": 32.2,
+      "elev": 164,
       "label": ""
      },
      {
-      "mile": 34.5,
-      "elev": 169,
-      "label": ""
-     },
-     {
-      "mile": 38.8,
-      "elev": 193,
+      "mile": 36.8,
+      "elev": 157,
       "label": "Lunch"
      },
      {
-      "mile": 43.1,
-      "elev": 377,
+      "mile": 41.4,
+      "elev": 213,
       "label": ""
      },
      {
-      "mile": 47.4,
-      "elev": 446,
+      "mile": 46.0,
+      "elev": 453,
       "label": ""
      },
      {
-      "mile": 51.7,
-      "elev": 458,
+      "mile": 50.6,
+      "elev": 515,
       "label": ""
      },
      {
-      "mile": 56.0,
-      "elev": 424,
+      "mile": 55.2,
+      "elev": 417,
       "label": ""
      },
      {
-      "mile": 60.3,
-      "elev": 331,
+      "mile": 59.8,
+      "elev": 374,
       "label": ""
      },
      {
-      "mile": 64.6,
-      "elev": 314,
+      "mile": 64.4,
+      "elev": 322,
+      "label": ""
+     },
+     {
+      "mile": 64.4,
+      "elev": 322,
       "label": "Finish"
      }
     ],
@@ -9033,16 +9069,28 @@ const STRIP_MAP_ITINERARIES = {
       "mile": 0.1,
       "icon": "↰",
       "turnDir": "left",
-      "road": "Old Champlain Canal Towpath Trail",
+      "road": "Tow Path",
       "action": "DEPART ON",
+      "surface": "Unpaved: compacted",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 0.3
+     },
+     {
+      "mile": 0.4,
+      "icon": "↖",
+      "turnDir": "straight",
+      "road": "Old Champlain Canal Towpath Trail",
+      "action": "CONTINUE ONTO",
       "surface": "Unpaved: compacted",
       "detail": "Towpath trail departing Schuylerville north along the canal.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.9
+      "dist": 0.5
      },
      {
-      "mile": 1.0,
+      "mile": 0.9,
       "icon": "↱",
       "turnDir": "right",
       "road": "County Road 42 (CR-42)",
@@ -9054,7 +9102,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 1.4,
+      "mile": 1.3,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Dix Bridge Road",
@@ -9066,7 +9114,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.1
      },
      {
-      "mile": 1.5,
+      "mile": 1.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "bike path",
@@ -9078,7 +9126,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 1.9,
+      "mile": 1.8,
       "icon": "↰",
       "turnDir": "left",
       "road": "CR 113",
@@ -9090,7 +9138,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.8
      },
      {
-      "mile": 2.7,
+      "mile": 2.6,
       "icon": "↱",
       "turnDir": "right",
       "road": "US 4",
@@ -9099,10 +9147,34 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 10.1
+      "dist": 1.5
      },
      {
-      "mile": 12.8,
+      "mile": 4.1,
+      "icon": "↰",
+      "turnDir": "left",
+      "road": "Fort Miller Road",
+      "action": "TURN LEFT",
+      "surface": "Street",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 1.0
+     },
+     {
+      "mile": 5.1,
+      "icon": "↰",
+      "turnDir": "left",
+      "road": "US 4",
+      "action": "TURN LEFT",
+      "surface": "Road shoulder",
+      "detail": "",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 7.4
+     },
+     {
+      "mile": 12.5,
       "icon": "↰",
       "turnDir": "left",
       "road": "Old Champlain Canal Path",
@@ -9111,10 +9183,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 12.9,
+      "mile": 12.7,
       "icon": "↱",
       "turnDir": "straight",
       "road": "Canal Street",
@@ -9123,10 +9195,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.8
+      "dist": 0.7
      },
      {
-      "mile": 13.7,
+      "mile": 13.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "McIntyre Street",
@@ -9138,7 +9210,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.1
      },
      {
-      "mile": 13.8,
+      "mile": 13.5,
       "icon": "↱",
       "turnDir": "right",
       "road": "Old Champlain Canal Towpath",
@@ -9147,10 +9219,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.2
+      "dist": 0.3
      },
      {
-      "mile": 14.0,
+      "mile": 13.8,
       "icon": "↗",
       "turnDir": "bear-right",
       "road": "Towpath Road",
@@ -9159,58 +9231,58 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.8
+      "dist": 0.7
      },
      {
-      "mile": 14.8,
+      "mile": 14.5,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Old Champlain Canal Trail",
       "action": "CONTINUE ONTO",
-      "surface": "Unpaved: compacted",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 1.9
      },
      {
-      "mile": 16.7,
+      "mile": 16.4,
       "icon": "↱",
       "turnDir": "right",
       "road": "Towpath Road",
       "action": "TURN RIGHT",
-      "surface": "Unpaved: compacted",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 2.4
      },
      {
-      "mile": 19.1,
+      "mile": 18.8,
       "icon": "↱",
       "turnDir": "right",
       "road": "New Swamp Road",
       "action": "TURN RIGHT",
-      "surface": "Unpaved: unpaved",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.3
      },
      {
-      "mile": 19.4,
+      "mile": 19.1,
       "icon": "↰",
       "turnDir": "left",
       "road": "Champlain Canalway Trail",
       "action": "TURN LEFT",
-      "surface": "Unpaved: unpaved",
+      "surface": "Unpaved: compacted/unpaved",
       "detail": "Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 4.4
      },
      {
-      "mile": 23.8,
+      "mile": 23.5,
       "icon": "↰",
       "turnDir": "left",
       "road": "Baldwin Corners Road",
@@ -9219,10 +9291,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 23.9,
+      "mile": 23.7,
       "icon": "↱",
       "turnDir": "right",
       "road": "Champlain Canalway Trail",
@@ -9231,10 +9303,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.5
+      "dist": 1.4
      },
      {
-      "mile": 25.4,
+      "mile": 25.1,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "South Canal Street",
@@ -9243,10 +9315,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.3
+      "dist": 0.4
      },
      {
-      "mile": 25.7,
+      "mile": 25.5,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Clay Hill Road",
@@ -9255,10 +9327,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 2.7
+      "dist": 2.6
      },
      {
-      "mile": 28.4,
+      "mile": 28.1,
       "icon": "↱",
       "turnDir": "right",
       "road": "Deweys Bridge Road",
@@ -9270,7 +9342,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.2
      },
      {
-      "mile": 28.6,
+      "mile": 28.3,
       "icon": "↰",
       "turnDir": "left",
       "road": "South Quarry Road",
@@ -9282,7 +9354,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.4
      },
      {
-      "mile": 29.0,
+      "mile": 28.7,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Empire State Trail",
@@ -9294,19 +9366,19 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 1.7
      },
      {
-      "mile": 30.7,
+      "mile": 30.4,
       "icon": "↰",
       "turnDir": "left",
       "road": "State Highway 22 (NY-22)",
       "action": "TURN LEFT",
       "surface": "Road shoulder",
-      "detail": "NY-22 north: 23.5 rolling miles with few services. Fill bottles in Whitehall.",
+      "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.0
+      "dist": 1.1
      },
      {
-      "mile": 31.7,
+      "mile": 31.5,
       "icon": "↱",
       "turnDir": "right",
       "road": "US Route 4 (US-4; NY-22)",
@@ -9318,19 +9390,19 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 6.1
      },
      {
-      "mile": 37.8,
+      "mile": 37.6,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Broadway Avenue (US-4; NY-22)",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
-      "detail": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED.",
+      "detail": "Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.8
      },
      {
-      "mile": 38.6,
+      "mile": 38.4,
       "icon": "🥪",
       "turnDir": "lunch",
       "road": "Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route)",
@@ -9342,7 +9414,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.7
      },
      {
-      "mile": 39.3,
+      "mile": 39.1,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "Broadway (NY-22)",
@@ -9354,7 +9426,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 1.5
      },
      {
-      "mile": 40.8,
+      "mile": 40.6,
       "icon": "⬆",
       "turnDir": "straight",
       "road": "State Highway 22 (NY-22)",
@@ -9363,10 +9435,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 23.5
+      "dist": 23.4
      },
      {
-      "mile": 64.3,
+      "mile": 64.0,
       "icon": "↰",
       "turnDir": "left",
       "road": "Mount Hope Avenue",
@@ -9378,7 +9450,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.2
      },
      {
-      "mile": 64.5,
+      "mile": 64.2,
       "icon": "↱",
       "turnDir": "right",
       "road": "Burgoyne Road",
@@ -9387,10 +9459,10 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.1
+      "dist": 0.2
      },
      {
-      "mile": 64.6,
+      "mile": 64.4,
       "icon": "🚏",
       "turnDir": "terminus",
       "road": "Best Western Plus Ticonderoga Inn & Suites",

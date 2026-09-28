@@ -4,8 +4,8 @@ Hotel-to-hotel tour from Battery Park to Old Montréal on the Empire State Trail
 
 | Itinerary | Days | Total | Climb (est.) | Daily miles |
 |:---|:---|:---|:---|:---|
-| 7-Day Tour (Sunday to Saturday) | 7 | 460.6 mi | +11,200 ft | 67.5, 89.6, 75.9, 64.6, 72.5, 54.7, 35.8 |
-| 6-Day Tour (Sunday to Friday) | 6 | 458.0 mi | +11,200 ft | 67.5, 89.6, 75.9, 64.6, 72.5, 87.9 |
+| 7-Day Tour (Sunday to Saturday) | 7 | 461.4 mi | +11,400 ft | 67.5, 89.6, 76.9, 64.4, 72.5, 54.7, 35.8 |
+| 6-Day Tour (Sunday to Friday) | 6 | 458.8 mi | +11,400 ft | 67.5, 89.6, 76.9, 64.4, 72.5, 87.9 |
 | 5-Day Fast Tour | 5 | 452.3 mi | +11,000 ft | 103.1, 95.9, 92.9, 72.5, 87.9 |
 
 Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: 60.7 + 72.8 mi.
@@ -39,7 +39,7 @@ Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Island
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 75.9 and 64.6 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are 89.6 and 76.9 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps

@@ -1436,7 +1436,7 @@ let tourWeatherData = {};
 const OCTOBER_CLIMATE_FALLBACK = {
   1: { tempMax: 67, tempMin: 47, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Brewster / Poughkeepsie
   2: { tempMax: 65, tempMin: 44, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Hudson / Troy
-  3: { tempMax: 64, tempMin: 42, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Saratoga / Ticonderoga
+  3: { tempMax: 64, tempMin: 42, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Schuylerville / Ticonderoga
   4: { tempMax: 62, tempMin: 40, rainProb: 30, windSpeed: 8, windDir: 225, weatherCode: 2 }, // Ticonderoga / Plattsburgh
   5: { tempMax: 60, tempMin: 41, rainProb: 30, windSpeed: 9, windDir: 225, weatherCode: 2 }, // Plattsburgh / Montreal
   6: { tempMax: 60, tempMin: 41, rainProb: 30, windSpeed: 9, windDir: 225, weatherCode: 2 }, // Saint-Jean / Montreal

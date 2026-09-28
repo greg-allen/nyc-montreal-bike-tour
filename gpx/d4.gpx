@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="mtl_bike tools/build.py" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>Schuylerville to Ticonderoga, NY</name><desc>64.6 mi (104.0 km), about +2,100 ft. Routed on OpenStreetMap along the official trails.</desc></metadata>
-  <wpt lat="43.54997" lon="-73.39814"><name>Lunch: Stewart's Shops #211</name><desc>Mile 38.6, 0.3 mi off route. 60 Poultney St, Whitehall, NY. . Convenience store with hot food and coffee. The reliable food stop in Whitehall.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 64.6. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="43.41500" lon="-73.49100"><name>Bike: Walker's Farm, Home &amp; Tack</name><desc>Mile 25.6, 0.2 mi off route. 5565 State Route 4, Fort Ann, NY. (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="43.33163" lon="-73.63583"><name>Bike: Rick's Bike Shop</name><desc>Mile 15.6, 4.7 mi off route. 368 Ridge Rd, Queensbury, NY. (518) 793-8986. Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="43.26976" lon="-73.58040"><name>Station: Fort Edward-Glens Falls</name><desc>Mile 13.4, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="43.55477" lon="-73.40323"><name>Station: Whitehall</name><desc>Mile 38.8, 0.0 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Schuylerville to Ticonderoga, NY</name><desc>64.6 mi (104.0 km), about +2,100 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
-    <trkpt lat="43.099934" lon="-73.581314"/>
-    <trkpt lat="43.099618" lon="-73.579987"/>
-    <trkpt lat="43.100152" lon="-73.579879"/>
-    <trkpt lat="43.100391" lon="-73.579771"/>
-    <trkpt lat="43.100590" lon="-73.579595"/>
+  <metadata><name>Schuylerville to Ticonderoga, NY</name><desc>64.4 mi (103.6 km), about +2,200 ft. Routed on OpenStreetMap along the official trails.</desc></metadata>
+  <wpt lat="43.54997" lon="-73.39814"><name>Lunch: Stewart's Shops #211</name><desc>Mile 38.4, 0.3 mi off route. 60 Poultney St, Whitehall, NY. . Convenience store with hot food and coffee. The reliable food stop in Whitehall.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 64.4. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="43.41500" lon="-73.49100"><name>Bike: Walker's Farm, Home &amp; Tack</name><desc>Mile 25.4, 0.2 mi off route. 5565 State Route 4, Fort Ann, NY. (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="43.33163" lon="-73.63583"><name>Bike: Rick's Bike Shop</name><desc>Mile 15.3, 4.7 mi off route. 368 Ridge Rd, Queensbury, NY. (518) 793-8986. Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="43.26976" lon="-73.58040"><name>Station: Fort Edward-Glens Falls</name><desc>Mile 13.2, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="43.55477" lon="-73.40323"><name>Station: Whitehall</name><desc>Mile 38.6, 0.0 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Schuylerville to Ticonderoga, NY</name><desc>64.4 mi (103.6 km), about +2,200 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+    <trkpt lat="43.102689" lon="-73.579445"/>
+    <trkpt lat="43.101715" lon="-73.579871"/>
     <trkpt lat="43.101402" lon="-73.578713"/>
     <trkpt lat="43.101849" lon="-73.578187"/>
     <trkpt lat="43.102521" lon="-73.577616"/>
@@ -30,13 +27,11 @@
     <trkpt lat="43.111705" lon="-73.577884"/>
     <trkpt lat="43.111906" lon="-73.577664"/>
     <trkpt lat="43.112116" lon="-73.577513"/>
-    <trkpt lat="43.112413" lon="-73.577363"/>
-    <trkpt lat="43.112658" lon="-73.577329"/>
-    <trkpt lat="43.113262" lon="-73.577479"/>
+    <trkpt lat="43.112298" lon="-73.577409"/>
+    <trkpt lat="43.112534" lon="-73.577334"/>
+    <trkpt lat="43.113094" lon="-73.577421"/>
     <trkpt lat="43.113550" lon="-73.577644"/>
-    <trkpt lat="43.113794" lon="-73.577729"/>
     <trkpt lat="43.114084" lon="-73.577794"/>
-    <trkpt lat="43.114309" lon="-73.577763"/>
     <trkpt lat="43.115606" lon="-73.577466"/>
     <trkpt lat="43.115768" lon="-73.577402"/>
     <trkpt lat="43.115992" lon="-73.577212"/>
@@ -103,22 +98,19 @@
     <trkpt lat="43.150346" lon="-73.578657"/>
     <trkpt lat="43.150371" lon="-73.578864"/>
     <trkpt lat="43.150449" lon="-73.578975"/>
-    <trkpt lat="43.150048" lon="-73.579381"/>
-    <trkpt lat="43.150449" lon="-73.578975"/>
-    <trkpt lat="43.150371" lon="-73.578864"/>
-    <trkpt lat="43.150346" lon="-73.578657"/>
-    <trkpt lat="43.150531" lon="-73.576994"/>
-    <trkpt lat="43.151361" lon="-73.576479"/>
-    <trkpt lat="43.152681" lon="-73.575823"/>
-    <trkpt lat="43.154001" lon="-73.575166"/>
-    <trkpt lat="43.154228" lon="-73.575062"/>
-    <trkpt lat="43.154789" lon="-73.574931"/>
-    <trkpt lat="43.155298" lon="-73.574933"/>
-    <trkpt lat="43.155971" lon="-73.575077"/>
-    <trkpt lat="43.157353" lon="-73.575667"/>
-    <trkpt lat="43.158734" lon="-73.576257"/>
-    <trkpt lat="43.159164" lon="-73.576490"/>
-    <trkpt lat="43.160264" lon="-73.577322"/>
+    <trkpt lat="43.151422" lon="-73.578261"/>
+    <trkpt lat="43.151826" lon="-73.578006"/>
+    <trkpt lat="43.153019" lon="-73.577453"/>
+    <trkpt lat="43.154093" lon="-73.577326"/>
+    <trkpt lat="43.155167" lon="-73.577200"/>
+    <trkpt lat="43.156875" lon="-73.576883"/>
+    <trkpt lat="43.157112" lon="-73.576872"/>
+    <trkpt lat="43.157608" lon="-73.576960"/>
+    <trkpt lat="43.158041" lon="-73.577157"/>
+    <trkpt lat="43.158799" lon="-73.577704"/>
+    <trkpt lat="43.159841" lon="-73.578626"/>
+    <trkpt lat="43.160860" lon="-73.579427"/>
+    <trkpt lat="43.160864" lon="-73.578122"/>
     <trkpt lat="43.161098" lon="-73.577804"/>
     <trkpt lat="43.161741" lon="-73.578003"/>
     <trkpt lat="43.162955" lon="-73.578216"/>
@@ -127,13 +119,11 @@
     <trkpt lat="43.167260" lon="-73.578723"/>
     <trkpt lat="43.168806" lon="-73.578870"/>
     <trkpt lat="43.170351" lon="-73.579017"/>
-    <trkpt lat="43.171024" lon="-73.579033"/>
-    <trkpt lat="43.172163" lon="-73.578978"/>
+    <trkpt lat="43.171459" lon="-73.579029"/>
+    <trkpt lat="43.172381" lon="-73.578976"/>
     <trkpt lat="43.173302" lon="-73.578923"/>
     <trkpt lat="43.174767" lon="-73.578810"/>
     <trkpt lat="43.176233" lon="-73.578698"/>
-    <trkpt lat="43.177698" lon="-73.578585"/>
-    <trkpt lat="43.177679" lon="-73.579551"/>
     <trkpt lat="43.177698" lon="-73.578585"/>
     <trkpt lat="43.179168" lon="-73.578638"/>
     <trkpt lat="43.180639" lon="-73.578691"/>
@@ -713,10 +703,9 @@
     <trkpt lat="43.548845" lon="-73.405259"/>
     <trkpt lat="43.550101" lon="-73.404623"/>
     <trkpt lat="43.551341" lon="-73.404202"/>
-    <trkpt lat="43.552408" lon="-73.403914"/>
-    <trkpt lat="43.553475" lon="-73.403626"/>
-    <trkpt lat="43.554124" lon="-73.403502"/>
-    <trkpt lat="43.555163" lon="-73.403430"/>
+    <trkpt lat="43.552565" lon="-73.403880"/>
+    <trkpt lat="43.553788" lon="-73.403557"/>
+    <trkpt lat="43.554743" lon="-73.403444"/>
     <trkpt lat="43.556203" lon="-73.403357"/>
     <trkpt lat="43.556758" lon="-73.403451"/>
     <trkpt lat="43.557123" lon="-73.403647"/>
