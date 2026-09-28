@@ -70,6 +70,14 @@ def wpt_near_track(wpt, track_pts, radius_mi):
     return False
 
 
+def _get_text(el, tag):
+    """Find child text matching either namespaced or bare tag."""
+    child = el.find(f'{NSP}{tag}')
+    if child is None:
+        child = el.find(tag)
+    return child.text if child is not None else None
+
+
 def split_gpx(input_path: str, output_dir: str = None, prefix: str = None,
               wpt_radius_mi: float = WPT_RADIUS_MI) -> list[str]:
     """Split a multi-track GPX into one file per <trk>.
@@ -92,24 +100,30 @@ def split_gpx(input_path: str, output_dir: str = None, prefix: str = None,
     tree = ET.parse(input_path)
     root = tree.getroot()
 
-    if root.tag != f'{NSP}gpx':
-        raise ValueError(f"Expected root <gpx>, got {root.tag!r}")
-
     all_tracks = root.findall(f'{NSP}trk')
+    if not all_tracks:
+        all_tracks = root.findall('trk')
     if not all_tracks:
         raise ValueError("No <trk> elements found in GPX file.")
 
-    all_wpts = root.findall(f'{NSP}wpt')
-    metadata = root.find(f'{NSP}metadata')
+    all_wpts = root.findall(f'{NSP}wpt') + root.findall('wpt')
+    metadata = root.find(f'{NSP}metadata') or root.find('metadata')
 
     written = []
     for i, trk in enumerate(all_tracks, 1):
         # Build new GPX root with same attributes
         new_root = ET.Element(root.tag, root.attrib)
 
-        # Preserve metadata
-        if metadata is not None:
-            new_root.append(metadata)
+        # Create day-specific metadata block so bike computers (Wahoo ELEMNT, etc.)
+        # read the unique day name from <metadata><name> instead of the overarching tour name.
+        trk_name = _get_text(trk, 'name') or f"Day {i}"
+        trk_desc = _get_text(trk, 'desc') or ""
+        new_meta = ET.SubElement(new_root, f'{NSP}metadata')
+        m_name = ET.SubElement(new_meta, f'{NSP}name')
+        m_name.text = trk_name
+        if trk_desc:
+            m_desc = ET.SubElement(new_meta, f'{NSP}desc')
+            m_desc.text = trk_desc
 
         # Find waypoints near this track
         tpts = track_points(trk)
@@ -125,7 +139,6 @@ def split_gpx(input_path: str, output_dir: str = None, prefix: str = None,
         ET.ElementTree(new_root).write(out_path, encoding='unicode', xml_declaration=True)
         written.append(out_path)
 
-        trk_name = (trk.find(f'{NSP}name') or ET.Element('x')).text or f"Day {i}"
         print(f"  [{i}/{len(all_tracks)}] {trk_name!r} → {os.path.basename(out_path)} "
               f"({len(tpts):,} pts, {sum(1 for w in all_wpts if wpt_near_track(w, tpts, wpt_radius_mi))} wpts)")
 
@@ -138,14 +151,12 @@ def split_gpx(input_path: str, output_dir: str = None, prefix: str = None,
 
 def _make_test_gpx(tmp_path: Path, num_days: int = 2) -> Path:
     """Create a minimal synthetic multi-track GPX for testing."""
-    gpx = ET.Element('gpx', {
+    gpx = ET.Element(f'{NSP}gpx', {
         'version': '1.1',
         'creator': 'test',
-        'xmlns': NS,
-        'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
     })
-    meta = ET.SubElement(gpx, 'metadata')
-    name_el = ET.SubElement(meta, 'name')
+    meta = ET.SubElement(gpx, f'{NSP}metadata')
+    name_el = ET.SubElement(meta, f'{NSP}name')
     name_el.text = 'Test Tour'
 
     # Day 1: NYC area  (lat 40.7, lon -74.0)
@@ -161,16 +172,16 @@ def _make_test_gpx(tmp_path: Path, num_days: int = 2) -> Path:
         (42.245, -73.790, 'Hotel Hudson area'),   # near Day 2
         (45.000, -70.000, 'Far away wpt'),        # not near either
     ]:
-        wpt = ET.SubElement(gpx, 'wpt', lat=str(wlat), lon=str(wlon))
-        ET.SubElement(wpt, 'name').text = wname
+        wpt = ET.SubElement(gpx, f'{NSP}wpt', lat=str(wlat), lon=str(wlon))
+        ET.SubElement(wpt, f'{NSP}name').text = wname
 
     for trk_name, pts in day_coords:
-        trk = ET.SubElement(gpx, 'trk')
-        ET.SubElement(trk, 'name').text = trk_name
-        ET.SubElement(trk, 'desc').text = f"Test description for {trk_name}"
-        seg = ET.SubElement(trk, 'trkseg')
+        trk = ET.SubElement(gpx, f'{NSP}trk')
+        ET.SubElement(trk, f'{NSP}name').text = trk_name
+        ET.SubElement(trk, f'{NSP}desc').text = f"Test description for {trk_name}"
+        seg = ET.SubElement(trk, f'{NSP}trkseg')
         for lat, lon in pts:
-            ET.SubElement(seg, 'trkpt', lat=str(lat), lon=str(lon))
+            ET.SubElement(seg, f'{NSP}trkpt', lat=str(lat), lon=str(lon))
 
     out = tmp_path / 'test_tour.gpx'
     ET.ElementTree(gpx).write(str(out), encoding='unicode', xml_declaration=True)
@@ -262,7 +273,7 @@ def run_tests():
             failures.append(f"test5: {e}")
             traceback.print_exc()
 
-        # ---- Test 6: Metadata block is preserved ----
+        # ---- Test 6: Metadata name is set to day-specific name (for Wahoo ELEMNT etc.) ----
         try:
             src = _make_test_gpx(tmp_path)
             out = tmp_path / 'split6'
@@ -270,9 +281,9 @@ def run_tests():
             files = split_gpx(str(src), output_dir=str(out))
             root = ET.parse(files[0]).getroot()
             meta_name = root.find(f'{NSP}metadata/{NSP}name')
-            assert meta_name is not None and meta_name.text == 'Test Tour', \
-                f"Metadata missing or wrong: {meta_name}"
-            print("PASS test6: metadata preserved")
+            assert meta_name is not None and meta_name.text == 'Day 1: NYC → Brewster', \
+                f"Metadata name should be day-specific for Wahoo. Got: {getattr(meta_name, 'text', None)}"
+            print("PASS test6: metadata name is day-specific")
         except Exception as e:
             failures.append(f"test6: {e}")
             traceback.print_exc()
