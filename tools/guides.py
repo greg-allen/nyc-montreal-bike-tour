@@ -21,7 +21,7 @@ ADVISORIES = """## Critical logistics (read before booking)
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are {d2} and {d3} mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days ({longdays}) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -84,16 +84,19 @@ def itinerary_md(iid, fname, C, R, TOURS, build_cues, extra, adv):
 
 def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill):
     ret_sj = place_mile("RETURN", "trinquette")[0]
-    adv = ADVISORIES.format(ret_mi=R["RETURN"]["mi"], ret_sj=f"{ret_sj:.0f}", ret_rp=f"{R['RETURN']['mi'] - ret_sj:.0f}",
-                            d2=R["D2"]["mi"], d3=R["D3"]["mi"], d4=R["D4"]["mi"])
+
     files = {"7day": "nyc_to_montreal_7_day_tour.md", "6day": "nyc_to_montreal_bike_tour_guide.md", "5day": "nyc_to_montreal_5_day_fast_tour.md"}
     extras = {
         "7day": "**Why 7 days:** the 6-day plan's last day is " + f"{R['6D6']['mi']}" + " mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a " + f"{R['D7']['mi']}" + "-mi Saturday finish along the Chambly Canal. Days 2 and 3 are still long (" + f"{R['D2']['mi']:.0f} and {R['D3']['mi']:.0f}" + " mi): start early.\n",
         "6day": "**Note:** Day 6 is " + f"{R['6D6']['mi']}" + " mi with a border crossing, finishing in Montréal before the 6:19 PM sunset. The 7-day version splits it at Saint-Jean-sur-Richelieu.\n",
         "5day": "**Reality check:** this schedule means three days over 90 miles in October daylight. The 'push' options in earlier drafts are all 125+ mile days; they're listed per stage for completeness, but they aren't recommended.\n",
     }
+    def longdays(iid):
+        ds = [d for d in TOURS[iid]["days"] if d["distanceMiles"] >= 75]
+        return ", ".join(f"Day {d['day']} is {d['distanceMiles']} mi" for d in ds) or "none over 75 mi"
     for iid, fn in files.items():
-        open(os.path.join(ROOT, fn), "w").write(itinerary_md(iid, fn, C, R, TOURS, build_cues, extras[iid], adv))
+        adv_i = ADVISORIES.format(ret_mi=R["RETURN"]["mi"], ret_sj=f"{ret_sj:.0f}", ret_rp=f"{R['RETURN']['mi'] - ret_sj:.0f}", longdays=longdays(iid))
+        open(os.path.join(ROOT, fn), "w").write(itinerary_md(iid, fn, C, R, TOURS, build_cues, extras[iid], adv_i))
     # Vermont
     L = [f"# NYC to Montréal: {VT['title']}", "", f"**Replaces {C.VERMONT['replaces']}.** {C.VERMONT['note']}", "",
          "## Ferries", f"- **Essex ➔ Charlotte car ferry:** {VT['ferry']['schedule']} Fare {VT['ferry']['fare']}. {VT['ferry']['notes']}",
@@ -124,5 +127,5 @@ def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
               "- `nyc_to_montreal_7_day_tour.md`, `nyc_to_montreal_bike_tour_guide.md` (6-day), `nyc_to_montreal_5_day_fast_tour.md`, `nyc_to_montreal_vermont_upgrade.md`: printable guides with full cue tables.",
               "- `jersey_cue_card.html`: pocket cue card.", "- `AUDIT.md`: what was checked and corrected, and what is still unverified.",
               "- `tools/`: `build.py` regenerates all data files from `tools/content.py` and `data/routes.json`.", "",
-              ADVISORIES.format(ret_mi=R["RETURN"]["mi"], ret_sj=f"{ret_sj:.0f}", ret_rp=f"{R['RETURN']['mi'] - ret_sj:.0f}", d2=R["D2"]["mi"], d3=R["D3"]["mi"], d4=R["D4"]["mi"])]
+              ADVISORIES.format(ret_mi=R["RETURN"]["mi"], ret_sj=f"{ret_sj:.0f}", ret_rp=f"{R['RETURN']['mi'] - ret_sj:.0f}", longdays="7-day: " + longdays("7day") + "; 5-day: " + longdays("5day"))]
     open(os.path.join(ROOT, "README.md"), "w").write("\n".join(readme))

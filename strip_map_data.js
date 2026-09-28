@@ -4371,7 +4371,7 @@ const STRIP_MAP_ITINERARIES = {
       "road": "Warren Street",
       "action": "TURN RIGHT",
       "surface": "Street",
-      "detail": "",
+      "detail": "Right on Warren St through Hudson, toward the AHET.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.5

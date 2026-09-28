@@ -276,7 +276,7 @@ STAGES["5D2"] = dict(STAGES["D2"], lunch="bread_alone", title="Poughkeepsie to T
     hotels=["franklin_sq"], shops=["rhinebeck_bike", "steiners_hudson", "steiners_valatie"],
     surface_note="NY-9G shoulder, quiet county roads (Empire State Trail on-road section), then the paved AHET and Mohawk-Hudson trail, with city streets at both ends.",
     bailout="Amtrak at Rhinecliff (2 mi from Rhinebeck), Hudson (mile {st_hudson}) and Albany-Rensselaer (mile {st_albany}).",
-    cue_notes=dict({"Violet Avenue": "NY-9G north: wide shoulder, 55-mph traffic. Single file.", "East Market Street": "NY-308 west into Rhinebeck village.", "Mount Rutsen Road": "From here to Hudson the route follows the signed Empire State Trail on-road route on county roads.", "Rhinebeck-Hudson Road": "NY-9G/23B north into Hudson."}, **STAGES["D3"]["cue_notes"]),
+    cue_notes=dict({"Violet Avenue": "NY-9G north: wide shoulder, 55-mph traffic. Single file.", "East Market Street": "NY-308 west into Rhinebeck village.", "Mount Rutsen Road": "From here to Hudson the route follows the signed Empire State Trail on-road route on county roads.", "Rhinebeck-Hudson Road": "NY-9G/23B north into Hudson.", "Warren Street": "Right on Warren St through Hudson, toward the AHET."}, **STAGES["D3"]["cue_notes"]),
     extra_cues=[("bread_alone", "lunch", "LUNCH", "Bread Alone, 45 E Market St, Rhinebeck", "Open daily; Rhinebeck Bicycle Shop is one block away at 10 Garden St.")], alt_note=None)
 STAGES["5D3"] = dict(STAGES["D4"], title="Troy to Ticonderoga, NY", short="Troy → Ticonderoga",
     subtitle="Waterford, Old Champlain Canal Trail, US-4 through Stillwater & Schuylerville, canal towpaths, Whitehall, NY-22",

@@ -39,7 +39,7 @@ Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Island
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are 81.7 and 76.9 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (7-day: Day 2 is 81.7 mi, Day 3 is 76.9 mi; 5-day: Day 1 is 103.1 mi, Day 2 is 95.9 mi, Day 3 is 92.9 mi, Day 5 is 87.9 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
