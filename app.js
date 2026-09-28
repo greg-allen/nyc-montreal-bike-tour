@@ -49,26 +49,133 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchTourWeather();
 });
 
+let currentAppViewMode = 'guide'; // 'guide' | 'strip'
+let selectedItineraryId = '6day'; // '6day' | '5day' | '7day' | 'vermont' | 'compare'
+
+function updateItineraryTabsUI(tourId) {
+  const tourIds = ['6day', '5day', '7day', 'vermont', 'compare'];
+  tourIds.forEach(id => {
+    const btn = document.getElementById(`tab-${id}`);
+    if (!btn) return;
+    if (id === tourId) {
+      if (id === 'vermont') {
+        btn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-emerald-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-emerald-400";
+      } else if (id === '5day') {
+        btn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-amber-500 text-slate-950 shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-amber-400";
+      } else if (id === '7day') {
+        btn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-rose-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-rose-400";
+      } else {
+        btn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-blue-400";
+      }
+    } else {
+      btn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5";
+    }
+  });
+}
+
+function handleItinerarySelect(tourId) {
+  selectedItineraryId = tourId;
+  updateItineraryTabsUI(tourId);
+
+  // If in Strip Map mode:
+  if (currentAppViewMode === 'strip') {
+    if (tourId === 'compare') {
+      // Compare is side-by-side tables and maps in the guide; switch to guide view
+      setAppViewMode('guide');
+      switchTourMode('compare');
+      return;
+    }
+    if (typeof activeStripItinerary !== 'undefined') {
+      activeStripItinerary = tourId;
+    }
+    if (typeof renderMtaRouteMap === 'function') {
+      renderMtaRouteMap(tourId);
+    }
+    return;
+  }
+
+  // If in Guide mode:
+  if (tourId === 'vermont') {
+    if (typeof isVermontOverlayActive !== 'undefined' && !isVermontOverlayActive) {
+      toggleVermontOverlay();
+    }
+    const vtSection = document.getElementById('vermont-upgrade-section');
+    if (vtSection) {
+      setTimeout(() => {
+        vtSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+    return;
+  }
+
+  // Standard tour mode in guide
+  switchTourMode(tourId);
+}
+
+function setAppViewMode(mode) {
+  currentAppViewMode = mode;
+  const dashboardView = document.getElementById('tour-dashboard-view');
+  const routeMapView = document.getElementById('mta-route-map-view');
+  const btnGuide = document.getElementById('view-mode-guide');
+  const btnStrip = document.getElementById('view-mode-strip');
+  const tabCompare = document.getElementById('tab-compare');
+
+  if (mode === 'strip') {
+    if (dashboardView) dashboardView.classList.add('hidden');
+    if (routeMapView) routeMapView.classList.remove('hidden');
+
+    if (btnStrip) {
+      btnStrip.className = "px-3.5 py-1.5 text-xs font-black rounded-lg bg-black text-white shadow-xs transition-all flex items-center gap-1.5";
+    }
+    if (btnGuide) {
+      btnGuide.className = "px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1.5";
+    }
+
+    if (tabCompare) tabCompare.classList.add('opacity-40');
+
+    // Determine tour to display
+    let stripId = selectedItineraryId;
+    if (stripId === 'compare') stripId = '6day';
+    if (!['6day', '5day', '7day', 'vermont'].includes(stripId)) {
+      stripId = '6day';
+    }
+    if (typeof renderMtaRouteMap === 'function') {
+      renderMtaRouteMap(stripId);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    // Guide mode
+    if (routeMapView) routeMapView.classList.add('hidden');
+    if (dashboardView) dashboardView.classList.remove('hidden');
+
+    if (btnGuide) {
+      btnGuide.className = "px-3.5 py-1.5 text-xs font-black rounded-lg bg-blue-600 text-white shadow-xs transition-all flex items-center gap-1.5";
+    }
+    if (btnStrip) {
+      btnStrip.className = "px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1.5";
+    }
+
+    if (tabCompare) tabCompare.classList.remove('opacity-40');
+
+    setTimeout(() => {
+      if (typeof leafletMap !== 'undefined' && leafletMap && typeof leafletMap.invalidateSize === 'function') {
+        leafletMap.invalidateSize();
+      }
+    }, 100);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
 function switchTourMode(tourType) {
-  const tab7 = document.getElementById('tab-7day');
-  const tab6 = document.getElementById('tab-6day');
-  const tab5 = document.getElementById('tab-5day');
-  const tabComp = document.getElementById('tab-compare');
   const kmlLink = document.getElementById('kml-download-link');
   const compareSection = document.getElementById('compare-section');
   const legendNormal = document.getElementById('map-legend-normal');
   const legendCompare = document.getElementById('map-legend-compare');
 
-  const btnActive = "px-4 py-2 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5";
-  const btnInactive = "px-4 py-2 text-xs font-bold rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5";
+  updateItineraryTabsUI(tourType);
 
   if (tourType === 'compare') {
     isCompareMode = true;
-    if (tabComp) tabComp.className = btnActive;
-    if (tab7) tab7.className = btnInactive;
-    if (tab6) tab6.className = btnInactive;
-    if (tab5) tab5.className = btnInactive;
-
     if (compareSection) compareSection.classList.remove('hidden');
     if (legendNormal) legendNormal.classList.add('hidden');
     if (legendCompare) legendCompare.classList.remove('hidden');
@@ -78,7 +185,6 @@ function switchTourMode(tourType) {
     setupFilterControls();
     fetchTourWeather();
 
-    // Scroll smoothly to comparison section if initiated
     if (compareSection) {
       setTimeout(() => {
         compareSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -87,7 +193,6 @@ function switchTourMode(tourType) {
     return;
   }
 
-  // Otherwise, 7day, 6day, or 5day mode
   isCompareMode = false;
   if (compareSection) compareSection.classList.add('hidden');
   if (legendCompare) legendCompare.classList.add('hidden');
@@ -95,30 +200,18 @@ function switchTourMode(tourType) {
 
   if (tourType === '7day') {
     currentTour = TOUR_DATA_7DAY;
-    if (tab7) tab7.className = btnActive;
-    if (tab6) tab6.className = btnInactive;
-    if (tab5) tab5.className = btnInactive;
-    if (tabComp) tabComp.className = btnInactive;
     if (kmlLink) {
       kmlLink.href = "nyc_to_montreal_7day_tour.kml";
       kmlLink.download = "nyc_to_montreal_7day_tour.kml";
     }
   } else if (tourType === '5day') {
     currentTour = TOUR_DATA_5DAY;
-    if (tab5) tab5.className = btnActive;
-    if (tab7) tab7.className = btnInactive;
-    if (tab6) tab6.className = btnInactive;
-    if (tabComp) tabComp.className = btnInactive;
     if (kmlLink) {
       kmlLink.href = "nyc_to_montreal_5day_tour.kml";
       kmlLink.download = "nyc_to_montreal_5day_tour.kml";
     }
   } else {
     currentTour = TOUR_DATA_6DAY;
-    if (tab6) tab6.className = btnActive;
-    if (tab7) tab7.className = btnInactive;
-    if (tab5) tab5.className = btnInactive;
-    if (tabComp) tabComp.className = btnInactive;
     if (kmlLink) {
       kmlLink.href = "nyc_to_montreal_tour.kml";
       kmlLink.download = "nyc_to_montreal_tour.kml";

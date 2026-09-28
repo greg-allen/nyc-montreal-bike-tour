@@ -854,83 +854,38 @@ function setStageStripFilter(filter) {
 function switchMtaRouteTab(itineraryId) {
   activeStripItinerary = itineraryId;
   activeStageFilter = 'all';
-
-  ['6day', '5day', '7day', 'vermont'].forEach(id => {
-    const tabEl = document.getElementById(`mta-tab-${id}`);
-    if (tabEl) {
-      if (id === itineraryId) {
-        tabEl.className = "px-3.5 py-2 text-xs font-black rounded-xl bg-black text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-black";
-      } else {
-        tabEl.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5";
-      }
-    }
-  });
-
   renderMtaRouteMap(itineraryId);
 }
 
 function showMtaRouteMapTab(itineraryId) {
-  const dashboardView = document.getElementById('tour-dashboard-view');
-  const routeMapView = document.getElementById('mta-route-map-view');
-  
-  if (dashboardView) dashboardView.classList.add('hidden');
-  if (routeMapView) routeMapView.classList.remove('hidden');
-
-  const itId = itineraryId || activeStripItinerary || '6day';
-
-  const tabDashboard = document.getElementById('nav-tab-dashboard');
-  if (tabDashboard) {
-    tabDashboard.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5 border border-slate-700";
+  if (typeof handleItinerarySelect === 'function') {
+    handleItinerarySelect(itineraryId);
   }
-
-  ['6day', '5day', '7day', 'vermont'].forEach(id => {
-    const navBtn = document.getElementById(`nav-tab-${id}-map`);
-    if (navBtn) {
-      if (id === itId) {
-        navBtn.className = "px-3.5 py-2 text-xs font-black rounded-xl bg-white text-slate-950 shadow-md transition-all flex items-center gap-1.5 ring-2 ring-blue-400";
-      } else {
-        navBtn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5 border border-slate-700";
-      }
-    }
-  });
-
-  switchMtaRouteTab(itId);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (typeof setAppViewMode === 'function') {
+    setAppViewMode('strip');
+  } else {
+    const dashboardView = document.getElementById('tour-dashboard-view');
+    const routeMapView = document.getElementById('mta-route-map-view');
+    if (dashboardView) dashboardView.classList.add('hidden');
+    if (routeMapView) routeMapView.classList.remove('hidden');
+    renderMtaRouteMap(itineraryId || '6day');
+  }
 }
 
 function switchToDashboardView() {
-  const dashboardView = document.getElementById('tour-dashboard-view');
-  const routeMapView = document.getElementById('mta-route-map-view');
-  
-  if (routeMapView) routeMapView.classList.add('hidden');
-  if (dashboardView) dashboardView.classList.remove('hidden');
-
-  const tabDashboard = document.getElementById('nav-tab-dashboard');
-  if (tabDashboard) {
-    tabDashboard.className = "px-3.5 py-2 text-xs font-black rounded-xl bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-blue-400";
+  if (typeof setAppViewMode === 'function') {
+    setAppViewMode('guide');
+  } else {
+    const dashboardView = document.getElementById('tour-dashboard-view');
+    const routeMapView = document.getElementById('mta-route-map-view');
+    if (routeMapView) routeMapView.classList.add('hidden');
+    if (dashboardView) dashboardView.classList.remove('hidden');
   }
-
-  ['6day', '5day', '7day', 'vermont'].forEach(id => {
-    const navBtn = document.getElementById(`nav-tab-${id}-map`);
-    if (navBtn) {
-      navBtn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all flex items-center gap-1.5 border border-slate-700";
-    }
-  });
-
-  setTimeout(() => {
-    if (typeof leafletMap !== 'undefined' && leafletMap && typeof leafletMap.invalidateSize === 'function') {
-      leafletMap.invalidateSize();
-    }
-  }, 100);
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function showCurrentTourMtaMap() {
-  if (typeof currentTour !== 'undefined' && currentTour === TOUR_DATA_5DAY) {
-    showMtaRouteMapTab('5day');
-  } else if (typeof currentTour !== 'undefined' && currentTour === TOUR_DATA_7DAY) {
-    showMtaRouteMapTab('7day');
+  if (typeof setAppViewMode === 'function') {
+    setAppViewMode('strip');
   } else {
     showMtaRouteMapTab('6day');
   }
