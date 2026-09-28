@@ -34,7 +34,7 @@ ADVISORIES = """## Critical logistics (read before booking)
 """
 
 GPS_HOWTO = """## GPS files: which one to use
-- **Bike computers (Garmin, Wahoo, Hammerhead, RideWithGPS app):** load the **one-file-per-day GPX** from `gpx/` and navigate it as a course/route. The device's own map generates turn prompts from the track. Each track follows real roads and trails, with 850 to 1,600 points per day. Earlier versions of these files had only 6 to 13 points per day and could not be used for navigation.
+- **Bike computers (Garmin, Wahoo, Hammerhead, RideWithGPS app):** load the **one-file-per-day GPX** for your itinerary from `gpx/7day/`, `gpx/6day/` or `gpx/5day/` and navigate it as a course/route. The device's own map generates turn prompts from the track. Each track follows real roads and trails, with 850 to 1,600 points per day. Earlier versions of these files had only 6 to 13 points per day and could not be used for navigation.
 - **Phones:** import the combined `.kml` into Google My Maps, or the GPX into an offline map app (RideWithGPS, Organic Maps, Gaia). **Download offline maps before you leave:** the web app's background map needs a connection.
 - **Paper backup:** print the strip maps (the Strip Maps view in the app, then Print). Cue miles reset each day and match the day GPX.
 - **How these were made:** routed with the OpenStreetMap bike router (routing.openstreetmap.de), forced along the official Empire State Trail, Champlain Valley Trail, AHET, Zim Smith, Island Line and Chambly Canal geometry. Distances are measured along the tracks. Climbing is estimated from 30 m SRTM elevation data (smoothed); treat it as ±20%. Surfaces come from OpenStreetMap tags. **Ride-test anything that looks odd on your device's map before trusting it.**
@@ -98,7 +98,7 @@ def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
     L = [f"# NYC to Montréal: {VT['title']}", "", f"**Replaces {C.VERMONT['replaces']}.** {C.VERMONT['note']}", "",
          "## Ferries", f"- **Essex ➔ Charlotte car ferry:** {VT['ferry']['schedule']} Fare {VT['ferry']['fare']}. {VT['ferry']['notes']}",
          f"- **Island Line bike ferry:** {VT['bikeFerry']['schedule']} {VT['bikeFerry']['fare']}.",
-         f"- **If the bike ferry isn't running:** {VT['bikeFerry']['fallBypass']} (GPX: `gpx/vt_sandbar_bypass.gpx`)", "",
+         f"- **If the bike ferry isn't running:** {VT['bikeFerry']['fallBypass']} (GPX: `gpx/vermont/nyc_to_montreal_vermont_upgrade_day03.gpx`)", "",
          "## Stages", ""]
     for i, s in enumerate(VT["stages"]):
         k = C.VERMONT["stages"][i][0]
@@ -119,7 +119,7 @@ def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
               md_table(rows), "",
               "Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: " + f"{R['VT1']['mi']} + {R['VT2']['mi']} mi.", "",
               "## Files", "- `index.html`: the app. It works offline once loaded (libraries are bundled and a service worker caches the app), **except the background map tiles**, so download offline maps in your GPS or phone app.",
-              "- `gpx/`: **one GPX per day. Use these on bike computers.** Also `gpx/return_montreal_to_rouses_point.gpx` and `gpx/vt_sandbar_bypass.gpx`.",
+              "- `gpx/7day/`, `gpx/6day/`, `gpx/5day/`, `gpx/vermont/`: **one GPX per day for each itinerary. Use these on bike computers.** (`gpx/vermont/…_day03.gpx` is the Sandbar bypass.) Also `gpx/return_montreal_to_rouses_point.gpx`.",
               "- `nyc_to_montreal_*.gpx` / `.kml`: combined files per itinerary (KML for Google My Maps).",
               "- `nyc_to_montreal_7_day_tour.md`, `nyc_to_montreal_bike_tour_guide.md` (6-day), `nyc_to_montreal_5_day_fast_tour.md`, `nyc_to_montreal_vermont_upgrade.md`: printable guides with full cue tables.",
               "- `jersey_cue_card.html`: pocket cue card.", "- `AUDIT.md`: what was checked and corrected, and what is still unverified.",

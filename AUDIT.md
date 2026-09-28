@@ -19,6 +19,8 @@ often — call ahead for anything you depend on.**
 - Daylight computed for each overnight location and date.
 - `tools/build.py` regenerates `route_data.js`, `strip_map_data.js`, all GPX/KML, the guides and the
   service worker from `tools/content.py` + `data/routes.json`, so numbers can no longer drift between files.
+  It also runs `tools/split_gpx.py` on the combined files, so the per-day GPX files are always regenerated
+  together with everything else (there used to be two separate per-day pipelines that could disagree).
 
 ## Distances: old vs. measured
 
@@ -49,7 +51,7 @@ Walkway → Kingston is ~16–20 mi via 9W (30 mi only via the Wallkill Valley t
 
 ## Critical corrections
 1. **GPS files were unusable** (6–13 points per day = straight lines). Replaced with road-following tracks
-   (850–1,600 points/day) and one GPX file per day in `gpx/` for bike computers.
+   (850–1,600 points/day), with one GPX file per day per itinerary in `gpx/7day/`, `gpx/6day/`, `gpx/5day/` and `gpx/vermont/` for bike computers.
 2. **App failed offline** (Tailwind, Leaflet and fonts from CDNs; `app.js` crashed without Leaflet). Libraries
    are now bundled in `vendor/`, and a service worker caches the app, data and GPX files. Map tiles are
    cached only after being viewed once — use a GPS device/app with offline maps for real navigation.

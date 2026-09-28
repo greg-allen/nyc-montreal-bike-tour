@@ -494,7 +494,7 @@ const TOUR_DATA_6DAY = {
     }
    ],
    "bailout": "Metro-North: Brewster station (Harlem Line) is right on the route at mile 65.2. Mid-route, the nearest Harlem Line stations are Pleasantville (about 1.2 mi east of the trail near mile 35.6) and Chappaqua (about 2.2 mi east near mile 38.7); Tarrytown (Hudson Line) is about 1.6 mi west near mile 31.6. Bikes ride free with no permit, but NOT on weekday rush-hour trains or holidays (limit 4 per train on weekdays, 8 on weekends).",
-   "gpx": "gpx/d1.gpx"
+   "gpx": "gpx/6day/nyc_to_montreal_tour_day01.gpx"
   },
   {
    "day": 2,
@@ -1067,7 +1067,7 @@ const TOUR_DATA_6DAY = {
     }
    ],
    "bailout": "Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 41.0). Amtrak at Rhinecliff (about 2 mi west of Rhinebeck, near mile 59.9) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.",
-   "gpx": "gpx/d2.gpx",
+   "gpx": "gpx/6day/nyc_to_montreal_tour_day02.gpx",
    "altNote": "SHORTCUT: stay on NY-9G all the way from Poughkeepsie to Hudson (skip Rhinebeck village and the county-road section). That route is 83.3 mi instead of 89.6, but it's all 55-mph highway shoulder."
   },
   {
@@ -1574,7 +1574,7 @@ const TOUR_DATA_6DAY = {
     }
    ],
    "bailout": "Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile 37.5; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. North of Waterford there is no rail; Stewart's Shops in Mechanicville, Stillwater and Schuylerville are the food stops.",
-   "gpx": "gpx/d3.gpx"
+   "gpx": "gpx/6day/nyc_to_montreal_tour_day03.gpx"
   },
   {
    "day": 4,
@@ -1991,7 +1991,7 @@ const TOUR_DATA_6DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack stops at Fort Edward (mile 13.2), Whitehall (mile 38.6) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.",
-   "gpx": "gpx/d4.gpx"
+   "gpx": "gpx/6day/nyc_to_montreal_tour_day04.gpx"
   },
   {
    "day": 5,
@@ -2367,7 +2367,7 @@ const TOUR_DATA_6DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Port Henry (mile 14.6), Westport (about 0.8 mi off the route near mile 25.6) and Plattsburgh (mile 70.3). Carry-on bikes need a reservation.",
-   "gpx": "gpx/d5.gpx"
+   "gpx": "gpx/6day/nyc_to_montreal_tour_day05.gpx"
   },
   {
    "day": 6,
@@ -2810,7 +2810,7 @@ const TOUR_DATA_6DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Rouses Point (mile 28.3): the last station where carry-on bikes are accepted. Southbound train 68 departs 2:15 PM (Sun and Tue to Sat; there is NO Monday service north of Saratoga). In Quebec, exo buses serve Saint-Jean to Montréal; check bike rules with exo. Longueuil Metro is at mile 80.9.",
-   "gpx": "gpx/6d6.gpx"
+   "gpx": "gpx/6day/nyc_to_montreal_tour_day06.gpx"
   }
  ]
 };
@@ -3307,7 +3307,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Metro-North: Brewster station (Harlem Line) is right on the route at mile 65.2. Mid-route, the nearest Harlem Line stations are Pleasantville (about 1.2 mi east of the trail near mile 35.6) and Chappaqua (about 2.2 mi east near mile 38.7); Tarrytown (Hudson Line) is about 1.6 mi west near mile 31.6. Bikes ride free with no permit, but NOT on weekday rush-hour trains or holidays (limit 4 per train on weekdays, 8 on weekends).",
-   "gpx": "gpx/d1.gpx"
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day01.gpx"
   },
   {
    "day": 2,
@@ -3880,7 +3880,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 41.0). Amtrak at Rhinecliff (about 2 mi west of Rhinebeck, near mile 59.9) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.",
-   "gpx": "gpx/d2.gpx",
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day02.gpx",
    "altNote": "SHORTCUT: stay on NY-9G all the way from Poughkeepsie to Hudson (skip Rhinebeck village and the county-road section). That route is 83.3 mi instead of 89.6, but it's all 55-mph highway shoulder."
   },
   {
@@ -4387,7 +4387,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile 37.5; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. North of Waterford there is no rail; Stewart's Shops in Mechanicville, Stillwater and Schuylerville are the food stops.",
-   "gpx": "gpx/d3.gpx"
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day03.gpx"
   },
   {
    "day": 4,
@@ -4804,7 +4804,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack stops at Fort Edward (mile 13.2), Whitehall (mile 38.6) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.",
-   "gpx": "gpx/d4.gpx"
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day04.gpx"
   },
   {
    "day": 5,
@@ -5180,7 +5180,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Port Henry (mile 14.6), Westport (about 0.8 mi off the route near mile 25.6) and Plattsburgh (mile 70.3). Carry-on bikes need a reservation.",
-   "gpx": "gpx/d5.gpx"
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day05.gpx"
   },
   {
    "day": 6,
@@ -5414,7 +5414,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Rouses Point (mile 28.3): the last station where carry-on bikes are accepted. Southbound train 68 departs 2:15 PM (Sun and Tue to Sat; there is NO Monday service north of Saratoga). In Quebec, exo buses serve Saint-Jean to Montréal; check bike rules with exo.",
-   "gpx": "gpx/d6.gpx"
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day06.gpx"
   },
   {
    "day": 7,
@@ -5700,7 +5700,7 @@ const TOUR_DATA_7DAY = {
     }
    ],
    "bailout": "Longueuil–Université-de-Sherbrooke Metro (Yellow Line) is on the route at mile 28.8; bikes are allowed outside weekday rush hours. Otherwise, use a taxi or van.",
-   "gpx": "gpx/d7.gpx"
+   "gpx": "gpx/7day/nyc_to_montreal_7day_tour_day07.gpx"
   }
  ]
 };
@@ -6336,7 +6336,7 @@ const TOUR_DATA_5DAY = {
     }
    ],
    "bailout": "Metro-North Harlem Line at Brewster (mile 65.0); Metro-North Hudson Line and Amtrak at Poughkeepsie (end). Metro-North bikes are not allowed on rush-hour trains.",
-   "gpx": "gpx/5d1.gpx",
+   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day01.gpx",
    "accelerateOption": {
     "name": "Push option (not recommended in October)",
     "notes": "Push to Kingston: from the DoubleTree, cross the Walkway Over the Hudson and ride north on the west bank to Kingston (+22 mi, about 125 mi total). Earlier drafts said the Walkway-to-Kingston leg was 30 mi (via the Wallkill Valley Rail Trail it is); via Route 9W/HVRT it's about 16 to 20 mi.",
@@ -7015,7 +7015,7 @@ const TOUR_DATA_5DAY = {
     }
    ],
    "bailout": "Amtrak at Rhinecliff (2 mi from Rhinebeck), Hudson (mile 48.4) and Albany-Rensselaer (mile 86.6).",
-   "gpx": "gpx/5d2.gpx",
+   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day02.gpx",
    "accelerateOption": {
     "name": "Push option (not recommended in October)",
     "notes": "Push to Saratoga Springs: from Troy, go via Waterford and the Zim Smith Trail (about +34 mi, about 130 mi total). Not realistic in October daylight.",
@@ -7585,7 +7585,7 @@ const TOUR_DATA_5DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Fort Edward (mile 41.7), Whitehall and Ticonderoga. Carry-on bikes need a reservation.",
-   "gpx": "gpx/5d3.gpx",
+   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day03.gpx",
    "accelerateOption": {
     "name": "Push option (not recommended in October)",
     "notes": "Push to Essex: Ticonderoga to Essex is 38 mi (about 131 mi total). Earlier drafts said +18 mi; that was wrong.",
@@ -7971,7 +7971,7 @@ const TOUR_DATA_5DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Port Henry (mile 14.6), Westport (about 0.8 mi off the route near mile 25.6) and Plattsburgh (mile 70.3). Carry-on bikes need a reservation.",
-   "gpx": "gpx/d5.gpx",
+   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day04.gpx",
    "accelerateOption": {
     "name": "Push option (not recommended in October)",
     "notes": "Push to Saint-Jean-sur-Richelieu: Plattsburgh to Saint-Jean is 53 mi, including the border (about 126 mi total). Not recommended.",
@@ -8424,7 +8424,7 @@ const TOUR_DATA_5DAY = {
     }
    ],
    "bailout": "Amtrak Adirondack at Rouses Point (mile 28.3): the last station where carry-on bikes are accepted. Southbound train 68 departs 2:15 PM (Sun and Tue to Sat; there is NO Monday service north of Saratoga). In Quebec, exo buses serve Saint-Jean to Montréal; check bike rules with exo. Longueuil Metro is at mile 80.9.",
-   "gpx": "gpx/6d6.gpx"
+   "gpx": "gpx/5day/nyc_to_montreal_5day_tour_day05.gpx"
   }
  ]
 };
@@ -8814,7 +8814,7 @@ const VERMONT_UPGRADE_DATA = {
     }
    ],
    "bailout": "Amtrak Adirondack at Port Henry (mile 14.6) before the ferry. In Burlington, Amtrak's Ethan Allen Express runs to NYC; check carry-on bike availability when booking.",
-   "gpx": "gpx/vt1.gpx"
+   "gpx": "gpx/vermont/nyc_to_montreal_vermont_upgrade_day01.gpx"
   },
   {
    "stageId": "VT-2",
@@ -9131,7 +9131,7 @@ const VERMONT_UPGRADE_DATA = {
     }
    ],
    "bailout": "Amtrak Adirondack at Rouses Point (mile 46.4); southbound departs 2:15 PM, with no Monday service north of Saratoga.",
-   "gpx": "gpx/vt2.gpx"
+   "gpx": "gpx/vermont/nyc_to_montreal_vermont_upgrade_day02.gpx"
   }
  ]
 };

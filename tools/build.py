@@ -8,8 +8,9 @@ Inputs
   tools/content.py   human-written content (hotels, food, shops, notes, itineraries)
 
 Outputs
-  route_data.js, strip_map_data.js, gpx/*.gpx (one file per day), the combined
-  nyc_to_montreal_*.gpx/.kml files and the markdown guides.
+  route_data.js, strip_map_data.js, the combined nyc_to_montreal_*.gpx/.kml files,
+  the per-day GPX files in gpx/<itinerary>/ (via tools/split_gpx.py, run automatically)
+  and the markdown guides.
 
 Run:  python3 tools/build.py
 """
@@ -215,7 +216,14 @@ def surface_text(key):
             txt += " No unpaved sections tagged in OpenStreetMap."
     return txt
 
-def stage_record(stage_key, idx, dow, date, color):
+SPLIT_PREFIX = {"6day": ("6day", "nyc_to_montreal_tour"), "5day": ("5day", "nyc_to_montreal_5day_tour"),
+                "7day": ("7day", "nyc_to_montreal_7day_tour"), "vermont": ("vermont", "nyc_to_montreal_vermont_upgrade")}
+
+def day_gpx_path(iid, idx):
+    d, prefix = SPLIT_PREFIX[iid]
+    return f"gpx/{d}/{prefix}_day{idx:02d}.gpx"
+
+def stage_record(stage_key, idx, dow, date, color, iid):
     st = C.STAGES[stage_key]; r = R[stage_key]
     lunch = place_rec(stage_key, st["lunch"])
     rec = dict(day=idx, dayOfWeek=dow, dateStr=date, name=f"{dow} • Day {idx}: {st['title']}", subtitle=st["subtitle"],
@@ -226,7 +234,7 @@ def stage_record(stage_key, idx, dow, date, color):
                lunch=dict(lunch, location=lunch["address"]),
                hotels=[place_rec(stage_key, h) for h in st["hotels"]],
                bikeShops=[place_rec(stage_key, s) for s in st["shops"]],
-               bailout=fill(st["bailout"], stage_key), gpx=f"gpx/{stage_key.lower()}.gpx")
+               bailout=fill(st["bailout"], stage_key), gpx=day_gpx_path(iid, idx))
     if st.get("alt_note"): rec["altNote"] = st["alt_note"]
     return rec
 
@@ -234,7 +242,7 @@ DAY_COLORS = ["#2563eb", "#0891b2", "#16a34a", "#d97706", "#9333ea", "#059669", 
 
 def itinerary_record(iid):
     it = C.ITINERARIES[iid]
-    days = [stage_record(k, i + 1, dow, date, DAY_COLORS[i]) for i, (k, dow, date) in enumerate(it["stages"])]
+    days = [stage_record(k, i + 1, dow, date, DAY_COLORS[i], iid) for i, (k, dow, date) in enumerate(it["stages"])]
     if iid == "5day":
         for d, (k, _, _) in zip(days, it["stages"]):
             if k in C.PUSH_OPTIONS_5DAY:
@@ -253,13 +261,13 @@ TOURS = {k: itinerary_record(k) for k in ("7day", "6day", "5day")}
 
 def vermont_record():
     stages = []
-    for (k, dow, date) in C.VERMONT["stages"]:
+    for vi, (k, dow, date) in enumerate(C.VERMONT["stages"], 1):
         st = C.STAGES[k]; r = R[k]
         stages.append(dict(stageId=k.replace("VT", "VT-"), dayName=f"Alternative {dow} ({date}): {st['title']}", distanceMiles=r["mi"],
             elevationFt=r["gain_ft"], surface=surface_text(k), startCoords=r["nav"][0], endCoords=r["nav"][-1],
             track=[[round(a, 5), round(b, 5)] for a, b in r["app"]], lunch=dict(place_rec(k, st["lunch"]), location=C.PLACES[st["lunch"]]["address"]),
             hotels=[place_rec(k, h) for h in st["hotels"]], bikeShops=[place_rec(k, s) for s in st["shops"]],
-            bailout=fill(st["bailout"], k), gpx=f"gpx/{k.lower()}.gpx"))
+            bailout=fill(st["bailout"], k), gpx=day_gpx_path("vermont", vi)))
     return dict(id="vermont_upgrade", title=C.VERMONT["title"], summary=f"Replaces {C.VERMONT['replaces']}. {C.VERMONT['note']}",
         ferry=dict(name="Lake Champlain Ferries: Essex, NY ➔ Charlotte, VT", crossingTime="About 20 minutes",
                    schedule="Early-fall 2026 schedule: from Essex every 30 min 10:30 AM to 5:30 PM, hourly 6:30 to 10:30 AM and 5:30 to 8:30 PM. Hourly all day from Nov 5. Check ferries.com the day before.",
@@ -416,19 +424,13 @@ def track_desc(key):
 
 def write_gpx():
     os.makedirs(os.path.join(ROOT, "gpx"), exist_ok=True)
-    keys = sorted({k for it in C.ITINERARIES.values() for k, _, _ in it["stages"]} | {"VT1", "VT2"})
-    for k in keys:
-        st = C.STAGES[k]
-        open(os.path.join(ROOT, "gpx", f"{k.lower()}.gpx"), "w").write(
-            gpx_doc(st["title"], track_desc(k), [(st["title"], track_desc(k), R[k]["nav"])], wpt_list(k)))
+    # Per-day files are produced from the combined files by tools/split_gpx.py (see split_days()).
+    # The return ride isn't part of any itinerary, so it gets its own file.
     open(os.path.join(ROOT, "gpx", "return_montreal_to_rouses_point.gpx"), "w").write(
         gpx_doc("Return ride: Old Montréal to Rouses Point Amtrak", track_desc("RETURN"),
                 [("Old Montréal → Rouses Point Amtrak", track_desc("RETURN") + " Southbound Adirondack departs Rouses Point 2:15 PM (no Monday service).", R["RETURN"]["nav"])],
                 [(geo("st_rouses"), "Rouses Point Amtrak", "Board southbound Adirondack (train 68) 2:15 PM Sun and Tue to Sat. Reserve a bike spot.", "Train"),
-                 (geo("border223"), "US border (Rouses Point–Lacolle 223)", "Clear US CBP on your bike.", "Crossing")]))
-    open(os.path.join(ROOT, "gpx", "vt_sandbar_bypass.gpx"), "w").write(
-        gpx_doc("Vermont bypass: Burlington to South Hero via Sandbar causeway", track_desc("VT_BYPASS"),
-                [("Burlington → South Hero (Sandbar)", track_desc("VT_BYPASS"), R["VT_BYPASS"]["nav"])], []))
+                 (geo("border223"), "US border (Rouses Point–Lacolle 223)", "Open 8 AM to 8 PM daily. Clear US CBP on your bike.", "Crossing")]))
     combined = {"7day": "nyc_to_montreal_7day_tour.gpx", "6day": "nyc_to_montreal_tour.gpx", "5day": "nyc_to_montreal_5day_tour.gpx"}
     for iid, fn in combined.items():
         it = C.ITINERARIES[iid]; tracks = []; wp = []
@@ -436,8 +438,21 @@ def write_gpx():
             tracks.append((f"Day {i + 1} ({dow} {date}): {C.STAGES[k]['title']}", track_desc(k), R[k]["nav"]))
             wp += wpt_list(k)
         open(os.path.join(ROOT, fn), "w").write(gpx_doc(it["title"], f"{TOURS[iid]['totalDistanceMiles']} mi total. For bike computers, prefer the one-file-per-day GPX files in gpx/.", tracks, wp))
+    # Track order matters: split_gpx numbers them _day01, _day02, _day03 (bypass) in gpx/vermont/.
     tracks = [(f"{k}: {C.STAGES[k]['title']}", track_desc(k), R[k]["nav"]) for k, _, _ in C.VERMONT["stages"]] + [("Bypass: Burlington → South Hero via Sandbar", track_desc("VT_BYPASS"), R["VT_BYPASS"]["nav"])]
     open(os.path.join(ROOT, "nyc_to_montreal_vermont_upgrade.gpx"), "w").write(gpx_doc(C.VERMONT["title"], C.VERMONT["note"], tracks, wpt_list("VT1") + wpt_list("VT2")))
+
+def split_days():
+    """Single source for per-day GPX files: split the combined files we just wrote."""
+    import glob, split_gpx
+    for rel_src, rel_out in split_gpx.SPLIT_TARGETS:
+        out = os.path.join(ROOT, rel_out)
+        os.makedirs(out, exist_ok=True)
+        for old in glob.glob(os.path.join(out, "*.gpx")):
+            os.remove(old)  # drop stale files if an itinerary gets shorter
+        import contextlib, io
+        with contextlib.redirect_stdout(io.StringIO()):
+            split_gpx.split_gpx(os.path.join(ROOT, rel_src), output_dir=out)
 
 def kml_doc(name, folders):
     L = ['<?xml version="1.0" encoding="UTF-8"?>', '<kml xmlns="http://www.opengis.net/kml/2.2"><Document>', f'<name>{xesc(name)}</name>']
@@ -529,7 +544,7 @@ def write_sw():
              "jersey_cue_card.html", "vendor/tailwind.css", "vendor/tailwind-cuecard.css",
              "vendor/leaflet/leaflet.min.js", "vendor/leaflet/leaflet.min.css"] + \
             sorted(os.path.relpath(f, ROOT) for f in glob.glob(os.path.join(ROOT, "vendor/leaflet/images/*.png"))) + \
-            sorted(os.path.relpath(f, ROOT) for f in glob.glob(os.path.join(ROOT, "gpx/*.gpx"))) + \
+            sorted(os.path.relpath(f, ROOT) for f in glob.glob(os.path.join(ROOT, "gpx/**/*.gpx"), recursive=True)) + \
             sorted(os.path.basename(f) for f in glob.glob(os.path.join(ROOT, "nyc_to_montreal_*.*")))
     h = hashlib.sha256()
     for f in files:
@@ -539,7 +554,7 @@ def write_sw():
 
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    write_route_data(); write_strip(); write_gpx(); write_kml()
+    write_route_data(); write_strip(); write_gpx(); split_days(); write_kml()
     import guides; guides.write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
     write_sw()
     for iid, t in TOURS.items():

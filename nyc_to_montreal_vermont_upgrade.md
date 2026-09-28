@@ -5,7 +5,7 @@
 ## Ferries
 - **Essex ➔ Charlotte car ferry:** Early-fall 2026 schedule: from Essex every 30 min 10:30 AM to 5:30 PM, hourly 6:30 to 10:30 AM and 5:30 to 8:30 PM. Hourly all day from Nov 5. Check ferries.com the day before. Fare $6.75 per cyclist, one way. Walk your bike on. Customer service: (802) 864-9804.
 - **Island Line bike ferry:** Fall 2026: Fri 10 AM to 5 PM, Sat and Sun 10 AM to 6 PM, Sep 11 to Oct 12 (Mon Oct 12 is the last day, 10 to 5). No Mon to Thu service. Suggested donation: $5 one way / $10 round trip.
-- **If the bike ferry isn't running:** From Burlington, go north through Winooski and Colchester on US-2/US-7 (a busy 4-lane road for about 5.6 mi), then take US-2 west over the Sandbar causeway to South Hero. That's 19.2 mi to South Hero, versus about 14.6 mi via the causeway (about +5 mi, not the +14 mi in earlier drafts). (GPX: `gpx/vt_sandbar_bypass.gpx`)
+- **If the bike ferry isn't running:** From Burlington, go north through Winooski and Colchester on US-2/US-7 (a busy 4-lane road for about 5.6 mi), then take US-2 west over the Sandbar causeway to South Hero. That's 19.2 mi to South Hero, versus about 14.6 mi via the causeway (about +5 mi, not the +14 mi in earlier drafts). (GPX: `gpx/vermont/nyc_to_montreal_vermont_upgrade_day03.gpx`)
 
 ## Stages
 
@@ -14,7 +14,7 @@
 
 - **Distance:** 60.7 mi (97.7 km) · **Climbing:** about +2,500 ft
 - **Surface:** NY-9N/22 shoulders to Essex; a ferry crossing; quiet Vermont roads (Lake Rd, Greenbush Rd, Spear St) with about 1.4 mi on US-7 through Shelburne village; then paved paths into Burlington. No unpaved sections tagged in OpenStreetMap.
-- **GPX:** [`gpx/vt1.gpx`](gpx/vt1.gpx)
+- **GPX:** [`gpx/vermont/nyc_to_montreal_vermont_upgrade_day01.gpx`](gpx/vermont/nyc_to_montreal_vermont_upgrade_day01.gpx)
 - **Lunch:** **Pink Pig Cafe**, 2750 Essex Rd, Essex, NY · (518) 962-8833 · mile 38.4. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.
 - **Lodging:** **Hotel Vermont**, 41 Cherry St, Burlington, VT · (802) 651-0080 · mile 60.7. Downtown, near the lakefront path. / **Courtyard Burlington Harbor**, 25 Cherry St, Burlington, VT · (802) 864-4700 · mile 60.7. Next door to Hotel Vermont.
 - **Bike shops / supplies:** **Old Spokes Home**, 331 N Winooski Ave, Burlington, VT · (802) 863-4475. Tue to Fri 10 to 6, Sat 10 to 5; closed Sun and Mon. / **North Star Sports**, 100 Main St, Burlington, VT · (802) 863-3832. Downtown bike shop near the waterfront.
@@ -63,7 +63,7 @@
 
 - **Distance:** 72.8 mi (117.2 km) · **Climbing:** about +700 ft
 - **Surface:** Paved Island Line path; about 3 mi of crushed-stone causeway; a short bike ferry; then US-2 shoulders through the islands and flat Route 223 in Quebec. Unpaved per OpenStreetMap: about 4.9 mi (mi 6.6 to 10.3 fine gravel, mi 10.6 to 11.8 fine gravel/gravel).
-- **GPX:** [`gpx/vt2.gpx`](gpx/vt2.gpx)
+- **GPX:** [`gpx/vermont/nyc_to_montreal_vermont_upgrade_day02.gpx`](gpx/vermont/nyc_to_montreal_vermont_upgrade_day02.gpx)
 - **Lunch:** **Hero's Welcome General Store**, 3537 US Route 2, North Hero, VT · (802) 372-4161 · mile 27.6. Deli, bakery and general store on the lake. Standard hours Mon to Sat 7 to 6, Sun 8 to 5; hours are reduced seasonally.
 - **Lodging:** **Quality Hotel Centre de Congrès**, 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC · +1 (450) 300-5177 · mile 72.8. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815. / **Auberge Harris**, 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC · +1 (450) 348-3821 · mile 72.5. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.
 - **Bike shops / supplies:** **Cycle LM**, 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC · mile 72.8 (2.4 mi off route). Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.

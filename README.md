@@ -12,7 +12,7 @@ Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Island
 
 ## Files
 - `index.html`: the app. It works offline once loaded (libraries are bundled and a service worker caches the app), **except the background map tiles**, so download offline maps in your GPS or phone app.
-- `gpx/`: **one GPX per day. Use these on bike computers.** Also `gpx/return_montreal_to_rouses_point.gpx` and `gpx/vt_sandbar_bypass.gpx`.
+- `gpx/7day/`, `gpx/6day/`, `gpx/5day/`, `gpx/vermont/`: **one GPX per day for each itinerary. Use these on bike computers.** (`gpx/vermont/…_day03.gpx` is the Sandbar bypass.) Also `gpx/return_montreal_to_rouses_point.gpx`.
 - `nyc_to_montreal_*.gpx` / `.kml`: combined files per itinerary (KML for Google My Maps).
 - `nyc_to_montreal_7_day_tour.md`, `nyc_to_montreal_bike_tour_guide.md` (6-day), `nyc_to_montreal_5_day_fast_tour.md`, `nyc_to_montreal_vermont_upgrade.md`: printable guides with full cue tables.
 - `jersey_cue_card.html`: pocket cue card.

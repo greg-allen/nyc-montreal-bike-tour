@@ -2,7 +2,7 @@
 <gpx version="1.1" creator="mtl_bike tools/build.py" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata><name>Return ride: Old Montréal to Rouses Point Amtrak</name><desc>59.8 mi (96.2 km), about +400 ft. Routed on OpenStreetMap along the official trails.</desc></metadata>
   <wpt lat="44.99500" lon="-73.37117"><name>Rouses Point Amtrak</name><desc>Board southbound Adirondack (train 68) 2:15 PM Sun and Tue to Sat. Reserve a bike spot.</desc><sym>Train</sym></wpt>
-  <wpt lat="45.01030" lon="-73.37086"><name>US border (Rouses Point–Lacolle 223)</name><desc>Clear US CBP on your bike.</desc><sym>Crossing</sym></wpt>
+  <wpt lat="45.01030" lon="-73.37086"><name>US border (Rouses Point–Lacolle 223)</name><desc>Open 8 AM to 8 PM daily. Clear US CBP on your bike.</desc><sym>Crossing</sym></wpt>
   <trk><name>Old Montréal → Rouses Point Amtrak</name><desc>59.8 mi (96.2 km), about +400 ft. Routed on OpenStreetMap along the official trails. Southbound Adirondack departs Rouses Point 2:15 PM (no Monday service).</desc><trkseg>
     <trkpt lat="45.507936" lon="-73.552958"/>
     <trkpt lat="45.507718" lon="-73.552409"/>
