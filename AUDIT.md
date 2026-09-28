@@ -27,7 +27,7 @@ often — call ahead for anything you depend on.**
 | Stage | Old | Measured | Note |
 |:---|---:|---:|:---|
 | D1 NYC → Brewster (Heidi's Inn) | 60 | 67.5 | Heidi's is about 3 mi past the trail end |
-| D2 Brewster → Hudson | 78 | 89.6 | official EST east-bank route; NY-9G straight through is 83.3 |
+| D2 Brewster → Hudson** | 78 | 81.7 | trails, then NY-9G, US-9 via Red Hook, Blue Hill Rd (was 89.6 via the EST's Rhinebeck/Tivoli county roads) |
 | D3 Hudson → Schuylerville (Dovegate Inn)* | 75 (to Saratoga) | 76.9 | ~8.5 mi unpaved (canal trails) |
 | D4 Schuylerville → Ticonderoga* | 75 (from Saratoga) | 64.4 | ~8 mi compacted/gravel towpath |
 | D5 Ticonderoga → Plattsburgh | 70 | 72.5 | hotel is 2 mi west of downtown |
@@ -37,12 +37,14 @@ often — call ahead for anything you depend on.**
 | 5-day D1 / D2 / D3 | 95 / 85 / 87 | 103.1 / 95.9 / 92.9 | |
 | Vermont VT-1 / VT-2 | 53 / 58 | 60.7 / 72.8 | VT-2 now stays on US-2 (router had used 2 unpaved side roads) |
 | Return Old Montréal → Rouses Point | "48" | 59.8 | |
-| **7-day total** | 445 | **461.4** | |
-| **6-day total** | 445 | **458.8** | |
+| **7-day total** | 445 | **453.5** | |
+| **6-day total** | 445 | **450.9** | |
 | **5-day total** | 425 | **452.3** | |
-| Climbing (6-/7-day) | 14,500–14,900 ft | ~11,400 ft | estimate |
+| Climbing (6-/7-day) | 14,500–14,900 ft | ~10,900 ft | estimate |
 
 \* The Day 3 overnight was moved from Saratoga Springs to Schuylerville on 2026-09-28 (edit in `tools/content.py`). Both days were re-routed along the Empire State Trail (Waterford → Mechanicville → Stillwater → Schuylerville on the Old Champlain Canal Trail and US-4) rather than spliced from existing tracks. The Saratoga version was 82.1 + 75.9 mi.
+
+\*\* Day 2 was changed on 2026-09-28 to the shorter, flatter option: same Maybrook + Dutchess rail trails (37 mi), then NY-9G, US-9 through Red Hook (lunch: Red Hook Diner, open daily) and Blue Hill Rd (CR-31) into Hudson: 81.7 mi and about 1,400 ft of climbing, versus 89.6 mi and about 1,900 ft on the Empire State Trail's county-road route via Rhinebeck and Tivoli. No unpaved sections per OpenStreetMap. Confirmed 81.7 mi by independent Valhalla map-matching.
 
 Surfaces were measured against OpenStreetMap unpaved-way tags along every route (5 m match). Unpaved stretches per day are listed in each day's Surface line and marked in the cue sheets.
 
@@ -50,11 +52,11 @@ Push options (5-day): Ticonderoga → Essex is 38 mi, not 18; the Day 2 push to 
 Walkway → Kingston is ~16–20 mi via 9W (30 mi only via the Wallkill Valley trail). All push days are 125+ mi.
 
 ## 6-day distance audit (2026-09-28)
-Three independent checks on the 6-day itinerary (458.8 mi):
+Three independent checks on the 6-day itinerary (now 450.9 mi after the Day 2 change):
 
 1. **Internal consistency:** GPX track length, app data, strip map, cue sheet and guides agree for every day
    (differences ≤0.3 mi from rounding/track simplification); km conversions correct; the six days sum to
-   458.8 mi; each day starts where the previous one ended.
+   the itinerary total; each day starts where the previous one ended.
 2. **Named trails vs. published lengths** (measured inside the tracks): Hudson River Greenway 12.9 mi (~11–13
    published); South County 14.4 (14.1); North County 20.6 (22.1; the two together are 35.0 vs 36.2, −3%, likely
    where OpenStreetMap places the name change); Putnam 11.9 (~12); Maybrook 23.9 (23–25); Dutchess Rail Trail 13.2
@@ -65,12 +67,12 @@ Three independent checks on the 6-day itinerary (458.8 mi):
 | Day | Stated | Valhalla | Diff |
 |:---|---:|---:|---:|
 | 1 NYC → Brewster | 67.5 | 67.7 | +0.3% |
-| 2 Brewster → Hudson | 89.6 | 89.9 | +0.4% |
+| 2 Brewster → Hudson (new route) | 81.7 | 81.7 | 0.0% |
 | 3 Hudson → Schuylerville | 76.9 | 76.9 | 0.0% |
 | 4 Schuylerville → Ticonderoga | 64.4 | 64.4 | 0.0% |
 | 5 Ticonderoga → Plattsburgh | 72.5 | 72.6 | +0.1% |
 | 6 Plattsburgh → Montréal | 87.9 | 86.6 | −1.5% (Valhalla left short unmatched gaps on bridge paths / the canal) |
-| **Total** | **458.8** | **458.1** | **−0.2%** |
+| **Total** | **450.9** | **450.0** | **−0.2%** |
 
 ## Critical corrections
 1. **GPS files were unusable** (6–13 points per day = straight lines). Replaced with road-following tracks

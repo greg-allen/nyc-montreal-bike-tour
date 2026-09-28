@@ -1,6 +1,6 @@
 # NYC to Montréal: 6-Day Tour (Sunday to Friday)
 
-**458.8 mi (738 km) · about +11,400 ft · average 76.5 mi/day · Steady touring (12 to 14 mph rolling)**
+**450.9 mi (726 km) · about +10,900 ft · average 75.1 mi/day · Steady touring (12 to 14 mph rolling)**
 
 Same as the 7-day tour through Plattsburgh, then one long flat day (with the border crossing) all the way to Montréal.
 
@@ -10,7 +10,7 @@ Same as the 7-day tour through Plattsburgh, then one long flat day (with the bor
 | Day | Date | Stage | Miles | Climb (est.) | Lunch | Overnight |
 |:---|:---|:---|:---|:---|:---|:---|
 | 1 | Sun Oct 4 | NYC → Brewster | 67.5 | +2,100 | Trailside Cafe (mi 47) | Heidi's Inn |
-| 2 | Mon Oct 5 | Brewster → Hudson | 89.6 | +1,900 | Bread Alone Bakery & Cafe (mi 60) | Hudson Whaler Hotel (formerly The Barlow) |
+| 2 | Mon Oct 5 | Brewster → Hudson | 81.7 | +1,400 | Red Hook Diner (mi 62) | Hudson Whaler Hotel (formerly The Barlow) |
 | 3 | Tue Oct 6 | Hudson → Schuylerville | 76.9 | +1,300 | Don & Paul's Coffee Shoppe (mi 52) | Dovegate Inn |
 | 4 | Wed Oct 7 | Schuylerville → Ticonderoga | 64.4 | +2,200 | Stewart's Shops #211 (mi 38) | Best Western Plus Ticonderoga Inn & Suites |
 | 5 | Thu Oct 8 | Ticonderoga → Plattsburgh | 72.5 | +3,300 | Pink Pig Cafe (mi 38) | Best Western Plus Plattsburgh |
@@ -38,7 +38,7 @@ Same as the 7-day tour through Plattsburgh, then one long flat day (with the bor
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are 89.6 and 76.9 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2 and 3 are 81.7 and 76.9 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -111,16 +111,16 @@ Same as the 7-day tour through Plattsburgh, then one long flat day (with the bor
 </details>
 
 ### Monday • Day 2: Brewster to Hudson, NY
-*Maybrook Trailway, Dutchess Rail Trail, NY-9G and the Empire State Trail's east-bank road route*
+*Maybrook Trailway, Dutchess Rail Trail, NY-9G, US-9 through Red Hook, Blue Hill Rd*
 
-- **Distance:** 89.6 mi (144.2 km) · **Climbing:** about +1,900 ft
-- **Surface:** About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads: NY-9G (a 55-mph highway with a wide shoulder) for about 15 mi, followed by the signed Empire State Trail on-road route (quiet county roads) from Rhinebeck to Hudson. Unpaved per OpenStreetMap: about 0.7 mi (mi 68.4 to 69.1 compacted).
-- **GPX:** [`gpx/6day/nyc_to_montreal_tour_day02.gpx`](gpx/6day/nyc_to_montreal_tour_day02.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=41.40576,-73.58058&destination=42.24874,-73.78510&waypoints=41.48100,-73.61277|41.57448,-73.70458|41.66261,-73.85409|41.76097,-73.90648|41.93089,-73.88682|42.00133,-73.91368|42.07250,-73.91558|42.15174,-73.84986)
-- **Lunch:** **Bread Alone Bakery & Cafe**, 45 E Market St, Rhinebeck, NY · mile 59.7. Breakfast and lunch daily; listed open Mondays 7 AM to 5 PM.
-- **Lodging:** **Hudson Whaler Hotel (formerly The Barlow)**, 542 Warren St, Hudson, NY · (518) 217-4334 · mile 89.6. The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number. / **The Wick, Hudson (Tribute Portfolio)**, 41 Cross St, Hudson, NY · (518) 249-6825 · mile 88.9 (0.2 mi off route). Near the Hudson Amtrak station.
-- **Bike shops / supplies:** **Bikeway at Hopewell Depot**, Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY · (845) 463-4000 · mile 27.8. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours. / **Rhinebeck Bicycle Shop**, 10 Garden St, Rhinebeck, NY · (845) 876-4025 · mile 59.9. Repairs, parts, rentals. One block from Bread Alone. Call for hours. / **Steiner's Sports**, 301 Warren St, Hudson, NY · (518) 828-5063 · mile 89.2. Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.
-- **Bailout:** Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 41.0). Amtrak at Rhinecliff (about 2 mi west of Rhinebeck, near mile 59.9) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.
-- **Option:** SHORTCUT: stay on NY-9G all the way from Poughkeepsie to Hudson (skip Rhinebeck village and the county-road section). That route is 83.3 mi instead of 89.6, but it's all 55-mph highway shoulder.
+- **Distance:** 81.7 mi (131.5 km) · **Climbing:** about +1,400 ft
+- **Surface:** About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads with few turns: NY-9G (a 55-mph highway with a wide shoulder) for about 18 mi, US-9 through Red Hook village, Blue Hill Rd (CR-31, a two-lane county road) and US-9 into Hudson. No unpaved sections tagged in OpenStreetMap.
+- **GPX:** [`gpx/6day/nyc_to_montreal_tour_day02.gpx`](gpx/6day/nyc_to_montreal_tour_day02.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=41.40576,-73.58058&destination=42.24874,-73.78510&waypoints=41.42073,-73.61306|41.56461,-73.65881|41.56885,-73.72780|41.62729,-73.85521|41.71477,-73.91978|41.81630,-73.90430|41.96547,-73.88529|42.10647,-73.82212)
+- **Lunch:** **Red Hook Diner**, 7329 S Broadway, Red Hook, NY · (845) 758-5000 · mile 61.5. On the route (US-9) in Red Hook village. Listed open daily 8 AM to 9 PM. Backup: Taste Budd's Cafe, 40 W Market St (listed Mon to Sat 7 AM to 7 PM). The Historic Village Diner (7550 N Broadway) is closed Mondays.
+- **Lodging:** **Hudson Whaler Hotel (formerly The Barlow)**, 542 Warren St, Hudson, NY · (518) 217-4334 · mile 81.7. The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number. / **The Wick, Hudson (Tribute Portfolio)**, 41 Cross St, Hudson, NY · (518) 249-6825 · mile 81.7 (0.6 mi off route). Near the Hudson Amtrak station.
+- **Bike shops / supplies:** **Bikeway at Hopewell Depot**, Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY · (845) 463-4000 · mile 27.8. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours. / **Rhinebeck Bicycle Shop**, 10 Garden St, Rhinebeck, NY · (845) 876-4025 · mile 57.7 (1.7 mi off route). Repairs, parts, rentals. One block from Bread Alone. Call for hours. / **Steiner's Sports**, 301 Warren St, Hudson, NY · (518) 828-5063 · mile 81.7 (0.4 mi off route). Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.
+- **Bailout:** Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 40.7). Amtrak at Rhinecliff (a few miles west of the route near Rhinebeck) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.
+- **Option:** Changed 2026-09-28 from the Empire State Trail's inland county-road route via Rhinebeck and Tivoli (89.6 mi) to this more direct route (81.7 mi, about 500 ft less climbing, and far fewer turns). Rhinebeck village is now about 2 mi off route; Rhinebeck Bicycle Shop is there if needed.
 
 <details><summary>Turn-by-turn cues</summary>
 
@@ -133,42 +133,17 @@ Same as the 7-day tour through Plattsburgh, then one long flat day (with the bor
 | 2.6 | TURN RIGHT | Putnam Avenue | 0.7 | Street |  |
 | 3.3 | TURN LEFT | North Main Street | 0.4 | Street |  |
 | 3.7 | TURN LEFT | Maybrook Trailway | 23.9 | Bike path | Paved rail trail west for 24 mi to Hopewell Junction. |
-| 27.6 | TURN LEFT | Dutchess Rail Trail | 13.2 | Bike path | Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie. |
-| 40.8 | TURN RIGHT | Parker Avenue (NY-9G) | 0.2 | Road shoulder | Trail ends in Poughkeepsie. OPTIONAL: the Walkway Over the Hudson entrance is about 0.5 mi west; riding across and back adds about 3 to 4 mi. |
-| 41.0 | TURN RIGHT | Washington Street (NY-9G) | 0.5 | Road shoulder |  |
-| 41.5 | TURN RIGHT | Baker Avenue | 0.4 | Street |  |
-| 41.9 | TURN RIGHT | West Cedar Street | 0.4 | Street |  |
-| 42.3 | TURN LEFT | Buckingham Avenue | 0.3 | Street |  |
-| 42.6 | TURN RIGHT | Fulton Street | 0.3 | Street |  |
-| 42.9 | TURN LEFT | Violet Avenue (NY-9G) | 4.8 | Road shoulder | NY-9G north: wide shoulder, 55-mph traffic. Single file. |
-| 47.7 | CONTINUE ONTO | NY 9G | 9.9 | Road shoulder |  |
-| 57.6 | TURN LEFT | Violet Hill Road (CR-101) | 0.8 | Road shoulder |  |
-| 58.4 | TURN LEFT | East Market Street (NY-308) | 1.3 | Road shoulder | NY-308 west into Rhinebeck village. |
-| 59.7 | TURN RIGHT | bike path |  | Bike path |  |
-| 59.7 | LUNCH | Bread Alone, 45 E Market St, Rhinebeck | 0.2 | — | Open daily; Rhinebeck Bicycle Shop is one block away at 10 Garden St. |
-| 59.9 | TURN RIGHT | Montgomery Street (US-9) | 0.4 | Road shoulder |  |
-| 60.3 | TURN LEFT | Montgomery Street | 0.6 | Street |  |
-| 60.9 | CONTINUE ONTO | Mount Rutsen Road | 2.5 | Street | From here to Hudson the route follows the signed Empire State Trail on-road route on quiet county roads. |
-| 63.4 | CONTINUE ONTO | River Road (CR-103) | 2.8 | Road shoulder |  |
-| 66.2 | CONTINUE ONTO | Annandale Road (CR-103) | 1.1 | Road shoulder |  |
-| 67.3 | TURN LEFT | Robbins Road | 1.0 | Street |  |
-| 68.3 | TURN RIGHT | Access Road | 0.7 | Unpaved: compacted |  |
-| 69.0 | TURN LEFT | Kidd Lane | 1.2 | Street |  |
-| 70.2 | TURN LEFT | Broadway (CR-78) | 0.3 | Road shoulder |  |
-| 70.5 | TURN RIGHT | Woods Road | 2.0 | Street |  |
-| 72.5 | TURN LEFT | Woods Road (CR-35) | 3.7 | Road shoulder |  |
-| 76.2 | TURN RIGHT | Main Street (CR-8) | 0.9 | Road shoulder |  |
-| 77.1 | TURN LEFT | Hover Avenue | 1.0 | Street |  |
-| 78.1 | TURN RIGHT | Dales Bridge Road | 1.7 | Street |  |
-| 79.8 | TURN LEFT | Wire Road | 1.2 | Street |  |
-| 81.0 | TURN LEFT | County Road 10 (CR-10) | 0.3 | Road shoulder |  |
-| 81.3 | BEAR RIGHT | White Birch Road | 2.3 | Street |  |
-| 83.6 | TURN RIGHT | County Route 14 (CR-14) | 0.7 | Road shoulder |  |
-| 84.3 | TURN LEFT | Middle Road | 1.4 | Street |  |
-| 85.7 | TURN LEFT | Claverack Road (NY-23) | 0.7 | Road shoulder |  |
-| 86.4 | TURN RIGHT | Rhinebeck-Hudson Road (NY-9G; NY-23B) | 2.8 | Road shoulder | NY-9G/23B north into Hudson. |
-| 89.2 | TURN RIGHT | Warren Street | 0.4 | Street | Right on Warren St to the hotel (542 Warren St). |
-| 89.6 | ARRIVE | Hudson Whaler Hotel (formerly The Barlow) |  | — | 542 Warren St, Hudson, NY |
+| 27.6 | TURN LEFT | Dutchess Rail Trail | 13.7 | Bike path | Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie. |
+| 41.3 | TURN LEFT | Parker Avenue (NY-9G) | 0.2 | Road shoulder | Trail ends in Poughkeepsie. OPTIONAL: the Walkway Over the Hudson entrance is about 0.5 mi west; riding across and back adds about 3 to 4 mi. |
+| 41.5 | CONTINUE ONTO | Violet Avenue (NY-9G) | 17.8 | Road shoulder | NY-9G north for about 18 mi: wide shoulder, 55-mph traffic. Single file. |
+| 59.3 | TURN RIGHT | Albany Post Road (US-9) | 1.7 | Road shoulder | Right onto US-9 north into Red Hook village. |
+| 61.0 | CONTINUE ONTO | South Broadway (US-9) | 0.5 | Road shoulder |  |
+| 61.5 | LUNCH | Red Hook Diner, 7329 S Broadway, Red Hook | 1.5 | — | Open daily 8 AM to 9 PM. Backup: Taste Budd's Cafe, 40 W Market St (Mon to Sat). The Historic Village Diner is closed Mondays. |
+| 63.0 | CONTINUE ONTO | Albany Post Road (US-9) | 8.1 | Road shoulder |  |
+| 71.1 | TURN LEFT | Blue Hill Road (CR-31) | 7.6 | Road shoulder | Left onto Blue Hill Rd (CR-31) for 7.5 mi. |
+| 78.7 | CONTINUE ONTO | US 9 | 2.6 | Road shoulder |  |
+| 81.3 | TURN LEFT | Warren Street (US-9) | 0.4 | Road shoulder | Left on Warren St to the hotel (542 Warren St). |
+| 81.7 | ARRIVE | Hudson Whaler Hotel (formerly The Barlow) |  | — | 542 Warren St, Hudson, NY |
 
 </details>
 

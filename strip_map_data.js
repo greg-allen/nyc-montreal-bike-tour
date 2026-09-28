@@ -8,10 +8,10 @@ const STRIP_MAP_ITINERARIES = {
   "title": "6-Day Tour (Sunday to Friday)",
   "subtitle": "Turn-by-turn strip map (miles reset each day, matching the day GPX files)",
   "schedule": "Sun Oct 4 ➔ Fri Oct 9 (6 days)",
-  "totalMiles": "458.8",
-  "totalKm": "738.4",
-  "elevationGain": "+11,400 ft (est.)",
-  "avgDaily": "76.5 mi/day",
+  "totalMiles": "450.9",
+  "totalKm": "725.7",
+  "elevationGain": "+10,900 ft (est.)",
+  "avgDaily": "75.1 mi/day",
   "stages": [
    {
     "stageNum": 1,
@@ -535,11 +535,11 @@ const STRIP_MAP_ITINERARIES = {
     "dayOfWeek": "Monday",
     "dateStr": "Oct 5",
     "name": "Brewster to Hudson, NY",
-    "distanceMiles": 89.6,
-    "elevationFt": 1900,
+    "distanceMiles": 81.7,
+    "elevationFt": 1400,
     "waterway": "Hudson River (east bank)",
     "railLine": "Metro-North & Amtrak Empire Service",
-    "surfaceSummary": "About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads: NY-9G (a 55-mph highway with a wide shoulder) for about 15 mi, followed by the signed Empire State Trail on-road route (quiet county roads) from Rhinebeck to Hudson. Unpaved per OpenStreetMap: about 0.7 mi (mi 68.4 to 69.1 compacted).",
+    "surfaceSummary": "About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads with few turns: NY-9G (a 55-mph highway with a wide shoulder) for about 18 mi, US-9 through Red Hook village, Blue Hill Rd (CR-31, a two-lane county road) and US-9 into Hudson. No unpaved sections tagged in OpenStreetMap.",
     "overnight": "Hudson Whaler Hotel (formerly The Barlow)",
     "elevProfile": [
      {
@@ -548,77 +548,77 @@ const STRIP_MAP_ITINERARIES = {
       "label": "Start"
      },
      {
-      "mile": 6.3,
-      "elev": 476,
+      "mile": 5.8,
+      "elev": 489,
       "label": ""
      },
      {
-      "mile": 12.7,
-      "elev": 692,
+      "mile": 11.7,
+      "elev": 607,
       "label": ""
      },
      {
-      "mile": 19.0,
-      "elev": 656,
+      "mile": 17.5,
+      "elev": 689,
       "label": ""
      },
      {
-      "mile": 25.4,
-      "elev": 328,
+      "mile": 23.4,
+      "elev": 390,
       "label": ""
      },
      {
-      "mile": 31.7,
-      "elev": 246,
+      "mile": 29.2,
+      "elev": 279,
       "label": ""
      },
      {
-      "mile": 38.0,
-      "elev": 167,
+      "mile": 35.0,
+      "elev": 223,
       "label": ""
      },
      {
-      "mile": 44.4,
-      "elev": 299,
+      "mile": 40.9,
+      "elev": 177,
       "label": ""
      },
      {
-      "mile": 50.7,
-      "elev": 272,
+      "mile": 46.7,
+      "elev": 230,
       "label": ""
      },
      {
-      "mile": 57.0,
-      "elev": 377,
+      "mile": 52.6,
+      "elev": 305,
+      "label": ""
+     },
+     {
+      "mile": 58.4,
+      "elev": 240,
+      "label": ""
+     },
+     {
+      "mile": 64.2,
+      "elev": 269,
       "label": "Lunch"
      },
      {
-      "mile": 63.4,
-      "elev": 187,
+      "mile": 70.1,
+      "elev": 243,
       "label": ""
      },
      {
-      "mile": 69.7,
-      "elev": 141,
+      "mile": 75.9,
+      "elev": 312,
       "label": ""
      },
      {
-      "mile": 76.1,
-      "elev": 135,
+      "mile": 81.8,
+      "elev": 144,
       "label": ""
      },
      {
-      "mile": 82.4,
-      "elev": 220,
-      "label": ""
-     },
-     {
-      "mile": 88.7,
-      "elev": 7,
-      "label": ""
-     },
-     {
-      "mile": 89.6,
+      "mile": 81.7,
       "elev": 144,
       "label": "Finish"
      }
@@ -718,14 +718,14 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 13.2
+      "dist": 13.7
      },
      {
-      "mile": 40.8,
-      "icon": "↱",
-      "turnDir": "right",
+      "mile": 41.3,
+      "icon": "↰",
+      "turnDir": "left",
       "road": "Parker Avenue (NY-9G)",
-      "action": "TURN RIGHT",
+      "action": "TURN LEFT",
       "surface": "Road shoulder",
       "detail": "Trail ends in Poughkeepsie. OPTIONAL: the Walkway Over the Hudson entrance is about 0.5 mi west; riding across and back adds about 3 to 4 mi.",
       "landmark": "",
@@ -733,11 +733,35 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.2
      },
      {
-      "mile": 41.0,
+      "mile": 41.5,
+      "icon": "⬆",
+      "turnDir": "straight",
+      "road": "Violet Avenue (NY-9G)",
+      "action": "CONTINUE ONTO",
+      "surface": "Road shoulder",
+      "detail": "NY-9G north for about 18 mi: wide shoulder, 55-mph traffic. Single file.",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 17.8
+     },
+     {
+      "mile": 59.3,
       "icon": "↱",
       "turnDir": "right",
-      "road": "Washington Street (NY-9G)",
+      "road": "Albany Post Road (US-9)",
       "action": "TURN RIGHT",
+      "surface": "Road shoulder",
+      "detail": "Right onto US-9 north into Red Hook village.",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 1.7
+     },
+     {
+      "mile": 61.0,
+      "icon": "⬆",
+      "turnDir": "straight",
+      "road": "South Broadway (US-9)",
+      "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
       "detail": "",
       "landmark": "",
@@ -745,391 +769,67 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.5
      },
      {
-      "mile": 41.5,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Baker Avenue",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.4
-     },
-     {
-      "mile": 41.9,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "West Cedar Street",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.4
-     },
-     {
-      "mile": 42.3,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Buckingham Avenue",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
-     },
-     {
-      "mile": 42.6,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Fulton Street",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
-     },
-     {
-      "mile": 42.9,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Violet Avenue (NY-9G)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "NY-9G north: wide shoulder, 55-mph traffic. Single file.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 4.8
-     },
-     {
-      "mile": 47.7,
-      "icon": "⬆",
-      "turnDir": "straight",
-      "road": "NY 9G",
-      "action": "CONTINUE ONTO",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 9.9
-     },
-     {
-      "mile": 57.6,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Violet Hill Road (CR-101)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.8
-     },
-     {
-      "mile": 58.4,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "East Market Street (NY-308)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "NY-308 west into Rhinebeck village.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.3
-     },
-     {
-      "mile": 59.7,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "bike path",
-      "action": "TURN RIGHT",
-      "surface": "Bike path",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.0
-     },
-     {
-      "mile": 59.7,
+      "mile": 61.5,
       "icon": "🥪",
       "turnDir": "lunch",
-      "road": "Bread Alone, 45 E Market St, Rhinebeck",
+      "road": "Red Hook Diner, 7329 S Broadway, Red Hook",
       "action": "LUNCH",
       "surface": "—",
-      "detail": "Open daily; Rhinebeck Bicycle Shop is one block away at 10 Garden St.",
+      "detail": "Open daily 8 AM to 9 PM. Backup: Taste Budd's Cafe, 40 W Market St (Mon to Sat). The Historic Village Diner is closed Mondays.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.2
+      "dist": 1.5
      },
      {
-      "mile": 59.9,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Montgomery Street (US-9)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.4
-     },
-     {
-      "mile": 60.3,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Montgomery Street",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.6
-     },
-     {
-      "mile": 60.9,
+      "mile": 63.0,
       "icon": "⬆",
       "turnDir": "straight",
-      "road": "Mount Rutsen Road",
-      "action": "CONTINUE ONTO",
-      "surface": "Street",
-      "detail": "From here to Hudson the route follows the signed Empire State Trail on-road route on quiet county roads.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.5
-     },
-     {
-      "mile": 63.4,
-      "icon": "⬆",
-      "turnDir": "straight",
-      "road": "River Road (CR-103)",
+      "road": "Albany Post Road (US-9)",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 2.8
+      "dist": 8.1
      },
      {
-      "mile": 66.2,
+      "mile": 71.1,
+      "icon": "↰",
+      "turnDir": "left",
+      "road": "Blue Hill Road (CR-31)",
+      "action": "TURN LEFT",
+      "surface": "Road shoulder",
+      "detail": "Left onto Blue Hill Rd (CR-31) for 7.5 mi.",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 7.6
+     },
+     {
+      "mile": 78.7,
       "icon": "⬆",
       "turnDir": "straight",
-      "road": "Annandale Road (CR-103)",
+      "road": "US 9",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.1
-     },
-     {
-      "mile": 67.3,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Robbins Road",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.0
-     },
-     {
-      "mile": 68.3,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Access Road",
-      "action": "TURN RIGHT",
-      "surface": "Unpaved: compacted",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.7
-     },
-     {
-      "mile": 69.0,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Kidd Lane",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.2
-     },
-     {
-      "mile": 70.2,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Broadway (CR-78)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
-     },
-     {
-      "mile": 70.5,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Woods Road",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.0
-     },
-     {
-      "mile": 72.5,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Woods Road (CR-35)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 3.7
-     },
-     {
-      "mile": 76.2,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Main Street (CR-8)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.9
-     },
-     {
-      "mile": 77.1,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Hover Avenue",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.0
-     },
-     {
-      "mile": 78.1,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Dales Bridge Road",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.7
-     },
-     {
-      "mile": 79.8,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Wire Road",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.2
-     },
-     {
-      "mile": 81.0,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "County Road 10 (CR-10)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
+      "dist": 2.6
      },
      {
       "mile": 81.3,
-      "icon": "↗",
-      "turnDir": "bear-right",
-      "road": "White Birch Road",
-      "action": "BEAR RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.3
-     },
-     {
-      "mile": 83.6,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "County Route 14 (CR-14)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.7
-     },
-     {
-      "mile": 84.3,
       "icon": "↰",
       "turnDir": "left",
-      "road": "Middle Road",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.4
-     },
-     {
-      "mile": 85.7,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Claverack Road (NY-23)",
+      "road": "Warren Street (US-9)",
       "action": "TURN LEFT",
       "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.7
-     },
-     {
-      "mile": 86.4,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Rhinebeck-Hudson Road (NY-9G; NY-23B)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "NY-9G/23B north into Hudson.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.8
-     },
-     {
-      "mile": 89.2,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Warren Street",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "Right on Warren St to the hotel (542 Warren St).",
+      "detail": "Left on Warren St to the hotel (542 Warren St).",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.4
      },
      {
-      "mile": 89.6,
+      "mile": 81.7,
       "icon": "🚏",
       "turnDir": "terminus",
       "road": "Hudson Whaler Hotel (formerly The Barlow)",
@@ -1141,7 +841,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.0
      }
     ],
-    "altNote": "SHORTCUT: stay on NY-9G all the way from Poughkeepsie to Hudson (skip Rhinebeck village and the county-road section). That route is 83.3 mi instead of 89.6, but it's all 55-mph highway shoulder."
+    "altNote": "Changed 2026-09-28 from the Empire State Trail's inland county-road route via Rhinebeck and Tivoli (89.6 mi) to this more direct route (81.7 mi, about 500 ft less climbing, and far fewer turns). Rhinebeck village is now about 2 mi off route; Rhinebeck Bicycle Shop is there if needed."
    },
    {
     "stageNum": 3,
@@ -4443,7 +4143,7 @@ const STRIP_MAP_ITINERARIES = {
       "road": "Mount Rutsen Road",
       "action": "CONTINUE ONTO",
       "surface": "Street",
-      "detail": "From here to Hudson the route follows the signed Empire State Trail on-road route on quiet county roads.",
+      "detail": "From here to Hudson the route follows the signed Empire State Trail on-road route on county roads.",
       "landmark": "",
       "corridorSide": "center",
       "dist": 2.5
@@ -4671,7 +4371,7 @@ const STRIP_MAP_ITINERARIES = {
       "road": "Warren Street",
       "action": "TURN RIGHT",
       "surface": "Street",
-      "detail": "Right on Warren St to the hotel (542 Warren St).",
+      "detail": "",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.5
@@ -7079,10 +6779,10 @@ const STRIP_MAP_ITINERARIES = {
   "title": "7-Day Tour (Sunday to Saturday)",
   "subtitle": "Turn-by-turn strip map (miles reset each day, matching the day GPX files)",
   "schedule": "Sun Oct 4 ➔ Sat Oct 10 (7 days)",
-  "totalMiles": "461.4",
-  "totalKm": "742.6",
-  "elevationGain": "+11,400 ft (est.)",
-  "avgDaily": "65.9 mi/day",
+  "totalMiles": "453.5",
+  "totalKm": "729.8",
+  "elevationGain": "+10,900 ft (est.)",
+  "avgDaily": "64.8 mi/day",
   "stages": [
    {
     "stageNum": 1,
@@ -7606,11 +7306,11 @@ const STRIP_MAP_ITINERARIES = {
     "dayOfWeek": "Monday",
     "dateStr": "Oct 5",
     "name": "Brewster to Hudson, NY",
-    "distanceMiles": 89.6,
-    "elevationFt": 1900,
+    "distanceMiles": 81.7,
+    "elevationFt": 1400,
     "waterway": "Hudson River (east bank)",
     "railLine": "Metro-North & Amtrak Empire Service",
-    "surfaceSummary": "About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads: NY-9G (a 55-mph highway with a wide shoulder) for about 15 mi, followed by the signed Empire State Trail on-road route (quiet county roads) from Rhinebeck to Hudson. Unpaved per OpenStreetMap: about 0.7 mi (mi 68.4 to 69.1 compacted).",
+    "surfaceSummary": "About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads with few turns: NY-9G (a 55-mph highway with a wide shoulder) for about 18 mi, US-9 through Red Hook village, Blue Hill Rd (CR-31, a two-lane county road) and US-9 into Hudson. No unpaved sections tagged in OpenStreetMap.",
     "overnight": "Hudson Whaler Hotel (formerly The Barlow)",
     "elevProfile": [
      {
@@ -7619,77 +7319,77 @@ const STRIP_MAP_ITINERARIES = {
       "label": "Start"
      },
      {
-      "mile": 6.3,
-      "elev": 476,
+      "mile": 5.8,
+      "elev": 489,
       "label": ""
      },
      {
-      "mile": 12.7,
-      "elev": 692,
+      "mile": 11.7,
+      "elev": 607,
       "label": ""
      },
      {
-      "mile": 19.0,
-      "elev": 656,
+      "mile": 17.5,
+      "elev": 689,
       "label": ""
      },
      {
-      "mile": 25.4,
-      "elev": 328,
+      "mile": 23.4,
+      "elev": 390,
       "label": ""
      },
      {
-      "mile": 31.7,
-      "elev": 246,
+      "mile": 29.2,
+      "elev": 279,
       "label": ""
      },
      {
-      "mile": 38.0,
-      "elev": 167,
+      "mile": 35.0,
+      "elev": 223,
       "label": ""
      },
      {
-      "mile": 44.4,
-      "elev": 299,
+      "mile": 40.9,
+      "elev": 177,
       "label": ""
      },
      {
-      "mile": 50.7,
-      "elev": 272,
+      "mile": 46.7,
+      "elev": 230,
       "label": ""
      },
      {
-      "mile": 57.0,
-      "elev": 377,
+      "mile": 52.6,
+      "elev": 305,
+      "label": ""
+     },
+     {
+      "mile": 58.4,
+      "elev": 240,
+      "label": ""
+     },
+     {
+      "mile": 64.2,
+      "elev": 269,
       "label": "Lunch"
      },
      {
-      "mile": 63.4,
-      "elev": 187,
+      "mile": 70.1,
+      "elev": 243,
       "label": ""
      },
      {
-      "mile": 69.7,
-      "elev": 141,
+      "mile": 75.9,
+      "elev": 312,
       "label": ""
      },
      {
-      "mile": 76.1,
-      "elev": 135,
+      "mile": 81.8,
+      "elev": 144,
       "label": ""
      },
      {
-      "mile": 82.4,
-      "elev": 220,
-      "label": ""
-     },
-     {
-      "mile": 88.7,
-      "elev": 7,
-      "label": ""
-     },
-     {
-      "mile": 89.6,
+      "mile": 81.7,
       "elev": 144,
       "label": "Finish"
      }
@@ -7789,14 +7489,14 @@ const STRIP_MAP_ITINERARIES = {
       "detail": "Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 13.2
+      "dist": 13.7
      },
      {
-      "mile": 40.8,
-      "icon": "↱",
-      "turnDir": "right",
+      "mile": 41.3,
+      "icon": "↰",
+      "turnDir": "left",
       "road": "Parker Avenue (NY-9G)",
-      "action": "TURN RIGHT",
+      "action": "TURN LEFT",
       "surface": "Road shoulder",
       "detail": "Trail ends in Poughkeepsie. OPTIONAL: the Walkway Over the Hudson entrance is about 0.5 mi west; riding across and back adds about 3 to 4 mi.",
       "landmark": "",
@@ -7804,11 +7504,35 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.2
      },
      {
-      "mile": 41.0,
+      "mile": 41.5,
+      "icon": "⬆",
+      "turnDir": "straight",
+      "road": "Violet Avenue (NY-9G)",
+      "action": "CONTINUE ONTO",
+      "surface": "Road shoulder",
+      "detail": "NY-9G north for about 18 mi: wide shoulder, 55-mph traffic. Single file.",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 17.8
+     },
+     {
+      "mile": 59.3,
       "icon": "↱",
       "turnDir": "right",
-      "road": "Washington Street (NY-9G)",
+      "road": "Albany Post Road (US-9)",
       "action": "TURN RIGHT",
+      "surface": "Road shoulder",
+      "detail": "Right onto US-9 north into Red Hook village.",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 1.7
+     },
+     {
+      "mile": 61.0,
+      "icon": "⬆",
+      "turnDir": "straight",
+      "road": "South Broadway (US-9)",
+      "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
       "detail": "",
       "landmark": "",
@@ -7816,391 +7540,67 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.5
      },
      {
-      "mile": 41.5,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Baker Avenue",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.4
-     },
-     {
-      "mile": 41.9,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "West Cedar Street",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.4
-     },
-     {
-      "mile": 42.3,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Buckingham Avenue",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
-     },
-     {
-      "mile": 42.6,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Fulton Street",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
-     },
-     {
-      "mile": 42.9,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Violet Avenue (NY-9G)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "NY-9G north: wide shoulder, 55-mph traffic. Single file.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 4.8
-     },
-     {
-      "mile": 47.7,
-      "icon": "⬆",
-      "turnDir": "straight",
-      "road": "NY 9G",
-      "action": "CONTINUE ONTO",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 9.9
-     },
-     {
-      "mile": 57.6,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Violet Hill Road (CR-101)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.8
-     },
-     {
-      "mile": 58.4,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "East Market Street (NY-308)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "NY-308 west into Rhinebeck village.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.3
-     },
-     {
-      "mile": 59.7,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "bike path",
-      "action": "TURN RIGHT",
-      "surface": "Bike path",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.0
-     },
-     {
-      "mile": 59.7,
+      "mile": 61.5,
       "icon": "🥪",
       "turnDir": "lunch",
-      "road": "Bread Alone, 45 E Market St, Rhinebeck",
+      "road": "Red Hook Diner, 7329 S Broadway, Red Hook",
       "action": "LUNCH",
       "surface": "—",
-      "detail": "Open daily; Rhinebeck Bicycle Shop is one block away at 10 Garden St.",
+      "detail": "Open daily 8 AM to 9 PM. Backup: Taste Budd's Cafe, 40 W Market St (Mon to Sat). The Historic Village Diner is closed Mondays.",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 0.2
+      "dist": 1.5
      },
      {
-      "mile": 59.9,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Montgomery Street (US-9)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.4
-     },
-     {
-      "mile": 60.3,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Montgomery Street",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.6
-     },
-     {
-      "mile": 60.9,
+      "mile": 63.0,
       "icon": "⬆",
       "turnDir": "straight",
-      "road": "Mount Rutsen Road",
-      "action": "CONTINUE ONTO",
-      "surface": "Street",
-      "detail": "From here to Hudson the route follows the signed Empire State Trail on-road route on quiet county roads.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.5
-     },
-     {
-      "mile": 63.4,
-      "icon": "⬆",
-      "turnDir": "straight",
-      "road": "River Road (CR-103)",
+      "road": "Albany Post Road (US-9)",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 2.8
+      "dist": 8.1
      },
      {
-      "mile": 66.2,
+      "mile": 71.1,
+      "icon": "↰",
+      "turnDir": "left",
+      "road": "Blue Hill Road (CR-31)",
+      "action": "TURN LEFT",
+      "surface": "Road shoulder",
+      "detail": "Left onto Blue Hill Rd (CR-31) for 7.5 mi.",
+      "landmark": "",
+      "corridorSide": "center",
+      "dist": 7.6
+     },
+     {
+      "mile": 78.7,
       "icon": "⬆",
       "turnDir": "straight",
-      "road": "Annandale Road (CR-103)",
+      "road": "US 9",
       "action": "CONTINUE ONTO",
       "surface": "Road shoulder",
       "detail": "",
       "landmark": "",
       "corridorSide": "center",
-      "dist": 1.1
-     },
-     {
-      "mile": 67.3,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Robbins Road",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.0
-     },
-     {
-      "mile": 68.3,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Access Road",
-      "action": "TURN RIGHT",
-      "surface": "Unpaved: compacted",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.7
-     },
-     {
-      "mile": 69.0,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Kidd Lane",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.2
-     },
-     {
-      "mile": 70.2,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Broadway (CR-78)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
-     },
-     {
-      "mile": 70.5,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Woods Road",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.0
-     },
-     {
-      "mile": 72.5,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Woods Road (CR-35)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 3.7
-     },
-     {
-      "mile": 76.2,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Main Street (CR-8)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.9
-     },
-     {
-      "mile": 77.1,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Hover Avenue",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.0
-     },
-     {
-      "mile": 78.1,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Dales Bridge Road",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.7
-     },
-     {
-      "mile": 79.8,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Wire Road",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.2
-     },
-     {
-      "mile": 81.0,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "County Road 10 (CR-10)",
-      "action": "TURN LEFT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.3
+      "dist": 2.6
      },
      {
       "mile": 81.3,
-      "icon": "↗",
-      "turnDir": "bear-right",
-      "road": "White Birch Road",
-      "action": "BEAR RIGHT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.3
-     },
-     {
-      "mile": 83.6,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "County Route 14 (CR-14)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.7
-     },
-     {
-      "mile": 84.3,
       "icon": "↰",
       "turnDir": "left",
-      "road": "Middle Road",
-      "action": "TURN LEFT",
-      "surface": "Street",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 1.4
-     },
-     {
-      "mile": 85.7,
-      "icon": "↰",
-      "turnDir": "left",
-      "road": "Claverack Road (NY-23)",
+      "road": "Warren Street (US-9)",
       "action": "TURN LEFT",
       "surface": "Road shoulder",
-      "detail": "",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 0.7
-     },
-     {
-      "mile": 86.4,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Rhinebeck-Hudson Road (NY-9G; NY-23B)",
-      "action": "TURN RIGHT",
-      "surface": "Road shoulder",
-      "detail": "NY-9G/23B north into Hudson.",
-      "landmark": "",
-      "corridorSide": "center",
-      "dist": 2.8
-     },
-     {
-      "mile": 89.2,
-      "icon": "↱",
-      "turnDir": "right",
-      "road": "Warren Street",
-      "action": "TURN RIGHT",
-      "surface": "Street",
-      "detail": "Right on Warren St to the hotel (542 Warren St).",
+      "detail": "Left on Warren St to the hotel (542 Warren St).",
       "landmark": "",
       "corridorSide": "center",
       "dist": 0.4
      },
      {
-      "mile": 89.6,
+      "mile": 81.7,
       "icon": "🚏",
       "turnDir": "terminus",
       "road": "Hudson Whaler Hotel (formerly The Barlow)",
@@ -8212,7 +7612,7 @@ const STRIP_MAP_ITINERARIES = {
       "dist": 0.0
      }
     ],
-    "altNote": "SHORTCUT: stay on NY-9G all the way from Poughkeepsie to Hudson (skip Rhinebeck village and the county-road section). That route is 83.3 mi instead of 89.6, but it's all 55-mph highway shoulder."
+    "altNote": "Changed 2026-09-28 from the Empire State Trail's inland county-road route via Rhinebeck and Tivoli (89.6 mi) to this more direct route (81.7 mi, about 500 ft less climbing, and far fewer turns). Rhinebeck village is now about 2 mi off route; Rhinebeck Bicycle Shop is there if needed."
    },
    {
     "stageNum": 3,
