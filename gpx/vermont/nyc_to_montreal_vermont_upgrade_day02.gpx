@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>VT2: Burlington, VT to Saint-Jean-sur-Richelieu, QC</name><desc>75.4 mi (121.3 km), about +800 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="44.47891" lon="-73.21788"><name>Hotel: Hotel Vermont</name><desc>Mile 60.7. 41 Cherry St, Burlington, VT. (802) 651-0080. Downtown, near the lakefront path.</desc><sym>Lodging</sym></wpt>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>VT2: Burlington, VT to Saint-Jean-sur-Richelieu, QC</name><desc>72.8 mi (117.2 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="44.47891" lon="-73.21788"><name>Hotel: Hotel Vermont</name><desc>Mile 60.7. 41 Cherry St, Burlington, VT. (802) 651-0080. Downtown, near the lakefront path.</desc><sym>Lodging</sym></wpt>
   <wpt lat="44.47879" lon="-73.21860"><name>Hotel: Courtyard Burlington Harbor</name><desc>Mile 60.7. 25 Cherry St, Burlington, VT. (802) 864-4700. Next door to Hotel Vermont.</desc><sym>Lodging</sym></wpt>
   <wpt lat="44.48510" lon="-73.21030"><name>Bike: Old Spokes Home</name><desc>Mile 60.7, 0.6 mi off route. 331 N Winooski Ave, Burlington, VT. (802) 863-4475. Tue to Fri 10 to 6, Sat 10 to 5; closed Sun and Mon.</desc><sym>Bike Trail</sym></wpt>
   <wpt lat="44.47600" lon="-73.21560"><name>Bike: North Star Sports</name><desc>Mile 60.3, 0.2 mi off route. 100 Main St, Burlington, VT. (802) 863-3832. Downtown bike shop near the waterfront.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.81642" lon="-73.29068"><name>Lunch: Hero's Welcome General Store</name><desc>Mile 28.9, 0.2 mi off route. 3537 US Route 2, North Hero, VT. (802) 372-4161. Deli, bakery and general store on the lake. Standard hours Mon to Sat 7 to 6, Sun 8 to 5; hours are reduced seasonally.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="45.32482" lon="-73.26641"><name>Hotel: Quality Hotel Centre de Congrès</name><desc>Mile 75.4. 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC. +1 (450) 300-5177. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="45.32391" lon="-73.26475"><name>Hotel: Auberge Harris</name><desc>Mile 75.1. 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 348-3821. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 75.4, 2.4 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 50.1. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
-  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 49.1, 0.3 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>VT2: Burlington, VT to Saint-Jean-sur-Richelieu, QC</name><desc>75.4 mi (121.3 km), about +800 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+  <wpt lat="44.81642" lon="-73.29068"><name>Lunch: Hero's Welcome General Store</name><desc>Mile 27.6. 3537 US Route 2, North Hero, VT. (802) 372-4161. Deli, bakery and general store on the lake. Standard hours Mon to Sat 7 to 6, Sun 8 to 5; hours are reduced seasonally.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="45.32482" lon="-73.26641"><name>Hotel: Quality Hotel Centre de Congrès</name><desc>Mile 72.8. 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC. +1 (450) 300-5177. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="45.32391" lon="-73.26475"><name>Hotel: Auberge Harris</name><desc>Mile 72.5. 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 348-3821. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 72.8, 2.4 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 47.5. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
+  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 46.4, 0.3 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>VT2: Burlington, VT to Saint-Jean-sur-Richelieu, QC</name><desc>72.8 mi (117.2 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="44.478900" lon="-73.218107" />
     <trkpt lat="44.479147" lon="-73.218123" />
     <trkpt lat="44.479124" lon="-73.218934" />
@@ -205,8 +205,7 @@
     <trkpt lat="44.610135" lon="-73.304338" />
     <trkpt lat="44.611711" lon="-73.303668" />
     <trkpt lat="44.613288" lon="-73.302998" />
-    <trkpt lat="44.614303" lon="-73.302609" />
-    <trkpt lat="44.614726" lon="-73.302497" />
+    <trkpt lat="44.614584" lon="-73.302524" />
     <trkpt lat="44.615092" lon="-73.302463" />
     <trkpt lat="44.616178" lon="-73.302456" />
     <trkpt lat="44.617264" lon="-73.302449" />
@@ -228,10 +227,13 @@
     <trkpt lat="44.642521" lon="-73.302600" />
     <trkpt lat="44.644147" lon="-73.302607" />
     <trkpt lat="44.645774" lon="-73.302613" />
-    <trkpt lat="44.645584" lon="-73.304791" />
-    <trkpt lat="44.645394" lon="-73.306970" />
+    <trkpt lat="44.645889" lon="-73.301301" />
+    <trkpt lat="44.646004" lon="-73.299990" />
+    <trkpt lat="44.645804" lon="-73.302279" />
+    <trkpt lat="44.645604" lon="-73.304569" />
+    <trkpt lat="44.645404" lon="-73.306858" />
     <trkpt lat="44.645204" lon="-73.309148" />
-    <trkpt lat="44.645165" lon="-73.309952" />
+    <trkpt lat="44.645168" lon="-73.310245" />
     <trkpt lat="44.645202" lon="-73.310759" />
     <trkpt lat="44.645306" lon="-73.311496" />
     <trkpt lat="44.645420" lon="-73.311974" />
@@ -239,10 +241,10 @@
     <trkpt lat="44.645831" lon="-73.313078" />
     <trkpt lat="44.646035" lon="-73.313476" />
     <trkpt lat="44.646364" lon="-73.313974" />
-    <trkpt lat="44.646957" lon="-73.314631" />
-    <trkpt lat="44.647362" lon="-73.314953" />
-    <trkpt lat="44.647743" lon="-73.315174" />
-    <trkpt lat="44.649185" lon="-73.315781" />
+    <trkpt lat="44.646646" lon="-73.314316" />
+    <trkpt lat="44.647068" lon="-73.314730" />
+    <trkpt lat="44.647614" lon="-73.315107" />
+    <trkpt lat="44.649120" lon="-73.315747" />
     <trkpt lat="44.650627" lon="-73.316387" />
     <trkpt lat="44.651157" lon="-73.316677" />
     <trkpt lat="44.651598" lon="-73.317042" />
@@ -250,11 +252,11 @@
     <trkpt lat="44.652901" lon="-73.318649" />
     <trkpt lat="44.653652" lon="-73.319446" />
     <trkpt lat="44.654462" lon="-73.320079" />
-    <trkpt lat="44.654972" lon="-73.320368" />
-    <trkpt lat="44.655447" lon="-73.320574" />
-    <trkpt lat="44.656742" lon="-73.320959" />
-    <trkpt lat="44.658038" lon="-73.321343" />
-    <trkpt lat="44.659333" lon="-73.321728" />
+    <trkpt lat="44.655174" lon="-73.320462" />
+    <trkpt lat="44.655725" lon="-73.320672" />
+    <trkpt lat="44.657351" lon="-73.321150" />
+    <trkpt lat="44.658978" lon="-73.321628" />
+    <trkpt lat="44.659879" lon="-73.321846" />
     <trkpt lat="44.660780" lon="-73.322065" />
     <trkpt lat="44.662498" lon="-73.322308" />
     <trkpt lat="44.664217" lon="-73.322551" />
@@ -294,24 +296,6 @@
     <trkpt lat="44.711427" lon="-73.299003" />
     <trkpt lat="44.713000" lon="-73.298293" />
     <trkpt lat="44.714574" lon="-73.297583" />
-    <trkpt lat="44.716147" lon="-73.296873" />
-    <trkpt lat="44.716141" lon="-73.295499" />
-    <trkpt lat="44.716186" lon="-73.294769" />
-    <trkpt lat="44.716393" lon="-73.293014" />
-    <trkpt lat="44.716600" lon="-73.291260" />
-    <trkpt lat="44.716807" lon="-73.289505" />
-    <trkpt lat="44.716998" lon="-73.288179" />
-    <trkpt lat="44.717188" lon="-73.286853" />
-    <trkpt lat="44.718204" lon="-73.286679" />
-    <trkpt lat="44.719369" lon="-73.286376" />
-    <trkpt lat="44.718204" lon="-73.286679" />
-    <trkpt lat="44.717188" lon="-73.286853" />
-    <trkpt lat="44.716998" lon="-73.288179" />
-    <trkpt lat="44.716807" lon="-73.289505" />
-    <trkpt lat="44.716600" lon="-73.291260" />
-    <trkpt lat="44.716393" lon="-73.293014" />
-    <trkpt lat="44.716186" lon="-73.294769" />
-    <trkpt lat="44.716141" lon="-73.295499" />
     <trkpt lat="44.716147" lon="-73.296873" />
     <trkpt lat="44.717231" lon="-73.296299" />
     <trkpt lat="44.718068" lon="-73.295776" />
@@ -384,14 +368,13 @@
     <trkpt lat="44.808793" lon="-73.291824" />
     <trkpt lat="44.809999" lon="-73.291986" />
     <trkpt lat="44.811204" lon="-73.292147" />
-    <trkpt lat="44.811895" lon="-73.292142" />
+    <trkpt lat="44.811754" lon="-73.292161" />
     <trkpt lat="44.812313" lon="-73.292027" />
-    <trkpt lat="44.812982" lon="-73.291759" />
-    <trkpt lat="44.814390" lon="-73.291158" />
-    <trkpt lat="44.815798" lon="-73.290558" />
-    <trkpt lat="44.817205" lon="-73.289957" />
-    <trkpt lat="44.818613" lon="-73.289356" />
-    <trkpt lat="44.819327" lon="-73.289003" />
+    <trkpt lat="44.813423" lon="-73.291568" />
+    <trkpt lat="44.814533" lon="-73.291109" />
+    <trkpt lat="44.816001" lon="-73.290473" />
+    <trkpt lat="44.817470" lon="-73.289837" />
+    <trkpt lat="44.818938" lon="-73.289201" />
     <trkpt lat="44.820008" lon="-73.288604" />
     <trkpt lat="44.820786" lon="-73.288054" />
     <trkpt lat="44.820928" lon="-73.287907" />
@@ -483,14 +466,14 @@
     <trkpt lat="44.884699" lon="-73.273284" />
     <trkpt lat="44.885455" lon="-73.275194" />
     <trkpt lat="44.886212" lon="-73.277103" />
-    <trkpt lat="44.886471" lon="-73.277632" />
-    <trkpt lat="44.886725" lon="-73.277988" />
-    <trkpt lat="44.886983" lon="-73.278246" />
+    <trkpt lat="44.886380" lon="-73.277476" />
+    <trkpt lat="44.886592" lon="-73.277814" />
+    <trkpt lat="44.886876" lon="-73.278147" />
     <trkpt lat="44.887283" lon="-73.278464" />
     <trkpt lat="44.887614" lon="-73.278588" />
-    <trkpt lat="44.888168" lon="-73.278652" />
-    <trkpt lat="44.889427" lon="-73.278453" />
-    <trkpt lat="44.890686" lon="-73.278253" />
+    <trkpt lat="44.888052" lon="-73.278658" />
+    <trkpt lat="44.889350" lon="-73.278457" />
+    <trkpt lat="44.890647" lon="-73.278255" />
     <trkpt lat="44.891945" lon="-73.278054" />
     <trkpt lat="44.892512" lon="-73.277926" />
     <trkpt lat="44.893325" lon="-73.277662" />
@@ -501,19 +484,20 @@
     <trkpt lat="44.898105" lon="-73.275331" />
     <trkpt lat="44.899092" lon="-73.274722" />
     <trkpt lat="44.900176" lon="-73.274141" />
-    <trkpt lat="44.900444" lon="-73.274026" />
-    <trkpt lat="44.901547" lon="-73.273686" />
+    <trkpt lat="44.901271" lon="-73.273777" />
+    <trkpt lat="44.902366" lon="-73.273413" />
     <trkpt lat="44.902650" lon="-73.273347" />
-    <trkpt lat="44.903161" lon="-73.273353" />
-    <trkpt lat="44.903585" lon="-73.273480" />
+    <trkpt lat="44.903015" lon="-73.273334" />
+    <trkpt lat="44.903448" lon="-73.273427" />
     <trkpt lat="44.903967" lon="-73.273696" />
     <trkpt lat="44.904282" lon="-73.274010" />
-    <trkpt lat="44.904541" lon="-73.274341" />
+    <trkpt lat="44.904684" lon="-73.274555" />
     <trkpt lat="44.904823" lon="-73.274810" />
-    <trkpt lat="44.905618" lon="-73.276963" />
+    <trkpt lat="44.905507" lon="-73.276695" />
+    <trkpt lat="44.906185" lon="-73.278221" />
     <trkpt lat="44.906383" lon="-73.278636" />
     <trkpt lat="44.906740" lon="-73.279188" />
-    <trkpt lat="44.907145" lon="-73.279567" />
+    <trkpt lat="44.906940" lon="-73.279402" />
     <trkpt lat="44.907511" lon="-73.279806" />
     <trkpt lat="44.907920" lon="-73.279927" />
     <trkpt lat="44.908280" lon="-73.279965" />
@@ -529,41 +513,16 @@
     <trkpt lat="44.919971" lon="-73.274744" />
     <trkpt lat="44.920914" lon="-73.274116" />
     <trkpt lat="44.921370" lon="-73.273913" />
-    <trkpt lat="44.921777" lon="-73.273825" />
-    <trkpt lat="44.922188" lon="-73.273821" />
-    <trkpt lat="44.923738" lon="-73.274025" />
-    <trkpt lat="44.925289" lon="-73.274230" />
-    <trkpt lat="44.926688" lon="-73.274306" />
-    <trkpt lat="44.928088" lon="-73.274383" />
-    <trkpt lat="44.929488" lon="-73.274459" />
-    <trkpt lat="44.930887" lon="-73.274535" />
-    <trkpt lat="44.930890" lon="-73.276112" />
-    <trkpt lat="44.930932" lon="-73.277552" />
-    <trkpt lat="44.930898" lon="-73.277815" />
-    <trkpt lat="44.930750" lon="-73.278335" />
-    <trkpt lat="44.930383" lon="-73.279473" />
-    <trkpt lat="44.930344" lon="-73.279766" />
-    <trkpt lat="44.930339" lon="-73.280051" />
-    <trkpt lat="44.930455" lon="-73.280951" />
-    <trkpt lat="44.930489" lon="-73.281539" />
-    <trkpt lat="44.930460" lon="-73.283303" />
-    <trkpt lat="44.930473" lon="-73.285532" />
-    <trkpt lat="44.930487" lon="-73.287761" />
-    <trkpt lat="44.930500" lon="-73.289990" />
-    <trkpt lat="44.930487" lon="-73.287761" />
-    <trkpt lat="44.930473" lon="-73.285532" />
-    <trkpt lat="44.930460" lon="-73.283303" />
-    <trkpt lat="44.930489" lon="-73.281539" />
-    <trkpt lat="44.930455" lon="-73.280951" />
-    <trkpt lat="44.930339" lon="-73.280051" />
-    <trkpt lat="44.930344" lon="-73.279766" />
-    <trkpt lat="44.930383" lon="-73.279473" />
-    <trkpt lat="44.930750" lon="-73.278335" />
-    <trkpt lat="44.930898" lon="-73.277815" />
-    <trkpt lat="44.930932" lon="-73.277552" />
-    <trkpt lat="44.930890" lon="-73.276112" />
-    <trkpt lat="44.930887" lon="-73.274535" />
-    <trkpt lat="44.931159" lon="-73.274508" />
+    <trkpt lat="44.921666" lon="-73.273847" />
+    <trkpt lat="44.922041" lon="-73.273815" />
+    <trkpt lat="44.922552" lon="-73.273857" />
+    <trkpt lat="44.923741" lon="-73.274028" />
+    <trkpt lat="44.924929" lon="-73.274198" />
+    <trkpt lat="44.925506" lon="-73.274246" />
+    <trkpt lat="44.926984" lon="-73.274333" />
+    <trkpt lat="44.928463" lon="-73.274420" />
+    <trkpt lat="44.929941" lon="-73.274507" />
+    <trkpt lat="44.931019" lon="-73.274530" />
     <trkpt lat="44.931505" lon="-73.274409" />
     <trkpt lat="44.932685" lon="-73.273821" />
     <trkpt lat="44.933503" lon="-73.273504" />
@@ -574,12 +533,12 @@
     <trkpt lat="44.937661" lon="-73.273893" />
     <trkpt lat="44.938687" lon="-73.274337" />
     <trkpt lat="44.939502" lon="-73.274644" />
-    <trkpt lat="44.940369" lon="-73.274816" />
-    <trkpt lat="44.941090" lon="-73.274872" />
-    <trkpt lat="44.941812" lon="-73.274881" />
-    <trkpt lat="44.942319" lon="-73.274826" />
-    <trkpt lat="44.943815" lon="-73.274487" />
-    <trkpt lat="44.945311" lon="-73.274149" />
+    <trkpt lat="44.940586" lon="-73.274837" />
+    <trkpt lat="44.941523" lon="-73.274891" />
+    <trkpt lat="44.942101" lon="-73.274855" />
+    <trkpt lat="44.943370" lon="-73.274567" />
+    <trkpt lat="44.944639" lon="-73.274279" />
+    <trkpt lat="44.945908" lon="-73.273991" />
     <trkpt lat="44.946291" lon="-73.273854" />
     <trkpt lat="44.947223" lon="-73.273410" />
     <trkpt lat="44.948155" lon="-73.272966" />
@@ -626,11 +585,7 @@
     <trkpt lat="44.972905" lon="-73.301814" />
     <trkpt lat="44.973841" lon="-73.301586" />
     <trkpt lat="44.974402" lon="-73.301345" />
-    <trkpt lat="44.975390" lon="-73.300789" />
-    <trkpt lat="44.975230" lon="-73.299974" />
-    <trkpt lat="44.975008" lon="-73.300048" />
-    <trkpt lat="44.975230" lon="-73.299974" />
-    <trkpt lat="44.975390" lon="-73.300789" />
+    <trkpt lat="44.975622" lon="-73.300645" />
     <trkpt lat="44.976842" lon="-73.299945" />
     <trkpt lat="44.977700" lon="-73.299476" />
     <trkpt lat="44.978559" lon="-73.299007" />

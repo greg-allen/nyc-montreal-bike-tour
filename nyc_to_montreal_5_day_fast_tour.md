@@ -37,7 +37,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 82.1 and 75.9 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Days 2, 3 and 4 are 89.6, 75.9 and 64.6 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -60,7 +60,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 *Hudson River Greenway, Westchester & Putnam trails, Maybrook Trailway, Dutchess Rail Trail*
 
 - **Distance:** 103.1 mi (165.9 km) · **Climbing:** about +2,500 ft
-- **Surface:** About 95% car-free paved trail; city streets in Inwood/Bronx and through Brewster village.
+- **Surface:** About 95% car-free paved trail; city streets in Inwood/Bronx and through Brewster village. No unpaved sections tagged in OpenStreetMap.
 - **GPX:** [`gpx/5d1.gpx`](gpx/5d1.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=40.70262,-74.01605&destination=41.70538,-73.92850&waypoints=40.82158,-73.95867|40.88906,-73.89313|41.05761,-73.82138|41.20061,-73.78962|41.36083,-73.74497|41.41366,-73.66026|41.54707,-73.65899|41.58172,-73.80220)
 - **Lunch:** **Trailside Cafe**, 1807 Commerce St, Yorktown Heights, NY · (914) 302-7331 · mile 47.0. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.
 - **Lodging:** **DoubleTree by Hilton Poughkeepsie**, 40 Civic Center Plaza, Poughkeepsie, NY · (845) 485-5300 · mile 103.1. Formerly the Poughkeepsie Grand Hotel. About 0.4 mi from the Walkway Over the Hudson. / **Hyatt Place Poughkeepsie**, 2165 South Rd, Poughkeepsie, NY · (845) 632-3100 · mile 94.6 (3.1 mi off route). Alternative. About 5 mi SOUTH of the route on busy US-9.
@@ -113,7 +113,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 *NY-9G, Rhinebeck, Empire State Trail to Hudson, Albany-Hudson Electric Trail, Albany, Troy*
 
 - **Distance:** 95.9 mi (154.3 km) · **Climbing:** about +2,000 ft
-- **Surface:** NY-9G shoulder, quiet county roads (Empire State Trail on-road section), then the paved AHET and Mohawk-Hudson trail, with city streets at both ends.
+- **Surface:** NY-9G shoulder, quiet county roads (Empire State Trail on-road section), then the paved AHET and Mohawk-Hudson trail, with city streets at both ends. Unpaved per OpenStreetMap: about 3.3 mi (mi 27.8 to 28.4 compacted, mi 52.0 to 54.7 compacted).
 - **GPX:** [`gpx/5d2.gpx`](gpx/5d2.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=41.70538,-73.92850&destination=42.73415,-73.68842&waypoints=41.88165,-73.87164|41.99488,-73.91250|42.09349,-73.90818|42.18208,-73.83866|42.31306,-73.74192|42.42884,-73.67443|42.56216,-73.63806|42.64365,-73.74870)
 - **Lunch:** **Bread Alone Bakery & Cafe**, 45 E Market St, Rhinebeck, NY · mile 19.2. Breakfast and lunch daily; listed open Mondays 7 AM to 5 PM.
 - **Lodging:** **Best Western Plus Franklin Square Inn Troy/Albany**, 1 4th St, Troy, NY · (518) 274-8800 · mile 95.9. Downtown Troy.
@@ -141,7 +141,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 22.8 | CONTINUE ONTO | River Road (CR-103) | 2.8 | Road shoulder |  |
 | 25.6 | CONTINUE ONTO | Annandale Road (CR-103) | 1.1 | Road shoulder |  |
 | 26.7 | TURN LEFT | Robbins Road | 1.0 | Street |  |
-| 27.7 | TURN RIGHT | Access Road | 0.7 | Street |  |
+| 27.7 | TURN RIGHT | Access Road | 0.7 | Unpaved: compacted |  |
 | 28.4 | TURN LEFT | Kidd Lane | 1.1 | Street |  |
 | 29.5 | TURN LEFT | Broadway (CR-78) | 0.4 | Road shoulder | On-road through Watervliet and Cohoes: follow the Empire State Trail signs. |
 | 29.9 | TURN RIGHT | Woods Road | 2.0 | Street |  |
@@ -199,7 +199,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 *Waterford, Old Champlain Canal Trail, US-4 through Stillwater & Schuylerville, canal towpaths, Whitehall, NY-22*
 
 - **Distance:** 92.9 mi (149.5 km) · **Climbing:** about +2,600 ft
-- **Surface:** Mostly US-4 and NY-22 road shoulders, plus about 9 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann (fine on 32 mm+ tires, slow when wet). The NY-22 section north of Whitehall is 23.5 mi of rolling road with few services.
+- **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 9 mi of compacted stone-dust canal towpath between Schuylerville and Fort Ann. Unpaved per OpenStreetMap: about 13.5 mi (mi 4.6 to 6.2 compacted, mi 6.4 to 9.6 gravel, mi 26.7 to 27.4 compacted, mi 28.5 to 29.3 compacted, mi 43.0 to 49.3 compacted/unpaved, mi 58.1 to 59.0 unpaved).
 - **GPX:** [`gpx/5d3.gpx`](gpx/5d3.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.73415,-73.68842&destination=43.85842,-73.42803&waypoints=42.86194,-73.68057|43.04087,-73.59248|43.14436,-73.58134|43.27853,-73.57407|43.35554,-73.49528|43.43768,-73.44533|43.56798,-73.41309|43.68919,-73.42230)
 - **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 66.9 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
 - **Lodging:** **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 92.9. On the south side of town, right on the route.
@@ -219,7 +219,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 3.5 | TURN RIGHT | Peebles Island Trail | 0.6 | Bike path |  |
 | 4.1 | TURN RIGHT | Old Champlain Canal Trail | 2.0 | Bike path |  |
 | 6.1 | TURN LEFT | Bells Lane North | 0.4 | Street |  |
-| 6.5 | TURN RIGHT | Old Champlain Canal Trail | 3.0 | Bike path |  |
+| 6.5 | TURN RIGHT | Old Champlain Canal Trail | 3.0 | Unpaved: gravel |  |
 | 9.5 | TURN RIGHT | Upper Newtown Road (CR-86) | 0.3 | Road shoulder |  |
 | 9.8 | TURN LEFT | Hudson River Road (US-4; NY-32) | 1.4 | Road shoulder |  |
 | 11.2 | BEAR RIGHT | South Main Street | 2.1 | Street |  |
@@ -228,9 +228,9 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 15.2 | CONTINUE ONTO | Hudson Avenue (US-4; NY-32) | 3.3 | Road shoulder |  |
 | 18.5 | CONTINUE ONTO | US 4 | 7.9 | Road shoulder |  |
 | 26.4 | TURN RIGHT | bike path | 0.2 | Bike path |  |
-| 26.6 | TURN LEFT | Surrender March Trail | 0.7 | Bike path |  |
+| 26.6 | TURN LEFT | Surrender March Trail | 0.7 | Unpaved: compacted |  |
 | 27.3 | TURN RIGHT | US 4 | 1.0 | Road shoulder |  |
-| 28.3 | TURN LEFT | Old Champlain Canal Towpath Trail | 0.9 | Bike path | Towpath: compacted surface. |
+| 28.3 | TURN LEFT | Old Champlain Canal Towpath Trail | 0.9 | Bike path | Towpath trail departing Schuylerville north along the canal. |
 | 29.2 | TURN RIGHT | County Road 42 (CR-42) | 0.4 | Road shoulder |  |
 | 29.6 | CONTINUE ONTO | Dix Bridge Road | 0.2 | Street |  |
 | 29.8 | TURN LEFT | bike path | 0.3 | Bike path |  |
@@ -241,10 +241,10 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 41.9 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
 | 42.0 | TURN RIGHT | Old Champlain Canal Towpath | 0.3 | Street |  |
 | 42.3 | BEAR RIGHT | Towpath Road | 0.7 | Street |  |
-| 43.0 | CONTINUE ONTO | Old Champlain Canal Trail | 2.0 | Bike path |  |
-| 45.0 | TURN RIGHT | Towpath Road | 2.4 | Street |  |
-| 47.4 | TURN RIGHT | New Swamp Road | 0.2 | Street |  |
-| 47.6 | TURN LEFT | Champlain Canalway Trail | 4.4 | Bike path | Canalway trail: stone dust or gravel. |
+| 43.0 | CONTINUE ONTO | Old Champlain Canal Trail | 2.0 | Unpaved: compacted/unpaved |  |
+| 45.0 | TURN RIGHT | Towpath Road | 2.4 | Unpaved: compacted/unpaved |  |
+| 47.4 | TURN RIGHT | New Swamp Road | 0.2 | Unpaved: compacted/unpaved |  |
+| 47.6 | TURN LEFT | Champlain Canalway Trail | 4.4 | Unpaved: compacted/unpaved | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
 | 52.0 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
 | 52.2 | TURN RIGHT | Champlain Canalway Trail | 1.4 | Bike path |  |
 | 53.6 | CONTINUE ONTO | South Canal Street | 0.4 | Street |  |
@@ -259,7 +259,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 67.6 | CONTINUE ONTO | Broadway (NY-22) | 1.5 | Road shoulder |  |
 | 69.1 | CONTINUE ONTO | State Highway 22 (NY-22) | 23.4 | Road shoulder |  |
 | 92.5 | TURN LEFT | Mount Hope Avenue | 0.2 | Street | Into Ticonderoga; the hotel is just ahead. |
-| 92.7 | TURN RIGHT | Burgoyne Road | 0.2 | Street | Burgoyne Rd into Schuylerville. |
+| 92.7 | TURN RIGHT | Burgoyne Road | 0.2 | Street |  |
 | 92.9 | ARRIVE | Best Western Plus Ticonderoga Inn & Suites |  | — | 260 Burgoyne Rd, Ticonderoga, NY |
 
 </details>
@@ -268,7 +268,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 *NY-9N/22 lakeshore: Crown Point, Port Henry, Westport, Essex, Willsboro, Keeseville, Ausable Chasm, US-9*
 
 - **Distance:** 72.5 mi (116.7 km) · **Climbing:** about +3,300 ft
-- **Surface:** Paved two-lane state highway (NY-9N/22, then US-9) almost the whole way, with the hilliest terrain of the tour between Westport and Keeseville.
+- **Surface:** Paved two-lane state highway (NY-9N/22, then US-9) almost the whole way, with the hilliest terrain of the tour between Westport and Keeseville. No unpaved sections tagged in OpenStreetMap.
 - **GPX:** [`gpx/d5.gpx`](gpx/d5.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=43.85842,-73.42803&destination=44.69752,-73.49191&waypoints=43.94611,-73.43161|44.05108,-73.45848|44.11364,-73.43304|44.22997,-73.46013|44.31011,-73.35177|44.38196,-73.42724|44.45415,-73.48748|44.60151,-73.43871)
 - **Lunch:** **Pink Pig Cafe**, 2750 Essex Rd, Essex, NY · (518) 962-8833 · mile 38.4. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.
 - **Lodging:** **Best Western Plus Plattsburgh**, 446 Route 3, Plattsburgh, NY · (518) 561-7750 · mile 72.5. On Route 3 by I-87 exit 37, about 2 mi west of downtown.
@@ -313,7 +313,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 *US-9, NY-9B, border at US-11 / Route 223, Richelieu River, Chambly Canal, Jacques-Cartier Bridge, Old Port*
 
 - **Distance:** 87.9 mi (141.5 km) · **Climbing:** about +600 ft
-- **Surface:** Flat, paved country roads: US-9, NY-9B and Route 223, with a short path in Plattsburgh. The Chambly Canal path is a mix of asphalt and fine gravel. OpenStreetMap has no mapped path for about 4 mi in the middle, so the GPX uses Rue Jean-Talon (Route 223) right beside the canal there; if the towpath is open on the ground, ride it. After that it's bike paths and street bike lanes through Chambly, Saint-Hubert and Longueuil, then the Jacques-Cartier Bridge bike path.
+- **Surface:** Flat, paved country roads: US-9, NY-9B and Route 223, with a short path in Plattsburgh. The Chambly Canal path is a mix of asphalt and fine gravel. OpenStreetMap has no mapped path for about 4 mi in the middle, so the GPX uses Rue Jean-Talon (Route 223) right beside the canal there; if the towpath is open on the ground, ride it. After that it's bike paths and street bike lanes through Chambly, Saint-Hubert and Longueuil, then the Jacques-Cartier Bridge bike path. Unpaved per OpenStreetMap: about 8.3 mi (mi 53.3 to 56.6 gravel/unpaved/dirt, mi 60.8 to 65.8 gravel/fine gravel).
 - **GPX:** [`gpx/6d6.gpx`](gpx/6d6.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=44.69752,-73.49191&destination=45.50794,-73.55296&waypoints=44.86574,-73.42057|45.01089,-73.37095|45.14138,-73.27400|45.31904,-73.25481|45.36907,-73.26178|45.44026,-73.26206|45.45602,-73.37188|45.52105,-73.51613)
 - **Lunch:** **Lakeside Coffee Roasters**, 109 Lake St, Rouses Point, NY · (518) 297-5600 · mile 28.1. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe & Bakery listed in earlier drafts closed in Oct 2025.
 - **Lodging:** **Hôtel Monville**, 1041 Rue de Bleury, Montréal, QC · +1 (514) 379-2000 · mile 87.6 (0.4 mi off route). Downtown, about 0.5 mi from Place Jacques-Cartier. Ask about bike storage when booking. / **Fairmont The Queen Elizabeth**, 900 Boul. René-Lévesque O, Montréal, QC · +1 (514) 861-3511 · mile 87.4 (0.7 mi off route). Above Gare Centrale. Unboxed bikes still cannot board Amtrak here.
@@ -349,19 +349,19 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 52.3 | TURN RIGHT | Rue Saint-Jacques | 0.6 | Street |  |
 | 52.9 | TURN LEFT | Rue Champlain | 0.2 | Street | Riverfront; the canal path starts here. |
 | 53.1 | SNACK | Saint-Jean waterfront (La Trinquette pub, 290 Rue Champlain) | 0.2 | — | Pub-bistro; lunch hours not confirmed. |
-| 53.3 | CONTINUE ONTO | Piste du Canal de Chambly | 0.9 | Bike path | Chambly Canal path along the canal (asphalt or fine gravel). |
-| 54.2 | TURN RIGHT | bike path | 0.2 | Bike path |  |
-| 54.4 | TURN RIGHT | Piste du Canal de Chambly | 2.1 | Bike path |  |
-| 56.5 | TURN RIGHT | Rue Sainte-Thérèse | 0.2 | Street |  |
+| 53.3 | CONTINUE ONTO | Piste du Canal de Chambly | 0.9 | Unpaved: gravel/unpaved/dirt | Chambly Canal path along the canal (asphalt or fine gravel). |
+| 54.2 | TURN RIGHT | bike path | 0.2 | Unpaved: gravel/unpaved/dirt |  |
+| 54.4 | TURN RIGHT | Piste du Canal de Chambly | 2.1 | Unpaved: gravel/unpaved/dirt |  |
+| 56.5 | TURN RIGHT | Rue Sainte-Thérèse | 0.2 | Unpaved: gravel/unpaved/dirt |  |
 | 56.7 | TURN RIGHT | Rue Baillargeon | 0.8 | Street |  |
 | 57.5 | TURN LEFT | Rue Sainte-Thérèse | 0.2 | Street |  |
 | 57.7 | TURN RIGHT | Rue Jean-Talon (Route 223) | 1.7 | Road shoulder | GPX follows Route 223 beside the canal here because the path is unmapped in OpenStreetMap. If the towpath is open, ride it: it runs parallel. |
 | 59.4 | TURN LEFT | Rue Massé | 0.3 | Street |  |
 | 59.7 | TURN LEFT | Rue Jean-Talon (Route 223) | 0.9 | Road shoulder |  |
 | 60.6 | TURN LEFT | Rue Sainte-Thérèse | 0.1 | Street |  |
-| 60.7 | BEAR LEFT | Piste du Canal de Chambly | 1.8 | Bike path |  |
-| 62.5 | TURN RIGHT | Rue Auclair | 0.1 | Street |  |
-| 62.6 | TURN RIGHT | Piste du Canal de Chambly | 3.2 | Bike path |  |
+| 60.7 | BEAR LEFT | Piste du Canal de Chambly | 1.8 | Unpaved: gravel/fine gravel |  |
+| 62.5 | TURN RIGHT | Rue Auclair | 0.1 | Unpaved: gravel/fine gravel |  |
+| 62.6 | TURN RIGHT | Piste du Canal de Chambly | 3.2 | Unpaved: gravel/fine gravel |  |
 | 65.8 | TURN LEFT | Rue Saint-Georges | 0.1 | Street |  |
 | 65.9 | SNACK | Boulangerie du Vieux-Chambly (0.2 mi off route) | 0.1 | — | Bakery on the route. |
 | 66.0 | TURN LEFT | Avenue Bourgogne | 1.3 | Street | Chambly: Fort Chambly and the Boulangerie du Vieux-Chambly. |

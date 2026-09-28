@@ -1,172 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 4 (Wednesday Oct 7): Saratoga Springs to Ticonderoga, NY</name><desc>75.9 mi (122.1 km), about +2,600 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="43.08558" lon="-73.78242"><name>Hotel: The Saratoga Hilton</name><desc>Mile 82.1. 534 Broadway, Saratoga Springs, NY. (518) 584-4000. Downtown on Broadway.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="43.07592" lon="-73.78624"><name>Hotel: Holiday Inn Saratoga Springs</name><desc>Mile 81.2. 232 Broadway, Saratoga Springs, NY. (518) 584-4550. South end of Broadway, on the way in.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="43.08438" lon="-73.78863"><name>Bike: Trek Bicycle Saratoga Springs</name><desc>Mile 81.9, 0.3 mi off route. 71 Church St, Saratoga Springs, NY. (518) 583-0600. Replaces 'Saratoga Bicycle Specialties' from earlier drafts, which could not be found (110 Excelsior Ave is a hardware store).</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="43.54997" lon="-73.39814"><name>Lunch: Stewart's Shops #211</name><desc>Mile 49.9, 0.3 mi off route. 60 Poultney St, Whitehall, NY. . Convenience store with hot food and coffee. The reliable food stop in Whitehall.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 75.9. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="43.41500" lon="-73.49100"><name>Bike: Walker's Farm, Home &amp; Tack</name><desc>Mile 36.9, 0.2 mi off route. 5565 State Route 4, Fort Ann, NY. (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="43.26976" lon="-73.58040"><name>Station: Fort Edward-Glens Falls</name><desc>Mile 24.7, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="43.55477" lon="-73.40323"><name>Station: Whitehall</name><desc>Mile 50.2, 0.0 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 4 (Wednesday Oct 7): Saratoga Springs to Ticonderoga, NY</name><desc>75.9 mi (122.1 km), about +2,600 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
-    <trkpt lat="43.085669" lon="-73.782401" />
-    <trkpt lat="43.085679" lon="-73.782238" />
-    <trkpt lat="43.085773" lon="-73.782063" />
-    <trkpt lat="43.085742" lon="-73.781970" />
-    <trkpt lat="43.084564" lon="-73.783039" />
-    <trkpt lat="43.084543" lon="-73.782983" />
-    <trkpt lat="43.084210" lon="-73.783205" />
-    <trkpt lat="43.083028" lon="-73.783715" />
-    <trkpt lat="43.082748" lon="-73.782193" />
-    <trkpt lat="43.082714" lon="-73.781742" />
-    <trkpt lat="43.082745" lon="-73.780842" />
-    <trkpt lat="43.083031" lon="-73.778814" />
-    <trkpt lat="43.083316" lon="-73.776785" />
-    <trkpt lat="43.083602" lon="-73.774757" />
-    <trkpt lat="43.083827" lon="-73.773286" />
-    <trkpt lat="43.084051" lon="-73.771815" />
-    <trkpt lat="43.084221" lon="-73.769904" />
-    <trkpt lat="43.084390" lon="-73.767992" />
-    <trkpt lat="43.084560" lon="-73.766081" />
-    <trkpt lat="43.084730" lon="-73.764170" />
-    <trkpt lat="43.084732" lon="-73.763214" />
-    <trkpt lat="43.084699" lon="-73.762855" />
-    <trkpt lat="43.084491" lon="-73.761062" />
-    <trkpt lat="43.084282" lon="-73.759268" />
-    <trkpt lat="43.084074" lon="-73.757475" />
-    <trkpt lat="43.083967" lon="-73.756408" />
-    <trkpt lat="43.083895" lon="-73.755243" />
-    <trkpt lat="43.083966" lon="-73.753828" />
-    <trkpt lat="43.084122" lon="-73.751709" />
-    <trkpt lat="43.084279" lon="-73.749589" />
-    <trkpt lat="43.084435" lon="-73.747470" />
-    <trkpt lat="43.084478" lon="-73.745339" />
-    <trkpt lat="43.084434" lon="-73.743173" />
-    <trkpt lat="43.084443" lon="-73.741571" />
-    <trkpt lat="43.084552" lon="-73.739628" />
-    <trkpt lat="43.084660" lon="-73.737685" />
-    <trkpt lat="43.084768" lon="-73.735742" />
-    <trkpt lat="43.084877" lon="-73.733799" />
-    <trkpt lat="43.085019" lon="-73.731570" />
-    <trkpt lat="43.085161" lon="-73.729340" />
-    <trkpt lat="43.085347" lon="-73.727320" />
-    <trkpt lat="43.085534" lon="-73.725301" />
-    <trkpt lat="43.085720" lon="-73.723281" />
-    <trkpt lat="43.085976" lon="-73.721097" />
-    <trkpt lat="43.086159" lon="-73.719724" />
-    <trkpt lat="43.086342" lon="-73.718352" />
-    <trkpt lat="43.086606" lon="-73.716529" />
-    <trkpt lat="43.086869" lon="-73.714707" />
-    <trkpt lat="43.087133" lon="-73.712884" />
-    <trkpt lat="43.087484" lon="-73.710674" />
-    <trkpt lat="43.087737" lon="-73.708534" />
-    <trkpt lat="43.087990" lon="-73.706394" />
-    <trkpt lat="43.088127" lon="-73.704902" />
-    <trkpt lat="43.088263" lon="-73.703410" />
-    <trkpt lat="43.088353" lon="-73.701615" />
-    <trkpt lat="43.088444" lon="-73.699820" />
-    <trkpt lat="43.088566" lon="-73.698041" />
-    <trkpt lat="43.088688" lon="-73.696261" />
-    <trkpt lat="43.088842" lon="-73.694601" />
-    <trkpt lat="43.089100" lon="-73.692474" />
-    <trkpt lat="43.089359" lon="-73.690347" />
-    <trkpt lat="43.089617" lon="-73.688220" />
-    <trkpt lat="43.089875" lon="-73.686093" />
-    <trkpt lat="43.090032" lon="-73.685177" />
-    <trkpt lat="43.090351" lon="-73.684009" />
-    <trkpt lat="43.090927" lon="-73.682447" />
-    <trkpt lat="43.091503" lon="-73.680886" />
-    <trkpt lat="43.092030" lon="-73.679271" />
-    <trkpt lat="43.092557" lon="-73.677655" />
-    <trkpt lat="43.092973" lon="-73.676135" />
-    <trkpt lat="43.093388" lon="-73.674615" />
-    <trkpt lat="43.093817" lon="-73.672913" />
-    <trkpt lat="43.094283" lon="-73.670820" />
-    <trkpt lat="43.094666" lon="-73.668928" />
-    <trkpt lat="43.095045" lon="-73.666696" />
-    <trkpt lat="43.095376" lon="-73.664528" />
-    <trkpt lat="43.095131" lon="-73.664323" />
-    <trkpt lat="43.094951" lon="-73.664100" />
-    <trkpt lat="43.093939" lon="-73.662480" />
-    <trkpt lat="43.092926" lon="-73.660860" />
-    <trkpt lat="43.092614" lon="-73.660450" />
-    <trkpt lat="43.092114" lon="-73.659911" />
-    <trkpt lat="43.092632" lon="-73.659317" />
-    <trkpt lat="43.092920" lon="-73.658827" />
-    <trkpt lat="43.092960" lon="-73.658705" />
-    <trkpt lat="43.092973" lon="-73.658524" />
-    <trkpt lat="43.092959" lon="-73.658225" />
-    <trkpt lat="43.092897" lon="-73.657893" />
-    <trkpt lat="43.092719" lon="-73.657339" />
-    <trkpt lat="43.091914" lon="-73.655393" />
-    <trkpt lat="43.091806" lon="-73.655188" />
-    <trkpt lat="43.091721" lon="-73.655094" />
-    <trkpt lat="43.090755" lon="-73.654670" />
-    <trkpt lat="43.090393" lon="-73.654356" />
-    <trkpt lat="43.090116" lon="-73.654042" />
-    <trkpt lat="43.089549" lon="-73.653220" />
-    <trkpt lat="43.088431" lon="-73.651750" />
-    <trkpt lat="43.088265" lon="-73.651515" />
-    <trkpt lat="43.088109" lon="-73.650989" />
-    <trkpt lat="43.088089" lon="-73.650804" />
-    <trkpt lat="43.088129" lon="-73.650048" />
-    <trkpt lat="43.088269" lon="-73.649369" />
-    <trkpt lat="43.088451" lon="-73.648791" />
-    <trkpt lat="43.089009" lon="-73.647149" />
-    <trkpt lat="43.089319" lon="-73.646433" />
-    <trkpt lat="43.089564" lon="-73.645935" />
-    <trkpt lat="43.089975" lon="-73.645329" />
-    <trkpt lat="43.090989" lon="-73.644232" />
-    <trkpt lat="43.091117" lon="-73.643985" />
-    <trkpt lat="43.091214" lon="-73.643553" />
-    <trkpt lat="43.091381" lon="-73.641586" />
-    <trkpt lat="43.091549" lon="-73.639620" />
-    <trkpt lat="43.091552" lon="-73.638491" />
-    <trkpt lat="43.091607" lon="-73.637506" />
-    <trkpt lat="43.091918" lon="-73.635474" />
-    <trkpt lat="43.092022" lon="-73.633093" />
-    <trkpt lat="43.092127" lon="-73.630711" />
-    <trkpt lat="43.092194" lon="-73.630180" />
-    <trkpt lat="43.092418" lon="-73.628544" />
-    <trkpt lat="43.092528" lon="-73.627938" />
-    <trkpt lat="43.092989" lon="-73.625962" />
-    <trkpt lat="43.093450" lon="-73.623986" />
-    <trkpt lat="43.093910" lon="-73.622010" />
-    <trkpt lat="43.094371" lon="-73.620034" />
-    <trkpt lat="43.094573" lon="-73.618921" />
-    <trkpt lat="43.094785" lon="-73.617319" />
-    <trkpt lat="43.094997" lon="-73.615717" />
-    <trkpt lat="43.095080" lon="-73.614954" />
-    <trkpt lat="43.095246" lon="-73.612886" />
-    <trkpt lat="43.095413" lon="-73.610818" />
-    <trkpt lat="43.095579" lon="-73.608750" />
-    <trkpt lat="43.095726" lon="-73.606493" />
-    <trkpt lat="43.095949" lon="-73.604304" />
-    <trkpt lat="43.095943" lon="-73.603366" />
-    <trkpt lat="43.096109" lon="-73.601064" />
-    <trkpt lat="43.096163" lon="-73.600865" />
-    <trkpt lat="43.096281" lon="-73.600664" />
-    <trkpt lat="43.096583" lon="-73.600339" />
-    <trkpt lat="43.097280" lon="-73.599766" />
-    <trkpt lat="43.097539" lon="-73.599509" />
-    <trkpt lat="43.098493" lon="-73.598325" />
-    <trkpt lat="43.098634" lon="-73.598060" />
-    <trkpt lat="43.098823" lon="-73.597545" />
-    <trkpt lat="43.099003" lon="-73.596644" />
-    <trkpt lat="43.099108" lon="-73.595403" />
-    <trkpt lat="43.099033" lon="-73.594868" />
-    <trkpt lat="43.098926" lon="-73.593352" />
-    <trkpt lat="43.098794" lon="-73.592456" />
-    <trkpt lat="43.098513" lon="-73.590851" />
-    <trkpt lat="43.098233" lon="-73.589246" />
-    <trkpt lat="43.098140" lon="-73.587259" />
-    <trkpt lat="43.098046" lon="-73.585272" />
-    <trkpt lat="43.097953" lon="-73.583285" />
-    <trkpt lat="43.097918" lon="-73.582811" />
-    <trkpt lat="43.097792" lon="-73.582186" />
-    <trkpt lat="43.096779" lon="-73.582598" />
-    <trkpt lat="43.095766" lon="-73.583011" />
-    <trkpt lat="43.097155" lon="-73.582445" />
-    <trkpt lat="43.098545" lon="-73.581880" />
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 4 (Wednesday Oct 7): Schuylerville to Ticonderoga, NY</name><desc>64.6 mi (104.0 km), about +2,100 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="43.10000" lon="-73.58150"><name>Hotel: Dovegate Inn</name><desc>Mile 75.9. 184 Broad St, Schuylerville, NY. (518) 695-3699. Historic 1800s B&amp;B right on Broad St in Schuylerville village center. Booking ahead recommended (limited rooms); vacation rentals/Airbnbs also available in town or nearby Greenwich.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="43.54997" lon="-73.39814"><name>Lunch: Stewart's Shops #211</name><desc>Mile 38.6, 0.3 mi off route. 60 Poultney St, Whitehall, NY. . Convenience store with hot food and coffee. The reliable food stop in Whitehall.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 64.6. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="43.41500" lon="-73.49100"><name>Bike: Walker's Farm, Home &amp; Tack</name><desc>Mile 25.6, 0.2 mi off route. 5565 State Route 4, Fort Ann, NY. (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="43.26976" lon="-73.58040"><name>Station: Fort Edward-Glens Falls</name><desc>Mile 13.4, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="43.55477" lon="-73.40323"><name>Station: Whitehall</name><desc>Mile 38.8, 0.0 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Day 4 (Wednesday Oct 7): Schuylerville to Ticonderoga, NY</name><desc>64.6 mi (104.0 km), about +2,100 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="43.099934" lon="-73.581314" />
     <trkpt lat="43.099618" lon="-73.579987" />
     <trkpt lat="43.100152" lon="-73.579879" />
@@ -262,19 +101,22 @@
     <trkpt lat="43.150346" lon="-73.578657" />
     <trkpt lat="43.150371" lon="-73.578864" />
     <trkpt lat="43.150449" lon="-73.578975" />
-    <trkpt lat="43.151422" lon="-73.578261" />
-    <trkpt lat="43.151826" lon="-73.578006" />
-    <trkpt lat="43.153019" lon="-73.577453" />
-    <trkpt lat="43.154093" lon="-73.577326" />
-    <trkpt lat="43.155167" lon="-73.577200" />
-    <trkpt lat="43.156875" lon="-73.576883" />
-    <trkpt lat="43.157112" lon="-73.576872" />
-    <trkpt lat="43.157608" lon="-73.576960" />
-    <trkpt lat="43.158041" lon="-73.577157" />
-    <trkpt lat="43.158799" lon="-73.577704" />
-    <trkpt lat="43.159841" lon="-73.578626" />
-    <trkpt lat="43.160860" lon="-73.579427" />
-    <trkpt lat="43.160864" lon="-73.578122" />
+    <trkpt lat="43.150048" lon="-73.579381" />
+    <trkpt lat="43.150449" lon="-73.578975" />
+    <trkpt lat="43.150371" lon="-73.578864" />
+    <trkpt lat="43.150346" lon="-73.578657" />
+    <trkpt lat="43.150531" lon="-73.576994" />
+    <trkpt lat="43.151361" lon="-73.576479" />
+    <trkpt lat="43.152681" lon="-73.575823" />
+    <trkpt lat="43.154001" lon="-73.575166" />
+    <trkpt lat="43.154228" lon="-73.575062" />
+    <trkpt lat="43.154789" lon="-73.574931" />
+    <trkpt lat="43.155298" lon="-73.574933" />
+    <trkpt lat="43.155971" lon="-73.575077" />
+    <trkpt lat="43.157353" lon="-73.575667" />
+    <trkpt lat="43.158734" lon="-73.576257" />
+    <trkpt lat="43.159164" lon="-73.576490" />
+    <trkpt lat="43.160264" lon="-73.577322" />
     <trkpt lat="43.161098" lon="-73.577804" />
     <trkpt lat="43.161741" lon="-73.578003" />
     <trkpt lat="43.162955" lon="-73.578216" />
@@ -283,11 +125,13 @@
     <trkpt lat="43.167260" lon="-73.578723" />
     <trkpt lat="43.168806" lon="-73.578870" />
     <trkpt lat="43.170351" lon="-73.579017" />
-    <trkpt lat="43.171459" lon="-73.579029" />
-    <trkpt lat="43.172381" lon="-73.578976" />
+    <trkpt lat="43.171024" lon="-73.579033" />
+    <trkpt lat="43.172163" lon="-73.578978" />
     <trkpt lat="43.173302" lon="-73.578923" />
     <trkpt lat="43.174767" lon="-73.578810" />
     <trkpt lat="43.176233" lon="-73.578698" />
+    <trkpt lat="43.177698" lon="-73.578585" />
+    <trkpt lat="43.177679" lon="-73.579551" />
     <trkpt lat="43.177698" lon="-73.578585" />
     <trkpt lat="43.179168" lon="-73.578638" />
     <trkpt lat="43.180639" lon="-73.578691" />
@@ -867,9 +711,10 @@
     <trkpt lat="43.548845" lon="-73.405259" />
     <trkpt lat="43.550101" lon="-73.404623" />
     <trkpt lat="43.551341" lon="-73.404202" />
-    <trkpt lat="43.552565" lon="-73.403880" />
-    <trkpt lat="43.553788" lon="-73.403557" />
-    <trkpt lat="43.554743" lon="-73.403444" />
+    <trkpt lat="43.552408" lon="-73.403914" />
+    <trkpt lat="43.553475" lon="-73.403626" />
+    <trkpt lat="43.554124" lon="-73.403502" />
+    <trkpt lat="43.555163" lon="-73.403430" />
     <trkpt lat="43.556203" lon="-73.403357" />
     <trkpt lat="43.556758" lon="-73.403451" />
     <trkpt lat="43.557123" lon="-73.403647" />
