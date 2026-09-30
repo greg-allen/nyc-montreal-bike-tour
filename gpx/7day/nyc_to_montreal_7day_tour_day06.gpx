@@ -1,25 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Saint-Jean-sur-Richelieu, QC</name><desc>54.7 mi (88.0 km), about +300 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="44.69771" lon="-73.49193"><name>Hotel: Best Western Plus Plattsburgh</name><desc>Mile 72.5. 446 Route 3, Plattsburgh, NY. (518) 561-7750. On Route 3 by I-87 exit 37, about 2 mi west of downtown.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="44.69935" lon="-73.47864"><name>Bike: Maui North Ski, Bike &amp; Board</name><desc>Mile 71.7, 0.2 mi off route. 316 Cornelia St, Plattsburgh, NY. (518) 563-7245. Full-service shop on the route into town. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun 12 to 4.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.69672" lon="-73.44645"><name>Station: Plattsburgh</name><desc>Mile 70.3, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="44.99315" lon="-73.36424"><name>Lunch: Lakeside Coffee Roasters</name><desc>Mile 28.1. 109 Lake St, Rouses Point, NY. (518) 297-5600. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe &amp; Bakery listed in earlier drafts closed in Oct 2025.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="45.32482" lon="-73.26641"><name>Hotel: Quality Hotel Centre de Congrès</name><desc>Mile 54.7. 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC. +1 (450) 300-5177. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="45.32391" lon="-73.26475"><name>Hotel: Auberge Harris</name><desc>Mile 54.4. 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 348-3821. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 54.7, 2.4 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 29.4. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
-  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 28.3, 0.3 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Saint-Jean-sur-Richelieu, QC</name><desc>54.7 mi (88.0 km), about +300 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
-    <trkpt lat="44.697523" lon="-73.491911" />
-    <trkpt lat="44.697543" lon="-73.491559" />
-    <trkpt lat="44.697172" lon="-73.491587" />
-    <trkpt lat="44.696554" lon="-73.491551" />
-    <trkpt lat="44.696697" lon="-73.489228" />
-    <trkpt lat="44.696841" lon="-73.486905" />
-    <trkpt lat="44.696984" lon="-73.484582" />
-    <trkpt lat="44.697128" lon="-73.482259" />
-    <trkpt lat="44.697271" lon="-73.479936" />
-    <trkpt lat="44.697392" lon="-73.478407" />
-    <trkpt lat="44.697514" lon="-73.476878" />
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Saint-Jean-sur-Richelieu, QC</name><desc>53.2 mi (85.6 km), about +400 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="44.69711" lon="-73.50240"><name>Hotel: Microtel Inn &amp; Suites by Wyndham Plattsburgh</name><desc>Mile 73.6. 554 State Route 3, Plattsburgh, NY. (518) 324-3800. On Route 3 by I-87 exit 37, about 2.5 mi west of downtown.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.69771" lon="-73.49193"><name>Hotel: Best Western Plus Plattsburgh</name><desc>Mile 73.0. 446 Route 3, Plattsburgh, NY. (518) 561-7750. On Route 3 by I-87 exit 37, about 2 mi west of downtown.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.69935" lon="-73.47864"><name>Bike: Maui North Ski, Bike &amp; Board</name><desc>Mile 72.3. 316 Cornelia St, Plattsburgh, NY. (518) 563-7245. Full-service shop on the route into town. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun 12 to 4.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="44.69672" lon="-73.44645"><name>Station: Plattsburgh</name><desc>Mile 70.8, 0.2 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="44.99315" lon="-73.36424"><name>Lunch: Lakeside Coffee Roasters</name><desc>Mile 26.7. 109 Lake St, Rouses Point, NY. (518) 297-5600. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe &amp; Bakery listed in earlier drafts closed in Oct 2025.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="45.32482" lon="-73.26641"><name>Hotel: Quality Hotel Centre de Congrès</name><desc>Mile 53.2. 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC. +1 (450) 300-5177. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="45.32391" lon="-73.26475"><name>Hotel: Auberge Harris</name><desc>Mile 52.9. 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 348-3821. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 53.2, 2.4 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 27.9. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
+  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 26.8, 0.3 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Saint-Jean-sur-Richelieu, QC</name><desc>53.2 mi (85.6 km), about +400 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+    <trkpt lat="44.697238" lon="-73.502415" />
+    <trkpt lat="44.697241" lon="-73.502346" />
+    <trkpt lat="44.697500" lon="-73.502348" />
+    <trkpt lat="44.697512" lon="-73.502018" />
+    <trkpt lat="44.697462" lon="-73.501959" />
+    <trkpt lat="44.696602" lon="-73.501899" />
+    <trkpt lat="44.696185" lon="-73.502034" />
+    <trkpt lat="44.695988" lon="-73.502015" />
+    <trkpt lat="44.696104" lon="-73.499810" />
+    <trkpt lat="44.696220" lon="-73.497605" />
+    <trkpt lat="44.696336" lon="-73.495401" />
+    <trkpt lat="44.696452" lon="-73.493196" />
+    <trkpt lat="44.696595" lon="-73.490847" />
+    <trkpt lat="44.696739" lon="-73.488498" />
+    <trkpt lat="44.696882" lon="-73.486150" />
+    <trkpt lat="44.697026" lon="-73.483801" />
+    <trkpt lat="44.697169" lon="-73.481452" />
+    <trkpt lat="44.697289" lon="-73.479781" />
+    <trkpt lat="44.697409" lon="-73.478109" />
+    <trkpt lat="44.697530" lon="-73.476718" />
     <trkpt lat="44.697630" lon="-73.475925" />
     <trkpt lat="44.697497" lon="-73.475852" />
     <trkpt lat="44.697080" lon="-73.474633" />
@@ -37,45 +47,11 @@
     <trkpt lat="44.695171" lon="-73.454931" />
     <trkpt lat="44.695309" lon="-73.453091" />
     <trkpt lat="44.695447" lon="-73.451251" />
-    <trkpt lat="44.695596" lon="-73.449741" />
-    <trkpt lat="44.695291" lon="-73.449770" />
-    <trkpt lat="44.694535" lon="-73.447513" />
-    <trkpt lat="44.693779" lon="-73.445257" />
-    <trkpt lat="44.693643" lon="-73.445142" />
-    <trkpt lat="44.693606" lon="-73.445054" />
-    <trkpt lat="44.693518" lon="-73.444319" />
-    <trkpt lat="44.692649" lon="-73.444833" />
-    <trkpt lat="44.692300" lon="-73.444967" />
-    <trkpt lat="44.691843" lon="-73.445077" />
-    <trkpt lat="44.691114" lon="-73.445133" />
-    <trkpt lat="44.690500" lon="-73.445038" />
-    <trkpt lat="44.689560" lon="-73.444962" />
-    <trkpt lat="44.688318" lon="-73.444976" />
-    <trkpt lat="44.687076" lon="-73.444990" />
-    <trkpt lat="44.685834" lon="-73.445004" />
-    <trkpt lat="44.685112" lon="-73.444931" />
-    <trkpt lat="44.684588" lon="-73.444813" />
-    <trkpt lat="44.684038" lon="-73.444590" />
-    <trkpt lat="44.684588" lon="-73.444813" />
-    <trkpt lat="44.685112" lon="-73.444931" />
-    <trkpt lat="44.685834" lon="-73.445004" />
-    <trkpt lat="44.687076" lon="-73.444990" />
-    <trkpt lat="44.688318" lon="-73.444976" />
-    <trkpt lat="44.689560" lon="-73.444962" />
-    <trkpt lat="44.690500" lon="-73.445038" />
-    <trkpt lat="44.691114" lon="-73.445133" />
-    <trkpt lat="44.691843" lon="-73.445077" />
-    <trkpt lat="44.692300" lon="-73.444967" />
-    <trkpt lat="44.692649" lon="-73.444833" />
-    <trkpt lat="44.693518" lon="-73.444319" />
-    <trkpt lat="44.693606" lon="-73.445054" />
-    <trkpt lat="44.693643" lon="-73.445142" />
-    <trkpt lat="44.693779" lon="-73.445257" />
-    <trkpt lat="44.694535" lon="-73.447513" />
-    <trkpt lat="44.695291" lon="-73.449770" />
-    <trkpt lat="44.696585" lon="-73.449700" />
-    <trkpt lat="44.697357" lon="-73.449548" />
-    <trkpt lat="44.697553" lon="-73.450879" />
+    <trkpt lat="44.695374" lon="-73.452133" />
+    <trkpt lat="44.695481" lon="-73.452147" />
+    <trkpt lat="44.695581" lon="-73.451266" />
+    <trkpt lat="44.697046" lon="-73.451412" />
+    <trkpt lat="44.697611" lon="-73.451303" />
     <trkpt lat="44.697750" lon="-73.452210" />
     <trkpt lat="44.699380" lon="-73.451444" />
     <trkpt lat="44.699647" lon="-73.451853" />
@@ -121,10 +97,11 @@
     <trkpt lat="44.747994" lon="-73.423288" />
     <trkpt lat="44.749545" lon="-73.422382" />
     <trkpt lat="44.751097" lon="-73.421476" />
-    <trkpt lat="44.752705" lon="-73.420711" />
-    <trkpt lat="44.754312" lon="-73.419946" />
+    <trkpt lat="44.752486" lon="-73.420811" />
+    <trkpt lat="44.753874" lon="-73.420146" />
+    <trkpt lat="44.755263" lon="-73.419481" />
     <trkpt lat="44.755920" lon="-73.419181" />
-    <trkpt lat="44.756573" lon="-73.418990" />
+    <trkpt lat="44.756397" lon="-73.419030" />
     <trkpt lat="44.757055" lon="-73.418943" />
     <trkpt lat="44.757995" lon="-73.419029" />
     <trkpt lat="44.759763" lon="-73.419278" />
@@ -648,14 +625,11 @@
     <trkpt lat="45.294711" lon="-73.266831" />
     <trkpt lat="45.295310" lon="-73.266544" />
     <trkpt lat="45.295774" lon="-73.266457" />
-    <trkpt lat="45.297121" lon="-73.266495" />
-    <trkpt lat="45.298467" lon="-73.266534" />
-    <trkpt lat="45.299814" lon="-73.266572" />
-    <trkpt lat="45.300998" lon="-73.266585" />
-    <trkpt lat="45.302183" lon="-73.266598" />
-    <trkpt lat="45.302185" lon="-73.266786" />
-    <trkpt lat="45.302183" lon="-73.266598" />
-    <trkpt lat="45.302905" lon="-73.266565" />
+    <trkpt lat="45.297403" lon="-73.266500" />
+    <trkpt lat="45.299031" lon="-73.266544" />
+    <trkpt lat="45.300660" lon="-73.266587" />
+    <trkpt lat="45.301720" lon="-73.266583" />
+    <trkpt lat="45.302779" lon="-73.266579" />
     <trkpt lat="45.304540" lon="-73.266137" />
     <trkpt lat="45.304532" lon="-73.264692" />
     <trkpt lat="45.304524" lon="-73.263248" />
@@ -667,9 +641,6 @@
     <trkpt lat="45.306117" lon="-73.252104" />
     <trkpt lat="45.307699" lon="-73.252118" />
     <trkpt lat="45.309282" lon="-73.252133" />
-    <trkpt lat="45.309359" lon="-73.252193" />
-    <trkpt lat="45.309588" lon="-73.252190" />
-    <trkpt lat="45.309359" lon="-73.252193" />
     <trkpt lat="45.309358" lon="-73.252090" />
     <trkpt lat="45.310308" lon="-73.252069" />
     <trkpt lat="45.310371" lon="-73.252117" />

@@ -118,7 +118,7 @@ def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
         t = TOURS[iid]
         rows.append([t["title"], t["durationDays"], f"{t['totalDistanceMiles']} mi", f"+{t['elevationGainFt']:,} ft", ", ".join(str(d["distanceMiles"]) for d in t["days"])])
     readme = ["# NYC to Montréal bike tour (Oct 4, 2026)", "",
-              "Hotel-to-hotel tour from Battery Park to Old Montréal on the Empire State Trail, the Lake Champlain shore, the Richelieu River and the Chambly Canal.", "",
+              "Hotel-to-hotel tour from New York City (Brooklyn on the 6- and 7-day plans) to Montréal on the Empire State Trail, the Lake Champlain shore, the Richelieu River and the Chambly Canal.", "",
               md_table(rows), "",
               "Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: " + f"{R['VT1']['mi']} + {R['VT2']['mi']} mi.", "",
               "## Files", "- `index.html`: the app. It works offline once loaded (libraries are bundled and a service worker caches the app), **except the background map tiles**, so download offline maps in your GPS or phone app.",

@@ -11,25 +11,44 @@ let activeStageFilter = 'all';
 ============================================================ */
 function buildStageLinearStripSvg(stage) {
   const cues = stage.cues;
-  const rowHeight = 78;
-  const topPad = 50;
-  const bottomPad = 50;
-  const svgHeight = topPad + cues.length * rowHeight + bottomPad;
-  const svgWidth = 720;
-  const corridorX = 180; // Center axis of the corridor strip
+  const numCues = Math.max(1, cues.length);
+  
+  // Dynamic row height to keep SVG height between ~780 and 1080
+  const rowHeight = Math.max(15, Math.min(38, Math.floor(920 / numCues)));
+  const topPad = 32;
+  const bottomPad = 28;
+  const svgHeight = topPad + numCues * rowHeight + bottomPad;
+  const svgWidth = 320;
+  const corridorX = 72; // Center axis of the route line
+
+  const isDense = rowHeight < 22;
+  const isMedium = rowHeight >= 22 && rowHeight < 32;
+
+  // Refined, smaller typography and badges (proportional and crisp)
+  const nodeR = isDense ? 2.25 : (isMedium ? 3.0 : 3.5);
+  const termR = isDense ? 3.5 : (isMedium ? 4.5 : 5.5);
+  const mileFontSize = isDense ? 5.2 : (isMedium ? 5.8 : 6.5);
+  const labelFontSize = isDense ? 5.8 : (isMedium ? 6.5 : 7.2);
+  const iconFontSize = isDense ? 5.2 : (isMedium ? 6.0 : 6.8);
+  const pillH = isDense ? 9.0 : (isMedium ? 10.5 : 12.0);
+  const pillW = isDense ? 11.5 : (isMedium ? 13.5 : 15.0);
+  const lineWidth = isDense ? 2.25 : 3.0;
 
   // Calculate dynamic deflections along the single black line
   let curX = corridorX;
   const points = cues.map((cue, i) => {
     const y = topPad + i * rowHeight;
     if (cue.turnDir === 'right') {
-      curX = Math.min(corridorX + 45, curX + 28);
+      curX = Math.min(corridorX + 16, curX + 9);
     } else if (cue.turnDir === 'left') {
-      curX = Math.max(corridorX - 45, curX - 28);
+      curX = Math.max(corridorX - 16, curX - 9);
     } else if (cue.turnDir === 'bear-right') {
-      curX = Math.min(corridorX + 35, curX + 16);
+      curX = Math.min(corridorX + 11, curX + 6);
     } else if (cue.turnDir === 'bear-left') {
-      curX = Math.max(corridorX - 35, curX - 16);
+      curX = Math.max(corridorX - 11, curX - 6);
+    } else {
+      // Gentle spring back towards center
+      curX = curX + (corridorX - curX) * 0.25;
     }
     return { x: curX, y, cue, index: i };
   });
@@ -43,109 +62,110 @@ function buildStageLinearStripSvg(stage) {
     lineD += ` C ${p0.x} ${midY}, ${p1.x} ${midY}, ${p1.x} ${p1.y}`;
   }
 
-  // Construct the parallel water ribbon path on the left
-  let waterD = `M 45 ${points[0].y - 20}`;
-  for (let i = 0; i < points.length; i++) {
-    const pt = points[i];
-    const wx = Math.max(35, pt.x - 125);
-    waterD += ` L ${wx} ${pt.y}`;
-  }
-  waterD += ` L 45 ${points[points.length - 1].y + 20}`;
+  // Left Waterway ribbon and rail lifeline
+  const waterD = `M 15 ${topPad - 12} L 15 ${svgHeight - bottomPad + 12}`;
+  const railY1 = topPad - 12;
+  const railY2 = svgHeight - bottomPad + 12;
+  const waterName = stage.waterway ? stage.waterway.split('/')[0].trim().toUpperCase() : 'WATER';
+  const railName = stage.railLine ? stage.railLine.split(' ')[0].toUpperCase() : 'RAIL';
 
   // SVG Markup Elements
   let nodesMarkup = '';
   points.forEach((pt, i) => {
     const cue = pt.cue;
     const isStart = i === 0;
-    const isEnd = i === points.length - 1;
+    const isEnd = i === points.length - 1 || cue.turnDir === 'finish' || cue.turnDir === 'terminus';
     const isLunch = cue.turnDir === 'lunch';
     const isBorder = cue.turnDir === 'border';
     const isFerry = cue.turnDir === 'ferry';
+    const isPoi = cue.turnDir === 'poi';
+    const isSpecial = isStart || isEnd || isLunch || isBorder || isFerry || isPoi;
 
-    // Connector guide line from node to right-side callout card
-    nodesMarkup += `
-      <line x1="${pt.x + 8}" y1="${pt.y}" x2="265" y2="${pt.y}" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3" />
-    `;
-
-    // Visual Turn/Station Node on the Single Black Line
+    // Node glyph on the route line
     if (isStart || isEnd) {
       nodesMarkup += `
-        <circle cx="${pt.x}" cy="${pt.y}" r="11" fill="#000000" stroke="#ffffff" stroke-width="3" />
-        <circle cx="${pt.x}" cy="${pt.y}" r="5" fill="#ffffff" />
+        <circle cx="${pt.x}" cy="${pt.y}" r="${termR}" fill="#000000" stroke="#ffffff" stroke-width="1.5" />
+        <circle cx="${pt.x}" cy="${pt.y}" r="${termR * 0.4}" fill="#ffffff" />
       `;
     } else if (isLunch) {
       nodesMarkup += `
-        <circle cx="${pt.x}" cy="${pt.y}" r="9" fill="#ea580c" stroke="#ffffff" stroke-width="2.5" />
+        <circle cx="${pt.x}" cy="${pt.y}" r="${nodeR + 1.0}" fill="#ea580c" stroke="#ffffff" stroke-width="1.5" />
       `;
     } else if (isBorder) {
       nodesMarkup += `
-        <circle cx="${pt.x}" cy="${pt.y}" r="9" fill="#16a34a" stroke="#ffffff" stroke-width="2.5" />
+        <circle cx="${pt.x}" cy="${pt.y}" r="${nodeR + 1.0}" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
       `;
     } else if (isFerry) {
       nodesMarkup += `
-        <circle cx="${pt.x}" cy="${pt.y}" r="9" fill="#0284c7" stroke="#ffffff" stroke-width="2.5" />
+        <circle cx="${pt.x}" cy="${pt.y}" r="${nodeR + 1.0}" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+      `;
+    } else if (isPoi) {
+      nodesMarkup += `
+        <circle cx="${pt.x}" cy="${pt.y}" r="${nodeR + 0.75}" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
       `;
     } else {
       nodesMarkup += `
-        <circle cx="${pt.x}" cy="${pt.y}" r="6.5" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <circle cx="${pt.x}" cy="${pt.y}" r="${nodeR}" fill="#ffffff" stroke="#000000" stroke-width="${isDense ? 1.5 : 2.0}" />
       `;
     }
 
     // Mileage Tick on the immediate left of node
+    const mileYOffset = isDense ? 2.0 : 2.5;
     nodesMarkup += `
-      <text x="${pt.x - 14}" y="${pt.y + 4}" font-family="monospace" font-size="10" font-weight="900" fill="#0f172a" text-anchor="end">${cue.mile.toFixed(1)}</text>
+      <text x="${pt.x - (isStart || isEnd ? termR + 3 : nodeR + 2.5)}" y="${pt.y + mileYOffset}" font-family="monospace" font-size="${mileFontSize}" font-weight="700" fill="#475569" text-anchor="end">${cue.mile.toFixed(1)}</text>
     `;
 
-    // Right-side Structured Turn Label (SVG Vector Typography for 100% crisp printing)
-    const turnBadgeColor = isStart || isEnd ? '#000000' : (isLunch ? '#ea580c' : (isBorder ? '#16a34a' : (isFerry ? '#0284c7' : '#1e293b')));
-    const turnLabel = `${cue.action}: ${cue.road}`;
-    const truncatedLabel = turnLabel.length > 46 ? turnLabel.substring(0, 44) + '…' : turnLabel;
+    // Right of node: turn pill badge and road label
+    let badgeColor = '#1e293b';
+    if (isStart || isEnd) badgeColor = '#000000';
+    else if (isLunch) badgeColor = '#ea580c';
+    else if (isBorder) badgeColor = '#16a34a';
+    else if (isFerry) badgeColor = '#0284c7';
+    else if (isPoi) badgeColor = '#7c3aed';
+
+    const pillX = pt.x + (isStart || isEnd ? termR + 2.5 : nodeR + 2.5);
+    const labelX = pillX + pillW + 3.5;
+    const maxChars = isDense ? 26 : 30;
+    const roadClean = cue.road || cue.action || '';
+    const truncatedRoad = roadClean.length > maxChars ? roadClean.substring(0, maxChars - 1) + '…' : roadClean;
+    const distExtra = (cue.dist > 0 && roadClean.length <= 18 && !isDense) 
+      ? ` <tspan font-weight="600" fill="#64748b" font-size="${labelFontSize * 0.85}">(${cue.dist.toFixed(1)}m)</tspan>` 
+      : '';
 
     nodesMarkup += `
-      <g transform="translate(270, ${pt.y - 28})">
-        <!-- Turn Direction Pill -->
-        <rect x="0" y="4" width="28" height="22" rx="5" fill="${turnBadgeColor}" />
-        <text x="14" y="19" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">${cue.icon}</text>
+      <g>
+        <!-- Connector guide line -->
+        <line x1="${pt.x + (isStart || isEnd ? termR : nodeR)}" y1="${pt.y}" x2="${pillX}" y2="${pt.y}" stroke="#e2e8f0" stroke-width="0.75" />
 
-        <!-- Turn Action & Road Name -->
-        <text x="36" y="15" font-family="sans-serif" font-size="12.5" font-weight="900" fill="#0f172a">${escapeXml(truncatedLabel)}</text>
+        <!-- Turn Pill -->
+        <rect x="${pillX}" y="${pt.y - pillH / 2}" width="${pillW}" height="${pillH}" rx="2.5" fill="${badgeColor}" />
+        <text x="${pillX + pillW / 2}" y="${pt.y + (isDense ? 2.5 : 3.0)}" font-family="sans-serif" font-size="${iconFontSize}" font-weight="bold" fill="#ffffff" text-anchor="middle">${cue.icon}</text>
 
-        <!-- Leg Distance & Surface Badge -->
-        <rect x="36" y="21" width="58" height="15" rx="3" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
-        <text x="65" y="32" font-family="monospace" font-size="9" font-weight="bold" fill="#475569" text-anchor="middle">${cue.dist > 0 ? '+' + cue.dist.toFixed(1) + ' mi' : 'END'}</text>
-
-        <rect x="98" y="21" width="110" height="15" rx="3" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
-        <text x="153" y="32" font-family="sans-serif" font-size="9" font-weight="bold" fill="#334155" text-anchor="middle">${escapeXml(cue.surface)}</text>
-
-        <!-- Landmark / Gotcha Note -->
-        ${cue.landmark ? `<text x="216" y="32" font-family="sans-serif" font-size="9.5" font-weight="600" fill="#0369a1">📍 ${escapeXml(cue.landmark)}</text>` : ''}
+        <!-- Turn Action / Road Name -->
+        <text x="${labelX}" y="${pt.y + (isDense ? 2.0 : 2.5)}" font-family="Plus Jakarta Sans, sans-serif" font-size="${labelFontSize}" font-weight="${isSpecial ? '800' : '600'}" fill="${isSpecial ? '#000000' : '#1e293b'}">${escapeXml(truncatedRoad)}${distExtra}</text>
       </g>
     `;
   });
 
   return `
-    <svg viewBox="0 0 ${svgWidth} ${svgHeight}" class="w-full h-auto select-none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="stripHatch" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-          <line x1="0" y1="0" x2="0" y2="8" stroke="#f1f5f9" stroke-width="3" />
-        </pattern>
-      </defs>
-
-      <!-- Narrow Corridor Buffer Background (1-Mile Swath of Terrain) -->
-      <rect x="15" y="15" width="${svgWidth - 30}" height="${svgHeight - 30}" rx="14" fill="#ffffff" stroke="#000000" stroke-width="2" />
+    <svg viewBox="0 0 ${svgWidth} ${svgHeight}" class="w-full h-auto block select-none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Corridor Buffer Background -->
+      <rect x="2" y="2" width="${svgWidth - 4}" height="${svgHeight - 4}" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
 
       <!-- Left Waterway Ribbon (Hudson / Champlain / Richelieu) -->
-      <path d="${waterD}" fill="none" stroke="#bae6fd" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
-      <text x="45" y="30" font-family="sans-serif" font-size="9" font-weight="900" fill="#0284c7" letter-spacing="0.1em">WATER CORRIDOR: ${escapeXml(stage.waterway || 'RIVERWAY')}</text>
+      <path d="${waterD}" fill="none" stroke="#bae6fd" stroke-width="10" stroke-linecap="round" opacity="0.85" />
+      <text x="15" y="14" font-family="sans-serif" font-size="5.5" font-weight="900" fill="#0284c7" text-anchor="middle" letter-spacing="0.05em">WATER</text>
+      <text x="15" y="21" font-family="sans-serif" font-size="4.5" font-weight="bold" fill="#0369a1" text-anchor="middle">${escapeXml(waterName.length > 9 ? waterName.substring(0, 8) + '…' : waterName)}</text>
 
       <!-- Parallel Passenger Rail Lifeline (Amtrak / Metro-North dashed line) -->
-      <line x1="95" y1="${topPad - 10}" x2="95" y2="${svgHeight - bottomPad}" stroke="#64748b" stroke-width="2" stroke-dasharray="4,4" />
-      <text x="95" y="${svgHeight - 15}" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#64748b" text-anchor="middle">RAIL LIFELINE: ${escapeXml(stage.railLine || 'AMTRAK')}</text>
+      <line x1="31" y1="${railY1}" x2="31" y2="${railY2}" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2.5,2.5" />
+      <text x="31" y="14" font-family="sans-serif" font-size="5.5" font-weight="bold" fill="#64748b" text-anchor="middle">RAIL</text>
+      <text x="31" y="21" font-family="sans-serif" font-size="4.5" font-weight="bold" fill="#94a3b8" text-anchor="middle">${escapeXml(railName.length > 9 ? railName.substring(0, 8) + '…' : railName)}</text>
 
       <!-- THE SINGLE BOLD BLACK LINE (The Route Trunk) -->
-      <path d="${lineD}" fill="none" stroke="#000000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="${lineD}" fill="none" stroke="#000000" stroke-width="${lineWidth}" stroke-linecap="round" stroke-linejoin="round" />
 
-      <!-- Turn Nodes, Lead Lines, and High-Contrast Labels -->
+      <!-- Turn Nodes, Badges, and Road Labels -->
       ${nodesMarkup}
     </svg>
   `;
@@ -194,70 +214,126 @@ function renderMtaRouteMap(itineraryId) {
       `).join('');
     }
 
+    // Cue rows for the side-by-side right-column cue sheet
+    const isDenseTable = stage.cues.length > 40;
+    const cueRows = stage.cues.map(c => {
+      const isStart = c.mile === 0;
+      const isEnd = c.turnDir === 'finish' || c.turnDir === 'terminus';
+      const isLunch = c.turnDir === 'lunch';
+      const isBorder = c.turnDir === 'border';
+      const isFerry = c.turnDir === 'ferry';
+      const isSpecial = isStart || isEnd || isLunch || isBorder || isFerry;
+
+      let badgeBg = 'text-slate-800';
+      if (isStart || isEnd) badgeBg = 'text-black font-black';
+      else if (isLunch) badgeBg = 'text-orange-600 font-bold';
+      else if (isBorder) badgeBg = 'text-emerald-700 font-bold';
+      else if (isFerry) badgeBg = 'text-sky-700 font-bold';
+
+      const surfaceBadge = c.surface && c.surface !== '—'
+        ? `<span class="inline-block bg-slate-100 text-slate-600 px-1 py-0.2 rounded text-[8.5px] font-semibold mr-1">${escapeXml(c.surface)}</span>`
+        : '';
+      const landmarkText = c.landmark
+        ? `<span class="text-sky-700 font-bold text-[9px] block">📍 ${escapeXml(c.landmark)}</span>`
+        : '';
+
+      return `
+        <tr class="align-top ${isSpecial ? 'bg-slate-50/80 font-medium' : ''}">
+          <td class="py-0.5 pr-1.5 font-mono font-black text-slate-900 whitespace-nowrap">${c.mile.toFixed(1)}</td>
+          <td class="py-0.5 pr-1.5 whitespace-nowrap ${badgeBg}">
+            <span class="inline-block w-4 text-center">${escapeXml(c.icon)}</span>
+            <span>${escapeXml(c.action)}</span>
+          </td>
+          <td class="py-0.5 pr-1.5 font-semibold text-slate-900">
+            <span>${escapeXml(c.road)}</span>
+            ${landmarkText}
+          </td>
+          <td class="py-0.5 pr-1.5 font-mono text-right text-slate-500 whitespace-nowrap">
+            ${c.dist > 0 ? c.dist.toFixed(1) + ' mi' : '—'}
+          </td>
+          <td class="py-0.5 pl-1 text-slate-600 ${isDenseTable ? 'text-[9.5px]' : 'text-[10px]'} leading-tight">
+            ${surfaceBadge}${escapeXml(c.detail || '')}
+          </td>
+        </tr>
+      `;
+    }).join('');
+
     stagesHtml += `
-      <!-- Single Stage Linear Corridor Strip (Print Optimized Page Unit) -->
-      <div class="bg-white rounded-2xl border-3 border-black shadow-md overflow-hidden mta-stage-block mb-8 break-inside-avoid">
+      <!-- Single Stage Linear Corridor Strip (Print Optimized Page Unit: Map on Left, Cue Sheet on Right) -->
+      <div class="bg-white rounded-xl border-2 border-black shadow-md overflow-hidden mta-stage-block mb-8 break-inside-avoid">
         
         <!-- Linear Corridor Masthead Bar -->
-        <div class="bg-black text-white p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b-2 border-black">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-white text-black font-mono font-black flex items-center justify-center text-lg shadow-sm border border-slate-300 shrink-0">
+        <div class="bg-black text-white px-3.5 py-2 sm:px-4 sm:py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-black mta-stage-masthead">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-white text-black font-mono font-black flex items-center justify-center text-base shadow-xs shrink-0">
               ${stage.stageNum}
             </div>
             <div>
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-black uppercase tracking-widest text-amber-400">STAGE ${stage.stageNum} &bull; ${stage.dayOfWeek} (${stage.dateStr})</span>
-                <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono font-bold">CORRIDOR RIBBON</span>
+                <span class="text-[9px] font-black uppercase tracking-widest text-amber-400">STAGE ${stage.stageNum} &bull; ${stage.dayOfWeek} (${stage.dateStr})</span>
+                <span class="text-[9px] bg-slate-800 text-slate-300 px-1.5 py-0.2 rounded font-mono font-bold no-print">STRIP CORRIDOR</span>
               </div>
-              <h3 class="text-base font-black text-white tracking-tight mt-0.5">${stage.name}</h3>
+              <h3 class="text-sm sm:text-base font-black text-white tracking-tight leading-tight">${stage.name}</h3>
             </div>
           </div>
           <div class="flex items-center gap-2 text-xs font-mono font-black shrink-0">
-            <span class="bg-white text-black px-3 py-1.5 rounded-lg border border-slate-300 shadow-2xs">🚴 ${stage.distanceMiles} MILES</span>
-            <span class="bg-slate-800 text-amber-400 px-3 py-1.5 rounded-lg border border-slate-700">⛰️ +${stage.elevationFt} FT</span>
+            <span class="bg-white text-black px-2.5 py-1 rounded-md text-[11px]">🚴 ${stage.distanceMiles} MILES</span>
+            <span class="bg-slate-800 text-amber-400 px-2.5 py-1 rounded-md text-[11px] border border-slate-700">⛰️ +${stage.elevationFt} FT</span>
+            <a href="pdf/${data.id}_stage${stage.stageNum}.pdf" download="${data.id}_stage${stage.stageNum}_strip_map.pdf" class="bg-blue-600 hover:bg-blue-500 text-white px-2.5 py-1 rounded-md text-[11px] font-sans font-bold shadow-xs transition-all no-print flex items-center gap-1" title="Download 1-Page Printable PDF for Stage ${stage.stageNum}">
+              <span>📄 Stage PDF</span>
+            </a>
           </div>
         </div>
 
-        <!-- Corridor Logistics & Safety Net Bar -->
-        <div class="bg-slate-100 px-4 py-2.5 border-b border-slate-300 text-xs flex flex-wrap items-center justify-between gap-2 text-slate-700">
-          <div><strong class="text-slate-900">Surface Corridor:</strong> ${stage.surfaceSummary}</div>
-          <div><strong class="text-slate-900">Overnight Terminus:</strong> <span class="bg-slate-200 text-slate-900 px-2 py-0.5 rounded font-bold">${stage.overnight}</span></div>
+        <!-- Corridor Logistics Bar -->
+        <div class="bg-slate-100 px-3.5 py-1.5 border-b border-slate-300 text-[11px] flex flex-wrap items-center justify-between gap-2 text-slate-700 mta-stage-subbar">
+          <div><strong class="text-slate-900">Surface:</strong> ${stage.surfaceSummary}</div>
+          <div><strong class="text-slate-900">Terminus:</strong> <span class="bg-slate-200 text-slate-900 px-1.5 py-0.2 rounded font-bold">${stage.overnight}</span></div>
         </div>
 
-        <!-- Main Linear Strip Corridor SVG (Single Bold Black Line with All Turns) -->
-        <div class="p-3 sm:p-5 bg-slate-50/50 flex justify-center">
-          <div class="w-full max-w-3xl bg-white rounded-xl shadow-xs border border-slate-200 p-2 sm:p-4">
-            ${svgStrip}
-          </div>
-        </div>
-
-        <!-- Full cue table: every cue with its notes (the SVG above truncates labels) -->
-        <div class="px-3 sm:px-5 py-3 bg-white border-t border-slate-200 overflow-x-auto">
-          <table class="w-full text-[11px] leading-snug">
-            <thead><tr class="text-left text-slate-500 uppercase tracking-wider text-[9px]">
-              <th class="py-1 pr-2">Mile</th><th class="py-1 pr-2">Action</th><th class="py-1 pr-2">Road / place</th><th class="py-1 pr-2">Leg</th><th class="py-1">Notes</th>
-            </tr></thead>
-            <tbody>
-              ${stage.cues.map(c => `
-                <tr class="border-t border-slate-100 align-top">
-                  <td class="py-1 pr-2 font-mono font-bold">${c.mile.toFixed(1)}</td>
-                  <td class="py-1 pr-2 font-bold whitespace-nowrap">${escapeXml(c.icon)} ${escapeXml(c.action)}</td>
-                  <td class="py-1 pr-2">${escapeXml(c.road)}${c.surface && c.surface !== '—' ? ` <span class="text-slate-400">(${escapeXml(c.surface)})</span>` : ''}</td>
-                  <td class="py-1 pr-2 font-mono text-slate-500">${c.dist > 0 ? c.dist.toFixed(1) : ''}</td>
-                  <td class="py-1 text-slate-700">${escapeXml(c.detail || '')}</td>
-                </tr>`).join('')}
-            </tbody>
-          </table>
-          ${stage.altNote ? `<p class="mt-2 text-[11px] text-amber-800"><strong>Option:</strong> ${escapeXml(stage.altNote)}</p>` : ''}
-        </div>
-
-        <!-- Stage Elevation Cross-Section Strip -->
-        ${elevPointsHtml ? `
-          <div class="px-5 py-3 bg-white border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="text-[10px] font-mono font-extrabold uppercase tracking-wider text-slate-500 shrink-0">
-              Corridor Elevation Ribbon:
+        <!-- Two-Column Grid: Map on Left (md:col-span-5), Cue Sheet on Right (md:col-span-7) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 print:grid-cols-12 gap-0 mta-stage-grid">
+          <!-- Left Column: Strip Map Diagram -->
+          <div class="md:col-span-5 print:col-span-5 border-b md:border-b-0 md:border-r print:border-r print:border-b-0 border-slate-200 bg-slate-50/50 p-2 sm:p-2.5 flex flex-col items-center justify-start mta-stage-map-col">
+            <div class="w-full max-w-[340px]">
+              ${svgStrip}
             </div>
-            <div class="flex items-end justify-between gap-2 flex-1 overflow-x-auto py-1">
+          </div>
+
+          <!-- Right Column: Cue Sheet Table -->
+          <div class="md:col-span-7 print:col-span-7 p-2.5 sm:p-3 bg-white flex flex-col justify-between overflow-x-auto mta-stage-cue-col">
+            <div>
+              <table class="w-full text-left border-collapse mta-cue-table ${isDenseTable ? 'dense-cue-table text-[10px]' : 'text-[11px]'} leading-snug">
+                <thead>
+                  <tr class="border-b-2 border-slate-900 text-slate-600 uppercase font-black text-[9px] tracking-wider">
+                    <th class="py-1 pr-1.5 w-11 font-mono">Mile</th>
+                    <th class="py-1 pr-1.5 w-24">Turn</th>
+                    <th class="py-1 pr-1.5">Road / Path</th>
+                    <th class="py-1 pr-1.5 w-12 font-mono text-right">Leg</th>
+                    <th class="py-1 pl-1">Notes &amp; Surface</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 font-sans">
+                  ${cueRows}
+                </tbody>
+              </table>
+
+              ${stage.altNote ? `
+                <div class="mt-2 p-1.5 bg-amber-50 border border-amber-200 rounded text-[10px] text-amber-900 leading-tight">
+                  <strong class="font-bold text-amber-950">Option:</strong> ${escapeXml(stage.altNote)}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        </div>
+
+        <!-- Elevation Cross-Section Strip -->
+        ${elevPointsHtml ? `
+          <div class="px-3 py-1.5 bg-white border-t border-slate-200 flex items-center justify-between gap-2 mta-elev-bar">
+            <div class="text-[9px] font-mono font-extrabold uppercase tracking-wider text-slate-500 shrink-0">
+              Elevation:
+            </div>
+            <div class="flex items-end justify-between gap-1 flex-1 overflow-x-auto py-0.5">
               ${elevPointsHtml}
             </div>
           </div>
@@ -282,7 +358,7 @@ function renderMtaRouteMap(itineraryId) {
 
   container.innerHTML = `
     <!-- Linear Route Diagram Masthead -->
-    <div class="bg-slate-950 text-white rounded-2xl p-5 sm:p-6 border-4 border-black shadow-xl space-y-4">
+    <div class="bg-slate-950 text-white rounded-2xl p-5 sm:p-6 border-4 border-black shadow-xl space-y-4 no-print">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-slate-800 pb-4">
         <div class="flex items-start sm:items-center gap-3.5">
           <div class="w-14 h-14 rounded-full bg-white text-slate-950 font-black text-2xl flex items-center justify-center font-mono shadow-md border-2 border-black shrink-0">
@@ -302,8 +378,11 @@ function renderMtaRouteMap(itineraryId) {
 
         <!-- Action Buttons -->
         <div class="flex flex-wrap items-center gap-2 shrink-0 no-print">
-          <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-black text-xs shadow-md transition-all flex items-center gap-1.5 border border-slate-300">
-            <span>🖨️ Print Linear Strip Map</span>
+          <a href="pdf/nyc_to_montreal_${data.id}_strip_maps.pdf" download="nyc_to_montreal_${data.id}_strip_maps.pdf" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-md transition-all flex items-center gap-1.5 border border-blue-500" title="Download Print-Ready US Letter PDF for All Stages">
+            <span>📄 Download PDF Packet</span>
+          </a>
+          <button onclick="window.print()" class="px-3.5 py-2 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-black text-xs shadow-md transition-all flex items-center gap-1.5 border border-slate-300">
+            <span>🖨️ Print View</span>
           </button>
           <a href="nyc_to_montreal_${data.id === '6day' ? 'tour' : data.id + (data.id === 'vermont' ? '_upgrade' : '_tour')}.gpx" download class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition-all flex items-center gap-1.5 border border-slate-700">
             <span>📥 Download GPX</span>

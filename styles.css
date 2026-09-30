@@ -73,8 +73,13 @@ body {
 }
 
 /* Print Stylesheet */
+@page {
+  size: letter portrait;
+  margin: 0.35in;
+}
+
 @media print {
-  header, nav, #map-controls, .no-print, .interactive-toggle, button {
+  header, nav, footer, #map-controls, .no-print, .interactive-toggle, button {
     display: none !important;
   }
   
@@ -86,6 +91,8 @@ body {
   body {
     background: white !important;
     color: black !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .card, .day-card {
@@ -95,6 +102,7 @@ body {
     margin-bottom: 1.5rem !important;
   }
 
+  /* Linear Strip Map Stage Card (Fits exactly 1 page per stage) */
   .mta-stage-block {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
@@ -102,12 +110,89 @@ body {
     break-after: page !important;
     border: 2px solid #000000 !important;
     box-shadow: none !important;
-    margin-bottom: 2rem !important;
+    margin: 0 0 1rem 0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
   }
 
   .mta-stage-block:last-child {
     page-break-after: auto !important;
     break-after: auto !important;
   }
+
+  /* Two-column layout: Map on Left (40%), Cue Sheet on Right (60%) */
+  .mta-stage-grid {
+    display: grid !important;
+    grid-template-columns: 40% 60% !important;
+    gap: 0 !important;
+  }
+
+  .mta-stage-map-col {
+    display: flex !important;
+    border-right: 1.5px solid #cbd5e1 !important;
+    border-bottom: none !important;
+    padding: 3px !important;
+    background-color: #fafafa !important;
+  }
+
+  .mta-stage-cue-col {
+    display: block !important;
+    padding: 3px 6px !important;
+  }
+
+  /* Cue Sheet Table Typography for Single-Page Printing */
+  .mta-cue-table {
+    width: 100% !important;
+    font-size: 7.5pt !important;
+    line-height: 1.15 !important;
+    border-collapse: collapse !important;
+  }
+
+  .mta-cue-table th {
+    padding: 1.5pt 2pt !important;
+    font-size: 7pt !important;
+    border-bottom: 1.5pt solid #0f172a !important;
+  }
+
+  .mta-cue-table td {
+    padding: 1pt 2pt !important;
+    border-top: 0.5pt solid #f1f5f9 !important;
+  }
+
+  .mta-cue-table.dense-cue-table {
+    font-size: 6.5pt !important;
+    line-height: 1.08 !important;
+  }
+
+  .mta-cue-table.dense-cue-table th {
+    padding: 1pt 1.5pt !important;
+    font-size: 6.5pt !important;
+  }
+
+  .mta-cue-table.dense-cue-table td {
+    padding: 0.5pt 1.5pt !important;
+  }
+
+  .mta-stage-masthead {
+    padding: 4px 8px !important;
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .mta-stage-subbar {
+    padding: 2px 8px !important;
+    font-size: 7pt !important;
+    background: #f1f5f9 !important;
+  }
+
+  .mta-elev-bar {
+    padding: 2px 6px !important;
+    border-top: 1px solid #e2e8f0 !important;
+  }
+
+  .mta-elev-bar span {
+    font-size: 6pt !important;
+  }
 }
+
 

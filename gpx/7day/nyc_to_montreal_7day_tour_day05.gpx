@@ -1,37 +1,44 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 5 (Thursday Oct 8): Ticonderoga to Plattsburgh, NY</name><desc>72.5 mi (116.7 km), about +3,300 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 64.4. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="44.31005" lon="-73.35154"><name>Lunch: Pink Pig Cafe</name><desc>Mile 38.4. 2750 Essex Rd, Essex, NY. (518) 962-8833. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="44.69771" lon="-73.49193"><name>Hotel: Best Western Plus Plattsburgh</name><desc>Mile 72.5. 446 Route 3, Plattsburgh, NY. (518) 561-7750. On Route 3 by I-87 exit 37, about 2 mi west of downtown.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="44.69935" lon="-73.47864"><name>Bike: Maui North Ski, Bike &amp; Board</name><desc>Mile 71.7, 0.2 mi off route. 316 Cornelia St, Plattsburgh, NY. (518) 563-7245. Full-service shop on the route into town. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun 12 to 4.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.04761" lon="-73.45925"><name>Food: Stewart's Shops #103</name><desc>Mile 15.0. 4308 Main St, Port Henry, NY. (518) 546-3025. Guaranteed food and water on Day 5. Top up here.</desc><sym>Convenience Store</sym></wpt>
-  <wpt lat="44.50652" lon="-73.48346"><name>Food: Stewart's Shops</name><desc>Mile 55.9, 0.2 mi off route. 1774 Main St, Keeseville, NY. . Backup food stop on the route in Keeseville.</desc><sym>Convenience Store</sym></wpt>
-  <wpt lat="44.04233" lon="-73.45883"><name>Station: Port Henry</name><desc>Mile 14.6, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="44.18717" lon="-73.45189"><name>Station: Westport</name><desc>Mile 25.6, 0.8 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="44.69672" lon="-73.44645"><name>Station: Plattsburgh</name><desc>Mile 70.3, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 5 (Thursday Oct 8): Ticonderoga to Plattsburgh, NY</name><desc>72.5 mi (116.7 km), about +3,300 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
-    <trkpt lat="43.858425" lon="-73.428033" />
-    <trkpt lat="43.858329" lon="-73.428149" />
-    <trkpt lat="43.858191" lon="-73.428217" />
-    <trkpt lat="43.858035" lon="-73.428405" />
-    <trkpt lat="43.859012" lon="-73.429926" />
-    <trkpt lat="43.859143" lon="-73.430187" />
-    <trkpt lat="43.859679" lon="-73.430943" />
-    <trkpt lat="43.859965" lon="-73.431280" />
-    <trkpt lat="43.861369" lon="-73.432684" />
-    <trkpt lat="43.862773" lon="-73.434089" />
-    <trkpt lat="43.864176" lon="-73.435493" />
-    <trkpt lat="43.865580" lon="-73.436897" />
-    <trkpt lat="43.865936" lon="-73.437297" />
-    <trkpt lat="43.866005" lon="-73.437444" />
-    <trkpt lat="43.866235" lon="-73.437614" />
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 5 (Thursday Oct 8): Ticonderoga to Plattsburgh, NY</name><desc>73.6 mi (118.4 km), about +3,300 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="43.84798" lon="-73.43417"><name>Hotel: Circle Court Motel</name><desc>Mile 64.3. 6 Montcalm St, Ticonderoga, NY. (518) 585-7660. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 63.8, 0.7 mi off route. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.31005" lon="-73.35154"><name>Lunch: Pink Pig Cafe</name><desc>Mile 38.9. 2750 Essex Rd, Essex, NY. (518) 962-8833. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="44.69711" lon="-73.50240"><name>Hotel: Microtel Inn &amp; Suites by Wyndham Plattsburgh</name><desc>Mile 73.6. 554 State Route 3, Plattsburgh, NY. (518) 324-3800. On Route 3 by I-87 exit 37, about 2.5 mi west of downtown.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.69771" lon="-73.49193"><name>Hotel: Best Western Plus Plattsburgh</name><desc>Mile 73.0. 446 Route 3, Plattsburgh, NY. (518) 561-7750. On Route 3 by I-87 exit 37, about 2 mi west of downtown.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.69935" lon="-73.47864"><name>Bike: Maui North Ski, Bike &amp; Board</name><desc>Mile 72.3. 316 Cornelia St, Plattsburgh, NY. (518) 563-7245. Full-service shop on the route into town. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun 12 to 4.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="44.04761" lon="-73.45925"><name>Food: Stewart's Shops #103</name><desc>Mile 15.6. 4308 Main St, Port Henry, NY. (518) 546-3025. Guaranteed food and water on Day 5. Top up here.</desc><sym>Convenience Store</sym></wpt>
+  <wpt lat="44.50652" lon="-73.48346"><name>Food: Stewart's Shops</name><desc>Mile 56.4, 0.2 mi off route. 1774 Main St, Keeseville, NY. . Backup food stop on the route in Keeseville.</desc><sym>Convenience Store</sym></wpt>
+  <wpt lat="44.04233" lon="-73.45883"><name>Station: Port Henry</name><desc>Mile 15.1, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="44.18717" lon="-73.45189"><name>Station: Westport</name><desc>Mile 26.1, 0.8 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="44.69672" lon="-73.44645"><name>Station: Plattsburgh</name><desc>Mile 70.8, 0.2 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Day 5 (Thursday Oct 8): Ticonderoga to Plattsburgh, NY</name><desc>73.6 mi (118.4 km), about +3,300 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+    <trkpt lat="43.848231" lon="-73.434187" />
+    <trkpt lat="43.848210" lon="-73.434469" />
+    <trkpt lat="43.848326" lon="-73.434485" />
+    <trkpt lat="43.848406" lon="-73.434880" />
+    <trkpt lat="43.848687" lon="-73.435101" />
+    <trkpt lat="43.850136" lon="-73.435877" />
+    <trkpt lat="43.851586" lon="-73.436652" />
+    <trkpt lat="43.852418" lon="-73.437135" />
+    <trkpt lat="43.853251" lon="-73.437619" />
+    <trkpt lat="43.853702" lon="-73.437771" />
+    <trkpt lat="43.855311" lon="-73.438179" />
+    <trkpt lat="43.855981" lon="-73.438192" />
+    <trkpt lat="43.857394" lon="-73.438072" />
+    <trkpt lat="43.858806" lon="-73.437951" />
+    <trkpt lat="43.860304" lon="-73.437756" />
+    <trkpt lat="43.861801" lon="-73.437562" />
+    <trkpt lat="43.863298" lon="-73.437367" />
+    <trkpt lat="43.864796" lon="-73.437172" />
+    <trkpt lat="43.865314" lon="-73.437181" />
+    <trkpt lat="43.865830" lon="-73.437342" />
+    <trkpt lat="43.866097" lon="-73.437500" />
     <trkpt lat="43.866558" lon="-73.437932" />
     <trkpt lat="43.867536" lon="-73.439064" />
     <trkpt lat="43.868513" lon="-73.440196" />
-    <trkpt lat="43.869580" lon="-73.441348" />
-    <trkpt lat="43.870648" lon="-73.442499" />
-    <trkpt lat="43.871715" lon="-73.443651" />
-    <trkpt lat="43.872314" lon="-73.444129" />
-    <trkpt lat="43.873732" lon="-73.445139" />
+    <trkpt lat="43.869814" lon="-73.441612" />
+    <trkpt lat="43.871115" lon="-73.443028" />
+    <trkpt lat="43.871978" lon="-73.443880" />
+    <trkpt lat="43.873564" lon="-73.445014" />
     <trkpt lat="43.875150" lon="-73.446149" />
     <trkpt lat="43.876409" lon="-73.447141" />
     <trkpt lat="43.877667" lon="-73.448133" />
@@ -94,9 +101,8 @@
     <trkpt lat="43.927196" lon="-73.418325" />
     <trkpt lat="43.928235" lon="-73.418026" />
     <trkpt lat="43.929274" lon="-73.417727" />
-    <trkpt lat="43.929643" lon="-73.417683" />
-    <trkpt lat="43.930151" lon="-73.417750" />
-    <trkpt lat="43.930647" lon="-73.417927" />
+    <trkpt lat="43.929835" lon="-73.417694" />
+    <trkpt lat="43.930450" lon="-73.417844" />
     <trkpt lat="43.931757" lon="-73.418527" />
     <trkpt lat="43.932144" lon="-73.418666" />
     <trkpt lat="43.933885" lon="-73.418909" />
@@ -609,10 +615,7 @@
     <trkpt lat="44.309631" lon="-73.353763" />
     <trkpt lat="44.309840" lon="-73.351771" />
     <trkpt lat="44.309857" lon="-73.351712" />
-    <trkpt lat="44.310114" lon="-73.351773" />
-    <trkpt lat="44.310135" lon="-73.351560" />
-    <trkpt lat="44.310114" lon="-73.351773" />
-    <trkpt lat="44.310506" lon="-73.351865" />
+    <trkpt lat="44.310649" lon="-73.351882" />
     <trkpt lat="44.310866" lon="-73.351863" />
     <trkpt lat="44.311150" lon="-73.351778" />
     <trkpt lat="44.311554" lon="-73.351494" />
@@ -1094,26 +1097,35 @@
     <trkpt lat="44.694808" lon="-73.459228" />
     <trkpt lat="44.694689" lon="-73.460836" />
     <trkpt lat="44.694570" lon="-73.462445" />
-    <trkpt lat="44.694563" lon="-73.462968" />
-    <trkpt lat="44.694604" lon="-73.463305" />
-    <trkpt lat="44.695083" lon="-73.465698" />
-    <trkpt lat="44.695562" lon="-73.468090" />
-    <trkpt lat="44.696041" lon="-73.470483" />
+    <trkpt lat="44.694558" lon="-73.462806" />
+    <trkpt lat="44.694587" lon="-73.463214" />
+    <trkpt lat="44.695070" lon="-73.465629" />
+    <trkpt lat="44.695554" lon="-73.468044" />
+    <trkpt lat="44.696037" lon="-73.470460" />
     <trkpt lat="44.696520" lon="-73.472875" />
     <trkpt lat="44.696663" lon="-73.473414" />
     <trkpt lat="44.697080" lon="-73.474633" />
     <trkpt lat="44.697497" lon="-73.475852" />
     <trkpt lat="44.697630" lon="-73.475925" />
-    <trkpt lat="44.697514" lon="-73.476878" />
-    <trkpt lat="44.697392" lon="-73.478407" />
-    <trkpt lat="44.697271" lon="-73.479936" />
-    <trkpt lat="44.697128" lon="-73.482259" />
-    <trkpt lat="44.696984" lon="-73.484582" />
-    <trkpt lat="44.696841" lon="-73.486905" />
-    <trkpt lat="44.696697" lon="-73.489228" />
-    <trkpt lat="44.696554" lon="-73.491551" />
-    <trkpt lat="44.697172" lon="-73.491587" />
-    <trkpt lat="44.697543" lon="-73.491559" />
-    <trkpt lat="44.697523" lon="-73.491911" />
+    <trkpt lat="44.697530" lon="-73.476718" />
+    <trkpt lat="44.697409" lon="-73.478109" />
+    <trkpt lat="44.697289" lon="-73.479781" />
+    <trkpt lat="44.697169" lon="-73.481452" />
+    <trkpt lat="44.697026" lon="-73.483801" />
+    <trkpt lat="44.696882" lon="-73.486150" />
+    <trkpt lat="44.696739" lon="-73.488498" />
+    <trkpt lat="44.696595" lon="-73.490847" />
+    <trkpt lat="44.696452" lon="-73.493196" />
+    <trkpt lat="44.696336" lon="-73.495401" />
+    <trkpt lat="44.696220" lon="-73.497605" />
+    <trkpt lat="44.696104" lon="-73.499810" />
+    <trkpt lat="44.695988" lon="-73.502015" />
+    <trkpt lat="44.696185" lon="-73.502034" />
+    <trkpt lat="44.696602" lon="-73.501899" />
+    <trkpt lat="44.697462" lon="-73.501959" />
+    <trkpt lat="44.697512" lon="-73.502018" />
+    <trkpt lat="44.697500" lon="-73.502348" />
+    <trkpt lat="44.697241" lon="-73.502346" />
+    <trkpt lat="44.697238" lon="-73.502415" />
   </trkseg></trk>
   </gpx>

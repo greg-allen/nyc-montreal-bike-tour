@@ -1,14 +1,14 @@
 # NYC to Montréal bike tour (Oct 4, 2026)
 
-Hotel-to-hotel tour from Battery Park to Old Montréal on the Empire State Trail, the Lake Champlain shore, the Richelieu River and the Chambly Canal.
+Hotel-to-hotel tour from New York City (Brooklyn on the 6- and 7-day plans) to Montréal on the Empire State Trail, the Lake Champlain shore, the Richelieu River and the Chambly Canal.
 
 | Itinerary | Days | Total | Climb (est.) | Daily miles |
 |:---|:---|:---|:---|:---|
-| 7-Day Tour (Sunday to Saturday) | 7 | 453.5 mi | +10,900 ft | 67.5, 81.7, 76.9, 64.4, 72.5, 54.7, 35.8 |
-| 6-Day Tour (Sunday to Friday) | 6 | 450.9 mi | +10,900 ft | 67.5, 81.7, 76.9, 64.4, 72.5, 87.9 |
-| 5-Day Fast Tour | 5 | 452.3 mi | +11,000 ft | 103.1, 95.9, 92.9, 72.5, 87.9 |
+| 7-Day Tour (Sunday to Saturday) | 7 | 462.3 mi | +12,300 ft | 76.1, 83.4, 78.7, 64.3, 73.6, 53.2, 33.0 |
+| 6-Day Tour (Sunday to Friday) | 6 | 462.8 mi | +12,300 ft | 76.1, 83.4, 78.7, 64.3, 73.6, 86.7 |
+| 5-Day Fast Tour | 5 | 450.3 mi | +11,000 ft | 102.5, 94.7, 92.8, 73.6, 86.7 |
 
-Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: 60.7 + 72.8 mi.
+Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: 61.1 + 72.8 mi.
 
 ## Files
 - `index.html`: the app. It works offline once loaded (libraries are bundled and a service worker caches the app), **except the background map tiles**, so download offline maps in your GPS or phone app.
@@ -39,7 +39,7 @@ Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Island
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (7-day: Day 2 is 81.7 mi, Day 3 is 76.9 mi; 5-day: Day 1 is 103.1 mi, Day 2 is 95.9 mi, Day 3 is 92.9 mi, Day 5 is 87.9 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (7-day: Day 1 is 76.1 mi, Day 2 is 83.4 mi, Day 3 is 78.7 mi; 5-day: Day 1 is 102.5 mi, Day 2 is 94.7 mi, Day 3 is 92.8 mi, Day 5 is 86.7 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps

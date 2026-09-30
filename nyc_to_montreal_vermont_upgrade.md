@@ -12,49 +12,49 @@
 ### Alternative Thursday (Oct 8): Ticonderoga, NY to Burlington, VT (via Essex ferry)
 *NY-9N/22 to Essex, Essex–Charlotte ferry, Lake Champlain Bikeways (Greenbush Rd, Spear St), Burlington Greenway*
 
-- **Distance:** 60.7 mi (97.7 km) · **Climbing:** about +2,500 ft
-- **Surface:** NY-9N/22 shoulders to Essex; a ferry crossing; quiet Vermont roads (Lake Rd, Greenbush Rd, Spear St) with about 1.4 mi on US-7 through Shelburne village; then paved paths into Burlington. No unpaved sections tagged in OpenStreetMap.
+- **Distance:** 61.1 mi (98.3 km) · **Climbing:** about +2,500 ft
+- **Surface:** NY-9N/22 shoulders to Essex; a ferry crossing; quiet Vermont roads (Lake Rd, Greenbush Rd, Spear St) with about 1.4 mi on US-7 through Shelburne village; then paved paths into Burlington.
 - **GPX:** [`gpx/vermont/nyc_to_montreal_vermont_upgrade_day01.gpx`](gpx/vermont/nyc_to_montreal_vermont_upgrade_day01.gpx)
-- **Lunch:** **Pink Pig Cafe**, 2750 Essex Rd, Essex, NY · (518) 962-8833 · mile 38.4. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.
-- **Lodging:** **Hotel Vermont**, 41 Cherry St, Burlington, VT · (802) 651-0080 · mile 60.7. Downtown, near the lakefront path. / **Courtyard Burlington Harbor**, 25 Cherry St, Burlington, VT · (802) 864-4700 · mile 60.7. Next door to Hotel Vermont.
+- **Lunch:** **Pink Pig Cafe**, 2750 Essex Rd, Essex, NY · (518) 962-8833 · mile 38.9. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.
+- **Lodging:** **Hotel Vermont**, 41 Cherry St, Burlington, VT · (802) 651-0080 · mile 61.1. Downtown, near the lakefront path. / **Courtyard Burlington Harbor**, 25 Cherry St, Burlington, VT · (802) 864-4700 · mile 61.1. Next door to Hotel Vermont.
 - **Bike shops / supplies:** **Old Spokes Home**, 331 N Winooski Ave, Burlington, VT · (802) 863-4475. Tue to Fri 10 to 6, Sat 10 to 5; closed Sun and Mon. / **North Star Sports**, 100 Main St, Burlington, VT · (802) 863-3832. Downtown bike shop near the waterfront.
-- **Bailout:** Amtrak Adirondack at Port Henry (mile 14.6) before the ferry. In Burlington, Amtrak's Ethan Allen Express runs to NYC; check carry-on bike availability when booking.
+- **Bailout:** Amtrak Adirondack at Port Henry (mile 15.1) before the ferry. In Burlington, Amtrak's Ethan Allen Express runs to NYC; check carry-on bike availability when booking.
 
 <details><summary>Turn-by-turn cues</summary>
 
 | Mile | Action | Road / place | Leg | Surface | Notes |
 |:---|:---|:---|:---|:---|:---|
-| 0.0 | DEPART ON | Burgoyne Road | 0.8 | Street |  |
-| 0.8 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 5.5 | Road shoulder | NY-9N/22 north along the lake. |
-| 6.3 | TURN LEFT | Sugar Hill Road | 2.0 | Street |  |
-| 8.3 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 4.2 | Road shoulder |  |
-| 12.5 | CONTINUE ONTO | South Main Street (NY-9N; NY-22) | 2.5 | Road shoulder | Port Henry: Stewart's #103 for food and water. |
-| 15.0 | RESUPPLY | Stewart's #103, Port Henry | 0.8 | — | Reliable food and water. |
-| 15.8 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 9.6 | Road shoulder |  |
-| 25.4 | TURN RIGHT | Champlain Avenue (NY-22) | 1.0 | Road shoulder |  |
-| 26.4 | CONTINUE ONTO | State Highway 22 (NY-22) | 8.1 | Road shoulder |  |
-| 34.5 | CONTINUE ONTO | State Highway 9N (NY-22) | 1.3 | Road shoulder |  |
-| 35.8 | CONTINUE ONTO | Station Road (NY-22) | 1.1 | Road shoulder |  |
-| 36.9 | CONTINUE ONTO | Station Street (NY-22) | 1.5 | Road shoulder |  |
-| 38.4 | LUNCH (call ahead) | Pink Pig Cafe, Essex (by the ferry dock) | 0.1 | — | Fall hours are limited. |
-| 38.5 | BOARD FERRY | Charlotte, VT - Essex, NY | 2.8 | Ferry | FERRY to Charlotte, VT: about 20 min crossing, $6.75 per cyclist. In the early-fall schedule, Essex departures run every 30 min 10:30 AM to 5:30 PM (hourly before and after). |
-| 41.3 | CONTINUE ONTO | Ferry Road (VT-F5) | 1.4 | Road shoulder |  |
-| 42.7 | TURN LEFT | Lake Road | 3.3 | Street | Vermont: quiet Lake Champlain Bikeways roads. |
-| 46.0 | TURN LEFT | Greenbush Road | 1.2 | Street |  |
-| 47.2 | CONTINUE ONTO | Bostwick Road | 2.2 | Street |  |
-| 49.4 | TURN LEFT | Shelburne Road (US-7) | 0.8 | Road shoulder |  |
-| 50.2 | TURN LEFT | Falls Road | 0.2 | Street |  |
-| 50.4 | TURN RIGHT | Shelburne Road (US-7) | 0.7 | Road shoulder |  |
-| 51.1 | CONTINUE ONTO | Webster Road | 1.3 | Street |  |
-| 52.4 | TURN LEFT | Spear Street | 3.8 | Street | Spear St north into South Burlington. |
-| 56.2 | TURN LEFT | bike path | 0.9 | Bike path |  |
-| 57.1 | TURN RIGHT | Farrell Street | 1.2 | Street |  |
-| 58.3 | TURN RIGHT | Oak Beach Drive | 0.4 | Street |  |
-| 58.7 | TURN RIGHT | Burlington Greenway | 0.3 | Bike path | Lakefront path into downtown Burlington. |
-| 59.0 | TURN LEFT | Central Avenue | 0.4 | Street |  |
-| 59.4 | TURN LEFT | Burlington Greenway | 0.8 | Bike path |  |
-| 60.2 | TURN RIGHT | Battery Street | 0.5 | Street |  |
-| 60.7 | ARRIVE | Hotel Vermont |  | — | 41 Cherry St, Burlington, VT |
+| 0.0 | DEPART ON | Wicker Street (NY-9N) | 1.3 | Road shoulder |  |
+| 1.3 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 5.6 | Road shoulder | NY-9N/22 north along the lake. |
+| 6.9 | TURN LEFT | Sugar Hill Road | 1.9 | Street |  |
+| 8.8 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 4.2 | Road shoulder |  |
+| 13.0 | CONTINUE ONTO | South Main Street (NY-9N; NY-22) | 2.6 | Road shoulder | Port Henry: Stewart's #103 for food and water. |
+| 15.6 | RESUPPLY | Stewart's #103, Port Henry | 0.8 | — | Reliable food and water. |
+| 16.4 | CONTINUE ONTO | State Highway 9N (NY-9N; NY-22) | 9.5 | Road shoulder |  |
+| 25.9 | TURN RIGHT | Champlain Avenue (NY-22) | 1.0 | Road shoulder |  |
+| 26.9 | CONTINUE ONTO | State Highway 22 (NY-22) | 8.1 | Road shoulder |  |
+| 35.0 | CONTINUE ONTO | State Highway 9N (NY-22) | 1.3 | Road shoulder |  |
+| 36.3 | CONTINUE ONTO | Station Road (NY-22) | 1.1 | Road shoulder |  |
+| 37.4 | CONTINUE ONTO | Station Street (NY-22) | 1.5 | Road shoulder |  |
+| 38.9 | LUNCH (call ahead) | Pink Pig Cafe, Essex (by the ferry dock) | 0.1 | — | Fall hours are limited. |
+| 39.0 | BOARD FERRY | Charlotte, VT - Essex, NY | 2.8 | Ferry | FERRY to Charlotte, VT: about 20 min crossing, $6.75 per cyclist. In the early-fall schedule, Essex departures run every 30 min 10:30 AM to 5:30 PM (hourly before and after). |
+| 41.8 | CONTINUE ONTO | Ferry Road (VT-F5) | 1.4 | Road shoulder |  |
+| 43.2 | TURN LEFT | Lake Road | 3.3 | Street | Vermont: quiet Lake Champlain Bikeways roads. |
+| 46.5 | TURN LEFT | Greenbush Road | 1.2 | Street |  |
+| 47.7 | CONTINUE ONTO | Bostwick Road | 2.3 | Street |  |
+| 50.0 | TURN LEFT | Shelburne Road (US-7) | 0.7 | Road shoulder |  |
+| 50.7 | TURN LEFT | Falls Road | 0.2 | Street |  |
+| 50.9 | TURN RIGHT | Shelburne Road (US-7) | 0.8 | Road shoulder |  |
+| 51.7 | TURN LEFT | Webster Road | 1.2 | Street |  |
+| 52.9 | TURN LEFT | Spear Street | 2.9 | Street | Spear St north into South Burlington. |
+| 55.8 | TURN RIGHT | bike path | 1.7 | Bike path |  |
+| 57.5 | TURN RIGHT | Farrell Street | 1.3 | Street |  |
+| 58.8 | TURN RIGHT | Oak Beach Drive | 0.3 | Street |  |
+| 59.1 | TURN RIGHT | Burlington Greenway | 0.4 | Bike path | Lakefront path into downtown Burlington. |
+| 59.5 | TURN LEFT | Central Avenue | 0.3 | Street |  |
+| 59.8 | TURN LEFT | Burlington Greenway | 0.8 | Bike path |  |
+| 60.6 | TURN RIGHT | Battery Street | 0.5 | Street |  |
+| 61.1 | ARRIVE | Hotel Vermont |  | — | 41 Cherry St, Burlington, VT |
 
 </details>
 
@@ -73,10 +73,11 @@
 
 | Mile | Action | Road / place | Leg | Surface | Notes |
 |:---|:---|:---|:---|:---|:---|
-| 0.1 | DEPART ON | Battery Street | 0.2 | Street |  |
+| 0.0 | DEPART ON | Battery Street | 0.3 | Street |  |
 | 0.3 | TURN LEFT | Burlington Greenway | 4.9 | Bike path |  |
 | 5.2 | CONTINUE ONTO | Island Line Trail | 0.5 | Bike path |  |
-| 5.7 | BEAR RIGHT | Windemere Way | 0.6 | Street |  |
+| 5.7 | BEAR RIGHT | Windemere Way | 0.2 | Street |  |
+| 5.9 | TURN LEFT | Biscayne Heights | 0.4 | Street |  |
 | 6.3 | TURN LEFT | Colchester Point Road | 0.4 | Street |  |
 | 6.7 | CONTINUE ONTO | Colchester Bike Path | 0.6 | Unpaved: fine gravel |  |
 | 7.3 | CONTINUE ONTO | Colchester Causeway | 3.0 | Unpaved: fine gravel | Causeway into the lake: crushed stone, 3 mi. |
@@ -107,6 +108,6 @@
 
 </details>
 
-Then ride Day 7 (Saint-Jean ➔ Old Montréal, 35.8 mi) as in the 7-day guide.
+Then ride Day 7 (Saint-Jean ➔ Old Montréal, 33.0 mi) as in the 7-day guide.
 
-*Comparison:* the New York route for these two days (Days 5 and 6) is 127.2 mi. The Vermont variant is 133.5 mi and less hilly on the island day.
+*Comparison:* the New York route for these two days (Days 5 and 6) is 126.8 mi. The Vermont variant is 133.9 mi and less hilly on the island day.

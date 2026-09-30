@@ -84,7 +84,7 @@ def fill(text, key):
 # ---------------------------------------------------------------------------
 # Turn cues from routed steps
 # ---------------------------------------------------------------------------
-TRAILWORDS = ("Trail", "Trailway", "Greenway", "Bridge", "Causeway", "Canal", "Path", "Route verte", "Walkway", "Pont", "Ferry", "Piste", "Route 223", "Connector")
+TRAILWORDS = ("Trail", "Trailway", "Greenway", "Bridge", "Causeway", "Canal", "Path", "Route verte", "Walkway", "Pont", "Ferry", "Piste", "Route 223", "Connector", "Sidepath")
 
 def pretty_road(name):
     base, ref = name, ""
@@ -119,19 +119,47 @@ def is_ferry(name):
 
 ARROW = {"left": "↰", "right": "↱", "slight left": "↖", "slight right": "↗", "sharp left": "↰", "sharp right": "↱", "straight": "⬆", "uturn": "↶"}
 
+def bearing(a, b):
+    la1, la2 = math.radians(a[0]), math.radians(b[0]); dl = math.radians(b[1] - a[1])
+    return math.degrees(math.atan2(math.sin(dl) * math.cos(la2), math.cos(la1) * math.sin(la2) - math.sin(la1) * math.cos(la2) * math.cos(dl)))
+
+def geo_mod(key, loc, reach=40.0):
+    """Turn modifier measured from the track itself. Used where a routing waypoint
+    split the route at a junction, so the router reported depart/arrive with no turn."""
+    c = R[key]["nav"]
+    i = min(range(len(c)), key=lambda k: (c[k][0] - loc[0]) ** 2 + ((c[k][1] - loc[1]) * 0.72) ** 2)
+    a = i
+    while a > 0 and hav(c[a], c[i]) < reach: a -= 1
+    b = i
+    while b < len(c) - 1 and hav(c[i], c[b]) < reach: b += 1
+    if a == i or b == i: return "straight"
+    d = (bearing(c[i], c[b]) - bearing(c[a], c[i]) + 540) % 360 - 180
+    side = "right" if d > 0 else "left"
+    if abs(d) < 25: return "straight"
+    if abs(d) < 60: return "slight " + side
+    if abs(d) < 150: return side
+    return "sharp " + side
+
 def auto_cues(key, notes):
     steps = R[key]["steps"]; total = R[key]["mi"]
     cues = []; notes = dict(notes)
+    # the day starts on a hotel driveway a few metres long: open with the first real road instead
+    j0 = next((i for i, s in enumerate(steps) if s["mile"] < 0.25 and s["dist_mi"] >= 0.12), 0)
     for i, s in enumerate(steps):
+        if i < j0:
+            continue
         name = s["name"]; mod = s["mod"] or "straight"; typ = s["type"]
-        if s["dist_mi"] < 0.12 and not is_ferry(name):
+        if typ in ("depart", "arrive") and j0 < i < len(steps) - 1:
+            mod = geo_mod(key, s["loc"])
+            typ = "turn" if mod != "straight" else "new name"
+        if s["dist_mi"] < 0.12 and not is_ferry(name) and i != j0:
             continue
         if cues and pretty_road(name) == cues[-1]["road"]:
             continue
         if typ in ("arrive", "depart", "new name", "notification") or mod == "straight":
             # a road-name change without a real turn: only cue it if it's significant
             significant = s["dist_mi"] >= 1.0 or any(w in name for w in TRAILWORDS) or is_ferry(name)
-            if not significant and i != 0:
+            if not significant and i != j0:
                 continue
             action, turn = ("CONTINUE ONTO", "straight")
         elif "left" in mod:
@@ -149,7 +177,7 @@ def auto_cues(key, notes):
         for k, v in list(notes.items()):
             if k.lower() in name.lower():
                 det = fill(v, key); del notes[k]; break
-        cues.append(dict(mile=round(s["mile"], 1), icon=ARROW.get(mod, "⬆") if turn not in ("ferry",) else "⛴", turnDir=turn,
+        cues.append(dict(mile=0.0 if i == j0 else round(s["mile"], 1), icon=ARROW.get(mod, "⬆") if turn not in ("ferry",) else "⛴", turnDir=turn,
                          road=pretty_road(name), action=action, surface=surf_label(key, s["name"], s["mile"] + min(0.15, s["dist_mi"] / 2)),
                          detail=det, landmark="", corridorSide="center"))
     return cues
@@ -169,8 +197,8 @@ def build_cues(stage_key, route_key):
     end_place = st["hotels"][0]
     cues.append(dict(mile=R[route_key]["mi"], icon="🏁" if route_key in ("D7", "6D6") else "🚏",
                      turnDir="finish" if route_key in ("D7", "6D6") else "terminus",
-                     road=C.PLACES[end_place]["name"] if route_key not in ("D7", "6D6") else "Place Jacques-Cartier, Old Montréal",
-                     action="ARRIVE", surface="", detail=C.PLACES[end_place]["address"] if route_key not in ("D7", "6D6") else "Finish. Hôtel Monville is 0.5 mi west.",
+                     road=C.PLACES[end_place]["name"] if route_key != "D7" else "Place Jacques-Cartier, Old Montréal",
+                     action="ARRIVE", surface="", detail=C.PLACES[end_place]["address"] if route_key != "D7" else "Finish. Hôtel Monville is 0.5 mi west.",
                      landmark="", corridorSide="center"))
     for i, c in enumerate(cues):
         nxt = cues[i + 1]["mile"] if i + 1 < len(cues) else c["mile"]
@@ -319,13 +347,16 @@ def write_route_data():
 # ---------------------------------------------------------------------------
 # strip_map_data.js
 # ---------------------------------------------------------------------------
-def elev_profile(key):
-    prof = R[key]["profile"]
-    labels = {}
+def elev_profile(key, n=16):
+    """Coarse profile (about n points) for the web strip map; data/routes.json holds ~0.25 mi samples."""
+    full = R[key]["profile"]
+    step = max(1, round((len(full) - 1) / (n - 1)))
+    prof = full[::step]
+    if prof[-1] != full[-1]: prof.append(full[-1])
     st = C.STAGES[key]
     out = []
     for m, e in prof:
-        out.append(dict(mile=m, elev=e, label=""))
+        out.append(dict(mile=round(m, 1), elev=e, label=""))
     out[0]["label"] = "Start"; out[-1]["label"] = "Finish"
     lm, _ = place_mile(key, st["lunch"])
     if lm is not None:

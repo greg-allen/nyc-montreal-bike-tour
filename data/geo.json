@@ -563,5 +563,25 @@
 41.995293,
 -73.877268,
 "Taste Budd's Cafe, 40, West Market Street, Village of Red Hook, Town of Red Hook, Dutchess"
+],
+"circle_court": [
+43.847977,
+-73.434173,
+"Circle Court Motel, 6, Montcalm Street, Town of Ticonderoga, Essex County, New York, 12883"
+],
+"microtel_platt": [
+44.697106,
+-73.502405,
+"Microtel Inn & Suites by Wyndham Plattsburgh, 554, State Route 3, City of Plattsburgh, Tow"
+],
+"bonaventure": [
+45.498927,
+-73.565591,
+"Hôtel Bonaventure, 900, Rue de La Gauchetière Ouest, Ville-Marie, Montréal, Agglomération "
+],
+"bonaventure2": [
+45.498915,
+-73.565603,
+"900, Rue de La Gauchetière Ouest, Ville-Marie, Montréal, Agglomération de Montréal, Montré"
 ]
 }

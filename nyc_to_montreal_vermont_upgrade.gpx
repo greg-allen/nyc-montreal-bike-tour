@@ -1,44 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="mtl_bike tools/build.py" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata><name>Vermont Champlain Islands Variant</name><desc>Designed for the 7-day tour: the Local Motion bike ferry runs only Fri to Sun (plus Mon Oct 12), so the island day must fall on Fri Oct 9. On the 6-day plan this variant would make the last day about 111 mi. On the 5-day plan the island day would be a Thursday, when the bike ferry doesn't run.</desc></metadata>
-  <wpt lat="44.31005" lon="-73.35154"><name>Lunch: Pink Pig Cafe</name><desc>Mile 38.4. 2750 Essex Rd, Essex, NY. (518) 962-8833. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="44.47891" lon="-73.21788"><name>Hotel: Hotel Vermont</name><desc>Mile 60.7. 41 Cherry St, Burlington, VT. (802) 651-0080. Downtown, near the lakefront path.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="44.47879" lon="-73.21860"><name>Hotel: Courtyard Burlington Harbor</name><desc>Mile 60.7. 25 Cherry St, Burlington, VT. (802) 864-4700. Next door to Hotel Vermont.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="44.48510" lon="-73.21030"><name>Bike: Old Spokes Home</name><desc>Mile 60.7, 0.6 mi off route. 331 N Winooski Ave, Burlington, VT. (802) 863-4475. Tue to Fri 10 to 6, Sat 10 to 5; closed Sun and Mon.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.47600" lon="-73.21560"><name>Bike: North Star Sports</name><desc>Mile 60.3, 0.2 mi off route. 100 Main St, Burlington, VT. (802) 863-3832. Downtown bike shop near the waterfront.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.04761" lon="-73.45925"><name>Food: Stewart's Shops #103</name><desc>Mile 15.0. 4308 Main St, Port Henry, NY. (518) 546-3025. Guaranteed food and water on Day 5. Top up here.</desc><sym>Convenience Store</sym></wpt>
-  <wpt lat="44.04233" lon="-73.45883"><name>Station: Port Henry</name><desc>Mile 14.6, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="44.18717" lon="-73.45189"><name>Station: Westport</name><desc>Mile 25.6, 0.8 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="44.31005" lon="-73.35154"><name>Lunch: Pink Pig Cafe</name><desc>Mile 38.9. 2750 Essex Rd, Essex, NY. (518) 962-8833. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="44.47891" lon="-73.21788"><name>Hotel: Hotel Vermont</name><desc>Mile 61.1. 41 Cherry St, Burlington, VT. (802) 651-0080. Downtown, near the lakefront path.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.47879" lon="-73.21860"><name>Hotel: Courtyard Burlington Harbor</name><desc>Mile 61.1. 25 Cherry St, Burlington, VT. (802) 864-4700. Next door to Hotel Vermont.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="44.48510" lon="-73.21030"><name>Bike: Old Spokes Home</name><desc>Mile 61.1, 0.6 mi off route. 331 N Winooski Ave, Burlington, VT. (802) 863-4475. Tue to Fri 10 to 6, Sat 10 to 5; closed Sun and Mon.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="44.47600" lon="-73.21560"><name>Bike: North Star Sports</name><desc>Mile 60.7, 0.2 mi off route. 100 Main St, Burlington, VT. (802) 863-3832. Downtown bike shop near the waterfront.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="44.04761" lon="-73.45925"><name>Food: Stewart's Shops #103</name><desc>Mile 15.6. 4308 Main St, Port Henry, NY. (518) 546-3025. Guaranteed food and water on Day 5. Top up here.</desc><sym>Convenience Store</sym></wpt>
+  <wpt lat="44.04233" lon="-73.45883"><name>Station: Port Henry</name><desc>Mile 15.1, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="44.18717" lon="-73.45189"><name>Station: Westport</name><desc>Mile 26.2, 0.8 mi off route.</desc><sym>Train</sym></wpt>
   <wpt lat="44.81642" lon="-73.29068"><name>Lunch: Hero's Welcome General Store</name><desc>Mile 27.6. 3537 US Route 2, North Hero, VT. (802) 372-4161. Deli, bakery and general store on the lake. Standard hours Mon to Sat 7 to 6, Sun 8 to 5; hours are reduced seasonally.</desc><sym>Restaurant</sym></wpt>
   <wpt lat="45.32482" lon="-73.26641"><name>Hotel: Quality Hotel Centre de Congrès</name><desc>Mile 72.8. 725 Boul. du Séminaire N, Saint-Jean-sur-Richelieu, QC. +1 (450) 300-5177. North side of town, near the canal. Choice Hotels toll-free: 1-800-667-3815.</desc><sym>Lodging</sym></wpt>
   <wpt lat="45.32391" lon="-73.26475"><name>Hotel: Auberge Harris</name><desc>Mile 72.5. 576 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 348-3821. Riverside inn close to the start of the canal path. Toll-free 1-800-668-3821.</desc><sym>Lodging</sym></wpt>
   <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 72.8, 2.4 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
   <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 47.5. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
   <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 46.4, 0.3 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>VT1: Ticonderoga, NY to Burlington, VT (via Essex ferry)</name><desc>60.7 mi (97.7 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
-    <trkpt lat="43.858425" lon="-73.428033"/>
-    <trkpt lat="43.858329" lon="-73.428149"/>
-    <trkpt lat="43.858191" lon="-73.428217"/>
-    <trkpt lat="43.858035" lon="-73.428405"/>
-    <trkpt lat="43.859012" lon="-73.429926"/>
-    <trkpt lat="43.859143" lon="-73.430187"/>
-    <trkpt lat="43.859679" lon="-73.430943"/>
-    <trkpt lat="43.859965" lon="-73.431280"/>
-    <trkpt lat="43.861369" lon="-73.432684"/>
-    <trkpt lat="43.862773" lon="-73.434089"/>
-    <trkpt lat="43.864176" lon="-73.435493"/>
-    <trkpt lat="43.865580" lon="-73.436897"/>
-    <trkpt lat="43.865936" lon="-73.437297"/>
-    <trkpt lat="43.866005" lon="-73.437444"/>
-    <trkpt lat="43.866235" lon="-73.437614"/>
+  <trk><name>VT1: Ticonderoga, NY to Burlington, VT (via Essex ferry)</name><desc>61.1 mi (98.3 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+    <trkpt lat="43.848231" lon="-73.434187"/>
+    <trkpt lat="43.848210" lon="-73.434469"/>
+    <trkpt lat="43.848326" lon="-73.434485"/>
+    <trkpt lat="43.848406" lon="-73.434880"/>
+    <trkpt lat="43.848687" lon="-73.435101"/>
+    <trkpt lat="43.850136" lon="-73.435877"/>
+    <trkpt lat="43.851586" lon="-73.436652"/>
+    <trkpt lat="43.852418" lon="-73.437135"/>
+    <trkpt lat="43.853251" lon="-73.437619"/>
+    <trkpt lat="43.853702" lon="-73.437771"/>
+    <trkpt lat="43.855311" lon="-73.438179"/>
+    <trkpt lat="43.855981" lon="-73.438192"/>
+    <trkpt lat="43.857394" lon="-73.438072"/>
+    <trkpt lat="43.858806" lon="-73.437951"/>
+    <trkpt lat="43.860304" lon="-73.437756"/>
+    <trkpt lat="43.861801" lon="-73.437562"/>
+    <trkpt lat="43.863298" lon="-73.437367"/>
+    <trkpt lat="43.864796" lon="-73.437172"/>
+    <trkpt lat="43.865314" lon="-73.437181"/>
+    <trkpt lat="43.865830" lon="-73.437342"/>
+    <trkpt lat="43.866097" lon="-73.437500"/>
     <trkpt lat="43.866558" lon="-73.437932"/>
     <trkpt lat="43.867536" lon="-73.439064"/>
     <trkpt lat="43.868513" lon="-73.440196"/>
-    <trkpt lat="43.869580" lon="-73.441348"/>
-    <trkpt lat="43.870648" lon="-73.442499"/>
-    <trkpt lat="43.871715" lon="-73.443651"/>
-    <trkpt lat="43.872314" lon="-73.444129"/>
-    <trkpt lat="43.873732" lon="-73.445139"/>
+    <trkpt lat="43.869814" lon="-73.441612"/>
+    <trkpt lat="43.871115" lon="-73.443028"/>
+    <trkpt lat="43.871978" lon="-73.443880"/>
+    <trkpt lat="43.873564" lon="-73.445014"/>
     <trkpt lat="43.875150" lon="-73.446149"/>
     <trkpt lat="43.876409" lon="-73.447141"/>
     <trkpt lat="43.877667" lon="-73.448133"/>
@@ -101,9 +106,8 @@
     <trkpt lat="43.927196" lon="-73.418325"/>
     <trkpt lat="43.928235" lon="-73.418026"/>
     <trkpt lat="43.929274" lon="-73.417727"/>
-    <trkpt lat="43.929643" lon="-73.417683"/>
-    <trkpt lat="43.930151" lon="-73.417750"/>
-    <trkpt lat="43.930647" lon="-73.417927"/>
+    <trkpt lat="43.929835" lon="-73.417694"/>
+    <trkpt lat="43.930450" lon="-73.417844"/>
     <trkpt lat="43.931757" lon="-73.418527"/>
     <trkpt lat="43.932144" lon="-73.418666"/>
     <trkpt lat="43.933885" lon="-73.418909"/>
@@ -616,11 +620,8 @@
     <trkpt lat="44.309631" lon="-73.353763"/>
     <trkpt lat="44.309810" lon="-73.351942"/>
     <trkpt lat="44.309857" lon="-73.351712"/>
-    <trkpt lat="44.310114" lon="-73.351773"/>
-    <trkpt lat="44.310135" lon="-73.351560"/>
-    <trkpt lat="44.310114" lon="-73.351773"/>
     <trkpt lat="44.310649" lon="-73.351882"/>
-    <trkpt lat="44.310711" lon="-73.351052"/>
+    <trkpt lat="44.310683" lon="-73.351378"/>
     <trkpt lat="44.310791" lon="-73.350883"/>
     <trkpt lat="44.310891" lon="-73.349327"/>
     <trkpt lat="44.310991" lon="-73.347771"/>
@@ -652,8 +653,6 @@
     <trkpt lat="44.300457" lon="-73.298891"/>
     <trkpt lat="44.300627" lon="-73.298372"/>
     <trkpt lat="44.300857" lon="-73.297910"/>
-    <trkpt lat="44.301379" lon="-73.297158"/>
-    <trkpt lat="44.301407" lon="-73.297172"/>
     <trkpt lat="44.301379" lon="-73.297158"/>
     <trkpt lat="44.301419" lon="-73.297026"/>
     <trkpt lat="44.301683" lon="-73.296681"/>
@@ -791,26 +790,24 @@
     <trkpt lat="44.380535" lon="-73.227255"/>
     <trkpt lat="44.380624" lon="-73.227330"/>
     <trkpt lat="44.380671" lon="-73.227528"/>
-    <trkpt lat="44.382109" lon="-73.227002"/>
-    <trkpt lat="44.383546" lon="-73.226477"/>
-    <trkpt lat="44.384983" lon="-73.225951"/>
-    <trkpt lat="44.386421" lon="-73.225425"/>
+    <trkpt lat="44.382154" lon="-73.226981"/>
+    <trkpt lat="44.383637" lon="-73.226434"/>
+    <trkpt lat="44.385121" lon="-73.225887"/>
+    <trkpt lat="44.386604" lon="-73.225340"/>
     <trkpt lat="44.387388" lon="-73.224918"/>
+    <trkpt lat="44.387860" lon="-73.224611"/>
     <trkpt lat="44.388324" lon="-73.224259"/>
     <trkpt lat="44.389194" lon="-73.223490"/>
-    <trkpt lat="44.390136" lon="-73.222501"/>
-    <trkpt lat="44.390731" lon="-73.221935"/>
-    <trkpt lat="44.390637" lon="-73.221680"/>
-    <trkpt lat="44.390563" lon="-73.221613"/>
-    <trkpt lat="44.390484" lon="-73.221607"/>
-    <trkpt lat="44.389976" lon="-73.221763"/>
-    <trkpt lat="44.389577" lon="-73.221942"/>
-    <trkpt lat="44.388080" lon="-73.222797"/>
+    <trkpt lat="44.388324" lon="-73.224259"/>
+    <trkpt lat="44.387454" lon="-73.224876"/>
+    <trkpt lat="44.387359" lon="-73.224547"/>
+    <trkpt lat="44.387352" lon="-73.224274"/>
+    <trkpt lat="44.387688" lon="-73.223273"/>
     <trkpt lat="44.387931" lon="-73.222781"/>
-    <trkpt lat="44.387846" lon="-73.222596"/>
-    <trkpt lat="44.387870" lon="-73.222285"/>
-    <trkpt lat="44.388171" lon="-73.220514"/>
-    <trkpt lat="44.388473" lon="-73.218742"/>
+    <trkpt lat="44.387860" lon="-73.222651"/>
+    <trkpt lat="44.387843" lon="-73.222449"/>
+    <trkpt lat="44.388153" lon="-73.220623"/>
+    <trkpt lat="44.388464" lon="-73.218797"/>
     <trkpt lat="44.388774" lon="-73.216971"/>
     <trkpt lat="44.389075" lon="-73.215029"/>
     <trkpt lat="44.389375" lon="-73.213086"/>
@@ -929,9 +926,9 @@
     <trkpt lat="44.444590" lon="-73.204097"/>
     <trkpt lat="44.444633" lon="-73.204140"/>
     <trkpt lat="44.445026" lon="-73.204140"/>
-    <trkpt lat="44.445601" lon="-73.204062"/>
-    <trkpt lat="44.445633" lon="-73.204543"/>
-    <trkpt lat="44.447181" lon="-73.204335"/>
+    <trkpt lat="44.445509" lon="-73.204080"/>
+    <trkpt lat="44.445542" lon="-73.204557"/>
+    <trkpt lat="44.447136" lon="-73.204342"/>
     <trkpt lat="44.448729" lon="-73.204127"/>
     <trkpt lat="44.449554" lon="-73.203814"/>
     <trkpt lat="44.449708" lon="-73.203824"/>
@@ -971,7 +968,7 @@
     <trkpt lat="44.456071" lon="-73.225152"/>
     <trkpt lat="44.456105" lon="-73.225178"/>
     <trkpt lat="44.456220" lon="-73.225221"/>
-    <trkpt lat="44.456320" lon="-73.224986"/>
+    <trkpt lat="44.456320" lon="-73.224985"/>
     <trkpt lat="44.456829" lon="-73.224411"/>
     <trkpt lat="44.457031" lon="-73.224289"/>
     <trkpt lat="44.457272" lon="-73.224046"/>
@@ -1018,8 +1015,6 @@
     <trkpt lat="44.476308" lon="-73.218721"/>
     <trkpt lat="44.477716" lon="-73.218827"/>
     <trkpt lat="44.479124" lon="-73.218934"/>
-    <trkpt lat="44.479147" lon="-73.218123"/>
-    <trkpt lat="44.478900" lon="-73.218107"/>
   </trkseg></trk>
   <trk><name>VT2: Burlington, VT to Saint-Jean-sur-Richelieu, QC</name><desc>72.8 mi (117.2 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="44.478900" lon="-73.218107"/>

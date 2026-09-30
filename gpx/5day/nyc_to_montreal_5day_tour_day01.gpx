@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 1 (Sunday Oct 4): NYC to Poughkeepsie, NY</name><desc>103.1 mi (165.9 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="41.27065" lon="-73.78054"><name>Lunch: Trailside Cafe</name><desc>Mile 47.0. 1807 Commerce St, Yorktown Heights, NY. (914) 302-7331. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="41.70540" lon="-73.92864"><name>Hotel: DoubleTree by Hilton Poughkeepsie</name><desc>Mile 103.1. 40 Civic Center Plaza, Poughkeepsie, NY. (845) 485-5300. Formerly the Poughkeepsie Grand Hotel. About 0.4 mi from the Walkway Over the Hudson.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="41.27347" lon="-73.78083"><name>Bike: Yorktown Cycles</name><desc>Mile 47.2. 1899 Commerce St, Yorktown Heights, NY. (914) 245-5504. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="41.58548" lon="-73.80699"><name>Bike: Bikeway at Hopewell Depot</name><desc>Mile 89.5. Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY. (845) 463-4000. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="41.39471" lon="-73.61970"><name>Station: Brewster station</name><desc>Mile 65.0, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="41.39435" lon="-73.61993"><name>Station: Brewster</name><desc>Mile 65.0, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="41.70704" lon="-73.93802"><name>Station: Poughkeepsie</name><desc>Mile 102.9, 0.5 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 1 (Sunday Oct 4): NYC to Poughkeepsie, NY</name><desc>103.1 mi (165.9 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 1 (Sunday Oct 4): NYC to Poughkeepsie, NY</name><desc>102.5 mi (165.0 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="41.27065" lon="-73.78054"><name>Lunch: Trailside Cafe</name><desc>Mile 47.1. 1807 Commerce St, Yorktown Heights, NY. (914) 302-7331. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="41.70540" lon="-73.92864"><name>Hotel: DoubleTree by Hilton Poughkeepsie</name><desc>Mile 102.5. 40 Civic Center Plaza, Poughkeepsie, NY. (845) 485-5300. Formerly the Poughkeepsie Grand Hotel. About 0.4 mi from the Walkway Over the Hudson.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="41.27347" lon="-73.78083"><name>Bike: Yorktown Cycles</name><desc>Mile 47.3. 1899 Commerce St, Yorktown Heights, NY. (914) 245-5504. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="41.58548" lon="-73.80699"><name>Bike: Bikeway at Hopewell Depot</name><desc>Mile 89.0. Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY. (845) 463-4000. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="41.39471" lon="-73.61970"><name>Station: Brewster station</name><desc>Mile 64.5, 0.2 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="41.39435" lon="-73.61993"><name>Station: Brewster</name><desc>Mile 64.5, 0.2 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="41.70704" lon="-73.93802"><name>Station: Poughkeepsie</name><desc>Mile 102.3, 0.5 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Day 1 (Sunday Oct 4): NYC to Poughkeepsie, NY</name><desc>102.5 mi (165.0 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="40.702625" lon="-74.016048" />
     <trkpt lat="40.702790" lon="-74.016184" />
     <trkpt lat="40.703170" lon="-74.016283" />
@@ -359,7 +359,7 @@
     <trkpt lat="40.887477" lon="-73.902490" />
     <trkpt lat="40.887481" lon="-73.902556" />
     <trkpt lat="40.888032" lon="-73.902627" />
-    <trkpt lat="40.888791" lon="-73.902787" />
+    <trkpt lat="40.888798" lon="-73.902787" />
     <trkpt lat="40.889063" lon="-73.902781" />
     <trkpt lat="40.889130" lon="-73.902746" />
     <trkpt lat="40.889105" lon="-73.902608" />
@@ -644,7 +644,7 @@
     <trkpt lat="41.073470" lon="-73.832794" />
     <trkpt lat="41.074738" lon="-73.833165" />
     <trkpt lat="41.076006" lon="-73.833535" />
-    <trkpt lat="41.076277" lon="-73.833578" />
+    <trkpt lat="41.076316" lon="-73.833577" />
     <trkpt lat="41.076863" lon="-73.833513" />
     <trkpt lat="41.077150" lon="-73.833401" />
     <trkpt lat="41.077393" lon="-73.833250" />
@@ -916,7 +916,7 @@
     <trkpt lat="41.272471" lon="-73.780712" />
     <trkpt lat="41.272952" lon="-73.780731" />
     <trkpt lat="41.273224" lon="-73.780632" />
-    <trkpt lat="41.273255" lon="-73.780930" />
+    <trkpt lat="41.273239" lon="-73.780694" />
     <trkpt lat="41.273224" lon="-73.780632" />
     <trkpt lat="41.273565" lon="-73.780373" />
     <trkpt lat="41.274002" lon="-73.779908" />
@@ -926,11 +926,11 @@
     <trkpt lat="41.276050" lon="-73.776968" />
     <trkpt lat="41.276735" lon="-73.775651" />
     <trkpt lat="41.277099" lon="-73.775127" />
-    <trkpt lat="41.277483" lon="-73.774714" />
+    <trkpt lat="41.277390" lon="-73.774798" />
+    <trkpt lat="41.277657" lon="-73.774576" />
     <trkpt lat="41.278009" lon="-73.774319" />
-    <trkpt lat="41.279070" lon="-73.773956" />
-    <trkpt lat="41.279333" lon="-73.773906" />
-    <trkpt lat="41.280302" lon="-73.773881" />
+    <trkpt lat="41.279243" lon="-73.773913" />
+    <trkpt lat="41.280257" lon="-73.773884" />
     <trkpt lat="41.281271" lon="-73.773856" />
     <trkpt lat="41.281613" lon="-73.773771" />
     <trkpt lat="41.282421" lon="-73.773410" />
@@ -1000,14 +1000,6 @@
     <trkpt lat="41.347340" lon="-73.753187" />
     <trkpt lat="41.347869" lon="-73.752747" />
     <trkpt lat="41.348515" lon="-73.752145" />
-    <trkpt lat="41.347869" lon="-73.752747" />
-    <trkpt lat="41.347340" lon="-73.753187" />
-    <trkpt lat="41.346275" lon="-73.753926" />
-    <trkpt lat="41.345247" lon="-73.754561" />
-    <trkpt lat="41.346275" lon="-73.753926" />
-    <trkpt lat="41.347340" lon="-73.753187" />
-    <trkpt lat="41.347869" lon="-73.752747" />
-    <trkpt lat="41.348515" lon="-73.752145" />
     <trkpt lat="41.349482" lon="-73.750722" />
     <trkpt lat="41.350371" lon="-73.749587" />
     <trkpt lat="41.351260" lon="-73.748452" />
@@ -1048,7 +1040,7 @@
     <trkpt lat="41.370881" lon="-73.735590" />
     <trkpt lat="41.371274" lon="-73.735102" />
     <trkpt lat="41.371729" lon="-73.734398" />
-    <trkpt lat="41.372074" lon="-73.733478" />
+    <trkpt lat="41.372076" lon="-73.733474" />
     <trkpt lat="41.372398" lon="-73.732863" />
     <trkpt lat="41.372466" lon="-73.732675" />
     <trkpt lat="41.372571" lon="-73.732136" />
@@ -1090,10 +1082,10 @@
     <trkpt lat="41.382914" lon="-73.713832" />
     <trkpt lat="41.382986" lon="-73.713302" />
     <trkpt lat="41.383012" lon="-73.712543" />
-    <trkpt lat="41.382986" lon="-73.711700" />
-    <trkpt lat="41.383054" lon="-73.709808" />
-    <trkpt lat="41.383122" lon="-73.707916" />
-    <trkpt lat="41.383189" lon="-73.706024" />
+    <trkpt lat="41.382992" lon="-73.711489" />
+    <trkpt lat="41.383058" lon="-73.709650" />
+    <trkpt lat="41.383125" lon="-73.707810" />
+    <trkpt lat="41.383191" lon="-73.705971" />
     <trkpt lat="41.383257" lon="-73.704132" />
     <trkpt lat="41.383229" lon="-73.703630" />
     <trkpt lat="41.383057" lon="-73.703003" />
@@ -1166,7 +1158,7 @@
     <trkpt lat="41.414540" lon="-73.687967" />
     <trkpt lat="41.414619" lon="-73.687472" />
     <trkpt lat="41.414628" lon="-73.686615" />
-    <trkpt lat="41.414723" lon="-73.685310" />
+    <trkpt lat="41.414723" lon="-73.685311" />
     <trkpt lat="41.414977" lon="-73.684134" />
     <trkpt lat="41.415230" lon="-73.682957" />
     <trkpt lat="41.415421" lon="-73.682226" />
@@ -1563,7 +1555,7 @@
     <trkpt lat="41.574133" lon="-73.700703" />
     <trkpt lat="41.574031" lon="-73.701492" />
     <trkpt lat="41.574018" lon="-73.702192" />
-    <trkpt lat="41.574043" lon="-73.702617" />
+    <trkpt lat="41.574041" lon="-73.702589" />
     <trkpt lat="41.574151" lon="-73.703337" />
     <trkpt lat="41.574484" lon="-73.704576" />
     <trkpt lat="41.574950" lon="-73.706139" />
@@ -1724,8 +1716,8 @@
     <trkpt lat="41.620011" lon="-73.849072" />
     <trkpt lat="41.621271" lon="-73.850178" />
     <trkpt lat="41.622531" lon="-73.851284" />
-    <trkpt lat="41.623181" lon="-73.851764" />
-    <trkpt lat="41.623299" lon="-73.851911" />
+    <trkpt lat="41.623142" lon="-73.851729" />
+    <trkpt lat="41.623254" lon="-73.851839" />
     <trkpt lat="41.623402" lon="-73.852119" />
     <trkpt lat="41.623476" lon="-73.852121" />
     <trkpt lat="41.623536" lon="-73.852023" />
@@ -1856,18 +1848,21 @@
     <trkpt lat="41.715853" lon="-73.915776" />
     <trkpt lat="41.715364" lon="-73.917813" />
     <trkpt lat="41.715004" lon="-73.919067" />
-    <trkpt lat="41.714635" lon="-73.920138" />
-    <trkpt lat="41.713954" lon="-73.921683" />
-    <trkpt lat="41.713274" lon="-73.923228" />
-    <trkpt lat="41.712719" lon="-73.924694" />
-    <trkpt lat="41.712080" lon="-73.926235" />
-    <trkpt lat="41.711983" lon="-73.926426" />
-    <trkpt lat="41.711729" lon="-73.926762" />
-    <trkpt lat="41.711302" lon="-73.927850" />
-    <trkpt lat="41.711729" lon="-73.926762" />
+    <trkpt lat="41.714701" lon="-73.919976" />
+    <trkpt lat="41.714251" lon="-73.921016" />
+    <trkpt lat="41.714252" lon="-73.921111" />
+    <trkpt lat="41.714185" lon="-73.921355" />
+    <trkpt lat="41.713818" lon="-73.922404" />
+    <trkpt lat="41.713693" lon="-73.922932" />
+    <trkpt lat="41.713632" lon="-73.922917" />
+    <trkpt lat="41.713575" lon="-73.923135" />
+    <trkpt lat="41.713282" lon="-73.923542" />
+    <trkpt lat="41.712936" lon="-73.924259" />
+    <trkpt lat="41.712862" lon="-73.924313" />
+    <trkpt lat="41.712009" lon="-73.926385" />
+    <trkpt lat="41.711758" lon="-73.926712" />
     <trkpt lat="41.711873" lon="-73.926567" />
     <trkpt lat="41.711843" lon="-73.926525" />
-    <trkpt lat="41.711932" lon="-73.926304" />
     <trkpt lat="41.711928" lon="-73.926265" />
     <trkpt lat="41.711528" lon="-73.926126" />
     <trkpt lat="41.711313" lon="-73.925997" />
