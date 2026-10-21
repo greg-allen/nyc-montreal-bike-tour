@@ -190,6 +190,10 @@ function renderMtaRouteMap(itineraryId) {
 
   const data = STRIP_MAP_ITINERARIES[itineraryId];
   if (!data) return;
+  if (itineraryId !== activeStripItinerary) {
+    activeStripItinerary = itineraryId;
+    activeStageFilter = 'all'; // a stage number from another itinerary may not exist here
+  }
 
   // Render Full Itinerary Linear Strip Map
   const stagesToRender = activeStageFilter === 'all' 
@@ -204,10 +208,12 @@ function renderMtaRouteMap(itineraryId) {
     // Build mini elevation profile bar
     let elevPointsHtml = '';
     if (stage.elevProfile && stage.elevProfile.length > 0) {
+      // Scale to this day's highest point (at least 250 ft, so flat days don't exaggerate small rises)
+      const maxElev = Math.max(250, ...stage.elevProfile.map(p => p.elev));
       elevPointsHtml = stage.elevProfile.map(p => `
         <div class="flex flex-col items-center text-center">
           <span class="text-[9px] font-mono font-bold text-slate-500">${p.elev} ft</span>
-          <div class="w-1.5 h-6 bg-slate-300 rounded-full my-0.5" style="height: ${Math.max(8, Math.min(32, (p.elev / 700) * 32))}px; background: #0f172a;"></div>
+          <div class="w-1.5 h-6 bg-slate-300 rounded-full my-0.5" style="height: ${Math.max(4, Math.round((p.elev / maxElev) * 32))}px; background: #0f172a;"></div>
           <span class="text-[9px] font-bold text-slate-700 max-w-[65px] truncate">${p.label}</span>
           <span class="text-[8px] font-mono text-slate-400">m.${p.mile}</span>
         </div>

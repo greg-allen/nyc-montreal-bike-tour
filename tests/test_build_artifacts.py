@@ -72,6 +72,12 @@ def test_service_worker_asset_manifest_integrity():
             missing.append(asset)
     assert not missing, f"Files listed in sw.js missing on disk: {missing}"
 
+    # Every PDF ride packet and stage PDF should also be cached for offline access
+    pdf_files = sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("pdf/*.pdf"))
+    assert len(pdf_files) >= 20, f"Expected at least 20 PDF files in pdf/, found {len(pdf_files)}"
+    uncached_pdfs = [p for p in pdf_files if p not in assets]
+    assert not uncached_pdfs, f"PDF files missing from sw.js ASSETS: {uncached_pdfs}"
+
 
 def test_js_data_files_exist_and_non_empty():
     """route_data.js and strip_map_data.js must exist and be non-empty."""

@@ -9,3 +9,4 @@ htmlcov/
 venv/
 .vscode/
 .idea/
+.claude/settings.local.json

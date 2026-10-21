@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test & Verify Build Artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install test dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Run pytest suite
+        run: pytest -v
+
+      - name: Verify generated artifacts are up to date
+        run: |
+          python3 tools/build.py
+          git diff --exit-code

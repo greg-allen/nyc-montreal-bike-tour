@@ -22,6 +22,37 @@ often — call ahead for anything you depend on.**
   It also runs `tools/split_gpx.py` on the combined files, so the per-day GPX files are always regenerated
   together with everything else (there used to be two separate per-day pipelines that could disagree).
 
+## Post-ride review (2026-10-13)
+Riders completed the 6-day itinerary Oct 4–9, 2026. Recorded GPS tracks were compared with the planned
+tracks (every point more than 60 m off the plan, both ways), and stops were found from the timestamps. Sections
+were patched with `tools/reroute.py` (each patch records why), then everything was rebuilt with `tools/build.py`.
+
+| Patch | Days | Change |
+|:---|:---|---:|
+| `les-prince`: Prince St bike lane, 6th Ave, Charlton St instead of the Mulberry/Jersey/Crosby jog and 0.9 mi of Houston St (as ridden) | 1 | −0.2 mi |
+| `brewster-arrive`: leave the Maybrook Trailway on a short gravel track to Danbury Rd, 0.4 mi from the Comfort Inn, instead of riding 3 mi past it and looping back over Dingle Ridge / Nichols Rd (as ridden) | 1 | −4.0 mi, ~−400 ft |
+| `brewster-depart`: same track back up to the trail and west on it, instead of east to Joes Hill Rd and back through Brewster streets (with a 0.1 mi Putnam Ave out-and-back) | 2 | −3.1 mi |
+| `cohoes-blvd`: stay on the Cohoes Blvd path to Saratoga St instead of looping through downtown Cohoes (ride feedback) | 3 | −0.7 mi |
+| `waterford-spur`: remove a 0.3 mi out-and-back onto the canal trail at 5th St | 3 | −0.3 mi |
+| `schuylerville-arrive`: Burgoyne St → Green St → Spring St, dropping the Clancy/University zigzag | 3 | 0.0 mi |
+| `fort-miller-river-rd`: CR-70A/CR-113 instead of a hard-to-find unnamed path, and River Rd instead of 1.5 mi of US-4 (as ridden) | 4 (and 5-day Day 3) | +0.4 mi |
+| `rouses-point-lake-st`: straight up Lake St instead of 11 side streets (as ridden) | 6-day Day 6 | −1.1 mi |
+
+The gravel access track at Brewster and the north end of the Cohoes Blvd path are not connected to the road
+network in OpenStreetMap, so those pieces are drawn by hand from OSM geometry and the recorded GPS track.
+
+New lunch stops from the ride: **Bubby's Take Away Kitchen**, 19 W Market St, Red Hook (Day 2) and **Whitehall
+Market**, 192 Broadway, Whitehall (Day 4). Both locations match the recorded stops to within 40 m. Hours are not
+verified for either.
+
+Checked and left as planned: the parallel Wurtemburg Rd beside NY-9G on Day 2 (about 210 ft more climbing), the
+US-9/Livingston variation and southwest approach into Hudson on Day 2 (longer), the Day 3 exit from Hudson
+(breakfast detour), the Plattsburgh lakeside path on Day 5, and the Saint-Jean, Chambly,
+Saint-Hubert and Longueuil variations on Day 6 (a lunch detour and parallel one-way streets). A cue note now
+marks where to leave the Old Champlain Canal Trail at Upper Newtown Rd (easy turn to miss).
+
+New totals: 7-day 454.4 mi, 6-day 453.8 mi, 5-day 449.6 mi.
+
 ## Distances: old vs. measured
 
 | Stage | Old | Measured | Note |

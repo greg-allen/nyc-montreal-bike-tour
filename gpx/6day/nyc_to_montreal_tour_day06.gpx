@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Montréal, QC</name><desc>86.7 mi (139.5 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="44.69711" lon="-73.50240"><name>Hotel: Microtel Inn &amp; Suites by Wyndham Plattsburgh</name><desc>Mile 73.6. 554 State Route 3, Plattsburgh, NY. (518) 324-3800. On Route 3 by I-87 exit 37, about 2.5 mi west of downtown.</desc><sym>Lodging</sym></wpt>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Montréal, QC</name><desc>85.6 mi (137.8 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="44.69711" lon="-73.50240"><name>Hotel: Microtel Inn &amp; Suites by Wyndham Plattsburgh</name><desc>Mile 73.6. 554 State Route 3, Plattsburgh, NY. (518) 324-3800. On Route 3 by I-87 exit 37, about 2.5 mi west of downtown.</desc><sym>Lodging</sym></wpt>
   <wpt lat="44.69771" lon="-73.49193"><name>Hotel: Best Western Plus Plattsburgh</name><desc>Mile 73.0. 446 Route 3, Plattsburgh, NY. (518) 561-7750. On Route 3 by I-87 exit 37, about 2 mi west of downtown.</desc><sym>Lodging</sym></wpt>
   <wpt lat="44.69935" lon="-73.47864"><name>Bike: Maui North Ski, Bike &amp; Board</name><desc>Mile 72.3. 316 Cornelia St, Plattsburgh, NY. (518) 563-7245. Full-service shop on the route into town. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun 12 to 4.</desc><sym>Bike Trail</sym></wpt>
   <wpt lat="44.69672" lon="-73.44645"><name>Station: Plattsburgh</name><desc>Mile 70.8, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="45.44423" lon="-73.26440"><name>Lunch: Boulangerie du Vieux-Chambly</name><desc>Mile 65.5, 0.2 mi off route. 2403 Av. Bourgogne, Chambly, QC. +1 (450) 447-9991. Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="45.49893" lon="-73.56559"><name>Hotel: Hôtel Bonaventure Montréal</name><desc>Mile 86.7. 900 Rue de la Gauchetière O, Montréal, QC. +1 (514) 878-2332. On top of Place Bonaventure, downtown; linked to the underground city. Toll-free 1-800-267-2575. Ask about bike storage.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 58.6, 1.3 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="45.50583" lon="-73.55314"><name>Bike: Ça Roule Montréal / Montreal on Wheels</name><desc>Mile 83.8, 0.5 mi off route. 27 Rue de la Commune E, Montréal, QC. +1 (514) 866-0633. Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.99315" lon="-73.36424"><name>Food: Lakeside Coffee Roasters</name><desc>Mile 29.6. 109 Lake St, Rouses Point, NY. (518) 297-5600. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe &amp; Bakery listed in earlier drafts closed in Oct 2025.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 31.1. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
-  <wpt lat="45.30959" lon="-73.25229"><name>Food: Bistro La Trinquette</name><desc>Mile 54.8. 290 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 349-1811. Pub-bistro with a big terrace, not a crêperie. Open late daily; lunch opening time not confirmed.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 29.4, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="45.52493" lon="-73.52192"><name>Station: Longueuil–Université-de-Sherbrooke</name><desc>Mile 80.3, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Montréal, QC</name><desc>86.7 mi (139.5 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+  <wpt lat="45.44423" lon="-73.26440"><name>Lunch: Boulangerie du Vieux-Chambly</name><desc>Mile 64.4, 0.2 mi off route. 2403 Av. Bourgogne, Chambly, QC. +1 (450) 447-9991. Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="45.49893" lon="-73.56559"><name>Hotel: Hôtel Bonaventure Montréal</name><desc>Mile 85.6. 900 Rue de la Gauchetière O, Montréal, QC. +1 (514) 878-2332. On top of Place Bonaventure, downtown; linked to the underground city. Toll-free 1-800-267-2575. Ask about bike storage.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 57.5, 1.3 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="45.50583" lon="-73.55314"><name>Bike: Ça Roule Montréal / Montreal on Wheels</name><desc>Mile 82.7, 0.5 mi off route. 27 Rue de la Commune E, Montréal, QC. +1 (514) 866-0633. Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="44.99315" lon="-73.36424"><name>Food: Lakeside Coffee Roasters</name><desc>Mile 28.8. 109 Lake St, Rouses Point, NY. (518) 297-5600. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe &amp; Bakery listed in earlier drafts closed in Oct 2025.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 30.0. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
+  <wpt lat="45.30959" lon="-73.25229"><name>Food: Bistro La Trinquette</name><desc>Mile 53.7. 290 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 349-1811. Pub-bistro with a big terrace, not a crêperie. Open late daily; lunch opening time not confirmed.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 29.0, 0.3 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="45.52493" lon="-73.52192"><name>Station: Longueuil–Université-de-Sherbrooke</name><desc>Mile 79.2, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Day 6 (Friday Oct 9): Plattsburgh, NY to Montréal, QC</name><desc>85.6 mi (137.8 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="44.697238" lon="-73.502415" />
     <trkpt lat="44.697241" lon="-73.502346" />
     <trkpt lat="44.697500" lon="-73.502348" />
@@ -401,60 +401,31 @@
     <trkpt lat="44.975122" lon="-73.375099" />
     <trkpt lat="44.975162" lon="-73.373521" />
     <trkpt lat="44.975204" lon="-73.371098" />
-    <trkpt lat="44.975246" lon="-73.368674" />
-    <trkpt lat="44.975288" lon="-73.366251" />
-    <trkpt lat="44.975330" lon="-73.363828" />
+    <trkpt lat="44.975246" lon="-73.368675" />
+    <trkpt lat="44.975288" lon="-73.366253" />
+    <trkpt lat="44.975330" lon="-73.363830" />
     <trkpt lat="44.975928" lon="-73.363608" />
     <trkpt lat="44.976624" lon="-73.363471" />
     <trkpt lat="44.978209" lon="-73.363359" />
     <trkpt lat="44.979794" lon="-73.363247" />
-    <trkpt lat="44.979878" lon="-73.365130" />
-    <trkpt lat="44.979960" lon="-73.365168" />
-    <trkpt lat="44.980270" lon="-73.365181" />
-    <trkpt lat="44.980240" lon="-73.367603" />
-    <trkpt lat="44.980211" lon="-73.370024" />
-    <trkpt lat="44.980244" lon="-73.370097" />
-    <trkpt lat="44.980391" lon="-73.370141" />
-    <trkpt lat="44.981946" lon="-73.370218" />
-    <trkpt lat="44.982047" lon="-73.370283" />
-    <trkpt lat="44.982072" lon="-73.370568" />
-    <trkpt lat="44.982120" lon="-73.370644" />
-    <trkpt lat="44.982214" lon="-73.370691" />
-    <trkpt lat="44.983213" lon="-73.370693" />
-    <trkpt lat="44.984212" lon="-73.370695" />
-    <trkpt lat="44.984237" lon="-73.369297" />
-    <trkpt lat="44.984262" lon="-73.367899" />
-    <trkpt lat="44.984945" lon="-73.367908" />
-    <trkpt lat="44.985260" lon="-73.367955" />
-    <trkpt lat="44.985271" lon="-73.366538" />
-    <trkpt lat="44.986771" lon="-73.366535" />
-    <trkpt lat="44.988271" lon="-73.366533" />
-    <trkpt lat="44.989771" lon="-73.366530" />
-    <trkpt lat="44.991271" lon="-73.366527" />
-    <trkpt lat="44.992543" lon="-73.366565" />
-    <trkpt lat="44.993816" lon="-73.366603" />
-    <trkpt lat="44.993862" lon="-73.364802" />
-    <trkpt lat="44.993907" lon="-73.363002" />
-    <trkpt lat="44.993994" lon="-73.362535" />
-    <trkpt lat="44.994204" lon="-73.362147" />
-    <trkpt lat="44.994451" lon="-73.361782" />
-    <trkpt lat="44.995621" lon="-73.360483" />
-    <trkpt lat="44.995952" lon="-73.360282" />
-    <trkpt lat="44.996758" lon="-73.359936" />
-    <trkpt lat="44.996781" lon="-73.360091" />
-    <trkpt lat="44.996709" lon="-73.360326" />
-    <trkpt lat="44.996709" lon="-73.360678" />
-    <trkpt lat="44.996644" lon="-73.360804" />
-    <trkpt lat="44.996504" lon="-73.360952" />
-    <trkpt lat="44.996475" lon="-73.361054" />
-    <trkpt lat="44.996478" lon="-73.361361" />
-    <trkpt lat="44.996426" lon="-73.361446" />
-    <trkpt lat="44.996294" lon="-73.361493" />
-    <trkpt lat="44.996253" lon="-73.361544" />
-    <trkpt lat="44.996206" lon="-73.362283" />
-    <trkpt lat="44.996253" lon="-73.362583" />
-    <trkpt lat="44.996172" lon="-73.363494" />
-    <trkpt lat="44.996134" lon="-73.364849" />
+    <trkpt lat="44.980813" lon="-73.363101" />
+    <trkpt lat="44.981832" lon="-73.362956" />
+    <trkpt lat="44.983003" lon="-73.362900" />
+    <trkpt lat="44.983392" lon="-73.363029" />
+    <trkpt lat="44.984023" lon="-73.363506" />
+    <trkpt lat="44.984420" lon="-73.363640" />
+    <trkpt lat="44.984732" lon="-73.363619" />
+    <trkpt lat="44.985799" lon="-73.363297" />
+    <trkpt lat="44.986614" lon="-73.363506" />
+    <trkpt lat="44.988260" lon="-73.363625" />
+    <trkpt lat="44.989906" lon="-73.363744" />
+    <trkpt lat="44.990317" lon="-73.363921" />
+    <trkpt lat="44.991082" lon="-73.364408" />
+    <trkpt lat="44.991403" lon="-73.364426" />
+    <trkpt lat="44.992184" lon="-73.364253" />
+    <trkpt lat="44.992747" lon="-73.364329" />
+    <trkpt lat="44.994419" lon="-73.364874" />
+    <trkpt lat="44.996091" lon="-73.365420" />
     <trkpt lat="44.996091" lon="-73.365420" />
     <trkpt lat="44.997573" lon="-73.365954" />
     <trkpt lat="44.999056" lon="-73.366487" />

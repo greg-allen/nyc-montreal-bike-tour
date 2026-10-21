@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 1 (Sunday Oct 4): Brooklyn to Brewster, NY</name><desc>76.1 mi (122.5 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="41.27065" lon="-73.78054"><name>Lunch: Trailside Cafe</name><desc>Mile 52.0. 1807 Commerce St, Yorktown Heights, NY. (914) 302-7331. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="41.38536" lon="-73.58489"><name>Hotel: Comfort Inn Brewster</name><desc>Mile 76.1. 7-11 Peach Lake Rd, Brewster, NY. (845) 363-0974. About 2 mi east of Brewster village near I-84. Free hot breakfast.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="41.40567" lon="-73.58022"><name>Hotel: Heidi's Inn</name><desc>Mile 71.4, 1.1 mi off route. 1270 Route 22, Brewster, NY. (845) 279-8011. Motel on NY-22, about 3 mi past the end of the Putnam Trailway (through Brewster village). Confirm bike storage when booking.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="41.27347" lon="-73.78083"><name>Bike: Yorktown Cycles</name><desc>Mile 52.3. 1899 Commerce St, Yorktown Heights, NY. (914) 245-5504. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="41.42620" lon="-73.58000"><name>Bike: Ski Haus (bikes)</name><desc>Mile 71.0, 2.3 mi off route. 1611 Route 22, Brewster, NY. (845) 279-3100. Listed Wed to Fri 11 to 6, Sat 11 to 5; closed Sun to Tue.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="41.39471" lon="-73.61970"><name>Station: Brewster station</name><desc>Mile 69.3, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="41.39435" lon="-73.61993"><name>Station: Brewster</name><desc>Mile 69.3, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 1 (Sunday Oct 4): Brooklyn to Brewster, NY</name><desc>76.1 mi (122.5 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 1 (Sunday Oct 4): Brooklyn to Brewster, NY</name><desc>71.9 mi (115.7 km), about +2,100 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="41.27065" lon="-73.78054"><name>Lunch: Trailside Cafe</name><desc>Mile 51.8. 1807 Commerce St, Yorktown Heights, NY. (914) 302-7331. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="41.38536" lon="-73.58489"><name>Hotel: Comfort Inn Brewster</name><desc>Mile 71.9. 7-11 Peach Lake Rd, Brewster, NY. (845) 363-0974. About 2 mi east of Brewster village near I-84. Free hot breakfast.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="41.40567" lon="-73.58022"><name>Hotel: Heidi's Inn</name><desc>Mile 71.1, 1.1 mi off route. 1270 Route 22, Brewster, NY. (845) 279-8011. Motel on NY-22, about 3 mi past the end of the Putnam Trailway (through Brewster village). Confirm bike storage when booking.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="41.27347" lon="-73.78083"><name>Bike: Yorktown Cycles</name><desc>Mile 52.0. 1899 Commerce St, Yorktown Heights, NY. (914) 245-5504. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="41.42620" lon="-73.58000"><name>Bike: Ski Haus (bikes)</name><desc>Mile 70.8, 2.3 mi off route. 1611 Route 22, Brewster, NY. (845) 279-3100. Listed Wed to Fri 11 to 6, Sat 11 to 5; closed Sun to Tue.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="41.39471" lon="-73.61970"><name>Station: Brewster station</name><desc>Mile 69.1, 0.2 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="41.39435" lon="-73.61993"><name>Station: Brewster</name><desc>Mile 69.1, 0.2 mi off route.</desc><sym>Train</sym></wpt>
+  <trk><name>Day 1 (Sunday Oct 4): Brooklyn to Brewster, NY</name><desc>71.9 mi (115.7 km), about +2,100 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="40.674004" lon="-73.969729" />
     <trkpt lat="40.673974" lon="-73.969720" />
     <trkpt lat="40.673852" lon="-73.969705" />
@@ -240,23 +240,22 @@
     <trkpt lat="40.721117" lon="-73.991801" />
     <trkpt lat="40.721625" lon="-73.993484" />
     <trkpt lat="40.722347" lon="-73.993216" />
-    <trkpt lat="40.722858" lon="-73.994462" />
-    <trkpt lat="40.723368" lon="-73.995708" />
-    <trkpt lat="40.724088" lon="-73.995344" />
-    <trkpt lat="40.724662" lon="-73.996301" />
-    <trkpt lat="40.725276" lon="-73.995785" />
-    <trkpt lat="40.725585" lon="-73.996993" />
-    <trkpt lat="40.726468" lon="-73.998782" />
-    <trkpt lat="40.727351" lon="-74.000571" />
-    <trkpt lat="40.728234" lon="-74.002360" />
-    <trkpt lat="40.728374" lon="-74.002849" />
-    <trkpt lat="40.728577" lon="-74.004972" />
-    <trkpt lat="40.728779" lon="-74.007095" />
-    <trkpt lat="40.728982" lon="-74.009218" />
-    <trkpt lat="40.729025" lon="-74.009913" />
+    <trkpt lat="40.722976" lon="-73.994739" />
+    <trkpt lat="40.723606" lon="-73.996262" />
+    <trkpt lat="40.724235" lon="-73.997785" />
+    <trkpt lat="40.724608" lon="-73.998537" />
+    <trkpt lat="40.724589" lon="-73.998622" />
+    <trkpt lat="40.724621" lon="-73.998685" />
+    <trkpt lat="40.724664" lon="-73.998649" />
+    <trkpt lat="40.725415" lon="-74.000166" />
+    <trkpt lat="40.726165" lon="-74.001684" />
+    <trkpt lat="40.726916" lon="-74.003201" />
+    <trkpt lat="40.727100" lon="-74.005081" />
+    <trkpt lat="40.727285" lon="-74.006962" />
+    <trkpt lat="40.727469" lon="-74.008842" />
+    <trkpt lat="40.728919" lon="-74.008591" />
     <trkpt lat="40.729148" lon="-74.010945" />
-    <trkpt lat="40.728036" lon="-74.011019" />
-    <trkpt lat="40.729339" lon="-74.010930" />
+    <trkpt lat="40.729659" lon="-74.010858" />
     <trkpt lat="40.729659" lon="-74.010858" />
     <trkpt lat="40.731406" lon="-74.010688" />
     <trkpt lat="40.731991" lon="-74.010677" />
@@ -1499,85 +1498,11 @@
     <trkpt lat="41.389942" lon="-73.589810" />
     <trkpt lat="41.389453" lon="-73.588933" />
     <trkpt lat="41.389151" lon="-73.588228" />
-    <trkpt lat="41.388995" lon="-73.587735" />
-    <trkpt lat="41.388821" lon="-73.586996" />
-    <trkpt lat="41.388592" lon="-73.585131" />
-    <trkpt lat="41.388364" lon="-73.583266" />
-    <trkpt lat="41.388135" lon="-73.581401" />
-    <trkpt lat="41.387892" lon="-73.579337" />
-    <trkpt lat="41.387650" lon="-73.577273" />
-    <trkpt lat="41.387467" lon="-73.575579" />
-    <trkpt lat="41.387284" lon="-73.573884" />
-    <trkpt lat="41.387263" lon="-73.573363" />
-    <trkpt lat="41.387272" lon="-73.572886" />
-    <trkpt lat="41.387328" lon="-73.572264" />
-    <trkpt lat="41.387612" lon="-73.570299" />
-    <trkpt lat="41.387897" lon="-73.568334" />
-    <trkpt lat="41.388181" lon="-73.566369" />
-    <trkpt lat="41.388320" lon="-73.565104" />
-    <trkpt lat="41.388007" lon="-73.565032" />
-    <trkpt lat="41.387656" lon="-73.564765" />
-    <trkpt lat="41.387339" lon="-73.564615" />
-    <trkpt lat="41.387113" lon="-73.564556" />
-    <trkpt lat="41.387191" lon="-73.563671" />
-    <trkpt lat="41.387213" lon="-73.562805" />
-    <trkpt lat="41.387160" lon="-73.561250" />
-    <trkpt lat="41.387107" lon="-73.559694" />
-    <trkpt lat="41.386786" lon="-73.559678" />
-    <trkpt lat="41.386050" lon="-73.559513" />
-    <trkpt lat="41.384466" lon="-73.559358" />
-    <trkpt lat="41.383597" lon="-73.559333" />
-    <trkpt lat="41.383015" lon="-73.559240" />
-    <trkpt lat="41.382360" lon="-73.559358" />
-    <trkpt lat="41.382264" lon="-73.559339" />
-    <trkpt lat="41.381152" lon="-73.558765" />
-    <trkpt lat="41.380662" lon="-73.558404" />
-    <trkpt lat="41.379999" lon="-73.557802" />
-    <trkpt lat="41.379774" lon="-73.557705" />
-    <trkpt lat="41.379385" lon="-73.557681" />
-    <trkpt lat="41.379044" lon="-73.557746" />
-    <trkpt lat="41.378754" lon="-73.557948" />
-    <trkpt lat="41.377932" lon="-73.559077" />
-    <trkpt lat="41.377627" lon="-73.559400" />
-    <trkpt lat="41.377434" lon="-73.559519" />
-    <trkpt lat="41.376405" lon="-73.559717" />
-    <trkpt lat="41.375799" lon="-73.560044" />
-    <trkpt lat="41.375392" lon="-73.560174" />
-    <trkpt lat="41.375146" lon="-73.560179" />
-    <trkpt lat="41.374628" lon="-73.560032" />
-    <trkpt lat="41.374559" lon="-73.560226" />
-    <trkpt lat="41.374532" lon="-73.560419" />
-    <trkpt lat="41.374638" lon="-73.561017" />
-    <trkpt lat="41.374798" lon="-73.561333" />
-    <trkpt lat="41.375690" lon="-73.562139" />
-    <trkpt lat="41.376824" lon="-73.562990" />
-    <trkpt lat="41.377959" lon="-73.563841" />
-    <trkpt lat="41.378351" lon="-73.564188" />
-    <trkpt lat="41.378697" lon="-73.564560" />
-    <trkpt lat="41.379445" lon="-73.565508" />
-    <trkpt lat="41.380443" lon="-73.566867" />
-    <trkpt lat="41.381440" lon="-73.568225" />
-    <trkpt lat="41.382438" lon="-73.569584" />
-    <trkpt lat="41.382669" lon="-73.569967" />
-    <trkpt lat="41.382827" lon="-73.570383" />
-    <trkpt lat="41.382915" lon="-73.570864" />
-    <trkpt lat="41.382921" lon="-73.571361" />
-    <trkpt lat="41.382658" lon="-73.573227" />
-    <trkpt lat="41.382394" lon="-73.575093" />
-    <trkpt lat="41.382131" lon="-73.576959" />
-    <trkpt lat="41.382000" lon="-73.577493" />
-    <trkpt lat="41.381857" lon="-73.577850" />
-    <trkpt lat="41.380911" lon="-73.579521" />
-    <trkpt lat="41.380793" lon="-73.579840" />
-    <trkpt lat="41.380709" lon="-73.580347" />
-    <trkpt lat="41.380723" lon="-73.581376" />
-    <trkpt lat="41.381514" lon="-73.581750" />
-    <trkpt lat="41.382844" lon="-73.582237" />
-    <trkpt lat="41.384173" lon="-73.582723" />
-    <trkpt lat="41.385503" lon="-73.583210" />
-    <trkpt lat="41.385886" lon="-73.583415" />
-    <trkpt lat="41.386052" lon="-73.583558" />
-    <trkpt lat="41.386277" lon="-73.583856" />
+    <trkpt lat="41.389141" lon="-73.588198" />
+    <trkpt lat="41.388660" lon="-73.589120" />
+    <trkpt lat="41.387544" lon="-73.587341" />
+    <trkpt lat="41.387236" lon="-73.586751" />
+    <trkpt lat="41.386936" lon="-73.585967" />
     <trkpt lat="41.386408" lon="-73.584136" />
   </trkseg></trk>
   </gpx>

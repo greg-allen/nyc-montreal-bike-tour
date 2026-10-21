@@ -41,12 +41,21 @@
         <button id="copy-doc-btn" onclick="copyGuideForGoogleDoc()" class="text-xs font-semibold px-3.5 py-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 transition-all flex items-center gap-1.5 shadow-sm">
           <span>📋 Copy for Google Docs</span>
         </button>
-        <button onclick="window.print()" class="text-xs font-semibold px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-all flex items-center gap-1.5">
+        <a id="print-pdf-link" href="pdf/nyc_to_montreal_6day_strip_maps.pdf" target="_blank" rel="noopener" class="text-xs font-semibold px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-all flex items-center gap-1.5" title="Print-ready US Letter PDF: strip map and full cue sheet for every day">
           <span>🖨️ Print / PDF</span>
-        </button>
+        </a>
       </div>
     </div>
   </header>
+
+  <!-- Currency notice: the guide was written for, and corrected after, one ride -->
+  <div class="currency-banner" role="note">
+    <strong>Ridden October 4&ndash;9, 2026</strong> on the 6-day plan, and the routes were corrected from the riders' GPS tracks.
+    Hours, phone numbers, ferry and train schedules were checked in September&ndash;October 2026 and change often, especially off-season: call ahead before relying on them.
+    <div class="currency-banner-pointer">
+      ⚠️ <a href="#logistics" onclick="openGuideTab('logistics'); return false;">Read the Advisories tab before you ride</a>: Amtrak won't take an unboxed bike out of Montréal, and the border crossing is open 8 AM to 8 PM only.
+    </div>
+  </div>
 
   <!-- Main Content -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
@@ -56,37 +65,37 @@
       <!-- Left: Itinerary Selector -->
       <div class="flex flex-wrap items-center gap-2">
         <span class="text-xs font-bold text-slate-400 uppercase tracking-wider pl-1 mr-1">Itinerary:</span>
-        <button id="tab-6day" onclick="handleItinerarySelect('6day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-blue-400" title="Classic 6-Day Tour (~74 mi/day)">
+        <button id="tab-6day" aria-pressed="true" onclick="handleItinerarySelect('6day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-blue-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-blue-400" title="Classic 6-Day Tour (~74 mi/day)">
           <span class="w-4 h-4 rounded-full bg-white/20 text-[9px] flex items-center justify-center font-mono font-black">6D</span>
           <span>6-Day Classic</span>
           <span id="tab-avg-6day" class="text-[10px] opacity-80"></span>
         </button>
-        <button id="tab-5day" onclick="handleItinerarySelect('5day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5" title="Fast 5-Day Tour (~85 mi/day)">
+        <button id="tab-5day" aria-pressed="false" onclick="handleItinerarySelect('5day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5" title="Fast 5-Day Tour (~85 mi/day)">
           <span class="w-4 h-4 rounded-full bg-amber-500 text-slate-950 text-[9px] flex items-center justify-center font-mono font-black">5D</span>
           <span>5-Day Fast</span>
           <span id="tab-avg-5day" class="text-[10px] opacity-80"></span>
         </button>
-        <button id="tab-7day" onclick="handleItinerarySelect('7day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5" title="Gentler 7-Day Tour (~64 mi/day)">
+        <button id="tab-7day" aria-pressed="false" onclick="handleItinerarySelect('7day')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5" title="Gentler 7-Day Tour (~64 mi/day)">
           <span class="w-4 h-4 rounded-full bg-rose-600 text-white text-[9px] flex items-center justify-center font-mono font-black">7D</span>
           <span>7-Day Gentler</span>
           <span id="tab-avg-7day" class="text-[10px] opacity-80"></span>
         </button>
-        <button id="tab-vermont" onclick="handleItinerarySelect('vermont')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-emerald-800 border border-emerald-200 hover:border-emerald-400 transition-all flex items-center gap-1.5" title="Vermont Causeway & Champlain Islands Upgrade Variant">
+        <button id="tab-vermont" aria-pressed="false" onclick="handleItinerarySelect('vermont')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-emerald-800 border border-emerald-200 hover:border-emerald-400 transition-all flex items-center gap-1.5" title="Vermont Causeway & Champlain Islands Upgrade Variant">
           <span class="w-4 h-4 rounded-full bg-emerald-600 text-white text-[9px] flex items-center justify-center font-mono font-black">VT</span>
           <span>Vermont Variant</span>
           <span class="text-[10px] opacity-80">(Islands)</span>
         </button>
-        <button id="tab-compare" onclick="handleItinerarySelect('compare')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5" title="Compare 6-Day vs 5-Day vs 7-Day Side-by-Side">
+        <button id="tab-compare" aria-pressed="false" onclick="handleItinerarySelect('compare')" class="px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all flex items-center gap-1.5" title="Compare 6-Day vs 5-Day vs 7-Day Side-by-Side">
           <span>⚖️ Compare Tours</span>
         </button>
       </div>
 
       <!-- Right: View Mode Segmented Control -->
       <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 self-start xl:self-auto shrink-0">
-        <button id="view-mode-guide" onclick="setAppViewMode('guide')" class="px-3.5 py-1.5 text-xs font-black rounded-lg bg-blue-600 text-white shadow-xs transition-all flex items-center gap-1.5" title="Interactive map, live weather forecasts, packing list & hotel guide">
+        <button id="view-mode-guide" aria-pressed="true" onclick="setAppViewMode('guide')" class="px-3.5 py-1.5 text-xs font-black rounded-lg bg-blue-600 text-white shadow-xs transition-all flex items-center gap-1.5" title="Interactive map, live weather forecasts, packing list & hotel guide">
           <span>📊 Interactive Guide</span>
         </button>
-        <button id="view-mode-strip" onclick="setAppViewMode('strip')" class="px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1.5" title="Turn-by-turn linear corridor strip map with single black line and print cues">
+        <button id="view-mode-strip" aria-pressed="false" onclick="setAppViewMode('strip')" class="px-3.5 py-1.5 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition-all flex items-center gap-1.5" title="Turn-by-turn linear corridor strip map with single black line and print cues">
           <span>📏 Linear Strip Map</span>
           <span class="text-[9px] bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded font-extrabold uppercase">Print</span>
         </button>
@@ -142,60 +151,15 @@
       </div>
     </div>
 
-    <!-- Live Weather & Cycling Risk Matrix Section -->
-    <section id="weather-section" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-100 pb-3">
-        <div>
-          <div class="flex flex-wrap items-center gap-2">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-1.5">
-              <span>🌤️ Live Tour Weather &amp; Cycling Risk Tracker</span>
-            </h2>
-            <span id="weather-live-indicator" class="badge-tag bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold flex items-center gap-1 text-[11px]">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Live ECMWF/NOAA Forecast
-            </span>
-          </div>
-          <p class="text-xs text-slate-500 mt-1">
-            Real-time stage forecasts for your tour schedule. Evaluates temperature exposure, rain probability, wind resistance (headwind vs tailwind), and kit advice.
-          </p>
-        </div>
+    <!-- Guide tabs: the dashboard is split into panels so the page isn't one long scroll -->
+    <nav class="guide-tabs no-print" role="tablist" aria-label="Guide sections">
+      <button id="guide-tab-btn-route" class="guide-tab is-active" role="tab" aria-selected="true" aria-controls="guide-tab-route" onclick="showGuideTab('route')">🗺️ Route &amp; Days</button>
+      <button id="guide-tab-btn-weather" class="guide-tab" role="tab" aria-selected="false" aria-controls="guide-tab-weather" onclick="showGuideTab('weather')">🌦️ Weather</button>
+      <button id="guide-tab-btn-logistics" class="guide-tab" role="tab" aria-selected="false" aria-controls="guide-tab-logistics" onclick="showGuideTab('logistics')">⚠️ Advisories, Rail &amp; Border</button>
+      <button id="guide-tab-btn-gear" class="guide-tab" role="tab" aria-selected="false" aria-controls="guide-tab-gear" onclick="showGuideTab('gear')">🔧 Bike Shops &amp; Gear</button>
+    </nav>
 
-        <!-- Departure Date Control -->
-        <div class="flex flex-wrap items-center gap-2 bg-slate-50 p-2 rounded-xl border border-slate-200 shrink-0">
-          <label for="tour-start-date" class="text-xs font-bold text-slate-700 flex items-center gap-1">
-            <span>🗓️ Departure:</span>
-          </label>
-          <input type="date" id="tour-start-date" value="2026-10-04" onchange="updateTourStartDate(this.value)" class="text-xs font-bold bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-slate-900 shadow-xs focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
-          <button onclick="refreshWeatherData()" class="text-xs bg-white hover:bg-slate-100 text-slate-700 font-semibold px-2.5 py-1 rounded-lg border border-slate-200 transition-all flex items-center gap-1 shadow-2xs" title="Refresh Live Weather">
-            <span>🔄</span> Refresh
-          </button>
-        </div>
-      </div>
-
-      <!-- Weather Overview Summary Bar -->
-      <div id="weather-trip-summary" class="bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-100 rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-        <div class="flex items-center gap-2 text-slate-700">
-          <span class="text-lg">⏳</span>
-          <span id="weather-summary-text">Loading live forecast for Sunday, Oct 4 departure...</span>
-        </div>
-      </div>
-
-      <!-- Stage Weather Cards Grid -->
-      <div id="weather-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
-        <!-- Rendered dynamically by app.js for each stage -->
-      </div>
-
-      <!-- Weather Risk Score Legend -->
-      <div class="flex flex-wrap items-center justify-between text-[11px] text-slate-500 pt-1 border-t border-slate-100">
-        <div class="flex flex-wrap items-center gap-3">
-          <span class="font-bold text-slate-700">Risk Matrix:</span>
-          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> 1–3 Low Risk (Optimal)</span>
-          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> 4–6 Moderate (Advisory / Layers)</span>
-          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500"></span> 7–10 High (Caution / Rain Shell)</span>
-        </div>
-        <span class="text-slate-400">Powered by Open-Meteo &bull; Zero API Key Needed</span>
-      </div>
-    </section>
-
+    <div id="guide-tab-route" class="guide-panel space-y-6" role="tabpanel" aria-labelledby="guide-tab-btn-route">
     <!-- Map & Controls Section -->
     <section id="map-section" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
       <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
@@ -258,7 +222,7 @@
 
 
       <!-- Map Container with Explicit Height -->
-      <div id="map" style="height: 520px; min-height: 520px; width: 100%; border-radius: 1rem;" class="shadow-inner border border-slate-200"></div>
+      <div id="map" class="shadow-inner border border-slate-200"></div>
 
       <!-- Map Legend -->
       <div id="map-legend-normal" class="flex flex-wrap items-center justify-between text-xs text-slate-500 pt-1">
@@ -281,6 +245,7 @@
         <div class="flex flex-wrap items-center gap-4">
           <span class="flex items-center gap-1.5 font-bold text-blue-700"><span class="w-6 h-1.5 rounded-full bg-blue-600 inline-block"></span> 🗓️ 6-Day Tour (Solid Blue)</span>
           <span class="flex items-center gap-1.5 font-bold text-amber-700"><span class="w-6 h-1.5 rounded-full bg-amber-500 inline-block" style="border-top: 2px dashed #b45309;"></span> ⚡ 5-Day Fast Tour (Dashed Amber)</span>
+          <span class="flex items-center gap-1.5 font-bold text-rose-700"><span class="w-6 h-1.5 rounded-full inline-block" style="background:#e11d48;"></span> 7-Day Tour (Rose: Days 6&ndash;7; Days 1&ndash;5 follow the 6-Day route)</span>
           <span class="flex items-center gap-1 font-semibold text-slate-700">🏨 Blue Pins: 6-Day Stops</span>
           <span class="flex items-center gap-1 font-semibold text-slate-700">🏨 Amber Pins: 5-Day Stops</span>
           <span class="flex items-center gap-1 font-bold text-amber-600"><span>⚡</span> Accelerate Checkpoints</span>
@@ -526,6 +491,148 @@
       </details>
     </section>
 
+    <!-- Compare Routes Section (Visible when Compare Mode is active) -->
+    <section id="compare-section" class="hidden space-y-6">
+      <!-- Section Header -->
+      <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-6 text-white shadow-lg space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase tracking-wider mb-2">
+              ⚖️ Side-by-Side Tour Comparison
+            </span>
+            <h2 class="text-2xl font-black tracking-tight">7-Day vs 6-Day vs 5-Day</h2>
+            <p class="text-sm text-slate-300 mt-1 max-w-2xl">
+              All three follow the same Empire State Trail and Lake Champlain corridor into Montréal. Distances below are measured along the routed GPX tracks.
+            </p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0 flex-wrap">
+            <button onclick="switchTourMode('7day')" class="px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+              <span>🗓️ Choose 7-Day</span>
+            </button>
+            <button onclick="switchTourMode('6day')" class="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+              <span>🗓️ Choose 6-Day</span>
+            </button>
+            <button onclick="switchTourMode('5day')" class="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+              <span>⚡ Choose 5-Day</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison cards and day-by-day table are rendered from route_data.js by renderCompareSection() in app.js -->
+      <div id="compare-generated"></div>
+    </section>
+
+    <!-- Day-by-Day Itineraries -->
+    <section id="daily-itineraries-section" class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">📅 Daily Stages &amp; Cue Sheets</h2>
+          <p class="text-xs text-slate-500">Each stage includes curated lunch spots, overnight hotels with phone numbers, bike shops, and ⚡ Accelerate Checkpoints.</p>
+        </div>
+      </div>
+
+      <!-- Accordion container rendered by app.js -->
+      <div id="days-container" class="space-y-4"></div>
+    </section>
+
+    <!-- Dedicated Vermont Upgrade Variant Section -->
+    <section id="vermont-upgrade-section" class="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 rounded-2xl p-6 text-white shadow-lg space-y-5 border border-emerald-700/40">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-emerald-800/50 pb-4">
+        <div>
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 uppercase tracking-wider">
+              🌲 Premium Route Variant
+            </span>
+            <span class="text-xs text-emerald-400/80 font-medium">Alternative to Days 5 &amp; 6</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <span>⛵ The Vermont Champlain Islands Upgrade</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl leading-relaxed">
+            From Essex, NY take the car ferry to Charlotte, VT, overnight in Burlington, then ride the Island Line causeway (with the seasonal bike ferry) and the Champlain Islands back to Rouses Point and into Quebec. Designed for the 7-day tour: the bike ferry runs only Fri to Sun in October.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 shrink-0">
+          <button onclick="toggleVermontOverlay()" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs shadow-md transition-all flex items-center gap-1.5">
+            <span>🗺️ Toggle Map Overlay</span>
+          </button>
+          <a href="nyc_to_montreal_vermont_upgrade.gpx" download="nyc_to_montreal_vermont_upgrade.gpx" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-700/60 font-bold text-xs transition-all flex items-center gap-1.5">
+            <span>📥 VT GPX</span>
+          </a>
+          <a href="nyc_to_montreal_vermont_upgrade.kml" download="nyc_to_montreal_vermont_upgrade.kml" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs transition-all flex items-center gap-1.5">
+            <span>🗺️ VT KML</span>
+          </a>
+          <a href="nyc_to_montreal_vermont_upgrade.md" target="_blank" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs transition-all flex items-center gap-1.5">
+            <span>📖 Master Guide</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Rendered from VERMONT_UPGRADE_DATA by renderVermontSection() in app.js -->
+      <div id="vermont-generated" class="space-y-4"></div>
+    </section>
+
+    </div> <!-- End guide-tab-route -->
+
+    <div id="guide-tab-weather" class="guide-panel space-y-6" role="tabpanel" aria-labelledby="guide-tab-btn-weather" hidden>
+    <!-- Live Weather & Cycling Risk Matrix Section -->
+    <section id="weather-section" class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-100 pb-3">
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-1.5">
+              <span>🌤️ Live Tour Weather &amp; Cycling Risk Tracker</span>
+            </h2>
+            <span id="weather-live-indicator" class="badge-tag bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold flex items-center gap-1 text-[11px]">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Live ECMWF/NOAA Forecast
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">
+            Real-time stage forecasts for your tour schedule. Evaluates temperature exposure, rain probability, wind resistance (headwind vs tailwind), and kit advice.
+          </p>
+        </div>
+
+        <!-- Departure Date Control -->
+        <div class="flex flex-wrap items-center gap-2 bg-slate-50 p-2 rounded-xl border border-slate-200 shrink-0">
+          <label for="tour-start-date" class="text-xs font-bold text-slate-700 flex items-center gap-1">
+            <span>🗓️ Departure:</span>
+          </label>
+          <input type="date" id="tour-start-date" value="2026-10-04" onchange="updateTourStartDate(this.value)" class="text-xs font-bold bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-slate-900 shadow-xs focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
+          <button onclick="refreshWeatherData()" class="text-xs bg-white hover:bg-slate-100 text-slate-700 font-semibold px-2.5 py-1 rounded-lg border border-slate-200 transition-all flex items-center gap-1 shadow-2xs" title="Refresh Live Weather">
+            <span>🔄</span> Refresh
+          </button>
+        </div>
+      </div>
+
+      <!-- Weather Overview Summary Bar -->
+      <div id="weather-trip-summary" class="bg-gradient-to-r from-blue-50 via-sky-50 to-indigo-50 border border-blue-100 rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div class="flex items-center gap-2 text-slate-700">
+          <span class="text-lg">⏳</span>
+          <span id="weather-summary-text">Loading live forecast for Sunday, Oct 4 departure...</span>
+        </div>
+      </div>
+
+      <!-- Stage Weather Cards Grid -->
+      <div id="weather-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
+        <!-- Rendered dynamically by app.js for each stage -->
+      </div>
+
+      <!-- Weather Risk Score Legend -->
+      <div class="flex flex-wrap items-center justify-between text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="font-bold text-slate-700">Risk Matrix:</span>
+          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> 1–3 Low Risk (Optimal)</span>
+          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> 4–6 Moderate (Advisory / Layers)</span>
+          <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-red-500"></span> 7–10 High (Caution / Rain Shell)</span>
+        </div>
+        <span class="text-slate-400">Powered by Open-Meteo &bull; Zero API Key Needed</span>
+      </div>
+    </section>
+
+    </div>
+
+    <div id="guide-tab-logistics" class="guide-panel space-y-6" role="tabpanel" aria-labelledby="guide-tab-btn-logistics" hidden>
     <!-- Critical Tour Advisories & Real-World Gotchas (Red Team Audit) -->
     <section class="bg-amber-50/70 border-2 border-amber-300 rounded-2xl p-5 space-y-4 shadow-sm">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3">
@@ -628,88 +735,54 @@
       </div>
     </section>
 
-    <!-- Compare Routes Section (Visible when Compare Mode is active) -->
-    <section id="compare-section" class="hidden space-y-6">
-      <!-- Section Header -->
-      <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-6 text-white shadow-lg space-y-3">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase tracking-wider mb-2">
-              ⚖️ Side-by-Side Tour Comparison
-            </span>
-            <h2 class="text-2xl font-black tracking-tight">7-Day vs 6-Day vs 5-Day</h2>
-            <p class="text-sm text-slate-300 mt-1 max-w-2xl">
-              All three follow the same Empire State Trail and Lake Champlain corridor into Montréal. Distances below are measured along the routed GPX tracks.
-            </p>
-          </div>
-          <div class="flex items-center gap-2 shrink-0 flex-wrap">
-            <button onclick="switchTourMode('7day')" class="px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
-              <span>🗓️ Choose 7-Day</span>
-            </button>
-            <button onclick="switchTourMode('6day')" class="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
-              <span>🗓️ Choose 6-Day</span>
-            </button>
-            <button onclick="switchTourMode('5day')" class="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
-              <span>⚡ Choose 5-Day</span>
-            </button>
-          </div>
+    <!-- Contingency & Rail Bailouts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <div class="flex items-center gap-2 text-sky-800">
+          <span class="text-xl">🚆</span>
+          <h3 class="text-base font-bold text-slate-900">The "Iron Lifeline" Rail Bailout System</h3>
         </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Passenger rail runs near most of the route, but <strong>bikes can only ride it as far as Rouses Point, NY</strong>:
+        </p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+            <strong class="text-slate-900">NYC to Brewster &amp; Poughkeepsie (Metro-North):</strong> Harlem and Hudson lines. No bikes on weekday rush-hour trains or holidays; up to 8 bikes per train on weekends.
+          </li>
+          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+            <strong class="text-slate-900">Hudson Valley to Albany (Amtrak Empire Service):</strong> Poughkeepsie, Rhinecliff, Hudson and Albany-Rensselaer. Carry-on bikes need a $20 reservation.
+          </li>
+          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+            <strong class="text-slate-900">Albany to Rouses Point (Amtrak Adirondack #68/69):</strong> Stops include Fort Edward, Whitehall, Ticonderoga, Port Henry, Westport and Plattsburgh. Carry-on bikes (reservation required) only between New York and Rouses Point: <strong>you cannot board with an unboxed bike in Montréal</strong>. Southbound train 68 leaves Rouses Point at 2:15 PM; no Monday service north of Saratoga.
+          </li>
+        </ul>
       </div>
 
-      <!-- Comparison cards and day-by-day table are rendered from route_data.js by renderCompareSection() in app.js -->
-      <div id="compare-generated"></div>
-    </section>
-
-    <!-- Day-by-Day Itineraries -->
-    <section id="daily-itineraries-section" class="space-y-4">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div>
-          <h2 class="text-xl font-bold text-slate-900">📅 Daily Stages &amp; Cue Sheets</h2>
-          <p class="text-xs text-slate-500">Each stage includes curated lunch spots, overnight hotels with phone numbers, bike shops, and ⚡ Accelerate Checkpoints.</p>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <div class="flex items-center gap-2 text-emerald-800">
+          <span class="text-xl">🇨🇦</span>
+          <h3 class="text-base font-bold text-slate-900">Canada Border Crossing Protocol</h3>
         </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Every itinerary crosses at <strong>Rouses Point, NY / Lacolle, QC on US-11 / QC-223</strong> (the "Lacolle 223" crossing), <strong>open 8 AM to 8 PM daily on both sides</strong>, not 24 hours:
+        </p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="p-2 rounded-lg bg-emerald-50 border border-emerald-100">
+            <strong>Bring:</strong> a passport, passport card, Enhanced Driver's License or NEXUS card.
+          </li>
+          <li class="p-2 rounded-lg bg-emerald-50 border border-emerald-100">
+            <strong>On a bike:</strong> stop at the car inspection booth like any vehicle; take off your sunglasses when you talk to the officer.
+          </li>
+          <li class="p-2 rounded-lg bg-rose-50 border border-rose-100 text-rose-800">
+            <strong>Don't bring:</strong> cannabis in any form, in either direction, even where it's legal; pepper spray or other self-defence sprays (prohibited weapons in Canada). <strong>Declare any food</strong> you're carrying.
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <!-- Accordion container rendered by app.js -->
-      <div id="days-container" class="space-y-4"></div>
-    </section>
+    </div>
 
-    <!-- Dedicated Vermont Upgrade Variant Section -->
-    <section id="vermont-upgrade-section" class="bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 rounded-2xl p-6 text-white shadow-lg space-y-5 border border-emerald-700/40">
-      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-emerald-800/50 pb-4">
-        <div>
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 uppercase tracking-wider">
-              🌲 Premium Route Variant
-            </span>
-            <span class="text-xs text-emerald-400/80 font-medium">Alternative to Days 5 &amp; 6</span>
-          </div>
-          <h2 class="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>⛵ The Vermont Champlain Islands Upgrade</span>
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl leading-relaxed">
-            From Essex, NY take the car ferry to Charlotte, VT, overnight in Burlington, then ride the Island Line causeway (with the seasonal bike ferry) and the Champlain Islands back to Rouses Point and into Quebec. Designed for the 7-day tour: the bike ferry runs only Fri to Sun in October.
-          </p>
-        </div>
-        <div class="flex flex-wrap items-center gap-2 shrink-0">
-          <button onclick="toggleVermontOverlay()" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs shadow-md transition-all flex items-center gap-1.5">
-            <span>🗺️ Toggle Map Overlay</span>
-          </button>
-          <a href="nyc_to_montreal_vermont_upgrade.gpx" download="nyc_to_montreal_vermont_upgrade.gpx" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-700/60 font-bold text-xs transition-all flex items-center gap-1.5">
-            <span>📥 VT GPX</span>
-          </a>
-          <a href="nyc_to_montreal_vermont_upgrade.kml" download="nyc_to_montreal_vermont_upgrade.kml" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs transition-all flex items-center gap-1.5">
-            <span>🗺️ VT KML</span>
-          </a>
-          <a href="nyc_to_montreal_vermont_upgrade.md" target="_blank" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs transition-all flex items-center gap-1.5">
-            <span>📖 Master Guide</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Rendered from VERMONT_UPGRADE_DATA by renderVermontSection() in app.js -->
-      <div id="vermont-generated" class="space-y-4"></div>
-    </section>
-
+    <div id="guide-tab-gear" class="guide-panel space-y-6" role="tabpanel" aria-labelledby="guide-tab-btn-gear" hidden>
     <!-- Master Bike Shop Directory -->
     <section class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
       <div>
@@ -723,7 +796,7 @@
         <table class="w-full text-left text-xs border-collapse">
           <thead>
             <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold uppercase tracking-wider">
-              <th class="py-2.5 px-4">Stage / Day</th>
+              <th class="py-2.5 px-4">Shop (day)</th>
               <th class="py-2.5 px-4">Address / Location</th>
               <th class="py-2.5 px-4">Phone Number</th>
               <th class="py-2.5 px-4">Specialty & Notes</th>
@@ -735,51 +808,6 @@
         </table>
       </div>
     </section>
-
-    <!-- Contingency & Rail Bailouts Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-        <div class="flex items-center gap-2 text-sky-800">
-          <span class="text-xl">🚆</span>
-          <h3 class="text-base font-bold text-slate-900">The "Iron Lifeline" Rail Bailout System</h3>
-        </div>
-        <p class="text-xs text-slate-600 leading-relaxed">
-          The NYC-to-Montreal corridor features uninterrupted passenger rail parallel to the entire ride:
-        </p>
-        <ul class="text-xs text-slate-700 space-y-2">
-          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
-            <strong class="text-slate-900">NYC to Poughkeepsie (Metro-North):</strong> Harlem and Hudson lines allow standard unboxed bicycles without reservation outside peak hours.
-          </li>
-          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
-            <strong class="text-slate-900">Hudson Valley to Albany (Amtrak Empire Service):</strong> Connects Rhinecliff, Hudson, and Albany-Rensselaer. Roll-on bike racks available.
-          </li>
-          <li class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
-            <strong class="text-slate-900">Albany to Montréal (Amtrak Adirondack #68/69):</strong> Daily direct service between Penn Station and Montreal Gare Centrale with roll-on bicycle service!
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-        <div class="flex items-center gap-2 text-emerald-800">
-          <span class="text-xl">🇨🇦</span>
-          <h3 class="text-base font-bold text-slate-900">Canada Border Crossing Protocol</h3>
-        </div>
-        <p class="text-xs text-slate-600 leading-relaxed">
-          You will cross at <strong>Rouses Point, NY / Saint-Bernard-de-Lacolle, QC (Route 221 / QC-223)</strong>:
-        </p>
-        <ul class="text-xs text-slate-700 space-y-2">
-          <li class="p-2 rounded-lg bg-emerald-50 border border-emerald-100">
-            <strong>Required:</strong> Valid Passport (min 6 months validity) or Enhanced Driver's License.
-          </li>
-          <li class="p-2 rounded-lg bg-emerald-50 border border-emerald-100">
-            <strong>Bicycle Procedure:</strong> Stop behind the white line at the primary vehicle inspection booth; remove helmet and sunglasses when speaking to the CBSA officer.
-          </li>
-          <li class="p-2 rounded-lg bg-rose-50 border border-rose-100 text-rose-800">
-            <strong>Strictly Prohibited:</strong> Bear spray / pepper spray (felony import into Canada), cannabis/THC products (strictly illegal across international borders), and fresh fruits/produce.
-          </li>
-        </ul>
-      </div>
-    </div>
 
     <!-- Interactive Packing Checklist -->
     <section class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
@@ -799,6 +827,8 @@
         <!-- Rendered by app.js -->
       </div>
     </section>
+
+    </div>
 
     </div> <!-- End tour-dashboard-view -->
 

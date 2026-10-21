@@ -4,9 +4,9 @@ Hotel-to-hotel tour from New York City (Brooklyn on the 6- and 7-day plans) to M
 
 | Itinerary | Days | Total | Climb (est.) | Daily miles |
 |:---|:---|:---|:---|:---|
-| 7-Day Tour (Sunday to Saturday) | 7 | 462.3 mi | +12,300 ft | 76.1, 83.4, 78.7, 64.3, 73.6, 53.2, 33.0 |
-| 6-Day Tour (Sunday to Friday) | 6 | 462.8 mi | +12,300 ft | 76.1, 83.4, 78.7, 64.3, 73.6, 86.7 |
-| 5-Day Fast Tour | 5 | 450.3 mi | +11,000 ft | 102.5, 94.7, 92.8, 73.6, 86.7 |
+| 7-Day Tour (Sunday to Saturday) | 7 | 454.4 mi | +11,800 ft | 71.9, 80.3, 77.7, 64.7, 73.6, 53.2, 33.0 |
+| 6-Day Tour (Sunday to Friday) | 6 | 453.8 mi | +11,800 ft | 71.9, 80.3, 77.7, 64.7, 73.6, 85.6 |
+| 5-Day Fast Tour | 5 | 449.6 mi | +11,000 ft | 102.5, 94.7, 93.2, 73.6, 85.6 |
 
 Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Islands) replaces Days 5 and 6 of the 7-day tour: 61.1 + 72.8 mi.
 
@@ -15,9 +15,11 @@ Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Island
 - `gpx/7day/`, `gpx/6day/`, `gpx/5day/`, `gpx/vermont/`: **one GPX per day for each itinerary. Use these on bike computers.** (`gpx/vermont/…_day03.gpx` is the Sandbar bypass.) Also `gpx/return_montreal_to_rouses_point.gpx`.
 - `nyc_to_montreal_*.gpx` / `.kml`: combined files per itinerary (KML for Google My Maps).
 - `nyc_to_montreal_7_day_tour.md`, `nyc_to_montreal_bike_tour_guide.md` (6-day), `nyc_to_montreal_5_day_fast_tour.md`, `nyc_to_montreal_vermont_upgrade.md`: printable guides with full cue tables.
+- `pdf/`: print-ready US Letter ride packets and single-day strip map + cue sheet PDFs for every itinerary.
 - `jersey_cue_card.html`: pocket cue card.
 - `AUDIT.md`: what was checked and corrected, and what is still unverified.
 - `tools/`: `build.py` regenerates all data files from `tools/content.py` and `data/routes.json`.
+- `LICENSE`: MIT (software) / CC BY 4.0 (guides) / ODbL (OpenStreetMap route data).
 
 ## Critical logistics (read before booking)
 
@@ -39,7 +41,7 @@ Vermont variant (Essex ferry, Burlington, Island Line causeway, Champlain Island
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (7-day: Day 1 is 76.1 mi, Day 2 is 83.4 mi, Day 3 is 78.7 mi; 5-day: Day 1 is 102.5 mi, Day 2 is 94.7 mi, Day 3 is 92.8 mi, Day 5 is 86.7 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (7-day: Day 2 is 80.3 mi, Day 3 is 77.7 mi; 5-day: Day 1 is 102.5 mi, Day 2 is 94.7 mi, Day 3 is 93.2 mi, Day 5 is 85.6 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="mtl_bike tools/build.py" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <metadata><name>5-Day Fast Tour</name><desc>450.3 mi total. For bike computers, prefer the one-file-per-day GPX files in gpx/.</desc></metadata>
+  <metadata><name>5-Day Fast Tour</name><desc>449.6 mi total. For bike computers, prefer the one-file-per-day GPX files in gpx/.</desc></metadata>
   <wpt lat="41.27065" lon="-73.78054"><name>Lunch: Trailside Cafe</name><desc>Mile 47.1. 1807 Commerce St, Yorktown Heights, NY. (914) 302-7331. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.</desc><sym>Restaurant</sym></wpt>
   <wpt lat="41.70540" lon="-73.92864"><name>Hotel: DoubleTree by Hilton Poughkeepsie</name><desc>Mile 102.5. 40 Civic Center Plaza, Poughkeepsie, NY. (845) 485-5300. Formerly the Poughkeepsie Grand Hotel. About 0.4 mi from the Walkway Over the Hudson.</desc><sym>Lodging</sym></wpt>
   <wpt lat="41.63695" lon="-73.91983"><name>Hotel: Hyatt Place Poughkeepsie</name><desc>Mile 94.1, 3.1 mi off route. 2165 South Rd, Poughkeepsie, NY. (845) 632-3100. Alternative. About 5 mi SOUTH of the route on busy US-9.</desc><sym>Lodging</sym></wpt>
@@ -16,13 +16,13 @@
   <wpt lat="42.41800" lon="-73.67000"><name>Bike: Steiner's Sports (Valatie)</name><desc>Mile 64.2, 0.5 mi off route. 3455 Route 9, Valatie, NY. (518) 784-3663. In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4.</desc><sym>Bike Trail</sym></wpt>
   <wpt lat="42.25407" lon="-73.79778"><name>Station: Hudson</name><desc>Mile 48.4, 0.3 mi off route.</desc><sym>Train</sym></wpt>
   <wpt lat="42.64125" lon="-73.74129"><name>Station: Albany-Rensselaer</name><desc>Mile 86.3, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="43.54997" lon="-73.39814"><name>Lunch: Stewart's Shops #211</name><desc>Mile 66.6, 0.3 mi off route. 60 Poultney St, Whitehall, NY. . Convenience store with hot food and coffee. The reliable food stop in Whitehall.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="43.84798" lon="-73.43417"><name>Hotel: Circle Court Motel</name><desc>Mile 92.8. 6 Montcalm St, Ticonderoga, NY. (518) 585-7660. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 92.3, 0.7 mi off route. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="43.41500" lon="-73.49100"><name>Bike: Walker's Farm, Home &amp; Tack</name><desc>Mile 53.5, 0.2 mi off route. 5565 State Route 4, Fort Ann, NY. (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="43.33163" lon="-73.63583"><name>Bike: Rick's Bike Shop</name><desc>Mile 43.5, 4.7 mi off route. 368 Ridge Rd, Queensbury, NY. (518) 793-8986. Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="43.26976" lon="-73.58040"><name>Station: Fort Edward-Glens Falls</name><desc>Mile 41.4, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="43.55477" lon="-73.40323"><name>Station: Whitehall</name><desc>Mile 66.8, 0.0 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="43.54666" lon="-73.40687"><name>Lunch: Whitehall Market</name><desc>Mile 66.5. 192 Broadway, Whitehall, NY. . Full grocery store (opened May 2026) on the route in Whitehall village, with a deli counter for hot and cold sandwiches and plenty of drinks and snacks. Ride-tested Oct 2026: decent deli sandwiches. Hours and phone not verified. Backup: Stewart's Shops, 60 Poultney St.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="43.84798" lon="-73.43417"><name>Hotel: Circle Court Motel</name><desc>Mile 93.2. 6 Montcalm St, Ticonderoga, NY. (518) 585-7660. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="43.85829" lon="-73.42782"><name>Hotel: Best Western Plus Ticonderoga Inn &amp; Suites</name><desc>Mile 92.7, 0.7 mi off route. 260 Burgoyne Rd, Ticonderoga, NY. (518) 585-2378. On the south side of town, right on the route.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="43.41500" lon="-73.49100"><name>Bike: Walker's Farm, Home &amp; Tack</name><desc>Mile 53.9, 0.2 mi off route. 5565 State Route 4, Fort Ann, NY. (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="43.33163" lon="-73.63583"><name>Bike: Rick's Bike Shop</name><desc>Mile 43.9, 4.7 mi off route. 368 Ridge Rd, Queensbury, NY. (518) 793-8986. Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="43.26976" lon="-73.58040"><name>Station: Fort Edward-Glens Falls</name><desc>Mile 41.8, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="43.55477" lon="-73.40323"><name>Station: Whitehall</name><desc>Mile 67.2, 0.0 mi off route.</desc><sym>Train</sym></wpt>
   <wpt lat="44.31005" lon="-73.35154"><name>Lunch: Pink Pig Cafe</name><desc>Mile 38.9. 2750 Essex Rd, Essex, NY. (518) 962-8833. Next to the ferry dock. Hours are limited in the fall (one listing shows Fri to Sun hours and closed Mon to Wed; Thursday is unclear): call ahead. The Essex Ice Cream Cafe is summer-only, and 'The Cup Cafe' from earlier drafts does not appear to exist.</desc><sym>Restaurant</sym></wpt>
   <wpt lat="44.69711" lon="-73.50240"><name>Hotel: Microtel Inn &amp; Suites by Wyndham Plattsburgh</name><desc>Mile 73.6. 554 State Route 3, Plattsburgh, NY. (518) 324-3800. On Route 3 by I-87 exit 37, about 2.5 mi west of downtown.</desc><sym>Lodging</sym></wpt>
   <wpt lat="44.69771" lon="-73.49193"><name>Hotel: Best Western Plus Plattsburgh</name><desc>Mile 73.0. 446 Route 3, Plattsburgh, NY. (518) 561-7750. On Route 3 by I-87 exit 37, about 2 mi west of downtown.</desc><sym>Lodging</sym></wpt>
@@ -32,17 +32,17 @@
   <wpt lat="44.04233" lon="-73.45883"><name>Station: Port Henry</name><desc>Mile 15.1, 0.1 mi off route.</desc><sym>Train</sym></wpt>
   <wpt lat="44.18717" lon="-73.45189"><name>Station: Westport</name><desc>Mile 26.1, 0.8 mi off route.</desc><sym>Train</sym></wpt>
   <wpt lat="44.69672" lon="-73.44645"><name>Station: Plattsburgh</name><desc>Mile 70.8, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="45.44423" lon="-73.26440"><name>Lunch: Boulangerie du Vieux-Chambly</name><desc>Mile 65.5, 0.2 mi off route. 2403 Av. Bourgogne, Chambly, QC. +1 (450) 447-9991. Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="45.49893" lon="-73.56559"><name>Hotel: Hôtel Bonaventure Montréal</name><desc>Mile 86.7. 900 Rue de la Gauchetière O, Montréal, QC. +1 (514) 878-2332. On top of Place Bonaventure, downtown; linked to the underground city. Toll-free 1-800-267-2575. Ask about bike storage.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 58.6, 1.3 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="45.50583" lon="-73.55314"><name>Bike: Ça Roule Montréal / Montreal on Wheels</name><desc>Mile 83.8, 0.5 mi off route. 27 Rue de la Commune E, Montréal, QC. +1 (514) 866-0633. Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="45.53945" lon="-73.61759"><name>Bike: Bicycles Quilicot (Villeray)</name><desc>Mile 86.7, 3.7 mi off route. 7341 Rue Saint-Denis, Montréal, QC. +1 (514) 303-4118. Full shop, 4 mi north of downtown. Call ahead to confirm bike boxes are available.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="45.53030" lon="-73.66200"><name>Bike: MEC Montréal (Marché Central)</name><desc>Mile 86.5, 5.1 mi off route. 8989 Boul. de l'Acadie, Montréal, QC. +1 (514) 788-5878. Outdoor store with bike service. Earlier drafts gave a Saint-Denis address; that is wrong.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="44.99315" lon="-73.36424"><name>Food: Lakeside Coffee Roasters</name><desc>Mile 29.6. 109 Lake St, Rouses Point, NY. (518) 297-5600. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe &amp; Bakery listed in earlier drafts closed in Oct 2025.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 31.1. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
-  <wpt lat="45.30959" lon="-73.25229"><name>Food: Bistro La Trinquette</name><desc>Mile 54.8. 290 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 349-1811. Pub-bistro with a big terrace, not a crêperie. Open late daily; lunch opening time not confirmed.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 29.4, 0.2 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="45.52493" lon="-73.52192"><name>Station: Longueuil–Université-de-Sherbrooke</name><desc>Mile 80.3, 0.1 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="45.44423" lon="-73.26440"><name>Lunch: Boulangerie du Vieux-Chambly</name><desc>Mile 64.4, 0.2 mi off route. 2403 Av. Bourgogne, Chambly, QC. +1 (450) 447-9991. Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="45.49893" lon="-73.56559"><name>Hotel: Hôtel Bonaventure Montréal</name><desc>Mile 85.6. 900 Rue de la Gauchetière O, Montréal, QC. +1 (514) 878-2332. On top of Place Bonaventure, downtown; linked to the underground city. Toll-free 1-800-267-2575. Ask about bike storage.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="45.35408" lon="-73.29597"><name>Bike: Cycle LM</name><desc>Mile 57.5, 1.3 mi off route. 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC. . Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="45.50583" lon="-73.55314"><name>Bike: Ça Roule Montréal / Montreal on Wheels</name><desc>Mile 82.7, 0.5 mi off route. 27 Rue de la Commune E, Montréal, QC. +1 (514) 866-0633. Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="45.53945" lon="-73.61759"><name>Bike: Bicycles Quilicot (Villeray)</name><desc>Mile 85.6, 3.7 mi off route. 7341 Rue Saint-Denis, Montréal, QC. +1 (514) 303-4118. Full shop, 4 mi north of downtown. Call ahead to confirm bike boxes are available.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="45.53030" lon="-73.66200"><name>Bike: MEC Montréal (Marché Central)</name><desc>Mile 85.4, 5.1 mi off route. 8989 Boul. de l'Acadie, Montréal, QC. +1 (514) 788-5878. Outdoor store with bike service. Earlier drafts gave a Saint-Denis address; that is wrong.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="44.99315" lon="-73.36424"><name>Food: Lakeside Coffee Roasters</name><desc>Mile 28.8. 109 Lake St, Rouses Point, NY. (518) 297-5600. Last US cafe before the border. Paninis, quiche, soups. Listed Tue to Fri 7:30 AM to 2 PM (one source says Fri closes 1:30), Sat and Sun 8 to 2, closed Mon. The Lake Street Cafe &amp; Bakery listed in earlier drafts closed in Oct 2025.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="45.01030" lon="-73.37086"><name>BORDER: Rouses Point–Lacolle 223</name><desc>Mile 30.0. Open 8 AM to 8 PM daily (both sides). Passport, EDL or NEXUS. No cannabis.</desc><sym>Crossing</sym></wpt>
+  <wpt lat="45.30959" lon="-73.25229"><name>Food: Bistro La Trinquette</name><desc>Mile 53.7. 290 Rue Champlain, Saint-Jean-sur-Richelieu, QC. +1 (450) 349-1811. Pub-bistro with a big terrace, not a crêperie. Open late daily; lunch opening time not confirmed.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="44.99500" lon="-73.37117"><name>Station: Rouses Point</name><desc>Mile 29.0, 0.3 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="45.52493" lon="-73.52192"><name>Station: Longueuil–Université-de-Sherbrooke</name><desc>Mile 79.2, 0.1 mi off route.</desc><sym>Train</sym></wpt>
   <trk><name>Day 1 (Sunday Oct 4): NYC to Poughkeepsie, NY</name><desc>102.5 mi (165.0 km), about +2,500 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="40.702625" lon="-74.016048"/>
     <trkpt lat="40.702790" lon="-74.016184"/>
@@ -3710,7 +3710,7 @@
     <trkpt lat="42.734245" lon="-73.688445"/>
     <trkpt lat="42.734152" lon="-73.688421"/>
   </trkseg></trk>
-  <trk><name>Day 3 (Tuesday Oct 6): Troy to Ticonderoga, NY</name><desc>92.8 mi (149.3 km), about +2,600 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+  <trk><name>Day 3 (Tuesday Oct 6): Troy to Ticonderoga, NY</name><desc>93.2 mi (150.0 km), about +2,600 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="42.734152" lon="-73.688421"/>
     <trkpt lat="42.734125" lon="-73.688332"/>
     <trkpt lat="42.734366" lon="-73.688235"/>
@@ -4179,62 +4179,57 @@
     <trkpt lat="43.116574" lon="-73.576223"/>
     <trkpt lat="43.117155" lon="-73.575235"/>
     <trkpt lat="43.117346" lon="-73.574735"/>
-    <trkpt lat="43.117618" lon="-73.573703"/>
-    <trkpt lat="43.117852" lon="-73.573976"/>
-    <trkpt lat="43.118056" lon="-73.574283"/>
-    <trkpt lat="43.118245" lon="-73.574691"/>
-    <trkpt lat="43.118267" lon="-73.574848"/>
-    <trkpt lat="43.118249" lon="-73.575026"/>
-    <trkpt lat="43.118183" lon="-73.575143"/>
-    <trkpt lat="43.118187" lon="-73.575238"/>
-    <trkpt lat="43.118263" lon="-73.575369"/>
-    <trkpt lat="43.119152" lon="-73.575949"/>
-    <trkpt lat="43.120132" lon="-73.576915"/>
-    <trkpt lat="43.120464" lon="-73.577189"/>
-    <trkpt lat="43.120868" lon="-73.577411"/>
-    <trkpt lat="43.121360" lon="-73.577571"/>
-    <trkpt lat="43.121590" lon="-73.577593"/>
-    <trkpt lat="43.121836" lon="-73.577537"/>
+    <trkpt lat="43.117646" lon="-73.573606"/>
+    <trkpt lat="43.117779" lon="-73.573354"/>
+    <trkpt lat="43.118973" lon="-73.572619"/>
+    <trkpt lat="43.120167" lon="-73.571883"/>
+    <trkpt lat="43.120449" lon="-73.572854"/>
+    <trkpt lat="43.120781" lon="-73.574397"/>
+    <trkpt lat="43.121371" lon="-73.575950"/>
     <trkpt lat="43.122016" lon="-73.578058"/>
     <trkpt lat="43.122213" lon="-73.578335"/>
-    <trkpt lat="43.122497" lon="-73.578590"/>
-    <trkpt lat="43.123142" lon="-73.579060"/>
-    <trkpt lat="43.123444" lon="-73.579359"/>
-    <trkpt lat="43.123652" lon="-73.579713"/>
+    <trkpt lat="43.123324" lon="-73.579217"/>
+    <trkpt lat="43.123546" lon="-73.579509"/>
     <trkpt lat="43.123718" lon="-73.579893"/>
-    <trkpt lat="43.124333" lon="-73.582010"/>
-    <trkpt lat="43.124455" lon="-73.582261"/>
-    <trkpt lat="43.124726" lon="-73.582574"/>
+    <trkpt lat="43.124264" lon="-73.581824"/>
+    <trkpt lat="43.124548" lon="-73.582386"/>
     <trkpt lat="43.125023" lon="-73.582743"/>
     <trkpt lat="43.125946" lon="-73.582942"/>
     <trkpt lat="43.126870" lon="-73.583141"/>
-    <trkpt lat="43.127208" lon="-73.583184"/>
     <trkpt lat="43.127569" lon="-73.583162"/>
     <trkpt lat="43.128330" lon="-73.583034"/>
     <trkpt lat="43.128669" lon="-73.583133"/>
     <trkpt lat="43.128957" lon="-73.583395"/>
     <trkpt lat="43.129160" lon="-73.583702"/>
     <trkpt lat="43.130122" lon="-73.585588"/>
-    <trkpt lat="43.130669" lon="-73.585292"/>
-    <trkpt lat="43.131068" lon="-73.585167"/>
-    <trkpt lat="43.132035" lon="-73.584984"/>
-    <trkpt lat="43.133001" lon="-73.584801"/>
-    <trkpt lat="43.134122" lon="-73.584645"/>
-    <trkpt lat="43.135538" lon="-73.584599"/>
-    <trkpt lat="43.136955" lon="-73.584554"/>
-    <trkpt lat="43.138371" lon="-73.584508"/>
-    <trkpt lat="43.139787" lon="-73.584463"/>
-    <trkpt lat="43.140470" lon="-73.584378"/>
-    <trkpt lat="43.141263" lon="-73.584124"/>
-    <trkpt lat="43.141569" lon="-73.583980"/>
-    <trkpt lat="43.142261" lon="-73.583518"/>
-    <trkpt lat="43.142806" lon="-73.583004"/>
-    <trkpt lat="43.143584" lon="-73.582174"/>
-    <trkpt lat="43.144362" lon="-73.581344"/>
-    <trkpt lat="43.144747" lon="-73.581009"/>
-    <trkpt lat="43.146193" lon="-73.580005"/>
-    <trkpt lat="43.147639" lon="-73.579002"/>
-    <trkpt lat="43.149085" lon="-73.577998"/>
+    <trkpt lat="43.129875" lon="-73.585768"/>
+    <trkpt lat="43.130511" lon="-73.586242"/>
+    <trkpt lat="43.131141" lon="-73.586961"/>
+    <trkpt lat="43.132107" lon="-73.587726"/>
+    <trkpt lat="43.132857" lon="-73.588598"/>
+    <trkpt lat="43.133312" lon="-73.588886"/>
+    <trkpt lat="43.134165" lon="-73.589247"/>
+    <trkpt lat="43.135848" lon="-73.589476"/>
+    <trkpt lat="43.136763" lon="-73.589450"/>
+    <trkpt lat="43.137677" lon="-73.589425"/>
+    <trkpt lat="43.138689" lon="-73.589283"/>
+    <trkpt lat="43.140179" lon="-73.588926"/>
+    <trkpt lat="43.140966" lon="-73.588598"/>
+    <trkpt lat="43.141739" lon="-73.588098"/>
+    <trkpt lat="43.143163" lon="-73.586979"/>
+    <trkpt lat="43.144220" lon="-73.585943"/>
+    <trkpt lat="43.145710" lon="-73.584879"/>
+    <trkpt lat="43.146795" lon="-73.584219"/>
+    <trkpt lat="43.147881" lon="-73.583559"/>
+    <trkpt lat="43.148187" lon="-73.583198"/>
+    <trkpt lat="43.148431" lon="-73.582713"/>
+    <trkpt lat="43.148802" lon="-73.581510"/>
+    <trkpt lat="43.149130" lon="-73.580781"/>
+    <trkpt lat="43.150048" lon="-73.579381"/>
+    <trkpt lat="43.150449" lon="-73.578975"/>
+    <trkpt lat="43.150371" lon="-73.578864"/>
+    <trkpt lat="43.150346" lon="-73.578657"/>
+    <trkpt lat="43.150531" lon="-73.576994"/>
     <trkpt lat="43.150531" lon="-73.576994"/>
     <trkpt lat="43.151361" lon="-73.576479"/>
     <trkpt lat="43.152681" lon="-73.575823"/>
@@ -6358,7 +6353,7 @@
     <trkpt lat="44.697241" lon="-73.502346"/>
     <trkpt lat="44.697238" lon="-73.502415"/>
   </trkseg></trk>
-  <trk><name>Day 5 (Thursday Oct 8): Plattsburgh, NY to Montréal, QC</name><desc>86.7 mi (139.5 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+  <trk><name>Day 5 (Thursday Oct 8): Plattsburgh, NY to Montréal, QC</name><desc>85.6 mi (137.8 km), about +700 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="44.697238" lon="-73.502415"/>
     <trkpt lat="44.697241" lon="-73.502346"/>
     <trkpt lat="44.697500" lon="-73.502348"/>
@@ -6747,60 +6742,31 @@
     <trkpt lat="44.975122" lon="-73.375099"/>
     <trkpt lat="44.975162" lon="-73.373521"/>
     <trkpt lat="44.975204" lon="-73.371098"/>
-    <trkpt lat="44.975246" lon="-73.368674"/>
-    <trkpt lat="44.975288" lon="-73.366251"/>
-    <trkpt lat="44.975330" lon="-73.363828"/>
+    <trkpt lat="44.975246" lon="-73.368675"/>
+    <trkpt lat="44.975288" lon="-73.366253"/>
+    <trkpt lat="44.975330" lon="-73.363830"/>
     <trkpt lat="44.975928" lon="-73.363608"/>
     <trkpt lat="44.976624" lon="-73.363471"/>
     <trkpt lat="44.978209" lon="-73.363359"/>
     <trkpt lat="44.979794" lon="-73.363247"/>
-    <trkpt lat="44.979878" lon="-73.365130"/>
-    <trkpt lat="44.979960" lon="-73.365168"/>
-    <trkpt lat="44.980270" lon="-73.365181"/>
-    <trkpt lat="44.980240" lon="-73.367603"/>
-    <trkpt lat="44.980211" lon="-73.370024"/>
-    <trkpt lat="44.980244" lon="-73.370097"/>
-    <trkpt lat="44.980391" lon="-73.370141"/>
-    <trkpt lat="44.981946" lon="-73.370218"/>
-    <trkpt lat="44.982047" lon="-73.370283"/>
-    <trkpt lat="44.982072" lon="-73.370568"/>
-    <trkpt lat="44.982120" lon="-73.370644"/>
-    <trkpt lat="44.982214" lon="-73.370691"/>
-    <trkpt lat="44.983213" lon="-73.370693"/>
-    <trkpt lat="44.984212" lon="-73.370695"/>
-    <trkpt lat="44.984237" lon="-73.369297"/>
-    <trkpt lat="44.984262" lon="-73.367899"/>
-    <trkpt lat="44.984945" lon="-73.367908"/>
-    <trkpt lat="44.985260" lon="-73.367955"/>
-    <trkpt lat="44.985271" lon="-73.366538"/>
-    <trkpt lat="44.986771" lon="-73.366535"/>
-    <trkpt lat="44.988271" lon="-73.366533"/>
-    <trkpt lat="44.989771" lon="-73.366530"/>
-    <trkpt lat="44.991271" lon="-73.366527"/>
-    <trkpt lat="44.992543" lon="-73.366565"/>
-    <trkpt lat="44.993816" lon="-73.366603"/>
-    <trkpt lat="44.993862" lon="-73.364802"/>
-    <trkpt lat="44.993907" lon="-73.363002"/>
-    <trkpt lat="44.993994" lon="-73.362535"/>
-    <trkpt lat="44.994204" lon="-73.362147"/>
-    <trkpt lat="44.994451" lon="-73.361782"/>
-    <trkpt lat="44.995621" lon="-73.360483"/>
-    <trkpt lat="44.995952" lon="-73.360282"/>
-    <trkpt lat="44.996758" lon="-73.359936"/>
-    <trkpt lat="44.996781" lon="-73.360091"/>
-    <trkpt lat="44.996709" lon="-73.360326"/>
-    <trkpt lat="44.996709" lon="-73.360678"/>
-    <trkpt lat="44.996644" lon="-73.360804"/>
-    <trkpt lat="44.996504" lon="-73.360952"/>
-    <trkpt lat="44.996475" lon="-73.361054"/>
-    <trkpt lat="44.996478" lon="-73.361361"/>
-    <trkpt lat="44.996426" lon="-73.361446"/>
-    <trkpt lat="44.996294" lon="-73.361493"/>
-    <trkpt lat="44.996253" lon="-73.361544"/>
-    <trkpt lat="44.996206" lon="-73.362283"/>
-    <trkpt lat="44.996253" lon="-73.362583"/>
-    <trkpt lat="44.996172" lon="-73.363494"/>
-    <trkpt lat="44.996134" lon="-73.364849"/>
+    <trkpt lat="44.980813" lon="-73.363101"/>
+    <trkpt lat="44.981832" lon="-73.362956"/>
+    <trkpt lat="44.983003" lon="-73.362900"/>
+    <trkpt lat="44.983392" lon="-73.363029"/>
+    <trkpt lat="44.984023" lon="-73.363506"/>
+    <trkpt lat="44.984420" lon="-73.363640"/>
+    <trkpt lat="44.984732" lon="-73.363619"/>
+    <trkpt lat="44.985799" lon="-73.363297"/>
+    <trkpt lat="44.986614" lon="-73.363506"/>
+    <trkpt lat="44.988260" lon="-73.363625"/>
+    <trkpt lat="44.989906" lon="-73.363744"/>
+    <trkpt lat="44.990317" lon="-73.363921"/>
+    <trkpt lat="44.991082" lon="-73.364408"/>
+    <trkpt lat="44.991403" lon="-73.364426"/>
+    <trkpt lat="44.992184" lon="-73.364253"/>
+    <trkpt lat="44.992747" lon="-73.364329"/>
+    <trkpt lat="44.994419" lon="-73.364874"/>
+    <trkpt lat="44.996091" lon="-73.365420"/>
     <trkpt lat="44.996091" lon="-73.365420"/>
     <trkpt lat="44.997573" lon="-73.365954"/>
     <trkpt lat="44.999056" lon="-73.366487"/>

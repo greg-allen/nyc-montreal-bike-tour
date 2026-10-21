@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 3 (Tuesday Oct 6): Hudson to Schuylerville, NY</name><desc>78.7 mi (126.7 km), about +2,200 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="42.25306" lon="-73.79604"><name>Hotel: The Wick, Hudson (Tribute Portfolio)</name><desc>Mile 83.4. 41 Cross St, Hudson, NY. (518) 249-6825. Near the Hudson Amtrak station, one block off Warren St.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="42.24871" lon="-73.78506"><name>Hotel: Hudson Whaler Hotel (formerly The Barlow)</name><desc>Mile 82.0, 0.4 mi off route. 542 Warren St, Hudson, NY. (518) 217-4334. The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number.</desc><sym>Lodging</sym></wpt>
-  <wpt lat="42.25278" lon="-73.79132"><name>Bike: Steiner's Sports</name><desc>Mile 83.4, 0.2 mi off route. 301 Warren St, Hudson, NY. (518) 828-5063. Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.</desc><sym>Bike Trail</sym></wpt>
-  <wpt lat="42.25407" lon="-73.79778"><name>Station: Hudson</name><desc>Mile 83.2, 0.0 mi off route.</desc><sym>Train</sym></wpt>
-  <wpt lat="42.79009" lon="-73.67877"><name>Lunch: Don &amp; Paul's Coffee Shoppe</name><desc>Mile 51.1. 68 Broad St, Waterford, NY. . Diner on the route by the Waterford canal harbor. Listed Mon to Sat 7 AM to 7:30 PM, Sun 7 AM to 2 PM.</desc><sym>Restaurant</sym></wpt>
-  <wpt lat="43.10274" lon="-73.57966"><name>Hotel: Dovegate Inn</name><desc>Mile 78.7. 184 Broad St, Schuylerville, NY. (518) 695-3699. Small inn with a few rooms on Broad St in Schuylerville village, with an on-site restaurant (Kitchen at the Dovegate Inn, 518-695-6095). Book early: limited rooms. Ask about bike storage.</desc><sym>Lodging</sym></wpt>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="mtl_bike tools/build.py" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"><metadata><name>Day 3 (Tuesday Oct 6): Hudson to Schuylerville, NY</name><desc>77.7 mi (125.0 km), about +2,200 ft. Routed on OpenStreetMap along the official trails.</desc></metadata><wpt lat="42.25306" lon="-73.79604"><name>Hotel: The Wick, Hudson (Tribute Portfolio)</name><desc>Mile 80.3. 41 Cross St, Hudson, NY. (518) 249-6825. Near the Hudson Amtrak station, one block off Warren St.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="42.24871" lon="-73.78506"><name>Hotel: Hudson Whaler Hotel (formerly The Barlow)</name><desc>Mile 78.9, 0.4 mi off route. 542 Warren St, Hudson, NY. (518) 217-4334. The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number.</desc><sym>Lodging</sym></wpt>
+  <wpt lat="42.25278" lon="-73.79132"><name>Bike: Steiner's Sports</name><desc>Mile 80.3, 0.2 mi off route. 301 Warren St, Hudson, NY. (518) 828-5063. Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.</desc><sym>Bike Trail</sym></wpt>
+  <wpt lat="42.25407" lon="-73.79778"><name>Station: Hudson</name><desc>Mile 80.1, 0.0 mi off route.</desc><sym>Train</sym></wpt>
+  <wpt lat="42.79009" lon="-73.67877"><name>Lunch: Don &amp; Paul's Coffee Shoppe</name><desc>Mile 50.5. 68 Broad St, Waterford, NY. . Diner on the route by the Waterford canal harbor. Listed Mon to Sat 7 AM to 7:30 PM, Sun 7 AM to 2 PM.</desc><sym>Restaurant</sym></wpt>
+  <wpt lat="43.10274" lon="-73.57966"><name>Hotel: Dovegate Inn</name><desc>Mile 77.7. 184 Broad St, Schuylerville, NY. (518) 695-3699. Small inn with a few rooms on Broad St in Schuylerville village, with an on-site restaurant (Kitchen at the Dovegate Inn, 518-695-6095). Book early: limited rooms. Ask about bike storage.</desc><sym>Lodging</sym></wpt>
   <wpt lat="42.41800" lon="-73.67000"><name>Bike: Steiner's Sports (Valatie)</name><desc>Mile 16.0, 0.5 mi off route. 3455 Route 9, Valatie, NY. (518) 784-3663. In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4.</desc><sym>Bike Trail</sym></wpt>
   <wpt lat="42.64125" lon="-73.74129"><name>Station: Albany-Rensselaer</name><desc>Mile 37.9, 0.1 mi off route.</desc><sym>Train</sym></wpt>
-  <trk><name>Day 3 (Tuesday Oct 6): Hudson to Schuylerville, NY</name><desc>78.7 mi (126.7 km), about +2,200 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
+  <trk><name>Day 3 (Tuesday Oct 6): Hudson to Schuylerville, NY</name><desc>77.7 mi (125.0 km), about +2,200 ft. Routed on OpenStreetMap along the official trails.</desc><trkseg>
     <trkpt lat="42.252967" lon="-73.796171" />
     <trkpt lat="42.253180" lon="-73.796493" />
     <trkpt lat="42.253116" lon="-73.796899" />
@@ -960,35 +960,16 @@
     <trkpt lat="42.768509" lon="-73.697438" />
     <trkpt lat="42.768738" lon="-73.697731" />
     <trkpt lat="42.769130" lon="-73.697656" />
-    <trkpt lat="42.769176" lon="-73.697939" />
-    <trkpt lat="42.769278" lon="-73.698034" />
-    <trkpt lat="42.769294" lon="-73.698148" />
-    <trkpt lat="42.769378" lon="-73.698330" />
-    <trkpt lat="42.770023" lon="-73.699035" />
-    <trkpt lat="42.770178" lon="-73.699246" />
-    <trkpt lat="42.770226" lon="-73.699365" />
-    <trkpt lat="42.770218" lon="-73.699566" />
-    <trkpt lat="42.769848" lon="-73.701012" />
-    <trkpt lat="42.769801" lon="-73.701340" />
-    <trkpt lat="42.769798" lon="-73.701587" />
-    <trkpt lat="42.771138" lon="-73.701929" />
-    <trkpt lat="42.772478" lon="-73.702270" />
-    <trkpt lat="42.772273" lon="-73.704033" />
-    <trkpt lat="42.772831" lon="-73.704077" />
-    <trkpt lat="42.772925" lon="-73.704142" />
-    <trkpt lat="42.772846" lon="-73.705249" />
-    <trkpt lat="42.772925" lon="-73.704142" />
-    <trkpt lat="42.773077" lon="-73.704083" />
-    <trkpt lat="42.773848" lon="-73.704065" />
-    <trkpt lat="42.773943" lon="-73.703991" />
-    <trkpt lat="42.774000" lon="-73.703882" />
-    <trkpt lat="42.774079" lon="-73.703566" />
-    <trkpt lat="42.774238" lon="-73.702280" />
-    <trkpt lat="42.774436" lon="-73.700091" />
-    <trkpt lat="42.774301" lon="-73.698858" />
-    <trkpt lat="42.774167" lon="-73.697625" />
-    <trkpt lat="42.775071" lon="-73.697438" />
-    <trkpt lat="42.775975" lon="-73.697251" />
+    <trkpt lat="42.770348" lon="-73.697314" />
+    <trkpt lat="42.771625" lon="-73.697041" />
+    <trkpt lat="42.772902" lon="-73.696768" />
+    <trkpt lat="42.774179" lon="-73.696495" />
+    <trkpt lat="42.774537" lon="-73.696458" />
+    <trkpt lat="42.774943" lon="-73.696536" />
+    <trkpt lat="42.775329" lon="-73.696774" />
+    <trkpt lat="42.775663" lon="-73.697206" />
+    <trkpt lat="42.776220" lon="-73.697130" />
+    <trkpt lat="42.776851" lon="-73.696802" />
     <trkpt lat="42.776851" lon="-73.696802" />
     <trkpt lat="42.778497" lon="-73.696439" />
     <trkpt lat="42.778938" lon="-73.696363" />
@@ -1017,17 +998,8 @@
     <trkpt lat="42.791032" lon="-73.681632" />
     <trkpt lat="42.791029" lon="-73.680972" />
     <trkpt lat="42.790931" lon="-73.680564" />
-    <trkpt lat="42.790883" lon="-73.680595" />
-    <trkpt lat="42.790284" lon="-73.681547" />
-    <trkpt lat="42.790114" lon="-73.681610" />
-    <trkpt lat="42.789636" lon="-73.681404" />
-    <trkpt lat="42.788971" lon="-73.681053" />
-    <trkpt lat="42.790023" lon="-73.681591" />
-    <trkpt lat="42.790114" lon="-73.681610" />
-    <trkpt lat="42.790284" lon="-73.681547" />
-    <trkpt lat="42.790883" lon="-73.680595" />
-    <trkpt lat="42.791027" lon="-73.680539" />
-    <trkpt lat="42.791870" lon="-73.679900" />
+    <trkpt lat="42.791796" lon="-73.679999" />
+    <trkpt lat="42.792661" lon="-73.679434" />
     <trkpt lat="42.792661" lon="-73.679434" />
     <trkpt lat="42.793137" lon="-73.679166" />
     <trkpt lat="42.793865" lon="-73.678855" />
@@ -1452,18 +1424,14 @@
     <trkpt lat="43.098823" lon="-73.597545" />
     <trkpt lat="43.099003" lon="-73.596644" />
     <trkpt lat="43.099108" lon="-73.595403" />
-    <trkpt lat="43.099033" lon="-73.594868" />
     <trkpt lat="43.098926" lon="-73.593352" />
-    <trkpt lat="43.098794" lon="-73.592456" />
-    <trkpt lat="43.098524" lon="-73.590930" />
-    <trkpt lat="43.098254" lon="-73.589404" />
-    <trkpt lat="43.098167" lon="-73.587872" />
-    <trkpt lat="43.098713" lon="-73.587687" />
-    <trkpt lat="43.099964" lon="-73.587132" />
-    <trkpt lat="43.099730" lon="-73.586077" />
-    <trkpt lat="43.099629" lon="-73.585462" />
-    <trkpt lat="43.101259" lon="-73.584783" />
-    <trkpt lat="43.102889" lon="-73.584104" />
+    <trkpt lat="43.098579" lon="-73.591299" />
+    <trkpt lat="43.098233" lon="-73.589246" />
+    <trkpt lat="43.098157" lon="-73.587675" />
+    <trkpt lat="43.098081" lon="-73.586104" />
+    <trkpt lat="43.099691" lon="-73.585434" />
+    <trkpt lat="43.101300" lon="-73.584765" />
+    <trkpt lat="43.102910" lon="-73.584095" />
     <trkpt lat="43.104519" lon="-73.583425" />
     <trkpt lat="43.104519" lon="-73.582039" />
     <trkpt lat="43.104189" lon="-73.580493" />

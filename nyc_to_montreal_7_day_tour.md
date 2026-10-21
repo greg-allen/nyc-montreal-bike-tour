@@ -1,6 +1,6 @@
 # NYC to Montréal: 7-Day Tour (Sunday to Saturday)
 
-**462.3 mi (744 km) · about +12,300 ft · average 66.0 mi/day · Comfortable touring (11 to 13 mph rolling)**
+**454.4 mi (731 km) · about +11,800 ft · average 64.9 mi/day · Comfortable touring (11 to 13 mph rolling)**
 
 Recommended. The border day and the Montréal arrival are split, so the last two days are short and flat.
 
@@ -9,15 +9,15 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 ## Itinerary at a glance
 | Day | Date | Stage | Miles | Climb (est.) | Lunch | Overnight |
 |:---|:---|:---|:---|:---|:---|:---|
-| 1 | Sun Oct 4 | Brooklyn → Brewster | 76.1 | +2,500 | Trailside Cafe (mi 52) | Comfort Inn Brewster |
-| 2 | Mon Oct 5 | Brewster → Hudson | 83.4 | +1,400 | Red Hook Diner (mi 62) | The Wick, Hudson (Tribute Portfolio) |
-| 3 | Tue Oct 6 | Hudson → Schuylerville | 78.7 | +2,200 | Don & Paul's Coffee Shoppe (mi 51) | Dovegate Inn |
-| 4 | Wed Oct 7 | Schuylerville → Ticonderoga | 64.3 | +2,200 | Stewart's Shops #211 (mi 38) | Circle Court Motel |
+| 1 | Sun Oct 4 | Brooklyn → Brewster | 71.9 | +2,100 | Trailside Cafe (mi 52) | Comfort Inn Brewster |
+| 2 | Mon Oct 5 | Brewster → Hudson | 80.3 | +1,300 | Bubby's Take Away Kitchen (mi 60) | The Wick, Hudson (Tribute Portfolio) |
+| 3 | Tue Oct 6 | Hudson → Schuylerville | 77.7 | +2,200 | Don & Paul's Coffee Shoppe (mi 50) | Dovegate Inn |
+| 4 | Wed Oct 7 | Schuylerville → Ticonderoga | 64.7 | +2,200 | Whitehall Market (mi 38) | Circle Court Motel |
 | 5 | Thu Oct 8 | Ticonderoga → Plattsburgh | 73.6 | +3,300 | Pink Pig Cafe (mi 39) | Microtel Inn & Suites by Wyndham Plattsburgh |
 | 6 | Fri Oct 9 | Plattsburgh → Saint-Jean | 53.2 | +400 | Lakeside Coffee Roasters (mi 27) | Quality Hotel Centre de Congrès |
 | 7 | Sat Oct 10 | Saint-Jean → Montréal | 33.0 | +300 | Boulangerie du Vieux-Chambly (mi 12) | Hôtel Monville |
 
-**Why 7 days:** the 6-day plan's last day is 86.7 mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a 33.0-mi Saturday finish along the Chambly Canal. Days 2 and 3 are still long (83 and 79 mi): start early.
+**Why 7 days:** the 6-day plan's last day is 85.6 mi including the border. Splitting it at Saint-Jean-sur-Richelieu gives a short border day and a 33.0-mi Saturday finish along the Chambly Canal. Days 2 and 3 are still long (80 and 78 mi): start early.
 
 ## Critical logistics (read before booking)
 
@@ -39,7 +39,7 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Day 1 is 76.1 mi, Day 2 is 83.4 mi, Day 3 is 78.7 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Day 2 is 80.3 mi, Day 3 is 77.7 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -61,13 +61,13 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 ### Sunday • Day 1: Brooklyn to Brewster, NY
 *Williamsburg Bridge, Hudson River Greenway, Inwood & Marble Hill, Van Cortlandt Park, South/North County & Putnam trailways, Maybrook Trailway*
 
-- **Distance:** 76.1 mi (122.5 km) · **Climbing:** about +2,500 ft
-- **Surface:** Grand Army Plaza to the Williamsburg Bridge via Prospect Heights and Clinton Hill streets, 11 mi on the car-free Hudson River Greenway, about 3 mi of streets through Inwood, Marble Hill and Riverdale, then ~50 mi of car-free paved rail trail, the Maybrook Trailway and a few miles of rolling roads (Dingle Ridge Rd, Nichols Rd) to the motel.
-- **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day01.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day01.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=40.67400,-73.96973&destination=41.38641,-73.58414&waypoints=40.69911,-73.96153|40.78472,-73.98519|40.86692,-73.93203|40.95378,-73.86393|41.09366,-73.81913|41.22950,-73.77722|41.37265,-73.73151|41.41178,-73.65278)
-- **Lunch:** **Trailside Cafe**, 1807 Commerce St, Yorktown Heights, NY · (914) 302-7331 · mile 52.0. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.
-- **Lodging:** **Comfort Inn Brewster**, 7-11 Peach Lake Rd, Brewster, NY · (845) 363-0974 · mile 76.1. About 2 mi east of Brewster village near I-84. Free hot breakfast. / **Heidi's Inn**, 1270 Route 22, Brewster, NY · (845) 279-8011 · mile 71.4 (1.1 mi off route). Motel on NY-22, about 3 mi past the end of the Putnam Trailway (through Brewster village). Confirm bike storage when booking.
-- **Bike shops / supplies:** **Yorktown Cycles**, 1899 Commerce St, Yorktown Heights, NY · (914) 245-5504 · mile 52.3. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1. / **Route 22 Cycles**, 2237 Route 22, Brewster, NY · (845) 784-6166. Hours not verified: call before relying on it. / **Ski Haus (bikes)**, 1611 Route 22, Brewster, NY · (845) 279-3100. Listed Wed to Fri 11 to 6, Sat 11 to 5; closed Sun to Tue.
-- **Bailout:** NYC subway anywhere in the first ~20 mi (bikes allowed, but avoid rush hours). Metro-North: Brewster station (Harlem Line) is about 0.3 mi off the route near mile 69.3; mid-route, Pleasantville is about 1.2 mi east of the trail near mile 40.6 and Chappaqua about 2.2 mi east near mile 43.7. No bikes on weekday rush-hour trains or holidays; up to 8 bikes per train on weekends.
+- **Distance:** 71.9 mi (115.7 km) · **Climbing:** about +2,100 ft
+- **Surface:** Grand Army Plaza to the Williamsburg Bridge via Prospect Heights and Clinton Hill streets, the Prince St bike lane across SoHo, 11 mi on the car-free Hudson River Greenway, about 3 mi of streets through Inwood, Marble Hill and Riverdale, then ~50 mi of car-free paved rail trail and the Maybrook Trailway almost to the motel (the last 0.4 mi is a short gravel access track and Danbury Rd).
+- **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day01.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day01.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=40.67400,-73.96973&destination=41.38641,-73.58414&waypoints=40.69810,-73.96190|40.78117,-73.98809|40.85254,-73.94161|40.94235,-73.86161|41.06600,-73.82057|41.19078,-73.79570|41.34385,-73.75476|41.41287,-73.68986)
+- **Lunch:** **Trailside Cafe**, 1807 Commerce St, Yorktown Heights, NY · (914) 302-7331 · mile 51.8. Beside the North County Trailway. Smoothies, paninis, wraps. Sunday hours listed as 8 AM to 3 or 4 PM (sources disagree): call ahead.
+- **Lodging:** **Comfort Inn Brewster**, 7-11 Peach Lake Rd, Brewster, NY · (845) 363-0974 · mile 71.9. About 2 mi east of Brewster village near I-84. Free hot breakfast. / **Heidi's Inn**, 1270 Route 22, Brewster, NY · (845) 279-8011 · mile 71.1 (1.1 mi off route). Motel on NY-22, about 3 mi past the end of the Putnam Trailway (through Brewster village). Confirm bike storage when booking.
+- **Bike shops / supplies:** **Yorktown Cycles**, 1899 Commerce St, Yorktown Heights, NY · (914) 245-5504 · mile 52.0. Next to the trail. CLOSED Sundays and Mondays (open Tue to Sat 10 to 5), so it is not available on a Sunday Day 1. / **Route 22 Cycles**, 2237 Route 22, Brewster, NY · (845) 784-6166. Hours not verified: call before relying on it. / **Ski Haus (bikes)**, 1611 Route 22, Brewster, NY · (845) 279-3100. Listed Wed to Fri 11 to 6, Sat 11 to 5; closed Sun to Tue.
+- **Bailout:** NYC subway anywhere in the first ~20 mi (bikes allowed, but avoid rush hours). Metro-North: Brewster station (Harlem Line) is about 0.3 mi off the route near mile 69.1; mid-route, Pleasantville is about 1.2 mi east of the trail near mile 40.4 and Chappaqua about 2.2 mi east near mile 43.4. No bikes on weekday rush-hour trains or holidays; up to 8 bikes per train on weekends.
 - **Option:** West-side Hudson route via Grand Army Plaza and the Hudson River Greenway to Yonkers, avoiding east-side bridges and industrial traffic.
 
 <details><summary>Turn-by-turn cues</summary>
@@ -83,92 +83,82 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 | 3.1 | TURN RIGHT | Havemeyer Street | 0.2 | Street |  |
 | 3.3 | TURN LEFT | bike path | 0.3 | Bike path |  |
 | 3.6 | CONTINUE ONTO | Williamsburg Bridge Bike Path | 1.6 | Bike path | Williamsburg Bridge bike path into Manhattan (steady climb, then a fast descent: control speed at the bottom). |
-| 5.2 | TURN LEFT | Rivington Street | 0.4 | Street | Lower East Side: Rivington St, then a short jog (Bowery, Prince, Mulberry, Jersey, Crosby) to Houston St. |
-| 5.6 | TURN LEFT | Prince Street | 0.3 | Street |  |
-| 5.9 | TURN LEFT | Houston Street | 0.9 | Street | Left onto Houston St, west about 0.9 mi to the river. Busy street: ride single file. |
-| 6.8 | TURN LEFT | Hudson River Greenway | 3.4 | Bike path | Hudson River Greenway north: 11 car-free miles up the west side. |
-| 10.2 | CONTINUE ONTO | Riverside Park South Bike Path | 0.7 | Bike path |  |
-| 10.9 | BEAR LEFT | Hudson River Greenway | 0.6 | Bike path |  |
-| 11.5 | BEAR RIGHT | Riverside Walk | 0.8 | Bike path |  |
-| 12.3 | CONTINUE ONTO | Cherry Walk | 1.5 | Bike path |  |
-| 13.8 | CONTINUE ONTO | West Harlem Piers Park Bike Path | 0.3 | Bike path |  |
-| 14.1 | CONTINUE ONTO | Riverside Walk | 1.2 | Bike path |  |
-| 15.3 | CONTINUE ONTO | Fort Washington Park Greenway | 2.8 | Bike path |  |
-| 18.1 | TURN LEFT | Seaman Avenue | 0.8 | Street | The greenway ends at Dyckman St (walk the short steep ramp). Continue up Seaman Ave through Inwood. |
-| 18.9 | TURN RIGHT | West 218th Street | 0.2 | Street |  |
-| 19.1 | TURN LEFT | Broadway (US-9) | 0.4 | Road shoulder | Busy street. Cross the Broadway Bridge over the Harlem River into Marble Hill. Ride single file. |
-| 19.5 | TURN LEFT | West 228th Street | 0.2 | Street |  |
-| 19.7 | TURN LEFT | West 230th Street | 0.2 | Street |  |
-| 19.9 | TURN RIGHT | Tibbett Avenue | 0.2 | Street |  |
-| 20.1 | TURN RIGHT | Irwin Avenue | 0.6 | Street | Riverdale side streets up to Van Cortlandt Park. |
-| 20.7 | TURN RIGHT | Manhattan College Parkway | 0.3 | Street |  |
-| 21.0 | BEAR LEFT | Van Cortlandt Park Greenway | 0.3 | Bike path |  |
-| 21.3 | TURN RIGHT | Putnam Greenway | 1.4 | Bike path | Van Cortlandt Park: the paved Putnam Trail runs north to the Yonkers line. |
-| 22.7 | CONTINUE ONTO | South County Trailway | 14.4 | Bike path | Car-free paved rail trail through Westchester. |
-| 37.1 | CONTINUE ONTO | North County Trailway | 14.9 | Bike path | At Eastview the trail becomes the North County Trailway. |
-| 52.0 | LUNCH | Trailside Cafe, 1807 Commerce St | 5.6 | — | Right beside the trail at Yorktown Heights. Yorktown Cycles next door is CLOSED Sun and Mon. |
-| 57.6 | CONTINUE ONTO | Putnam Trailway | 11.5 | Bike path | At Baldwin Place the trail becomes the Putnam County Trailway. |
-| 69.1 | TURN RIGHT | Putnam Avenue | 0.3 | Street |  |
-| 69.4 | TURN LEFT | North Main Street | 0.4 | Street |  |
-| 69.8 | TURN RIGHT | Maybrook Trailway | 3.3 | Bike path | In Brewster, continue onto the Maybrook Trailway for about 3 mi. |
-| 73.1 | TURN LEFT | Danbury Road (US-6; US-202) | 0.3 | Road shoulder |  |
-| 73.4 | TURN RIGHT | Dingle Ridge Road | 0.9 | Street |  |
-| 74.3 | TURN RIGHT | Nichols Road | 1.4 | Street | Rolling roads to the Comfort Inn. |
-| 75.7 | TURN RIGHT | Peach Lake Road (NY-121) | 0.4 | Road shoulder |  |
-| 76.1 | ARRIVE | Comfort Inn Brewster |  | — | 7-11 Peach Lake Rd, Brewster, NY |
+| 5.2 | TURN LEFT | Rivington Street | 0.4 | Street | Lower East Side: Rivington St west to the Bowery. |
+| 5.6 | TURN LEFT | Prince Street | 0.6 | Street | Prince St bike lane west across SoHo (one-way westbound) to 6th Ave. |
+| 6.2 | BEAR LEFT | Charlton Street | 0.4 | Street | Charlton St west, then right on Greenwich St and left on Houston St for the last block to the river. |
+| 6.6 | TURN LEFT | West Houston Street | 0.2 | Street |  |
+| 6.8 | CONTINUE ONTO | Hudson River Greenway | 3.2 | Bike path | Hudson River Greenway north: 11 car-free miles up the west side. |
+| 10.0 | CONTINUE ONTO | Riverside Park South Bike Path | 0.8 | Bike path |  |
+| 10.8 | BEAR LEFT | Hudson River Greenway | 0.5 | Bike path |  |
+| 11.3 | BEAR RIGHT | Riverside Walk | 0.9 | Bike path |  |
+| 12.2 | CONTINUE ONTO | Cherry Walk | 1.5 | Bike path |  |
+| 13.7 | CONTINUE ONTO | West Harlem Piers Park Bike Path | 0.2 | Bike path |  |
+| 13.9 | CONTINUE ONTO | Riverside Walk | 1.3 | Bike path |  |
+| 15.2 | CONTINUE ONTO | Fort Washington Park Greenway | 2.8 | Bike path |  |
+| 18.0 | TURN LEFT | Seaman Avenue | 0.7 | Street | The greenway ends at Dyckman St (walk the short steep ramp). Continue up Seaman Ave through Inwood. |
+| 18.7 | TURN RIGHT | West 218th Street | 0.2 | Street |  |
+| 18.9 | TURN LEFT | Broadway (US-9) | 0.5 | Road shoulder | Busy street. Cross the Broadway Bridge over the Harlem River into Marble Hill. Ride single file. |
+| 19.4 | TURN LEFT | West 228th Street | 0.2 | Street |  |
+| 19.6 | TURN LEFT | West 230th Street | 0.1 | Street |  |
+| 19.7 | TURN RIGHT | Tibbett Avenue | 0.2 | Street |  |
+| 19.9 | TURN RIGHT | Irwin Avenue | 0.6 | Street | Riverdale side streets up to Van Cortlandt Park. |
+| 20.5 | TURN RIGHT | Manhattan College Parkway | 0.3 | Street |  |
+| 20.8 | BEAR LEFT | Van Cortlandt Park Greenway | 0.3 | Bike path |  |
+| 21.1 | TURN RIGHT | Putnam Greenway | 1.4 | Bike path | Van Cortlandt Park: the paved Putnam Trail runs north to the Yonkers line. |
+| 22.5 | CONTINUE ONTO | South County Trailway | 14.4 | Bike path | Car-free paved rail trail through Westchester. |
+| 36.9 | CONTINUE ONTO | North County Trailway | 14.9 | Bike path | At Eastview the trail becomes the North County Trailway. |
+| 51.8 | LUNCH | Trailside Cafe, 1807 Commerce St | 5.6 | — | Right beside the trail at Yorktown Heights. Yorktown Cycles next door is CLOSED Sun and Mon. |
+| 57.4 | CONTINUE ONTO | Putnam Trailway | 11.5 | Bike path | At Baldwin Place the trail becomes the Putnam County Trailway. |
+| 68.9 | TURN RIGHT | Putnam Avenue | 0.3 | Street |  |
+| 69.2 | TURN LEFT | North Main Street | 0.4 | Street |  |
+| 69.6 | TURN RIGHT | Maybrook Trailway | 2.0 | Bike path | In Brewster, continue onto the Maybrook Trailway (southeast) for about 2 mi, under I-84. |
+| 71.6 | TURN LEFT | Danbury Road (US-6; US-202) | 0.3 | Road shoulder | Where the trail runs right beside Danbury Rd, leave it on the short gravel track on the right, down to the road (most map apps don't show this link; ride-tested Oct 2026). Danbury Rd (US-6/202) is a divided highway here: cross carefully to the southeast-bound side and ride about 0.3 mi to the Peach Lake Rd light. The Comfort Inn is on the right. |
+| 71.9 | ARRIVE | Comfort Inn Brewster |  | — | 7-11 Peach Lake Rd, Brewster, NY |
 
 </details>
 
 ### Monday • Day 2: Brewster to Hudson, NY
 *Maybrook Trailway, Dutchess Rail Trail, NY-9G, US-9 through Red Hook, Blue Hill Rd*
 
-- **Distance:** 83.4 mi (134.2 km) · **Climbing:** about +1,400 ft
-- **Surface:** About 37 mi of paved rail trail (Maybrook and Dutchess Rail Trail). Then roads with few turns: NY-9G (a 55-mph highway with a wide shoulder) for about 18 mi, US-9 through Red Hook village, Blue Hill Rd (CR-31, a two-lane county road) and US-9 into Hudson. No unpaved sections tagged in OpenStreetMap.
-- **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day02.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day02.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=41.38641,-73.58414&destination=42.25297,-73.79617&waypoints=41.40706,-73.61946|41.55192,-73.65993|41.57711,-73.71642|41.62330,-73.85191|41.72151,-73.91049|41.82859,-73.89643|41.97221,-73.88430|42.11159,-73.81788)
-- **Lunch:** **Red Hook Diner**, 7329 S Broadway, Red Hook, NY · (845) 758-5000 · mile 62.3. On the route (US-9) in Red Hook village. Listed open daily 8 AM to 9 PM. Backup: Taste Budd's Cafe, 40 W Market St (listed Mon to Sat 7 AM to 7 PM). The Historic Village Diner (7550 N Broadway) is closed Mondays.
-- **Lodging:** **The Wick, Hudson (Tribute Portfolio)**, 41 Cross St, Hudson, NY · (518) 249-6825 · mile 83.4. Near the Hudson Amtrak station, one block off Warren St. / **Hudson Whaler Hotel (formerly The Barlow)**, 542 Warren St, Hudson, NY · (518) 217-4334 · mile 82.0 (0.4 mi off route). The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number.
-- **Bike shops / supplies:** **Bikeway at Hopewell Depot**, Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY · (845) 463-4000 · mile 29.7. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours. / **Rhinebeck Bicycle Shop**, 10 Garden St, Rhinebeck, NY · (845) 876-4025 · mile 58.4 (1.7 mi off route). Repairs, parts, rentals. One block from Bread Alone. Call for hours. / **Steiner's Sports**, 301 Warren St, Hudson, NY · (518) 828-5063 · mile 83.4 (0.2 mi off route). Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.
-- **Bailout:** Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 42.0). Amtrak at Rhinecliff (a few miles west of the route near Rhinebeck) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.
+- **Distance:** 80.3 mi (129.2 km) · **Climbing:** about +1,300 ft
+- **Surface:** About 39 mi of paved rail trail (Maybrook and Dutchess Rail Trail), joined by a short gravel access track beside the motel. Then roads with few turns: NY-9G (a 55-mph highway with a wide shoulder) for about 18 mi, US-9 through Red Hook village, Blue Hill Rd (CR-31, a two-lane county road) and US-9 into Hudson. No unpaved sections tagged in OpenStreetMap.
+- **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day02.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day02.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=41.38641,-73.58414&destination=42.25297,-73.79617&waypoints=41.48389,-73.62148|41.59803,-73.67098|41.57496,-73.79220|41.68310,-73.86560|41.75363,-73.90857|41.85260,-73.88737|41.99589,-73.87503|42.13875,-73.82006)
+- **Lunch:** **Bubby's Take Away Kitchen**, 19 W Market St, Red Hook, NY · (845) 758-8226 · mile 59.9. Counter-service tacos, burritos, enchiladas, soups and curries, a few steps west of the main light in Red Hook village. Ride-tested Oct 2026 and rated excellent. Posted hours not verified: call ahead. Backup: Red Hook Diner (7329 S Broadway, on the route, listed open daily 8 AM to 9 PM).
+- **Lodging:** **The Wick, Hudson (Tribute Portfolio)**, 41 Cross St, Hudson, NY · (518) 249-6825 · mile 80.3. Near the Hudson Amtrak station, one block off Warren St. / **Hudson Whaler Hotel (formerly The Barlow)**, 542 Warren St, Hudson, NY · (518) 217-4334 · mile 78.9 (0.4 mi off route). The Barlow Hotel was sold and reopened as the Hudson Whaler: same building, new name and phone number.
+- **Bike shops / supplies:** **Bikeway at Hopewell Depot**, Hopewell Depot, Dutchess Rail Trail, Hopewell Junction, NY · (845) 463-4000 · mile 26.6. Seasonal rentals and repairs at the trailhead; main line is Bikeway's Wappingers Falls shop. Call for October hours. / **Rhinebeck Bicycle Shop**, 10 Garden St, Rhinebeck, NY · (845) 876-4025 · mile 55.3 (1.7 mi off route). Repairs, parts, rentals. One block from Bread Alone. Call for hours. / **Steiner's Sports**, 301 Warren St, Hudson, NY · (518) 828-5063 · mile 80.3 (0.2 mi off route). Bike sales and service. Listed Mon to Fri 10 to 6, Sat 10 to 5, Sun from 11.
+- **Bailout:** Metro-North Hudson Line and Amtrak at Poughkeepsie (about 0.5 mi off the route at mile 38.9). Amtrak at Rhinecliff (a few miles west of the route near Rhinebeck) and Hudson (end of stage). Amtrak Empire Service carry-on bikes need a $20 reservation.
 - **Option:** Changed 2026-09-28 from the Empire State Trail's inland county-road route via Rhinebeck and Tivoli (89.6 mi) to this more direct route (81.7 mi, about 500 ft less climbing, and far fewer turns). Rhinebeck village is now about 2 mi off route; Rhinebeck Bicycle Shop is there if needed.
 
 <details><summary>Turn-by-turn cues</summary>
 
 | Mile | Action | Road / place | Leg | Surface | Notes |
 |:---|:---|:---|:---|:---|:---|
-| 0.0 | DEPART ON | Peach Lake Road (NY-121) | 0.2 | Road shoulder |  |
-| 0.2 | TURN LEFT | Danbury Road (US-6; US-202) | 0.2 | Road shoulder | From the Comfort Inn, US-6/202 briefly to the Maybrook Trailway. |
-| 0.4 | TURN RIGHT | Branch Road | 0.6 | Street |  |
-| 1.0 | TURN LEFT | Danbury Road (US-6; US-202) | 0.6 | Road shoulder |  |
-| 1.6 | TURN LEFT | Maybrook Trailway | 2.4 | Bike path | Paved rail trail west for 24 mi to Hopewell Junction. |
-| 4.0 | TURN RIGHT | East Branch Avenue (US-6; US-202; NY-22) | 0.1 | Road shoulder |  |
-| 4.1 | TURN RIGHT | Main Street (US-6) | 0.3 | Road shoulder |  |
-| 4.4 | BEAR RIGHT | Oak Street | 0.8 | Street |  |
-| 5.2 | TURN LEFT | North Main Street | 0.6 | Street |  |
-| 5.8 | BEAR LEFT | Maybrook Trailway | 23.7 | Bike path |  |
-| 29.5 | TURN LEFT | Dutchess Rail Trail | 12.5 | Bike path | Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie. |
-| 42.0 | TURN LEFT | Parker Avenue (NY-9G) | 0.2 | Road shoulder | Poughkeepsie: leave the trail at Buckingham Ave, just after the trail passes under Parker Ave, and turn left onto Parker Ave (NY-9G). OPTIONAL: the Walkway Over the Hudson is about 0.5 mi farther west along the trail; riding across and back adds about 3 to 4 mi. |
-| 42.2 | CONTINUE ONTO | Violet Avenue (NY-9G) | 5.4 | Road shoulder | NY-9G north for about 18 mi: wide shoulder, 55-mph traffic. Single file. |
-| 47.6 | CONTINUE ONTO | NY 9G | 12.4 | Road shoulder |  |
-| 60.0 | TURN RIGHT | Albany Post Road (US-9) | 1.8 | Road shoulder | Right onto US-9 north into Red Hook village. |
-| 61.8 | CONTINUE ONTO | South Broadway (US-9) | 0.5 | Road shoulder |  |
-| 62.3 | LUNCH | Red Hook Diner, 7329 S Broadway, Red Hook | 1.4 | — | Open daily 8 AM to 9 PM. Backup: Taste Budd's Cafe, 40 W Market St (Mon to Sat). The Historic Village Diner is closed Mondays. |
-| 63.7 | CONTINUE ONTO | Albany Post Road (US-9) | 4.5 | Road shoulder |  |
-| 68.2 | CONTINUE ONTO | US 9 | 3.7 | Road shoulder |  |
-| 71.9 | TURN LEFT | Blue Hill Road (CR-31) | 7.5 | Road shoulder | Left onto Blue Hill Rd (CR-31) for 7.5 mi. |
-| 79.4 | CONTINUE ONTO | US 9 | 2.6 | Road shoulder |  |
-| 82.0 | TURN LEFT | Union Street | 1.4 | Street | Left onto Union St into Hudson. The Wick is at 41 Cross St, near the Amtrak station. |
-| 83.4 | ARRIVE | The Wick, Hudson (Tribute Portfolio) |  | — | 41 Cross St, Hudson, NY |
+| 0.0 | DEPART ON | Danbury Road (US-6; US-202) | 0.6 | Road shoulder | From the Comfort Inn, left at the Peach Lake Rd light onto Danbury Rd (US-6/202, divided highway) northwest for about 0.3 mi, then right onto the short gravel track up to the Maybrook Trailway (most map apps don't show this link) and left onto the trail. |
+| 0.6 | CONTINUE ONTO | Maybrook Trailway | 25.8 | Bike path | Paved rail trail northwest through Brewster and west for 26 mi to Hopewell Junction. |
+| 26.4 | TURN LEFT | Dutchess Rail Trail | 12.5 | Bike path | Hopewell Depot trailhead (Bikeway rentals and repairs here, seasonal). Paved trail 13 mi to Poughkeepsie. |
+| 38.9 | TURN LEFT | Parker Avenue (NY-9G) | 0.2 | Road shoulder | Poughkeepsie: leave the trail at Buckingham Ave, just after the trail passes under Parker Ave, and turn left onto Parker Ave (NY-9G). OPTIONAL: the Walkway Over the Hudson is about 0.5 mi farther west along the trail; riding across and back adds about 3 to 4 mi. |
+| 39.1 | CONTINUE ONTO | Violet Avenue (NY-9G) | 5.4 | Road shoulder | NY-9G north for about 18 mi: wide shoulder, 55-mph traffic. Single file. |
+| 44.5 | CONTINUE ONTO | NY 9G | 12.4 | Road shoulder |  |
+| 56.9 | TURN RIGHT | Albany Post Road (US-9) | 1.8 | Road shoulder | Right onto US-9 north into Red Hook village. |
+| 58.7 | CONTINUE ONTO | South Broadway (US-9) | 1.2 | Road shoulder |  |
+| 59.9 | LUNCH | Bubby's Take Away Kitchen, 19 W Market St, Red Hook | 0.7 | — | Tacos, burritos and curries, a few steps west of the main light (NY-199). Top-rated lunch stop on the tour. Hours not verified: call ahead. Backup: Red Hook Diner, 7329 S Broadway (on the route, open daily 8 AM to 9 PM). |
+| 60.6 | CONTINUE ONTO | Albany Post Road (US-9) | 4.5 | Road shoulder |  |
+| 65.1 | CONTINUE ONTO | US 9 | 3.7 | Road shoulder |  |
+| 68.8 | TURN LEFT | Blue Hill Road (CR-31) | 7.5 | Road shoulder | Left onto Blue Hill Rd (CR-31) for 7.5 mi. |
+| 76.3 | CONTINUE ONTO | US 9 | 2.5 | Road shoulder |  |
+| 78.8 | TURN LEFT | Union Street | 1.5 | Street | Left onto Union St into Hudson. The Wick is at 41 Cross St, near the Amtrak station. |
+| 80.3 | ARRIVE | The Wick, Hudson (Tribute Portfolio) |  | — | 41 Cross St, Hudson, NY |
 
 </details>
 
 ### Tuesday • Day 3: Hudson to Schuylerville, NY
 *Albany-Hudson Electric Trail, Dunn Bridge, Mohawk-Hudson trail, Waterford, Old Champlain Canal Trail, quiet back roads from Mechanicville to Schuylerville*
 
-- **Distance:** 78.7 mi (126.7 km) · **Climbing:** about +2,200 ft
+- **Distance:** 77.7 mi (125.0 km) · **Climbing:** about +2,200 ft
 - **Surface:** Paved AHET and Mohawk-Hudson trail with city streets through Rensselaer, Watervliet and Cohoes, then the Old Champlain Canal Trail (partly gravel) to Mechanicville. From Mechanicville it follows quiet back roads (Brickyard, Flike, Blizzard, Gronczniak, Burgoyne): rolling, about +900 ft in the last 18 mi, instead of US-4.
-- **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day03.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day03.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.25297,-73.79617&destination=43.10269,-73.57945&waypoints=42.31306,-73.74192|42.40849,-73.68879|42.52415,-73.60695|42.58472,-73.69291|42.65277,-73.74552|42.77385,-73.70406|42.88491,-73.68538|43.01198,-73.67119)
-- **Lunch:** **Don & Paul's Coffee Shoppe**, 68 Broad St, Waterford, NY · mile 51.1. Diner on the route by the Waterford canal harbor. Listed Mon to Sat 7 AM to 7:30 PM, Sun 7 AM to 2 PM.
-- **Lodging:** **Dovegate Inn**, 184 Broad St, Schuylerville, NY · (518) 695-3699 · mile 78.7. Small inn with a few rooms on Broad St in Schuylerville village, with an on-site restaurant (Kitchen at the Dovegate Inn, 518-695-6095). Book early: limited rooms. Ask about bike storage.
+- **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day03.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day03.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.25297,-73.79617&destination=43.10269,-73.57945&waypoints=42.31199,-73.74306|42.40243,-73.69497|42.51655,-73.61198|42.57945,-73.68068|42.64403,-73.74921|42.76839,-73.69760|42.88581,-73.68569|43.01000,-73.67163)
+- **Lunch:** **Don & Paul's Coffee Shoppe**, 68 Broad St, Waterford, NY · mile 50.5. Diner on the route by the Waterford canal harbor. Listed Mon to Sat 7 AM to 7:30 PM, Sun 7 AM to 2 PM.
+- **Lodging:** **Dovegate Inn**, 184 Broad St, Schuylerville, NY · (518) 695-3699 · mile 77.7. Small inn with a few rooms on Broad St in Schuylerville village, with an on-site restaurant (Kitchen at the Dovegate Inn, 518-695-6095). Book early: limited rooms. Ask about bike storage.
 - **Bike shops / supplies:** **Steiner's Sports (Valatie)**, 3455 Route 9, Valatie, NY · (518) 784-3663. In Valatie, just off the AHET around mile 15. Listed Mon to Wed 10 to 6, Thu and Fri 10 to 8, Sat 9 to 5, Sun 11 to 4.
 - **Bailout:** Amtrak Albany-Rensselaer station is about 0.1 mi off the route at mile 37.9; it's the best bailout, with frequent Empire Service trains and a $20 bike reservation. North of Waterford there is no rail; Stewart's Shops in Mechanicville and Schuylerville are the food stops.
 
@@ -218,52 +208,48 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 | 45.8 | TURN LEFT | George Street | 0.8 | Street |  |
 | 46.6 | TURN LEFT | Tibbits Avenue | 0.2 | Street |  |
 | 46.8 | TURN RIGHT | Cohoes Avenue | 1.0 | Street |  |
-| 47.8 | BEAR RIGHT | Cohoes Boulevard | 0.8 | Street |  |
-| 48.6 | TURN RIGHT | bike path | 0.4 | Bike path |  |
-| 49.0 | TURN LEFT | Ontario Street (NY-470) | 0.4 | Road shoulder |  |
-| 49.4 | TURN LEFT | Saratoga Street (NY-32) | 1.7 | Road shoulder | NY-32 north into Waterford. |
-| 51.1 | LUNCH | Don & Paul's, 68 Broad St, Waterford | 0.1 | — | Diner on the route by the Waterford canal harbor (Erie Canal Lock E2). |
-| 51.2 | BEAR LEFT | Old Champlain Canal Trail | 1.9 | Bike path | Canal towpath trail north toward Mechanicville (partly gravel). |
-| 53.1 | TURN LEFT | Bells Lane North | 0.4 | Street |  |
-| 53.5 | TURN RIGHT | Old Champlain Canal Trail | 3.1 | Bike path |  |
-| 56.6 | TURN RIGHT | Upper Newtown Road (CR-86) | 0.2 | Road shoulder |  |
-| 56.8 | TURN LEFT | Hudson River Road (US-4; NY-32) | 1.5 | Road shoulder |  |
-| 58.3 | BEAR RIGHT | South Main Street | 1.5 | Street |  |
-| 59.8 | TURN LEFT | Park Avenue | 0.1 | Street |  |
-| 59.9 | TURN RIGHT | Railroad Street | 0.3 | Street |  |
-| 60.2 | TURN RIGHT | Viall Avenue | 0.4 | Street |  |
-| 60.6 | TURN RIGHT | Hulin Street | 0.2 | Street |  |
-| 60.8 | TURN LEFT | Stillwater Street | 0.3 | Street |  |
-| 61.1 | CONTINUE ONTO | Brickyard Road | 1.3 | Street | Leave US-4 at Mechanicville for quiet, rolling back roads the rest of the way to Schuylerville. |
-| 62.4 | TURN LEFT | Van Ness Road | 0.8 | Street |  |
-| 63.2 | TURN RIGHT | Flike Road | 1.6 | Street |  |
-| 64.8 | TURN LEFT | Lake Road (CR-76) | 0.8 | Road shoulder |  |
-| 65.6 | TURN RIGHT | Blizzard Road | 1.3 | Street |  |
-| 66.9 | CONTINUE ONTO | Gronczniak Road | 2.8 | Street |  |
-| 69.7 | TURN RIGHT | Cedar Bluff Road (CR-71) | 0.4 | Road shoulder |  |
-| 70.1 | TURN LEFT | Spook Hollow Road | 0.6 | Street |  |
-| 70.7 | TURN LEFT | County Road 67 (CR-67) | 0.7 | Road shoulder |  |
-| 71.4 | BEAR RIGHT | Mabb Road | 0.8 | Street |  |
-| 72.2 | CONTINUE ONTO | Burke Road | 1.5 | Street |  |
-| 73.7 | CONTINUE ONTO | Walsh Road | 1.4 | Street |  |
-| 75.1 | TURN RIGHT | Burgoyne Road | 2.7 | Street | Burgoyne Rd into Schuylerville. |
-| 77.8 | TURN LEFT | Clancy Street | 0.2 | Street |  |
-| 78.0 | TURN LEFT | Green Street | 0.3 | Street |  |
-| 78.3 | TURN RIGHT | Spring Street (NY-29) | 0.4 | Road shoulder |  |
-| 78.7 | ARRIVE | Dovegate Inn |  | — | 184 Broad St, Schuylerville, NY |
+| 47.8 | BEAR RIGHT | Cohoes Boulevard | 2.6 | Street | Cohoes Blvd path: stay on it past Bridge Ave and Ontario St to its north end (don't turn into downtown Cohoes), then continue on Saratoga St (NY-32) over the Mohawk River bridge into Waterford, where it becomes Broad St. |
+| 50.4 | TURN LEFT | Old Champlain Canal Trail | 0.1 | Bike path | Canal towpath trail north toward Mechanicville (partly gravel). |
+| 50.5 | LUNCH | Don & Paul's, 68 Broad St, Waterford | 1.6 | — | Diner on the route by the Waterford canal harbor (Erie Canal Lock E2). |
+| 52.1 | TURN LEFT | Bells Lane North | 0.4 | Street |  |
+| 52.5 | TURN RIGHT | Old Champlain Canal Trail | 3.0 | Bike path |  |
+| 55.5 | TURN RIGHT | Upper Newtown Road (CR-86) | 0.3 | Road shoulder | Leave the canal trail here: right on Upper Newtown Rd, then left on US-4. The path that continues straight ahead is not the route. |
+| 55.8 | TURN LEFT | Hudson River Road (US-4; NY-32) | 1.4 | Road shoulder |  |
+| 57.2 | BEAR RIGHT | South Main Street | 1.5 | Street |  |
+| 58.7 | TURN LEFT | Park Avenue | 0.2 | Street |  |
+| 58.9 | TURN RIGHT | Railroad Street | 0.3 | Street |  |
+| 59.2 | TURN RIGHT | Viall Avenue | 0.3 | Street |  |
+| 59.5 | TURN RIGHT | Hulin Street | 0.2 | Street |  |
+| 59.7 | TURN LEFT | Stillwater Street | 0.3 | Street |  |
+| 60.0 | CONTINUE ONTO | Brickyard Road | 1.4 | Street | Leave US-4 at Mechanicville for quiet, rolling back roads the rest of the way to Schuylerville. |
+| 61.4 | TURN LEFT | Van Ness Road | 0.7 | Street |  |
+| 62.1 | TURN RIGHT | Flike Road | 1.7 | Street |  |
+| 63.8 | TURN LEFT | Lake Road (CR-76) | 0.7 | Road shoulder |  |
+| 64.5 | TURN RIGHT | Blizzard Road | 1.4 | Street |  |
+| 65.9 | CONTINUE ONTO | Gronczniak Road | 2.7 | Street |  |
+| 68.6 | TURN RIGHT | Cedar Bluff Road (CR-71) | 0.5 | Road shoulder |  |
+| 69.1 | TURN LEFT | Spook Hollow Road | 0.6 | Street |  |
+| 69.7 | TURN LEFT | County Road 67 (CR-67) | 0.7 | Road shoulder |  |
+| 70.4 | BEAR RIGHT | Mabb Road | 0.8 | Street |  |
+| 71.2 | CONTINUE ONTO | Burke Road | 1.5 | Street |  |
+| 72.7 | CONTINUE ONTO | Walsh Road | 1.3 | Street |  |
+| 74.0 | TURN RIGHT | Burgoyne Road | 2.9 | Street | Burgoyne Rd into Schuylerville. |
+| 76.9 | TURN LEFT | Green Street | 0.5 | Street |  |
+| 77.4 | TURN RIGHT | Spring Street (NY-29) | 0.3 | Road shoulder |  |
+| 77.7 | ARRIVE | Dovegate Inn |  | — | 184 Broad St, Schuylerville, NY |
 
 </details>
 
 ### Wednesday • Day 4: Schuylerville to Ticonderoga, NY
 *Champlain Canalway Trail (US-4 & towpaths), Fort Edward, Fort Ann, Whitehall, NY-22*
 
-- **Distance:** 64.3 mi (103.5 km) · **Climbing:** about +2,200 ft
+- **Distance:** 64.7 mi (104.1 km) · **Climbing:** about +2,200 ft
 - **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann.
 - **GPX:** [`gpx/7day/nyc_to_montreal_7day_tour_day04.gpx`](gpx/7day/nyc_to_montreal_7day_tour_day04.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=43.10269,-73.57945&destination=43.84823,-73.43419&waypoints=43.18695,-73.57968|43.27451,-73.57722|43.32816,-73.51979|43.39948,-73.48870|43.44889,-73.43404|43.55474,-73.40344|43.64235,-73.44626|43.74676,-73.39879)
-- **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 38.4 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
-- **Lodging:** **Circle Court Motel**, 6 Montcalm St, Ticonderoga, NY · (518) 585-7660 · mile 64.3. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby. / **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 63.8 (0.7 mi off route). On the south side of town, right on the route.
-- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 15.3 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
-- **Bailout:** Amtrak Adirondack stops at Fort Edward (mile 13.2), Whitehall (mile 38.7) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.
+- **Lunch:** **Whitehall Market**, 192 Broadway, Whitehall, NY · mile 38.4. Full grocery store (opened May 2026) on the route in Whitehall village, with a deli counter for hot and cold sandwiches and plenty of drinks and snacks. Ride-tested Oct 2026: decent deli sandwiches. Hours and phone not verified. Backup: Stewart's Shops, 60 Poultney St.
+- **Lodging:** **Circle Court Motel**, 6 Montcalm St, Ticonderoga, NY · (518) 585-7660 · mile 64.7. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby. / **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 64.2 (0.7 mi off route). On the south side of town, right on the route.
+- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 15.7 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
+- **Bailout:** Amtrak Adirondack stops at Fort Edward (mile 13.6), Whitehall (mile 39.1) and Ticonderoga (about 1.1 mi off the route near the end). Northbound runs once daily and carry-on bikes need a reservation.
 
 <details><summary>Turn-by-turn cues</summary>
 
@@ -272,36 +258,35 @@ Recommended. The border day and the Montréal arrival are split, so the last two
 | 0.0 | DEPART ON | Tow Path | 0.4 | Bike path |  |
 | 0.4 | CONTINUE ONTO | Old Champlain Canal Towpath Trail | 0.5 | Bike path | Towpath trail departing Schuylerville north along the canal. |
 | 0.9 | TURN RIGHT | County Road 42 (CR-42) | 0.4 | Road shoulder |  |
-| 1.3 | CONTINUE ONTO | Dix Bridge Road | 0.1 | Street |  |
-| 1.4 | TURN LEFT | bike path | 0.4 | Bike path |  |
-| 1.8 | TURN LEFT | CR 113 | 0.8 | Street |  |
-| 2.6 | TURN RIGHT | US 4 | 1.5 | Road shoulder |  |
-| 4.1 | TURN LEFT | Fort Miller Road | 1.0 | Street |  |
-| 5.1 | TURN LEFT | US 4 | 7.4 | Road shoulder |  |
-| 12.5 | TURN LEFT | Old Champlain Canal Path | 0.2 | Bike path |  |
-| 12.7 | CONTINUE ONTO | Canal Street | 0.7 | Street |  |
-| 13.4 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
-| 13.5 | TURN RIGHT | Old Champlain Canal Towpath | 0.3 | Street |  |
-| 13.8 | BEAR RIGHT | Towpath Road | 0.7 | Street |  |
-| 14.5 | CONTINUE ONTO | Old Champlain Canal Trail | 1.9 | Bike path |  |
-| 16.4 | TURN RIGHT | Towpath Road | 2.4 | Street |  |
-| 18.8 | TURN RIGHT | New Swamp Road | 0.3 | Street |  |
-| 19.1 | TURN LEFT | Champlain Canalway Trail | 4.4 | Bike path | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
-| 23.5 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
-| 23.7 | TURN RIGHT | Champlain Canalway Trail | 1.5 | Bike path |  |
-| 25.2 | CONTINUE ONTO | South Canal Street | 0.3 | Street |  |
-| 25.5 | CONTINUE ONTO | Clay Hill Road | 2.6 | Street |  |
-| 28.1 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
-| 28.3 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
-| 28.7 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
-| 30.4 | TURN LEFT | State Highway 22 (NY-22) | 1.1 | Road shoulder |  |
-| 31.5 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
-| 37.6 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.8 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here. |
-| 38.4 | LUNCH / RESUPPLY | Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route) | 0.2 | — | Historic Grounds (listed in earlier drafts) is CLOSED after a fire. |
-| 38.6 | CONTINUE ONTO | Broadway (NY-22) | 2.0 | Road shoulder |  |
-| 40.6 | CONTINUE ONTO | State Highway 22 (NY-22) | 22.4 | Road shoulder |  |
-| 63.0 | TURN LEFT | Montcalm Street | 1.3 | Street | Circle Court Motel is at 6 Montcalm St. |
-| 64.3 | ARRIVE | Circle Court Motel |  | — | 6 Montcalm St, Ticonderoga, NY |
+| 1.3 | CONTINUE ONTO | Dix Bridge Road (CR-70) | 0.3 | Road shoulder |  |
+| 1.6 | TURN LEFT | CR 113 | 1.1 | Street | CR-113 to US-4. At the end, go left on US-4 for about 100 ft, then sharp right onto River Rd: a quiet road along the Hudson instead of 1.5 mi of US-4. |
+| 2.7 | TURN RIGHT | River Road | 1.8 | Street |  |
+| 4.5 | TURN LEFT | Fort Miller Road | 1.0 | Street |  |
+| 5.5 | TURN LEFT | US 4 | 7.4 | Road shoulder |  |
+| 12.9 | TURN LEFT | Old Champlain Canal Path | 0.2 | Bike path |  |
+| 13.1 | CONTINUE ONTO | Canal Street | 0.7 | Street |  |
+| 13.8 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
+| 13.9 | TURN RIGHT | Old Champlain Canal Towpath | 0.3 | Street |  |
+| 14.2 | BEAR RIGHT | Towpath Road | 0.7 | Street |  |
+| 14.9 | CONTINUE ONTO | Old Champlain Canal Trail | 2.0 | Bike path |  |
+| 16.9 | TURN RIGHT | Towpath Road | 2.3 | Street |  |
+| 19.2 | TURN RIGHT | New Swamp Road | 0.3 | Street |  |
+| 19.5 | TURN LEFT | Champlain Canalway Trail | 4.4 | Bike path | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
+| 23.9 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
+| 24.1 | TURN RIGHT | Champlain Canalway Trail | 1.5 | Bike path |  |
+| 25.6 | CONTINUE ONTO | South Canal Street | 0.3 | Street |  |
+| 25.9 | CONTINUE ONTO | Clay Hill Road | 2.6 | Street |  |
+| 28.5 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
+| 28.7 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
+| 29.1 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
+| 30.8 | TURN LEFT | State Highway 22 (NY-22) | 1.1 | Road shoulder |  |
+| 31.9 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
+| 38.0 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.4 | Road shoulder | Whitehall village. Whitehall Market (192 Broadway) is on the route: deli sandwiches, drinks, snacks. Stewart's is at 60 Poultney St, just off the route. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here. |
+| 38.4 | LUNCH / RESUPPLY | Whitehall Market, 192 Broadway, Whitehall | 0.6 | — | Grocery with a deli counter: decent sandwiches, plenty of drinks and snacks (ride-tested Oct 2026). Backup: Stewart's, 60 Poultney St. Historic Grounds is CLOSED after a fire. |
+| 39.0 | CONTINUE ONTO | Broadway (NY-22) | 2.0 | Road shoulder |  |
+| 41.0 | CONTINUE ONTO | State Highway 22 (NY-22) | 22.4 | Road shoulder |  |
+| 63.4 | TURN LEFT | Montcalm Street | 1.3 | Street | Circle Court Motel is at 6 Montcalm St. |
+| 64.7 | ARRIVE | Circle Court Motel |  | — | 6 Montcalm St, Ticonderoga, NY |
 
 </details>
 

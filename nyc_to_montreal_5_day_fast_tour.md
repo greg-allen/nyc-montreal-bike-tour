@@ -1,6 +1,6 @@
 # NYC to Montréal: 5-Day Fast Tour
 
-**450.3 mi (725 km) · about +11,000 ft · average 90.1 mi/day · Fast (14 to 17 mph rolling); strong riders on light bikes only**
+**449.6 mi (724 km) · about +11,000 ft · average 89.9 mi/day · Fast (14 to 17 mph rolling); strong riders on light bikes only**
 
 Three days over 90 miles. In October daylight this leaves almost no margin for mechanicals, headwinds or getting lost.
 
@@ -11,9 +11,9 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 |:---|:---|:---|:---|:---|:---|:---|
 | 1 | Sun Oct 4 | NYC → Poughkeepsie | 102.5 | +2,500 | Trailside Cafe (mi 47) | DoubleTree by Hilton Poughkeepsie |
 | 2 | Mon Oct 5 | Poughkeepsie → Troy | 94.7 | +1,900 | Bread Alone Bakery & Cafe (mi 19) | Best Western Plus Franklin Square Inn Troy/Albany |
-| 3 | Tue Oct 6 | Troy → Ticonderoga | 92.8 | +2,600 | Stewart's Shops #211 (mi 67) | Circle Court Motel |
+| 3 | Tue Oct 6 | Troy → Ticonderoga | 93.2 | +2,600 | Whitehall Market (mi 66) | Circle Court Motel |
 | 4 | Wed Oct 7 | Ticonderoga → Plattsburgh | 73.6 | +3,300 | Pink Pig Cafe (mi 39) | Microtel Inn & Suites by Wyndham Plattsburgh |
-| 5 | Thu Oct 8 | Plattsburgh → Montréal | 86.7 | +700 | Boulangerie du Vieux-Chambly (mi 66) | Hôtel Bonaventure Montréal |
+| 5 | Thu Oct 8 | Plattsburgh → Montréal | 85.6 | +700 | Boulangerie du Vieux-Chambly (mi 64) | Hôtel Bonaventure Montréal |
 
 **Reality check:** this schedule means three days over 90 miles in October daylight. The 'push' options in earlier drafts are all 125+ mile days; they're listed per stage for completeness, but they aren't recommended.
 
@@ -37,7 +37,7 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 
 ### 3. October daylight
 - Sunrise is about **6:55 to 7:03 AM**. Sunset is **6:33 PM in NYC on Oct 4**, falling to **6:18 PM in Montréal on Oct 10**. Civil twilight ends about 28 minutes after sunset.
-- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Day 1 is 102.5 mi, Day 2 is 94.7 mi, Day 3 is 92.8 mi, Day 5 is 86.7 mi) and carry real lights.
+- At touring pace (11 to 13 mph rolling plus stops), an 80 to 90 mile day takes 8 to 9 hours. **Be rolling by 8:30 AM** on the long days (Day 1 is 102.5 mi, Day 2 is 94.7 mi, Day 3 is 93.2 mi, Day 5 is 85.6 mi) and carry real lights.
 - Wet leaves on rail trails are slippery: brake before turns and corners.
 
 ### 4. Food and water gaps
@@ -197,13 +197,13 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 ### Tuesday • Day 3: Troy to Ticonderoga, NY
 *Waterford, Old Champlain Canal Trail, US-4 through Stillwater & Schuylerville, canal towpaths, Whitehall, NY-22*
 
-- **Distance:** 92.8 mi (149.3 km) · **Climbing:** about +2,600 ft
+- **Distance:** 93.2 mi (150.0 km) · **Climbing:** about +2,600 ft
 - **Surface:** Champlain Canalway Trail towpaths and road shoulders through Fort Edward, Fort Ann, and Whitehall, then rolling NY-22 into Ticonderoga. About 8 mi of compacted stone-dust or gravel canal towpath between Schuylerville and Fort Ann.
-- **GPX:** [`gpx/5day/nyc_to_montreal_5day_tour_day03.gpx`](gpx/5day/nyc_to_montreal_5day_tour_day03.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.73415,-73.68842&destination=43.84823,-73.43419&waypoints=42.86221,-73.67900|43.04263,-73.59225|43.14436,-73.58134|43.28484,-73.56696|43.36048,-73.49327|43.44277,-73.44174|43.57033,-73.41983|43.69158,-73.42410)
-- **Lunch:** **Stewart's Shops #211**, 60 Poultney St, Whitehall, NY · mile 66.6 (0.3 mi off route). Convenience store with hot food and coffee. The reliable food stop in Whitehall.
-- **Lodging:** **Circle Court Motel**, 6 Montcalm St, Ticonderoga, NY · (518) 585-7660 · mile 92.8. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby. / **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 92.3 (0.7 mi off route). On the south side of town, right on the route.
-- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 43.5 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
-- **Bailout:** Amtrak Adirondack at Fort Edward (mile 41.4), Whitehall and Ticonderoga. Carry-on bikes need a reservation.
+- **GPX:** [`gpx/5day/nyc_to_montreal_5day_tour_day03.gpx`](gpx/5day/nyc_to_montreal_5day_tour_day03.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=42.73415,-73.68842&destination=43.84823,-73.43419&waypoints=42.86221,-73.67900|43.04263,-73.59225|43.15035,-73.57866|43.28484,-73.56696|43.36048,-73.49327|43.44277,-73.44174|43.57033,-73.41983|43.69158,-73.42410)
+- **Lunch:** **Whitehall Market**, 192 Broadway, Whitehall, NY · mile 66.5. Full grocery store (opened May 2026) on the route in Whitehall village, with a deli counter for hot and cold sandwiches and plenty of drinks and snacks. Ride-tested Oct 2026: decent deli sandwiches. Hours and phone not verified. Backup: Stewart's Shops, 60 Poultney St.
+- **Lodging:** **Circle Court Motel**, 6 Montcalm St, Ticonderoga, NY · (518) 585-7660 · mile 93.2. Small motel at the west end of Montcalm St, near the NY-9N/22 junction; Stewart's (26 Montcalm St) is nearby. / **Best Western Plus Ticonderoga Inn & Suites**, 260 Burgoyne Rd, Ticonderoga, NY · (518) 585-2378 · mile 92.7 (0.7 mi off route). On the south side of town, right on the route.
+- **Bike shops / supplies:** **Walker's Farm, Home & Tack**, 5565 State Route 4, Fort Ann, NY · (518) 639-5223. Farm and hardware store, NOT a bike shop: basic tools and supplies only. Listed Mon to Fri 8 to 6, Sat 8 to 5, Sun 9 to 4. / **Rick's Bike Shop**, 368 Ridge Rd, Queensbury, NY · (518) 793-8986 · mile 43.9 (4.7 mi off route). Full shop, but about 5 mi west of the route near Fort Edward. Mon to Fri 10 to 6, Sat 10 to 5, closed Sun.
+- **Bailout:** Amtrak Adirondack at Fort Edward (mile 41.8), Whitehall and Ticonderoga. Carry-on bikes need a reservation.
 - **Push option:** Push to Essex: Ticonderoga to Essex is 38 mi (about 131 mi total). Earlier drafts said +18 mi; that was wrong.
 
 <details><summary>Turn-by-turn cues</summary>
@@ -231,38 +231,38 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 27.4 | TURN RIGHT | US 4 | 1.0 | Road shoulder |  |
 | 28.4 | TURN LEFT | Old Champlain Canal Towpath Trail | 0.9 | Bike path | Towpath trail departing Schuylerville north along the canal. |
 | 29.3 | TURN RIGHT | County Road 42 (CR-42) | 0.4 | Road shoulder |  |
-| 29.7 | CONTINUE ONTO | Dix Bridge Road | 0.1 | Street |  |
-| 29.8 | TURN LEFT | bike path | 0.4 | Bike path |  |
-| 30.2 | TURN LEFT | CR 113 | 0.7 | Street |  |
-| 30.9 | TURN RIGHT | US 4 | 9.8 | Road shoulder |  |
-| 40.7 | TURN LEFT | Old Champlain Canal Path | 0.2 | Bike path |  |
-| 40.9 | CONTINUE ONTO | Canal Street | 0.5 | Street |  |
-| 41.4 | TURN RIGHT | Culver Street | 0.2 | Street |  |
-| 41.6 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
-| 41.7 | TURN RIGHT | Old Champlain Canal Towpath | 0.2 | Street |  |
-| 41.9 | BEAR RIGHT | Towpath Lane | 0.8 | Street |  |
-| 42.7 | CONTINUE ONTO | Old Champlain Canal Trail | 1.9 | Bike path |  |
-| 44.6 | TURN RIGHT | Towpath Road | 2.4 | Street |  |
-| 47.0 | TURN RIGHT | New Swamp Road | 0.3 | Street |  |
-| 47.3 | TURN LEFT | Champlain Canalway Trail | 1.6 | Bike path | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
-| 48.9 | TURN LEFT | bike path | 0.5 | Bike path |  |
-| 49.4 | TURN RIGHT | Champlain Canalway Trail | 2.3 | Bike path |  |
-| 51.7 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
-| 51.9 | TURN RIGHT | Champlain Canalway Trail | 1.4 | Bike path |  |
-| 53.3 | CONTINUE ONTO | South Canal Street | 0.3 | Street |  |
-| 53.6 | CONTINUE ONTO | Clay Hill Road | 2.7 | Street |  |
-| 56.3 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
-| 56.5 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
-| 56.9 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
-| 58.6 | TURN LEFT | State Highway 22 (NY-22) | 1.0 | Road shoulder |  |
-| 59.6 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
-| 65.7 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.9 | Road shoulder | Whitehall village. Stewart's Shop is at 60 Poultney St, just off the route. Historic Grounds is CLOSED. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here. |
-| 66.6 | LUNCH / RESUPPLY | Stewart's Shops, 60 Poultney St, Whitehall (0.3 mi off route) | 0.3 | — | Historic Grounds (listed in earlier drafts) is CLOSED after a fire. |
-| 66.9 | CONTINUE ONTO | Broadway (NY-22) | 1.9 | Road shoulder |  |
-| 68.8 | CONTINUE ONTO | State Highway 22 (NY-22) | 22.6 | Road shoulder |  |
-| 91.4 | TURN LEFT | NY 22; NY 74 | 0.2 | Road shoulder |  |
-| 91.6 | TURN RIGHT | Montcalm Street | 1.2 | Street | Circle Court Motel is at 6 Montcalm St. |
-| 92.8 | ARRIVE | Circle Court Motel |  | — | 6 Montcalm St, Ticonderoga, NY |
+| 29.7 | CONTINUE ONTO | Dix Bridge Road (CR-70) | 0.3 | Road shoulder |  |
+| 30.0 | TURN LEFT | CR 113 | 1.1 | Street | CR-113 to US-4. At the end, go left on US-4 for about 100 ft, then sharp right onto River Rd: a quiet road along the Hudson instead of 1.5 mi of US-4. |
+| 31.1 | TURN RIGHT | River Road | 1.8 | Street |  |
+| 32.9 | BEAR LEFT | US 4 | 8.2 | Road shoulder |  |
+| 41.1 | TURN LEFT | Old Champlain Canal Path | 0.1 | Bike path |  |
+| 41.2 | CONTINUE ONTO | Canal Street | 0.6 | Street |  |
+| 41.8 | TURN RIGHT | Culver Street | 0.2 | Street |  |
+| 42.0 | TURN LEFT | McIntyre Street | 0.1 | Street |  |
+| 42.1 | TURN RIGHT | Old Champlain Canal Towpath | 0.2 | Street |  |
+| 42.3 | BEAR RIGHT | Towpath Lane | 0.8 | Street |  |
+| 43.1 | CONTINUE ONTO | Old Champlain Canal Trail | 1.9 | Bike path |  |
+| 45.0 | TURN RIGHT | Towpath Road | 2.4 | Street |  |
+| 47.4 | TURN RIGHT | New Swamp Road | 0.3 | Street |  |
+| 47.7 | TURN LEFT | Champlain Canalway Trail | 1.6 | Bike path | Canalway trail: compacted stone dust or gravel through Fort Edward and Fort Ann. |
+| 49.3 | TURN LEFT | bike path | 0.5 | Bike path |  |
+| 49.8 | TURN RIGHT | Champlain Canalway Trail | 2.3 | Bike path |  |
+| 52.1 | TURN LEFT | Baldwin Corners Road | 0.2 | Street |  |
+| 52.3 | TURN RIGHT | Champlain Canalway Trail | 1.4 | Bike path |  |
+| 53.7 | CONTINUE ONTO | South Canal Street | 0.3 | Street |  |
+| 54.0 | CONTINUE ONTO | Clay Hill Road | 2.7 | Street |  |
+| 56.7 | TURN RIGHT | Deweys Bridge Road | 0.2 | Street |  |
+| 56.9 | TURN LEFT | South Quarry Road | 0.4 | Street |  |
+| 57.3 | CONTINUE ONTO | Empire State Trail | 1.7 | Bike path |  |
+| 59.0 | TURN LEFT | State Highway 22 (NY-22) | 1.0 | Road shoulder |  |
+| 60.0 | TURN RIGHT | US Route 4 (US-4; NY-22) | 6.1 | Road shoulder | US-4/NY-22 north into Whitehall. |
+| 66.1 | CONTINUE ONTO | Broadway Avenue (US-4; NY-22) | 0.4 | Road shoulder | Whitehall village. Whitehall Market (192 Broadway) is on the route: deli sandwiches, drinks, snacks. Stewart's is at 60 Poultney St, just off the route. After Whitehall: 23.5 rolling miles on NY-22 with few services, so fill bottles here. |
+| 66.5 | LUNCH / RESUPPLY | Whitehall Market, 192 Broadway, Whitehall | 0.8 | — | Grocery with a deli counter: decent sandwiches, plenty of drinks and snacks (ride-tested Oct 2026). Backup: Stewart's, 60 Poultney St. Historic Grounds is CLOSED after a fire. |
+| 67.3 | CONTINUE ONTO | Broadway (NY-22) | 1.9 | Road shoulder |  |
+| 69.2 | CONTINUE ONTO | State Highway 22 (NY-22) | 22.6 | Road shoulder |  |
+| 91.8 | TURN LEFT | NY 22; NY 74 | 0.2 | Road shoulder |  |
+| 92.0 | TURN RIGHT | Montcalm Street | 1.2 | Street | Circle Court Motel is at 6 Montcalm St. |
+| 93.2 | ARRIVE | Circle Court Motel |  | — | 6 Montcalm St, Ticonderoga, NY |
 
 </details>
 
@@ -316,14 +316,14 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 ### Thursday • Day 5: Plattsburgh, NY to Montréal, QC
 *Lake Shore Rd, Rouses Point, border at US-11 / Route 223, Richelieu River, Saint-Jean, Chambly Canal, Chambly, Route Verte to Longueuil, Jacques-Cartier Bridge, Parc Jean-Drapeau, Pont de la Concorde*
 
-- **Distance:** 86.7 mi (139.5 km) · **Climbing:** about +700 ft
+- **Distance:** 85.6 mi (137.8 km) · **Climbing:** about +700 ft
 - **Surface:** Quiet Lake Shore Rd to Rouses Point, then flat paved Route 223 along the Richelieu to Saint-Jean. The Chambly Canal path is a mix of asphalt and fine gravel. OpenStreetMap has no mapped path for about 4 mi in the middle, so the GPX uses Rue Jean-Talon (Route 223) right beside the canal there; if the towpath is open on the ground, ride it. After that it's bike paths and street bike lanes through Chambly, Saint-Hubert and Longueuil, then the Jacques-Cartier Bridge bike path.
-- **GPX:** [`gpx/5day/nyc_to_montreal_5day_tour_day05.gpx`](gpx/5day/nyc_to_montreal_5day_tour_day05.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=44.69724,-73.50241&destination=45.49866,-73.56586&waypoints=44.82068,-73.40065|44.94016,-73.40950|45.05779,-73.35698|45.23079,-73.25717|45.35024,-73.26677|45.43408,-73.25401|45.45792,-73.37507|45.51858,-73.53531)
-- **Lunch:** **Boulangerie du Vieux-Chambly**, 2403 Av. Bourgogne, Chambly, QC · +1 (450) 447-9991 · mile 65.5 (0.2 mi off route). Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.
-- **Lodging:** **Hôtel Bonaventure Montréal**, 900 Rue de la Gauchetière O, Montréal, QC · +1 (514) 878-2332 · mile 86.7. On top of Place Bonaventure, downtown; linked to the underground city. Toll-free 1-800-267-2575. Ask about bike storage.
-- **Bike shops / supplies:** **Cycle LM**, 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC · mile 58.6 (1.3 mi off route). Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com. / **Ça Roule Montréal / Montreal on Wheels**, 27 Rue de la Commune E, Montréal, QC · +1 (514) 866-0633 · mile 83.8 (0.5 mi off route). Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily. / **Bicycles Quilicot (Villeray)**, 7341 Rue Saint-Denis, Montréal, QC · +1 (514) 303-4118 · mile 86.7 (3.7 mi off route). Full shop, 4 mi north of downtown. Call ahead to confirm bike boxes are available. / **MEC Montréal (Marché Central)**, 8989 Boul. de l'Acadie, Montréal, QC · +1 (514) 788-5878. Outdoor store with bike service. Earlier drafts gave a Saint-Denis address; that is wrong.
-- **Bailout:** Amtrak Adirondack at Rouses Point (mile 29.4): the last station where carry-on bikes are accepted. In Quebec, exo buses serve Saint-Jean to Montréal (check bike rules); Longueuil–Université-de-Sherbrooke Metro (Yellow Line) is on the route at mile 80.3, and bikes are allowed outside weekday rush hours.
-- **Option:** Follows Lake Shore Rd to Rouses Point and Route 223 border crossing, then connects to the scenic Richelieu River and Chambly Canal paths into Montréal (86.7 mi).
+- **GPX:** [`gpx/5day/nyc_to_montreal_5day_tour_day05.gpx`](gpx/5day/nyc_to_montreal_5day_tour_day05.gpx) · [Google Maps (approximate; uses sampled waypoints)](https://www.google.com/maps/dir/?api=1&travelmode=bicycling&origin=44.69724,-73.50241&destination=45.49866,-73.56586&waypoints=44.81848,-73.39984|44.93366,-73.39171|45.07121,-73.34019|45.26923,-73.27163|45.35991,-73.26838|45.43977,-73.26055|45.46208,-73.38227|45.51776,-73.53569)
+- **Lunch:** **Boulangerie du Vieux-Chambly**, 2403 Av. Bourgogne, Chambly, QC · +1 (450) 447-9991 · mile 64.4 (0.2 mi off route). Bakery and cafe on the route, about 0.5 mi before Fort Chambly. Sandwiches and pastries. Replaces Fourquet Fourchette, which has closed.
+- **Lodging:** **Hôtel Bonaventure Montréal**, 900 Rue de la Gauchetière O, Montréal, QC · +1 (514) 878-2332 · mile 85.6. On top of Place Bonaventure, downtown; linked to the underground city. Toll-free 1-800-267-2575. Ask about bike storage.
+- **Bike shops / supplies:** **Cycle LM**, 270 Boul. Saint-Luc, Saint-Jean-sur-Richelieu, QC · mile 57.5 (1.3 mi off route). Bike shop with a repair workshop, about 2.4 mi west of the route. Replaces 'Performance Bégin', which could not be found. Phone not verified: see cyclelm.com. / **Ça Roule Montréal / Montreal on Wheels**, 27 Rue de la Commune E, Montréal, QC · +1 (514) 866-0633 · mile 82.7 (0.5 mi off route). Rental and repair shop at the finish in Old Montreal. October hours listed 10 AM to 5 PM daily. / **Bicycles Quilicot (Villeray)**, 7341 Rue Saint-Denis, Montréal, QC · +1 (514) 303-4118 · mile 85.6 (3.7 mi off route). Full shop, 4 mi north of downtown. Call ahead to confirm bike boxes are available. / **MEC Montréal (Marché Central)**, 8989 Boul. de l'Acadie, Montréal, QC · +1 (514) 788-5878. Outdoor store with bike service. Earlier drafts gave a Saint-Denis address; that is wrong.
+- **Bailout:** Amtrak Adirondack at Rouses Point (mile 29.0): the last station where carry-on bikes are accepted. In Quebec, exo buses serve Saint-Jean to Montréal (check bike rules); Longueuil–Université-de-Sherbrooke Metro (Yellow Line) is on the route at mile 79.2, and bikes are allowed outside weekday rush hours.
+- **Option:** Follows Lake Shore Rd to Rouses Point and Route 223 border crossing, then connects to the scenic Richelieu River and Chambly Canal paths into Montréal (85.6 mi).
 
 <details><summary>Turn-by-turn cues</summary>
 
@@ -340,62 +340,57 @@ Three days over 90 miles. In October daylight this leaves almost no margin for m
 | 8.5 | TURN RIGHT | Point au Roche Road | 1.6 | Street | Quiet Lake Shore Rd north along Lake Champlain. |
 | 10.1 | TURN LEFT | Lake Shore Road | 9.8 | Street |  |
 | 19.9 | CONTINUE ONTO | Lakeshore Road | 3.2 | Street |  |
-| 23.1 | TURN RIGHT | Lake Street (NY-9B) | 0.7 | Road shoulder |  |
-| 23.8 | TURN LEFT | Hayford Road | 2.5 | Street | Back streets into Rouses Point. |
+| 23.1 | TURN RIGHT | Lake Street (NY-9B) | 0.7 | Road shoulder | Lake St (NY-9B, becoming US-11) straight through Rouses Point village. Lakeside Coffee Roasters is at 109 Lake St. |
+| 23.8 | TURN LEFT | Hayford Road | 2.5 | Street | Back streets toward Rouses Point. |
 | 26.3 | TURN RIGHT | Choiniere Road | 0.3 | Street |  |
 | 26.6 | TURN LEFT | Sterling Road | 0.3 | Street |  |
 | 26.9 | TURN RIGHT | Smith Street | 0.7 | Street |  |
-| 27.6 | TURN LEFT | Lake Street (NY-9B) | 0.3 | Road shoulder |  |
-| 27.9 | TURN LEFT | Myers Street | 0.1 | Street |  |
-| 28.0 | TURN LEFT | Stewart Street | 0.5 | Street |  |
-| 28.5 | TURN RIGHT | Priscilla Lane | 0.3 | Street |  |
-| 28.8 | TURN LEFT | Maple Street | 0.8 | Street |  |
-| 29.6 | EARLY LUNCH / SNACK | Lakeside Coffee Roasters, 109 Lake St, Rouses Point | 0.2 | — | Last US cafe: closes early afternoon and is closed Mondays. |
-| 29.8 | TURN LEFT | bike path | 0.3 | Bike path |  |
-| 30.1 | TURN RIGHT | Lake Street (US-11) | 1.0 | Road shoulder | US-11 north to the border. |
-| 31.1 | BORDER | Rouses Point–Lacolle 223 crossing (US-11 / Route 223) | 0.3 | — | Open 8 AM to 8 PM daily on both sides (not 24 hours). Stop at the car booth with your passport, EDL or NEXUS card. No cannabis. Declare any food. |
-| 31.4 | BEAR RIGHT | Route 223 | 4.3 | Road shoulder | CANADA. Route 223 north along the west bank of the Richelieu. |
-| 35.7 | CONTINUE ONTO | Rue Principale (Route 223) | 9.1 | Road shoulder |  |
-| 44.8 | CONTINUE ONTO | Route 223 | 3.7 | Road shoulder |  |
-| 48.5 | CONTINUE ONTO | Rue Jacques-Cartier Sud (Route 223) | 1.8 | Road shoulder |  |
-| 50.3 | CONTINUE ONTO | Boulevard du Séminaire Sud (Route 223) | 3.5 | Road shoulder | Into Saint-Jean-sur-Richelieu. |
-| 53.8 | TURN RIGHT | Rue Saint-Georges | 0.2 | Street |  |
-| 54.0 | TURN RIGHT | Rue Saint-Jacques | 0.6 | Street |  |
-| 54.6 | TURN LEFT | Rue Champlain | 0.2 | Street | Riverfront; the Chambly Canal path starts just ahead. |
-| 54.8 | SNACK | Saint-Jean waterfront (La Trinquette pub, 290 Rue Champlain) | 0.2 | — | Pub-bistro; lunch hours not confirmed. |
-| 55.0 | CONTINUE ONTO | Piste du Canal de Chambly | 0.6 | Bike path | Chambly Canal path along the canal (asphalt or fine gravel). |
-| 55.6 | TURN RIGHT | bike path | 0.3 | Bike path |  |
-| 55.9 | TURN RIGHT | Piste du Canal de Chambly | 2.1 | Bike path |  |
-| 58.0 | TURN RIGHT | Rue Jean-Talon (Route 223) | 2.6 | Road shoulder | GPX follows Route 223 beside the canal here because the path is unmapped in OpenStreetMap. If the towpath is open, ride it: it runs parallel. |
-| 60.6 | TURN LEFT | Rue Sainte-Thérèse | 0.1 | Street |  |
-| 60.7 | BEAR LEFT | Piste du Canal de Chambly | 1.8 | Bike path |  |
-| 62.5 | TURN RIGHT | Rue Auclair | 0.1 | Street |  |
-| 62.6 | TURN RIGHT | Piste du Canal de Chambly | 2.8 | Bike path |  |
-| 65.4 | TURN LEFT | Rue Saint-Georges | 0.1 | Street |  |
-| 65.5 | LUNCH | Boulangerie du Vieux-Chambly, 2403 Av. Bourgogne (0.2 mi off route) | 0.1 | — | Bakery and cafe right on the route. |
-| 65.6 | TURN LEFT | Avenue Bourgogne | 0.7 | Street | Chambly: Fort Chambly and the Boulangerie du Vieux-Chambly. |
-| 66.3 | TURN RIGHT | Piste du Canal de Chambly | 0.3 | Bike path |  |
-| 66.6 | TURN LEFT | Avenue Bourgogne | 0.2 | Street |  |
-| 66.8 | TURN RIGHT | Avenue De Salaberry | 0.2 | Street |  |
-| 67.0 | TURN RIGHT | Boulevard De Périgny | 1.1 | Street |  |
-| 68.1 | TURN RIGHT | Montée du Chemin-de-Chambly | 3.7 | Street | Separated bike path beside the road. |
-| 71.8 | CONTINUE ONTO | Boulevard Kimber | 1.3 | Street |  |
-| 73.1 | CONTINUE ONTO | Boulevard Maricourt | 2.0 | Street |  |
-| 75.1 | TURN LEFT | Route verte 1 | 2.5 | Bike path | Route Verte bike path into Longueuil. |
-| 77.6 | TURN LEFT | Rue Cartier | 1.5 | Street |  |
-| 79.1 | TURN LEFT | Rue Marquette | 1.2 | Street |  |
-| 80.3 | TURN LEFT | Rue Saint-Charles Ouest | 0.3 | Street |  |
-| 80.6 | TURN LEFT | Boulevard La Fayette | 0.3 | Street |  |
-| 80.9 | TURN LEFT | Boulevard Taschereau | 0.4 | Street |  |
-| 81.3 | CONTINUE ONTO | Pont Jacques-Cartier | 1.0 | Bike path | Jacques-Cartier Bridge bike path (open spring to late fall). At the island end, take the ramp down to Île Sainte-Hélène (Parc Jean-Drapeau). |
-| 82.3 | TURN LEFT | bike path | 0.3 | Bike path |  |
-| 82.6 | TURN RIGHT | Rue des Seagulls | 0.1 | Street |  |
-| 82.7 | TURN RIGHT | Chemin Macdonald | 0.4 | Street |  |
-| 83.1 | TURN RIGHT | bike path | 0.1 | Bike path |  |
-| 83.2 | TURN RIGHT | Pont de la Concorde | 2.3 | Bike path | Concorde Bridge to Cité du Havre. |
-| 85.5 | TURN RIGHT | Rue Wellington | 0.4 | Street |  |
-| 85.9 | TURN LEFT | Rue Peel | 0.6 | Street | Rue Peel to Hôtel Bonaventure. |
-| 86.5 | TURN RIGHT | Rue de La Gauchetière Ouest | 0.2 | Street |  |
-| 86.7 | ARRIVE | Hôtel Bonaventure Montréal |  | — | 900 Rue de la Gauchetière O, Montréal, QC |
+| 27.6 | TURN LEFT | Lake Street (NY-9B) | 1.2 | Road shoulder |  |
+| 28.8 | EARLY LUNCH / SNACK | Lakeside Coffee Roasters, 109 Lake St, Rouses Point | 0.2 | — | Last US cafe: closes early afternoon and is closed Mondays. |
+| 29.0 | TURN RIGHT | Lake Street (US-11) | 1.0 | Road shoulder | US-11 north to the border. |
+| 30.0 | BORDER | Rouses Point–Lacolle 223 crossing (US-11 / Route 223) | 0.3 | — | Open 8 AM to 8 PM daily on both sides (not 24 hours). Stop at the car booth with your passport, EDL or NEXUS card. No cannabis. Declare any food. |
+| 30.3 | BEAR RIGHT | Route 223 | 4.3 | Road shoulder | CANADA. Route 223 north along the west bank of the Richelieu. |
+| 34.6 | CONTINUE ONTO | Rue Principale (Route 223) | 9.1 | Road shoulder |  |
+| 43.7 | CONTINUE ONTO | Route 223 | 3.7 | Road shoulder |  |
+| 47.4 | CONTINUE ONTO | Rue Jacques-Cartier Sud (Route 223) | 1.8 | Road shoulder |  |
+| 49.2 | CONTINUE ONTO | Boulevard du Séminaire Sud (Route 223) | 3.5 | Road shoulder | Into Saint-Jean-sur-Richelieu. |
+| 52.7 | TURN RIGHT | Rue Saint-Georges | 0.3 | Street |  |
+| 53.0 | TURN RIGHT | Rue Saint-Jacques | 0.5 | Street |  |
+| 53.5 | TURN LEFT | Rue Champlain | 0.2 | Street | Riverfront; the Chambly Canal path starts just ahead. |
+| 53.7 | SNACK | Saint-Jean waterfront (La Trinquette pub, 290 Rue Champlain) | 0.2 | — | Pub-bistro; lunch hours not confirmed. |
+| 53.9 | CONTINUE ONTO | Piste du Canal de Chambly | 0.6 | Bike path | Chambly Canal path along the canal (asphalt or fine gravel). |
+| 54.5 | TURN RIGHT | bike path | 0.3 | Bike path |  |
+| 54.8 | TURN RIGHT | Piste du Canal de Chambly | 2.1 | Bike path |  |
+| 56.9 | TURN RIGHT | Rue Jean-Talon (Route 223) | 2.6 | Road shoulder | GPX follows Route 223 beside the canal here because the path is unmapped in OpenStreetMap. If the towpath is open, ride it: it runs parallel. |
+| 59.5 | TURN LEFT | Rue Sainte-Thérèse | 0.1 | Street |  |
+| 59.6 | BEAR LEFT | Piste du Canal de Chambly | 1.8 | Bike path |  |
+| 61.4 | TURN RIGHT | Rue Auclair | 0.1 | Street |  |
+| 61.5 | TURN RIGHT | Piste du Canal de Chambly | 2.8 | Bike path |  |
+| 64.3 | TURN LEFT | Rue Saint-Georges | 0.1 | Street |  |
+| 64.4 | LUNCH | Boulangerie du Vieux-Chambly, 2403 Av. Bourgogne (0.2 mi off route) | 0.1 | — | Bakery and cafe right on the route. |
+| 64.5 | TURN LEFT | Avenue Bourgogne | 0.7 | Street | Chambly: Fort Chambly and the Boulangerie du Vieux-Chambly. |
+| 65.2 | TURN RIGHT | Piste du Canal de Chambly | 0.3 | Bike path |  |
+| 65.5 | TURN LEFT | Avenue Bourgogne | 0.3 | Street |  |
+| 65.8 | TURN RIGHT | Avenue De Salaberry | 0.2 | Street |  |
+| 66.0 | TURN RIGHT | Boulevard De Périgny | 1.0 | Street |  |
+| 67.0 | TURN RIGHT | Montée du Chemin-de-Chambly | 3.7 | Street | Separated bike path beside the road. |
+| 70.7 | CONTINUE ONTO | Boulevard Kimber | 1.3 | Street |  |
+| 72.0 | CONTINUE ONTO | Boulevard Maricourt | 2.0 | Street |  |
+| 74.0 | TURN LEFT | Route verte 1 | 2.5 | Bike path | Route Verte bike path into Longueuil. |
+| 76.5 | TURN LEFT | Rue Cartier | 1.5 | Street |  |
+| 78.0 | TURN LEFT | Rue Marquette | 1.2 | Street |  |
+| 79.2 | TURN LEFT | Rue Saint-Charles Ouest | 0.3 | Street |  |
+| 79.5 | TURN LEFT | Boulevard La Fayette | 0.3 | Street |  |
+| 79.8 | TURN LEFT | Boulevard Taschereau | 0.4 | Street |  |
+| 80.2 | CONTINUE ONTO | Pont Jacques-Cartier | 1.0 | Bike path | Jacques-Cartier Bridge bike path (open spring to late fall). At the island end, take the ramp down to Île Sainte-Hélène (Parc Jean-Drapeau). |
+| 81.2 | TURN LEFT | bike path | 0.3 | Bike path |  |
+| 81.5 | TURN RIGHT | Rue des Seagulls | 0.1 | Street |  |
+| 81.6 | TURN RIGHT | Chemin Macdonald | 0.4 | Street |  |
+| 82.0 | TURN RIGHT | bike path | 0.1 | Bike path |  |
+| 82.1 | TURN RIGHT | Pont de la Concorde | 2.4 | Bike path | Concorde Bridge to Cité du Havre. |
+| 84.5 | TURN RIGHT | Rue Wellington | 0.3 | Street |  |
+| 84.8 | TURN LEFT | Rue Peel | 0.7 | Street | Rue Peel to Hôtel Bonaventure. |
+| 85.5 | TURN RIGHT | Rue de La Gauchetière Ouest | 0.1 | Street |  |
+| 85.6 | ARRIVE | Hôtel Bonaventure Montréal |  | — | 900 Rue de la Gauchetière O, Montréal, QC |
 
 </details>

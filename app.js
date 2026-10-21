@@ -1,11 +1,8 @@
 // Main application logic for NYC to Montreal Bike Tour Webpage
 // Supports 6-Day Leisurely Tour AND 5-Day Fast Tour (+ Acceleration Options)
-// Supports Leaflet (Zero API Key) and Google Maps JavaScript API
 
 let currentTour = TOUR_DATA_6DAY;
-let mapMode = 'leaflet'; // 'leaflet' or 'google'
 let leafletMap;
-let googleMap;
 let isCompareMode = false;
 let dayLayers = {};
 let poiLayers = {
@@ -25,9 +22,6 @@ let compareLayers = {
 let vermontLayerGroup = null;
 let isVermontOverlayActive = false;
 
-let googleDayPolylines = [];
-let googleMarkers = [];
-let googleBicyclingLayer = null;
 
 const DAY_COLORS = [
   '#2563eb', // Day 1: Blue
@@ -90,6 +84,68 @@ if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
   });
 }
 
+// Guide tabs and shareable links. The URL hash holds the itinerary, the view and the guide tab,
+// leaving out defaults (6-day, guide view, Route tab): #5day, #strip, #7day/strip, #weather, #5day/gear.
+const GUIDE_TABS = ['route', 'weather', 'logistics', 'gear'];
+const ITINERARY_IDS = ['6day', '5day', '7day', 'vermont', 'compare'];
+let currentGuideTab = 'route';
+
+function stateHash() {
+  const parts = [];
+  if (selectedItineraryId !== '6day') parts.push(selectedItineraryId);
+  if (currentAppViewMode === 'strip') parts.push('strip');
+  else if (currentGuideTab !== 'route') parts.push(currentGuideTab);
+  return parts.length ? `#${parts.join('/')}` : '';
+}
+
+function syncHash() {
+  const hash = stateHash();
+  if (location.hash !== hash) history.replaceState(null, '', location.pathname + location.search + hash);
+}
+
+function applyHash() {
+  const parts = location.hash.slice(1).split('/').filter(Boolean);
+  const itinerary = parts.find(p => ITINERARY_IDS.includes(p)) || '6day';
+  const view = parts.includes('strip') ? 'strip' : 'guide';
+  const tab = parts.find(p => GUIDE_TABS.includes(p)) || 'route';
+  if (view !== currentAppViewMode) setAppViewMode(view);
+  if (itinerary !== selectedItineraryId) handleItinerarySelect(itinerary);
+  if (currentAppViewMode === 'guide') showGuideTab(tab);
+  syncHash();
+}
+
+function showGuideTab(name) {
+  if (!GUIDE_TABS.includes(name)) name = 'route';
+  currentGuideTab = name;
+  GUIDE_TABS.forEach(t => {
+    const panel = document.getElementById(`guide-tab-${t}`);
+    const btn = document.getElementById(`guide-tab-btn-${t}`);
+    if (panel) panel.hidden = t !== name;
+    if (btn) {
+      btn.classList.toggle('is-active', t === name);
+      btn.setAttribute('aria-selected', String(t === name));
+    }
+  });
+  syncHash();
+  // Leaflet can't measure a map while its panel is hidden: resize now, and apply a fit that was deferred
+  if (name === 'route' && leafletMap) {
+    if (pendingMapFit) fitMapToRoute(pendingMapFit);
+    else leafletMap.invalidateSize();
+  }
+}
+
+// Open a tab from elsewhere on the page and bring the tab bar into view below the sticky header
+function openGuideTab(name) {
+  showGuideTab(name);
+  const tabs = document.querySelector('.guide-tabs');
+  const header = document.querySelector('header');
+  if (!tabs) return;
+  const top = tabs.getBoundingClientRect().top + window.scrollY - (header ? header.offsetHeight : 0) - 8;
+  window.scrollTo({ top, behavior: 'smooth' });
+}
+
+window.addEventListener('hashchange', applyHash);
+
 document.addEventListener('DOMContentLoaded', () => {
   renderStaticDataBits();
   // Purge any previously cached key to ensure zero conflicts
@@ -99,16 +155,22 @@ document.addEventListener('DOMContentLoaded', () => {
   initLeafletMap();
   setupFilterControls();
   fetchTourWeather();
+  applyHash();
 });
 
 let currentAppViewMode = 'guide'; // 'guide' | 'strip'
 let selectedItineraryId = '6day'; // '6day' | '5day' | '7day' | 'vermont' | 'compare'
 
 function updateItineraryTabsUI(tourId) {
+  // The header's Print / PDF button opens the ready-made packet for the selected itinerary
+  const printLink = document.getElementById('print-pdf-link');
+  if (printLink) printLink.href = `pdf/nyc_to_montreal_${tourId === 'compare' ? '6day' : tourId}_strip_maps.pdf`;
+
   const tourIds = ['6day', '5day', '7day', 'vermont', 'compare'];
   tourIds.forEach(id => {
     const btn = document.getElementById(`tab-${id}`);
     if (!btn) return;
+    btn.setAttribute('aria-pressed', String(id === tourId));
     if (id === tourId) {
       if (id === 'vermont') {
         btn.className = "px-3.5 py-2 text-xs font-bold rounded-xl bg-emerald-600 text-white shadow-sm transition-all flex items-center gap-1.5 ring-2 ring-emerald-400";
@@ -126,6 +188,11 @@ function updateItineraryTabsUI(tourId) {
 }
 
 function handleItinerarySelect(tourId) {
+  selectItinerary(tourId);
+  syncHash();
+}
+
+function selectItinerary(tourId) {
   selectedItineraryId = tourId;
   updateItineraryTabsUI(tourId);
 
@@ -137,9 +204,9 @@ function handleItinerarySelect(tourId) {
       switchTourMode('compare');
       return;
     }
-    if (typeof activeStripItinerary !== 'undefined') {
-      activeStripItinerary = tourId;
-    }
+    // Keep the guide's tour in step, so the KML link, Copy for Google Docs and the guide view match
+    switchTourMode(tourId === 'vermont' ? '7day' : tourId);
+    updateItineraryTabsUI(tourId);
     if (typeof renderMtaRouteMap === 'function') {
       renderMtaRouteMap(tourId);
     }
@@ -148,6 +215,7 @@ function handleItinerarySelect(tourId) {
 
   // If in Guide mode:
   if (tourId === 'vermont') {
+    showGuideTab('route');
     // The Vermont variant replaces Days 5 and 6 of the 7-day tour, so show that tour underneath it.
     if (currentTour !== TOUR_DATA_7DAY) {
       switchTourMode('7day');
@@ -176,6 +244,8 @@ function setAppViewMode(mode) {
   const btnGuide = document.getElementById('view-mode-guide');
   const btnStrip = document.getElementById('view-mode-strip');
   const tabCompare = document.getElementById('tab-compare');
+  if (btnGuide) btnGuide.setAttribute('aria-pressed', String(mode !== 'strip'));
+  if (btnStrip) btnStrip.setAttribute('aria-pressed', String(mode === 'strip'));
 
   if (mode === 'strip') {
     if (dashboardView) dashboardView.classList.add('hidden');
@@ -221,6 +291,7 @@ function setAppViewMode(mode) {
     }, 100);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  syncHash();
 }
 
 function switchTourMode(tourType) {
@@ -232,6 +303,7 @@ function switchTourMode(tourType) {
   updateItineraryTabsUI(tourType);
 
   if (tourType === 'compare') {
+    showGuideTab('route');
     isCompareMode = true;
     if (compareSection) compareSection.classList.remove('hidden');
     renderCompareSection();
@@ -353,6 +425,10 @@ function renderCompareStats() {
   const pillDist = document.getElementById('map-pill-distance');
   const pillElev = document.getElementById('map-pill-elevation');
 
+  setCompareSummaryPills(pillStage, pillDist, pillElev);
+}
+
+function setCompareSummaryPills(pillStage, pillDist, pillElev) {
   if (pillStage) {
     pillStage.innerText = "⚖️ Comparing Tour Itineraries";
     pillStage.className = "badge-tag bg-purple-50 text-purple-800 border border-purple-200 font-bold shadow-xs transition-all";
@@ -403,8 +479,39 @@ function renderActiveTour() {
 /* ============================================================
    LEAFLET MAP IMPLEMENTATION
 ============================================================ */
+// Fit the map to a route. While the Route tab is hidden the map has no size (Leaflet then computes a
+// broken view), so the fit waits until showGuideTab('route') reveals the map.
+let pendingMapFit = null;
+
+function fitMapToRoute(tracks) {
+  const el = document.getElementById('map');
+  if (leafletMap && el && el.offsetWidth > 0) {
+    leafletMap.invalidateSize();
+    leafletMap.fitBounds(tracks, { padding: [30, 30] });
+    pendingMapFit = null;
+  } else {
+    pendingMapFit = tracks;
+  }
+}
+
+// Stadia Maps tiles. No API key in the code: requests are authorized by domain
+// (mtl-bike.pages.dev is registered in the Stadia dashboard; localhost works for development).
+const STADIA_ATTRIBUTION = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+function addBaseLayers(map) {
+  const stadia = style => L.tileLayer(`https://tiles.stadiamaps.com/tiles/${style}/{z}/{x}/{y}{r}.png`, {
+    attribution: STADIA_ATTRIBUTION,
+    maxZoom: 20
+  });
+  const outdoors = stadia('outdoors');
+  outdoors.addTo(map);
+  L.control.layers({
+    "Outdoors (Default)": outdoors,
+    "Street Map": stadia('osm_bright')
+  }, null, { position: 'topright' }).addTo(map);
+}
+
 function initLeafletMap() {
-  mapMode = 'leaflet';
   const container = document.getElementById('map');
   if (!container) return;
 
@@ -421,38 +528,7 @@ function initLeafletMap() {
 
   leafletMap = L.map('map').setView([43.0, -73.6], 7);
 
-  // 100% Free, Zero-Key Public GIS Tiles (Esri ArcGIS Online & OSM HOT - Never blocks or requires a key)
-  const esriStreets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, METI, TomTom',
-    maxZoom: 19
-  });
-
-  const esriTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, USGS, NPS, NRCAN',
-    maxZoom: 18
-  });
-
-  const esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP',
-    maxZoom: 18
-  });
-
-  const osmHot = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team',
-    subdomains: 'abc',
-    maxZoom: 19
-  });
-
-  // Default to Esri Streets (Crisp road cycling map, 100% free, zero API key)
-  esriStreets.addTo(leafletMap);
-
-  const baseMaps = {
-    "Esri Street Map (Default)": esriStreets,
-    "Esri Topographic": esriTopo,
-    "Esri Satellite": esriSatellite,
-    "OpenStreetMap (HOT)": osmHot
-  };
-  L.control.layers(baseMaps, null, { position: 'topright' }).addTo(leafletMap);
+  addBaseLayers(leafletMap);
 
   dayLayers = {};
   Object.values(poiLayers).forEach(layer => layer.clearLayers());
@@ -600,9 +676,9 @@ function initLeafletMap() {
   poiLayers.bailouts.addTo(leafletMap);
 
   const allTracks = currentTour.days.flatMap(d => d.track);
-  leafletMap.fitBounds(allTracks, { padding: [30, 30] });
+  fitMapToRoute(allTracks);
   // The container may not have its final size yet (fonts/CSS still settling): refit once layout is done.
-  setTimeout(() => { if (leafletMap) { leafletMap.invalidateSize(); leafletMap.fitBounds(allTracks, { padding: [30, 30] }); } }, 250);
+  setTimeout(() => fitMapToRoute(allTracks), 250);
 
   setTimeout(() => {
     if (leafletMap && typeof leafletMap.invalidateSize === 'function') {
@@ -610,14 +686,13 @@ function initLeafletMap() {
     }
   }, 200);
 
-  updateMapBadge("Free Map (Esri Streets / Zero Key)");
+  updateMapBadge("Map: Stadia Outdoors");
 }
 
 /* ============================================================
    COMPARE MODE MAP IMPLEMENTATION (Both Routes Overlaid)
 ============================================================ */
 function renderCompareMap() {
-  mapMode = 'leaflet';
   const container = document.getElementById('map');
   if (!container) return;
 
@@ -633,28 +708,12 @@ function renderCompareMap() {
 
   leafletMap = L.map('map').setView([43.0, -73.6], 7);
 
-  // 100% Free Public GIS Tiles (Esri Streets & Topo)
-  const esriStreets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, METI, TomTom',
-    maxZoom: 19
-  });
-
-  const esriTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, USGS, NPS, NRCAN',
-    maxZoom: 18
-  });
-
-  esriStreets.addTo(leafletMap);
-
-  const baseMaps = {
-    "Esri Street Map (Default)": esriStreets,
-    "Esri Topographic": esriTopo
-  };
-  L.control.layers(baseMaps, null, { position: 'topright' }).addTo(leafletMap);
+  addBaseLayers(leafletMap);
 
   compareLayers = {
     sixDay: L.layerGroup(),
     fiveDay: L.layerGroup(),
+    sevenDay: L.layerGroup(),
     accelerate: L.layerGroup(),
     markers: L.layerGroup(),
     lunch: L.layerGroup(),
@@ -813,13 +872,42 @@ function renderCompareMap() {
     <div class="p-2">
       <span class="inline-block px-2 py-0.5 text-xs font-semibold bg-emerald-100 text-emerald-800 rounded mb-1">Canada Border</span>
       <h4 class="font-bold text-gray-900">U.S. / Canada Border (Lacolle)</h4>
-      <p class="text-xs text-gray-700 mb-1">Crossed on Day 5 (5-Day Tour) or Day 6 (6-Day Tour). Passports required!</p>
+      <p class="text-xs text-gray-700 mb-1">Crossed on Day 5 (5-Day Tour) or Day 6 (6- and 7-Day Tours). Passports required!</p>
     </div>
   `);
   compareLayers.markers.addLayer(borderMarker);
 
+  // 7-Day Tour: Days 1 to 5 are the 6-Day route, so draw only where it differs (Days 6 and 7, Solid Rose)
+  TOUR_DATA_7DAY.days.slice(5).forEach(day => {
+    compareLayers.sevenDay.addLayer(L.polyline(day.track, {
+      color: '#e11d48', weight: 3, opacity: 0.9, lineCap: 'round', lineJoin: 'round'
+    }).bindPopup(`
+      <div class="p-2">
+        <span class="inline-block px-2 py-0.5 text-xs font-bold text-rose-800 rounded mb-1" style="background:#ffe4e6;">🗓️ 7-Day Tour • Stage ${day.day}</span>
+        <h4 class="font-bold text-gray-900">${day.name}</h4>
+        <span class="text-xs font-semibold text-rose-700">${day.distanceMiles} mi • +${day.elevationFt} ft climbing</span>
+        <p class="text-xs text-gray-600 mt-1">Days 1 to 5 follow the 6-Day route.</p>
+      </div>
+    `));
+  });
+  const sevenDayStop = TOUR_DATA_7DAY.days[5].hotels[0];
+  compareLayers.sevenDay.addLayer(L.marker(sevenDayStop.coords, { icon: L.divIcon({
+    className: 'custom-pin',
+    html: `<div style="background:#e11d48; color:white; width:28px; height:28px; border-radius:50%; border:2px solid white; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 6px rgba(0,0,0,0.3); font-size:11px; font-weight:bold;">7D</div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14]
+  }) }).bindPopup(`
+    <div class="p-2">
+      <span class="inline-block px-2 py-0.5 text-xs font-bold text-rose-800 rounded mb-1" style="background:#ffe4e6;">🗓️ 7-Day Overnight (Stage 6)</span>
+      <h4 class="font-bold text-gray-900">${sevenDayStop.name}</h4>
+      <p class="text-xs text-gray-600 mb-1">${sevenDayStop.address}</p>
+      <p class="text-xs font-mono text-rose-700 font-semibold mb-1">${sevenDayStop.phone}</p>
+    </div>
+  `));
+
   // Add all layers to map
   compareLayers.sixDay.addTo(leafletMap);
+  compareLayers.sevenDay.addTo(leafletMap);
   compareLayers.fiveDay.addTo(leafletMap);
   compareLayers.accelerate.addTo(leafletMap);
   compareLayers.markers.addTo(leafletMap);
@@ -829,8 +917,8 @@ function renderCompareMap() {
     ...TOUR_DATA_6DAY.days.flatMap(d => d.track),
     ...TOUR_DATA_5DAY.days.flatMap(d => d.track)
   ];
-  leafletMap.fitBounds(allTracks, { padding: [30, 30] });
-  setTimeout(() => { if (leafletMap) { leafletMap.invalidateSize(); leafletMap.fitBounds(allTracks, { padding: [30, 30] }); } }, 250);
+  fitMapToRoute(allTracks);
+  setTimeout(() => fitMapToRoute(allTracks), 250);
 
   setTimeout(() => {
     if (leafletMap && typeof leafletMap.invalidateSize === 'function') {
@@ -839,198 +927,6 @@ function renderCompareMap() {
   }, 200);
 
   updateMapBadge("Comparing Both Routes (6-Day Blue vs 5-Day Amber)");
-}
-
-/* ============================================================
-   GOOGLE MAPS JAVASCRIPT API IMPLEMENTATION
-============================================================ */
-function loadGoogleMapsApiKey() {
-  const key = document.getElementById('gmaps-key-input').value.trim();
-  if (!key) {
-    alert("Please enter a valid Google Maps JavaScript API key.");
-    return;
-  }
-  localStorage.setItem('gmaps_api_key', key);
-  initGoogleMaps(key);
-}
-
-function switchToFreeMap() {
-  localStorage.removeItem('gmaps_api_key');
-  document.getElementById('gmaps-key-input').value = '';
-  initLeafletMap();
-}
-
-function initGoogleMaps(apiKey) {
-  if (!window.google || !window.google.maps) {
-    const existingScript = document.getElementById('gmaps-script');
-    if (existingScript) existingScript.remove();
-
-    const script = document.createElement('script');
-    script.id = 'gmaps-script';
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=onGoogleMapsLoaded`;
-    script.async = true;
-    script.defer = true;
-    script.onerror = () => {
-      alert("Failed to load Google Maps API. Please check your API key.");
-      initLeafletMap();
-    };
-    window.onGoogleMapsLoaded = renderGoogleMapInstance;
-    document.head.appendChild(script);
-  } else {
-    renderGoogleMapInstance();
-  }
-}
-
-function renderGoogleMapInstance() {
-  mapMode = 'google';
-  const container = document.getElementById('map');
-  container.innerHTML = '';
-
-  googleMap = new google.maps.Map(container, {
-    center: { lat: 43.0, lng: -73.6 },
-    zoom: 7,
-    mapTypeId: 'terrain',
-    mapTypeControl: true,
-    fullscreenControl: true,
-    streetViewControl: true
-  });
-
-  googleBicyclingLayer = new google.maps.BicyclingLayer();
-  googleBicyclingLayer.setMap(googleMap);
-
-  googleDayPolylines = [];
-  googleMarkers = [];
-  const bounds = new google.maps.LatLngBounds();
-  const infoWindow = new google.maps.InfoWindow();
-
-  currentTour.days.forEach((day, index) => {
-    const color = DAY_COLORS[index % DAY_COLORS.length];
-    const pathCoords = day.track.map(pt => ({ lat: pt[0], lng: pt[1] }));
-    pathCoords.forEach(c => bounds.extend(c));
-
-    const polyline = new google.maps.Polyline({
-      path: pathCoords,
-      geodesic: true,
-      strokeColor: color,
-      strokeOpacity: 0.9,
-      strokeWeight: 5,
-      map: googleMap
-    });
-
-    polyline.addListener('click', (e) => {
-      infoWindow.setContent(`
-        <div style="padding: 6px; font-family: sans-serif;">
-          <strong style="font-size: 14px;">${day.name}</strong><br>
-          <span style="color: #2563eb; font-weight: bold;">${day.distanceMiles} mi / +${day.elevationFt} ft</span><br>
-          <a href="${day.googleMapsDirUrl}" target="_blank" style="display: inline-block; margin-top: 6px; font-size: 12px; font-weight: bold; color: #1d4ed8;">
-            🗺️ Open Directions in Google Maps &rarr;
-          </a>
-        </div>
-      `);
-      infoWindow.setPosition(e.latLng);
-      infoWindow.open(googleMap);
-    });
-
-    googleDayPolylines.push({ day: day.day, polyline: polyline, path: pathCoords });
-
-    // Accelerate option marker
-    if (day.accelerateOption) {
-      const marker = new google.maps.Marker({
-        position: { lat: day.endCoords[0], lng: day.endCoords[1] },
-        map: googleMap,
-        title: `⚡ Accelerate: ${day.accelerateOption.name}`,
-        icon: { url: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png' }
-      });
-      marker.category = 'accelerate';
-      marker.addListener('click', () => {
-        infoWindow.setContent(`
-          <div style="padding: 6px; font-family: sans-serif;">
-            <span style="background: #fef3c7; color: #92400e; padding: 2px 6px; font-size: 11px; font-weight: bold; border-radius: 4px;">⚡ Accelerate Checkpoint</span>
-            <h4 style="margin: 4px 0; font-size: 14px;">${day.accelerateOption.name}</h4>
-            <p style="font-size: 12px; color: #555; margin: 2px 0;">${day.accelerateOption.notes}</p>
-            <p style="font-size: 12px; font-weight: bold; color: #b45309; margin: 4px 0;">Target: ${day.accelerateOption.targetTown} (${day.accelerateOption.distanceMiles} mi total)</p>
-            <a href="${day.accelerateOption.googleMapsUrl}" target="_blank" style="font-size: 12px; color: #1d4ed8; font-weight: bold;">🗺️ Open Accelerated Route &rarr;</a>
-          </div>
-        `);
-        infoWindow.open(googleMap, marker);
-      });
-      googleMarkers.push(marker);
-    }
-
-    // Lunch Marker
-    if (day.lunch) {
-      const marker = new google.maps.Marker({
-        position: { lat: day.lunch.coords[0], lng: day.lunch.coords[1] },
-        map: googleMap,
-        title: `Lunch: ${day.lunch.name}`,
-        icon: { url: 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png' }
-      });
-      marker.category = 'lunch';
-      marker.addListener('click', () => {
-        infoWindow.setContent(`
-          <div style="padding: 6px; font-family: sans-serif;">
-            <span style="background: #ffedd5; color: #9a3412; padding: 2px 6px; font-size: 11px; font-weight: bold; border-radius: 4px;">Lunch</span>
-            <h4 style="margin: 4px 0; font-size: 14px;">${day.lunch.name}</h4>
-            <p style="font-size: 12px; color: #555; margin: 2px 0;">${day.lunch.location} (Mile ${day.lunch.mile})</p>
-            <a href="${day.lunch.googleUrl}" target="_blank" style="font-size: 12px; color: #1d4ed8; font-weight: bold;">📍 View in Google Maps</a>
-          </div>
-        `);
-        infoWindow.open(googleMap, marker);
-      });
-      googleMarkers.push(marker);
-    }
-
-    // Hotels
-    day.hotels.forEach(hotel => {
-      const marker = new google.maps.Marker({
-        position: { lat: hotel.coords[0], lng: hotel.coords[1] },
-        map: googleMap,
-        title: `Hotel: ${hotel.name}`,
-        icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
-      });
-      marker.category = 'hotels';
-      marker.addListener('click', () => {
-        infoWindow.setContent(`
-          <div style="padding: 6px; font-family: sans-serif;">
-            <span style="background: #e0e7ff; color: #3730a3; padding: 2px 6px; font-size: 11px; font-weight: bold; border-radius: 4px;">Hotel</span>
-            <h4 style="margin: 4px 0; font-size: 14px;">${hotel.name}</h4>
-            <p style="font-size: 12px; color: #555; margin: 2px 0;">${hotel.address}</p>
-            <p style="font-size: 12px; font-family: monospace; color: #4338ca; font-weight: bold; margin: 2px 0;">${hotel.phone}</p>
-            <a href="${hotel.googleUrl}" target="_blank" style="font-size: 12px; color: #1d4ed8; font-weight: bold;">📍 View in Google Maps</a>
-          </div>
-        `);
-        infoWindow.open(googleMap, marker);
-      });
-      googleMarkers.push(marker);
-    });
-
-    // Bike Shops
-    day.bikeShops.forEach(shop => {
-      const marker = new google.maps.Marker({
-        position: { lat: shop.coords[0], lng: shop.coords[1] },
-        map: googleMap,
-        title: `Bike Shop: ${shop.name}`,
-        icon: { url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png' }
-      });
-      marker.category = 'bikeShops';
-      marker.addListener('click', () => {
-        infoWindow.setContent(`
-          <div style="padding: 6px; font-family: sans-serif;">
-            <span style="background: #fee2e2; color: #991b1b; padding: 2px 6px; font-size: 11px; font-weight: bold; border-radius: 4px;">Bike Shop</span>
-            <h4 style="margin: 4px 0; font-size: 14px;">${shop.name}</h4>
-            <p style="font-size: 12px; color: #555; margin: 2px 0;">${shop.address}</p>
-            <p style="font-size: 12px; font-family: monospace; color: #b91c1c; font-weight: bold; margin: 2px 0;">${shop.phone}</p>
-            <a href="${shop.googleUrl}" target="_blank" style="font-size: 12px; color: #1d4ed8; font-weight: bold;">📍 View in Google Maps</a>
-          </div>
-        `);
-        infoWindow.open(googleMap, marker);
-      });
-      googleMarkers.push(marker);
-    });
-  });
-
-  googleMap.fitBounds(bounds);
-  updateMapBadge("Google Maps Active (Cycling Layer)");
 }
 
 function updateMapBadge(text) {
@@ -1094,9 +990,7 @@ function zoomToStage(val) {
         ...TOUR_DATA_5DAY.days.flatMap(d => d.track)
       ];
       if (leafletMap) leafletMap.flyToBounds(allTracks, { padding: [30, 30], duration: 1.0 });
-      if (pillStage) pillStage.innerText = "⚖️ Comparing 6-Day vs 5-Day";
-      if (pillDist) pillDist.innerText = `🚴 ${TOUR_DATA_6DAY.averageDailyMiles} vs ${TOUR_DATA_5DAY.averageDailyMiles} mi/day avg`;
-      if (pillElev) pillElev.innerText = `⛰️ ~${Math.round(TOUR_DATA_6DAY.elevationGainFt / 6 / 100) * 100} vs ~${Math.round(TOUR_DATA_5DAY.elevationGainFt / 5 / 100) * 100} ft/day (est.)`;
+      setCompareSummaryPills(pillStage, pillDist, pillElev);
     } else if (val === 'compare-6day') {
       if (compareLayers.sixDay) compareLayers.sixDay.eachLayer(l => l.setStyle({ weight: 7, opacity: 1.0 }));
       if (compareLayers.fiveDay) compareLayers.fiveDay.eachLayer(l => l.setStyle({ weight: 2, opacity: 0.2 }));
@@ -1128,27 +1022,20 @@ function zoomToStage(val) {
   updateMapPills(val);
 
   if (val === 'all') {
-    if (mapMode === 'leaflet' && leafletMap) {
+    if (leafletMap) {
       Object.entries(dayLayers).forEach(([num, layer]) => {
         layer.addTo(leafletMap);
         layer.setStyle({ weight: 5, opacity: 0.85 });
       });
       const allTracks = currentTour.days.flatMap(d => d.track);
       leafletMap.flyToBounds(allTracks, { padding: [30, 30], duration: 1.0 });
-    } else if (mapMode === 'google' && googleMap) {
-      const allBounds = new google.maps.LatLngBounds();
-      googleDayPolylines.forEach(item => {
-        item.polyline.setMap(googleMap);
-        item.path.forEach(pt => allBounds.extend(pt));
-      });
-      googleMap.fitBounds(allBounds);
     }
   } else {
     const dayNum = parseInt(val, 10);
     const targetDay = currentTour.days.find(d => d.day === dayNum);
     if (!targetDay) return;
 
-    if (mapMode === 'leaflet' && leafletMap) {
+    if (leafletMap) {
       // Highlight the selected stage while dimming others
       Object.entries(dayLayers).forEach(([num, layer]) => {
         const isCurrent = parseInt(num, 10) === dayNum;
@@ -1172,17 +1059,6 @@ function zoomToStage(val) {
         maxZoom: 13,
         duration: 1.2
       });
-    } else if (mapMode === 'google' && googleMap) {
-      const singleBounds = new google.maps.LatLngBounds();
-      googleDayPolylines.forEach(item => {
-        if (item.day === dayNum) {
-          item.polyline.setMap(googleMap);
-          item.path.forEach(pt => singleBounds.extend(pt));
-        } else {
-          item.polyline.setMap(null);
-        }
-      });
-      googleMap.fitBounds(singleBounds);
     }
   }
 }
@@ -1199,7 +1075,7 @@ function setupFilterControls() {
     const el = document.getElementById(`toggle-${cat.toLowerCase()}`);
     if (el) {
       el.onchange = (e) => {
-        if (mapMode === 'leaflet' && leafletMap) {
+        if (leafletMap) {
           if (isCompareMode) {
             if (cat === 'hotels' && compareLayers.markers) {
               if (e.target.checked) leafletMap.addLayer(compareLayers.markers);
@@ -1214,10 +1090,6 @@ function setupFilterControls() {
               else leafletMap.removeLayer(poiLayers[cat]);
             }
           }
-        } else if (mapMode === 'google' && googleMap) {
-          googleMarkers.forEach(m => {
-            if (m.category === cat) m.setMap(e.target.checked ? googleMap : null);
-          });
         }
       };
     }
@@ -1241,7 +1113,7 @@ function toggleVermontOverlay() {
       btn.className = "px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-all flex items-center gap-1.5 shadow-2xs";
       btn.innerHTML = '<span>🌲 Vermont Upgrade</span><span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-extrabold uppercase">Overlay</span>';
     }
-    updateMapBadge(isCompareMode ? "Comparing Tours" : "Free Map (Esri Streets / Zero Key)");
+    updateMapBadge(isCompareMode ? "Comparing Tours" : "Map: Stadia Outdoors");
     return;
   }
 
@@ -1593,6 +1465,23 @@ function calculateWeatherRisk(forecast) {
   };
 }
 
+// One forecast request per location per page visit: itineraries share overnight towns, and switching
+// tours or tabs refetched every day (enough to hit Open-Meteo's rate limit).
+const forecastCache = new Map();
+
+function fetchForecast(url) {
+  if (!forecastCache.has(url)) {
+    forecastCache.set(url, fetch(url).then(res => {
+      if (!res.ok) throw new Error("Weather API failed");
+      return res.json();
+    }).catch(err => {
+      forecastCache.delete(url); // retry next time instead of caching the failure
+      throw err;
+    }));
+  }
+  return forecastCache.get(url);
+}
+
 async function fetchTourWeather() {
   const summaryEl = document.getElementById('weather-summary-text');
   if (summaryEl) summaryEl.innerText = `Fetching live ECMWF & NOAA forecast relative to ${formatDateDisplay(tourStartDate)}...`;
@@ -1606,9 +1495,7 @@ async function fetchTourWeather() {
     try {
       const url = `https://api.open-meteo.com/v1/forecast?latitude=${coords[0]}&longitude=${coords[1]}&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&forecast_days=16`;
 
-      const res = await fetch(url);
-      if (!res.ok) throw new Error("Weather API failed");
-      const data = await res.json();
+      const data = await fetchForecast(url);
 
       const timeArr = data.daily?.time || [];
       const dIdx = timeArr.indexOf(stageDate);
@@ -1835,6 +1722,20 @@ function refreshWeatherData() {
   fetchTourWeather();
 }
 
+// Feedback form (Google Form). 'dayField' is the entry ID of the "Itinerary and day" question,
+// taken from the form's pre-filled link. While 'url' is empty the buttons stay hidden.
+const FEEDBACK_FORM = {
+  url: 'https://docs.google.com/forms/d/e/1FAIpQLSeDura6hWc2IsvVfC4hfnianb-JxMLV5e6jpbTa3fX6u5Dh5w/viewform',
+  dayField: 'entry.785229534'
+};
+
+function feedbackLink(day) {
+  if (!FEEDBACK_FORM.url) return '';
+  const label = `${currentTour.title}, Day ${day.day}: ${day.name.split(': ').slice(1).join(': ')}`;
+  const href = `${FEEDBACK_FORM.url}?usp=pp_url&${FEEDBACK_FORM.dayField}=${encodeURIComponent(label)}`;
+  return `<a href="${href}" target="_blank" rel="noopener" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg transition-colors flex items-center gap-1">✉️ Report a problem</a>`;
+}
+
 function renderDaysAccordion() {
   const container = document.getElementById('days-container');
   if (!container) return;
@@ -1861,6 +1762,7 @@ function renderDaysAccordion() {
           <button onclick="focusDayOnMap(${day.day})" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg transition-colors flex items-center gap-1">
             📍 Center
           </button>
+          ${feedbackLink(day)}
         </div>
       </div>
       <div class="p-5 space-y-4">
@@ -1965,6 +1867,7 @@ function focusDayOnMap(dayNum) {
   const select = document.getElementById('day-filter-select');
   if (select) select.value = dayNum.toString();
 
+  showGuideTab('route');
   zoomToStage(dayNum);
 
   const mapSec = document.getElementById('map-section');

@@ -125,7 +125,9 @@ def write_all(ROOT, C, R, TOURS, VT, place_mile, build_cues, surface_text, fill)
               "- `gpx/7day/`, `gpx/6day/`, `gpx/5day/`, `gpx/vermont/`: **one GPX per day for each itinerary. Use these on bike computers.** (`gpx/vermont/…_day03.gpx` is the Sandbar bypass.) Also `gpx/return_montreal_to_rouses_point.gpx`.",
               "- `nyc_to_montreal_*.gpx` / `.kml`: combined files per itinerary (KML for Google My Maps).",
               "- `nyc_to_montreal_7_day_tour.md`, `nyc_to_montreal_bike_tour_guide.md` (6-day), `nyc_to_montreal_5_day_fast_tour.md`, `nyc_to_montreal_vermont_upgrade.md`: printable guides with full cue tables.",
+              "- `pdf/`: print-ready US Letter ride packets and single-day strip map + cue sheet PDFs for every itinerary.",
               "- `jersey_cue_card.html`: pocket cue card.", "- `AUDIT.md`: what was checked and corrected, and what is still unverified.",
-              "- `tools/`: `build.py` regenerates all data files from `tools/content.py` and `data/routes.json`.", "",
+              "- `tools/`: `build.py` regenerates all data files from `tools/content.py` and `data/routes.json`.",
+              "- `LICENSE`: MIT (software) / CC BY 4.0 (guides) / ODbL (OpenStreetMap route data).", "",
               ADVISORIES.format(ret_mi=R["RETURN"]["mi"], ret_sj=f"{ret_sj:.0f}", ret_rp=f"{R['RETURN']['mi'] - ret_sj:.0f}", longdays="7-day: " + longdays("7day") + "; 5-day: " + longdays("5day"))]
     open(os.path.join(ROOT, "README.md"), "w").write("\n".join(readme))
