@@ -532,7 +532,7 @@ self.addEventListener('activate', event => {
 });
 
 function isTile(url) {
-  return /tiles\.stadiamaps\.com\/tiles\//.test(url);
+  return /tiles\.stadiamaps\.com\/tiles\/|server\.arcgisonline\.com\/ArcGIS\/rest\/services\/|tile\.openstreetmap\.org\//.test(url);
 }
 
 async function trimTiles() {

@@ -494,20 +494,55 @@ function fitMapToRoute(tracks) {
   }
 }
 
-// Stadia Maps tiles. No API key in the code: requests are authorized by domain
-// (mtl-bike.pages.dev is registered in the Stadia dashboard; localhost works for development).
+// Stadia Maps tiles (authorized by domain in Stadia dashboard; localhost works for development),
+// with automatic fallback to keyless Esri/OSM tiles if the current domain isn't registered in Stadia.
 const STADIA_ATTRIBUTION = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+let stadiaDomainBlocked = false;
 
 function addBaseLayers(map) {
   const stadia = style => L.tileLayer(`https://tiles.stadiamaps.com/tiles/${style}/{z}/{x}/{y}{r}.png`, {
     attribution: STADIA_ATTRIBUTION,
     maxZoom: 20
   });
+  const esriTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, USGS, NPS, NRCAN, &copy; OpenStreetMap contributors',
+    maxZoom: 19
+  });
+  const esriStreets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, TomTom',
+    maxZoom: 19
+  });
+  const osmStandard = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  });
+
   const outdoors = stadia('outdoors');
-  outdoors.addTo(map);
+  const stadiaStreet = stadia('osm_bright');
+
+  if (stadiaDomainBlocked) {
+    esriTopo.addTo(map);
+    setTimeout(() => updateMapBadge("Map: Esri Topo"), 0);
+  } else {
+    outdoors.on('tileerror', () => {
+      if (!stadiaDomainBlocked && navigator.onLine !== false) {
+        stadiaDomainBlocked = true;
+        if (map.hasLayer(outdoors)) {
+          map.removeLayer(outdoors);
+          esriTopo.addTo(map);
+          updateMapBadge("Map: Esri Topo");
+        }
+      }
+    });
+    outdoors.addTo(map);
+  }
+
   L.control.layers({
-    "Outdoors (Default)": outdoors,
-    "Street Map": stadia('osm_bright')
+    "Outdoors (Stadia)": outdoors,
+    "Street Map (Stadia)": stadiaStreet,
+    "Topographic (Esri)": esriTopo,
+    "Street Map (Esri)": esriStreets,
+    "OpenStreetMap": osmStandard
   }, null, { position: 'topright' }).addTo(map);
 }
 
